@@ -1,11 +1,11 @@
-# How to Install AIForged
+# AIForged Documentation
 
 |  |
 | :--- |
 
 
-## About AIForged
+## Documentation Repository
 
-This is the initial AIForged readme.
+This is the repository for AIForged documentation.
 
-**Minimum System Requirements**
+[View the published documentation here](http://docs.aiforged.com)
