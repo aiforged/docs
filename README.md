@@ -1,2 +1,2 @@
-# docs
-Documentation for AIForged
+# Initial page
+
