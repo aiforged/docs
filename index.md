@@ -1,6 +1,6 @@
 # Table of contents
 
-* [How to Install AIForged](README.md)
+* [How to Install AIForged](install.md)
 * [Register](register.md)
 * [Login](login.md)
 * [Activate my account](activate-my-account.md)
