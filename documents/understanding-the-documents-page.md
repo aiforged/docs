@@ -1,6 +1,6 @@
 # Understanding the Documents page
 
-### Understanding the Documents page
+
 
 #### Available Fields
 

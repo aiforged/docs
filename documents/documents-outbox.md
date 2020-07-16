@@ -1,7 +1,5 @@
 # Documents Outbox
 
-### Documents Outbox
-
 #### How to open the Documents Outbox
 
 ![](../.gitbook/assets/77.png)

@@ -1,7 +1,5 @@
 # Document Categories
 
-### Document Categories
-
 Document categories defines the **Type** of document that has been uploaded. Projects Document categories is shared to all its services.
 
 #### How to create Document Categories

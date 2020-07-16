@@ -41,5 +41,4 @@
 * [Documents Outbox](documents/documents-outbox.md)
 * [Training box](documents/training-box.md)
 * [Document Categories](documents/document-categories.md)
-* [Untitled](documents/untitled.md)
 

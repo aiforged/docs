@@ -1,7 +1,5 @@
 # Google Object Detection
 
-### Google Object Detection
-
 ![](../.gitbook/assets/55.png)
 
 Google object detection detects object, faces and landmarks using Google Vision

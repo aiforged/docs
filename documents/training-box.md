@@ -1,7 +1,5 @@
 # Training box
 
-### Training box
-
 The Training box is only applicable to services that requires training of documents
 
 #### How to open the Training box

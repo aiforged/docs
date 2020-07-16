@@ -1,7 +1,5 @@
 # Documents Inbox
 
-### Documents Inbox
-
 #### How to open the Documents Inbox
 
 ![](../.gitbook/assets/76.png)
