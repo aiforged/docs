@@ -15,9 +15,9 @@ Document categories defines the **Type** of document that has been uploaded. Pro
 
 #### How to Delete a Document Category
 
-![](../.gitbook/assets/82.png)
+![](../assets/82.png)
 
 1. From the Project page click on “Configure categories”
-2. ![](../.gitbook/assets/83.png) Click on the “trash can” icon to remove the document category from the Grid
+2. ![](../assets/83.png) Click on the “trash can” icon to remove the document category from the Grid
 3. After removing the project categories click on “Save Changes” in the App Bar
 

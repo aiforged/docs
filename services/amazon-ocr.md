@@ -1,6 +1,6 @@
 # Amazon OCR
 
-![](../.gitbook/assets/42.png)
+![](../assets/42.png)
 
 The Amazon OCR service reads text from images for you to use.
 

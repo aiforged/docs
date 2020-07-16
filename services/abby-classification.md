@@ -5,13 +5,11 @@
 The ABBY Classification service allows you to automatically categorize documents and sort them into predefined document categories. The advanced document classification leverages modern technologies such as machine learning and natural language processing. These technologies can detect even subtle differences among individual document categories and allow setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
 
 #### Possible use cases
-
 * Distinguish between different types of bank statements
 * Distinguish between different types of Identification documents
 * Distinguish between different types of invoices
 
 #### Setup and Train Service
-
 1. Open the project you would like to add the service to
 2. Click on Add Service
 3. Select the ABBYY Classification Service

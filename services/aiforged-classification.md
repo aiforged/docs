@@ -1,6 +1,6 @@
 # AIForged Classification
 
-![](../.gitbook/assets/34.png)
+![](../assets/34.png)
 
 The AIForged Classification service is a inhouse Classification service build to automatically categorize documents and sort them into predefined document categories. The AIForged Classification service allows setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
 
@@ -13,7 +13,7 @@ The AIForged Classification service is a inhouse Classification service build to
 5. Click the “Next” Action in the Action Bar to save the Service
 6. **Step 2** Classes, to add a Class View [Document Categories]() \(Click next to save categories\)
 7. **Step 3** Training
-   * 1. ![](../.gitbook/assets/35.png) Click “Upload Training Documents” in the Action Bar
+   * 1. ![](../assets/35.png) Click “Upload Training Documents” in the Action Bar
      2. Select the Document Category you want to upload documents to
      3. Upload Documents for each category you want to train
      4. Click Train Service once all documents have been uploaded
