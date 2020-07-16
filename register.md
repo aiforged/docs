@@ -1,10 +1,10 @@
 # Register
 
-![](assets/4.png)
+![](.gitbook/assets/4%20%281%29.png)
 
 * The Register page is used to Register a new AiForged account these accounts can later be linked up to your **External Login** Accounts.
 
-### Required details
+## Required details
 
 * Unique Username that hasn’t been registered before on AiForged
 * Unique Email address that hasn’t been registered before on AiForged
@@ -12,7 +12,7 @@
 * Phone Number
 * Password
 
-### Troubleshooting
+## Troubleshooting
 
 **If you can’t register an AiForged Account check the following**
 

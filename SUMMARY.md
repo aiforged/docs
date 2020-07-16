@@ -10,6 +10,7 @@
 
 ## Services
 
+* [Understanding Services](services/understanding-services.md)
 * [Attachments](services/attachments.md)
 * [ABBY Classification](services/abby-classification.md)
 * [AIForged Classification](services/aiforged-classification.md)

@@ -1,17 +1,17 @@
 # Amazon OCR
 
-![](../assets/42.png)
+![](../.gitbook/assets/42%20%281%29.png)
 
 The Amazon OCR service reads text from images for you to use.
 
-####  Supported Content Types
+## Supported Content Types
 
 * Images
 * Pdf
 
 If you need to use a different type of content, you can use the AiForged Pdf Converter.
 
-#### Possible use cases
+## Possible use cases
 
 * Extract data from receipts
 * Visualise your receipts data

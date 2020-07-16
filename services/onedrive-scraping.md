@@ -1,14 +1,14 @@
 # OneDrive Scraping
 
-![](../assets/47.png)
+![](../.gitbook/assets/47%20%281%29.png)
 
 Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
 
-#### Supported Clients
+## Supported Clients
 
 * OneDrive
 
-#### Possible use cases
+## Possible use cases
 
 * Extracting Documents from OneDrive
 * Find and extract specific kinds of Documents from Onedrive
