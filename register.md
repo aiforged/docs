@@ -1,6 +1,6 @@
 # Register
 
-![](.gitbook/assets/4.png)
+![](assets/4.png)
 
 * The Register page is used to Register a new AiForged account these accounts can later be linked up to your **External Login** Accounts.
 

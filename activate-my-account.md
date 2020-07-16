@@ -1,6 +1,6 @@
 # Activate my account
 
-![](.gitbook/assets/5.png)
+![](assets/5.png)
 
 * The Activate my Account page can be used to Activate an Account if for any reason the activation link can’t be used to activate an users account
 

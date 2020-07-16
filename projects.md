@@ -6,11 +6,11 @@ The projects page displays all your created projects and allows you to create a 
 
 ### How to create a project
 
-![](.gitbook/assets/9.png)
+![](assets/9.png)
 
 * Click on “create a project” on the bottom right of the screen.
 
-![](.gitbook/assets/10.png)
+![](assets/10.png)
 
 * Fill in the new Projects name make sure that they are unique since it could later affect your reports.
 * Click on “Create project” to Create a new Project.
@@ -19,7 +19,7 @@ The projects page displays all your created projects and allows you to create a 
 
 ### How to delete a project
 
-![](.gitbook/assets/11.png)
+![](assets/11.png)
 
 * Click on the junk Icon on the project to delete the project
 * After the delete button is clicked a prompt will ask you to accept
@@ -31,79 +31,79 @@ The projects page displays all your created projects and allows you to create a 
 
 #### Service Actions
 
-![](.gitbook/assets/12.png)
+![](assets/12.png)
 
 * Opens the Definition Box for the service
 
-![](.gitbook/assets/13.png)
+![](assets/13.png)
 
 * Opens the Training Box for the service
 
-![](.gitbook/assets/14.png)
+![](assets/14.png)
 
 * Opens the Services Inbox
 
-![](.gitbook/assets/15.png)
+![](assets/15.png)
 
 * Opens the Services Outbox
 
-![](.gitbook/assets/16.png)
+![](assets/16.png)
 
 * Allows you Continue your Training or Force Retraining of the Service
 
-![](.gitbook/assets/17.png)
+![](assets/17.png)
 
 * Opens the Service Wizard
 
-![](.gitbook/assets/18.png)
+![](assets/18.png)
 
 * Allows you to delete the Service
 
-![](.gitbook/assets/19.png)
+![](assets/19.png)
 
 * Allows you to Add a Service to this Service
 
-![](.gitbook/assets/20.png)
+![](assets/20.png)
 
 * Allows you to Add a Utility to this Service
 
-![](.gitbook/assets/21.png)
+![](assets/21.png)
 
 * Allows you to Add a Verification Service to this Service
 
-![](.gitbook/assets/22.png)
+![](assets/22.png)
 
 * Allows you to Initialise the Service execution
 
-![](.gitbook/assets/23.png)
+![](assets/23.png)
 
 * Allows you to Save the Service
 
-![](.gitbook/assets/24.png)
+![](assets/24.png)
 
 * Opens the Document Categories for the Project in which the Service is Contains
 
-![](.gitbook/assets/25.png)
+![](assets/25.png)
 
 * Open the Services keys page
 
-![](.gitbook/assets/26.png)
+![](assets/26.png)
 
 * Opens All the Definitions for the Service
 
-![](.gitbook/assets/27.png)
+![](assets/27.png)
 
 * Opens the Analytics page of the Service
 
-![](.gitbook/assets/28.png)
+![](assets/28.png)
 
 * Opens all the Events for the Service
 
-![](.gitbook/assets/29.png)
+![](assets/29.png)
 
 * Opens all the Audits for the Service
 
-![](.gitbook/assets/30.png)
+![](assets/30.png)
 
 * Opens the Share on Marketplace page
 

@@ -1,6 +1,6 @@
 # Resend activation Email
 
-![](.gitbook/assets/6.png)
+![](assets/6.png)
 
 * The Resend activation email page can be used in the case that you did not receive your activations code.
 
