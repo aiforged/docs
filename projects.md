@@ -6,7 +6,7 @@ The projects page displays all your created projects and allows you to create a 
 
 ### How to create a project
 
-![](assets/9.png)
+![](assets/Test.png)
 
 * Click on “create a project” on the bottom right of the screen.
 
