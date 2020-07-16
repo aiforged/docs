@@ -1,15 +1,15 @@
 # Activate my account
 
-![](assets/5.png)
+![](.gitbook/assets/5%20%281%29.png)
 
 * The Activate my Account page can be used to Activate an Account if for any reason the activation link can’t be used to activate an users account
 
-### Required details
+## Required details
 
 * The Unique Username/Email address that the user registered with
 * The Activation token that you received with your registration Email
 
-### Troubleshooting
+## Troubleshooting
 
 **If you can’t activate an AiForged Account check the following**
 

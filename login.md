@@ -1,16 +1,16 @@
 # Login
 
-### Local Login
+## Local Login
 
-![](assets/2%20%281%29.png)
+![](.gitbook/assets/2%20%281%29%20%281%29.png)
 
 * Local login can be used to Login to AiForged with the Account that you registered on AiForged with
 * Only **Username** and **Password** is required
 * Click on “Remember My Login” if you don’t wish to input your details everytime
 
-### External Logins
+## External Logins
 
-![](assets/3%20%281%29.png)
+![](.gitbook/assets/3%20%281%29%20%281%29.png)
 
 * External Logins can be used to use your Social Media Logins to Login too AiForged
 * External Logins can be linked to your AiForged account at a later stage
@@ -25,7 +25,7 @@
 * LinkedIn
 * Azure Active Directory
 
-### Troubleshooting
+## Troubleshooting
 
 **If you can’t login to AiForged check the following**
 

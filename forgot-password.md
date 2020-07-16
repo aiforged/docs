@@ -1,14 +1,14 @@
 # Forgot Password
 
-![](assets/7.png)
+![](.gitbook/assets/7%20%281%29.png)
 
 * The Forgot password page can be used in the case that you have forgotten your password and hope to retrieve it .
 
-### Required details
+## Required details
 
 * The Unique Username/Email address that the user registered with.
 
-### Troubleshooting
+## Troubleshooting
 
 **If you can’t activate an AiForged Account check the following**
 

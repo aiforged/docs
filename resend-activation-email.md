@@ -1,14 +1,14 @@
 # Resend activation Email
 
-![](assets/6.png)
+![](.gitbook/assets/6%20%281%29.png)
 
 * The Resend activation email page can be used in the case that you did not receive your activations code.
 
-### Required details
+## Required details
 
 * The Unique Username/Email address that the user registered with
 
-### Troubleshooting
+## Troubleshooting
 
 **If you can’t activate an AiForged Account check the following**
 
