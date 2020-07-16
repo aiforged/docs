@@ -1,6 +1,6 @@
 # Google OCR
 
-### Google OCR
+
 
 ![](../.gitbook/assets/43.png)
 

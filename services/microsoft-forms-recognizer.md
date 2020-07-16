@@ -1,7 +1,5 @@
 # Microsoft Forms Recognizer
 
-### Microsoft Forms Recognizer
-
 ![](../.gitbook/assets/37.png)
 
 Form Recognizer applies advanced machine learning to accurately extract text, key/value pairs, and tables from documents. With just a few samples to train with, Form Recognizer tailors its understanding to your documents. Turn forms into usable data at a fraction of the time and cost, so you can focus more time acting on the information rather than compiling it.

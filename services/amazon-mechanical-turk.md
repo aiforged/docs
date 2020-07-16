@@ -1,6 +1,6 @@
 # Amazon Mechanical Turk
 
-### Amazon Mechanical Turk
+
 
 ![](../.gitbook/assets/41.png)
 

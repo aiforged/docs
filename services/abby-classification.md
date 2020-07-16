@@ -1,7 +1,5 @@
 # ABBY Classification
 
-### ABBY Classification
-
 ![](../.gitbook/assets/32.png)
 
 The ABBY Classification service allows you to automatically categorize documents and sort them into predefined document categories. The advanced document classification leverages modern technologies such as machine learning and natural language processing. These technologies can detect even subtle differences among individual document categories and allow setting up flexible and scalable classification processes that can granularly distinguish among many document categories.

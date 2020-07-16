@@ -1,7 +1,5 @@
 # Microsoft Forms Layout
 
-### Microsoft Forms Layout
-
 ![](../.gitbook/assets/39.png)
 
 Extract text and layout information from a given document. The input document must be of one of the supported content types - 'application/pdf', 'image/jpeg', 'image/png' or 'image/tiff'. Alternatively, use 'application/json' type to specify the Url location of the document to be analysed.

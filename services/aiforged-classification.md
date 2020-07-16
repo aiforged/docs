@@ -1,7 +1,5 @@
 # AIForged Classification
 
-### AIForged Classification
-
 ![](../.gitbook/assets/34.png)
 
 The AIForged Classification service is a inhouse Classification service build to automatically categorize documents and sort them into predefined document categories. The AIForged Classification service allows setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
