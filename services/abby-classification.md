@@ -44,8 +44,9 @@ It is Recommended to only process a few documents at a time if is a new service 
 
 ## Settings
 
-| **ExecuteAfterProcess** | Execute this Utility after the Service Process Documents |
+| **Setting** | Description |
 | :--- | :--- |
+| **ExecuteAfterProcess** | Execute this Utility after the Service Process Documents |
 | **ExecuteBeforeProcess** | Execute this Utility before the Service Process Documents |
 | **Language** | The ABBYY language to use |
 | **PageExtension** | The file extension to use for the classified images or pages |
