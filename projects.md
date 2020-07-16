@@ -2,7 +2,7 @@
 
 ![](assets/projects.png)
 
-The projects page displays all your created projects and allows you to create a new project at any time. The Projects also displays internal services and you can access them by clicking or tapping on the service.
+The projects page displays all your created projects and allows you to create a new project at any time. The Projects also displays internal services and you can access them by clicking or tapping on the service. Test
 
 ### How to create a project
 
