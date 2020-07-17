@@ -7,6 +7,9 @@
 * [Resend activation Email](resend-activation-email.md)
 * [Forgot Password](forgot-password.md)
 * [Projects](projects.md)
+* [Payments](payments.md)
+* [Notifications](notifications.md)
+* [Settings](settings.md)
 
 ## Services
 
