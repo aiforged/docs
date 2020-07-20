@@ -7,8 +7,10 @@
 * [Resend activation Email](resend-activation-email.md)
 * [Forgot Password](forgot-password.md)
 * [Projects](projects.md)
+* [Transactions](transactions.md)
 * [Payments](payments.md)
 * [Notifications](notifications.md)
+* [User Profile](user-profile.md)
 * [Settings](settings.md)
 
 ## Services
@@ -26,6 +28,7 @@
 * [Google OCR](services/google-ocr.md)
 * [Microsoft OCR](services/microsoft-ocr.md)
 * [Teseract OCR](services/teseract-ocr.md)
+* [Vidado Handwriting](services/vidado-handwriting.md)
 * [Email Scraping](services/email-scraping.md)
 * [OneDrive Scraping](services/onedrive-scraping.md)
 * [Microsoft Speech to Text](services/microsoft-speech-to-text.md)

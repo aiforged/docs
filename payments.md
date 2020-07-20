@@ -1,6 +1,6 @@
 # Payments
 
-![](.gitbook/assets/image%20%2817%29.png)
+![](.gitbook/assets/image%20%2825%29.png)
 
 The payments page displays all the Payments you have made to AiForged
 
@@ -15,14 +15,14 @@ The payments page displays all the Payments you have made to AiForged
 
 You can filter Payments by date 
 
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 1. Set the From date
 2. Set the To date
 
 ## Sort the Payments grid
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 * You can Sort the documents page by clicking on any of the table headers
 * To do multiple column sorting use **CTRL + Left Mouse Click** on the columns

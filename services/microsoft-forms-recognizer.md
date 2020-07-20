@@ -2,9 +2,13 @@
 
 ![](../.gitbook/assets/37%20%281%29.png)
 
-Form Recognizer applies advanced machine learning to accurately extract text, key/value pairs, and tables from documents. With just a few samples to train with, Form Recognizer tailors its understanding to your documents. Turn forms into usable data at a fraction of the time and cost, so you can focus more time acting on the information rather than compiling it.
+Form Recognizer learns the structure of your forms to intelligently extract text and data. It ingests text from forms, applies machine learning technology to identify keys and tables, and then outputs structured data that includes the relationships within the original file. That way, you can extract information quickly, accurately, and tailored to your specific content, without heavy manual intervention or extensive data science expertise.
 
-* Form Recogniser supports printed and handwritten forms, PDFs and images.
+Form Recognizer extracts key value pairs and tables from documents and includes the following options:
+
+* **Custom** – Form Recognizer learns the structure of your forms \(invoices, Pos, industry specific records\) to intelligently extract text and data. It ingests text from forms, and then outputs structured data that includes the relationships within the original file. That way, you can extract information quickly, accurately, and tailored to your specific content, without heavy manual intervention or extensive data science expertise.
+* **Prebuilt** – Detects and extracts data from US receipts using optical character recognition \(OCR\). Our receipt model enables you to easily extract structured data from receipts such as merchant name, subtotal, tax, line items, transaction total and more.
+* **Layout** – Detects and extracts text and table structure \(row1, column1…row n column n\) from documents using optical character recognition \(OCR\).
 
 ## Setup and Train Service
 
