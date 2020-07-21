@@ -1,6 +1,6 @@
 # Transactions
 
-![](.gitbook/assets/image%20%285%29.png)
+![](/assets/image%20%285%29.png)
 
 The Transactions page displays all transactions made by each service
 

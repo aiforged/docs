@@ -38,17 +38,17 @@
 
 ## Theme
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](/assets/image%20%2813%29.png)
 
 ### Change Theme Mode
 
 To change the Theme Mode click on the radio button of the Theme you want to select
 
-![](.gitbook/assets/image%20%2838%29.png)
+![](/assets/image%20%2838%29.png)
 
 ### Turn Sound on and off
 
 Change the slider to turn the sound on and off
 
-![](.gitbook/assets/image%20%286%29.png)
+![](/assets/image%20%286%29.png)
 
