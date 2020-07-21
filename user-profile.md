@@ -1,6 +1,6 @@
 # User Profile
 
-![](.gitbook/assets/image%20%2826%29.png)
+![](.gitbook/assets/image%20%2853%29.png)
 
 ## User and Roles
 
@@ -15,7 +15,7 @@ The User page allows you to edit your user details
 
 ## Roles
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](.gitbook/assets/image%20%2824%29.png)
 
 ### Add or remove roll
 
@@ -26,13 +26,13 @@ The User page allows you to edit your user details
 
 ## Profile Picture
 
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%2815%29.png)
 
 To upload a new profile picture click on the Upload new picture button and select your profile picture
 
 ## Sign-in  Options
 
-![](.gitbook/assets/image%20%2824%29.png)
+![](.gitbook/assets/image%20%2851%29.png)
 
 ### Link External Login Provider
 
@@ -43,13 +43,13 @@ To upload a new profile picture click on the Upload new picture button and selec
 
 ### Unlink provider
 
-![](.gitbook/assets/image%20%2821%29.png)
+![](.gitbook/assets/image%20%2847%29.png)
 
 To unlink a provider click on the unlink button on the provider
 
 ## Teaching Tips
 
-![](.gitbook/assets/image%20%2820%29.png)
+![](.gitbook/assets/image%20%2842%29.png)
 
 * Teaching tips displays hints on pages, about how to use its functionality and features
 
@@ -59,7 +59,7 @@ To reset all teaching tips click on "Reset Teaching Tips"
 
 ## Turn teaching tips on and off
 
-![](.gitbook/assets/image%20%2815%29.png)
+![](.gitbook/assets/image%20%2833%29.png)
 
 Click on the slider to turn teaching tip on or off
 
