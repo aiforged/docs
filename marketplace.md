@@ -25,6 +25,6 @@ The marketplace allows you to add services to your projects that has been create
 ## Ratting and Review
 
 1. Open the service on the marketplace page
-2. Click on the "Preview Documents" in the app bar  ![](.gitbook/assets/image%20%2846%29.png) 
-3. The preview documents page will open
+2. Click on the "Rating and Review" in the app bar  ![](.gitbook/assets/image%20%2846%29.png) 
+3. The Rating and Review popup will open
 
