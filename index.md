@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" media="all" href="Styles/index.md"/>
+<link rel="stylesheet" type="text/css" media="all" href="Styles/Navigation.css"/>
 
 # Table of contents
 
