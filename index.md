@@ -35,6 +35,7 @@
 * [Move Documents](services/move-documents.md)
 * [Google Object Detection](services/google-object-detection.md)
 * [Microsoft Object Detection](services/microsoft-object-detection.md)
+* [testnav](services/testnav.md)
 
 ## Documents
 
