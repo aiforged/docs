@@ -4,10 +4,12 @@ ul{
 
 h1{
     text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 h2{
     text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 a{
