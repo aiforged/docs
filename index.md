@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" media="all" href="Styles/index.md"/>
+
 # Table of contents
 
 * [How to Install AIForged](install.md)
