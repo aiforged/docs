@@ -1,6 +1,6 @@
 # Attachments
 
-![](../.gitbook/assets/31%20%281%29.png)
+![](../assets/31.png)
 
 The **attachment** service allows you to extract attachments from Emails.
 

@@ -1,6 +1,6 @@
 # Amazon Mechanical Turk
 
-![](../.gitbook/assets/41%20%281%29.png)
+![](../assets/41.png)
 
 Amazon Mechanical Turk \(MTurk\) is a crowdsourcing marketplace that makes it easier for individuals and businesses to outsource their processes and jobs to a distributed workforce who can perform these tasks virtually.
 

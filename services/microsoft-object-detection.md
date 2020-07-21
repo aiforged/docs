@@ -1,6 +1,6 @@
 # Microsoft Object Detection
 
-![](../.gitbook/assets/56%20%281%29.png)
+![](../assets/56.png)
 
 Microsoft Object Detection detects object, faces and landmarks using Google Vision
 

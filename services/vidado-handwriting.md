@@ -1,6 +1,6 @@
 # Vidado Handwriting
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../assets/image%20%2856%29.png)
 
   
 

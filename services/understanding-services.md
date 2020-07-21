@@ -6,79 +6,79 @@
 
 #### Service Actions
 
-![](../.gitbook/assets/12%20%281%29.png)
+![](../assets/12.png)
 
 * Opens the Definition Box for the service
 
-![](../.gitbook/assets/13%20%281%29.png)
+![](../assets/13.png)
 
 * Opens the Training Box for the service
 
-![](../.gitbook/assets/14%20%281%29.png)
+![](../assets/14.png)
 
 * Opens the Services Inbox
 
-![](../.gitbook/assets/15%20%281%29.png)
+![](../assets/15.png)
 
 * Opens the Services Outbox
 
-![](../.gitbook/assets/16%20%281%29.png)
+![](../assets/16.png)
 
 * Allows you Continue your Training or Force Retraining of the Service
 
-![](../.gitbook/assets/17%20%281%29.png)
+![](../assets/17.png)
 
 * Opens the Service Wizard
 
-![](../.gitbook/assets/18%20%281%29.png)
+![](../assets/18.png)
 
 * Allows you to delete the Service
 
-![](../.gitbook/assets/19%20%281%29.png)
+![](../assets/19.png)
 
 * Allows you to Add a Service to this Service
 
-![](../.gitbook/assets/20%20%281%29.png)
+![](../assets/20.png)
 
 * Allows you to Add a Utility to this Service
 
-![](../.gitbook/assets/21%20%281%29.png)
+![](../assets/21.png)
 
 * Allows you to Add a Verification Service to this Service
 
-![](../.gitbook/assets/22%20%281%29.png)
+![](../assets/22.png)
 
 * Allows you to Initialise the Service execution
 
-![](../.gitbook/assets/23%20%281%29.png)
+![](../assets/23.png)
 
 * Allows you to Save the Service
 
-![](../.gitbook/assets/24%20%281%29.png)
+![](../assets/24.png)
 
 * Opens the Document Categories for the Project in which the Service is Contains
 
-![](../.gitbook/assets/25%20%281%29.png)
+![](../assets/25.png)
 
 * Open the Services keys page
 
-![](../.gitbook/assets/26%20%281%29.png)
+![](../assets/26.png)
 
 * Opens All the Definitions for the Service
 
-![](../.gitbook/assets/27%20%281%29.png)
+![](../assets/27.png)
 
 * Opens the Analytics page of the Service
 
-![](../.gitbook/assets/28%20%281%29.png)
+![](../assets/28.png)
 
 * Opens all the Events for the Service
 
-![](../.gitbook/assets/29%20%281%29.png)
+![](../assets/29.png)
 
 * Opens all the Audits for the Service
 
-![](../.gitbook/assets/30%20%281%29.png)
+![](../assets/30.png)
 
 * Opens the Share on Marketplace page
 
