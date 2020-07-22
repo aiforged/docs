@@ -1,11 +1,5 @@
 <link rel="stylesheet" type="text/css" media="all" href="Styles/Navigation.css"/>
 
-<div>
-
-# Table
-
-</div>
-
 # Table of contents
 
 * [How to Install AIForged](install.md)

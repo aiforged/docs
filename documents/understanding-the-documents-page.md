@@ -18,37 +18,37 @@
 
 ## Document Actions
 
-![](../.gitbook/assets/57.png)
+![](../assets/57.png)
 
 * Opens documents linked to this document
 
-![](../.gitbook/assets/58.png)
+![](../assets/58.png)
 
 * Opens documents on your operating system
 
-![](../.gitbook/assets/59.png)
+![](../assets/59.png)
 
 * Downloads the Document to your system
 
-![](../.gitbook/assets/60.png)
+![](../assets/60.png)
 
 * Opens the document hierarchy
 
-![](../.gitbook/assets/61%20%281%29.png)
+![](../assets/61.png)
 
 * Pens the documents structured results
 
-![](../.gitbook/assets/62%20%281%29.png)
+![](../assets/62.png)
 
 * Shows the documents results
 
-![](../.gitbook/assets/63%20%281%29.png)
+![](../assets/63.png)
 
 * Opens the document for verification
 
 ## Sort the Documents grid
 
-![](../.gitbook/assets/64%20%281%29.png)
+![](../assets/64.png)
 
 * You can Sort the documents page by clicking on any of the table headers
 * All Sorting of the documents happens **server side**
@@ -58,7 +58,7 @@
 
 The Bulk Category Update Action allows you to update all the selected Document categories
 
-![](../.gitbook/assets/65%20%281%29.png)
+![](../assets/65.png)
 
 1. To do a Bulk category Update click on “Bulk Category Update” in the app bar.
 2. A popup will appear asking what Document Status you would like to update.
@@ -71,7 +71,7 @@ The Bulk Category Update Action allows you to update all the selected Document c
 
 The Bulk Status Update Action allows you to update all the selected Document statuses
 
-![](../.gitbook/assets/66%20%281%29.png)
+![](../assets/66.png)
 
 1. To do a Bulk Status Update click on “Bulk Status Update” in the app bar.
 2. A popup will appear asking what Document Status you would like to update.
@@ -84,7 +84,7 @@ The Bulk Status Update Action allows you to update all the selected Document sta
 
 The Bulk Copy Action allows you to **copy** the documents to another project and service.
 
-![](../.gitbook/assets/67%20%281%29.png)
+![](../assets/67.png)
 
 1. To do a Bulk Copy click on “Bulk Copy” in the app bar.
 2. A popup will appear asking to select a destination project.
@@ -98,7 +98,7 @@ The Bulk Copy Action allows you to **copy** the documents to another project and
 
 The Bulk Move Action allows you to **move** the documents to another project and service.
 
-![](../.gitbook/assets/68%20%281%29.png)
+![](../assets/68.png)
 
 1. To do a Bulk Move click on “Bulk Move” in the app bar.
 2. A popup will appear asking to select a destination project.
@@ -112,20 +112,20 @@ The Bulk Move Action allows you to **move** the documents to another project and
 
 The Process Checked Action allows you to **process** selected documents.
 
-![](../.gitbook/assets/69%20%281%29.png)
+![](../assets/69.png)
 
 1. To **Process** a checked document, check all the document you would like to process.
 2. Click on the Process Checked click on the Process “Process Checked” Action in the app bar.
 3. A popup will appear to check if you want to process the documents, click yes.
 4. A Log Events popup will appear displaying the progress of **processing** the documents.
 
-![](../.gitbook/assets/70%20%281%29.png)
+![](../assets/70.png)
 
 ## Copy Checked
 
 The Process Checked Action allows you to **process** selected documents.
 
-![](../.gitbook/assets/71%20%281%29.png)
+![](../assets/71.png)
 
 1. To **Copy** a checked document, check all the document you would like to copy.
 2. Click on the Copy Checked click on the Process “Copy Checked” Action in the app bar.
@@ -140,7 +140,7 @@ The Process Checked Action allows you to **process** selected documents.
 
 The Delete Checked Action allows you to **delete** selected documents.
 
-![](../.gitbook/assets/72%20%281%29.png)
+![](../assets/72.png)
 
 1. To **Delete** a checked document, check all the document you would like to delete.
 2. Click the “Delete Checked” Action in the app bar.
@@ -150,7 +150,7 @@ The Delete Checked Action allows you to **delete** selected documents.
 
 The Checked Status Action allows you to change the selected documents statuses selected documents.
 
-![](../.gitbook/assets/73%20%281%29.png)
+![](../assets/73.png)
 
 1. To **Set the Status** of a checked document check all the document you would like to change the Status of.
 2. Click the “Set Checked Status” Action in the app bar.
@@ -161,7 +161,7 @@ The Checked Status Action allows you to change the selected documents statuses s
 
 The Update Checked Action allows update a checked document.
 
-![](../.gitbook/assets/74%20%281%29.png)
+![](../assets/74.png)
 
 1. To **Update** a checked documents check all the document you would like to Update
 2. Click the “Update Checked” Action in the app ba
@@ -170,10 +170,9 @@ The Update Checked Action allows update a checked document.
 
 The Upload Action allows you to upload a new document.
 
-![](../.gitbook/assets/75%20%281%29.png)
+![](../assets/75.png)
 
 1. Click the “Upload” Action in the app bar.
 2. In the popup Select the Status of the Document being uploaded
 3. After selecting the Status select the document category to be uploaded
 4. Select the document on your local machine to be uploaded and click “Open”
-
