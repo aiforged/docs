@@ -14,7 +14,7 @@
 
 ![verification Cost Analysis](../assets/verification-CostAnalysis.png)
 
-* The "Cost Analysis" Command takes you to the Analytics page [Todo]
+* The "Cost Analysis" Command takes you to the Analytics page [Here](Verification/document-analytics.md)
 
 ## Definition
 
@@ -38,13 +38,13 @@
 
 ![verification View Document](../assets/verification-ViewDocument.png)
 
-* The "View Document" Command takes you to the Cost Analysis page [Todo]
+* The "View Document" Command opens the document on your local machine
 
 ## Copy Link
 
 ![verification Copy Link](../assets/verification-CopyLink.png)
 
-* The "Copy Link" Command takes you to the Cost Analysis page [Todo]
+* The "Copy Link" Command coppies  a sharable link to the verification of th, you can share this verification with other AIForged users
 
 ## verification
 
