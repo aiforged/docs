@@ -8,7 +8,7 @@
 
 1.Click on any of the tags
 2.Click on the "Usage" command in the command bar
-3.This will open up the usage page you can view the usage page [Here](verification/document-analytics.md)
+3.This will open up the usage page you can view the usage page [Here](Verification/document-analytics.md)
 
 ## Cost Analysis
 
