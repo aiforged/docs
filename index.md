@@ -45,5 +45,5 @@
 * [Documents Outbox](documents/documents-outbox.md)
 * [Training box](documents/training-box.md)
 * [Document Categories](documents/document-categories.md)
-* [Document Analytics](documents/document-analytics.md)
-* [Document Cost Analysis](documents/document-cost-analysis.md)
+* [Document Analytics](documents/Verification/document-analytics.md)
+* [Document Cost Analysis](documents/Verification/document-cost-analysis.md)
