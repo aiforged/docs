@@ -32,4 +32,3 @@
 * Make sure that you Device is connected to the internet
 * If you are using AiForged on an internal network check with your administrators that the **Identity Server Url** and **Service Endpoint Url** is allowed through your network these can be found in the **Settings** of the application
 * If you have your own internal AiForged Services running add the Endpoints to the Services page
-

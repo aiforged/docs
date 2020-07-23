@@ -1,8 +1,10 @@
 # Register
 
-![](/assets/4%20%281%29.png)
+![](/assets/4.png)
 
-* The Register page is used to Register a new AiForged account these accounts can later be linked up to your **External Login** Accounts.
+* The Register page is used to Register a new AiForged account these accounts can later be linked up to your [External Login](login.md) Accounts.
+
+* If you already contain a Social Media or Azure AD account, you can use [External Login](login.md) and won't have to register
 
 ## Required details
 

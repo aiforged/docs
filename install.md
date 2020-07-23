@@ -40,11 +40,3 @@ Please ensure that your computer meets or exceeds the following system requireme
 | **Memory** | 300 MB |
 | **Video Memory** | 1 GB |
 | **Processor** | I7 or Ryzen 7 |
-
-
-### 
-
-### 
-
-#### 
-
