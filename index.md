@@ -12,6 +12,7 @@
 
 ## Services
 
+* [Attachments](services/understanding-services.md)
 * [Attachments](services/attachments.md)
 * [ABBY Classification](services/abby-classification.md)
 * [AIForged Classification](services/aiforged-classification.md)
@@ -35,7 +36,7 @@
 * [Move Documents](services/move-documents.md)
 * [Google Object Detection](services/google-object-detection.md)
 * [Microsoft Object Detection](services/microsoft-object-detection.md)
-* [testnav](services/testnav.md)
+* [Vidado HandWriting](services/vidado-handwriting.md)
 
 ## Documents
 
@@ -44,5 +45,5 @@
 * [Documents Outbox](documents/documents-outbox.md)
 * [Training box](documents/training-box.md)
 * [Document Categories](documents/document-categories.md)
-* [Untitled](documents/untitled.md)
-
+* [Document Analytics](documents/document-analytics.md)
+* [Document Cost Analysis](documents/document-cost-analysis.md)

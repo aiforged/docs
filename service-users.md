@@ -77,7 +77,7 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 1. Select a service in the grid
 2. Click the "Events" command in the app bar
-3. The Audit page should open
+3. The Audit page should open, [Click Here](services/subpages/audit.md) to view page
 
 ### Limits
 

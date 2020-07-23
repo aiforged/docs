@@ -16,11 +16,11 @@
 
 ![](../assets/14.png)
 
-* Opens the Services Inbox
+* Opens the Services Inbox. [Click Here](services/understanding-the-documents-page.md)
 
 ![](../assets/15.png)
 
-* Opens the Services Outbox
+* Opens the Services Outbox [Click Here](services/understanding-the-documents-page.md)
 
 ![](../assets/16.png)
 
@@ -28,7 +28,7 @@
 
 ![](../assets/17.png)
 
-* Opens the Service Wizard
+* Opens the Service Wizard [Click Here](services/understanding-services.md)
 
 ![](../assets/18.png)
 
@@ -36,7 +36,7 @@
 
 ![](../assets/19.png)
 
-* Allows you to Add a Service to this Service
+* Allows you to Add a Service to this Service [Click Here](services/understanding-services.md)
 
 ![](../assets/20.png)
 
@@ -56,7 +56,7 @@
 
 ![](../assets/24.png)
 
-* Opens the Document Categories for the Project in which the Service is Contains
+* Opens the Document Categories for the Project in which the Service is Contains [Click Here](documents/document-categories.md)
 
 ![](../assets/25.png)
 
@@ -72,11 +72,11 @@
 
 ![](../assets/28.png)
 
-* Opens all the Events for the Service
+* Opens all the Events for the Service [Click Here](services/subpages/events.md)
 
 ![](../assets/29.png)
 
-* Opens all the Audits for the Service
+* Opens all the Audits for the Service [Click Here](services/subpages/audit.md)
 
 ![](../assets/30.png)
 
