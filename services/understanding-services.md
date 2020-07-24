@@ -80,5 +80,5 @@
 
 ![](../assets/30.png)
 
-* Opens the Share on Marketplace page
+* Opens the Share on Marketplace page [Click Here](services/subpages/publish-marketplace.md)
 

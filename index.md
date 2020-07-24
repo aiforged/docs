@@ -9,6 +9,12 @@
 * [Resend activation Email](resend-activation-email.md)
 * [Forgot Password](forgot-password.md)
 * [Projects](projects.md)
+* [WorkQueue](WorkQueue.md)
+* [Payments](payments.md)
+* [Contacts](contacts.md)
+* [Service Users](service-users.md)
+* [Notifications](notifications.md)
+* [User Profile](user-profile.md)
 
 ## Services
 
