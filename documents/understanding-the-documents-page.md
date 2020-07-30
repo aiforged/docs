@@ -1,5 +1,27 @@
 # Understanding the Documents page
 
+## Types of documents
+
+you can identify 3 main categories: structured, semi-structured and unstructured. Each type of document comes with its own set of challenges.
+
+### Structured documents
+
+![](../assets/structured-document.png)
+
+Structured documents generally focus on collecting information in a precise format, guiding the person who is filling them with precise areas where each piece of data needs to be entered.
+
+### Semi-structured
+
+![](../assets/semi-structured.png)
+
+Semi-structured documents are documents that do not follow a strict format the way structured forms do and are not bound to specified data fields.  These don't have a fixed form but follow a common format.
+
+## un-structured
+
+![](../assets/un-structured.png)
+
+Unstructured documents are documents in which the information isn't organized according to a clear, structured model.
+
 ## Available Fields
 
 | Field Name | Description |
