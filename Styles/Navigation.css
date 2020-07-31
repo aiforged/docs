@@ -1,5 +1,5 @@
 ul{
-    border: 8px;
+    border: 8px, 4px, 0px, 0px;
     width: 100%;
     list-style: none;
     display: inline-block;
