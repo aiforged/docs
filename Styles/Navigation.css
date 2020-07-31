@@ -1,8 +1,10 @@
 ul{
+    border: 8px;
+    width: 100%;
     list-style: none;
     display: inline-block;
     border-style: inset;
-    background-color: gray;
+    background-color: azure;
 }
 
 h1{
