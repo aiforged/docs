@@ -17,4 +17,3 @@ The Transactions page displays all transactions made by each service
 | Credits Count | Displays your credit count for that project |
 | Debits | Displays all the Debits made |
 | Credits | Displays Received credits |
-
