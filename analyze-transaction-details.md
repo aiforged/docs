@@ -48,6 +48,6 @@ The Usage by date piechart displays the usage of all your services by date
 
 ## Actions
 
-![transactions ussage by service](/assets/transaction-details-actions-1.png)
+![transactions usage by service](/assets/transaction-details-actions-1.png)
 
-* Clicking on the "Export to Excel" in the Action bar will download an excel export file to  your local machine
+* Clicking on the "Export to Excel" in the Action bar will download an excel export file to your local machine
