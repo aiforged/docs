@@ -1,6 +1,6 @@
 # Forgot Password
 
-![](/assets/7.png)
+![](<.gitbook/assets/7 (2).png>)
 
 * The Forgot password page can be used in the case that you have forgotten your password and hope to retrieve it .
 
@@ -16,4 +16,3 @@
 * If you are using AiForged on an internal network check with your administrators that the **Identity Server Url** and **Service Endpoint Url** is allowed through your network these can be found in the **Settings** of the application.
 * If you have your own internal AiForged Services running add the Endpoints to the Services page.
 * Check if your forgot password.
-

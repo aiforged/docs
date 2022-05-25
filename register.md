@@ -1,10 +1,8 @@
-
 # Register
 
-![](/assets/4.png)
+![](<.gitbook/assets/4 (2).png>)
 
 * The Register page is used to Register a new AiForged account these accounts can later be linked up to your [External Login](login.md) Accounts.
-
 * If you already contain a Social Media or Azure AD account, you can use [External Login](login.md) and won't have to register
 
 ## Required details
@@ -24,4 +22,3 @@
 * If you have your own internal AiForged Services running add the Endpoints to the Services page.
 * Make sure both Passwords match and the “I’m not a Robot has been checked”.
 * Make sure that you have not registered with your provided Email Address on AiForged, in the case that you have previously registered on AiForged consider Resetting your Password.
-

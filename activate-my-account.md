@@ -1,6 +1,6 @@
 # Activate my account
 
-![](/assets/5.png)
+![](<.gitbook/assets/5 (2).png>)
 
 * The Activate my Account page can be used to Activate an Account if for any reason the activation link can’t be used to activate an users account
 
@@ -17,4 +17,3 @@
 * If you are using AiForged on an internal network check with your administrators that the **Identity Server Url** and **Service Endpoint Url** is allowed through your network these can be found in the **Settings** of the application.
 * If you have your own internal AiForged Services running add the Endpoints to the Services page.
 * Check if your registration email is not in you junk or spam folder
-

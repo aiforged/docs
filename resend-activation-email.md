@@ -1,6 +1,6 @@
 # Resend activation Email
 
-![](/assets/6%20%281%29.png)
+![](https://github.com/aiforged/docs/tree/3e8036571cdf88ca49ac4eaa3ad864685f4be21e/assets/6%20\(1\).png)
 
 * The Resend activation email page can be used in the case that you did not receive your activations code.
 
@@ -16,4 +16,3 @@
 * If you are using AiForged on an internal network check with your administrators that the **Identity Server Url** and **Service Endpoint Url** is allowed through your network these can be found in the **Settings** of the application.
 * If you have your own internal AiForged Services running add the Endpoints to the Services page.
 * Check if your registration email is not in you junk or spam folder.
-

@@ -1,84 +1,83 @@
 # Understanding Services
 
-#### What is a Service
+## What is a Service
 
-\(Todo\)
+(Todo)
 
-#### Service Actions
+## Service Actions
 
-![](../assets/12.png)
+![](<../.gitbook/assets/12 (2).png>)
 
 * Opens the Definition Box for the service
 
-![](../assets/13.png)
+![](<../.gitbook/assets/13 (2).png>)
 
 * Opens the Training Box for the service
 
-![](../assets/14.png)
+![](<../.gitbook/assets/14 (2).png>)
 
-* Opens the Services Inbox. [Click Here](services/understanding-the-documents-page.md)
+* Opens the Services Inbox. [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-the-documents-page.md)
 
-![](../assets/15.png)
+![](<../.gitbook/assets/15 (2).png>)
 
-* Opens the Services Outbox [Click Here](services/understanding-the-documents-page.md)
+* Opens the Services Outbox [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-the-documents-page.md)
 
-![](../assets/16.png)
+![](<../.gitbook/assets/16 (2).png>)
 
 * Allows you Continue your Training or Force Retraining of the Service
 
-![](../assets/17.png)
+![](<../.gitbook/assets/17 (2).png>)
 
-* Opens the Service Wizard [Click Here](services/understanding-services.md)
+* Opens the Service Wizard [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-services.md)
 
-![](../assets/18.png)
+![](<../.gitbook/assets/18 (2).png>)
 
 * Allows you to delete the Service
 
-![](../assets/19.png)
+![](<../.gitbook/assets/19 (2).png>)
 
-* Allows you to Add a Service to this Service [Click Here](services/understanding-services.md)
+* Allows you to Add a Service to this Service [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-services.md)
 
-![](../assets/20.png)
+![](<../.gitbook/assets/20 (2).png>)
 
 * Allows you to Add a Utility to this Service
 
-![](../assets/21.png)
+![](<../.gitbook/assets/21 (2).png>)
 
 * Allows you to Add a Verification Service to this Service
 
-![](../assets/22.png)
+![](<../.gitbook/assets/22 (2).png>)
 
 * Allows you to Initialise the Service execution
 
-![](../assets/23.png)
+![](<../.gitbook/assets/23 (2).png>)
 
 * Allows you to Save the Service
 
-![](../assets/24.png)
+![](<../.gitbook/assets/24 (2).png>)
 
-* Opens the Document Categories for the Project in which the Service is Contains [Click Here](documents/document-categories.md)
+* Opens the Document Categories for the Project in which the Service is Contains [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/documents/document-categories.md)
 
-![](../assets/25.png)
+![](<../.gitbook/assets/25 (2).png>)
 
 * Open the Services keys page
 
-![](../assets/26.png)
+![](<../.gitbook/assets/26 (2).png>)
 
 * Opens All the Definitions for the Service
 
-![](../assets/27.png)
+![](<../.gitbook/assets/27 (2).png>)
 
 * Opens the Analytics page of the Service
 
-![](../assets/28.png)
+![](<../.gitbook/assets/28 (2).png>)
 
-* Opens all the Events for the Service [Click Here](services/subpages/events.md)
+* Opens all the Events for the Service [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/subpages/events.md)
 
-![](../assets/29.png)
+![](<../.gitbook/assets/29 (2).png>)
 
-* Opens all the Audits for the Service [Click Here](services/subpages/audit.md)
+* Opens all the Audits for the Service [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/subpages/audit.md)
 
-![](../assets/30.png)
+![](<../.gitbook/assets/30 (2).png>)
 
-* Opens the Share on Marketplace page [Click Here](services/subpages/publish-marketplace.md)
-
+* Opens the Share on Marketplace page [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/subpages/publish-marketplace.md)
