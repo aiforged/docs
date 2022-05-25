@@ -69,6 +69,8 @@
   * [AIForged Digitizer](services/utilities/aiforged-digitizer.md)
   * [AIForged Image Splitter](services/utilities/aiforged-image-splitter.md)
   * [AIForged Pdf Converter](services/utilities/aiforged-pdf-converter.md)
+* [Custom Service Code](services/custom-service-code.md)
+* [Custom Workflow Code](services/custom-workflow-code.md)
 * [Human in the Loop](services/human-in-the-loop.md)
 
 ## Documents
