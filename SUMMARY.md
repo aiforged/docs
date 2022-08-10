@@ -108,3 +108,13 @@
 ## Marketplace
 
 * [Share your custom service](marketplace-1/share-your-custom-service.md)
+
+## Power Automate
+
+* [Intro](power-automate/intro.md)
+
+## SDK
+
+* [.Net](sdk/.net.md)
+* [Typescript](sdk/typescript.md)
+* [Python](sdk/python.md)

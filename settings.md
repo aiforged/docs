@@ -2,7 +2,7 @@
 
 ## Connectivity
 
-![](<.gitbook/assets/image (7).png>)
+![](<.gitbook/assets/image (7) (1).png>)
 
 ### Identity Server URL
 
@@ -14,7 +14,7 @@
 
 #### How to remove an Identity Server URL
 
-1. Select you identity server URL in the drop down ![](<.gitbook/assets/image (3).png>)&#x20;
+1. Select you identity server URL in the drop down ![](<.gitbook/assets/image (3) (2).png>)&#x20;
 2. Click on the - Icon ![](<.gitbook/assets/image (5).png>)&#x20;
 3. A prompt will appear to ask if you are sure you want to delete this URL
 4. Click "Ok"
