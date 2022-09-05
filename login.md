@@ -2,7 +2,7 @@
 
 ## Local Login
 
-![](<.gitbook/assets/2 (2).png>)
+![](<.gitbook/assets/2 (1) (1) (3).png>)
 
 * Local login can be used to Login to AiForged with the Account that you registered on AiForged with
 * Only **Username** and **Password** is required
@@ -10,7 +10,7 @@
 
 ## External Logins
 
-![](<.gitbook/assets/3 (2).png>)
+![](<.gitbook/assets/3 (1) (1) (1).png>)
 
 * External Logins can be used to use your Social Media Logins to Login too AiForged
 * External Logins can be linked to your AiForged account at a later stage

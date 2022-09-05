@@ -1,6 +1,6 @@
 # Forgot Password
 
-![](<.gitbook/assets/7 (2).png>)
+![](<.gitbook/assets/7 (1) (2).png>)
 
 * The Forgot password page can be used in the case that you have forgotten your password and hope to retrieve it .
 

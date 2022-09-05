@@ -1,6 +1,6 @@
 # Google Object Detection
 
-![](<../../.gitbook/assets/55 (2).png>)
+![](<../../.gitbook/assets/55 (1).png>)
 
 Google object detection detects object, faces and landmarks using Google Vision
 
