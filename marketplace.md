@@ -1,12 +1,12 @@
 # Marketplace
 
-![](<.gitbook/assets/image (51) (1).png>)
+![](<.gitbook/assets/image (55) (1).png>)
 
 The marketplace allows you to add services to your projects that has been created by other users
 
 ## How to add a service
 
-![](<.gitbook/assets/image (18) (1) (1).png>)
+![](<.gitbook/assets/image (18) (1).png>)
 
 1. Click on the service you want to add
 
@@ -19,11 +19,11 @@ The marketplace allows you to add services to your projects that has been create
 ## Preview documents
 
 1. Open the service on the marketplace page
-2. Click on the "Preview Documents" in the app bar ![](<.gitbook/assets/image (54) (2).png>)&#x20;
+2. Click on the "Preview Documents" in the app bar ![](<.gitbook/assets/image (57).png>)
 3. The preview page will open
 
 ## Ratting and Review
 
 1. Open the service on the marketplace page
-2. Click on the "Rating and Review" in the app bar  ![](<.gitbook/assets/image (46) (1) (1).png>)&#x20;
+2. Click on the "Rating and Review" in the app bar ![](<.gitbook/assets/image (46) (1).png>)
 3. The Rating and Review popup will open

@@ -1,6 +1,6 @@
 # OneDrive Scraping
 
-![](<../../.gitbook/assets/47 (1) (2).png>)
+![](<../../.gitbook/assets/47 (2).png>)
 
 Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
 

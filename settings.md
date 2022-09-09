@@ -8,14 +8,14 @@
 
 #### How to add an Identity Server URL
 
-1. Click on the + Icon ![](<.gitbook/assets/image (1).png>)&#x20;
+1. Click on the + Icon ![](<.gitbook/assets/image (1).png>)
 2. In the popup fill in the new value
 3. Click "Ok"
 
 #### How to remove an Identity Server URL
 
-1. Select you identity server URL in the drop down ![](<.gitbook/assets/image (2).png>)&#x20;
-2. Click on the - Icon ![](<.gitbook/assets/image (4) (1) (1).png>)&#x20;
+1. Select you identity server URL in the drop down ![](<.gitbook/assets/image (3) (2).png>)
+2. Click on the - Icon ![](<.gitbook/assets/image (5).png>)
 3. A prompt will appear to ask if you are sure you want to delete this URL
 4. Click "Ok"
 
@@ -23,14 +23,14 @@
 
 #### How to add an Service Endpoint URL
 
-1. Click on the + Icon ![](<.gitbook/assets/image (1).png>)&#x20;
+1. Click on the + Icon ![](<.gitbook/assets/image (1).png>)
 2. In the popup fill in the new value
 3. Click "Ok"
 
 #### How to remove an Service Endpoint URL
 
-1. Select you identity server URL in the drop down  ![](<.gitbook/assets/image (6).png>)&#x20;
-2. Click on the - Icon ![](<.gitbook/assets/image (4) (1) (1).png>)&#x20;
+1. Select you identity server URL in the drop down ![](<.gitbook/assets/image (6).png>)
+2. Click on the - Icon ![](<.gitbook/assets/image (5).png>)
 3. A prompt will appear to ask if you are sure you want to delete this URL
 4. Click "Ok"
 
@@ -42,10 +42,10 @@
 
 To change the Theme Mode click on the radio button of the Theme you want to select
 
-![](<.gitbook/assets/image (38) (1) (1).png>)
+![](<.gitbook/assets/image (38) (1).png>)
 
 ### Turn Sound on and off
 
 Change the slider to turn the sound on and off
 
-![](<.gitbook/assets/image (10) (1) (1).png>)
+![](<.gitbook/assets/image (6) (1).png>)

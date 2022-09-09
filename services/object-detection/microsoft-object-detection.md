@@ -1,6 +1,6 @@
 # Microsoft Object Detection
 
-![](<../../.gitbook/assets/56 (1) (2).png>)
+![](<../../.gitbook/assets/56 (2).png>)
 
 Microsoft Object Detection detects object, faces and landmarks using Google Vision
 

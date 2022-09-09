@@ -69,11 +69,8 @@
   * [AIForged Digitizer](services/utilities/aiforged-digitizer.md)
   * [AIForged Image Splitter](services/utilities/aiforged-image-splitter.md)
   * [AIForged Pdf Converter](services/utilities/aiforged-pdf-converter.md)
-* [Custom Service Code](services/custom-service-code/README.md)
-  * [Example: Set pdf document passwords](services/custom-service-code/example-set-pdf-document-passwords.md)
-  * [Example: Copy/Move documents](services/custom-service-code/example-copy-move-documents.md)
-* [Custom Workflow Code](services/custom-workflow-code/README.md)
-  * [Example: Create Human in the loop](services/custom-workflow-code/example-create-human-in-the-loop.md)
+* [Custom Service Code](services/custom-service-code.md)
+* [Custom Workflow Code](services/custom-workflow-code.md)
 * [Human in the Loop](services/human-in-the-loop.md)
 
 ## Documents
@@ -89,11 +86,10 @@
 * [Generic](rules-engine/generic/README.md)
   * [Dictionary](rules-engine/generic/dictionary.md)
   * [Mapping](rules-engine/generic/mapping.md)
-  * [Custom Script](rules-engine/generic/custom-script/README.md)
-    * [Example: Validate Social Security Number](rules-engine/generic/custom-script/example-validate-social-security-number.md)
+  * [Custom Script](rules-engine/generic/custom-script.md)
+  * [Workflow Script](rules-engine/generic/workflow-script.md)
   * [Web API](rules-engine/generic/web-api.md)
   * [Database](rules-engine/generic/database.md)
-  * [Workflow Script](rules-engine/generic/workflow-script.md)
 * [String](rules-engine/string/README.md)
   * [Spell Checking](rules-engine/string/spell-checking.md)
   * [Sentiment Analysis](rules-engine/string/sentiment-analysis.md)
@@ -103,17 +99,6 @@
 * [Email](rules-engine/email.md)
 * [Maps](rules-engine/maps.md)
 * [GPS](rules-engine/gps.md)
-
-## Custom Code
-
-* [Base Module](custom-code/base-module.md)
-
-## Custom DataSets
-
-* [What is it?](custom-datasets/what-is-it.md)
-* [Create datasets](custom-datasets/create-datasets.md)
-* [Use in Custom Code](custom-datasets/use-in-custom-code.md)
-* [Use via SDK](custom-datasets/use-via-sdk.md)
 
 ## Human in the Loop
 
@@ -133,3 +118,12 @@
 * [.Net](sdk/.net.md)
 * [Typescript](sdk/typescript.md)
 * [Python](sdk/python.md)
+
+## Practical Examples
+
+* [Social Security Number Card](practical-examples/social-security-number-card.md)
+* [Bank Statement](practical-examples/bank-statement.md)
+* [Credit Application Form](practical-examples/credit-application-form.md)
+* [Credit Application Process](practical-examples/credit-application-process/README.md)
+  * [Step 4. Custom Code: Approving or rejecting the application](practical-examples/credit-application-process/step-4.-custom-code-approving-or-rejecting-the-application.md)
+* [Utility Invoice](practical-examples/utility-invoice.md)

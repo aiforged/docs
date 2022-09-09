@@ -41,7 +41,7 @@ Once your project is created you can add an intelligent service
 
 First you need to create a service and follow the wizard steps to train for processing and classification.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 Once you select the type of intelligent service, the service wizard will open to configure and train the service.
 
@@ -49,7 +49,7 @@ Once you select the type of intelligent service, the service wizard will open to
 
 This screen show the layout of a number of services combined into a project
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 #### Classify documents
 
