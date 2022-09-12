@@ -35,7 +35,7 @@ First you need to create a project container for billing purposes.
 
 Once your project is created you can add an intelligent service
 
-![](<../.gitbook/assets/image (28).png>)
+![](<../.gitbook/assets/image (28) (1).png>)
 
 #### Create and train an intelligent services
 
@@ -45,7 +45,7 @@ First you need to create a service and follow the wizard steps to train for proc
 
 Once you select the type of intelligent service, the service wizard will open to configure and train the service.
 
-![](<../.gitbook/assets/image (45).png>)
+![](<../.gitbook/assets/image (45) (2).png>)
 
 This screen show the layout of a number of services combined into a project
 
@@ -59,13 +59,13 @@ You can classify documents based on raster images and text.
 
 A state of the art verification and rules engine will improve the accuracy of structured data extracted from documents.
 
-![](<../.gitbook/assets/image (39).png>)
+![](<../.gitbook/assets/image (39) (1).png>)
 
 #### Workflow and Human In The Loop
 
 Assign tasks to robots and humans to improve the quality and accuracy results.
 
-![](<../.gitbook/assets/image (29).png>)
+![](<../.gitbook/assets/image (29) (1).png>)
 
 To improve the accuracy of your extract and classifications, AIForged will create workflow and bring humans into the verification process.
 
