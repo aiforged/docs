@@ -10,7 +10,7 @@ The purpose of this process is to extract various fields on the form, including 
 
 1. Create a new or select an existing **Project**.
 2. Create a new **Service**.
-3. Select **MS Forms Recognizer** from the __ **Extract & Verify** group.![](<../.gitbook/assets/image (41).png>)
+3. Select **MS Forms Recognizer** from the __ **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2).png>)
 4.  The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
@@ -24,7 +24,7 @@ The purpose of this process is to extract various fields on the form, including 
 
     <figure><img src="../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 8. Click on **Next: Step 3** **- Layout Analysis** (or click on **Step 3** Wizard Step).
@@ -33,13 +33,13 @@ The purpose of this process is to extract various fields on the form, including 
     <figure><img src="../.gitbook/assets/image (43) (2).png" alt=""><figcaption></figcaption></figure>
 10. Select the **Category** of the training documents.
 
-    <figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (50) (2).png" alt=""><figcaption></figcaption></figure>
 11. Once the files are loaded, note that they are in the **Received** state.
 
     <figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 12. Select the documents you want to include in training the service (a minimum of 5 is required for MS Forms Recognizer), and select **Analyze Documents**.
 
-    <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (14) (3).png" alt=""><figcaption></figcaption></figure>
 13. Select the desired **Execution Parameters** for analyzing the documents. Normally, the default values will suffice. Click **Process**.
 
     <figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
@@ -48,13 +48,13 @@ The purpose of this process is to extract various fields on the form, including 
     <figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 15. After the documents are analyzed, the layout of the document is available in a structured format. These documents are demarcated by the **Analyzed** status. By using **Custom Labelling**, the service can be trained to detect values relative to the document layout. Click **Next: Step 4 - Custom Labeling** (or click on **Step 4** Wizard Step).
 
-    <figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (49) (2).png" alt=""><figcaption></figcaption></figure>
 16. The **Document Designer** is presented in step 4. A preview of the document is shown with the overlayed analyzed layout data.
 
     <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 17. Details and metadata of the detected layout **Parameters** can be viewed by clicking on the bounding box of the text.
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 18. In the case of Social Security cards, we are interested in extracting the **SSN**, the **Full Name** and the **Date of Issue** fields. To start labeling, click on the preview of the document in the **Document Designer**, and drag the region where a field can be found.
 
     <figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
@@ -72,3 +72,4 @@ The purpose of this process is to extract various fields on the form, including 
 
     <figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 24. At this stage, the service is trained, and documents can be loaded into the [**Inbox**](../documents/documents-inbox.md) of the service and can be processed.
+25. The OCR results can be viewed in the [**Outbox**](../documents/documents-outbox.md) **** of the service.

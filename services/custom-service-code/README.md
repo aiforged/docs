@@ -1,29 +1,40 @@
 # Custom Service Code
 
+**Custom Service Code** is user-written code that can be added to a service to be executed after data has been extracted.
+
+&#x20;To add **Custom Service Code** to a service:
+
+1.  Click on a service box to open the **Manage Service** view.
+
+    <figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+2.  On the **Manage Service** view, click on Add **Utility**.
+
+    <figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+3. Scroll down to the **Utilities** section, and select **Custom Code**.
+4.
+
+    <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 
-#### Global variables in custom service code
+5.  The **Custom Code** service box will appear within the parent service box.
 
-```csharp
-    TModule module { get; set; }
-    IProject project { get; set; }
-    IParameterDef stpd { get; set; }
-    int stl { get; set; }
-    BaseOption rule { get; set; }
-    ILogger logger { get; set; }
-    
-    List<IDocument> docs { get; set; }
-```
+    <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+6.  To start writing **Custom Code,** click on the Scripting button.
 
-#### The Custom Service module is as follow.  It derives from BaseModule
+    <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+7.  The code editor view will appear. The code can be written in the **Code** tab.&#x20;
 
-```csharp
-public interface IBaseServiceModule : IBaseModule
-{
-    List<IDocument> Docs { get; }
-    IParameterDef Def { get; }
-    IExecutionParameter pep { get; }
-}
-```
+    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+8.  The **code language** can be selected from the dropdown box.&#x20;
 
-For more see the information on the [BaseModule](../../custom-code/base-module.md)
+    <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+9.  The imports required to write the code, can be added from the **Imports** tab.
+
+    <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+10. To compile the code, click on **Save**.
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+11. **Compilation Results** are shown at the bottom of the **Code Editor**.
+
+    <figure><img src="../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+12. The code will execute after the batch of documents have been processed

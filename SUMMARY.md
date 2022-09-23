@@ -69,7 +69,9 @@
   * [AIForged Digitizer](services/utilities/aiforged-digitizer.md)
   * [AIForged Image Splitter](services/utilities/aiforged-image-splitter.md)
   * [AIForged Pdf Converter](services/utilities/aiforged-pdf-converter.md)
-* [Custom Service Code](services/custom-service-code.md)
+* [Custom Service Code](services/custom-service-code/README.md)
+  * [IBaseModule Interface Data Types](services/custom-service-code/ibasemodule-interface-data-types.md)
+  * [IBaseModule Methods](services/custom-service-code/ibasemodule-methods.md)
 * [Custom Workflow Code](services/custom-workflow-code.md)
 * [Human in the Loop](services/human-in-the-loop.md)
 
@@ -124,6 +126,5 @@
 * [Social Security Number Card](practical-examples/social-security-number-card.md)
 * [Bank Statement](practical-examples/bank-statement.md)
 * [Credit Application Form](practical-examples/credit-application-form.md)
-* [Credit Application Process](practical-examples/credit-application-process/README.md)
-  * [Step 4. Custom Code: Approving or rejecting the application](practical-examples/credit-application-process/step-4.-custom-code-approving-or-rejecting-the-application.md)
+* [Credit Application Process: Accept or Reject the Application](practical-examples/credit-application-process-accept-or-reject-the-application.md)
 * [Utility Invoice](practical-examples/utility-invoice.md)
