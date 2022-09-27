@@ -25,7 +25,7 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 3.  The code editor view will appear. The code can be written in the **Code** tab.
 
-    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 4.  The **code language** can be selected from the dropdown box.
 
     <figure><img src="../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
@@ -34,7 +34,7 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 6.  To compile the code, click on **Save**.
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 7.  **Compilation Results** are shown at the bottom of the **Code Editor**.
 
     <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>

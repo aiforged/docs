@@ -1,6 +1,6 @@
 # Forgot Password
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * The **Forgot Password** page can be used in the case that you have forgotten your password and hope to retrieve it.
 

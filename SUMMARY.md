@@ -132,4 +132,6 @@
 ## UiPath Activities
 
 * [Introduction](uipath-activities/introduction.md)
-* [Page 1](uipath-activities/page-1.md)
+* [Balance](uipath-activities/balance/README.md)
+  * [Get Balance](uipath-activities/balance/get-balance.md)
+  * [Get Payments](uipath-activities/balance/get-payments.md)
