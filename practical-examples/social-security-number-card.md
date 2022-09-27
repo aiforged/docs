@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Social Security Number Card
 parent: Practical Examples
 nav_order: 3
@@ -9,7 +8,7 @@ nav_order: 3
 
 ## How to extract data from a Social Security card
 
-This is an example of a **Social Security** card.&#x20;
+This is an example of a **Social Security** card.
 
 <figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -17,7 +16,7 @@ The purpose of this process is to extract the **Social Security number**, the **
 
 1. Create a new or choose an existing **Project**.
 2. Create a new **Service**.
-3. Select **MS Forms Recognizer** from the __ **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2).png>)
+3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2).png>)
 4.  The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>

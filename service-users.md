@@ -1,6 +1,6 @@
 # Service users
 
-![](<.gitbook/assets/image (20) (1).png>)
+![](<assets/image (20).png>)
 
 The Service users page displays all your projects, marketplace and shared user. You can manage the users from this page as well
 
@@ -8,22 +8,22 @@ The Service users page displays all your projects, marketplace and shared user. 
 
 ### Unlink selected user
 
-![](<.gitbook/assets/image (30) (1).png>)
+![](<assets/image (30).png>)
 
 1. Select a shared or marketplace user in the grid
 2. Click on the "Unlink Selected User" action in the action bar
 
 ### Export to excel
 
-![](<.gitbook/assets/image (31) (1).png>)
+![](<assets/image (31).png>)
 
 Click on the "Export to Excel" command in the command bar to download the export
 
 ### View Marketplace
 
-![](<.gitbook/assets/image (19) (1).png>)
+![](<assets/image (19).png>)
 
-![](<.gitbook/assets/image (7) (1) (1).png>)
+![](<assets/image (7).png>)
 
 1. Select a Service in a grid
 2. Click on the "View marketplace" action in the action bar
@@ -31,9 +31,9 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Manage marketplace
 
-![](<.gitbook/assets/image (54) (1).png>)
+![](<assets/image (54).png>)
 
-![](<.gitbook/assets/image (40) (1).png>)
+![](<assets/image (40).png>)
 
 1. Select a service that has been shared, check for the shared Icon
 2. Click the "Manage marketplace" command in the app bar
@@ -41,9 +41,9 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Manage users
 
-![](<.gitbook/assets/image (14) (1).png>)
+![](<assets/image (10).png>)
 
-![](<.gitbook/assets/image (44) (1).png>)
+![](<assets/image (44).png>)
 
 1. Select a service that has been shared, check for the shared Icon
 2. Click the "Manage users" command in the app bar
@@ -51,9 +51,9 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Manage service
 
-![](<.gitbook/assets/image (1) (1).png>)
+![](<assets/image (1).png>)
 
-![](<.gitbook/assets/image (43) (1).png>)
+![](<assets/image (43).png>)
 
 1. Select a service in the grid
 2. Click the "Manage service" command in the app bar
@@ -61,9 +61,9 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Audit
 
-![](<.gitbook/assets/image (29) (1) (1).png>)
+![](<assets/image (29).png>)
 
-![](<.gitbook/assets/image (8) (1).png>)
+![](<assets/image (8).png>)
 
 1. Select a service in the grid
 2. Click the "Audit" command in the app bar
@@ -71,9 +71,9 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Events
 
-![](<.gitbook/assets/image (48) (1).png>)
+![](<assets/image (48).png>)
 
-![](<.gitbook/assets/image (3) (1).png>)
+![](<assets/image (3).png>)
 
 1. Select a service in the grid
 2. Click the "Events" command in the app bar
@@ -81,9 +81,9 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Limits
 
-![](<.gitbook/assets/image (27) (1).png>)
+![](<assets/image (27).png>)
 
-![](<.gitbook/assets/image (23) (1) (1).png>)
+![](<assets/image (23).png>)
 
 1. Select a shared or marketplace user in the grid
 2. Click the "Limits" command in the app bar

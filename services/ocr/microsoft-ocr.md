@@ -1,6 +1,6 @@
 # Microsoft OCR
 
-![](<../../.gitbook/assets/44 (2).png>)
+![](../../assets/44.png)
 
 The Microsoft OCR service reads text from images for you to use.
 

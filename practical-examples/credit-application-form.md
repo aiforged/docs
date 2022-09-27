@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Credit Application Form
 parent: Practical Examples
 nav_order: 2
@@ -17,7 +16,7 @@ The purpose of this process is to extract various fields on the form, including 
 
 1. Create a new or select an existing **Project**.
 2. Create a new **Service**.
-3. Select **MS Forms Recognizer** from the __ **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2).png>)
+3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2).png>)
 4.  The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
@@ -79,4 +78,4 @@ The purpose of this process is to extract various fields on the form, including 
 
     <figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 24. At this stage, the service is trained, and documents can be loaded into the [**Inbox**](../documents/documents-inbox.md) of the service and can be processed.
-25. The OCR results can be viewed in the [**Outbox**](../documents/documents-outbox.md) **** of the service.
+25. The OCR results can be viewed in the [**Outbox**](../documents/documents-outbox.md) \*\*\*\* of the service.
