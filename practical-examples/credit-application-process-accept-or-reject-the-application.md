@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Credit Application Process - Accept or Reject the Application
 parent: Practical Examples
 nav_order: 5
@@ -13,9 +12,9 @@ This example will walk through the process of **Credit Application.** This proce
 
 This example process will include the following steps:
 
-1. Extracting data from a [**Credit Application Form**](https://app.gitbook.com/s/wGU031tORUeUkwcAHz0u/\~/changes/nbTVMuwVbF6EHEm97F34/practical-examples/step-3.-credit-application-form).
-2. Extracting data from a corresponding [**Social Security card**](https://app.gitbook.com/s/wGU031tORUeUkwcAHz0u/\~/changes/nbTVMuwVbF6EHEm97F34/practical-examples/social-security-number-card).
-3. Extracting data from a corresponding [**Bank Statement**](https://app.gitbook.com/s/wGU031tORUeUkwcAHz0u/\~/changes/nbTVMuwVbF6EHEm97F34/practical-examples/bank-statement).
+1. Extracting data from a [**Credit Application Form**](credit-application-form.md).
+2. Extracting data from a corresponding [**Social Security card**](social-security-number-card.md).
+3. Extracting data from a corresponding [**Bank Statement**](bank-statement.md).
 4. Comparing results from step 1 with the results of step 2 and step 3, and ultimately [**approving or rejecting the application**](credit-application-process-accept-or-reject-the-application.md#how-to-write-custom-code-to-compare-values-from-the-different-services.).
 
 ## How to write Custom Service Code to compare values from the different services.
@@ -24,25 +23,25 @@ At this stage, all the data has been extracted from all the relevant documentati
 
 If the Social Security numbers don't match, the application will be rejected. Similarly, if the salaries don't match within a threshold of 20 %, the application will be **rejected**. Otherwise, if both fields match the application will be **approved**.
 
-In order to write custom code that will execute after document data has been extracted, a **Custom Service Code** utility must be added to the service. Please see [**Custom Service Code**](../services/custom-service-code/) to add this utility and a overview of object data types and method prototypes.&#x20;
+In order to write custom code that will execute after document data has been extracted, a **Custom Service Code** utility must be added to the service. Please see [**Custom Service Code**](../services/custom-service-code/) to add this utility and an overview of object data types and method prototypes.
 
 ## Code sample walkthrough (C#)
 
 This section will discuss in detail the code that is required to implement the **rejection logic of the Credit Application** process, as explained in the [previous section](credit-application-process-accept-or-reject-the-application.md#how-to-write-custom-workflow-code-to-compare-values-from-the-different-services.).
 
-1.  Check the number of docs linked to the service, skip **Custom Service Code** execution if no documents exist.\
-
+1.  Check the number of docs linked to the service and skip **Custom Service Code** execution if no documents exist.
 
     ```csharp
     if (docs == null) return new AIForged.Services.ProcessResult(docs);
     ```
+2.  Add some logging to indicate to the user that the processing has started by using **logger.LogInformation.**
 
+    ***
 
-2.  Add some logging to indicate to the user that the processing has started by using **logger.LogInformation.**\
-    ****
-
-    <pre class="language-csharp"><code class="lang-csharp"><strong>logger.LogInformation("{stpd} Start", stpd.Name);</strong></code></pre>
-3.  Get the **Parameter Definitions** of the specific fields of interest specified on the [**Credit Application Form**](credit-application-form.md), and compare the extracted values with what provided by the supporting docs, [**Bank Statements**](bank-statement.md) and [**Social Security Card**](social-security-number-card.md). is In this sample, it is required to iterate through the **transaction items** extracted from the **Bank Statement** service. To this end, the **Parameter Definitions** for the **Description** and **Amount** columns in the **Transactions Table** of the **Bank Statements** service. The **Parameter Definition** IDs of these columns can be used to retrieve the **Parameter Definition** objects by calling **module.FindParameters**.\
+    ```csharp
+    logger.LogInformation("{stpd} Start", stpd.Name);
+    ```
+3.  Get the **Parameter Definitions** of the specific fields of interest specified on the [**Credit Application Form**](credit-application-form.md), and compare the extracted values with what is provided by the supporting docs, [**Bank Statements**](bank-statement.md)**,** and [**Social Security Card**](social-security-number-card.md). In this sample, it is required to iterate through the **transaction items** extracted from the **Bank Statement** service. To this end, the **Parameter Definitions** for the **Description** and **Amount** columns in the **Transactions Table** of the **Bank Statements** service. The **Parameter Definition** IDs of these columns can be used to retrieve the **Parameter Definition** objects by calling **module.FindParameters**.\
 
 
     ```csharp
@@ -50,10 +49,8 @@ This section will discuss in detail the code that is required to implement the *
     IParameterDef pdCredit = module.FindParameterDef(78092);        //Replace 78092 with your Paramdef ID
     IParameterDef pdAccountHolderName = module.FindParameterDef(78148);    //Replace 78148 with your Paramdef ID
     ```
-
-
-4.  In order to save the values of the **Parameters** defined by the **Parameter Definitions**, a **Custom Dataset** is created in order to share the extracted values between services. This dataset needs to be created using the **Settings View** of the **Parent Service** of the **Custom Code.**\
-
+4.  In order to save the values of the **Parameters** defined by the **Parameter Definitions**, a **Custom Dataset** is created in order to share the extracted values between services. This dataset needs to be created using the **Settings View** of the **Parent Service** of the **Custom Service Code.**\
+    ****
 
     <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
@@ -62,7 +59,7 @@ This section will discuss in detail the code that is required to implement the *
 
     <figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
-    Enter a name for the new **Custom Dataset**, for instance "BankStatementsDataSet" and click **Submit**.\
+    Enter a name for the new **Custom Dataset**, for instance "BankStatementsDataSet" and click **Submit**.
 
     <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
@@ -266,7 +263,6 @@ foreach (IDocument doc in docs)
         logger.LogError(ex, "{stpd} Cannot process {docid} {docfilename}\n{error}", stpd.Name, doc.Id, doc.Filename, ex.ToString());
     }
 }
-
 ```
 
-\
+\\
