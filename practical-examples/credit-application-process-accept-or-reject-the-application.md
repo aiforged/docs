@@ -1,3 +1,10 @@
+---
+layout: default
+title: Credit Application Process - Accept or Reject the Application
+parent: Practical Examples
+nav_order: 5
+---
+
 # Credit Application Process: Accept or Reject the Application
 
 ## The Process

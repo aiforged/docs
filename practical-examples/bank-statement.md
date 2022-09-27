@@ -1,3 +1,10 @@
+---
+layout: default
+title: Bank Statement
+parent: Practical Examples
+nav_order: 1
+---
+
 # Bank Statement
 
 ## How to extract data from a bank statement

@@ -2,6 +2,6 @@
 #remote_theme: just-the-docs/just-the-docs
 
 #title: "Remote theme example"
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
 #color_scheme: "dark"
 search_enabled: true

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Social Security Number Card
+parent: Practical Examples
+nav_order: 3
+---
+
 # Social Security Number Card
 
 ## How to extract data from a Social Security card

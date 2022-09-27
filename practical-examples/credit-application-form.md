@@ -1,3 +1,10 @@
+---
+layout: default
+title: Credit Application Form
+parent: Practical Examples
+nav_order: 2
+---
+
 # Credit Application Form
 
 ## How to extract data from an application form

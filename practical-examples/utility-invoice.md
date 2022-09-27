@@ -1,6 +1,11 @@
+---
+layout: default
+title: Utility Invoice
+parent: Practical Examples
+nav_order: 4
+---
+
 # Utility Invoice
-
-
 
 * Create a new **Project**.
 * Create a new **Service**.

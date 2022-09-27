@@ -1,0 +1,11 @@
+---
+layout: default
+title: Practical Examples
+#nav_order: 3
+has_children: true
+permalink: /practical-examples
+---
+
+# Practical Examples
+
+This section provides walk-throughs for real life **Practical Examples**. The examples are discussed in great detail, from how to select a relevant services, to training models, and to writing **Custom Code** for any custom functionality required.
