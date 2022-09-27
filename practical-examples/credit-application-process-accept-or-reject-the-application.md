@@ -64,17 +64,13 @@ This section will discuss in detail the code that is required to implement the *
 
     Enter a name for the new **Custom Dataset**, for instance "BankStatementsDataSet" and click **Submit**.\
 
-
     <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
     This will create a **Parameter Definition** for the **BankStatementsDataset Custom Dataset**. Note the ID of the **Parameter Definition**.\
 
-
     <figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
-
 5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. **** Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\
-
 
     <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -83,27 +79,22 @@ This section will discuss in detail the code that is required to implement the *
     <figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
-6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\
 
+6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\
 
     ```csharp
     var parentservice = module.GetParentService();
     ICustomDataSet dataset = module.GetDataSetByDef(parentservice, 78817, false, false, null, null, null, null); //ID 78817: BankStatementDataset
     ```
 
-
 7.  To retrieve the column **Parameter Definitions** in a **Custom Dataset**, make use of **modulde.FindField**.
-
-
 
     ```csharp
     ParameterDefViewModel name = dataset.FindField(78820);  // Name
     ParameterDefViewModel salary = dataset.FindField(78821);   // Salary
     ```
 
-
 8.  Iterate through all the documents that was processed in the batch. Add a **try-catch** clause to handle any exceptions:\
-
 
     ```csharp
     foreach (IDocument doc in docs) 
@@ -120,19 +111,14 @@ This section will discuss in detail the code that is required to implement the *
     }
     ```
 
-
 9.  Try to find possible **Salary** entries from the **Bank Statement** by using the **Description** column parameter of the **Transactions Table** by calling **module.GetParameters**.
-
-
 
     ```csharp
     List<IDocumentParameter> parDescriptions = module.GetParameters(doc, pdDescription, true, null);
     parDescriptions = parDescriptions.OrderBy(d => d.Id).ToList();
     ```
 
-    \
     Add a zero-count check and return the **Custom Service Code** if no bank statement data was found. Otherwise a comparison can't be done.\
-
 
     ```csharp
     if (parDescriptions.Count == 0)
@@ -142,10 +128,7 @@ This section will discuss in detail the code that is required to implement the *
     }
     ```
 
-    \
-
-10. Iterate through each **Description Parameter**, get the text value extracted by the OCR, in either the Document **Parameter** or **Verification** value, and determine the **Levenshtein Confidence** between the parameter value, and the expected text for a salary entry on the bank statement. In this case, the text "Account Transfer In" is used to denote a salary deposit, and **Levenshtein Confidence** of 80 % (normalized as 0.8) is chosen.\
-
+10. Iterate through each **Description Parameter**, get the text value extracted by the OCR, in either the Document **Parameter** or **Verification** value, and determine the **Levenshtein Confidence** between the parameter value, and the expected text for a salary entry on the bank statement. In this case, the text "Account Transfer In" is used to denote a salary deposit, and **Levenshtein Confidence** of 80 % (normalized as 0.8) is chosen.
 
     ```csharp
     foreach (IDocumentParameter parDescription in parDescriptions)
@@ -168,11 +151,7 @@ This section will discuss in detail the code that is required to implement the *
     }
     ```
 
-    \
-
 11. If the **Levenshtein Confidence** is greater than 0.8, a parameter from the **Transactions Table** has been matched as a salary deposit entry. The next step is to get the extracted values from the corresponding **Credit** column form the **Transactions Table**. This is accomplished by using the table **Index** of the matched **Description** parameter, and to find the corresponding value extracted from the **Credit** column. This is done by calling **module.GetParameters** and specifying the **Credit Parameter Definition** and the table **Index**.
-
-
 
     ```csharp
     IDocumentParameter parCredit = module.GetParameters(doc, pdCredit, true, parDescription.Index).OrderBy(d => d.Id).ToList().LastOrDefault();
@@ -181,10 +160,7 @@ This section will discuss in detail the code that is required to implement the *
     logger.LogInformation("{stpd} {var} val {val}", stpd.Name, salary.Name, creditText);
     ```
 
-
 12. The **Account Holder Name** parameter was also extracted from the bank statement and is used to build up the record to be added to the **Custom Dataset**.
-
-
 
     ```csharp
     IDocumentParameter parName = module.GetParameters(doc, pdAccountHolderName, true, null).OrderBy(d => d.Id).ToList().LastOrDefault();
@@ -193,10 +169,7 @@ This section will discuss in detail the code that is required to implement the *
     logger.LogInformation("{stpd} {var} val {val}", stpd.Name, name.Name, nameText);
     ```
 
-    \
-
-13. If either of the **Account Holder Name** or **Credit** text could not have been extracted for the current document, then the document is skipped and the next document is processed.\
-
+13. If either of the **Account Holder Name** or **Credit** text could not have been extracted for the current document, then the document is skipped and the next document is processed.
 
     ```csharp
     if(string.IsNullOrEmpty(creditText) || string.IsNullOrEmpty(nameText))
@@ -205,14 +178,10 @@ This section will discuss in detail the code that is required to implement the *
     }
     ```
 
-    \
-    \
-
 14.
 15.
 
 ## Code Sample (C#)
-
 
 
 ```csharp
