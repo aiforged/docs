@@ -23,7 +23,7 @@ To use this integration, you will need an AIForged account. You also need to con
 
 An AIForged account is needed to register an application. You can register [here](https://www.aiforged.com/). From there you can use your credentials to authenticate. You can also register by downloading the AIForged app from the [Microsoft Store](https://ms-windows-store/pdp/?productid=9N9TV5K8F914) or [Microsoft Store Website](https://www.microsoft.com/store/apps/9N9TV5K8F914).
 
-Once the app is installed, you can register by using the registration steps&#x20;
+Once the app is installed, you can register by using the registration steps
 
 Activate the account, you should receive an email with the activation link. Once you click on the the activation link, AIForged will open with activation info.
 
@@ -35,13 +35,13 @@ First you need to create a project container for billing purposes.
 
 Once your project is created you can add an intelligent service
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (28) (1).png>)
 
 #### Create and train an intelligent services
 
 First you need to create a service and follow the wizard steps to train for processing and classification.
 
-![](<../.gitbook/assets/image (28) (1).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 Once you select the type of intelligent service, the service wizard will open to configure and train the service.
 

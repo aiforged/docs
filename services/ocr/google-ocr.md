@@ -1,6 +1,6 @@
 # Google OCR
 
-![](../../assets/43.png)
+![](<../../.gitbook/assets/43 (1) (1).png>)
 
 The Google OCR service reads text from images for you to use.
 

@@ -128,3 +128,8 @@
 * [Credit Application Form](practical-examples/credit-application-form.md)
 * [Credit Application Process: Accept or Reject the Application](practical-examples/credit-application-process-accept-or-reject-the-application.md)
 * [Utility Invoice](practical-examples/utility-invoice.md)
+
+## UiPath Activities
+
+* [Introduction](uipath-activities/introduction.md)
+* [Page 1](uipath-activities/page-1.md)

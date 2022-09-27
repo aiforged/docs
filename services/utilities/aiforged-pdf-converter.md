@@ -1,5 +1,5 @@
 # AIForged Pdf Converter
 
-![](../../assets/52.png)
+![](<../../.gitbook/assets/52 (1) (1).png>)
 
 You can use the AIForged Pdf Converter to convert documents to the Pdf Format

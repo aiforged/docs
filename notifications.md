@@ -1,6 +1,6 @@
 # Notifications
 
-![](<assets/image (4).png>)
+![](<.gitbook/assets/image (4) (1) (1).png>)
 
 The Notifications page shows all the Notifications that you received
 
@@ -8,7 +8,7 @@ The Notifications page shows all the Notifications that you received
 
 * To view a Notification Body click on any of the notifications in the grid, your notification body will appear in the bottom of the page
 
-![](<assets/image (36).png>)
+![](<.gitbook/assets/image (36) (1).png>)
 
 ## Flag Checked as Read
 

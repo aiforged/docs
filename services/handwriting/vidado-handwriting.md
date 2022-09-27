@@ -1,6 +1,6 @@
 # Vidado Handwriting
 
-![](<../../assets/image (56).png>)
+![](<../../.gitbook/assets/image (23) (1) (2).png>)
 
 ## Setup Service <a href="#setup-service" id="setup-service"></a>
 

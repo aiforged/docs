@@ -1,6 +1,6 @@
 # Email Scraping
 
-![](../../assets/46.png)
+![](<../../.gitbook/assets/46 (1) (1).png>)
 
 Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
 
