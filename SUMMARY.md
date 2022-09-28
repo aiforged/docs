@@ -132,6 +132,15 @@
 ## UiPath Activities
 
 * [Introduction](uipath-activities/introduction.md)
+* [Initialize](uipath-activities/initialize.md)
 * [Balance](uipath-activities/balance/README.md)
   * [Get Balance](uipath-activities/balance/get-balance.md)
   * [Get Payments](uipath-activities/balance/get-payments.md)
+* [Document](uipath-activities/document.md)
+* [Notifications](uipath-activities/notifications.md)
+* [Payments](uipath-activities/payments.md)
+* [Project](uipath-activities/project.md)
+* [Service](uipath-activities/service.md)
+* [System](uipath-activities/system.md)
+* [Verification](uipath-activities/verification.md)
+* [WorkItem](uipath-activities/workitem.md)
