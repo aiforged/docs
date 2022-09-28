@@ -1,5 +1,5 @@
 ---
-description: In this section, we will look at the 2 AIForged activities.
+description: This section consists of 2 AIForged activities.
 ---
 
 # Balance
