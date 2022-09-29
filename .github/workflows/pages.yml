@@ -45,8 +45,8 @@ jobs:
             -cvf "$RUNNER_TEMP/artifact.tar" \
             .
         env:
-          GITHUB_PAGES: true
-          INPUT_PATH: _site/
+          #GITHUB_PAGES: true
+          INPUT_PATH: ./_site/
       - name: Upload artifact
         uses: actions/upload-artifact@main
         with:
