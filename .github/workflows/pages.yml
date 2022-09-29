@@ -34,6 +34,11 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Upload Pages
+        uses: actions/upload-pages-artifact@v0
+        with:
+          path: ./_site
+          retention-days: 1
 #      - name: Upload artifact
 #        uses: actions/upload-pages-artifact@v1
       - name: Archive artifact
@@ -42,7 +47,7 @@ jobs:
           tar \
             --dereference --hard-dereference \
             --directory "$INPUT_PATH" \
-            -zcvf "$RUNNER_TEMP/artifact.tar" \
+            -cvf "/home/runner/work/_temp/artifact.tar" \
             .
         env:
           #GITHUB_PAGES: true
@@ -52,7 +57,7 @@ jobs:
         run: |
           tar \
             --dereference --hard-dereference \
-            -rf "$RUNNER_TEMP/artifact.tar" \
+            -rf "/home/runner/work/_temp/artifact.tar" \
             ./.gitbook/
         env:
             #GITHUB_PAGES: true
