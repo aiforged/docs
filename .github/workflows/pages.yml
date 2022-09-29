@@ -47,6 +47,16 @@ jobs:
         env:
           #GITHUB_PAGES: true
           INPUT_PATH: ./_site/
+      - name: Add .gitbook to existing tar
+        shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            -rf "$RUNNER_TEMP/artifact.tar" \
+            ./.gitbook/
+        env:
+            #GITHUB_PAGES: true
+            INPUT_PATH: ./_site/
       - name: Upload artifact
         uses: actions/upload-artifact@main
         with:
