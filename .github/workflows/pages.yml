@@ -43,7 +43,7 @@ jobs:
             --dereference --hard-dereference \
             --directory "$INPUT_PATH" \
             -cvf "$RUNNER_TEMP/artifact.tar" \
-            *
+            .
         env:
           #GITHUB_PAGES: true
           INPUT_PATH: ./_site/
