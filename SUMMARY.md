@@ -9,6 +9,7 @@
 * [Projects](projects.md)
 * [Marketplace](marketplace.md)
 * [Transactions](transactions.md)
+* [Reports](reports.md)
 * [Payments](payments.md)
 * [Service users](service-users.md)
 * [Contacts](contacts.md)

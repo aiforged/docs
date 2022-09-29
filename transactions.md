@@ -1,14 +1,20 @@
 # Transactions
 
+The **Transactions** page displays all transactions made by each service and can be viewed by selecting **Transactions**.
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+## Filter Transactions
+
+The **From** and **To** date filters can be set to view transactions in any time window.
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+The **Transaction List** can be exported by selecting **Export To Excel**.
+
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
 ![Transactions](.gitbook/assets/transactions.png)
-
-The Transactions page displays all transactions made by each service
-
-## Filter transactions
-
-![Filters](https://github.com/aiforged/docs/tree/be0cbd20e858bf32e11ea2a4699104d89e7ad03f/assets/transactions-filtters.png)
-
-To filter the transactions page click select your dates in start and end date, then click filter
 
 ## Available Fields
 
@@ -41,7 +47,7 @@ To filter the transactions page click select your dates in start and end date, t
 
 The Usage by project piechart displays the usage of all your projects
 
-### Usage by Service pie Chart
+### Usage by Service Pie Chart
 
 ![transactions ussage by service](.gitbook/assets/transactions-byservice.png)
 
@@ -51,12 +57,12 @@ The Usage by Service piechart displays the usage of all your services
 
 ![transactions ussage by service](.gitbook/assets/transaction-actions-1.png)
 
-* Clicking on the "Analyse Transaction Details" in the Action bar will navigate you to the Analyse Transaction Details page
+* Clicking on the **Analyse Transaction Details** in the Action bar will navigate you to the Analyse Transaction Details page
 
 ![transactions ussage by service](.gitbook/assets/transaction-actions-2.png)
 
-1. Click on a row in the grid to make this button vissible
-2. Clicking the "Details by project/Service" action will navigate you too the
+1. Click on a row in the grid to make this button visible.
+2. Clicking the **Details by project/Service** action will navigate you too the
 
 ![transactions ussage by service](.gitbook/assets/transaction-actions-3.png)
 

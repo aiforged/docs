@@ -2,7 +2,7 @@
 
 ## Local Login
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Local login can be used to **Login** to AIForged with the Account that you registered on AIForged with
 * Only a **Username** and a **Password** are required

@@ -41,21 +41,20 @@ This section will discuss in detail the code that is required to implement the *
     ```csharp
     logger.LogInformation("{stpd} Start", stpd.Name);
     ```
-3.  Get the **Parameter Definitions** of the specific fields of interest specified on the [**Credit Application Form**](credit-application-form.md), and compare the extracted values with what is provided by the supporting docs, [**Bank Statements**](bank-statement.md)**,** and [**Social Security Card**](social-security-number-card.md). In this sample, it is required to iterate through the **transaction items** extracted from the **Bank Statement** service. To this end, the **Parameter Definitions** for the **Description** and **Amount** columns in the **Transactions Table** of the **Bank Statements** service. The **Parameter Definition** IDs of these columns can be used to retrieve the **Parameter Definition** objects by calling **module.FindParameters**.\
-
+3.  Get the **Parameter Definitions** of the specific fields of interest specified on the [**Credit Application Form**](credit-application-form.md), and compare the extracted values with what is provided by the supporting docs, [**Bank Statements**](bank-statement.md)**,** and [**Social Security Card**](social-security-number-card.md). In this sample, it is required to iterate through the **transaction items** extracted from the **Bank Statement** service. To this end, the **Parameter Definitions** for the **Description** and **Amount** columns in the **Transactions Table** of the **Bank Statements** service. The **Parameter Definition** IDs of these columns can be used to retrieve the **Parameter Definition** objects by calling **module.FindParameters**.\\
 
     ```csharp
     IParameterDef pdDescription = module.FindParameterDef(78090);    //Replace 78090 with your Paramdef ID
     IParameterDef pdCredit = module.FindParameterDef(78092);        //Replace 78092 with your Paramdef ID
     IParameterDef pdAccountHolderName = module.FindParameterDef(78148);    //Replace 78148 with your Paramdef ID
     ```
-4.  In order to save the values of the **Parameters** defined by the **Parameter Definitions**, a **Custom Dataset** is created in order to share the extracted values between services. This dataset needs to be created using the **Settings View** of the **Parent Service** of the **Custom Service Code.**\
-    ****
+4.  In order to save the values of the **Parameters** defined by the **Parameter Definitions**, a **Custom Dataset** is created in order to share the extracted values between services. This dataset needs to be created using the **Settings View** of the **Parent Service** of the **Custom Service Code.**\\
 
-    <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+    ***
 
-    Click on **Create Custom Dataset** in the **Service Parameter** view.\
+    <figure><img src="../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
 
+    Click on **Create Custom Dataset** in the **Service Parameter** view.\\
 
     <figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
@@ -63,35 +62,31 @@ This section will discuss in detail the code that is required to implement the *
 
     <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-    This will create a **Parameter Definition** for the **BankStatementsDataset Custom Dataset**. Note the ID of the **Parameter Definition**.\
+    This will create a **Parameter Definition** for the **BankStatementsDataset Custom Dataset**. Note the ID of the **Parameter Definition**.\\
 
     <figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. \*\*\*\* Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\\
 
-5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. **** Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\
+    <figure><img src="../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-    Enter **Name** in the Column Name textbox, and click on **New Column** to add a column for **Name**. Repeat for the column name **Salary**.&#x20;
+    Enter **Name** in the Column Name textbox, and click on **New Column** to add a column for **Name**. Repeat for the column name **Salary**.
 
     <figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
-
-6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\
+6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\\
 
     ```csharp
     var parentservice = module.GetParentService();
     ICustomDataSet dataset = module.GetDataSetByDef(parentservice, 78817, false, false, null, null, null, null); //ID 78817: BankStatementDataset
     ```
-
 7.  To retrieve the column **Parameter Definitions** in a **Custom Dataset**, make use of **modulde.FindField**.
 
     ```csharp
     ParameterDefViewModel name = dataset.FindField(78820);  // Name
     ParameterDefViewModel salary = dataset.FindField(78821);   // Salary
     ```
-
-8.  Iterate through all the documents that was processed in the batch. Add a **try-catch** clause to handle any exceptions:\
+8.  Iterate through all the documents that was processed in the batch. Add a **try-catch** clause to handle any exceptions:\\
 
     ```csharp
     foreach (IDocument doc in docs) 
@@ -107,7 +102,6 @@ This section will discuss in detail the code that is required to implement the *
       }
     }
     ```
-
 9.  Try to find possible **Salary** entries from the **Bank Statement** by using the **Description** column parameter of the **Transactions Table** by calling **module.GetParameters**.
 
     ```csharp
@@ -115,7 +109,7 @@ This section will discuss in detail the code that is required to implement the *
     parDescriptions = parDescriptions.OrderBy(d => d.Id).ToList();
     ```
 
-    Add a zero-count check and return the **Custom Service Code** if no bank statement data was found. Otherwise a comparison can't be done.\
+    Add a zero-count check and return the **Custom Service Code** if no bank statement data was found. Otherwise a comparison can't be done.\\
 
     ```csharp
     if (parDescriptions.Count == 0)
@@ -124,7 +118,6 @@ This section will discuss in detail the code that is required to implement the *
         return;
     }
     ```
-
 10. Iterate through each **Description Parameter**, get the text value extracted by the OCR, in either the Document **Parameter** or **Verification** value, and determine the **Levenshtein Confidence** between the parameter value, and the expected text for a salary entry on the bank statement. In this case, the text "Account Transfer In" is used to denote a salary deposit, and **Levenshtein Confidence** of 80 % (normalized as 0.8) is chosen.
 
     ```csharp
@@ -147,7 +140,6 @@ This section will discuss in detail the code that is required to implement the *
         }
     }
     ```
-
 11. If the **Levenshtein Confidence** is greater than 0.8, a parameter from the **Transactions Table** has been matched as a salary deposit entry. The next step is to get the extracted values from the corresponding **Credit** column form the **Transactions Table**. This is accomplished by using the table **Index** of the matched **Description** parameter, and to find the corresponding value extracted from the **Credit** column. This is done by calling **module.GetParameters** and specifying the **Credit Parameter Definition** and the table **Index**.
 
     ```csharp
@@ -156,7 +148,6 @@ This section will discuss in detail the code that is required to implement the *
     string creditText = parCredit?.Value ?? verCredit?.Value;
     logger.LogInformation("{stpd} {var} val {val}", stpd.Name, salary.Name, creditText);
     ```
-
 12. The **Account Holder Name** parameter was also extracted from the bank statement and is used to build up the record to be added to the **Custom Dataset**.
 
     ```csharp
@@ -165,7 +156,6 @@ This section will discuss in detail the code that is required to implement the *
     string nameText = parName?.Value ?? verName?.Value;
     logger.LogInformation("{stpd} {var} val {val}", stpd.Name, name.Name, nameText);
     ```
-
 13. If either of the **Account Holder Name** or **Credit** text could not have been extracted for the current document, then the document is skipped and the next document is processed.
 
     ```csharp
@@ -174,12 +164,10 @@ This section will discuss in detail the code that is required to implement the *
         break;
     }
     ```
-
 14.
 15.
 
 ## Code Sample (C#)
-
 
 ```csharp
 //Custom Code: Please refer to documentation

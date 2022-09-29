@@ -36,7 +36,7 @@
 
 ## Theme
 
-![](<.gitbook/assets/image (13) (1) (1).png>)
+![](<.gitbook/assets/image (13) (1) (1) (1).png>)
 
 ### Change Theme Mode
 

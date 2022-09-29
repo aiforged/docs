@@ -61,7 +61,7 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Audit
 
-![](<.gitbook/assets/image (29) (1) (1) (1).png>)
+![](<.gitbook/assets/image (29) (1) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (42) (2) (1).png>)
 
@@ -71,7 +71,7 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Events
 
-![](<.gitbook/assets/image (48) (1).png>)
+![](<.gitbook/assets/image (48) (1) (1).png>)
 
 ![](<.gitbook/assets/image (3) (1) (1).png>)
 
@@ -83,7 +83,7 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ![](<.gitbook/assets/image (27) (1) (1).png>)
 
-![](<.gitbook/assets/image (23) (1) (1) (1).png>)
+![](<.gitbook/assets/image (23) (1) (1) (1) (1).png>)
 
 1. Select a shared or marketplace user in the grid
 2. Click the "Limits" command in the app bar
