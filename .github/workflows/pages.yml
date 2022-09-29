@@ -34,8 +34,19 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v1
+      - name: Archive artifact
+        shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory "$INPUT_PATH" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            .
+        env:
+          GITHUB_PAGES: true
+          INPUT_PATH: _site/
 
   # Deployment job
   deploy:
