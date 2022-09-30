@@ -1,5 +1,5 @@
 ---
-description: AIForged.Ba
+description: AIForged.Balance.GetPayments
 
 title: Get Payments
 parent: Balance

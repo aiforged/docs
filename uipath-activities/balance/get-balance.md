@@ -4,7 +4,6 @@ description: AIForged.Balance.GetBalance
 title: Get Balance
 parent: Balance
 nav_order: 1
-permalink: /get-balance
 ---
 
 # Get Balance
