@@ -3,6 +3,7 @@ description: AIForged.Balance.GetBalance
 
 title: Get Balance
 parent: Balance
+grand_parent: UIPath Activities
 nav_order: 1
 ---
 
