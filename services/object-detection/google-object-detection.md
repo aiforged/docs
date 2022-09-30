@@ -1,3 +1,10 @@
+---
+title: Google Object Detection
+parent: Object Detection
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Google Object Detection
 
 ![](<../../.gitbook/assets/55 (1) (1).png>)

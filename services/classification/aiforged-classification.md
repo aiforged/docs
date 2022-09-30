@@ -1,3 +1,10 @@
+---
+title: AIForged Classification
+parent: Classification
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # AIForged Classification
 
 ![](<../../.gitbook/assets/34 (1) (1).png>)

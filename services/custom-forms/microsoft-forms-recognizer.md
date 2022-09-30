@@ -1,3 +1,10 @@
+---
+title: Microsoft Form Recognizer
+parent: Custom Forms
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Microsoft Forms Recognizer
 
 ![](<../../.gitbook/assets/37 (1) (1).png>)

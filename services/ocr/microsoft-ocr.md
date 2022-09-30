@@ -1,3 +1,10 @@
+---
+title: Microsoft OCR
+parent: OCR
+grand_parent: Understanding Services
+nav_order: 3
+---
+
 # Microsoft OCR
 
 ![](<../../.gitbook/assets/44 (1) (1).png>)

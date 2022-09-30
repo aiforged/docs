@@ -1,3 +1,11 @@
+---
+layout: default
+title: Understanding Services
+nav_order: 2
+has_children: true
+permalink: /understanding-services
+---
+
 # Understanding Services
 
 ## What is a Service

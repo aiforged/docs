@@ -1,3 +1,10 @@
+---
+title: Microsoft Receipt
+parent: Pretrained Receipts
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Microsoft Receipt Tracker
 
 ![](<../../.gitbook/assets/40 (1) (1).png>)

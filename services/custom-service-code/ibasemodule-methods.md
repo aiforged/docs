@@ -1,3 +1,10 @@
+---
+title: Custom Code - Methods
+parent: Custom Service Code
+grand_parent: Understanding Services
+nav_order: 4
+---
+
 # IBaseModule Methods
 
 The **IBaseModule** interface exposes methods that can be used in the **Custom Service Code**. The methods are described in the following sections.

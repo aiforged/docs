@@ -1,3 +1,10 @@
+---
+title: E-mail Scaraping
+parent: Scraping
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Email Scraping
 
 ![](<../../.gitbook/assets/46 (1) (1).png>)

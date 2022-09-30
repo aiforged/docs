@@ -1,3 +1,10 @@
+---
+title: Google OCR
+parent: OCR
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Google OCR
 
 ![](<../../.gitbook/assets/43 (1) (1) (1).png>)

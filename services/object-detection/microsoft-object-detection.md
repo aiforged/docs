@@ -1,3 +1,10 @@
+---
+title: Microsoft Object Detection
+parent: Object Detection
+grand_parent: Understanding Services
+nav_order: 3
+---
+
 # Microsoft Object Detection
 
 ![](<../../.gitbook/assets/56 (1) (1) (1).png>)

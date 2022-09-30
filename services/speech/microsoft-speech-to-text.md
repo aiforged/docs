@@ -1,3 +1,10 @@
+---
+title: Microsoft Speech-to-Text
+parent: Speech
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Microsoft Speech to Text
 
 ![](<../../.gitbook/assets/48 (1) (1).png>)

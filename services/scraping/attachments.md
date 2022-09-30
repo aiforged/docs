@@ -1,3 +1,10 @@
+---
+title: Attachments
+parent: Scraping
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Attachments
 
 ![](<../../.gitbook/assets/31 (1) (1).png>)

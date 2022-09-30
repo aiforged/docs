@@ -1,3 +1,10 @@
+---
+title: Amazon Textract
+parent: Document Layout
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Amazon Textract
 
 ![](<../../.gitbook/assets/36 (1) (1) (1).png>)

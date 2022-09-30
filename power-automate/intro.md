@@ -3,6 +3,12 @@ description: >-
   AIForged is an Intelligent Document Processing solution to complex document
   extraction problems. You can train your AIForged project to combine cognitive
   services in order to classify and extract info
+
+layout: default
+title: Power Automate
+nav_order: 5
+has_children: false
+permalink: /intro
 ---
 
 # Intro

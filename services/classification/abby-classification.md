@@ -1,3 +1,10 @@
+---
+title: ABBYY classification
+parent: Classification
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # ABBYY Classification
 
 ![](<../../.gitbook/assets/32 (1) (1).png>)

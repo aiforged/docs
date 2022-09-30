@@ -1,3 +1,11 @@
+---
+layout: default
+title: Custom Service Code
+parent: Understanding Services
+has_children: true
+nav_order: 4
+---
+
 # Custom Service Code
 
 **Custom Service Code** is user-written code that can be added to a service to be executed after data has been extracted.

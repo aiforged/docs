@@ -1,3 +1,10 @@
+---
+layout: default
+title: Documents
+nav_order: 3
+has_children: true
+---
+
 # Understanding the Documents page
 
 ## Types of documents

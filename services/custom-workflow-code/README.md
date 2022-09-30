@@ -1,3 +1,11 @@
+---
+layout: default
+title: Custom Workflow Code
+parent: Understanding Services
+has_children: true
+nav_order: 5
+---
+
 # Custom Workflow Code
 
 #### Global variables in custom workflow code
