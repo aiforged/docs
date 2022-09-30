@@ -35,13 +35,13 @@ First you need to create a project container for billing purposes.
 
 Once your project is created you can add an intelligent service
 
-![](<../.gitbook/assets/image (28) (1).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 #### Create and train an intelligent services
 
 First you need to create a service and follow the wizard steps to train for processing and classification.
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (28) (1).png>)
 
 Once you select the type of intelligent service, the service wizard will open to configure and train the service.
 

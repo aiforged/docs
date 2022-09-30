@@ -1,6 +1,6 @@
 # User Profile
 
-![](<assets/image (53).png>)
+![](<assets/image (53) (1).png>)
 
 ## User and Roles
 
@@ -15,7 +15,7 @@ The User page allows you to edit your user details
 
 ## Roles
 
-![](<.gitbook/assets/image (24) (1).png>)
+![](<.gitbook/assets/image (24) (1) (1).png>)
 
 ### Add or remove roll
 
