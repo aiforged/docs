@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rersend Activation E-mail
+title: Resend Activation E-mail
 nav_order: 4
 ---
 

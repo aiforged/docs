@@ -8,7 +8,7 @@ has_children: true
 permalink: /uipath-activities
 ---
 
-# Introduction
+# AIForged Activities
 
 UiPath aggregates custom build **AIForged** activities that are available in the “Manage Packages” tab in _**UiPath Studio**_.
 

@@ -10,7 +10,7 @@ nav_order: 18
 has_children: false
 ---
 
-# Intro
+# Power Automate
 
 ## Prerequisites
 

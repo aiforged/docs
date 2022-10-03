@@ -5,7 +5,7 @@ nav_order: 15
 has_children: true
 ---
 
-# Understanding the Documents page
+# Understanding the Documents
 
 ## Types of documents
 
