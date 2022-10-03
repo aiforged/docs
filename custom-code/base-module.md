@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Custom Code Base Module
-nav_order: 21
+title: Currency
+parent: Custom Code
+nav_order: 1
 ---
 
 # Base Module
 
-#### The Base Service module is as follow.
+The Base Service module is defined as follows:
 
 ```csharp
 public interface IBaseModule

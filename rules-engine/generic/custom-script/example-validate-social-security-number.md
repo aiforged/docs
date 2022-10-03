@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Database
-parent: Custom Script
+parent: Example - Validate Social Security Number
 grand_parent: Rules Engine
 nav_order: 1
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Practical Examples
-nav_order: 15
+nav_order: 21
 has_children: true
 permalink: /practical-examples
 ---

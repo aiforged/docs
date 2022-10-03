@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Understanding Services
+title: Services
 nav_order: 14
 has_children: true
-permalink: /understanding-services
 ---
 
 # Understanding Services
