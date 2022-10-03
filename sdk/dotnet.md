@@ -1,9 +1,9 @@
 ---
 layout: default
-title: .NET SDK
+title: Dotnet SDK
 parent: SDKs
 nav_order: 1
 ---
 
-# .Net
+# DotNet
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How To Install AIForged
+title: Custom Code Base Module
 nav_order: 21
 ---
 
