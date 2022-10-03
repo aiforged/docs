@@ -1,3 +1,9 @@
+---
+layout: default
+title: Table of contents
+nav_exclude: true
+---
+
 # Table of contents
 
 * [How to Install AIForged](README.md)
