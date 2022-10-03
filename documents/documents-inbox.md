@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Inbox
+parent: Documents
+nav_order: 2
+---
+
 # Documents Inbox
 
 ## How to open the Documents Inbox

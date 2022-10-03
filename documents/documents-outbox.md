@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Outbox
+parent: Documents
+nav_order: 3
+---
+
 # Documents Outbox
 
 ## How to open the Documents Outbox

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Analytics
+parent: Documents
+nav_order: 6
+---
+
 ## Document Analytics
 
 ![Document analytics](/assets/DocumentAnalytics.png)

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Activate My Account
+nav_order: 3
+---
+
 # Activate my account
 
 <figure><img src=".gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>

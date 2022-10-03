@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Training Box
+parent: Documents
+nav_order: 5
+---
+
 # Training box
 
 The Training box is only applicable to services that requires training of documents

@@ -1,6 +1,12 @@
+---
+layout: default
+title: Reports
+nav_order: 11
+---
+
 # Reports
 
-The **Reports** **Page** provides an overview of **Projects,** **Services**, **** and **Documents** for the logged-in user. Select **Reports** to navigate to the **Report Page**.&#x20;
+The **Reports** **Page** provides an overview of **Projects,** **Services**, **** and **Documents** for the logged-in user. Select **Reports** to navigate to the **Report Page**.
 
 These pages are **Interactive**, and users actively adjust filters and make selections.s
 
@@ -10,7 +16,7 @@ The navigation panel at the bottom of the **Reports Page** contains a broad sele
 
 <figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;**** There are currently 34 **Report Views** available:
+There are currently 34 **Report Views** available:
 
 | Name                                | Description                                                                                   |
 | ----------------------------------- | --------------------------------------------------------------------------------------------- |

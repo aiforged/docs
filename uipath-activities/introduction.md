@@ -3,7 +3,7 @@ description: Overview of the AIForged activities in UiPath.
 
 layout: default
 title: UIPath Activities
-#nav_order: 3
+nav_order: 22
 has_children: true
 permalink: /uipath-activities
 ---

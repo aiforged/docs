@@ -1,3 +1,9 @@
+---
+layout: default
+title: Login
+nav_order: 5
+---
+
 # Login
 
 ## Local Login

@@ -1,6 +1,10 @@
+---
+layout: default
+title: How To Install AIForged
+nav_order: 21
+---
+
 # Base Module
-
-
 
 #### The Base Service module is as follow.
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Understanding Services
-nav_order: 2
+nav_order: 14
 has_children: true
 permalink: /understanding-services
 ---

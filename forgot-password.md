@@ -1,3 +1,9 @@
+---
+layout: default
+title: Forgot Password
+nav_order: 6
+---
+
 # Forgot Password
 
 <figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>

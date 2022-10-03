@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contacts
+nav_order: 8
+---
+
 # Contacts
 
 ![](<.gitbook/assets/image (25) (1) (1).png>)

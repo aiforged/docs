@@ -1,4 +1,10 @@
-# Resend activation Email
+---
+layout: default
+title: Rersend Activation E-mail
+nav_order: 4
+---
+
+# Resend activation E-mail
 
 <figure><img src=".gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 

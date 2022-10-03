@@ -1,3 +1,9 @@
+---
+layout: default
+title: Projects
+nav_order: 7
+---
+
 # Projects
 
 <figure><img src=".gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>

@@ -6,7 +6,7 @@ description: >-
 
 layout: default
 title: Power Automate
-nav_order: 5
+nav_order: 17
 has_children: false
 permalink: /intro
 ---

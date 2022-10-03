@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Verifications
+parent: Documents
+nav_order: 4
+---
+
 # Document Verification
 
 ![verification](../assets/verification.png)

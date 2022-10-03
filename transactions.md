@@ -1,3 +1,9 @@
+---
+layout: default
+title: Transactions
+nav_order: 12
+---
+
 # Transactions
 
 The **Transactions** page displays all transactions made by each service and can be viewed by selecting **Transactions**.

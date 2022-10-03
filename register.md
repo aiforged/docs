@@ -1,3 +1,9 @@
+---
+layout: default
+title: Registration
+nav_order: 2
+---
+
 # Register
 
 <figure><img src=".gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Categories
+parent: Documents
+nav_order: 1
+---
+
 # Document Categories
 
 Document categories defines the **Type** of document that has been uploaded. Projects Document categories is shared to all its services.
