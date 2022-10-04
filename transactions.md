@@ -17,7 +17,7 @@ The **From** and **To** date filters can be set to view transactions in any time
 
 The **Transaction List** can be exported by selecting **Export To Excel**.
 
-<figure><img src=".gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ![Transactions](<.gitbook/assets/transactions (1) (1) (1).png>)
 

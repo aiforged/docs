@@ -6,7 +6,7 @@
 
 ## How to add a service
 
-![](<.gitbook/assets/image (18) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (18) (1) (1) (1) (1).png>)
 
 1.  Click on the service you want to add.\\
 
