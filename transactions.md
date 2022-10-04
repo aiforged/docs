@@ -66,10 +66,10 @@ The **Usage by Service** pie chart displays the usage of all your services
 
     This view will show a detailed summary of **Transactions** of the **Project**.\\
 
-    <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Clicking on **View Details** in the **Action** bar will navigate you to the **Transaction Details** page.
 
-    <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** of the **Service**.\\
 

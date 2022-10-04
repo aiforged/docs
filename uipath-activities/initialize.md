@@ -46,3 +46,9 @@ Initialize
 **ProxyServer** – This is the proxy server address. The variable type is **String**.
 
 **ProxyUsername** - This is the proxy server address username. The variable type is **String.**
+
+## Activity Preview
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Initialize Activity</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Initialize Activity Properties View</p></figcaption></figure>
