@@ -49,6 +49,10 @@ Initialize
 
 ## Activity Preview
 
+### Activity View
+
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Initialize Activity</p></figcaption></figure>
+
+### Activity Property View
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Initialize Activity Properties View</p></figcaption></figure>

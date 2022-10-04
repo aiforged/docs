@@ -44,8 +44,8 @@ The **Get Balance** activity will return a **result** which may be parsed to ano
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption><p>Get Balance Activity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Get Balance Activity</p></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Get Balance Activity Properties View</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Get Balance Activity Properties View</p></figcaption></figure>

@@ -5,13 +5,13 @@ nav_order: 8
 
 # Contacts
 
-![](<.gitbook/assets/image (25) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (25) (1) (1) (1) (1) (1).png>)
 
 The Contacts page allows you to add various contacts to AIForged. Contacts can be used to send User notifications
 
 ## Add a contact
 
-![](<.gitbook/assets/image (45) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (45) (1) (1) (1) (1) (1).png>)
 
 1. Click on "Click here to add a new row"
 2. Fill in all the details
