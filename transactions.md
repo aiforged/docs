@@ -19,7 +19,7 @@ The **Transaction List** can be exported by selecting **Export To Excel**.
 
 <figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-![Transactions](<.gitbook/assets/transactions (1) (1) (1).png>)
+![Transactions](<.gitbook/assets/transactions (1) (1) (2).png>)
 
 ## Available Fields
 
@@ -50,13 +50,13 @@ The **Transaction List** can be exported by selecting **Export To Excel**.
 
 The **Usage by Project** pie chart displays the usage of all your projects.
 
-![transactions ussage](<.gitbook/assets/transaction-ussage (1) (1) (1).png>)
+![transactions ussage](<.gitbook/assets/transaction-ussage (1) (1) (2).png>)
 
 ### Usage by Service Pie Chart
 
 The **Usage by Service** pie chart displays the usage of all your services
 
-![transactions ussage by service](<.gitbook/assets/transactions-byservice (1) (1) (1).png>)
+![transactions ussage by service](<.gitbook/assets/transactions-byservice (1) (1) (2).png>)
 
 ## Actions
 

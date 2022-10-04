@@ -19,14 +19,30 @@ Initialize
 
 ### Input
 
-**Password** – (deprecated) - AIForged.API Password used when creating your **AIForged** account. The variable type is <**String**>
+**Password** – (deprecated) - AIForged.API Password used when creating your **AIForged** account. The variable type is **String**.
 
-**SecurePassword** –  AIForged.API SecurePassword used when creating your **AIForged** account. The variable type is \<SecureString>
+**SecurePassword** –  AIForged.API SecurePassword used when creating your **AIForged** account. The variable type is **SecureString**.
 
-**Timeout** – API Connection timeout on queries. The variable type is  <**TimeSpan**>
+**Timeout** – API Connection timeout on queries. The variable type is  **TimeSpan**.
 
-**URL** – AIForged.API endpoint base URL. The variable type is <**String**>
+**URL** – AIForged.API endpoint base URL. The variable type is **String**.
 
-**Username** – AIForged.API username used when creating your **AIForged** account. The variable type is <**String**>
+**Username** – AIForged.API username used when creating your **AIForged** account. The variable type is <**String**>.
 
 ### Misc
+
+**Private** - If not selected, the values of variables and arguments are at Verbose level.&#x20;
+
+**Result** - Returns AIForged.API.Context&#x20;
+
+### Output
+
+**User** - It will return an output of **API.UserViewModel**. The **output** will contain all user information.
+
+### Proxy
+
+**ProxyPassword**  - (deprecated) - AIForged.API **proxy** SecurePassword for the **proxy server**. The variable type is **SecureString**.
+
+**ProxyServer** – This is the proxy server address. The variable type is **String**.
+
+**ProxyUsername** - This is the proxy server address username. The variable type is **String.**
