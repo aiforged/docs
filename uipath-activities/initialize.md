@@ -27,7 +27,7 @@ Initialize
 
 **URL** – AIForged.API endpoint base URL. The variable type is **String**.
 
-**Username** – AIForged.API username used when creating your **AIForged** account. The variable type is <**String**>.
+**Username** – AIForged.API username used when creating your **AIForged** account. The variable type is **String**.
 
 ### Misc
 
