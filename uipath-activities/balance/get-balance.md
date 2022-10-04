@@ -1,10 +1,9 @@
 ---
-description: AIForged.Balance.GetBalance
-
 title: Get Balance
 parent: Balance
 grand_parent: UIPath Activities
 nav_order: 1
+description: AIForged.Balance.GetBalance
 ---
 
 # Get Balance
@@ -29,13 +28,13 @@ The **ProjectId** can be acquired from the _AIForged_ UI by hovering over the pr
 
 #### ServiceDefId
 
-The **ServiceDefId** can be acquired from the _AIForged_ UI by hovering over the service cards in _AIForged_.  &#x20;
+The **ServiceDefId** can be acquired from the _AIForged_ UI by hovering over the service cards in _AIForged_.
 
 ### Misc
 
 #### Private
 
-This requirement will be a check box. It will be in terms of a Boolean.&#x20;
+This requirement will be a check box. It will be in terms of a Boolean.
 
 #### Result
 
@@ -45,8 +44,8 @@ The **Get Balance** activity will return a **result** which may be parsed to ano
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Get Balance Activity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Get Balance Activity</p></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Get Balance Activity Properties View </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Get Balance Activity Properties View</p></figcaption></figure>

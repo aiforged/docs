@@ -10,7 +10,7 @@ nav_order: 1
 
 This is an example of a **bank statement**.
 
-<figure><img src="../.gitbook/assets/image (45) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35) (2).png" alt=""><figcaption></figcaption></figure>
 
 The purpose of this process is to extract the **Account Number**, **Full Name**, **Statement Date,** and the line items of the **Transactions** table. The detailed steps are as follows:
 

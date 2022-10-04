@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Transactions
 nav_order: 12
 ---
@@ -20,7 +19,7 @@ The **Transaction List** can be exported by selecting **Export To Excel**.
 
 <figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-![Transactions](.gitbook/assets/transactions.png)
+![Transactions](<.gitbook/assets/transactions (1) (1).png>)
 
 ## Available Fields
 
@@ -49,27 +48,34 @@ The **Transaction List** can be exported by selecting **Export To Excel**.
 
 ### Usage Pie Chart
 
-![transactions ussage](.gitbook/assets/transaction-ussage.png)
+The **Usage by Project** pie chart displays the usage of all your projects.
 
-The Usage by project piechart displays the usage of all your projects
+![transactions ussage](<.gitbook/assets/transaction-ussage (1) (1).png>)
 
 ### Usage by Service Pie Chart
 
-![transactions ussage by service](.gitbook/assets/transactions-byservice.png)
+The **Usage by Service** pie chart displays the usage of all your services
 
-The Usage by Service piechart displays the usage of all your services
+![transactions ussage by service](<.gitbook/assets/transactions-byservice (1) (1).png>)
 
 ## Actions
 
-![transactions ussage by service](.gitbook/assets/transaction-actions-1.png)
+1.  Clicking on **View All Transaction Details** in the **Action** bar will navigate you to the **Transaction Details** page.&#x20;
 
-* Clicking on the **Analyse Transaction Details** in the Action bar will navigate you to the Analyse Transaction Details page
+    <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-![transactions ussage by service](.gitbook/assets/transaction-actions-2.png)
+    This view will show a detailed summary of **Transactions** of the **Project**.\
 
-1. Click on a row in the grid to make this button visible.
-2. Clicking the **Details by project/Service** action will navigate you too the
 
-![transactions ussage by service](.gitbook/assets/transaction-actions-3.png)
+    <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+2.  Clicking on **View Details** in the **Action** bar will navigate you to the **Transaction Details** page.
 
-* Clicking on the "Analyse Transaction Details" in the Action bar will navigate you to the Analyse Transaction Details page
+    <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+    This view will show a detailed summary of **Transactions** of the **Service**.\
+
+
+    <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+3.  Clicking on **Open Service** will take the user to the **Manage Service** view to explore the **Service**.
+
+    <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p><br></p></figcaption></figure>

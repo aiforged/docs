@@ -1,14 +1,13 @@
 ---
-layout: default
 title: Reports
 nav_order: 11
 ---
 
 # Reports
 
-The **Reports** **Page** provides an overview of **Projects,** **Services**, **** and **Documents** for the logged-in user. Select **Reports** to navigate to the **Report Page**.
+The **Reports** **Page** provides an overview of **Projects,** **Services**, and **Documents** for the logged-in user. Select **Reports** to navigate to the **Report Page**.
 
-These pages are **Interactive**, and users actively adjust filters and make selections.s
+These pages are **Interactive**, and users actively adjust filters and make selections.
 
 <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,4 +54,3 @@ There are currently 34 **Report Views** available:
 | User Usage Pivot                    | Shows usage per service and service type per user.                                            |
 | Marketplace                         | Shows users per project and service on the marketplace.                                       |
 | Marketplace Usage                   | Shows users per project and service on the marketplace.                                       |
-

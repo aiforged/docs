@@ -1,12 +1,11 @@
 ---
-layout: default
 title: Projects
 nav_order: 7
 ---
 
 # Projects
 
-<figure><img src=".gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The projects page displays all your created projects and allows you to create a new project at any time. The **Projects** also displays internal **Services** and you can access them by clicking or tapping on the service.
 

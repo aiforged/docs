@@ -1,16 +1,14 @@
 ---
+title: Power Automate
+nav_order: 18
+has_children: false
 description: >-
   AIForged is an Intelligent Document Processing solution to complex document
   extraction problems. You can train your AIForged project to combine cognitive
   services in order to classify and extract info
-
-layout: default
-title: Power Automate
-nav_order: 18
-has_children: false
 ---
 
-# Power Automate
+# Intro
 
 ## Prerequisites
 
@@ -54,7 +52,7 @@ Once you select the type of intelligent service, the service wizard will open to
 
 This screen show the layout of a number of services combined into a project
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
 #### Classify documents
 

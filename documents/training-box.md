@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Document Training Box
 parent: Documents
 nav_order: 5
@@ -11,7 +10,7 @@ The Training box is only applicable to services that requires training of docume
 
 ## How to open the Training box
 
-![](<../.gitbook/assets/78 (1) (1).png>)
+![](<../.gitbook/assets/78 (1) (1) (1).png>)
 
 * Within a service click on the **Training Box** button in the App bar to open the Training documents.
 * To open a Service, refer to (Refer)

@@ -1,14 +1,12 @@
 ---
-description: Overview of the AIForged activities in UiPath.
-
-layout: default
 title: UIPath Activities
 nav_order: 22
 has_children: true
 permalink: /uipath-activities
+description: Overview of the AIForged activities in UiPath.
 ---
 
-# AIForged Activities
+# Introduction
 
 UiPath aggregates custom build **AIForged** activities that are available in the “Manage Packages” tab in _**UiPath Studio**_.
 
@@ -20,7 +18,7 @@ To successfully us the _AIForged_ activities in _UiPath Studio,_ the minimum lic
 
 The name of the package is: **AIForged** by **AIForged**
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot of Manage Packages Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot of Manage Packages Screen</p></figcaption></figure>
 
 ### Activities Panel
 
