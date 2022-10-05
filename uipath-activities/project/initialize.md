@@ -28,10 +28,10 @@ Get Project
 
 ## Activity Preview
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Get Project Activity</p></figcaption></figure>
-
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Get Project Activity Properties View</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Get Project Activity</p></figcaption></figure>
 
 ### Activity Property View
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
