@@ -1,9 +1,3 @@
----
-layout: default
-title: Table of contents
-nav_exclude: true
----
-
 # Table of contents
 
 * [How to Install AIForged](README.md)
@@ -146,7 +140,15 @@ nav_exclude: true
 * [Document](uipath-activities/document.md)
 * [Notifications](uipath-activities/notifications.md)
 * [Payments](uipath-activities/payments.md)
-* [Project](uipath-activities/project.md)
+* [Project](uipath-activities/project/README.md)
+  * [Get Project](uipath-activities/project/initialize.md)
+  * [Get Project By Id](uipath-activities/project/get-project-by-id.md)
+  * [Get Project By User](uipath-activities/project/get-project-by-user.md)
+  * [Get Project Class](uipath-activities/project/get-project-class.md)
+  * [Get Project By Name](uipath-activities/project/get-project-by-name.md)
+  * [Get Project Service Defs](uipath-activities/project/get-project-service-defs.md)
+  * [Get Projects](uipath-activities/project/get-projects.md)
+  * [Get Project Classes](uipath-activities/project/get-project-classes.md)
 * [Service](uipath-activities/service.md)
 * [System](uipath-activities/system.md)
 * [Verification](uipath-activities/verification.md)

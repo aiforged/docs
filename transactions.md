@@ -62,18 +62,18 @@ The **Usage by Service** pie chart displays the usage of all your services
 
 1.  Clicking on **View All Transaction Details** in the **Action** bar will navigate you to the **Transaction Details** page.
 
-    <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** of the **Project**.\\
 
     <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Clicking on **View Details** in the **Action** bar will navigate you to the **Transaction Details** page.
 
-    <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** of the **Service**.\\
 
-    <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 3.  Clicking on **Open Service** will take the user to the **Manage Service** view to explore the **Service**.
 
     <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p><br></p></figcaption></figure>

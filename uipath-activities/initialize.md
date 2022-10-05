@@ -19,6 +19,8 @@ Initialize
 
 ### Input
 
+**Context** - Requires a context for the connection to AIForged. Includes connection configuration information, user information and authentication information. This is a regular VB or C# expression.
+
 **Password** – (deprecated) - AIForged.API Password used when creating your **AIForged** account. The variable type is **String**.
 
 **SecurePassword** –  AIForged.API SecurePassword used when creating your **AIForged** account. The variable type is **SecureString**.
