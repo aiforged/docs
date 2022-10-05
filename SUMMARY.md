@@ -142,7 +142,7 @@
 * [Payments](uipath-activities/payments.md)
 * [Project](uipath-activities/project/README.md)
   * [Get Project](uipath-activities/project/initialize.md)
-  * [Copy of Get Project By Id](uipath-activities/project/initialize-1.md)
+  * [Get Project By Id](uipath-activities/project/initialize-1.md)
 * [Service](uipath-activities/service.md)
 * [System](uipath-activities/system.md)
 * [Verification](uipath-activities/verification.md)
