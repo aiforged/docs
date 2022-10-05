@@ -56,7 +56,7 @@ Click on the "Export to Excel" command in the command bar to download the export
 
 ### Manage service
 
-![](<.gitbook/assets/image (1) (1) (1) (1) (2).png>)
+![](<.gitbook/assets/image (1) (1) (1) (1).png>)
 
 ![](<assets/image (43).png>)
 

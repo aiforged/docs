@@ -32,5 +32,5 @@
 1. Open the service on the marketplace page.
 2.  Click on the **Rating and Review** in the app bar.
 
-    <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 3. The Rating and Review popup will open.
