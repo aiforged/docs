@@ -8,7 +8,8 @@
 
 ![](<.gitbook/assets/image (18) (1) (1) (1) (1).png>)
 
-1.  Click on the service you want to add.\\
+1.  Click on the service you want to add.\
+
 
     <figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click on an image to preview.
@@ -30,7 +31,7 @@
 ## Ratting and Review
 
 1. Open the service on the marketplace page.
-2.  Click on the **Rating and Review** in the app bar.
+2.  Click on the **Rating and Review** in the app bar.&#x20;
 
-    <figure><img src=".gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 3. The Rating and Review popup will open.
