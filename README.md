@@ -2,7 +2,7 @@
 
 The AIForged Studio can be installed via one of our Fastlane releases, or via the Microsoft Store.
 
-Our Fastlane releases consist of a traditional MSI installer which makes distribution and management easier at an enterprise level. As well as a more modern MSIX installer which installs a packaged version of the AIForged Studio to your local Microsoft Packages directory, similar to installing an app from the Microsoft Store. Please visit the Fastlane page for more information on how to install one of the available packages.
+Our Fastlane releases include a traditional MSI installer which makes distribution and management easier at an enterprise level. As well as a more modern MSIX installer which installs a packaged version of the AIForged Studio to your local Microsoft Packages directory, similar to installing an app from the Microsoft Store. Please visit the Fastlane page for more information on how to install one of the available packages.
 
 Both versions of our Fastlane installers include auto-update features to keep your installation of the AIForged Studio up to date.
 
