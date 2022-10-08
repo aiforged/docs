@@ -115,6 +115,7 @@
 ## Power Automate
 
 * [Intro](power-automate/intro.md)
+* [Get Started](power-automate/get-started.md)
 
 ## SDK
 
