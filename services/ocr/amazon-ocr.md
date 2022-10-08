@@ -1,6 +1,13 @@
+---
+title: Amazon OCR
+parent: OCR
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Amazon OCR
 
-![](<../../.gitbook/assets/42 (2).png>)
+![](<../../.gitbook/assets/42 (1) (1).png>)
 
 The Amazon OCR service reads text from images for you to use.
 

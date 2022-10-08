@@ -1,3 +1,10 @@
+---
+title: Service Users
+parent: Miscellaneous
+grand_parent: Understanding Services
+nav_order: 4
+---
+
 # Service users
 
 ![manage users](/assets/services-mageusers-page.png)

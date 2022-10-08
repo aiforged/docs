@@ -1,26 +1,37 @@
+---
+title: Projects
+nav_order: 7
+---
+
 # Projects
 
-![](<.gitbook/assets/projects (1).png>)
+<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The projects page displays all your created projects and allows you to create a new project at any time. The Projects also displays internal services and you can access them by clicking or tapping on the service.
+The **Projects** page displays projects created by you, or that have been shared with you, and allows you to create a new project at any time. Each **Project Card** displays a summary of each [**Service**](broken-reference) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference) and the remaining credit balance for that project.
+
+Clicking on a [**Service**](broken-reference) icon allows you to zoom to that service.
+
+Clicking the project card will open the project detail view.
 
 ## How to create a project
 
-![](<.gitbook/assets/Test (1).png>)
+<figure><img src=".gitbook/assets/image (10) (4).png" alt=""><figcaption></figcaption></figure>
 
-* Click on “create a project” on the bottom right of the screen.
+* Click on **Create a Project** on the bottom right of the screen.
 
-![](<.gitbook/assets/10 (2).png>)
+<figure><img src=".gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Fill in the new Projects name make sure that they are unique since it could later affect your reports.
-* Click on “Create project” to Create a new Project.
-* Click on yes when the popup appears
-* You will be navigated back to the Projects page where you can view that Project.
+* Provide your new **Project** with a name. Ensure that your project name is unique and easily distinguishable for reporting purposes.
+* Enter additional information about your **Project** in the **Description** and **Comment** fields.
+* Click on **Create project** to create your new **Project**.
+* Click **Yes** on the popup that appears.
+* Your new **Project's** detail view will load where you can add services, change and view the **Project**'s information, and so forth.
 
 ## How to delete a project
 
-![](<.gitbook/assets/11 (2).png>)
+<figure><img src=".gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
-* Click on the junk Icon on the project to delete the project
-* After the delete button is clicked a prompt will ask you to accept
-* After accepting your project will be deleted
+* Click on the **Bin Icon** in the upper right of the **Project Card** to delete the **Project.**
+* A prompt will appear asking you to confirm **Project** deletion.
+* Upon confirming the prompt your **Project** will be deleted.
+* Only the owner of a **Project** can delete it.

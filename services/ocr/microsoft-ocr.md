@@ -1,6 +1,13 @@
+---
+title: Microsoft OCR
+parent: OCR
+grand_parent: Understanding Services
+nav_order: 3
+---
+
 # Microsoft OCR
 
-![](<../../.gitbook/assets/44 (2).png>)
+![](<../../.gitbook/assets/44 (1) (1).png>)
 
 The Microsoft OCR service reads text from images for you to use.
 

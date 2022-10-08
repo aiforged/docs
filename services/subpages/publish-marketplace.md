@@ -1,3 +1,10 @@
+---
+title: Publish Marketplace
+parent: Miscellaneous
+grand_parent: Understanding Services
+nav_order: 3
+---
+
 # Publish to marketplace
 
 ![Share on marketplace](/assets/share-on-marketplace.png)

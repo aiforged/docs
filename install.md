@@ -1,3 +1,9 @@
+---
+layout: default
+title: How To Install AIForged
+nav_order: 1
+---
+
 # How to Install AIForged
 
 |  |

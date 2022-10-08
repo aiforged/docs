@@ -1,6 +1,13 @@
+---
+title: Microsoft Speech-to-Text
+parent: Speech
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Microsoft Speech to Text
 
-![](<../../.gitbook/assets/48 (2).png>)
+![](<../../.gitbook/assets/48 (1) (1).png>)
 
 Quickly and accurately transcribe audio to text in more than 30 languages. Customize models to enhance accuracy for domain-specific terminology.
 

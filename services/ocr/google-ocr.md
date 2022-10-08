@@ -1,6 +1,13 @@
+---
+title: Google OCR
+parent: OCR
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Google OCR
 
-![](<../../.gitbook/assets/43 (2).png>)
+![](<../../.gitbook/assets/43 (1) (1).png>)
 
 The Google OCR service reads text from images for you to use.
 

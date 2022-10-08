@@ -9,6 +9,7 @@
 * [Projects](projects.md)
 * [Marketplace](marketplace.md)
 * [Transactions](transactions.md)
+* [Reports](reports.md)
 * [Payments](payments.md)
 * [Service users](service-users.md)
 * [Contacts](contacts.md)
@@ -69,7 +70,9 @@
   * [AIForged Digitizer](services/utilities/aiforged-digitizer.md)
   * [AIForged Image Splitter](services/utilities/aiforged-image-splitter.md)
   * [AIForged Pdf Converter](services/utilities/aiforged-pdf-converter.md)
-* [Custom Service Code](services/custom-service-code.md)
+* [Custom Service Code](services/custom-service-code/README.md)
+  * [IBaseModule Interface Data Types](services/custom-service-code/ibasemodule-interface-data-types.md)
+  * [IBaseModule Methods](services/custom-service-code/ibasemodule-methods.md)
 * [Custom Workflow Code](services/custom-workflow-code.md)
 * [Human in the Loop](services/human-in-the-loop.md)
 
@@ -118,3 +121,27 @@
 * [.Net](sdk/.net.md)
 * [Typescript](sdk/typescript.md)
 * [Python](sdk/python.md)
+
+## Practical Examples
+
+* [Social Security Number Card](practical-examples/social-security-number-card.md)
+* [Bank Statement](practical-examples/bank-statement.md)
+* [Credit Application Form](practical-examples/credit-application-form.md)
+* [Credit Application Process: Accept or Reject the Application](practical-examples/credit-application-process-accept-or-reject-the-application.md)
+* [Utility Invoice](practical-examples/utility-invoice.md)
+
+## UiPath Activities
+
+* [Introduction](uipath-activities/introduction.md)
+* [Initialize](uipath-activities/initialize.md)
+* [Balance](uipath-activities/balance/README.md)
+  * [Get Balance](uipath-activities/balance/get-balance.md)
+  * [Get Payments](uipath-activities/balance/get-payments.md)
+* [Document](uipath-activities/document.md)
+* [Notifications](uipath-activities/notifications.md)
+* [Payments](uipath-activities/payments.md)
+* [Project](uipath-activities/project.md)
+* [Service](uipath-activities/service.md)
+* [System](uipath-activities/system.md)
+* [Verification](uipath-activities/verification.md)
+* [WorkItem](uipath-activities/workitem.md)

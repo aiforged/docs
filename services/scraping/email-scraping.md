@@ -1,6 +1,13 @@
+---
+title: E-mail Scaraping
+parent: Scraping
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # Email Scraping
 
-![](<../../.gitbook/assets/46 (2).png>)
+![](<../../.gitbook/assets/46 (1) (1).png>)
 
 Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
 

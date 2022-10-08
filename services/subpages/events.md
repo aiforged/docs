@@ -1,3 +1,10 @@
+---
+title: Events
+parent: Miscellaneous
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Events
 
 ![Service Events](assets/service-events.png)

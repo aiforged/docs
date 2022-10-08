@@ -1,6 +1,13 @@
+---
+title: Attachments
+parent: Scraping
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Attachments
 
-![](<../../.gitbook/assets/31 (2).png>)
+![](<../../.gitbook/assets/31 (1) (1).png>)
 
 The **attachment** service allows you to extract attachments from Emails.
 

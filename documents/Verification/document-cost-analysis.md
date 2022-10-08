@@ -1,3 +1,10 @@
+---
+layout: default
+title: Document Cost Analysis
+parent: Documents
+nav_order: 7
+---
+
 # Document Analysis
 
 ![Document analytics](/assets/Verification-Document-Analysis.png)

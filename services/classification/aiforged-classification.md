@@ -1,6 +1,13 @@
+---
+title: AIForged Classification
+parent: Classification
+grand_parent: Understanding Services
+nav_order: 1
+---
+
 # AIForged Classification
 
-![](<../../.gitbook/assets/34 (2).png>)
+![](<../../.gitbook/assets/34 (1) (1).png>)
 
 The AIForged Classification service is a inhouse Classification service build to automatically categorize documents and sort them into predefined document categories. The AIForged Classification service allows setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
 
@@ -12,14 +19,13 @@ The AIForged Classification service is a inhouse Classification service build to
 4. **Step 1** – Service (Displays the service setting, you can change it as required)
 5. Click the “Next” Action in the Action Bar to save the Service
 6. **Step 2** Classes, to add a Class View [Document Categories](aiforged-classification.md) (Click next to save categories)
-7. **Step 3** Training
-   *
-     1. ![](<../../.gitbook/assets/35 (2).png>) Click “Upload Training Documents” in the Action Bar
-     2. Select the Document Category you want to upload documents to **The demos training files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)
-     3. Upload Documents for each category you want to train
-     4. Click Train Service once all documents have been uploaded
-     5. A log Window will open displaying the current logs for the Training Document
-     6. Click the Next button when done training
+7. **Step 3** Training \*
+   1. ![](<../../.gitbook/assets/33 (1) (3).png>) Click “Upload Training Documents” in the Action Bar
+   2. Select the Document Category you want to upload documents to **The demos training files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)
+   3. Upload Documents for each category you want to train
+   4. Click Train Service once all documents have been uploaded
+   5. A log Window will open displaying the current logs for the Training Document
+   6. Click the Next button when done training
 8. **Step 4** Definition, the definition Document would be created after the Service has trained successfully
 
 ## Add and Process Documents

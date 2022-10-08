@@ -1,21 +1,27 @@
+---
+title: Login
+nav_order: 5
+---
+
 # Login
 
-## Local Login
+## AIForged Account
 
-![](<.gitbook/assets/2 (2).png>)
+<figure><img src=".gitbook/assets/image (11) (3).png" alt=""><figcaption></figcaption></figure>
 
-* Local login can be used to Login to AiForged with the Account that you registered on AiForged with
-* Only **Username** and **Password** is required
-* Click on “Remember My Login” if you don’t wish to input your details everytime
+* Login with your registered AIForged account.
+* Only a **Username** and a **Password** are required.
+* Click on “Remember My Login” if you don’t wish to re-enter your credentials every time you login.
 
-## External Logins
+## External Account
 
-![](<.gitbook/assets/3 (2).png>)
+<figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-* External Logins can be used to use your Social Media Logins to Login too AiForged
-* External Logins can be linked to your AiForged account at a later stage
+* An **External Account**, such as a Social Media account, can be used to login to AIForged.
+* If you have not previously logged in or registered with AIForged, logging in via an **External Account** will register a new AIForged account using the publicly available details from your **External Account**.
+* An **External Account** can be linked to your existing AIForged account at a later stage via your [**User Profile**](user-profile.md) settings.
 
-**Types of External Login**
+**Currently available External Accounts:**
 
 * Microsoft
 * Facebook
@@ -23,12 +29,14 @@
 * Twitter
 * GitHub
 * LinkedIn
-* Azure Active Directory
+* Azure Active Directory (via Microsoft)
 
 ## Troubleshooting
 
-**If you can’t login to AiForged check the following**
+**Should you be unable to login to AIForged, please check the following:**
 
-* Make sure that you Device is connected to the internet
-* If you are using AiForged on an internal network check with your administrators that the **Identity Server Url** and **Service Endpoint Url** is allowed through your network these can be found in the **Settings** of the application
-* If you have your own internal AiForged Services running add the Endpoints to the Services page
+* Ensure that your **Device** is connected to the **Internet**.
+* If you are using AIForged on a business or enterprise network, please check with your network administrators that the AIForged **Service Endpoint URL** is allowed outbound access via your network. This URL can be found in the [**Settings**](settings.md) section of the AIForged Studio.
+* If you have deployed AIForged on-premises, please make sure to add the correct **Service Endpoint URL** in the [**Settings**](settings.md) section of the AIForged Studio.
+* If you are logging in with an **AIForged Account**, please ensure that you have previously registered with the provided e-mail address on the AIForged platform. If you have previously registered on the AIForged platform and are still unable to login, please make use of the [**Forgot Password**](forgot-password.md) **** function.
+

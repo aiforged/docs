@@ -1,6 +1,13 @@
+---
+title: Google Object Detection
+parent: Object Detection
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Google Object Detection
 
-![](<../../.gitbook/assets/55 (2).png>)
+![](<../../.gitbook/assets/55 (1) (1).png>)
 
 Google object detection detects object, faces and landmarks using Google Vision
 
