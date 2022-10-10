@@ -7,7 +7,7 @@ nav_order: 9
 
 The settings page of the AIForged UI can be found by clicking Settings at the bottom left of the window.
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Connectivity
 
@@ -19,11 +19,11 @@ The **Connectivity** page allows the user to change connectivity settings. The u
 * Proxy User
 * Proxy Password.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
 To add a new **Service Endpoint**, click on the **Plus Sign Button**.
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -31,7 +31,7 @@ To add a new **Service Endpoint**, click on the **Plus Sign Button**.
 
 The **Theme** page allows the user to change the aesthetics and sound setting of the AIForged UI.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Change Theme Mode
 
