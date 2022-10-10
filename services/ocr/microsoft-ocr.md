@@ -7,7 +7,7 @@ nav_order: 3
 
 # Microsoft OCR
 
-![](<../../assets/44 (1).png>)
+![](<../../assets/44 (2).png>)
 
 The Microsoft OCR service reads text from images for you to use.
 

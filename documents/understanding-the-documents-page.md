@@ -12,19 +12,19 @@ you can identify 3 main categories: structured, semi-structured and unstructured
 
 ### Structured documents
 
-![](<../assets/structured-document (1).png>)
+![](<../assets/structured-document (2).png>)
 
 Structured documents generally focus on collecting information in a precise format, guiding the person who is filling them with precise areas where each piece of data needs to be entered.
 
 ### Semi-structured
 
-![](<../assets/semi-structured (1).png>)
+![](<../assets/semi-structured (2).png>)
 
 Semi-structured documents are documents that do not follow a strict format the way structured forms do and are not bound to specified data fields. These don't have a fixed form but follow a common format.
 
 ## un-structured
 
-![](<../assets/un-structured (1).png>)
+![](<../assets/un-structured (2).png>)
 
 Unstructured documents are documents in which the information isn't organized according to a clear, structured model.
 
@@ -46,37 +46,37 @@ Unstructured documents are documents in which the information isn't organized ac
 
 ## Document Actions
 
-![](<../assets/57 (1).png>)
+![](<../assets/57 (2).png>)
 
 * Opens documents linked to this document
 
-![](<../assets/58 (1).png>)
+![](<../assets/58 (2).png>)
 
 * Opens documents on your operating system
 
-![](<../assets/59 (1).png>)
+![](<../assets/59 (2).png>)
 
 * Downloads the Document to your system
 
-![](<../assets/60 (1).png>)
+![](<../assets/60 (2).png>)
 
 * Opens the document hierarchy
 
-![](<../assets/61 (1).png>)
+![](<../assets/61 (2).png>)
 
 * Pens the documents structured results
 
-![](<../assets/62 (1).png>)
+![](<../assets/62 (2).png>)
 
 * Shows the documents results
 
-![](<../assets/63 (1).png>)
+![](<../assets/63 (2).png>)
 
 * Opens the document for verification
 
 ## Sort the Documents grid
 
-![](<../assets/64 (1).png>)
+![](<../assets/64 (2).png>)
 
 * You can Sort the documents page by clicking on any of the table headers
 * All Sorting of the documents happens **server side**
@@ -86,7 +86,7 @@ Unstructured documents are documents in which the information isn't organized ac
 
 The Bulk Category Update Action allows you to update all the selected Document categories
 
-![](<../assets/65 (1).png>)
+![](<../assets/65 (2).png>)
 
 1. To do a Bulk category Update click on “Bulk Category Update” in the app bar.
 2. A popup will appear asking what Document Status you would like to update.
@@ -99,7 +99,7 @@ The Bulk Category Update Action allows you to update all the selected Document c
 
 The Bulk Status Update Action allows you to update all the selected Document statuses
 
-![](<../assets/66 (1).png>)
+![](<../assets/66 (2).png>)
 
 1. To do a Bulk Status Update click on “Bulk Status Update” in the app bar.
 2. A popup will appear asking what Document Status you would like to update.
@@ -112,7 +112,7 @@ The Bulk Status Update Action allows you to update all the selected Document sta
 
 The Bulk Copy Action allows you to **copy** the documents to another project and service.
 
-![](<../assets/67 (1).png>)
+![](<../assets/67 (2).png>)
 
 1. To do a Bulk Copy click on “Bulk Copy” in the app bar.
 2. A popup will appear asking to select a destination project.
@@ -126,7 +126,7 @@ The Bulk Copy Action allows you to **copy** the documents to another project and
 
 The Bulk Move Action allows you to **move** the documents to another project and service.
 
-![](<../assets/68 (1).png>)
+![](<../assets/68 (2).png>)
 
 1. To do a Bulk Move click on “Bulk Move” in the app bar.
 2. A popup will appear asking to select a destination project.
@@ -140,20 +140,20 @@ The Bulk Move Action allows you to **move** the documents to another project and
 
 The Process Checked Action allows you to **process** selected documents.
 
-![](<../assets/69 (1).png>)
+![](<../assets/69 (2).png>)
 
 1. To **Process** a checked document, check all the document you would like to process.
 2. Click on the Process Checked click on the Process “Process Checked” Action in the app bar.
 3. A popup will appear to check if you want to process the documents, click yes.
 4. A Log Events popup will appear displaying the progress of **processing** the documents.
 
-![](<../assets/70 (1).png>)
+![](<../assets/70 (2).png>)
 
 ## Copy Checked
 
 The Process Checked Action allows you to **process** selected documents.
 
-![](<../assets/71 (1).png>)
+![](<../assets/71 (2).png>)
 
 1. To **Copy** a checked document, check all the document you would like to copy.
 2. Click on the Copy Checked click on the Process “Copy Checked” Action in the app bar.
@@ -168,7 +168,7 @@ The Process Checked Action allows you to **process** selected documents.
 
 The Delete Checked Action allows you to **delete** selected documents.
 
-![](<../assets/72 (1) (1) (1).png>)
+![](<../assets/72 (1) (1) (1) (1).png>)
 
 1. To **Delete** a checked document, check all the document you would like to delete.
 2. Click the “Delete Checked” Action in the app bar.
@@ -178,7 +178,7 @@ The Delete Checked Action allows you to **delete** selected documents.
 
 The Checked Status Action allows you to change the selected documents statuses selected documents.
 
-![](<../assets/72 (1) (1) (1) (1).png>)
+![](<../assets/72 (1) (1) (1).png>)
 
 1. To **Set the Status** of a checked document check all the document you would like to change the Status of.
 2. Click the “Set Checked Status” Action in the app bar.
@@ -189,7 +189,7 @@ The Checked Status Action allows you to change the selected documents statuses s
 
 The Update Checked Action allows update a checked document.
 
-![](<../assets/74 (1).png>)
+![](<../assets/74 (2).png>)
 
 1. To **Update** a checked documents check all the document you would like to Update
 2. Click the “Update Checked” Action in the app ba
@@ -198,7 +198,7 @@ The Update Checked Action allows update a checked document.
 
 The Upload Action allows you to upload a new document.
 
-![](<../assets/75 (1).png>)
+![](<../assets/75 (2).png>)
 
 1. Click the “Upload” Action in the app bar.
 2. In the popup Select the Status of the Document being uploaded

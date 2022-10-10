@@ -7,6 +7,6 @@ nav_order: 1
 
 # ABBYY Image Splitter
 
-![](<../../assets/49 (1).png>)
+![](<../../assets/49 (2).png>)
 
 You can use the ABBYY image splitter to split your documents into images.

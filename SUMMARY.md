@@ -11,7 +11,7 @@
 * [Transactions](transactions.md)
 * [Reports](reports.md)
 * [Payments](payments.md)
-* [Service users](service-users.md)
+* [User Groups](service-users.md)
 * [Contacts](contacts.md)
 * [Notifications](notifications.md)
 * [User Profile](user-profile.md)

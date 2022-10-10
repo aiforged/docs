@@ -7,7 +7,7 @@ nav_order: 2
 
 # Attachments
 
-![](<../../assets/31 (1).png>)
+![](<../../assets/31 (2).png>)
 
 The **attachment** service allows you to extract attachments from Emails.
 

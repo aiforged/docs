@@ -7,7 +7,7 @@ nav_order: 1
 
 # Dictionary
 
-The **Dictionary Rule** can be applied to any type of extracted data and **** provides a means to perform a lookup of an expected word. The user can provide a list of expected words for a field, and using the specified **Lookup Method**, the closest match is used to override the value of the **Parameter**.
+The **Dictionary Rule** can be applied to any type of extracted data and \*\*\*\* provides a means to perform a lookup of an expected word. The user can provide a list of expected words for a field, and using the specified **Lookup Method**, the closest match is used to override the value of the **Parameter**.
 
 For example, if a form contains a field for a **US State**, then the comprehensive list of all 50 states can be supplied to the **Dictionary**, and the best match for what was written on the form, will be returned as the value of the field. In this case, the **Dictionary** can be used to correct the spelling of the expected **US State**.
 
@@ -27,4 +27,4 @@ The following **Lookup Methods** are available:
 
 The list of **Dictionary Entries** can be specified in the **Dictionary Options** table.
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>

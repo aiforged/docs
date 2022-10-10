@@ -1,25 +1,24 @@
 # Marketplace
 
-![](<.gitbook/assets/image (55) (1) (1).png>)
+![](<assets/image (55) (1).png>)
 
 <figure><img src=".gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to add a service
 
-![](<.gitbook/assets/image (18) (1) (1) (1) (1).png>)
+![](<assets/image (18) (1).png>)
 
-1.  Click on the service you want to add.\\
+1.  Click on the service you want to add.
 
     <figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click on an image to preview.
 
-![](<.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<assets/image (2) (1).png>)
 
 <figure><img src=".gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. Click on "Request Access" in the Action bar
-
-3.In the popup select the project you want to link the service too
+1. Click on "Request Access" in the Action bar.
+2. In the popup select the project you want to link the service to.
 
 ## Preview documents
 

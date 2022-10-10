@@ -10,7 +10,7 @@ nav_order: 3
 
 *   Within a service click on the **Outbox** button in the **Service Box**.
 
-    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (17) (3).png" alt=""><figcaption></figcaption></figure>
 *   This will open the documents data grid for all **Outbox** documents.
 
     <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>

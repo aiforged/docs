@@ -1,16 +1,17 @@
 # Notifications
 
-![](<assets/image (4) (1).png>)
+The **Notifications** page shows all the **Notifications** that you received.
 
-The Notifications page shows all the Notifications that you received
+<figure><img src=".gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ### View Notification Body
 
-* To view a Notification Body click on any of the notifications in the grid, your notification body will appear in the bottom of the page
+*   To view a **Notification Body** click on any of the notifications in the grid, and the **Notification Body** will appear at the bottom of the page.
 
-![](<assets/image (36) (1).png>)
+    <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-## Flag Checked as Read
+## Export to Excel
 
-1. Click on the "Flag Checked as read command"
-2.
+In order to export the **Notification List** to Excel, click on the **Export to Excel** button at the bottom of the AIForged UI.
+
+<figure><img src=".gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>

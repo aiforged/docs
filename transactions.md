@@ -17,9 +17,9 @@ The **From** and **To** date filters can be set to view transactions in any time
 
 The **Transaction List** can be exported by selecting **Export To Excel**.
 
-<figure><img src=".gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-![Transactions](<.gitbook/assets/transactions (1) (1).png>)
+![Transactions](<assets/transactions (1).png>)
 
 ## Available Fields
 
@@ -50,19 +50,19 @@ The **Transaction List** can be exported by selecting **Export To Excel**.
 
 The **Usage by Project** pie chart displays the usage of all your projects.
 
-![transactions ussage](<.gitbook/assets/transaction-ussage (1) (1).png>)
+![transactions ussage](<assets/transaction-ussage (1).png>)
 
 ### Usage by Service Pie Chart
 
 The **Usage by Service** pie chart displays the usage of all your services
 
-![transactions ussage by service](<.gitbook/assets/transactions-byservice (1) (1).png>)
+![transactions ussage by service](<assets/transactions-byservice (1).png>)
 
 ## Actions
 
 1.  Clicking on **View All Transaction Details** in the **Action** bar will navigate you to the **Transaction Details** page.
 
-    <figure><img src=".gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** of the **Project**.\\
 

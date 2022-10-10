@@ -7,7 +7,7 @@ nav_order: 1
 
 # Email Scraping
 
-![](<../../assets/46 (1).png>)
+![](<../../assets/46 (2).png>)
 
 Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
 

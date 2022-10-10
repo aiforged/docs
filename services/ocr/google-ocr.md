@@ -7,7 +7,7 @@ nav_order: 2
 
 # Google OCR
 
-![](<../../assets/43 (1).png>)
+![](<../../assets/43 (2).png>)
 
 The Google OCR service reads text from images for you to use.
 
