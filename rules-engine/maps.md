@@ -1,33 +1,9 @@
 ---
+layout: default
 title: Maps
 parent: Rules Engine
 nav_order: 7
 ---
 
-# Address
+# Maps
 
-The **Address Rule Type** can be applied to a field where address data is expected.
-
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-
-By applying the **Addres Rule Type**, a **Maps Utility** is added to the service. The **Maps Utility** can be configured to use the **Google** or **Azure Maps Engines**, to verify whether a provided address is valid or not. The **Maps Engine** can be selected by clicking on the Maps Engine dropdown box.
-
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
-
-The following Address input options are available:
-
-* Street number
-* Street
-* Suburb
-* City
-* Postal Code
-* Municipality
-* Province
-* State
-* Country
-* Country Code
-* Country Code ISO
-* Geolocation
-* Longitude
-* Latitude
-* Points of interest

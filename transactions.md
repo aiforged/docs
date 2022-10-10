@@ -7,7 +7,7 @@ nav_order: 12
 
 The **Transactions** page displays all transactions made by each service and can be viewed by selecting **Transactions**.
 
-<figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Filter Transactions
 
@@ -17,9 +17,9 @@ The **From** and **To** date filters can be set to view transactions in any time
 
 The **Transaction List** can be exported by selecting **Export To Excel**.
 
-<figure><img src=".gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
-![Transactions](<.gitbook/assets/transactions (1) (1).png>)
+![Transactions](<.gitbook/assets/transactions (1) (1) (2) (1).png>)
 
 ## Available Fields
 
@@ -50,13 +50,13 @@ The **Transaction List** can be exported by selecting **Export To Excel**.
 
 The **Usage by Project** pie chart displays the usage of all your projects.
 
-![transactions ussage](<.gitbook/assets/transaction-ussage (1) (1).png>)
+![transactions ussage](<.gitbook/assets/transaction-ussage (1) (1) (2) (1).png>)
 
 ### Usage by Service Pie Chart
 
 The **Usage by Service** pie chart displays the usage of all your services
 
-![transactions ussage by service](<.gitbook/assets/transactions-byservice (1) (1).png>)
+![transactions ussage by service](<.gitbook/assets/transactions-byservice (1) (1) (2) (1).png>)
 
 ## Actions
 
@@ -66,14 +66,14 @@ The **Usage by Service** pie chart displays the usage of all your services
 
     This view will show a detailed summary of **Transactions** of the **Project**.\\
 
-    <figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 2.  Clicking on **View Details** in the **Action** bar will navigate you to the **Transaction Details** page.
 
     <figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** of the **Service**.\\
 
-    <figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 3.  Clicking on **Open Service** will take the user to the **Manage Service** view to explore the **Service**.
 
-    <figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption><p><br></p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p><br></p></figcaption></figure>

@@ -5,11 +5,11 @@ nav_order: 7
 
 # Projects
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The **Projects** page displays projects created by you, or that have been shared with you, and allows you to create a new project at any time. Each **Project Card** displays a summary of each [**Service**](broken-reference/) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference/) and the remaining credit balance for that project.
+The **Projects** page displays projects created by you, or that have been shared with you, and allows you to create a new project at any time. Each **Project Card** displays a summary of each [**Service**](broken-reference) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference) and the remaining credit balance for that project.
 
-Clicking on a [**Service**](broken-reference/) icon allows you to zoom to that service.
+Clicking on a [**Service**](broken-reference) icon allows you to zoom to that service.
 
 Clicking the project card will open the project detail view.
 
@@ -19,7 +19,7 @@ Clicking the project card will open the project detail view.
 
 * Click on **Create a Project** on the bottom right of the screen.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide your new **Project** with a name. Ensure that your project name is unique and easily distinguishable for reporting purposes.
 * Enter additional information about your **Project** in the **Description** and **Comment** fields.

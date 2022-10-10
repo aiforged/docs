@@ -26,10 +26,10 @@ To add **Custom Service Code** to a service:
 
 1.  The **Custom Code** service box will appear within the parent service box.
 
-    <figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 2.  To start writing **Custom Code,** click on the Scripting button.
 
-    <figure><img src="../../.gitbook/assets/image (41) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 3.  The code editor view will appear. The code can be written in the **Code** tab.
 
     <figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
@@ -38,7 +38,7 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (29) (1) (2).png" alt=""><figcaption></figcaption></figure>
 5.  The imports required to write the code, can be added from the **Imports** tab.
 
-    <figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 6.  To compile the code, click on **Save**.
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -20,7 +20,7 @@ Get Project Class
 
 **ProjectId** - This is the **Id** that was given to project when the project was created in AIForged. You can view the project Id in AIForged by hovering you mouse anywhere over the project name.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>View Of Project Id In <strong>AIForged</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>View Of Project Id In <strong>AIForged</strong></p></figcaption></figure>
 
 ### Misc
 
