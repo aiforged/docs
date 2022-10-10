@@ -1,5 +1,10 @@
 ---
 description: <AIForged.API.WorkItem>
+
+title: Create Work Item
+parent: UIPath Project
+grand_parent: UIPath Activities
+nav_order: 1
 ---
 
 # Create Work Item

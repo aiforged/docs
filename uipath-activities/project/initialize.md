@@ -1,5 +1,10 @@
 ---
 description: AIForged. Project.GetProjectClass
+
+title: Initialize1
+parent: UIPath Project
+grand_parent: UIPath Activities
+nav_order: 1
 ---
 
 # Get Project Class

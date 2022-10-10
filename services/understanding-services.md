@@ -1,5 +1,6 @@
 ---
-title: Services
+layout: default
+title: Understanding Services
 nav_order: 14
 has_children: true
 ---

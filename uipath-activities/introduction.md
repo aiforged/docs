@@ -2,7 +2,6 @@
 title: UIPath Activities
 nav_order: 22
 has_children: true
-permalink: /uipath-activities
 description: Overview of the AIForged activities in UiPath.
 ---
 

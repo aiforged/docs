@@ -1,5 +1,5 @@
 ---
-title: E-mail Scaraping
+title: E-mail Scraping
 parent: Scraping
 grand_parent: Understanding Services
 nav_order: 1
