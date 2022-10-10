@@ -5,7 +5,7 @@ nav_order: 6
 
 # Forgot Password
 
-<figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **Forgot Password** page can be used in the event that you are unable to login to your account and need to reset your password.
 * You will receive a reset password email with instructions on how to reset your password.
