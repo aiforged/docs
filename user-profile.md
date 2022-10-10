@@ -67,7 +67,7 @@ To reset all teaching tips click on "Reset Teaching Tips"
 
 ## Turn teaching tips on and off
 
-![](<assets/image (33).png>)
+![](<assets/image (33) (1).png>)
 
 Click on the slider to turn the **Teaching Tip** on or off
 

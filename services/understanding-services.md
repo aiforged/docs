@@ -14,7 +14,7 @@ A **Service** is a container that hosts an OCR engine and provides a means to re
 
 The example project below shows a **Service Box**, which is the **Parent Service** for three **Child Services**.
 
-<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 The following **Action Buttons** can be found on the **Service Box**, the number indicates the document count for each of the boxes:
 
@@ -24,7 +24,7 @@ The following **Action Buttons** can be found on the **Service Box**, the number
 | Training             | ![](<../.gitbook/assets/image (26) (1).png>)    | Takes the user to the Training documents box of the service. |
 | Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)     | Takes the user to the Labelled documents box of the service. |
 | Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>) | Takes the user to the Document Inbox of the service.         |
-| Outbox               | ![](<../.gitbook/assets/image (15) (3).png>)    | Takes the user to the Document Outbox of the service.        |
+| Outbox               | ![](<../.gitbook/assets/image (4) (3) (1).png>) | Takes the user to the Document Outbox of the service.        |
 | Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)    | Opens the Configuration Wizard of the service.               |
 | Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1).png>) | Open the Parameter Definitions of the service.               |
 | Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)    | Opens the Service Logs of the service.                       |
@@ -35,7 +35,7 @@ The following **Action Buttons** can be found on the **Service Box**, the number
 1. Open an existing Project, or create a new one.
 2.  At the bottom of the AIForged UI, select **Add Service.**
 
-    <figure><img src="../.gitbook/assets/image (20) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  The "_Add New Service"_ dialogue pops up.
 
     <figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
@@ -50,7 +50,7 @@ Other **Service Actions** are (found at the bottom of the AIForged UI):
 
 *   Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (7) (2) (2).png" alt=""><figcaption></figcaption></figure>
 *   Document Keys
 
     <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>

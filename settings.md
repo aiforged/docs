@@ -37,10 +37,10 @@ The **Theme** page allows the user to change the aesthetics and sound setting of
 
 To change the Theme Mode click on the radio button of the Theme you want to select
 
-![](<assets/image (38) (1).png>)
+![](<assets/image (38) (1) (1).png>)
 
 ### Sound
 
 Change the slider to turn the sound on and off.
 
-![](<assets/image (6) (1).png>)
+![](<assets/image (6) (1) (1).png>)

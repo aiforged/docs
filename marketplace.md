@@ -1,19 +1,19 @@
 # Marketplace
 
-![](<assets/image (55) (1).png>)
+![](<assets/image (55) (1) (1).png>)
 
 <figure><img src=".gitbook/assets/image (18) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## How to add a service
 
-![](<assets/image (18) (1).png>)
+![](<assets/image (18) (1) (1).png>)
 
 1.  Click on the service you want to add.
 
     <figure><img src=".gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click on an image to preview.
 
-![](<assets/image (2) (1).png>)
+![](<assets/image (2) (1) (1).png>)
 
 <figure><img src=".gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
