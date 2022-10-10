@@ -60,7 +60,7 @@ The purpose of this process is to extract various fields on the form, including 
     <figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 17. Details and metadata of the detected layout **Parameters** can be viewed by clicking on the bounding box of the text.
 
-    <figure><img src="../.gitbook/assets/image (13) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 18. In the case of Social Security cards, we are interested in extracting the **SSN**, the **Full Name** and the **Date of Issue** fields. To start labeling, click on the preview of the document in the **Document Designer**, and drag the region where a field can be found.
 
     <figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
