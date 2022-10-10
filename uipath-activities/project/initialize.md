@@ -1,24 +1,26 @@
 ---
-description: AIForged. Project.GetProject
+description: AIForged. Project.GetProjectClass
 ---
 
-# Get Project
+# Get Project Class
 
 ## About
 
-The **Get Project** activity allows you to get a project from AIForged using the project name.
-
-### Properties
+The **Get Project** activity allows you to get a project from AIForged using the project class Id.&#x20;
 
 ### Display Name
 
-Get Project
+Get Project Class
 
 ### Input
 
 **Context** - Requires a context for the connection to AIForged. Includes connection configuration information, user information and authentication information. This is a regular VB or C# expression.
 
-**ProjectName** - This is the name that was given to project when the project was created in AIForged.
+**ClassId** - \<Insert information here>
+
+**ProjectId** - This is the **Id** that was given to project when the project was created in AIForged. You can view the project Id in AIForged by hovering you mouse anywhere over the project name.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>View Of Project Id In <strong>AIForged</strong></p></figcaption></figure>
 
 ### Misc
 
@@ -30,8 +32,8 @@ Get Project
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Get Project Activity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Get Project By Id Activity</p></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Get Project Activity Properties</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Get Project By Id Activity Properties</p></figcaption></figure>
