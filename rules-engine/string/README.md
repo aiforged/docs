@@ -2,6 +2,7 @@
 title: String
 parent: Rules Engine
 nav_order: 1
+has_children: true
 ---
 
 # String

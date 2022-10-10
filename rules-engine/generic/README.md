@@ -2,6 +2,7 @@
 title: Generic Rules
 parent: Rules Engine
 nav_order: 10
+has_children: true
 ---
 
 # Generic
