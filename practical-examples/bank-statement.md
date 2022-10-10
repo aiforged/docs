@@ -43,7 +43,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
     <figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 10. Select the **Category** of the training documents.
 
-    <figure><img src="../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (12) (2) (1).png" alt=""><figcaption></figcaption></figure>
 11. Once the files are loaded, note that they are in the **Received** state.
 
     <figure><img src="../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
@@ -61,7 +61,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
     <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 16. The **Document Designer** is presented in step 4. A preview of the document is shown with the overlayed analyzed layout data.
 
-    <figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 17. Details and metadata of the detected layout **Parameters** can be viewed by clicking on the bounding box of the text.
 
     <figure><img src="../.gitbook/assets/image (24) (3).png" alt=""><figcaption></figcaption></figure>

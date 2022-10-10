@@ -18,17 +18,17 @@ The example project below shows a **Service Box**, which is the **Parent Service
 
 The following **Action Buttons** can be found on the **Service Box**, the number indicates the document count for each of the boxes:
 
-| Action Button        | Icon                                     | Descritpion                                                  |
-| -------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| Definition           | ![](<../.gitbook/assets/image (14).png>) | Takes the user to the Definitions box of the service.        |
-| Training             | ![](<../.gitbook/assets/image (26).png>) | Takes the user to the Training documents box of the service. |
-| Labelled             | ![](<../.gitbook/assets/image (8).png>)  | Takes the user to the Labelled documents box of the service. |
-| Inbox                | ![](<../.gitbook/assets/image (6).png>)  | Takes the user to the Document Inbox of the service.         |
-| Outbox               | ![](<../.gitbook/assets/image (4).png>)  | Takes the user to the Document Outbox of the service.        |
-| Configuration Wizard | ![](<../.gitbook/assets/image (12).png>) | Opens the Configuration Wizard of the service.               |
-| Service Definitions  | ![](<../.gitbook/assets/image (3).png>)  | Open the Parameter Definitions of the service.               |
-| Service Logs         | ![](<../.gitbook/assets/image (10).png>) | Opens the Service Logs of the service.                       |
-| Delete Service       | ![](<../.gitbook/assets/image (16).png>) | Delete the service.                                          |
+| Action Button        | Icon                                         | Descritpion                                                  |
+| -------------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| Definition           | ![](<../.gitbook/assets/image (14).png>)     | Takes the user to the Definitions box of the service.        |
+| Training             | ![](<../.gitbook/assets/image (26).png>)     | Takes the user to the Training documents box of the service. |
+| Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)  | Takes the user to the Labelled documents box of the service. |
+| Inbox                | ![](<../.gitbook/assets/image (6) (2).png>)  | Takes the user to the Document Inbox of the service.         |
+| Outbox               | ![](<../.gitbook/assets/image (4) (3).png>)  | Takes the user to the Document Outbox of the service.        |
+| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>) | Opens the Configuration Wizard of the service.               |
+| Service Definitions  | ![](<../.gitbook/assets/image (3).png>)      | Open the Parameter Definitions of the service.               |
+| Service Logs         | ![](<../.gitbook/assets/image (10).png>)     | Opens the Service Logs of the service.                       |
+| Delete Service       | ![](<../.gitbook/assets/image (16).png>)     | Delete the service.                                          |
 
 ## How to create a Service?
 
@@ -50,7 +50,7 @@ Other **Service Actions** are (found at the bottom of the AIForged UI):
 
 *   Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 *   Document Keys
 
     <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>

@@ -5,43 +5,33 @@ nav_order: 9
 
 # Settings
 
+The settings page of the AIForged UI can be found by clicking Settings at the bottom left of the window.
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
 ## Connectivity
 
-![](<.gitbook/assets/image (7) (1) (2) (1).png>)
+The **Connectivity** page allows the user to change connectivity settings. The user can specify:
 
-### Identity Server URL
+* Service Endpoint URL
+* Connection Timeout
+* Proxy Server
+* Proxy User
+* Proxy Password.
 
-#### How to add an Identity Server URL
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-1. Click on the + Icon ![](<assets/image (39) (1).png>)
-2. In the popup fill in the new value
-3. Click "Ok"
+To add a new **Service Endpoint**, click on the **Plus Sign Button**.
 
-#### How to remove an Identity Server URL
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-1. Select you identity server URL in the drop down ![](<assets/image (26) (1).png>)
-2. Click on the - Icon ![](<.gitbook/assets/image (5) (1) (1).png>)
-3. A prompt will appear to ask if you are sure you want to delete this URL
-4. Click "Ok"
 
-### Service Endpoint URL
-
-#### How to add an Service Endpoint URL
-
-1. Click on the + Icon ![](<assets/image (39) (1).png>)
-2. In the popup fill in the new value
-3. Click "Ok"
-
-#### How to remove an Service Endpoint URL
-
-1. Select you identity server URL in the drop down ![](<.gitbook/assets/image (6) (1) (1).png>)
-2. Click on the - Icon ![](<.gitbook/assets/image (5) (1) (1).png>)
-3. A prompt will appear to ask if you are sure you want to delete this URL
-4. Click "Ok"
 
 ## Theme
 
-![](<.gitbook/assets/image (13) (1) (1) (1) (1).png>)
+The **Theme** page allows the user to change the aesthetics and sound setting of the AIForged UI.
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Change Theme Mode
 
@@ -49,8 +39,8 @@ To change the Theme Mode click on the radio button of the Theme you want to sele
 
 ![](<.gitbook/assets/image (38) (1) (1) (1) (1).png>)
 
-### Turn Sound on and off
+### Sound
 
-Change the slider to turn the sound on and off
+Change the slider to turn the sound on and off.
 
 ![](<.gitbook/assets/image (10) (1) (1) (1) (1).png>)

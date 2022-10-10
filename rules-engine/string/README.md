@@ -12,4 +12,4 @@ The **String** **Rule Type** can be applied to a field where a generic string is
 
 The properties of the **Rules Engine** can be configured here for the **String Rule Type**. After the **String Rule Type** has been selected, options for **Spelling** and **Text Analysis** are shown.
 
-<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
