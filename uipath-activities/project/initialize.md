@@ -6,7 +6,7 @@ description: AIForged. Project.GetProjectClass
 
 ## About
 
-The **Get Project** activity allows you to get a project from AIForged using the project class Id.&#x20;
+The **Get Project** activity allows you to get a project from AIForged using the project class Id.
 
 ### Display Name
 
@@ -20,11 +20,11 @@ Get Project Class
 
 **ProjectId** - This is the **Id** that was given to project when the project was created in AIForged. You can view the project Id in AIForged by hovering you mouse anywhere over the project name.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>View Of Project Id In <strong>AIForged</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>View Of Project Id In <strong>AIForged</strong></p></figcaption></figure>
 
 ### Misc
 
-**Private** - If not selected, the values of variables and arguments are at Verbose level.&#x20;
+**Private** - If not selected, the values of variables and arguments are at Verbose level.
 
 **Result** - Returns AIForged.API.ProjectViewModel
 
