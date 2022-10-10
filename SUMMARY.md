@@ -86,6 +86,7 @@
 
 ## Rules Engine
 
+* [Rules Engine](rules-engine/rules-engine.md)
 * [Generic](rules-engine/generic/README.md)
   * [Dictionary](rules-engine/generic/dictionary.md)
   * [Mapping](rules-engine/generic/mapping.md)
@@ -93,6 +94,7 @@
   * [Workflow Script](rules-engine/generic/workflow-script.md)
   * [Web API](rules-engine/generic/web-api.md)
   * [Database](rules-engine/generic/database.md)
+  * [RegEx](rules-engine/generic/regex.md)
 * [String](rules-engine/string/README.md)
   * [Spell Checking](rules-engine/string/spell-checking.md)
   * [Sentiment Analysis](rules-engine/string/sentiment-analysis.md)
@@ -100,8 +102,10 @@
 * [Number](rules-engine/number.md)
 * [Date / Time](rules-engine/date-time.md)
 * [Email](rules-engine/email.md)
-* [Maps](rules-engine/maps.md)
-* [GPS](rules-engine/gps.md)
+* [Address](rules-engine/maps.md)
+* [GPS Coordinate](rules-engine/gps.md)
+* [Country](rules-engine/country.md)
+* [ID Number](rules-engine/id-number.md)
 
 ## Human in the Loop
 
@@ -140,13 +144,8 @@
 * [Document](uipath-activities/document.md)
 * [Notifications](uipath-activities/notifications.md)
 * [Payments](uipath-activities/payments.md)
-* [Project](uipath-activities/project/README.md)
-  * [Get Project Class](uipath-activities/project/initialize.md)
+* [Project](uipath-activities/project.md)
 * [Service](uipath-activities/service.md)
 * [System](uipath-activities/system.md)
 * [Verification](uipath-activities/verification.md)
-* [WorkItem](uipath-activities/workitem/README.md)
-  * [Create Work Item](uipath-activities/workitem/create-work-item.md)
-  * [Get Work Item Count](uipath-activities/workitem/get-work-item-count.md)
-  * [Get Work Items](uipath-activities/workitem/get-work-items.md)
-  * [Get Work Queue](uipath-activities/workitem/get-work-queue.md)
+* [WorkItem](uipath-activities/workitem.md)
