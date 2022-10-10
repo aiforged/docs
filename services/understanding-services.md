@@ -21,12 +21,12 @@ The following **Action Buttons** can be found on the **Service Box**, the number
 | Action Button        | Icon                                            | Descritpion                                                  |
 | -------------------- | ----------------------------------------------- | ------------------------------------------------------------ |
 | Definition           | ![](<../.gitbook/assets/image (14) (2).png>)    | Takes the user to the Definitions box of the service.        |
-| Training             | ![](<../.gitbook/assets/image (26).png>)        | Takes the user to the Training documents box of the service. |
+| Training             | ![](<../.gitbook/assets/image (26) (1).png>)    | Takes the user to the Training documents box of the service. |
 | Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)     | Takes the user to the Labelled documents box of the service. |
 | Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>) | Takes the user to the Document Inbox of the service.         |
 | Outbox               | ![](<../.gitbook/assets/image (15) (3).png>)    | Takes the user to the Document Outbox of the service.        |
 | Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)    | Opens the Configuration Wizard of the service.               |
-| Service Definitions  | ![](<../.gitbook/assets/image (3) (2).png>)     | Open the Parameter Definitions of the service.               |
+| Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1).png>) | Open the Parameter Definitions of the service.               |
 | Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)    | Opens the Service Logs of the service.                       |
 | Delete Service       | ![](<../.gitbook/assets/image (16) (4).png>)    | Delete the service.                                          |
 
@@ -50,16 +50,16 @@ Other **Service Actions** are (found at the bottom of the AIForged UI):
 
 *   Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Document Keys
 
-    <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 *   All Definitions of the service.
 
     <figure><img src="../.gitbook/assets/image (25) (5).png" alt=""><figcaption></figcaption></figure>
 *   Manage Users for the service.
 
-    <figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Share a service on the marketplace.
 
     <figure><img src="../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>

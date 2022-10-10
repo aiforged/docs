@@ -7,6 +7,10 @@ nav_order: 6
 
 # Move Documents
 
-![](<../../assets/54 (2).png>)
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-You can use the Move Documents Service to Move Documents between services
+The **Move Documents Utility** is used to move (cut and paste) documents between services.
+
+## Possible use cases
+
+* This is especially useful when the output of one service needs to feed the **Inbox** of another service.

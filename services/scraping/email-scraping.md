@@ -7,9 +7,9 @@ nav_order: 1
 
 # Email Scraping
 
-![](<../../assets/46 (2).png>)
+<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
-Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
+The **E-mail Scraping Service** allows you to extract data from e-mails and attachments from your mailbox or a specified mailbox.
 
 ## Supported Email Clients
 
@@ -17,5 +17,5 @@ Email Scraping allows you to extract Emails from your mailbox or a specified mai
 
 ## Possible use cases
 
-* Extract Documents from emails
-* Find and process specific kinds of emails
+* Extract documents from emails.
+* Find and process specific kinds of emails.

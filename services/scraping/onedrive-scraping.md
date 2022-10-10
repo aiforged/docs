@@ -7,9 +7,9 @@ nav_order: 3
 
 # OneDrive Scraping
 
-![](<../../assets/47 (2).png>)
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-Email Scraping allows you to extract Emails from your mailbox or a specified mailbox.
+The **OneDrive Scraping Service** allows you to extract documents from **Sharepoint Lists** on OneDrive.
 
 ## Supported Clients
 
@@ -17,5 +17,5 @@ Email Scraping allows you to extract Emails from your mailbox or a specified mai
 
 ## Possible use cases
 
-* Extracting Documents from OneDrive
-* Find and extract specific kinds of Documents from Onedrive
+* Extracting documents from OneDrive.
+* Find and extract specific kinds of documents from Onedrive.

@@ -7,9 +7,11 @@ nav_order: 1
 
 # AIForged Classification
 
-![](<../../assets/34 (2).png>)
 
-The AIForged Classification service is a inhouse Classification service build to automatically categorize documents and sort them into predefined document categories. The AIForged Classification service allows setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
+
+<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+
+The **AIForged Classification Service** is a inhouse Classification service build to automatically categorize documents and sort them into predefined document categories. The **AIForged Classification Service** allows setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
 
 ## Setup Service
 
@@ -30,12 +32,13 @@ The AIForged Classification service is a inhouse Classification service build to
 
 ## Add and Process Documents
 
-1. In your AIForged Classification Service click on “Inbox” in the App Bar
-2. Select your Status you want to upload, use Status “None” or “Received” for new documents that have not been processed yet
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”
+1. In your AIForged Classification Service click on **Inbox** button.
+2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
+3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
 4. Find the files on your Local machine and upload them. **The demos test files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20Training.zip)
 5. After all the documents have been uploaded you can check the documents to be processed, click on “Processed Checked” to process the documents
-6. It is Recommended to only process a few documents at a time if is a new service to properly test if you receive the results you want before processing everything
+
+It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
 
 ## View Processed Documents
 

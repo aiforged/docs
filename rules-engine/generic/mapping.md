@@ -13,4 +13,4 @@ For example, a **Numeric** value may expected for a field, but the **OCR Service
 
 The **Replacement Mapping Dictionary** is used to provide a list of values to be mapped. The user is required to provide the **Key** (value to be replaced), and the corresponding mapped value. To add a new entry, click on "_Click here to add a new row"_.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>

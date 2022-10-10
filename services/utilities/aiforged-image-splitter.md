@@ -7,6 +7,6 @@ nav_order: 2
 
 # AIForged Image Splitter
 
-![](<../../assets/51 (2).png>)
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-You can use the AIForged image splitter to split your documents into images.
+The **AIForged Image Splitter** is used to split documents into page images. An **Outbox** document is created for each page that can be copied/moved to other services.

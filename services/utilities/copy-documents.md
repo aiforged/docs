@@ -7,6 +7,11 @@ nav_order: 5
 
 # Copy Documents
 
-![](<../../assets/53 (2).png>)
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-You can use the Copy Documents Service to Copy Documents between services
+The **Copy Documents Utility** is used to copy documents to and from services.&#x20;
+
+## Possible use cases
+
+* This is especially useful when the output of one service needs to feed the **Inbox** of another service.
+

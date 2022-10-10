@@ -7,6 +7,6 @@ nav_order: 1
 
 # ABBYY Image Splitter
 
-![](<../../assets/49 (2).png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-You can use the ABBYY image splitter to split your documents into images.
+The **ABBYY Image Splitter** is used to split documents into page images. An **Outbox** document is created for each page that can be copied/moved to other services.

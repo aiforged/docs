@@ -5,7 +5,7 @@ grand_parent: Rules Engine
 nav_order: 6
 ---
 
-# Custom Script Code
+# Custom Script
 
 The **Custom Script Rule** provides a means to write **Custom Script Code** for a specific field on a document. The script is executed after the value has been extracted by the **OCR Service**.
 
@@ -26,6 +26,6 @@ The following languages are available for selection when writing **Custom Code**
 
 The language can be selected form the **Code Language** dropdown box. Refer to [BaseModule](../../services/custom-service-code/ibasemodule-interface-data-types.md) for the available exposed methods that can be used in **Custom Code**.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 For a detailed walkthrough of a practical example of **Custom Code**, please refer to [Credit Application Process: Accept or Reject the Application](../../practical-examples/credit-application-process-accept-or-reject-the-application.md).

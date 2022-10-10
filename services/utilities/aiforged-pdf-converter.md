@@ -7,6 +7,10 @@ nav_order: 4
 
 # AIForged Pdf Converter
 
-![](<../../assets/52 (2).png>)
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-You can use the AIForged Pdf Converter to convert documents to the Pdf Format
+The **AIForged Pdf Converter** is used to convert documents to the PDF file format.
+
+## Possible use cases
+
+* Convert documents to supported PDF file formats if it is received in an unsupported file format.

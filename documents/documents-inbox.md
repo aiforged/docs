@@ -10,7 +10,7 @@ nav_order: 2
 
 *   Within a service click on the **Inbox** button in the **Service Box**.
 
-    <figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 *   This will show the document data grid for all **Inbox** documents.
 
     <figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>

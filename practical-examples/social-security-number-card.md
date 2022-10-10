@@ -10,7 +10,7 @@ nav_order: 3
 
 This is an example of a **Social Security** card.
 
-<figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The purpose of this process is to extract the **Social Security number**, the **Full Name**, and the **Expiration Date**. The detailed steps are as follows:
 
@@ -19,18 +19,18 @@ The purpose of this process is to extract the **Social Security number**, the **
 3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2) (1).png>)
 4.  The **Configuration Wizard** for the service will appear.
 
-    <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (2) (1).png" alt=""><figcaption></figcaption></figure>
 5.  (Optional) Rename the **service name** and **service description**.
 
-    <figure><img src="../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (25) (2) (1).png" alt=""><figcaption></figcaption></figure>
 6.  Click on **Next: Step 2 - Categories** (or click on **Step 2** Wizard Step).
 
-    <figure><img src="../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7.  Add a new **Category** to upload the training documents.
 
     <figure><img src="../.gitbook/assets/image (15) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (27) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 8. Click on **Next: Step 3** **- Layout Analysis** (or click on **Step 3** Wizard Step).
@@ -48,10 +48,10 @@ The purpose of this process is to extract the **Social Security number**, the **
     <figure><img src="../.gitbook/assets/image (47) (2).png" alt=""><figcaption></figcaption></figure>
 13. Select the desired **Execution Parameters** for analyzing the documents. Normally, the default values will suffice. Click **Process**.
 
-    <figure><img src="../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (35) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 14. A progress dialogue will be displayed during the processing of the request. The **Progress Logs** can be expanded to scrutinize detailed logging of the progress. Once the operationis complete, the dialogue can be closed.
 
-    <figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10) (2) (1).png" alt=""><figcaption></figcaption></figure>
 15. After the documents are analyzed, the layout of the document is available in a structured format. These documents are demarcated by the **Analyzed** status. By using **Custom Labelling**, the service can be trained to detect values relative to the document layout. Click **Next: Step 4 - Custom Labeling** (or click on **Step 4** Wizard Step).
 
     <figure><img src="../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
