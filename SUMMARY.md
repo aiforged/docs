@@ -78,7 +78,7 @@
 * [Understanding the Documents page](documents/understanding-the-documents-page.md)
 * [Documents Inbox](documents/documents-inbox.md)
 * [Documents Outbox](documents/documents-outbox.md)
-* [Training box](documents/training-box.md)
+* [Training Box](documents/training-box.md)
 * [Document Categories](documents/document-categories.md)
 
 ## Rules Engine

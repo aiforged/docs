@@ -12,4 +12,4 @@ The **ID Number Rule Type** can be applied to a field where an ID Number is expe
 
 This Rule is able to extract basic information of the ID Number that was supplied. The **Country Code** can be provided to improve the extraction accuracy.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>

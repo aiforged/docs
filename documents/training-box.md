@@ -4,13 +4,15 @@ parent: Documents
 nav_order: 5
 ---
 
-# Training box
+# Training Box
 
-The Training box is only applicable to services that requires training of documents
+The **Training Box** is only applicable to services that require training of documents.All the documents in a **Service** in the **Training** state can be shown by clicking on **Training Docs** button.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## How to open the Training box
 
-![](<../assets/78 (2).png>)
+*   Within a service click on the **Training Box** button in **Service Box** to open the Training documents.
 
-* Within a service click on the **Training Box** button in the App bar to open the Training documents.
-* To open a Service, refer to (Refer)
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+* To open a Service, refer to [Understanding Services](../services/understanding-services.md).
