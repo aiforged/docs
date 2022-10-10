@@ -11,8 +11,6 @@ The **Contacts** page allows you to add various contacts to **AIForged**. Contac
 
 ## Add a contact
 
-![](<assets/image (45) (1).png>)
-
 1.  Click on "Click here to add a new row".
 
     <figure><img src=".gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -20,7 +18,7 @@ The **Contacts** page allows you to add various contacts to **AIForged**. Contac
 
     <figure><img src=".gitbook/assets/image (12) (3) (1).png" alt=""><figcaption></figcaption></figure>
 3. Fill in all the details.
-4. Press **Enter** on your keyboard to accept change.
+4. Press **Enter** on your keyboard to accept the change.
 5. Click **Save** in the action bar.
 
 ## Delete a contact

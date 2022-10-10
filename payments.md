@@ -1,6 +1,6 @@
 # Payments
 
-![](<assets/image (17) (1).png>)
+![](<assets/image (17) (1) (1).png>)
 
 The payments page displays all the Payments you have made to AIForged
 
@@ -15,14 +15,14 @@ The payments page displays all the Payments you have made to AIForged
 
 You can filter Payments by date
 
-![](<assets/image (22).png>)
+![](<assets/image (22) (1).png>)
 
 1. Set the From date
 2. Set the To date
 
 ## Sort the Payments grid
 
-![](<assets/image (9).png>)
+![](<assets/image (9) (1).png>)
 
 * You can Sort the documents page by clicking on any of the table headers
 * To do multiple column sorting use **CTRL + Left Mouse Click** on the columns

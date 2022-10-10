@@ -12,19 +12,19 @@ you can identify 3 main categories: structured, semi-structured and unstructured
 
 ### Structured documents
 
-![](<../assets/structured-document (2).png>)
+![](<../assets/structured-document (1).png>)
 
 Structured documents generally focus on collecting information in a precise format, guiding the person who is filling them with precise areas where each piece of data needs to be entered.
 
 ### Semi-structured
 
-![](<../assets/semi-structured (2).png>)
+![](<../assets/semi-structured (1).png>)
 
 Semi-structured documents are documents that do not follow a strict format the way structured forms do and are not bound to specified data fields. These don't have a fixed form but follow a common format.
 
 ## Unstructured
 
-![](<../assets/un-structured (2).png>)
+![](<../assets/un-structured (1).png>)
 
 Unstructured documents are documents in which the information isn't organized according to a clear, structured model.
 
@@ -54,7 +54,7 @@ Unstructured documents are documents in which the information isn't organized ac
     <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 *   open documents linked to the current document. The number indicates the count.
 
-    <figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 *   Open the document on the OS.
 
     <figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
@@ -154,7 +154,7 @@ The Bulk Move Action allows you to **move** the documents to another project and
 
 The Process Checked Action allows you to **process** selected documents.
 
-![](<../assets/69 (2).png>)
+![](<../assets/69 (1).png>)
 
 1. To **Process** a checked document, check all the documents you would like to process.
 2.  Click on the **Process Checked** Action in the app bar.
@@ -167,7 +167,7 @@ The Process Checked Action allows you to **process** selected documents.
 
 The Process Checked Action allows you to **process** selected documents.
 
-![](<../assets/71 (2).png>)
+![](<../assets/71 (1).png>)
 
 1. To **Copy** a checked document, check all the document you would like to copy.
 2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2).png>)

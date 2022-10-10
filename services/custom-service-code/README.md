@@ -35,7 +35,7 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 4.  The **code language** can be selected from the dropdown box.
 
-    <figure><img src="../../.gitbook/assets/image (29) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (29) (1) (2) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  The imports required to write the code, can be added from the **Imports** tab.
 
     <figure><img src="../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -44,5 +44,5 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7.  **Compilation Results** are shown at the bottom of the **Code Editor**.
 
-    <figure><img src="../../.gitbook/assets/image (43) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (43) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 8. The code will execute after the batch of documents have been processed
