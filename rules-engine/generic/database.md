@@ -8,7 +8,7 @@ nav_order: 10
 
 The **Database Rule Type** can be applied to any type of extracted data. This rule provides a means to directly interface with any **SQL Database**.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 This **Rule Type** is useful when extracted data needs to be synchronized with other external databases, or when external data needs to be pulled into the **Service**.
 

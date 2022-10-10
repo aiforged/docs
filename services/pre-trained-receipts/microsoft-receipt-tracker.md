@@ -7,7 +7,7 @@ nav_order: 1
 
 # Microsoft Receipt Tracker
 
-![](<../../.gitbook/assets/40 (1) (1).png>)
+![](<../../assets/40 (1).png>)
 
 Microsoft Receipt Tracker uses Optical Character Recognition (OCR) to automatically extract information from receipt photos. Receipt Tracker allows users to categorize and visualize their expenses
 

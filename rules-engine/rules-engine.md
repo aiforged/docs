@@ -2,8 +2,6 @@
 
 After data has been extracted by a **Service** from a document, the **AIForged Rules Engine** is invoked to validate the OCR text returned. A certain **Rule Type** can be applied to a field on a document to trigger manual **Human-in-the-Loop** intervention when the OCR test does not meet the conditions of the **Rule**. A **Rule** can also be used to correct the OCR text (such as converting letters to a corresponding number where a number is expected) or matching format patterns (such as matching date patterns containing special characters like '/' or '-', or e-mail addresses expecting characters like '@' and '.').
 
-
-
 One of the following can be assigned to a field on a document, and is explained in detail in the following sections:
 
 * Address
@@ -26,8 +24,8 @@ One of the following can be assigned to a field on a document, and is explained 
 
 To setup a **Rule**, select any field on a document, and select **Show Definition**.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;This will open the dialogue to select and configure the **Rule**. The **Rule Type** can be assigned here for the selected field.
+This will open the dialogue to select and configure the **Rule**. The **Rule Type** can be assigned here for the selected field.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>

@@ -18,7 +18,7 @@ The **Contacts** page allows you to add various contacts to **AIForged**. Contac
     <figure><img src=".gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 2.  Select a category for the new entry.
 
-    <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
 3. Fill in all the details.
 4. Press **Enter** on your keyboard to accept change.
 5. Click **Save** in the action bar.

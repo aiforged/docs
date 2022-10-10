@@ -61,7 +61,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
     <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 16. The **Document Designer** is presented in step 4. A preview of the document is shown with the overlayed analyzed layout data.
 
-    <figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 17. Details and metadata of the detected layout **Parameters** can be viewed by clicking on the bounding box of the text.
 
     <figure><img src="../.gitbook/assets/image (24) (3).png" alt=""><figcaption></figcaption></figure>
@@ -73,7 +73,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
     <figure><img src="../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 20. Once all the fields that required extraction are labeled, the **Parameters** with the detected values are displayed in the **Document Data** view. Once all the labels have been drawn, the document can be saved by clicking on **Save Custom Labels.**
 
-    <figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 21. Repeat steps 18 - 20 for all the documents uploaded for training.
 22. Once all the documents are labeled, the model of the service can be trained. Click on **Next: Step 5 - Training** (or click on **Step 5** Wizard Step).\\
 

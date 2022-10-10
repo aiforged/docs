@@ -8,7 +8,7 @@ nav_order: 7
 
 The **Address Rule Type** can be applied to a field where address data is expected.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 By applying the **Addres Rule Type**, a **Maps Utility** is added to the service. The **Maps Utility** can be configured to use the **Google** or **Azure Maps Engines**, to verify whether a provided address is valid or not. The **Maps Engine** can be selected by clicking on the Maps Engine dropdown box.
 

@@ -7,7 +7,7 @@ nav_order: 2
 
 # ABBYY Classification
 
-![](<../../.gitbook/assets/32 (1) (1).png>)
+![](<../../assets/32 (1).png>)
 
 The ABBY Classification service allows you to automatically categorize documents and sort them into predefined document categories. The advanced document classification leverages modern technologies such as machine learning and natural language processing. These technologies can detect even subtle differences among individual document categories and allow setting up flexible and scalable classification processes that can granularly distinguish among many document categories.
 
@@ -26,7 +26,7 @@ The ABBY Classification service allows you to automatically categorize documents
 5. Click the “Next” Action in the Action Bar to save the Service
 6. **Step 2** Classes, to add a Class View [Document Categories](abby-classification.md) (Click next to save categories)
 7. **Step 3** Training \*
-   1. ![](<../../.gitbook/assets/33 (1) (3) (1).png>) Click “Upload Training Documents” in the Action Bar
+   1. ![](<../../assets/33 (1) (1) (1) (2).png>) Click “Upload Training Documents” in the Action Bar
    2. Select the Document Category you want to upload documents to. **The demos training files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20%20Training.zip)
    3. Upload Documents for each category you want to train
    4. Click Train Service once all documents have been uploaded

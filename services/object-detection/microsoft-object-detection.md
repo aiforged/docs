@@ -7,7 +7,7 @@ nav_order: 3
 
 # Microsoft Object Detection
 
-![](<../../.gitbook/assets/56 (1) (1).png>)
+![](<../../assets/56 (1).png>)
 
 Microsoft Object Detection detects object, faces and landmarks using Google Vision
 

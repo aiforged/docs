@@ -7,7 +7,7 @@ nav_order: 4
 
 # Teseract OCR
 
-![](<../../.gitbook/assets/45 (1) (1).png>)
+![](<../../assets/45 (1).png>)
 
 The Teseract Handwriting OCR (optical character recognition) is the process of automatically extracting handwritten information from paper, scans and other low-quality digital documents.
 

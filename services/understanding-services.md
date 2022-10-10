@@ -6,84 +6,64 @@ has_children: true
 
 # Understanding Services
 
-## What is a Service
+## What is a Service?
 
-(Todo)
+A **Service** is a container that hosts an OCR engine and provides a means to receive and process documents. Documents to be processed are received in Service **Inbox**, and the **Extracted Results** are presented in the documents in die Service **Outbox**.
+
+**Services** can be contained within other **Services**, and are called **Child Services**. This is normally the case when certain [Rule Types](../rules-engine/rules-engine.md) are applied to certain fields in the document.
+
+The example project below shows a **Service Box**, which is the **Parent Service** for three **Child Services**.
+
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+The following **Action Buttons** can be found on the **Service Box**, the number indicates the document count for each of the boxes:
+
+| Action Button        | Icon                                     | Descritpion                                                  |
+| -------------------- | ---------------------------------------- | ------------------------------------------------------------ |
+| Definition           | ![](<../.gitbook/assets/image (14).png>) | Takes the user to the Definitions box of the service.        |
+| Training             | ![](<../.gitbook/assets/image (26).png>) | Takes the user to the Training documents box of the service. |
+| Labelled             | ![](<../.gitbook/assets/image (8).png>)  | Takes the user to the Labelled documents box of the service. |
+| Inbox                | ![](<../.gitbook/assets/image (6).png>)  | Takes the user to the Document Inbox of the service.         |
+| Outbox               | ![](<../.gitbook/assets/image (4).png>)  | Takes the user to the Document Outbox of the service.        |
+| Configuration Wizard | ![](<../.gitbook/assets/image (12).png>) | Opens the Configuration Wizard of the service.               |
+| Service Definitions  | ![](<../.gitbook/assets/image (3).png>)  | Open the Parameter Definitions of the service.               |
+| Service Logs         | ![](<../.gitbook/assets/image (10).png>) | Opens the Service Logs of the service.                       |
+| Delete Service       | ![](<../.gitbook/assets/image (16).png>) | Delete the service.                                          |
+
+## How to create a Service?
+
+1. Open an existing Project, or create a new one.
+2.  At the bottom of the AIForged UI, select **Add Service.**
+
+    <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+3.  The "_Add New Service"_ dialogue pops up.
+
+    <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+4. Select the **Service Type** of the service and click on **Select**.
+5.  Click **Yes** on the confirmation message box.
+
+    <figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ## Service Actions
 
-![](<../.gitbook/assets/12 (1) (1).png>)
+Other **Service Actions** are (found at the bottom of the AIForged UI):
 
-* Opens the Definition Box for the service
+*   Document Categories.
 
-![](<../.gitbook/assets/13 (1) (1).png>)
+    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+*   Document Keys
 
-* Opens the Training Box for the service
+    <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+*   All Definitions of the service.
 
-![](<../.gitbook/assets/14 (1) (1).png>)
+    <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+*   Manage Users for the service.
 
-* Opens the Services Inbox. [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-the-documents-page.md)
+    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+*   Share a service on the marketplace.
 
-![](<../.gitbook/assets/15 (1) (1).png>)
+    <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+*   Open Report for the service.
 
-* Opens the Services Outbox [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-the-documents-page.md)
+    <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/16 (1) (1).png>)
-
-* Allows you Continue your Training or Force Retraining of the Service
-
-![](<../.gitbook/assets/17 (1) (1).png>)
-
-* Opens the Service Wizard [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-services.md)
-
-![](<../.gitbook/assets/18 (1) (1).png>)
-
-* Allows you to delete the Service
-
-![](<../.gitbook/assets/19 (1) (1).png>)
-
-* Allows you to Add a Service to this Service [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/understanding-services.md)
-
-![](<../.gitbook/assets/20 (1) (1).png>)
-
-* Allows you to Add a Utility to this Service
-
-![](<../.gitbook/assets/21 (1) (1).png>)
-
-* Allows you to Add a Verification Service to this Service
-
-![](<../.gitbook/assets/22 (1) (1).png>)
-
-* Allows you to Initialise the Service execution
-
-![](<../.gitbook/assets/23 (1) (1).png>)
-
-* Allows you to Save the Service
-
-![](<../.gitbook/assets/24 (1) (1).png>)
-
-* Opens the Document Categories for the Project in which the Service is Contains [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/documents/document-categories.md)
-
-![](<../.gitbook/assets/25 (1) (1).png>)
-
-* Open the Services keys page
-
-![](<../.gitbook/assets/26 (1) (1).png>)
-
-* Opens All the Definitions for the Service
-
-![](<../.gitbook/assets/27 (1) (1).png>)
-
-* Opens the Analytics page of the Service
-
-![](<../.gitbook/assets/28 (1) (1).png>)
-
-* Opens all the Events for the Service [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/subpages/events.md)
-
-![](<../.gitbook/assets/29 (1) (1).png>)
-
-* Opens all the Audits for the Service [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/subpages/audit.md)
-
-![](<../.gitbook/assets/30 (1) (1).png>)
-
-* Opens the Share on Marketplace page [Click Here](https://github.com/aiforged/docs/tree/e373474b5a7190fa50cf5abaf45458a3538fe701/services/services/subpages/publish-marketplace.md)
