@@ -1,3 +1,10 @@
+---
+title: RegEx
+parent: Generic Rules
+grand_parent: Rules Engine
+nav_order: 3
+---
+
 # RegEx
 
 Similar to the **Dictionary and Mapping Rules**, the **RegEx Replacement Rule** can be applied to any type of extracted data, and is used to match **Regular Expressions** to the extracted data. The matched text can then be replaced with the predefined replacement text This is especially useful when correcting the extracted data to what is expected.

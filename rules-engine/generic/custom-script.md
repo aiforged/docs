@@ -1,11 +1,11 @@
 ---
-title: Custom Script
-parent: Rules Engine
-has_children: true
-nav_order: 12
+title: Custom Script Code
+parent: Generic Rules
+grand_parent: Rules Engine
+nav_order: 6
 ---
 
-# Custom Script
+# Custom Script Code
 
 The **Custom Script Rule** provides a means to write **Custom Script Code** for a specific field on a document. The script is executed after the value has been extracted by the **OCR Service**.
 

@@ -1,7 +1,8 @@
 ---
 title: Database
-parent: Rules Engine
-nav_order: 10
+parent: Generic Rules
+grand_parent: Rules Engine
+nav_order: 5
 ---
 
 # Database

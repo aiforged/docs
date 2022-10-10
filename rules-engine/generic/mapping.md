@@ -1,7 +1,8 @@
 ---
 title: Mapping
-parent: Rules Engine
-nav_order: 9
+parent: Generic Rules
+grand_parent: Rules Engine
+nav_order: 2
 ---
 
 # Mapping

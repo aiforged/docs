@@ -1,5 +1,5 @@
 ---
-title: String
+title: Sentiment Analysis
 parent: String
 grand_parent: Rules Engine
 nav_order: 1

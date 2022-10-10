@@ -1,3 +1,9 @@
+---
+title: Amazon Mechanical Turk
+parent: Human-in-the-Loop
+nav_order: 2
+---
+
 # Amazon Mechanical Turk
 
 ![](<../assets/41 (1).png>)

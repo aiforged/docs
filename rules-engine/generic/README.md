@@ -1,3 +1,9 @@
+---
+title: Generic Rules
+parent: Rules Engine
+nav_order: 10
+---
+
 # Generic
 
 **Generic Rules** can be applied on any type of extracted data.
@@ -7,7 +13,8 @@
 The Generic Rules tabs can be accessed when viewing the **Parameter Definition** properties dialogue and include the following:
 
 * Dictionary
-* Mapping Custom Script
+* Mapping 
+* Custom Script
 * Workflow Script
 * Web API
 * Database

@@ -1,5 +1,5 @@
 ---
-title: String
+title: Spell Checking
 parent: String
 grand_parent: Rules Engine
 nav_order: 2

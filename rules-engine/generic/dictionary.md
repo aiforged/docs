@@ -1,7 +1,8 @@
 ---
 title: Dictionary
-parent: Rules Engine
-nav_order: 8
+parent: Generic Rules
+grand_parent: Rules Engine
+nav_order: 1
 ---
 
 # Dictionary
