@@ -34,4 +34,4 @@ To setup a **Rule**, select any field on a document, and select **Show Definitio
 
 This will open the dialogue to select and configure the **Rule**. The **Rule Type** can be assigned here for the selected field.
 
-<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2) (1).png" alt=""><figcaption></figcaption></figure>

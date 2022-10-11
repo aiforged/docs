@@ -60,7 +60,7 @@ This section will discuss in detail the code that is required to implement the *
 
     Enter a name for the new **Custom Dataset**, for instance "BankStatementsDataSet" and click **Submit**.
 
-    <figure><img src="../.gitbook/assets/image (47) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
     This will create a **Parameter Definition** for the **BankStatementsDataset Custom Dataset**. Note the ID of the **Parameter Definition**.\\
 
