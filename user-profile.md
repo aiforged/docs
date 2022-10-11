@@ -34,7 +34,7 @@ The User page allows you to edit your user details.
 
 To upload a new profile picture click on the **Upload New Picture** button and select your profile picture.
 
-<figure><img src=".gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Sign-in Options
 
@@ -53,7 +53,7 @@ To upload a new profile picture click on the **Upload New Picture** button and s
 
 To unlink a provider click on the unlink button on the provider.
 
-<figure><img src=".gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Teaching Tips
 
@@ -75,4 +75,4 @@ Click on the slider to turn the **Teaching Tip** on or off
 
 To turn a **Teaching Tip** off individually, click on the slider in the open column of the teaching tip grids.
 
-<figure><img src=".gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (24) (1) (2).png" alt=""><figcaption></figcaption></figure>

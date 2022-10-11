@@ -7,7 +7,7 @@ nav_order: 3
 
 # Microsoft Object Detection
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Microsoft Object Detection** detects objects, faces, and landmarks using **Azure Computer Vision**.
 

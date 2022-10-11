@@ -5,7 +5,7 @@ nav_order: 7
 
 # Projects
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Projects** page displays projects created by you, or that have been shared with you, and allows you to create a new project at any time. Each **Project Card** displays a summary of each [**Service**](broken-reference/) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference/) and the remaining credit balance for that project.
 

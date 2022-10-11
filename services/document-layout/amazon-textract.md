@@ -7,7 +7,7 @@ nav_order: 1
 
 # Amazon Textract
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Amazon Textract Service** is a service that automatically extracts text and data from scanned documents. Amazon Textract goes beyond simple OCR to also identify the contents of fields in forms and information stored in tables.
 
@@ -28,8 +28,6 @@ If you need to use a different type of content, you can use the **AiForged Pdf C
 4. **Step 1** – Service (Displays the service setting, you can change it as required)
 5. Click the “Next” Action in the Action Bar to save the Service
 6. **Step 2** Verification, TODO
-
-
 
 ## Add and Process Documents
 

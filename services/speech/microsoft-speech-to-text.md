@@ -7,7 +7,7 @@ nav_order: 1
 
 # Microsoft Speech to Text
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Speech-to-Text Service** can quickly and accurately transcribe audio to text in more than **30** languages. Customize models to enhance accuracy for domain-specific terminology.
 

@@ -17,7 +17,7 @@ The **HITL Work Flow** queue shows **Work Flow Items** that have been created fo
     <figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 *   The Service name,
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 *   The document box the document currently resides in (document **Usage**),
 
     <figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
@@ -26,13 +26,13 @@ The **HITL Work Flow** queue shows **Work Flow Items** that have been created fo
     <figure><img src="../.gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
 *   The **HITL** user assignment method used,
 
-    <figure><img src="../.gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (12) (3) (2).png" alt=""><figcaption></figcaption></figure>
 *   The status of the document of the field that requires verification,
 
     <figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 *   The status of the **Work Flow Item**,
 
-    <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Every **Work Flow Item** has a **URL** link that can be used in a browser. This will launch the AIForged UI and open the Verification window for the entire **Document** or **Shred**. The link to the **Verification Work Flow Item** can be copied by clicking on the **Link Icon**.
 
@@ -64,15 +64,15 @@ To verify the value of the extracted text, click on the **Pencil** icon. This wi
 
 The value of the field is shown in the text box. If the OCR text is correct, the user can accept the Verification by clicking on the **Check Mark**.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that after a **Verification** value has been accepted, the **Status** of the **Field Parameter** has changed to **Verified**. The OCR **Confidence** has also changed to **100 %**.
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once all the Field Parameters that required Verification have been verified, then the status of the entire document will change from **Verification** to **Processed**.
 
-<figure><img src="../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Accept all Verifications
 

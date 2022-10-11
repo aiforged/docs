@@ -72,13 +72,13 @@ Unstructured documents are documents in which the information isn't organized ac
     <figure><img src="../.gitbook/assets/image (42) (3).png" alt=""><figcaption></figcaption></figure>
 *   Show document result.
 
-    <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 *   Open document verification audit trail.
 
     <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 *   Open document logs.
 
-    <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Sort the Documents grid
 
@@ -98,7 +98,7 @@ The Bulk Action allows you to update all the selected Documents.
 
 1.  To do a Bulk category Update click on **Bulk Actions**, then **Change Category for All Documents**.
 
-    <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 2. A popup will appear asking what Document Status you would like to update.
 3. Once you have selected the Status another popup will appear.
 4. Select the Usage of the documents you would like to update, after selecting the Usage another popup will appear asking you to select the Categories you would like to update.
@@ -111,7 +111,7 @@ The Bulk Status Update Action allows you to update all the selected Document sta
 
 1.  To do a Bulk Status Update click on Bulk Actions, then Change Status for All Documents.
 
-    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 2. A popup will appear asking what Document Status you would like to update.
 3. Once you have selected the Status another popup will appear.
 4. Select the Status you want to Update it to, after selecting a value another popup will appear.
@@ -166,7 +166,7 @@ The Process Checked Action allows you to **process** selected documents.
 ![](<../assets/71 (1).png>)
 
 1. To **Copy** a checked document, check all the document you would like to copy.
-2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2).png>)
+2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2) (1).png>)
 3. A popup will appear asking to select a destination project.
 4. Once you have selected the Destination project, another popup will appear asking to select the Destination service.
 5. Select the Status you want to Copy, after selecting a value another popup will appear.
@@ -191,7 +191,7 @@ The Checked Status Action allows you to change the selected documents statuses s
 1. To **Set the Status** of a checked document, check all the documents you would like to change the Status of.
 2.  Click the **Set Selected Checked Status** Action in the app bar.
 
-    <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 3. On the First prompt select the new **Status**
 4. On the next prompt click “Yes” to approve the Status change of the checked documents
 
@@ -199,7 +199,7 @@ The Checked Status Action allows you to change the selected documents statuses s
 
 The Upload Action allows you to upload a new document.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the **Upload** Action in the app bar.
 2. In the popup Select the Status of the Document being uploaded

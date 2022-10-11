@@ -131,6 +131,7 @@
 * [Credit Application Form](practical-examples/credit-application-form.md)
 * [Credit Application Process: Accept or Reject the Application](practical-examples/credit-application-process-accept-or-reject-the-application.md)
 * [Utility Invoice](practical-examples/utility-invoice.md)
+* [Custom Code Utility: Duplicate Document Check](practical-examples/custom-code-utility-duplicate-document-check.md)
 
 ## UiPath Activities
 

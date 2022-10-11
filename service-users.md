@@ -17,7 +17,7 @@ To manage a **User Group**, click on the **Manage Group Users** button.
 
 This will show the **Users** data grid showing which **User** has access to which **Project** and its **Services**.
 
-<figure><img src=".gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To link a new **User** to a certain **Serivce**, click on **Search Users** and select the required **User** and select **Accept**.
 

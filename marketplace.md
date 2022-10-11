@@ -6,7 +6,7 @@ description: >-
 
 # Marketplace
 
-<figure><img src=".gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to request access to a service
 
@@ -25,7 +25,7 @@ description: >-
 1. Open the service in the marketplace page.
 2.  Click on the **Rating and Review** button **** in the app bar.
 
-    <figure><img src=".gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. The Rating and Review popup will open where you can view user ratings.
 4. You can only leave a review for a service that you have been granted access to.
 
