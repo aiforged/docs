@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Understanding Services
 nav_order: 14
 has_children: true
@@ -36,7 +35,7 @@ The following **Action Buttons** can be found on the **Service Box**, the number
 1. Open an existing Project, or create a new one.
 2.  At the bottom of the AIForged UI, select **Add Service.**
 
-    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  The "_Add New Service"_ dialogue pops up.
 
     <figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
@@ -67,4 +66,3 @@ Other **Service Actions** are (found at the bottom of the AIForged UI):
 *   Open Report for the service.
 
     <figure><img src="../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
-

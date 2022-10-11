@@ -23,4 +23,4 @@ The name of the package is: **AIForged** by **AIForged**
 
 Below is a view of the activities panel that contains the AIForged activities after successfully installing the package.
 
-<figure><img src="../.gitbook/assets/image (26) (1) (2).png" alt=""><figcaption><p>View of <strong>AIForged</strong> activities in the activities panel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>View of <strong>AIForged</strong> activities in the activities panel</p></figcaption></figure>

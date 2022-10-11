@@ -9,9 +9,9 @@ nav_order: 7
 
 The **Projects** page displays projects created by you, or that have been shared with you, and allows you to create a new project at any time. Each **Project Card** displays a summary of each [**Service**](broken-reference/) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference/) and the remaining credit balance for that project.
 
-Clicking on a [**Service**](broken-reference/) icon allows you to zoom to that service.
+Clicking on a [**Service**](broken-reference) icon within a **Project Card** allows you to zoom to that service.
 
-Clicking the project card will open the project detail view.
+Clicking a **Project Card** will open the project detail view.
 
 ## How to create a project
 

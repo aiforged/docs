@@ -48,7 +48,7 @@ Unstructured documents are documents in which the information isn't organized ac
 
 *   Opens a document for verification.
 
-    <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 *   Trigger a document for processing.
 
     <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
@@ -66,21 +66,17 @@ Unstructured documents are documents in which the information isn't organized ac
     <figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 *   Open document hierarchy.
 
-    <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 *   Open document structured results.
 
-    <figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (42) (3).png" alt=""><figcaption></figcaption></figure>
 *   Show document result.
-
-
 
     <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 *   Open document verification audit trail.
 
     <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 *   Open document logs.
-
-
 
     <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
@@ -128,7 +124,7 @@ The Bulk Copy Action allows you to **copy** the documents to another project and
 
 1.  To do a Bulk Copy click on **Bulk Actions,** then **Copy All Documents.**
 
-    <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 2. A popup will appear asking to select a destination project.
 3. Once you have selected the Destination project, another popup will appear asking to select the Destination Service.
 4. Select the Status you want to Copy, after selecting a value another popup will appear.

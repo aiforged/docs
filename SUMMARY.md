@@ -111,7 +111,8 @@
 
 ## Marketplace
 
-* [Share your custom service](marketplace-1/share-your-custom-service.md)
+* [Share your pre-trained service](marketplace-1/share-your-custom-service.md)
+* [Manage your shared service](marketplace-1/share-your-custom-service-1.md)
 
 ## Power Automate
 

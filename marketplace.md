@@ -1,35 +1,38 @@
+---
+description: >-
+  A shared space where you can share your pre-trained services with other users,
+  or request access to pre-trained services from other users.
+---
+
 # Marketplace
 
-![](<assets/image (55) (1) (1).png>)
+<figure><img src=".gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (18) (1) (2).png" alt=""><figcaption></figcaption></figure>
+## How to request access to a service
 
-## How to add a service
+1.  Click on the service you want to request access to.
 
-![](<assets/image (18) (1) (1).png>)
+    <figure><img src=".gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+2.  Click on an image to preview (Optional).\
 
-1.  Click on the service you want to add.
 
-    <figure><img src=".gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Click on an image to preview.
+    <figure><img src=".gitbook/assets/image (17) (4).png" alt=""><figcaption></figcaption></figure>
+3. Click on **Request Access** in the Action bar.
+4. In the popup select the project you want to link the service to.
 
-![](<assets/image (2) (1) (1).png>)
+## Rate and Review
 
-<figure><img src=".gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-1. Click on "Request Access" in the Action bar.
-2. In the popup select the project you want to link the service to.
-
-## Preview documents
-
-1. Open the service on the marketplace page.
-2. Click on the **Preview Documents** in the app bar.
-3. The preview page will open.
-
-## Ratting and Review
-
-1. Open the service on the marketplace page.
-2.  Click on the **Rating and Review** in the app bar.
+1. Open the service in the marketplace page.
+2.  Click on the **Rating and Review** button **** in the app bar.
 
     <figure><img src=".gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3. The Rating and Review popup will open.
+3. The Rating and Review popup will open where you can view user ratings.
+4. You can only leave a review for a service that you have been granted access to.
+
+## Sharing your service
+
+You can share your own pre-trained service to the AIForged Marketplace.
+
+Follow the instructions at [**Share your pre-trained service**](marketplace-1/share-your-custom-service.md) **** to share your service.
+
+To **** [**Mange your shared service**](https://app.gitbook.com/o/1yl5TAJxthsR0FUUMZ1G/s/0rqlYSeVcAktcbKF7wDh/\~/changes/Opeo3sZWfW5JCDRq8lF8/marketplace-1/share-your-custom-service-1) **** follow the linked instructions.

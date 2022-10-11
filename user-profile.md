@@ -15,11 +15,11 @@ The User page allows you to edit your user details.
 1. Fill in the **User Details** you want to change or add.
 2.  Click on the **Update User** command in the app bar.
 
-    <figure><img src=".gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (34) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Roles
 
-<figure><img src=".gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Add or remove roll
 
@@ -44,7 +44,7 @@ To upload a new profile picture click on the **Upload New Picture** button and s
 
 1.  Click on the **Link External Login Provider** button.
 
-    <figure><img src=".gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (28) (1) (2).png" alt=""><figcaption></figcaption></figure>
 2. A popup will appear asking what **Login Provider** you would like to link.
 3. Sign in to the provider.
 4. Your link will appear underneath providers if the login was successful.
@@ -59,7 +59,7 @@ To unlink a provider click on the unlink button on the provider.
 
 **Teaching Tips** display hints on pages, about how to use its functionality and features.
 
-<figure><img src=".gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (35) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Reset teaching tips
 

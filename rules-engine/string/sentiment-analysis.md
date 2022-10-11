@@ -17,7 +17,7 @@ Information regarding the **Sentiment** of the text will be shown here.
 
 Filters can be applied to narrow down the results of the **Text Analysis** being shown.
 
-<figure><img src="../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

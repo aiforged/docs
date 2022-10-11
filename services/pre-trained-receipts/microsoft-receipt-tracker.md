@@ -7,7 +7,7 @@ nav_order: 1
 
 # Microsoft Receipt
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (3).png" alt=""><figcaption></figcaption></figure>
 
 The ​**Microsoft Receipt Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. **Microsoft Receipts** allows users to categorize and visualize their expenses.
 

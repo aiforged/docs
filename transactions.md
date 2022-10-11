@@ -7,7 +7,7 @@ nav_order: 12
 
 The **Transactions** page displays all transactions made by each service and can be viewed by selecting **Transactions**.
 
-<figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Filter Transactions
 
@@ -17,7 +17,7 @@ The **From** and **To** date filters can be set to view transactions in any time
 
 The **Transaction List** can be exported by selecting **Export To Excel**.
 
-<figure><img src=".gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ![Transactions](<assets/transactions (1) (1).png>)
 
@@ -73,7 +73,7 @@ The **Usage by Service** pie chart displays the usage of all your services
 
     This view will show a detailed summary of **Transactions** of the **Service**.\\
 
-    <figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (12) (5).png" alt=""><figcaption></figcaption></figure>
 3.  Clicking on **Open Service** will take the user to the **Manage Service** view to explore the **Service**.
 
-    <figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption><p><br></p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4) (6).png" alt=""><figcaption><p><br></p></figcaption></figure>
