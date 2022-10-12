@@ -16,7 +16,7 @@ To view the **User Groups** page select the **User Groups** navigation item from
 
 In the **User Groups** page click on the top row that reads **Click here to add a new User Group.**
 
-****![](<.gitbook/assets/image (30).png>)****
+****![](<.gitbook/assets/image (30) (2).png>)****
 
 * Enter a **Name** for the new user group.
 * Select the user group **Type.**
@@ -30,7 +30,7 @@ To manage a **User Group**, click on the **Manage Group Users** button.
 
 This will list the access rights each **User** has to a specific **Project** and / or **Service**.
 
-![](<.gitbook/assets/image (1).png>)
+![](<.gitbook/assets/image (1) (4).png>)
 
 To link a new **User** to a specific **Project** or **Service**, search for users by name via the **Search Users** function. Check all relevant users and click on **Accept**.&#x20;
 
@@ -45,4 +45,4 @@ In the following dialog select the **Project** that the selected user/s will be 
 
 (Optional) In the following dialog select the **Service** that the selected user/s will be given access to. If a user should receive access to all **Services** in the selected **Project**, select the **No Selection** option.
 
-![](<.gitbook/assets/image (57).png>)
+![](<.gitbook/assets/image (57) (1).png>)
