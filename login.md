@@ -11,7 +11,7 @@ nav_order: 5
 
 * Login with your registered AIForged account.
 * Only a **Username** and a **Password** are required.
-* Click on “Remember My Login” if you don’t wish to re-enter your credentials every time you login.
+* Ensure **Remember My Login** is checked if you don’t wish to re-enter your credentials every time you login.
 
 ## External Account
 
@@ -38,4 +38,4 @@ nav_order: 5
 * Ensure that your **Device** is connected to the **Internet**.
 * If you are using AIForged on a business or enterprise network, please check with your network administrators that the AIForged **Service Endpoint URL** is allowed outbound access via your network. This URL can be found in the [**Settings**](settings.md) section of the AIForged Studio.
 * If you have deployed AIForged on-premises, please make sure to add the correct **Service Endpoint URL** in the [**Settings**](settings.md) section of the AIForged Studio.
-* If you are logging in with an **AIForged Account**, please ensure that you have previously registered with the provided e-mail address on the AIForged platform. If you have previously registered on the AIForged platform and are still unable to login, please make use of the [**Forgot Password**](forgot-password.md) \*\*\*\* function.
+* If you are logging in with an **AIForged Account**, please ensure that you have previously registered with the provided e-mail address on the AIForged platform. If you have previously registered on the AIForged platform and are still unable to login, please make use of the [**Forgot Password**](forgot-password.md) function.

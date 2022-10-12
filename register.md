@@ -1,6 +1,7 @@
 ---
 title: Registration
 nav_order: 2
+description: The Register page is used to Register a new AIForged account.
 ---
 
 # Register
@@ -26,4 +27,4 @@ nav_order: 2
 * If you are using AIForged on a business or enterprise network, please check with your network administrators that the AIForged **Service Endpoint URL** is allowed outbound access via your network. This URL can be found in the [**Settings**](settings.md) section of the AIForged Studio.
 * If you have deployed AIForged on-premises, please make sure to add the correct **Service Endpoint URL** in the [**Settings**](settings.md) section of the AIForged Studio.
 * Ensure that your password matches in both the **Password** and **Confirm Password** sections of the registration page and that you have passed the **reCAPTCHA** verification.
-* Ensure that you have not previously registered with the provided e-mail address on the AIForged platform. In the event that you have previously registered on the AIForged platform please make use of the [**Forgot Password**](forgot-password.md) **** function.
+* Ensure that you have not previously registered with the provided e-mail address on the AIForged platform. In the event that you have previously registered on the AIForged platform please make use of the [**Forgot Password**](forgot-password.md) function.

@@ -1,11 +1,16 @@
 ---
 title: Settings
 nav_order: 9
+description: >-
+  The application Settings page allows you to change application specific
+  configurations.
 ---
 
 # Settings
 
-The settings page of the AIForged UI can be found by clicking Settings at the bottom left of the window.
+To access the application **Settings** page, simply click the **Settings** navigation item from the **Settings** area of the navigation menu.
+
+The **Settings** page allows you to change the **AIForged Platform Service Endpoint URL**, setup **Proxy Server** settings or change the current application **Theme**.
 
 <figure><img src=".gitbook/assets/image (12) (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,26 +26,24 @@ The **Connectivity** page allows the user to change connectivity settings. The u
 
 <figure><img src=".gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
-To add a new **Service Endpoint**, click on the **Plus Sign Button**.
+To add a new **Service Endpoint**, click on the **Add Button**.
 
 <figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Theme
 
-The **Theme** page allows the user to change the aesthetics and sound setting of the AIForged UI.
+The **Theme** page allows the user to select the current theme and to enable or disable UI interaction feedback audio.
 
 <figure><img src=".gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Change Theme Mode
 
-To change the Theme Mode click on the radio button of the Theme you want to select
+To change the current **Theme** click on the radio button of the **Theme** you want to select.
 
 ![](<assets/image (38) (1) (1).png>)
 
 ### Sound
 
-Change the slider to turn the sound on and off.
+Click the toggle to enable or disable UI feedback sounds.
 
 ![](<assets/image (6) (1) (1).png>)

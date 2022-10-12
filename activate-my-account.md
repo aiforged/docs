@@ -1,13 +1,16 @@
 ---
 title: Activate My Account
 nav_order: 3
+description: >-
+  The Activate My Account page allows you to activate your newly registered
+  account.
 ---
 
 # Activate my account
 
 <figure><img src=".gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
-* The **Activate My Account** page allows you to activate your newly registered account.&#x20;
+* The **Activate My Account** page allows you to activate your newly registered account.
 * Clicking the **Activate My Account** link in the account activation email should automatically open the AIForged Studio and bring you to this page, it will also automatically fill in the required information.
 
 ## Required details

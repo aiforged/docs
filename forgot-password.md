@@ -1,6 +1,9 @@
 ---
 title: Forgot Password
 nav_order: 6
+description: >-
+  The Forgot Password page can be used in the event that you are unable to login
+  to your account and need to reset your password.
 ---
 
 # Forgot Password

@@ -1,3 +1,9 @@
+---
+description: >-
+  (Obsolete) The payments page displays all the Payments you have made to
+  AIForged
+---
+
 # Payments
 
 ![](<assets/image (17) (1) (1).png>)

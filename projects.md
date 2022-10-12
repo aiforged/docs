@@ -1,17 +1,23 @@
 ---
 title: Projects
 nav_order: 7
+description: >-
+  The Projects page displays projects created by you, or that have been shared
+  with you, and allows you to create a new project at any time.
 ---
 
 # Projects
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Projects** page displays all of your accessible projects in a grid of **Project Cards**.\
+Each **Project Card** displays a summary of each [**Service**](broken-reference/) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference/) and the remaining credit balance for that project.
 
-The **Projects** page displays projects created by you, or that have been shared with you, and allows you to create a new project at any time. Each **Project Card** displays a summary of each [**Service**](broken-reference/) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference/) and the remaining credit balance for that project.
-
-Clicking on a [**Service**](broken-reference) icon within a **Project Card** allows you to zoom to that service.
+Clicking on a [**Service**](broken-reference/) icon within a **Project Card** allows you to zoom to that service.
 
 Clicking a **Project Card** will open the project detail view.
+
+The **Projects** page is opened by default when the AIForged Studio is first opened, and can also be opened by selecting the **Projects** navigation item in the main navigation menu.
+
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to create a project
 
