@@ -29,8 +29,8 @@ Next, we need to add a **Custom Dataset** to our new **Custom Code utility servi
    ![](<../.gitbook/assets/image (6).png>)
 3. Enter **Duplicate History** as the name for our **Custom Dataset**, and click on **Submit**.\
    ![](<../.gitbook/assets/image (9).png>)
-4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor: **** \
-   ****![](<../.gitbook/assets/image (16).png>)\
+4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor: \
+   ![](<../.gitbook/assets/image (16).png>)\
    ![](<../.gitbook/assets/image (11).png>)
 
 We are going to add two **Fields** to our **Custom Dataset**. **Fields** are visualized as **Columns** within our dataset editor. These **Fields** will contain an MD5 hash string as well as a unique document identifier for each document processed by our **Custom Code**.
@@ -43,15 +43,15 @@ To add these **Fields** to the **Custom Dataset**, enter the name of the column 
   ![](<../.gitbook/assets/image (19).png>)
 
 Click on **Save** to save the changes made to the **Custom Dataset**.\
-![](<../.gitbook/assets/image (17).png>)****
+![](<../.gitbook/assets/image (17).png>)
 
 Your **Custom Dataset** should now look as follows in the configuration view (you may need to refresh the view):\
-![](<../.gitbook/assets/image (2).png>)****
+![](<../.gitbook/assets/image (2).png>)
 
 Next, we need to add some code to our **Custom Code** utility.
 
 Close the **Configuration View** for the **Custom Code** utility, and click on the **Code** button on the nested **Service Card**.\
-****![](<../.gitbook/assets/image (4).png>)****
+![](<../.gitbook/assets/image (4).png>)
 
 * Select **C#** from the **Code Language** dropdown.\
   ![](<../.gitbook/assets/image (5).png>)
@@ -260,6 +260,7 @@ return new AIForged.Services.ProcessResult(docs);
 For the MD5 Hash calculation to work, add the following assembly signature to the list of **Assemblies** referenced by your custom code:
 
 * System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\
+  \
   ![](../.gitbook/assets/image.png)
 
 Be sure to **Save** your custom code changes regularly by clicking on the **Save** button in the command bar.\

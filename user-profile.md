@@ -1,6 +1,14 @@
+---
+description: >-
+  The User Profile page allows you to view and edit various details related to
+  your user account.
+---
+
 # User Profile
 
-The details of the **User Account** currently logged into AIForged can be viewed by clicking **User Profile**.
+The **User Profile** page allows you to view and edit various details related to **your** user account.
+
+To open the **User Profile** page, simply select the **User** **Profile** navigation item from the **Settings** area of the navigation menu. If you are unable to open the **User Profile** page, please ensure that you are logged into the **AIForged Studio** with your AIForged credentials.
 
 <figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -12,16 +20,19 @@ The User page allows you to edit your user details.
 
 #### Edit your details
 
-1. Fill in the **User Details** you want to change or add.
-2.  Click on the **Update User** command in the app bar.
+1. Edit or fill in the **User Details** you want to change or add.
+2.  Click on the **Update User** button in the command bar.
 
     <figure><img src=".gitbook/assets/image (34) (1) (2).png" alt=""><figcaption></figcaption></figure>
+3. Your **Id** and **Username** are unique to your account and cannot be changed.
 
 ## Roles
 
+The **Roles** page allows you to view access roles that have been assigned to your account. Only your **account administrators** can remove or add roles to your account.
+
 <figure><img src=".gitbook/assets/image (13) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Add or remove roll
+### Add or Remove Role (Account Administrators Only)
 
 1. Select the **Roles** you would like to add or remove.
 2.  Click on the **Update User** command in the app bar.
@@ -45,34 +56,37 @@ To upload a new profile picture click on the **Upload New Picture** button and s
 1.  Click on the **Link External Login Provider** button.
 
     <figure><img src=".gitbook/assets/image (28) (1) (2).png" alt=""><figcaption></figcaption></figure>
-2. A popup will appear asking what **Login Provider** you would like to link.
+2. Select a an **External** **Provider** from the list of providers.
 3. Sign in to the provider.
-4. Your link will appear underneath providers if the login was successful.
+4. Your unique provider link Id will appear within the **External Provider Card** if the link was successful.
 
 ### Unlink provider
 
-To unlink a provider click on the unlink button on the provider.
+To unlink a specific provider simply click on the **Unlink** button in the **External Provider Card**.
 
 <figure><img src=".gitbook/assets/image (17) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Teaching Tips
 
-**Teaching Tips** display hints on pages, about how to use its functionality and features.
+**Teaching Tips** display hints on various pages regarding usage and functionality.
+
+**Teaching Tips** can be disabled globally for your user account by toggling the **Teaching Tips Toggle** to off.\
+**Teaching Tips** can also be enabled or disabled individually by toggling the **Open Toggle** on or off for each listed **Teaching Tip.**
 
 <figure><img src=".gitbook/assets/image (35) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-## Reset teaching tips
+## Reset Teaching Tips
 
-To reset all teaching tips click on "Reset Teaching Tips"
+To reset all **Teaching Tips** to their default status click on the **Reset Teaching Tips** button in the command bar.
 
-## Turn teaching tips on and off
+## Disable / Enable Teaching Tips
 
-![](<assets/image (33) (1).png>)
+![](<.gitbook/assets/image (33) (1) (1) (1) (1) (1).png>)
 
-Click on the slider to turn the **Teaching Tip** on or off
+Click on the **Teaching Tips** **Toggle** to globally enable or disable **Teaching Tips** for your **User Account.**
 
-## Individually turn teaching tips on or off
+## Individually Disable / Enable Teaching Tips
 
-To turn a **Teaching Tip** off individually, click on the slider in the open column of the teaching tip grids.
+To individually disable / enable a **Teaching Tip**, click on its **Open** toggle.
 
 <figure><img src=".gitbook/assets/image (24) (1) (2).png" alt=""><figcaption></figcaption></figure>

@@ -8,56 +8,61 @@ has_children: true
 
 ## What is a Service?
 
-A **Service** is a container that hosts an OCR engine and provides a means to receive and process documents. Documents to be processed are received in Service **Inbox**, and the **Extracted Results** are presented in the documents in die Service **Outbox**.
+A **Service** is an AIForged function. It can be any of the available **Service Types,** such as an OCR engine that performs optical character recognition on a document, or an email scraper that downloads emails from a mailbox and separates attachments as useable objects, or even a simple copy function that can copy objects from one service's **Outbox** to another service's **Inbox**.
 
-**Services** can be contained within other **Services**, and are called **Child Services**. This is normally the case when certain [Rule Types](../rules-engine/rules-engine.md) are applied to certain fields in the document.
+A service typically has an **Inbox** and **Outbox.** The **Inbox** stores objects that need to be processed by the service. The **Outbox** contains the processing results.
 
-The example project below shows a **Service Box**, which is the **Parent Service** for three **Child Services**.
+Depending on the service type, a service can also have a **Definition Box**, **Training Box**, and **Label Box.**
 
-<figure><img src="../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
+Multiple **Services** can be nested within a **Service**. These nested services are called **Child Services**. **Child Services** will automatically be added to a service depending on the **Service Type's** dependencies, or [**Rule Type**](../rules-engine/rules-engine.md) **** dependencies, but can also be manually added to extend a service's functionality.
 
-The following **Action Buttons** can be found on the **Service Box**, the number indicates the document count for each of the boxes:
+The example below shows a **Service Card** within a **Service's Detail View**, which in this case represents a **Parent Service** with three **Child Services**.
 
-| Action Button        | Icon                                                | Descritpion                                                  |
-| -------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| Definition           | ![](<../.gitbook/assets/image (14) (2).png>)        | Takes the user to the Definitions box of the service.        |
-| Training             | ![](<../.gitbook/assets/image (26) (1).png>)        | Takes the user to the Training documents box of the service. |
-| Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)         | Takes the user to the Labelled documents box of the service. |
-| Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>)     | Takes the user to the Document Inbox of the service.         |
-| Outbox               | ![](<../.gitbook/assets/image (4) (3) (1) (2).png>) | Takes the user to the Document Outbox of the service.        |
-| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)        | Opens the Configuration Wizard of the service.               |
-| Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1).png>)     | Open the Parameter Definitions of the service.               |
-| Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)        | Opens the Service Logs of the service.                       |
-| Delete Service       | ![](<../.gitbook/assets/image (16) (4).png>)        | Delete the service.                                          |
+<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
+
+The following **Action Buttons** can be found in a **Service Card**, the number indicates the document count for each of the boxes:
+
+| Action Button        | Icon                                            | Descritpion                                                                                                        |
+| -------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Definition           | ![](<../.gitbook/assets/image (14) (2).png>)    | Opens the **Definitions box** of the service. (Only valid for **Classification** and **Extraction Service Types**) |
+| Training             | ![](<../.gitbook/assets/image (26) (1).png>)    | Opens the **Training box** of the service. (Only valid for **Classification** and **Extraction Service Types**)    |
+| Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)     | Opens the **Label box** of the service. (Only valid for **Classification** and **Extraction Service Types**)       |
+| Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>) | Opens the **Inbox** of the service.                                                                                |
+| Outbox               | ![](<../.gitbook/assets/image (15) (3).png>)    | Opens the **Outbox** of the service.                                                                               |
+| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)    | Opens the **Configuration Wizard** of the service.                                                                 |
+| Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1).png>) | Opens the **Configuration page** of the service.                                                                   |
+| Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)    | Opens the **Service Logs** of the service.                                                                         |
+| Delete Service       | ![](<../.gitbook/assets/image (16) (4).png>)    | Deletes the service.                                                                                               |
 
 ## How to create a Service?
 
-1. Open an existing Project, or create a new one.
-2.  At the bottom of the AIForged UI, select **Add Service.**
+1. Open an existing **Project**, or create a new **Project**.
+2.  At the bottom of the **Project Detail View**, select **Add Service.**
 
-    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
-3.  The "_Add New Service"_ dialogue pops up.
+    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3.  The **Add New Service** dialogue will open.\
+
 
     <figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
-4. Select the **Service Type** of the service and click on **Select**.
+4. Select the **Service Type** of the **Service** you want to add and click on **Select**.
 5.  Click **Yes** on the confirmation message box.
 
     <figure><img src="../.gitbook/assets/image (22) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Service Actions
 
-Other **Service Actions** are (found at the bottom of the AIForged UI):
+Various **Service Actions** are available from the **Command Bar** of the **Service Detail View.**
 
 *   Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (7) (2) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Document Keys
 
     <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 *   All Definitions of the service.
 
     <figure><img src="../.gitbook/assets/image (25) (5).png" alt=""><figcaption></figcaption></figure>
-*   Manage Users for the service.
+*   Manage User access for the service.
 
     <figure><img src="../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Share a service on the marketplace.

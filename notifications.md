@@ -1,17 +1,26 @@
+---
+description: >-
+  The Notifications page allows you to view all of the Notifications that have
+  been sent to you by the AIForged platform.
+---
+
 # Notifications
 
-The **Notifications** page shows all the **Notifications** that you received.
+The **Notifications** page allows you to view all of the **Notifications** that have been sent to you by the AIForged platform.
+
+You can filter the visible **Notifications** via the various filters available in the view.
 
 <figure><img src=".gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
-### View Notification Body
+### View Notification Contents
 
-*   To view a **Notification Body** click on any of the notifications in the grid, and the **Notification Body** will appear at the bottom of the page.
+*   To view the contents of a **Notification,** simply select it from the notifications list. \
+    The **Notification** will automatically be marked as read, and the contents of the **Notification** will appear to the right-hand side in a recognizable format.
 
     <figure><img src=".gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Export to Excel
 
-In order to export the **Notification List** to Excel, click on the **Export to Excel** button at the bottom of the AIForged UI.
+The currently visible list of **Notifications** can be exported to an **Excel** spreadsheet by clicking the **Export To Excel** button in the command bar.
 
 <figure><img src=".gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
