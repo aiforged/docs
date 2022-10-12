@@ -20,7 +20,7 @@ The **From** and **To** date filters can be set to view transactions in any time
 
 The list of **Transactions** can be exported to Microsoft Excel format (xlsx) by selecting **Export To Excel**.
 
-<figure><img src=".gitbook/assets/image (15) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Available Fields
 
@@ -49,7 +49,7 @@ The list of **Transactions** can be exported to Microsoft Excel format (xlsx) by
 
 1.  Clicking on **View All Transaction Details** in the **Action** bar will navigate you to the **Transaction Details** page for the specific **Project**.
 
-    <figure><img src=".gitbook/assets/image (3) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** for the **Project**.
 

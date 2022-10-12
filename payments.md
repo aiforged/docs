@@ -6,8 +6,6 @@ description: >-
 
 # Payments
 
-![](<assets/image (17) (1).png>)
-
 The payments page displays all the Payments you have made to AIForged
 
 ### How to create a payment
@@ -27,8 +25,6 @@ You can filter Payments by date
 2. Set the To date
 
 ## Sort the Payments grid
-
-![](<assets/image (9).png>)
 
 * You can Sort the documents page by clicking on any of the table headers
 * To do multiple column sorting use **CTRL + Left Mouse Click** on the columns
