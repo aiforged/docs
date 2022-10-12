@@ -8,7 +8,7 @@ nav_order: 1
 
 The **Work Flow** view visually shows Work Flow Items that require attention from a **HITL**.
 
-<figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The **HITL Work Flow** queue shows **Work Flow Items** that have been created for your **Username**. The Work Flow Item card shows all the information regarding the Verification required, these include:
 
