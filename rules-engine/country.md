@@ -8,7 +8,7 @@ nav_order: 9
 
 The **Country Rule Type** can be applied to any field where a country's name is expected.
 
-<figure><img src="../.gitbook/assets/image (7) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The following fields can be derived from the extracted data value:
 
