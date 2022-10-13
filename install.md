@@ -21,16 +21,16 @@ Installing from the Microsoft Store is simple and follows the same process as in
 
 ## SYSTEM REQUIREMENTS
 
-Please ensure that your computer meets or exceeds the following system requirements before installing the AIFORGED application.
+Please ensure that your computer meets or exceeds the following system requirements before installing the AIForged Studio.
 
 **Minimum System Requirements**
 
 | **OS** | Windows 10 version 10.0.19041.0 or higher |
 | :--- | :--- |
 | **Architecture** | x64 |
-| **DISPLAY RESOLUTION** | Best viewed in 1980 x 1080 |
-| **Keyboard** | Integrated Keyboard |
-| **Mouse** | Integrated Mouse |
+| **DISPLAY RESOLUTION** | Best viewed in 1920 x 1080 |
+| **Keyboard** | Keyboard |
+| **Mouse** | Mouse or Touch Support |
 | **DirectX** | Version 9 |
 | **Memory** | 4GB |
 | **Video Memory** | 1 GB |
@@ -41,9 +41,9 @@ Please ensure that your computer meets or exceeds the following system requireme
 | **OS** | Windows 11 version 10.0.22000.0 or higher |
 | :--- | :--- |
 | **Architecture** | x64 |
-| **DISPLAY RESOLUTION** | Best viewed in 1980 x 1080 or higher|
-| **Keyboard** | Integrated Keyboard |
-| **Mouse** | Integrated Mouse |
+| **DISPLAY RESOLUTION** | Best viewed in 1920 x 1080 or higher|
+| **Keyboard** | Keyboard |
+| **Mouse** | Mouse or Touch Support |
 | **DirectX** | Version 11 |
 | **Memory** | 8 GB |
 | **Video Memory** | 1 GB |
