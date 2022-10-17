@@ -1,3 +1,10 @@
+---
+layout: default
+title: Index
+nav_exclude: true
+---
+
+
 # How to Install AIForged
 
 The AIForged Studio can be installed via one of our Fastlane releases, or via the Microsoft Store.
