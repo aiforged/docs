@@ -1,10 +1,9 @@
 ---
-layout: default
-title: UIPath Project
+title: Payments
 parent: UIPath Activities
 has_children: true
-nav_order: 6
+nav_order: 5
 ---
 
-# Project
+# Payments
 

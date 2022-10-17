@@ -7,7 +7,7 @@ nav_order: 7
 
 # Image Pre-Processing
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (3).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Image Processor Service** is used to pre-process documents before being sent to OCR services in order to increase the accuracy of the OCR.
 

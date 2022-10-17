@@ -8,7 +8,7 @@ description: >-
 
 # Activate my account
 
-<figure><img src=".gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (80) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **Activate My Account** page allows you to activate your newly registered account.
 * Clicking the **Activate My Account** link in the account activation email should automatically open the AIForged Studio and bring you to this page, it will also automatically fill in the required information.

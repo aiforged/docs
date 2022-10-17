@@ -12,7 +12,7 @@ Document categories defines the **Type** of document that has been uploaded. Pro
 
 1.  From the **Project** page click on Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10) (2) (2).png" alt=""><figcaption></figcaption></figure>
 2.  Click on “_Click here to add a new row_” to add a new **Document Category**.
 
     <figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>

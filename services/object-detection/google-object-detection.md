@@ -7,7 +7,7 @@ nav_order: 2
 
 # Google Object Detection
 
-<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Google Object Detection** detects objects, faces, and landmarks using Google Vision
 

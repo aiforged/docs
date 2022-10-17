@@ -7,7 +7,7 @@ nav_order: 2
 
 # Google Invoices
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49) (4).png" alt=""><figcaption></figcaption></figure>
 
 The ​**Google Invoice Parser** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Google Documents AI**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 

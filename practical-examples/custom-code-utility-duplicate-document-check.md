@@ -13,48 +13,48 @@ To start, let's add a new **Custom Code utility service** to an existing **Email
 The **Email Scraping** service includes a nested **Attachment** service by default that performs individual processing on attachments from scraped emails. This is the service where we will nest our **Custom Code** utility.
 
 * First, open the **Service Detail View** for the **Email Scraping** service by clicking on its **Service Card** in your project.\
-  ![](<../.gitbook/assets/image (12).png>)
+  ![](<../.gitbook/assets/image (12) (3).png>)
 * Click on an empty space within the header of the nested **Attachment Service Card** to open the **Attachment** service's detail view:\
-  ![](<../.gitbook/assets/image (15).png>)
+  ![](<../.gitbook/assets/image (15) (4).png>)
 * Click on the **Add Utility** button in the **Command Bar**.\
-  ![](<../.gitbook/assets/image (3).png>)
+  ![](<../.gitbook/assets/image (3) (3).png>)
 * Select **Custom Code** from the **Service Type Selection Dialog** under the **Utilities** section and then click on **Select** to confirm your selection.\
-  ![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (21) (1).png>)
 
 Next, we need to add a **Custom Dataset** to our new **Custom Code utility service**. The **Custom Dataset** will store the MD5 hash strings for our non-duplicate documents.
 
 1. To do this, open the **Configuration View** of our newly nested **Custom Code utility service** by clicking on the button with the **Gear Icon** in its nested service card.\
-   ![](<../.gitbook/assets/image (10).png>)
+   ![](<../.gitbook/assets/image (10) (1).png>)
 2. In the configuration view select the main definition for our **Custom Code utility service** (the first configuration line), and then click on **Create Custom Dataset.**\
-   ![](<../.gitbook/assets/image (6).png>)
+   ![](<../.gitbook/assets/image (6) (1).png>)
 3. Enter **Duplicate History** as the name for our **Custom Dataset**, and click on **Submit**.\
-   ![](<../.gitbook/assets/image (9).png>)
-4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor: \
-   ![](<../.gitbook/assets/image (16).png>)\
-   ![](<../.gitbook/assets/image (11).png>)
+   ![](<../.gitbook/assets/image (9) (4).png>)
+4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor:\
+   ![](<../.gitbook/assets/image (16) (1).png>)\
+   ![](<../.gitbook/assets/image (11) (1).png>)
 
 We are going to add two **Fields** to our **Custom Dataset**. **Fields** are visualized as **Columns** within our dataset editor. These **Fields** will contain an MD5 hash string as well as a unique document identifier for each document processed by our **Custom Code**.
 
 To add these **Fields** to the **Custom Dataset**, enter the name of the column in the **Column Name** field in the editor and click on **New Column:**
 
 * Add **MD5Hash** as a new column:\
-  ![](<../.gitbook/assets/image (18).png>)
+  ![](<../.gitbook/assets/image (18) (4).png>)
 * Add **DocumentId** as a new column.\
-  ![](<../.gitbook/assets/image (19).png>)
+  ![](<../.gitbook/assets/image (19) (5).png>)
 
 Click on **Save** to save the changes made to the **Custom Dataset**.\
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (17) (1).png>)
 
 Your **Custom Dataset** should now look as follows in the configuration view (you may need to refresh the view):\
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (5).png>)
 
 Next, we need to add some code to our **Custom Code** utility.
 
 Close the **Configuration View** for the **Custom Code** utility, and click on the **Code** button on the nested **Service Card**.\
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (3).png>)
 
 * Select **C#** from the **Code Language** dropdown.\
-  ![](<../.gitbook/assets/image (5).png>)
+  ![](<../.gitbook/assets/image (5) (1).png>)
 * Copy and paste the following code into the code editor area:
 
 ```csharp
@@ -261,9 +261,9 @@ For the MD5 Hash calculation to work, add the following assembly signature to th
 
 * System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\
   \
-  ![](../.gitbook/assets/image.png)
+  ![](<../.gitbook/assets/image (114).png>)
 
 Be sure to **Save** your custom code changes regularly by clicking on the **Save** button in the command bar.\
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (3).png>)
 
 To test that our **Custom Code** is working as designed we can send some duplicate documents to our **Email Scraping** service. If your custom code was setup correctly, then any duplicate documents will be placed into an error state, work items will be created and they will not be processed by any further nested services within the email scraping service.

@@ -6,7 +6,7 @@ description: The Register page is used to Register a new AIForged account.
 
 # Register
 
-<figure><img src=".gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (77) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The Register page is used to Register a new AIForged account. Your new account can be linked up to an [External Login](login.md) at a later stage.
 * If you already own a listed **Social Media** or **Azure AD account**, you can login via the [External Login](login.md) section of the login page, which will automatically register a new account based on your existing external details.

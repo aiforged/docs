@@ -35,7 +35,7 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 4.  The **code language** can be selected from the dropdown box.
 
-    <figure><img src="../../.gitbook/assets/image (29) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (29) (1) (2) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 5.  The imports required to write the code, can be added from the **Imports** tab.
 
     <figure><img src="../../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>

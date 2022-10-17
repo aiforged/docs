@@ -8,7 +8,7 @@ description: >-
 
 # Resend activation Email
 
-<figure><img src=".gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (76) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **Resend Activation Email** page can be used in the case that you did not receive your activation email.
 * Please allow up to **5 minutes** for your activation email to arrive before requesting a new activation email.

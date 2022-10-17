@@ -35,7 +35,7 @@ The **Projects** page is opened by default when the AIForged Studio is first ope
 
 ## How to delete a project
 
-<figure><img src=".gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (79) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **Bin Icon** in the upper right of the **Project Card** to delete the **Project.**
 * A prompt will appear asking you to confirm **Project** deletion.

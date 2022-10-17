@@ -8,7 +8,7 @@ description: Custom invoice training
 
 # Microsoft Forms Custom Invoices
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Form Recognizer - Custom Invoice Service** extends the functionality of [Microsoft Form Recognizer](../custom-forms/microsoft-forms-recognizer.md) to specifically extract information from invoices. Specifically, this service will return the same extracted OCR data in the form of **Key-Value Pairs**, but it returns the **Invoice Line Items** in table format.&#x20;
 
@@ -25,7 +25,7 @@ This makes the processing of line items much easier, as invoice data such as **I
 5. Click the “Next” Action in the Action Bar to save the Service
 6. **Step 2** Classes, to add a Class View to [Document Categories](../custom-forms/microsoft-forms-recognizer.md) (Click next to save categories)
 7. **Step 3** Training \*
-   1. ![](<../../assets/33 (1) (1) (1) (1) (1) (1) (2).png>) Click “Upload Training Documents” in the Action Bar
+   1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1).png>) Click “Upload Training Documents” in the Action Bar
    2. Select the Document Category you want to upload documents to. **The demos training files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie\_larcai\_com/EVXJvXsMjM1Gnmhcic-UUnoB99xK0fDRjsaZREkx63PFHg?e=4RtU6d)
    3. Upload Documents for each category you want to train
    4. Click Train Service once all documents have been uploaded

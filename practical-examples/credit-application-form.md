@@ -10,7 +10,7 @@ nav_order: 2
 
 This is an example of a **Credit Application** form.
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The purpose of this process is to extract various fields on the form, including the **First Name**, **Last Name**, **Date of Birth**, **Physical Address**, **E-mail Address**, **Employment Details**, and **Banking Information**, to name a few. The detailed steps are as follows:
 
@@ -76,6 +76,6 @@ The purpose of this process is to extract various fields on the form, including 
     <figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 23. Now that the documents have been labeled, we can request the train operation. In step 5, click on **Train Service**. Again the progress dialogue will show the progress of the training operation. Note that after training has been completed successfully, the status will change to **Trained**.
 
-    <figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 24. At this stage, the service is trained, and documents can be loaded into the [**Inbox**](../documents/documents-inbox.md) of the service and can be processed.
 25. The OCR results can be viewed in the [**Outbox**](../documents/documents-outbox.md) \*\*\*\* of the service.

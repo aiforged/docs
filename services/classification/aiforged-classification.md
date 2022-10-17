@@ -22,12 +22,12 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82).png>)
+   ![](<../../.gitbook/assets/image (82) (1).png>)
 3. Select **AIForged Classification Service** from the available **Service Types.**\
-   ****![](<../../.gitbook/assets/image (30).png>)****
+   ![](<../../.gitbook/assets/image (30) (3).png>)
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).\
-   ![](<../../.gitbook/assets/image (85).png>)
+   ![](<../../.gitbook/assets/image (85) (1).png>)
    1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
    2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
    3. **Step 3 -** Training \*
@@ -42,12 +42,12 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
       7. The progress dialog should automatically close once the training has completed.
    4. **Step 4** - The **Definition Document** should be created after the **Service** has been trained successfully.
    5. Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
-      ![](<../../.gitbook/assets/image (84).png>)
+      ![](<../../.gitbook/assets/image (84) (1).png>)
 
 ## Add and Process Documents
 
 1. In your **Classification Service Card** click on the **Inbox** button.\
-   ![](<../../.gitbook/assets/image (86).png>)
+   ![](<../../.gitbook/assets/image (86) (1).png>)
 2. Drag and drop files over the **Inbox** grid or click on the **Upload** button in the command bar.\
    **The demo test files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20Training.zip)**.**
 3. When prompted to select a category, select the **No Selection** option in the bottom right of the dialog window.

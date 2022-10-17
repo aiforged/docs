@@ -7,7 +7,7 @@ nav_order: 1
 
 # Amazon Invoices
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (3).png" alt=""><figcaption></figcaption></figure>
 
 The ​**Amazon Invoice Extraction Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 
