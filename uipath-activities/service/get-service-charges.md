@@ -1,3 +1,10 @@
+---
+title: Get Service Charges
+parent: Service
+grand_parent: UIPath Activities
+nav_order: 2
+---
+
 # Get Service Charges
 
 ## About

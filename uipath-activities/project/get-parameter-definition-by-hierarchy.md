@@ -1,3 +1,10 @@
+---
+title: Get Parameter Definition By Hierarchy
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 2
+---
+
 # Get Parameter Definition By Hierarchy
 
 ## About

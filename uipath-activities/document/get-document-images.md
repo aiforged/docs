@@ -1,3 +1,10 @@
+---
+title: Get Document Images
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 8
+---
+
 # Get Document Images
 
 ## About

@@ -1,6 +1,11 @@
+---
+title: Get Work Item Count
+parent: WorkItem
+grand_parent: UIPath Activities
+nav_order: 2
+---
+
 # Get Work Item Count
-
-
 
 ## About
 

@@ -1,3 +1,10 @@
+---
+title: Get Project Category
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 8
+---
+
 # Get Project Category
 
 ## About

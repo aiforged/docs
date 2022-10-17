@@ -1,3 +1,10 @@
+---
+title: Get Parameter Verification
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 16
+---
+
 # Get Parameter Verification
 
 ## About

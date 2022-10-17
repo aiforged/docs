@@ -1,3 +1,10 @@
+---
+title: Get Extraction Results
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 13
+---
+
 # Get Extraction Results
 
 ## About

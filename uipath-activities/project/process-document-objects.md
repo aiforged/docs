@@ -1,3 +1,10 @@
+---
+title: Process Document Objects
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 12
+---
+
 # Process Document Objects
 
 ## About

@@ -1,3 +1,10 @@
+---
+title: Get Project Services
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 10
+---
+
 # Get Project Services
 
 ## About

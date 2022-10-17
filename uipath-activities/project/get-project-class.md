@@ -1,3 +1,10 @@
+---
+title: Get Project Class
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 9
+---
+
 # \*Get Project Class
 
 

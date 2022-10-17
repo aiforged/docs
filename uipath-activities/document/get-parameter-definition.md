@@ -1,3 +1,10 @@
+---
+title: Get Parameter Definition
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 15
+---
+
 # Get Parameter Definition
 
 ## About

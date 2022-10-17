@@ -1,3 +1,10 @@
+---
+title: Get Document Count
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 6
+---
+
 # --Get Document Count
 
 ## About

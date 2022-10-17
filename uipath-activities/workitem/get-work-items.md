@@ -1,3 +1,10 @@
+---
+title: Get Work Items
+parent: WorkItem
+grand_parent: UIPath Activities
+nav_order: 3
+---
+
 # Get Work Items
 
 ## About

@@ -1,6 +1,11 @@
+---
+title: Get Service Events
+parent: Service
+grand_parent: UIPath Activities
+nav_order: 3
+---
+
 # Get Service Events
-
-
 
 ## About
 

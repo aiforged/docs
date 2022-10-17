@@ -1,3 +1,10 @@
+---
+title: Move Document
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 18
+---
+
 # Move Document
 
 ## About

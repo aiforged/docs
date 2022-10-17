@@ -1,6 +1,11 @@
+---
+title: Get Projects
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 11
+---
+
 # Get Projects
-
-
 
 ## About
 

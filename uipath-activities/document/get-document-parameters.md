@@ -1,3 +1,10 @@
+---
+title: Get Document Parameters
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 10
+---
+
 # Get Document Parameters
 
 ## About

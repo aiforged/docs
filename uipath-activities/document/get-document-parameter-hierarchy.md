@@ -1,3 +1,10 @@
+---
+title: Get Document Parameter Hierarchy
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 9
+---
+
 # Get Document Parameter Hierarchy
 
 ## About

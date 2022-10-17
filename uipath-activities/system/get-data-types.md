@@ -1,3 +1,10 @@
+---
+title: Get Data Types
+parent: System
+grand_parent: UIPath Activities
+nav_order: 1
+---
+
 # Get Data Types
 
 ## About

@@ -1,3 +1,10 @@
+---
+title: Return All Verifications
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 19
+---
+
 # Return All Verifications
 
 ## About

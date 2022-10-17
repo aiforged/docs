@@ -1,3 +1,10 @@
+---
+title: Get Work Queue
+parent: WorkItem
+grand_parent: UIPath Activities
+nav_order: 4
+---
+
 # Get Work Queue
 
 ## About

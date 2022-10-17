@@ -1,3 +1,10 @@
+---
+title: Get Verification Shred
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 17
+---
+
 # Get Verification Shred
 
 ## About

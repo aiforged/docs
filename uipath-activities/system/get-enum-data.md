@@ -1,6 +1,11 @@
+---
+title: Get Enum Data
+parent: System
+grand_parent: UIPath Activities
+nav_order: 2
+---
+
 # Get Enum Data
-
-
 
 ## About
 

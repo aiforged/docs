@@ -1,3 +1,10 @@
+---
+title: Copy Document
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 1
+---
+
 # Copy Document
 
 ## About

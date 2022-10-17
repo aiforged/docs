@@ -1,3 +1,10 @@
+---
+title: Get Project By User
+parent: Project
+grand_parent: UIPath Activities
+nav_order: 5
+---
+
 # Get Project By User
 
 ## About

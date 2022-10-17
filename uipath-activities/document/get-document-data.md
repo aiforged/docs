@@ -1,3 +1,10 @@
+---
+title: Get Document Data
+parent: Document
+grand_parent: UIPath Activities
+nav_order: 7
+---
+
 # Get Document Data
 
 ## About
