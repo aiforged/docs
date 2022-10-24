@@ -12,7 +12,7 @@ description: Custom invoice training
 
 The **Microsoft Form Recognizer - Custom Invoice Service** extends the functionality of [Microsoft Form Recognizer](../custom-forms/microsoft-forms-recognizer.md) to specifically extract information from invoices. Specifically, this service will return the same extracted OCR data in the form of **Key-Value Pairs**, but it returns the **Invoice Line Items** in table format.
 
-This makes the processing of line items much easier, as invoice data such as **Item Codes**, **Descriptions**, **Unit Prices**, **VAT,** and **Netto Amounts** can easily be grouped.
+This makes the processing of line items much easier, as invoice data such as **Item Codes**, **Descriptions**, **Unit Prices**, **VAT,** **Bruto-** and **Netto Amounts** can easily be grouped.
 
 ## Setup and Train Service
 
@@ -50,3 +50,56 @@ It is recommended to only process a few documents at a time, especially if it is
 
 * Extract information from any invoice.
 * Specifically extract energy, sewage, and water usages from **Utility Bills**.
+
+## Configuring the Items Table Definition
+
+The **MS Form Recognizer - Custom Invoice** service extends the functionality of the standard **MS Form Recognizer service**, and is focuses on extracting data from an invoice document. Invoice documents are well **structured** documents, and the information is typically presented in a table format. An example of an invoice is shown below.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+Information can be scattered around in the document layout, such as **Account Numbers**, C**ompany VAT Registration Numbers**, **Invoice-** and **Due Dates**. These fields can be extracted by training an **MS Form Recognizer model** by specifying the regions where each field is expected to be situated on the form layout.
+
+The **Line Items** are then typically presented in a table format, with  generic column names to describe each line item. Typically, column headings such as **Item Code**, **Description**, **Quantity**, **Units**, **Unit Price**, and **Amount** are often used. However, there is no official guideline or standard when it comes to the actual wording of the column headers. **AIForged** addresses this issue by allowing users to create and customize the column headings that are expected to be on an **Invoice**. This is done by creating **Tags** that will map the table heading to an existing **Table Column Parameter Definition**. Consider the **Items Table** in the screenshot below.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+**AIForged** automatically creates a standard **Items Table** when the service is created. Generic names are used for column headings. **AIForged** allows users to add **Tags** to the **Table Column Parameter Definition**, which will be used to compare the text used as column headings on the **Invoice**. For instance, in the example invoice above, the term **Qty** is used to denote the number of items are billed for for each line item. In order to map the term **Qty** to an existing **Units** column definition, double-click on the the **Units** definition to open the **Definition Editor**.
+
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+By default, a pre-populated list of **Default Tags** are created for each column in the **Items Table**. In this example, the term Qty is already added to the list of tags, meaning that the **MS Form Recognizer - Custom Invoices** service would already match the **Qty** column to the **Units Definition.**
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+The screenshot below shows, after that model was trained, how the table has been extracted for the **Line Items** on the invoice.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+By using the **Tags List**, other descriptions or terms can be added that will allow **MS Form Recognizer - Custom Invoice** service to map any **Line Item Table** to the default Table definition created in **AIForged**. Even words from **other languages** can be added to the **Tags List**.
+
+## Service Configuration Settings
+
+The **Microsoft Form Recognizer Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+
+| Setting                           | Type                                            | Required Type | Description                                                                                                                                                                                            |
+| --------------------------------- | ----------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ArchivingStrategy                 | ![](<../../.gitbook/assets/image (5).png>)      | Optional      | Days before documents get deleted.                                                                                                                                                                     |
+| BatchSize                         | ![](<../../.gitbook/assets/image (5).png>)      | Hidden        | Processing batch size.                                                                                                                                                                                 |
+| DocumentProcessedStatus           | ![](<../../.gitbook/assets/image (6) (4).png>)  | Optional      | Document status used to denote that a document has been processed.                                                                                                                                     |
+| Enabled                           | ![](<../../.gitbook/assets/image (15).png>)     | Hidden        | Enable or disable the service.                                                                                                                                                                         |
+| EnableSelectionMarks              | ![](<../../.gitbook/assets/image (15).png>)     | Optional      | Specifies whether the service should save any selection marks returned by MS Form API call.                                                                                                            |
+| EnableTableDetection              | ![](<../../.gitbook/assets/image (15).png>)     | Optional      | Specifies whether the service should save any tables detected by the MS Form Recognizer API call.                                                                                                      |
+| ExecuteBeforeProcess              | ![](<../../.gitbook/assets/image (15).png>)     |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed                                                                            |
+| ExecuteAfterProcess               | ![](<../../.gitbook/assets/image (15).png>)     |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed                                                                             |
+| IgnoreTablesOtherThanItemsTable   | ![](<../../.gitbook/assets/image (15).png>)     | Optional      | Specifies whether any tables other than the main 'Items' table should be saved. This is useful when many tables are detected on the document, which is typically the case with Invoices.               |
+| MatchHeadingLevenshteinConfidence | ![](<../../.gitbook/assets/image (16).png>)     | Optional      | Try to match heading columns using a Levenshtein confidence. This is useful when poor quality docs might misidentify characters when trying to match tables to existing table parameter definitions.   |
+| MinimumColumnMatchCount           | ![](<../../.gitbook/assets/image (19).png>)     | Optional      | The minimum number of columns required to be matched to map the table to an existing table parameter definition. If this number of column can't be matched, then a new table definition is created.    |
+| MatchTablesWithSameColumnCount    | ![](<../../.gitbook/assets/image (15).png>)     |               | Try to match a table to an existing table parameter definition by using column counts only. This is especially useful when tables span multiple pages without repeating headers on each page.          |
+| Password                          | ![](<../../.gitbook/assets/image (3) (5).png>)  | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                                                                                                 |
+| RemoveComments                    | ![](<../../.gitbook/assets/image (15).png>)     | Optional      | Remove human comments from a document.                                                                                                                                                                 |
+| SaveOCRLayout                     | ![](<../../.gitbook/assets/image (15).png>)     |               | Save the OCR layout of the documents (Lines, words, etc.).                                                                                                                                             |
+| UseDefaultCategoryforTableDefs    | ![](<../../.gitbook/assets/image (15).png>)     | Optional      | Specifies whether all table definitions should be saved in the global 'Default' category of the service. This is useful when sharing tables parameter definitions across multiple document categories. |
+| WorkflowAlgorithm                 | ![](<../../.gitbook/assets/image (2) (7).png>)  | Required      | Algorithm used for assigning users for verification for workflow item.                                                                                                                                 |
+| WorkflowDocument                  | ![](<../../.gitbook/assets/image (15).png>)     | Required      | Enable document workflow for this service.                                                                                                                                                             |
+| WorkflowShred                     | ![](<../../.gitbook/assets/image (15).png>)     | Required      | Enable document shred workflow for this service.                                                                                                                                                       |
+| WorkflowGracePeriod               | ![](<../../.gitbook/assets/image (13) (6).png>) | Required      | Grace period before a workflow item gets escalated.                                                                                                                                                    |
