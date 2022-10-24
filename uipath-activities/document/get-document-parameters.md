@@ -37,7 +37,7 @@ Get Document Parameters
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 

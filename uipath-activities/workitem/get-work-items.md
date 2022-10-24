@@ -61,4 +61,4 @@ Create Work Item
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (5).png" alt=""><figcaption></figcaption></figure>

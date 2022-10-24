@@ -33,7 +33,7 @@ nav_order: 10
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 

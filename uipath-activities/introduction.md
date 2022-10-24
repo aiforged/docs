@@ -17,7 +17,7 @@ To successfully us the _AIForged_ activities in _UiPath Studio,_ the minimum lic
 
 The name of the package is: **AIForged** by **AIForged**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot of Manage Packages Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>Screenshot of Manage Packages Screen</p></figcaption></figure>
 
 ### Activities Panel
 

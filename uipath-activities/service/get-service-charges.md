@@ -33,4 +33,4 @@ Get Service Charges
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (6).png" alt=""><figcaption></figcaption></figure>
