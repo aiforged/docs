@@ -55,7 +55,7 @@ It is recommended to only process a few documents at a time, especially if it is
 
 The **MS Form Recognizer - Custom Invoice** service extends the functionality of the standard **MS Form Recognizer service**, and is focuses on extracting data from an invoice document. Invoice documents are well **structured** documents, and the information is typically presented in a table format. An example of an invoice is shown below.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Information can be scattered around in the document layout, such as **Account Numbers**, C**ompany VAT Registration Numbers**, **Invoice-** and **Due Dates**. These fields can be extracted by training an **MS Form Recognizer model** by specifying the regions where each field is expected to be situated on the form layout.
 
@@ -69,7 +69,7 @@ The **Line Items** are then typically presented in a table format, with  generic
 
 By default, a pre-populated list of **Default Tags** are created for each column in the **Items Table**. In this example, the term Qty is already added to the list of tags, meaning that the **MS Form Recognizer - Custom Invoices** service would already match the **Qty** column to the **Units Definition.**
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The screenshot below shows, after that model was trained, how the table has been extracted for the **Line Items** on the invoice.
 
@@ -83,8 +83,8 @@ The **Microsoft Form Recognizer Service** can be configured by the user as a fle
 
 | Setting                           | Type                                               | Required Type | Description                                                                                                                                                                                            |
 | --------------------------------- | -------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ArchivingStrategy                 | ![](<../../.gitbook/assets/image (5).png>)         | Optional      | Days before documents get deleted.                                                                                                                                                                     |
-| BatchSize                         | ![](<../../.gitbook/assets/image (5).png>)         | Hidden        | Processing batch size.                                                                                                                                                                                 |
+| ArchivingStrategy                 | ![](<../../.gitbook/assets/image (5) (3).png>)     | Optional      | Days before documents get deleted.                                                                                                                                                                     |
+| BatchSize                         | ![](<../../.gitbook/assets/image (5) (3).png>)     | Hidden        | Processing batch size.                                                                                                                                                                                 |
 | DocumentProcessedStatus           | ![](<../../.gitbook/assets/image (6) (4).png>)     | Optional      | Document status used to denote that a document has been processed.                                                                                                                                     |
 | Enabled                           | ![](<../../.gitbook/assets/image (15).png>)        | Hidden        | Enable or disable the service.                                                                                                                                                                         |
 | EnableSelectionMarks              | ![](<../../.gitbook/assets/image (15).png>)        | Optional      | Specifies whether the service should save any selection marks returned by MS Form API call.                                                                                                            |

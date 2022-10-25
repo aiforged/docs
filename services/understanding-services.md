@@ -29,7 +29,7 @@ The following **Action Buttons** can be found in a **Service Card**, the number 
 | Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)         | Opens the **Label box** of the service. (Only valid for **Classification** and **Extraction Service Types**)       |
 | Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>)     | Opens the **Inbox** of the service.                                                                                |
 | Outbox               | ![](<../.gitbook/assets/image (4) (3) (1) (2).png>) | Opens the **Outbox** of the service.                                                                               |
-| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)        | Opens the **Configuration Wizard** of the service.                                                                 |
+| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2) (2).png>)    | Opens the **Configuration Wizard** of the service.                                                                 |
 | Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1) (1).png>) | Opens the **Configuration page** of the service.                                                                   |
 | Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)        | Opens the **Service Logs** of the service.                                                                         |
 | Delete Service       | ![](<../.gitbook/assets/image (16) (4).png>)        | Deletes the service.                                                                                               |
@@ -46,7 +46,7 @@ The following **Action Buttons** can be found in a **Service Card**, the number 
 4. Select the **Service Type** of the **Service** you want to add and click on **Select**.
 5.  Click **Yes** on the confirmation message box.
 
-    <figure><img src="../.gitbook/assets/image (22) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (22) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Service Actions
 

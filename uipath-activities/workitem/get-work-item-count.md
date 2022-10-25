@@ -9,7 +9,7 @@ nav_order: 2
 
 ## About
 
-Get the number of created work items.&#x20;
+Get the number of created work items.
 
 ### Display Name
 
@@ -51,4 +51,4 @@ Get Work Item Count
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>

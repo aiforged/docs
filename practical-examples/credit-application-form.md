@@ -63,7 +63,7 @@ The purpose of this process is to extract various fields on the form, including 
     <figure><img src="../.gitbook/assets/image (13) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 18. In the case of Social Security cards, we are interested in extracting the **SSN**, the **Full Name** and the **Date of Issue** fields. To start labeling, click on the preview of the document in the **Document Designer**, and drag the region where a field can be found.
 
-    <figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 19. When a region is selected, a dialogue is presented to create a **Parameter Definition** for each of the fields. An existing field can be used, or a new one can be created.
 
     <figure><img src="../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>

@@ -19,7 +19,7 @@ The **Email Scraping** service includes a nested **Attachment** service by defau
 * Click on the **Add Utility** button in the **Command Bar**.\
   ![](<../.gitbook/assets/image (3) (3).png>)
 * Select **Custom Code** from the **Service Type Selection Dialog** under the **Utilities** section and then click on **Select** to confirm your selection.\
-  ![](<../.gitbook/assets/image (21) (1).png>)
+  ![](<../.gitbook/assets/image (21) (1) (1).png>)
 
 Next, we need to add a **Custom Dataset** to our new **Custom Code utility service**. The **Custom Dataset** will store the MD5 hash strings for our non-duplicate documents.
 

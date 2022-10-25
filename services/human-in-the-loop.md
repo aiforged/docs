@@ -28,7 +28,7 @@ The **HITL Work Flow** queue shows **Work Flow Items** that have been created fo
     <figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 *   The Service name,
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 *   The document box the document currently resides in (document **Usage**),
 
     <figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
@@ -40,7 +40,7 @@ The **HITL Work Flow** queue shows **Work Flow Items** that have been created fo
     <figure><img src="../.gitbook/assets/image (12) (3) (2).png" alt=""><figcaption></figcaption></figure>
 *   The status of the document of the field that requires verification,
 
-    <figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (9) (2) (1).png" alt=""><figcaption></figcaption></figure>
 *   The status of the **Work Flow Item**,
 
     <figure><img src="../.gitbook/assets/image (13) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
@@ -67,7 +67,7 @@ The number of fields that require verification is shown at the top of the **Docu
 
 The **Document Data Control** bar on the right-hand side shows the fields that require verification, which is denoted by the red **Warning Triangle**. This is also shown on the document at the location of the field.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To verify the value of the extracted text, click on the **Pencil** icon. This will open a dialogue that provides actions to the user to verify the field.
 

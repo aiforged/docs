@@ -23,11 +23,11 @@ The ​**Amazon Invoice Extraction Service** makes use of pre-trained Invoice mo
    ![](<../../.gitbook/assets/image (82) (1).png>)
 3.  Select **Amazon Invoice Extraction Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
@@ -43,16 +43,16 @@ The **Amazon Invoice Extraction** can be configured by the user as a flexible so
 | Setting                 | Type                                               | Required Type | Description                                                                                                                 |
 | ----------------------- | -------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)    | Optional      | Days before documents get deleted.                                                                                          |
-| BatchSize               | ![](<../../.gitbook/assets/image (5).png>)         | Hidden        | Processing batch size.                                                                                                      |
+| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)     | Hidden        | Processing batch size.                                                                                                      |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)     | Optional      | Document status used to denote that a document has been processed.                                                          |
 | Enabled                 | ![](<../../.gitbook/assets/image (15).png>)        | Hidden        | Enable or disable the service.                                                                                              |
 | EnableTableDetection    | ![](<../../.gitbook/assets/image (4).png>)         | Optional      | Specifies whether the service should save any tables detected by the MS Form Recognizer API call.                           |
 | ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (18).png>)        |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (21).png>)        |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed  |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (21) (1).png>)    |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed  |
 | Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>) | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                      |
 | RemoveComments          | ![](<../../.gitbook/assets/image (11).png>)        | Optional      | Remove human comments from a document.                                                                                      |
 | WorkflowAlgorithm       | ![](<../../.gitbook/assets/image (2) (7).png>)     | Required      | Algorithm used for assigning users for verification for workflow item.                                                      |
-| WorkflowCategory        | ![](<../../.gitbook/assets/image (5).png>)         | Optional      | Trigger Workflow for all documents in this category (category ID).                                                          |
+| WorkflowCategory        | ![](<../../.gitbook/assets/image (5) (3).png>)     | Optional      | Trigger Workflow for all documents in this category (category ID).                                                          |
 | WorkflowDocument        | ![](<../../.gitbook/assets/image (10) (6).png>)    | Required      | Enable document workflow for this service.                                                                                  |
 | WorkflowShred           | ![](<../../.gitbook/assets/image (17).png>)        | Required      | Enable document shred workflow for this service.                                                                            |
 | WorkflowGracePeriod     | ![](<../../.gitbook/assets/image (13) (6).png>)    | Required      | Grace period before a workflow item gets escalated.                                                                         |
