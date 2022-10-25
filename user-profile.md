@@ -10,7 +10,7 @@ The **User Profile** page allows you to view and edit various details related to
 
 To open the **User Profile** page, simply select the **User** **Profile** navigation item from the **Settings** area of the navigation menu. If you are unable to open the **User Profile** page, please ensure that you are logged into the **AIForged Studio** with your AIForged credentials.
 
-<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## User and Roles
 

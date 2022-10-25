@@ -19,7 +19,7 @@ The **ABBYY Classification Service** is an advanced **Classification** service d
 * Distinguish between different types of invoices
 * Distinguish between objects in images
 
-## Setup Service
+## Service Setup
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\

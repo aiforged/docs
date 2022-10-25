@@ -9,7 +9,7 @@ The **AIForged Clustering** service is an in-house developed service that utiliz
 * Distinguish between different types or variants of similar documents.
 * Sort large volumes of documents into logical groups.
 
-## Setup Service
+## Service Setup
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\

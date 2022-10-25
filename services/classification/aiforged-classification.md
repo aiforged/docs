@@ -18,7 +18,7 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 * Distinguish between different types of Identification documents
 * Distinguish between different types of invoices
 
-## Setup Service
+## Service Setup
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\

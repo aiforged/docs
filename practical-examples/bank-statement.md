@@ -34,7 +34,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 
     <figure><img src="../.gitbook/assets/image (29) (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (27) (3).png" alt=""><figcaption></figcaption></figure>
 8.  Click on **Next: Step 3** **- Layout Analysis** (or click on **Step 3** Wizard Step).
 
     <figure><img src="../.gitbook/assets/image (25) (3).png" alt=""><figcaption></figcaption></figure>

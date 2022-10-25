@@ -56,7 +56,7 @@ The list of **Transactions** can be exported to Microsoft Excel format (xlsx) by
     <figure><img src=".gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Clicking on **View Details** in the **Action** bar will navigate you to the **Transaction Details** page for the specific **Service**.
 
-    <figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
     This view will show a detailed summary of **Transactions** for the **Service**.
 
