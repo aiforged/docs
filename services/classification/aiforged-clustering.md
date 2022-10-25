@@ -1,6 +1,6 @@
 # AIForged Clustering
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Clustering** service is an in-house developed service that utilizes **Machine Learning** techniques to group unlabeled data. he **AIForged Clustering** service relies on **Unsupervised Machine Learning** classify documents into **Clusters** or **Categories**.
 

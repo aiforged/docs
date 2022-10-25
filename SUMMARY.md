@@ -43,7 +43,7 @@
 * [Pre-Trained Invoices](services/pre-trained-invoices/README.md)
   * [Microsoft Invoices](services/pre-trained-invoices/microsoft-forms-invoices.md)
   * [Google Invoice Parser](services/pre-trained-invoices/google-invoices.md)
-  * [Amazon Invoices](services/pre-trained-invoices/amazon-invoices.md)
+  * [Amazon Invoice Extraction](services/pre-trained-invoices/amazon-invoices.md)
 * [Pre-Trained Id Documents](services/pre-trained-id-documents/README.md)
   * [Google Id](services/pre-trained-id-documents/google-id.md)
   * [Microsoft Id](services/pre-trained-id-documents/microsoft-id.md)
