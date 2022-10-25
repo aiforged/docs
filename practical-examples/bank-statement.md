@@ -58,7 +58,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
     <figure><img src="../.gitbook/assets/image (10) (2) (1).png" alt=""><figcaption></figcaption></figure>
 15. After the documents are analyzed, the layout of the document is available in a structured format. These documents are demarcated by the **Analyzed** status. By using **Custom Labelling**, the service can be trained to detect values relative to the document layout. Click **Next: Step 4 - Custom Labeling** (or click on **Step 4** Wizard Step).
 
-    <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 16. The **Document Designer** is presented in step 4. A preview of the document is shown with the overlayed analyzed layout data.
 
     <figure><img src="../.gitbook/assets/image (4) (3) (2).png" alt=""><figcaption></figcaption></figure>

@@ -5,11 +5,61 @@ grand_parent: Understanding Services
 nav_order: 2
 ---
 
-# Google Invoices
+# Google Invoice Parser
 
 <figure><img src="../../.gitbook/assets/image (49) (4).png" alt=""><figcaption></figcaption></figure>
 
-The ​**Google Invoice Parser** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Google Documents AI**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
+The ​**Google Invoice Parser Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Google Documents AI**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
+
+No custom training of a **Google Invoice Parser Service** is required. The service utilizes internal pre-built invoice models when trying to extract information from **Invoice Documents**.
+
+## Possible use cases <a href="#possible-use-cases" id="possible-use-cases"></a>
+
+* Extracting invoice-related data.
+* Extracting individual line items that may appear on an invoice.
+
+## Service Setup
+
+1. Open the **Project Detail View** of the project you would like to add the service to.
+2. Click on the **Add Service** button in the command bar.\
+   ![](<../../.gitbook/assets/image (82) (1).png>)
+3.  Select **Google Invoice Parser Service** from the available **Service Types.**
+
+    <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+4.  A new **Service Configuration Wizard** will open:\
+    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+
+
+
+    1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
+    2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
+    3. **Step 3 -** Verification of any documents that have been processed.
+    4. **Step 4** - The **Definition Document** should be created after the **Service** has been trained successfully.
+    5. Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
+       ![](<../../.gitbook/assets/image (84) (1).png>)
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+## Service Configuration Settings
+
+The **Google Invoice Parser Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+
+| Setting                 | Type                                            | Required Type | Description                                                                                                                 |
+| ----------------------- | ----------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>) | Optional      | Days before documents get deleted.                                                                                          |
+| BatchSize               | ![](<../../.gitbook/assets/image (5).png>)      | Hidden        | Processing batch size.                                                                                                      |
+| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)  | Optional      | Document status used to denote that a document has been processed.                                                          |
+| Enabled                 | ![](<../../.gitbook/assets/image (15).png>)     | Hidden        | Enable or disable the service.                                                                                              |
+| EnableTableDetection    | ![](<../../.gitbook/assets/image (4).png>)      | Optional      | Specifies whether the service should save any tables detected by the MS Form Recognizer API call.                           |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (18).png>)     |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (21).png>)     |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed  |
+| Password                | ![](<../../.gitbook/assets/image (3) (5).png>)  | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                      |
+| RemoveComments          | ![](<../../.gitbook/assets/image (11).png>)     | Optional      | Remove human comments from a document.                                                                                      |
+| WorkflowAlgorithm       | ![](<../../.gitbook/assets/image (2) (7).png>)  | Required      | Algorithm used for assigning users for verification for workflow item.                                                      |
+| WorkflowCategory        | ![](<../../.gitbook/assets/image (5).png>)      | Optional      | Trigger Workflow for all documents in this category (category ID).                                                          |
+| WorkflowDocument        | ![](<../../.gitbook/assets/image (10) (6).png>) | Required      | Enable document workflow for this service.                                                                                  |
+| WorkflowShred           | ![](<../../.gitbook/assets/image (17).png>)     | Required      | Enable document shred workflow for this service.                                                                            |
+| WorkflowGracePeriod     | ![](<../../.gitbook/assets/image (13) (6).png>) | Required      | Grace period before a workflow item gets escalated.                                                                         |
 
 ## Add and Process Documents <a href="#add-and-process-documents" id="add-and-process-documents"></a>
 
@@ -25,8 +75,3 @@ It is recommended to only process a few documents at a time, especially if it is
 
 1. In the **Google Invoice Parser Service** click on **Outbox** button.
 2. You can view the **Processing** results by opening a processed doc for verification.
-
-## Possible use cases <a href="#possible-use-cases" id="possible-use-cases"></a>
-
-* Extracting invoice-related data.
-* Extracting individual line items that may appear on an invoice.

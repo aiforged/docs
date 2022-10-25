@@ -65,7 +65,7 @@ The **Line Items** are then typically presented in a table format, with  generic
 
 **AIForged** automatically creates a standard **Items Table** when the service is created. Generic names are used for column headings. **AIForged** allows users to add **Tags** to the **Table Column Parameter Definition**, which will be used to compare the text used as column headings on the **Invoice**. For instance, in the example invoice above, the term **Qty** is used to denote the number of items are billed for for each line item. In order to map the term **Qty** to an existing **Units** column definition, double-click on the the **Units** definition to open the **Definition Editor**.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 By default, a pre-populated list of **Default Tags** are created for each column in the **Items Table**. In this example, the term Qty is already added to the list of tags, meaning that the **MS Form Recognizer - Custom Invoices** service would already match the **Qty** column to the **Units Definition.**
 

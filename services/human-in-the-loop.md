@@ -43,7 +43,7 @@ The **HITL Work Flow** queue shows **Work Flow Items** that have been created fo
     <figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 *   The status of the **Work Flow Item**,
 
-    <figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Every **Work Flow Item** has a **URL** link that can be used in a browser. This will launch the AIForged UI and open the Verification window for the entire **Document** or **Shred**. The link to the **Verification Work Flow Item** can be copied by clicking on the **Link Icon**.
 

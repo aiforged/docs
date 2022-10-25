@@ -199,7 +199,7 @@ The Checked Status Action allows you to change the selected documents statuses s
 
 The Upload Action allows you to upload a new document.
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the **Upload** Action in the app bar.
 2. In the popup Select the Status of the Document being uploaded

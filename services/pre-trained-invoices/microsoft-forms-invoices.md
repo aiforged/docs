@@ -44,7 +44,7 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
 
 ## Service Configuration Settings
 
-The **Microsoft Form Recognizer Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+The **Microsoft Invoices Service** can be configured by the user as a flexible solution. The following **Settings** are available:
 
 | Setting                 | Type                                            | Required Type | Description                                                                                                                 |
 | ----------------------- | ----------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
