@@ -9,19 +9,20 @@ nav_order: 2
 
 <figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
-The **Google OCR Service** reads text from images for you to use.
+The **Google OCR Service** extracts any text that might be present on a document. The raw text, without any layout information, will be extracted.
 
 ## Supported Content Types
 
 * Images
 * Pdf
 
-If you need to use a different type of content, you can use the AiForged Pdf Converter.
+If you need to use a different type of content, you can use the **AiForged Pdf Converter**.
 
 ## Possible use cases
 
 * Extract data from receipts
 * Visualize your receipts data
+* Apply **RegEx Patterns** on raw text on a document.
 
 ## Setup Service
 

@@ -22,6 +22,7 @@ If you need to use a different type of content, you can use the AiForged Pdf Con
 
 * Extract data from receipts
 * Visualize your receipts data
+* Apply **RegEx Patterns** on raw text on a document.
 
 ## Setup Service
 

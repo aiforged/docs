@@ -9,7 +9,7 @@ nav_order: 3
 
 <figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-The **Microsoft OCR Service** reads text from images for you to use.
+The **Microsoft OCR Service** extracts any text that might be present on a document. The raw text, without any layout information, will be extracted.
 
 ## Supported Content Types
 
@@ -22,6 +22,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 
 * Extract data from receipts
 * Visualize your receipts data
+* Apply **RegEx Patterns** on raw text on a document.
 
 ## Setup Service
 
