@@ -23,6 +23,7 @@
 * [Classification](services/classification/README.md)
   * [AIForged Classification](services/classification/aiforged-classification.md)
   * [ABBYY Classification](services/classification/abby-classification.md)
+  * [AIForged Clustering](services/classification/aiforged-clustering.md)
 * [OCR](services/ocr/README.md)
   * [Amazon OCR](services/ocr/amazon-ocr.md)
   * [Google OCR](services/ocr/google-ocr.md)

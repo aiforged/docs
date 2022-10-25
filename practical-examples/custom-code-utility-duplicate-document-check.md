@@ -26,7 +26,7 @@ Next, we need to add a **Custom Dataset** to our new **Custom Code utility servi
 1. To do this, open the **Configuration View** of our newly nested **Custom Code utility service** by clicking on the button with the **Gear Icon** in its nested service card.\
    ![](<../.gitbook/assets/image (10) (1).png>)
 2. In the configuration view select the main definition for our **Custom Code utility service** (the first configuration line), and then click on **Create Custom Dataset.**\
-   ![](<../.gitbook/assets/image (6) (1).png>)
+   ![](<../.gitbook/assets/image (6) (1) (4).png>)
 3. Enter **Duplicate History** as the name for our **Custom Dataset**, and click on **Submit**.\
    ![](<../.gitbook/assets/image (9) (4).png>)
 4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor:\

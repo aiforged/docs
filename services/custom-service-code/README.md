@@ -41,7 +41,7 @@ To add **Custom Service Code** to a service:
     <figure><img src="../../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>
 6.  To compile the code, click on **Save**.
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7.  **Compilation Results** are shown at the bottom of the **Code Editor**.
 
     <figure><img src="../../.gitbook/assets/image (43) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
