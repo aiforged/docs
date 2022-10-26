@@ -14,10 +14,10 @@ You can filter the visible **Notifications** via the various filters available i
 
 ### View Notification Contents
 
-*   To view the contents of a **Notification,** simply select it from the notifications list. \
+*   To view the contents of a **Notification,** simply select it from the notifications list.\
     The **Notification** will automatically be marked as read, and the contents of the **Notification** will appear to the right-hand side in a recognizable format.
 
-    <figure><img src=".gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Export to Excel
 

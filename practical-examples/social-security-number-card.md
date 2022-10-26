@@ -19,7 +19,7 @@ The purpose of this process is to extract the **Social Security number**, the **
 3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<../.gitbook/assets/image (41) (2) (1).png>)
 4.  The **Configuration Wizard** for the service will appear.
 
-    <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (2) (2).png" alt=""><figcaption></figcaption></figure>
 5.  (Optional) Rename the **service name** and **service description**.
 
     <figure><img src="../.gitbook/assets/image (25) (2) (1).png" alt=""><figcaption></figcaption></figure>

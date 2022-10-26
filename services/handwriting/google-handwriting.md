@@ -9,7 +9,7 @@ nav_order: 2
 
 ​
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Write a caption​The **Google Handwriting Service** reads text from images for you to use. Any detected handwriting will be extracted per **Area**, which will contain a list of **Paragraphs** (if applicable) and **Words.** An example is shown below.
 
@@ -33,11 +33,11 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
    ![](<../../.gitbook/assets/image (82) (1).png>)
 3.  Select the **Google Handwriting Service**.
 
-    <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1 -** Service Config (Displays the service setting, you can change it as required).
 * Click the “Next” Action in the Action Bar to save the Service.

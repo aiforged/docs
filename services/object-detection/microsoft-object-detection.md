@@ -9,7 +9,9 @@ nav_order: 3
 
 <figure><img src="../../.gitbook/assets/image (8) (3) (2).png" alt=""><figcaption></figcaption></figure>
 
-**Microsoft Object Detection** detects objects, faces, and landmarks using **Azure Computer Vision**. The service detects possible objects present in the image and returns the **Metadata** of objects contained in the image in the form of a list of **Tags**. For example, if a person is present in the image, tags may include facial features, such as nose, ear, lip, etc. The **Best Caption** that best describes the image and gives the context of the image is also returned. Consider the example below of a blonde woman; the image has been categorized as a **"people\_portrait"**, and the caption was returned as "**a woman with blonde hair**".
+**Microsoft Object Detection** detects objects, faces, and landmarks using **Azure Computer Vision**. The service detects objects within images and returns the **Metadata** of objects contained in the image in the form of a list of **Tags**. For example, if a person is present in the image, tags may include facial features, such as nose, ear, lip, etc. The **Best Caption** that best describes the image and gives the context of the image is also returned.&#x20;
+
+Consider the example below of a blonde woman; the image has been categorized as a **"people\_portrait"**, and the caption was returned as "**a woman with blonde hair**".
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -19,7 +21,7 @@ Furthermore, **Face Detection** has supplied the gender and the estimated age of
 
 It is also specified that the image does not contain any racy or offensive material.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ## Supported Content Types
 
@@ -33,7 +35,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 * Detect faces and estimate the age of a person.
 * Detect emotions and ages on faces.
 * Identify the setting/nature of a picture.
-* Determine whether an image can contain offensive or racy material.
+* Determine whether an image can contain offensive material.
 * Get a count of similar objects (e.g. counting cars).
 
 ## Service Setup

@@ -11,7 +11,7 @@ nav_order: 4
 * Select **MS Forms Recognizer** from the \_\_ **Extract & Verify** group.![](<../.gitbook/assets/image (12) (1) (2).png>)
 *   The **Configuration Wizard** for the service will appear.
 
-    <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (2) (2).png" alt=""><figcaption></figcaption></figure>
 *   (Optional) Rename the **service name** and **service description**.
 
     <figure><img src="../.gitbook/assets/image (25) (2) (1).png" alt=""><figcaption></figcaption></figure>

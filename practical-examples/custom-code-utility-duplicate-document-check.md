@@ -43,7 +43,7 @@ To add these **Fields** to the **Custom Dataset**, enter the name of the column 
   ![](<../.gitbook/assets/image (19) (5).png>)
 
 Click on **Save** to save the changes made to the **Custom Dataset**.\
-![](<../.gitbook/assets/image (17) (1).png>)
+![](<../.gitbook/assets/image (17) (1) (4).png>)
 
 Your **Custom Dataset** should now look as follows in the configuration view (you may need to refresh the view):\
 ![](<../.gitbook/assets/image (2) (5).png>)
