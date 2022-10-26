@@ -1,6 +1,6 @@
 # Amazon Identity Documents
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Amazon Identity Documents Service** makes use of pre-trained ID doc models to extract **Key-Value Pairs** of invoice-related data making use of **Amazon AnalyzeID API**. The processing of invoices returns relevant information from passports, driver licenses, and other identity documentation issued by the US Government, such as **Name, Surname, ID Number,** and **Date of Birth**.&#x20;
 
@@ -18,13 +18,13 @@ Key names are standardized within the response. For example, if your driver lice
    ![](<../../.gitbook/assets/image (82) (1).png>)
 3.  Select **Amazon Identity Documents Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
 
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
@@ -38,17 +38,12 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 | Setting                 | Type                                               | Required Type | Description                                                                                                                 |
 | ----------------------- | -------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)    | Optional      | Days before documents get deleted.                                                                                          |
-| AccessKey               | ![](<../../.gitbook/assets/image (7).png>)         | Optional      | Override the Access Key to the configured AWS cloud service.                                                                |
-| BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)         | Optional      | Override the URL to the configured AWS cloud service.                                                                       |
 | BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)     | Hidden        | Processing batch size.                                                                                                      |
-| CheckElectronic         | ![](<../../.gitbook/assets/image (15).png>)        | Optional      | Check if the document is electronic and extract text from there.                                                            |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)     | Optional      | Document status used to denote that a document has been processed.                                                          |
 | Enabled                 | ![](<../../.gitbook/assets/image (15).png>)        | Hidden        | Enable or disable the service.                                                                                              |
 | ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (18).png>)        |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed |
 | ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (21) (1).png>)    |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed  |
 | IsVerification          | ![](<../../.gitbook/assets/image (18).png>)        | Optional      | Save the lines and words for verification.                                                                                  |
-| Language                | ![](<../../.gitbook/assets/image (7).png>)         | Optional      | Hint at the language to use when performing OCR.                                                                            |
-| MinSize                 | ![](<../../.gitbook/assets/image (14) (6).png>)    | Optional      | Minimum size of the document to OCR.                                                                                        |
 | Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>) | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                      |
 | RemoveComments          | ![](<../../.gitbook/assets/image (11).png>)        | Optional      | Remove human comments from a document.                                                                                      |
 

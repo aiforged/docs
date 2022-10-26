@@ -46,7 +46,7 @@
   * [Amazon Invoice Extraction](services/pre-trained-invoices/amazon-invoices.md)
 * [Pre-Trained Id Documents](services/pre-trained-id-documents/README.md)
   * [Google Id](services/pre-trained-id-documents/google-id.md)
-  * [Microsoft Id](services/pre-trained-id-documents/microsoft-id.md)
+  * [Microsoft Identity Documents](services/pre-trained-id-documents/microsoft-id.md)
   * [Amazon Identity Documents](services/pre-trained-id-documents/amazon-identity-documents.md)
 * [Pre-Trained Receipts](services/pre-trained-receipts/README.md)
   * [Microsoft Receipt](services/pre-trained-receipts/microsoft-receipt-tracker.md)

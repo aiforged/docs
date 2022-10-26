@@ -17,7 +17,7 @@ The **Email Scraping** service includes a nested **Attachment** service by defau
 * Click on an empty space within the header of the nested **Attachment Service Card** to open the **Attachment** service's detail view:\
   ![](<../.gitbook/assets/image (15) (4).png>)
 * Click on the **Add Utility** button in the **Command Bar**.\
-  ![](<../.gitbook/assets/image (3) (3).png>)
+  ![](<../.gitbook/assets/image (3) (3) (1).png>)
 * Select **Custom Code** from the **Service Type Selection Dialog** under the **Utilities** section and then click on **Select** to confirm your selection.\
   ![](<../.gitbook/assets/image (21) (1) (1).png>)
 
