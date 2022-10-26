@@ -31,7 +31,7 @@ Next, we need to add a **Custom Dataset** to our new **Custom Code utility servi
    ![](<../.gitbook/assets/image (9) (4).png>)
 4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor:\
    ![](<../.gitbook/assets/image (16) (1).png>)\
-   ![](<../.gitbook/assets/image (11) (1).png>)
+   ![](<../.gitbook/assets/image (11) (1) (1).png>)
 
 We are going to add two **Fields** to our **Custom Dataset**. **Fields** are visualized as **Columns** within our dataset editor. These **Fields** will contain an MD5 hash string as well as a unique document identifier for each document processed by our **Custom Code**.
 

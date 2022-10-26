@@ -11,7 +11,7 @@ nav_order: 3
 
 The **Microsoft Handwriting Service** reads text from images for you to use. Any detected handwriting will be extracted per **Line**, which will contain a list of **Words**. An example is shown below.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## Supported Content Types
 
@@ -35,7 +35,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1 -** Service Config (Displays the service setting, you can change it as required).
 * Click the “Next” Action in the Action Bar to save the Service.

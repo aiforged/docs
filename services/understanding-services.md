@@ -69,4 +69,4 @@ Various **Service Actions** are available from the **Command Bar** of the **Serv
     <figure><img src="../.gitbook/assets/image (13) (3) (1).png" alt=""><figcaption></figcaption></figure>
 *   Open Report for the service.
 
-    <figure><img src="../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (21) (2) (1).png" alt=""><figcaption></figcaption></figure>
