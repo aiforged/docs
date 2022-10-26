@@ -7,7 +7,7 @@ nav_order: 5
 
 ## AIForged Account
 
-<figure><img src=".gitbook/assets/image (11) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Login with your registered AIForged account.
 * Only a **Username** and a **Password** are required.

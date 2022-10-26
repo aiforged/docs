@@ -19,7 +19,7 @@ The payments page displays all the Payments you have made to AIForged
 
 You can filter Payments by date
 
-![](<.gitbook/assets/image (22) (1) (1) (1).png>)
+![](<assets/image (22) (1).png>)
 
 1. Set the From date
 2. Set the To date

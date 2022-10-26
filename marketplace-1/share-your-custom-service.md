@@ -7,7 +7,7 @@ description: >-
 # Share your pre-trained service
 
 1. From the **Service Detail View** click on **Share on marketplace.**\
-   <img src="../.gitbook/assets/image (37) (2).png" alt="" data-size="original">
+   <img src="../.gitbook/assets/image (37) (3).png" alt="" data-size="original">
 2. Fill in details regarding your service in the **Share on marketplace view.**\
    ![](<../.gitbook/assets/image (66).png>)
    1. **Service Name:** Enter a name to identify your service on the marketplace. Default: Your service's current name.

@@ -40,10 +40,10 @@ The **Theme** page allows the user to select the current theme and to enable or 
 
 To change the current **Theme** click on the radio button of the **Theme** you want to select.
 
-![](<.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (38) (1) (1) (1) (1) (1) (2) (1).png>)
 
 ### Sound
 
 Click the toggle to enable or disable UI feedback sounds.
 
-![](<.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (10) (1) (1) (1) (1) (1) (2) (1).png>)

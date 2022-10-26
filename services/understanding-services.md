@@ -26,7 +26,7 @@ The following **Action Buttons** can be found in a **Service Card**, the number 
 | -------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Definition           | ![](<../.gitbook/assets/image (14) (2).png>)        | Opens the **Definitions box** of the service. (Only valid for **Classification** and **Extraction Service Types**) |
 | Training             | ![](<../.gitbook/assets/image (26) (1).png>)        | Opens the **Training box** of the service. (Only valid for **Classification** and **Extraction Service Types**)    |
-| Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)         | Opens the **Label box** of the service. (Only valid for **Classification** and **Extraction Service Types**)       |
+| Labelled             | ![](<../.gitbook/assets/image (8) (1) (2).png>)     | Opens the **Label box** of the service. (Only valid for **Classification** and **Extraction Service Types**)       |
 | Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>)     | Opens the **Inbox** of the service.                                                                                |
 | Outbox               | ![](<../.gitbook/assets/image (4) (3) (1) (2).png>) | Opens the **Outbox** of the service.                                                                               |
 | Configuration Wizard | ![](<../.gitbook/assets/image (12) (2) (2).png>)    | Opens the **Configuration Wizard** of the service.                                                                 |
@@ -39,7 +39,7 @@ The following **Action Buttons** can be found in a **Service Card**, the number 
 1. Open an existing **Project**, or create a new **Project**.
 2.  At the bottom of the **Project Detail View**, select **Add Service.**
 
-    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  The **Add New Service** dialogue will open.\\
 
     <figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
@@ -54,7 +54,7 @@ Various **Service Actions** are available from the **Command Bar** of the **Serv
 
 *   Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Document Keys
 
     <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
@@ -66,7 +66,7 @@ Various **Service Actions** are available from the **Command Bar** of the **Serv
     <figure><img src="../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Share a service on the marketplace.
 
-    <figure><img src="../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (3) (1).png" alt=""><figcaption></figcaption></figure>
 *   Open Report for the service.
 
     <figure><img src="../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>

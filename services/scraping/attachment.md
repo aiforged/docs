@@ -19,7 +19,7 @@ The **Attachment** service allows you to extract attachments from e-mails. This 
 
 1. Open the **Service Detail View** of the service you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](../../.gitbook/assets/image.png)
+   ![](<../../.gitbook/assets/image (16).png>)
 3.  Select **Attachment Service** from the available **Service Types.**
 
     <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
@@ -32,9 +32,7 @@ The **Attachment** service allows you to extract attachments from e-mails. This 
 6.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-
-
-    <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     *   **Step 2 -** Allows adding an OCR Engine to the Attachment Service. Click on the Step 2 card to open the Select a Service popup. Only OCR and Extraction Services are listed here.
@@ -60,4 +58,4 @@ The **Attachment Service** can be configured by the user as a flexible solution.
 | MinSize                 | ![](<../../.gitbook/assets/image (5) (3).png>)     | Optional      | Minimum size of the image in bytes.                                                                                          |
 | MinWidth                | ![](<../../.gitbook/assets/image (5) (3).png>)     | Optional      | Minimum width of the image in pixels.                                                                                        |
 | Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>) | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (11).png>)        | Optional      | Remove human comments from a document.                                                                                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (11) (3).png>)    | Optional      | Remove human comments from a document.                                                                                       |

@@ -42,17 +42,17 @@ The **Microsoft Identity Document Service** makes use of pre-trained ID doc mode
 
 The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
 
-| Setting                 | Type                                               | Required Type | Description                                                                                                                  |
-| ----------------------- | -------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)    | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)     | Hidden        | Processing batch size.                                                                                                       |
-| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)     | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15).png>)        | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (18).png>)        |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (21) (1).png>)    |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| IsVerification          | ![](<../../.gitbook/assets/image (18).png>)        | Optional      | Save the lines and words for verification.                                                                                   |
-| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>) | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (11).png>)        | Optional      | Remove human comments from a document.                                                                                       |
+| Setting                 | Type                                                       | Required Type | Description                                                                                                                  |
+| ----------------------- | ---------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)             | Optional      | Days before documents get deleted.                                                                                           |
+| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)            | Hidden        | Processing batch size.                                                                                                       |
+| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)             | Optional      | Document status used to denote that a document has been processed.                                                           |
+| Enabled                 | ![](<../../.gitbook/assets/image (18).png>)                | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5).png>)            |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (3).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
+| IsVerification          | ![](<../../.gitbook/assets/image (15) (5).png>)            | Optional      | Save the lines and words for verification.                                                                                   |
+| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)         | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (5).png>) | Optional      | Remove human comments from a document.                                                                                       |
 
 ## Add and Process Documents <a href="#add-and-process-documents" id="add-and-process-documents"></a>
 

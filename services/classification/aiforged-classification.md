@@ -8,7 +8,7 @@ description: Document and File Content Classification
 
 # AIForged Classification
 
-<figure><img src="../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Classification Service** is a proprietary **Classification** service designed to automatically categorize documents and files based on their contents. The **AIForged Classification Service** allows easy training of a flexible and scalable classification process that can granularly distinguish among many different **User Defined Categories**.
 
@@ -35,7 +35,7 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
 * **Step 3 -** Training \*
-  1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (1) (4).png>) Click **Upload Training Documents** in the command bar
+  1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (1) (1) (1).png>) Click **Upload Training Documents** in the command bar
   2. Select the **User Defined Category** you want to upload documents to.\
      **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)**.**
   3. Upload files for each **User Defined Category** you wish to train the service on.

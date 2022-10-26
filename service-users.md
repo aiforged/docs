@@ -16,7 +16,7 @@ To view the **User Groups** page select the **User Groups** navigation item from
 
 In the **User Groups** page click on the top row that reads **Click here to add a new User Group.**
 
-![](<.gitbook/assets/image (7) (2).png>)
+![](<.gitbook/assets/image (7) (2) (2).png>)
 
 * Enter a **Name** for the new user group.
 * Select the user group **Type.**
