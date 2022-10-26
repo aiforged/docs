@@ -74,5 +74,5 @@ It is recommended to only process a few documents at a time, especially if it is
 
 ## View Processed Documents <a href="#view-processed-documents" id="view-processed-documents"></a>
 
-1. In the **Microsofte OCR Service** click on the **Outbox** button.
+1. In the **Microsoft OCR Service** click on the **Outbox** button.
 2. You can view your **Processing** results by opening a processed doc for verification.
