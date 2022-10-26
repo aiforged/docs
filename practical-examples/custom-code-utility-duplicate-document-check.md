@@ -264,6 +264,6 @@ For the MD5 Hash calculation to work, add the following assembly signature to th
   ![](<../.gitbook/assets/image (114).png>)
 
 Be sure to **Save** your custom code changes regularly by clicking on the **Save** button in the command bar.\
-![](<../.gitbook/assets/image (8) (3).png>)
+![](<../.gitbook/assets/image (8) (3) (3).png>)
 
 To test that our **Custom Code** is working as designed we can send some duplicate documents to our **Email Scraping** service. If your custom code was setup correctly, then any duplicate documents will be placed into an error state, work items will be created and they will not be processed by any further nested services within the email scraping service.

@@ -61,7 +61,7 @@
 * [Scraping](services/scraping/README.md)
   * [Email Scraping](services/scraping/email-scraping.md)
   * [OneDrive Scraping](services/scraping/onedrive-scraping.md)
-* [Attachment](services/attachment.md)
+  * [Attachment](services/scraping/attachment.md)
 * [Utilities](services/utilities/README.md)
   * [Copy Documents](services/utilities/copy-documents.md)
   * [Move Documents](services/utilities/move-documents.md)

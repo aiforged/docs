@@ -61,7 +61,7 @@ Information can be scattered around in the document layout, such as **Account Nu
 
 The **Line Items** are then typically presented in a table format, with  generic column names to describe each line item. Typically, column headings such as **Item Code**, **Description**, **Quantity**, **Units**, **Unit Price**, and **Amount** are often used. However, there is no official guideline or standard when it comes to the actual wording of the column headers. **AIForged** addresses this issue by allowing users to create and customize the column headings that are expected to be on an **Invoice**. This is done by creating **Tags** that will map the table heading to an existing **Table Column Parameter Definition**. Consider the **Items Table** in the screenshot below.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 **AIForged** automatically creates a standard **Items Table** when the service is created. Generic names are used for column headings. **AIForged** allows users to add **Tags** to the **Table Column Parameter Definition**, which will be used to compare the text used as column headings on the **Invoice**. For instance, in the example invoice above, the term **Qty** is used to denote the number of items are billed for for each line item. In order to map the term **Qty** to an existing **Units** column definition, double-click on the the **Units** definition to open the **Definition Editor**.
 

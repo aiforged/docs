@@ -8,7 +8,7 @@ nav_order: 4
 
 * Create a new **Project**.
 * Create a new **Service**.
-* Select **MS Forms Recognizer** from the \_\_ **Extract & Verify** group.![](<../.gitbook/assets/image (12) (1).png>)
+* Select **MS Forms Recognizer** from the \_\_ **Extract & Verify** group.![](<../.gitbook/assets/image (12) (1) (2).png>)
 *   The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
