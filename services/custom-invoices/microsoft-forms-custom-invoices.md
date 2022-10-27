@@ -73,7 +73,7 @@ By default, a pre-populated list of **Default Tags** are created for each column
 
 The screenshot below shows, after that model was trained, how the table has been extracted for the **Line Items** on the invoice.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 By using the **Tags List**, other descriptions or terms can be added that will allow **MS Form Recognizer - Custom Invoice** service to map any **Line Item Table** to the default Table definition created in **AIForged**. Even words from **other languages** can be added to the **Tags List**.
 

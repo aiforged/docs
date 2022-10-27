@@ -5,7 +5,7 @@ grand_parent: Understanding Services
 nav_order: 3
 ---
 
-# Amazon Identity Documents
+# Amazon Identity Documents Extraction
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,7 +43,7 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 | Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
 | ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)                | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Hidden        | Processing batch size.                                                                                                       |
+| BatchSize               | ![](<../../.gitbook/assets/image (5) (3) (1).png>)             | Hidden        | Processing batch size.                                                                                                       |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                 | Optional      | Document status used to denote that a document has been processed.                                                           |
 | Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (1).png>)            | Hidden        | Enable or disable the service.                                                                                               |
 | ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1).png>)                |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |

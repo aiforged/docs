@@ -49,7 +49,7 @@ The **Amazon OCR Service** can be configured by the user as a flexible solution.
 
 | Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
 | ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Days before documents get deleted.                                                                                           |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3) (1).png>)             | Optional      | Days before documents get deleted.                                                                                           |
 | AccessKey               | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the Access Key to the configured AWS cloud service.                                                                 |
 | BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the URL to the configured AWS cloud service.                                                                        |
 | BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                | Hidden        | Processing batch size.                                                                                                       |
@@ -60,7 +60,7 @@ The **Amazon OCR Service** can be configured by the user as a flexible solution.
 | ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2).png>)     |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
 | IsVerification          | ![](<../../.gitbook/assets/image (15) (5).png>)                | Optional      | Save the lines and words for verification.                                                                                   |
 | Language                | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Hint at the language to use when performing OCR.                                                                             |
-| MinSize                 | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Minimum size of the document to OCR.                                                                                         |
+| MinSize                 | ![](<../../.gitbook/assets/image (5) (3) (1).png>)             | Optional      | Minimum size of the document to OCR.                                                                                         |
 | Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)             | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
 | RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2) (1).png>) | Optional      | Remove human comments from a document.                                                                                       |
 
