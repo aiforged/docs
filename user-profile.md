@@ -45,11 +45,11 @@ The **Roles** page allows you to view access roles that have been assigned to yo
 
 To upload a new profile picture click on the **Upload New Picture** button and select your profile picture.
 
-<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Sign-in Options
 
-<figure><img src=".gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Link External Login Provider
 

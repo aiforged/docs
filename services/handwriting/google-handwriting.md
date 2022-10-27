@@ -49,20 +49,20 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 
 
-| Setting                 | Type                                                       | Required Type | Description                                                                                                                  |
-| ----------------------- | ---------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)             | Optional      | Days before documents get deleted.                                                                                           |
-| AccessKey               | ![](<../../.gitbook/assets/image (7).png>)                 | Optional      | Override the Access Key to the configured Google cloud service.                                                              |
-| BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)                 | Optional      | Override the URL to the configured Google cloud service.                                                                     |
-| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)            | Hidden        | Processing batch size.                                                                                                       |
-| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)             | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (18).png>)                | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5).png>)            |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (3).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| IsVerification          | ![](<../../.gitbook/assets/image (15) (5).png>)            | Optional      | Save the lines and words for verification.                                                                                   |
-| Language                | ![](<../../.gitbook/assets/image (7).png>)                 | Optional      | Hint at the language to use when performing OCR.                                                                             |
-| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)         | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (5).png>) | Optional      | Remove human comments from a document.                                                                                       |
+| Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
+| ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Days before documents get deleted.                                                                                           |
+| AccessKey               | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the Access Key to the configured Google cloud service.                                                              |
+| BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the URL to the configured Google cloud service.                                                                     |
+| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                | Hidden        | Processing batch size.                                                                                                       |
+| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                 | Optional      | Document status used to denote that a document has been processed.                                                           |
+| Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (1).png>)            | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5).png>)                |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2).png>)     |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
+| IsVerification          | ![](<../../.gitbook/assets/image (15) (5).png>)                | Optional      | Save the lines and words for verification.                                                                                   |
+| Language                | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Hint at the language to use when performing OCR.                                                                             |
+| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)             | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2) (1).png>) | Optional      | Remove human comments from a document.                                                                                       |
 
 ## Add and Process Documents <a href="#add-and-process-documents" id="add-and-process-documents"></a>
 

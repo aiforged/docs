@@ -8,7 +8,7 @@ nav_order: 1
 
 ## About
 
-The initialize activity creates a connection context to AIForged with authenticated user information and token.
+The **Initialize** activity creates a connection context to AIForged with authenticated user information and token.
 
 ### Properties
 
@@ -18,13 +18,13 @@ Initialize
 
 ### Input
 
-**Context** - Requires a context for the connection to AIForged. Includes connection configuration information, user information and authentication information. This is a regular VB or C# expression.
+**Context** - Requires a context for the connection to **AIForged**. Includes connection configuration information, user information, and authentication information. This is a regular VB or C# expression.
 
 **Password** – (deprecated) - AIForged.API Password used when creating your **AIForged** account. The variable type is **String**.
 
-**SecurePassword** –  AIForged.API SecurePassword used when creating your **AIForged** account. The variable type is **SecureString**.
+**SecurePassword** – The AIForged.API SecurePassword used when creating your **AIForged** account. The variable type is **SecureString**.
 
-**Timeout** – API Connection timeout on queries. The variable type is  **TimeSpan**.
+**Timeout** – API Connection timeout on queries. The variable type is **TimeSpan**.
 
 **URL** – AIForged.API endpoint base URL. The variable type is **String**.
 
@@ -32,9 +32,9 @@ Initialize
 
 ### Misc
 
-**Private** - If not selected, the values of variables and arguments are at Verbose level.&#x20;
+**Private** - If not selected, the values of variables and arguments are at the Verbose level.
 
-**Result** - Returns AIForged.API.Context&#x20;
+**Result** - Returns AIForged.API.Context
 
 ### Output
 
@@ -42,7 +42,7 @@ Initialize
 
 ### Proxy
 
-**ProxyPassword**  - (deprecated) - AIForged.API **proxy** SecurePassword for the **proxy server**. The variable type is **SecureString**.
+**ProxyPassword** - (deprecated) - AIForged.API **proxy** SecurePassword for the **proxy server**. The variable type is **SecureString**.
 
 **ProxyServer** – This is the proxy server address. The variable type is **String**.
 
@@ -52,7 +52,8 @@ Initialize
 
 ### Activity View
 
-
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
