@@ -7,7 +7,7 @@ nav_order: 2
 
 # Microsoft Identity Documents
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Identity Document Service** makes use of pre-trained ID doc models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Name, Surname, ID Number,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 
@@ -44,7 +44,7 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 | Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
 | ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3) (1).png>)             | Optional      | Days before documents get deleted.                                                                                           |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Days before documents get deleted.                                                                                           |
 | BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                | Hidden        | Processing batch size.                                                                                                       |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                 | Optional      | Document status used to denote that a document has been processed.                                                           |
 | Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (1).png>)            | Hidden        | Enable or disable the service.                                                                                               |

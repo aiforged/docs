@@ -166,7 +166,7 @@ The Process Checked Action allows you to **process** selected documents.
 ![](<../.gitbook/assets/71 (1) (1) (1) (1) (1) (1).png>)
 
 1. To **Copy** a checked document, check all the document you would like to copy.
-2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2) (1) (1).png>)
+2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2) (1) (1) (2).png>)
 3. A popup will appear asking to select a destination project.
 4. Once you have selected the Destination project, another popup will appear asking to select the Destination service.
 5. Select the Status you want to Copy, after selecting a value another popup will appear.

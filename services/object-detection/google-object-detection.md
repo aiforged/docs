@@ -13,7 +13,7 @@ nav_order: 2
 
 Consider the example below of a blonde woman. The object is identified as a "**Person**" and a list of **Tag** items is returned.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 The image provided is deemed not to be offensive, with the imaged being labeled with the following degrees of certainty.
 
@@ -21,7 +21,7 @@ The image provided is deemed not to be offensive, with the imaged being labeled 
 
 Furthermore, **Face Detection** tries to detect **Emotions** with a certain degree of confidence. In this case, joy is deemed to be the overwhelming emotion shown with a degree of "**Very Likely**". The other emotions are detected with a degree of "**Very Unlikely**".
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Supported Content Types
 
@@ -61,7 +61,7 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 | Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
 | ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3) (1).png>)             | Optional      | Days before documents get deleted.                                                                                           |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Days before documents get deleted.                                                                                           |
 | AccessKey               | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the Access Key to the configured Microsoft cloud service.                                                           |
 | BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the URL to the configured Microsoft cloud service.                                                                  |
 | BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                | Hidden        | Processing batch size.                                                                                                       |

@@ -57,7 +57,7 @@ Close the **Configuration View** for the **Custom Code** utility, and click on t
 ![](<../.gitbook/assets/image (4) (3).png>)
 
 * Select **C#** from the **Code Language** dropdown.\
-  ![](<../.gitbook/assets/image (5) (1).png>)
+  ![](<../.gitbook/assets/image (5) (1) (2).png>)
 * Copy and paste the following code into the code editor area:
 
 ```csharp
