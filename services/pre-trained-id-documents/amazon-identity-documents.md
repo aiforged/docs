@@ -1,3 +1,10 @@
+---
+title: Microsoft ID Docs
+parent: Pretrained ID Docs
+grand_parent: Understanding Services
+nav_order: 3
+---
+
 # Amazon Identity Documents
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,3 +1,10 @@
+---
+title: AIForged Classification
+parent: Classification
+grand_parent: Understanding Services
+nav_order: 3
+---
+
 # AIForged Clustering
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>

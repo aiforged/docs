@@ -1,4 +1,7 @@
 ---
+title: Custom Code Utility Duplicate Document Check
+parent: Practical Examples
+nav_order: 6
 description: >-
   This code sample demonstrates a simple technique utilizing a custom code
   utility service together with a custom dataset to prevent a service from
