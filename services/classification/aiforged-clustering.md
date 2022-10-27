@@ -27,7 +27,7 @@ The **AIForged Clustering** service is an in-house developed service that utiliz
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on. The **AIForged Clustering Service** will add additional categories as they are clustered.

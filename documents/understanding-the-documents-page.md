@@ -111,7 +111,7 @@ The Bulk Status Update Action allows you to update all the selected Document sta
 
 1.  To do a Bulk Status Update click on Bulk Actions, then Change Status for All Documents.
 
-    <figure><img src="../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 2. A popup will appear asking what Document Status you would like to update.
 3. Once you have selected the Status another popup will appear.
 4. Select the Status you want to Update it to, after selecting a value another popup will appear.

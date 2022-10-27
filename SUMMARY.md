@@ -49,7 +49,7 @@
   * [Microsoft Identity Documents](services/pre-trained-id-documents/microsoft-id.md)
   * [Amazon Identity Documents](services/pre-trained-id-documents/amazon-identity-documents.md)
 * [Pre-Trained Receipts](services/pre-trained-receipts/README.md)
-  * [Microsoft Receipt](services/pre-trained-receipts/microsoft-receipt-tracker.md)
+  * [Microsoft Receipts](services/pre-trained-receipts/microsoft-receipt-tracker.md)
 * [Custom Forms](services/custom-forms/README.md)
   * [Microsoft Forms Recognizer](services/custom-forms/microsoft-forms-recognizer.md)
   * [Abbyy Templates](services/custom-forms/abbyy-templates.md)

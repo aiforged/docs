@@ -37,7 +37,7 @@ The **Attachment** service allows you to extract attachments from e-mails. This 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     *   **Step 2 -** Allows adding an OCR Engine to the Attachment Service. Click on the Step 2 card to open the Select a Service popup. Only OCR and Extraction Services are listed here.
 
-        <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
         Click on Complete to finish the Wizard.\
         ![](<../../.gitbook/assets/image (84) (1).png>)
