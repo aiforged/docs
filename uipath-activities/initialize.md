@@ -56,4 +56,4 @@ Initialize
 
 ### Activity Property View
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (6).png" alt=""><figcaption></figcaption></figure>

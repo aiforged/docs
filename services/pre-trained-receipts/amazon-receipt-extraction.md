@@ -8,7 +8,7 @@ The ​**Amazon Receipt Extraction Service** makes use of pre-trained Invoice mo
 
 The service extracts basic fields that can typically be found on a **Receipt**, such as the **Receipt #**, **Receipt Date**, **Vendor Name**, **Shipping Address Recipient**, and **Purchase Orders**, to name a few. In addition to this, the line items are also extracted.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 ## Supported Content Types
 
@@ -42,7 +42,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 
 ## Service Configuration Settings
 
-The **Microsoft ReceiptService** can be configured by the user as a flexible solution. The following **Settings** are available:
+The **Amazon Receipt Extraction Service** can be configured by the user as a flexible solution. The following **Settings** are available:
 
 | Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
 | ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
