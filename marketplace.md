@@ -16,7 +16,7 @@ To access the **AIForged Marketplace**, simply select the **Marketplace** naviga
 
 1.  Click on the service you want to request access to.
 
-    <figure><img src=".gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Click on an image to preview (Optional).\\
 
     <figure><img src=".gitbook/assets/image (17) (4).png" alt=""><figcaption></figcaption></figure>
