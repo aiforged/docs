@@ -1,5 +1,5 @@
 ---
-title: AIForged Classification
+title: AIForged Clustering
 parent: Classification
 grand_parent: Understanding Services
 nav_order: 3
