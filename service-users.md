@@ -30,7 +30,7 @@ To manage a **User Group**, click on the **Manage Group Users** button.
 
 This will list the access rights each **User** has to a specific **Project** and / or **Service**.
 
-![](<.gitbook/assets/image (1) (4).png>)
+![](<.gitbook/assets/image (1) (4) (1).png>)
 
 To link a new **User** to a specific **Project** or **Service**, search for users by name via the **Search Users** function. Check all relevant users and click on **Accept**.
 

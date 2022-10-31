@@ -9,15 +9,15 @@ nav_order: 3
 
 <figure><img src="../../.gitbook/assets/image (40) (2).png" alt=""><figcaption></figcaption></figure>
 
-The **Attachment** service allows you to extract attachments from e-mails. This service can only be added as a **Child Service** of another existing service
+The **Attachment** service allows you to extract attachments from e-mails.&#x20;
 
 ## Possible use cases
 
-* Can be used to extract attachments from Emails for further document analyzing or other use cases where you might be required to extract attachments
+* Can be used to extract attachments from Emails for further document analysis or other use cases where you might be required to extract attachments
 
 ## Service Setup
 
-1. Open the **Service Detail View** of the service you would like to add the service to.
+1. Open the **Project Detail View** of the service you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
    ![](<../../.gitbook/assets/image (16).png>)
 3.  Select **Attachment Service** from the available **Service Types.**
@@ -37,7 +37,7 @@ The **Attachment** service allows you to extract attachments from e-mails. This 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     *   **Step 2 -** Allows adding an OCR Engine to the Attachment Service. Click on the Step 2 card to open the Select a Service popup. Only OCR and Extraction Services are listed here.
 
-        <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
         Click on Complete to finish the Wizard.\
         ![](<../../.gitbook/assets/image (84) (1).png>)

@@ -49,6 +49,21 @@ The **ABBYY Classification Service** is an advanced **Classification** service d
 * Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
   ![](<../../.gitbook/assets/image (84) (1).png>)
 
+## Service Configuration Settings
+
+The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+
+| Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
+| ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Days before documents get deleted.                                                                                           |
+| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                | Hidden        | Processing batch size.                                                                                                       |
+| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                 | Optional      | Document status used to denote that a document has been processed.                                                           |
+| Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (1).png>)            | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5).png>)                |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2).png>)     |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
+| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)             | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2) (1).png>) | Optional      | Remove human comments from a document.                                                                                       |
+
 ## Add and Process Documents
 
 1. In your **Classification Service Card** click on the **Inbox** button.\
@@ -65,15 +80,4 @@ Should the results not appear satisfactory, then additional documents may need t
 ## View Processed Documents
 
 1. In your **Classification Service Card** click on the **Outbox** button.
-2. Classification results will appear as new documents / files in the outbox with the **Category** column indicating the final document classification.
-
-## Settings
-
-| **Setting**                  | Description                                                                         |
-| ---------------------------- | ----------------------------------------------------------------------------------- |
-| **ExecuteAfterProcess**      | Execute this Utility after the Service Process Documents                            |
-| **ExecuteBeforeProcess**     | Execute this Utility before the Service Process Documents                           |
-| **Language**                 | The ABBYY language to use                                                           |
-| **PageExtension**            | The file extension to use for the classified images or pages                        |
-| **PageFileFormat**           | The image format to use for the classified images or pages                          |
-| **PageImageCompressionType** | This is the Image Compression Type to use when storing the classified image or page |
+2. Classification results will appear as new documents/files in the outbox with the **Category** column indicating the final document classification.

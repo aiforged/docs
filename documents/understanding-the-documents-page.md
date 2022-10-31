@@ -111,7 +111,7 @@ The Bulk Status Update Action allows you to update all the selected Document sta
 
 1.  To do a Bulk Status Update click on Bulk Actions, then Change Status for All Documents.
 
-    <figure><img src="../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 2. A popup will appear asking what Document Status you would like to update.
 3. Once you have selected the Status another popup will appear.
 4. Select the Status you want to Update it to, after selecting a value another popup will appear.
@@ -166,7 +166,7 @@ The Process Checked Action allows you to **process** selected documents.
 ![](<../.gitbook/assets/71 (1) (1) (1) (1) (1) (1).png>)
 
 1. To **Copy** a checked document, check all the document you would like to copy.
-2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2) (1) (1).png>)
+2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2) (1) (1) (2).png>)
 3. A popup will appear asking to select a destination project.
 4. Once you have selected the Destination project, another popup will appear asking to select the Destination service.
 5. Select the Status you want to Copy, after selecting a value another popup will appear.
