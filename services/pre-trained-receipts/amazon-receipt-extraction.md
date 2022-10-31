@@ -1,6 +1,6 @@
 # Amazon Receipt Extraction
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 The ​**Amazon Receipt Extraction Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. **Microsoft Receipts** allows users to categorize and visualize their expenses. Below is an example of a receipt.
 
@@ -8,7 +8,7 @@ The ​**Amazon Receipt Extraction Service** makes use of pre-trained Invoice mo
 
 The service extracts basic fields that can typically be found on a **Receipt**, such as the **Receipt #**, **Receipt Date**, **Vendor Name**, **Shipping Address Recipient**, and **Purchase Orders**, to name a few. In addition to this, the line items are also extracted.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Supported Content Types
 
@@ -44,20 +44,20 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 
 The **Amazon Receipt Extraction Service** can be configured by the user as a flexible solution. The following **Settings** are available:
 
-| Setting                 | Type                                                           | Required Type | Description                                                                                                                  |
-| ----------------------- | -------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Days before documents get deleted.                                                                                           |
-| AccessKey               | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the Access Key to the configured AWS cloud service.                                                                 |
-| BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)                     | Optional      | Override the URL to the configured AWS cloud service.                                                                        |
-| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                | Hidden        | Processing batch size.                                                                                                       |
-| CheckElectronic         | ![](<../../.gitbook/assets/image (15) (5) (1).png>)            | Optional      | Check if the document is electronic and extract text from there.                                                             |
-| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                 | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (1).png>)            | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5).png>)                |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2).png>)     |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| MinSize                 | ![](<../../.gitbook/assets/image (5) (3).png>)                 | Optional      | Minimum size of the document to OCR.                                                                                         |
-| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)             | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (2) (1).png>) | Optional      | Remove human comments from a document.                                                                                       |
+| Setting                 | Type                                                               | Required Type | Description                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Optional      | Days before documents get deleted.                                                                                           |
+| AccessKey               | ![](<../../.gitbook/assets/image (7).png>)                         | Optional      | Override the Access Key to the configured AWS cloud service.                                                                 |
+| BaseURL                 | ![](<../../.gitbook/assets/image (7).png>)                         | Optional      | Override the URL to the configured AWS cloud service.                                                                        |
+| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Hidden        | Processing batch size.                                                                                                       |
+| CheckElectronic         | ![](<../../.gitbook/assets/image (15) (1) (3).png>)                | Optional      | Check if the document is electronic and extract text from there.                                                             |
+| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                     | Optional      | Document status used to denote that a document has been processed.                                                           |
+| Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (3).png>)                | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (4).png>)                |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (2).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
+| MinSize                 | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Optional      | Minimum size of the document to OCR.                                                                                         |
+| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                 | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2).png>)     | Optional      | Remove human comments from a document.                                                                                       |
 
 ## Add and Process Documents
 

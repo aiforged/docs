@@ -81,7 +81,7 @@ To reset all **Teaching Tips** to their default status click on the **Reset Teac
 
 ## Disable / Enable Teaching Tips
 
-![](<.gitbook/assets/image (33) (1) (1) (1) (1) (2).png>)
+![](<assets/image (33).png>)
 
 Click on the **Teaching Tips** **Toggle** to globally enable or disable **Teaching Tips** for your **User Account.**
 

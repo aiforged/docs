@@ -24,4 +24,10 @@ The following operations are available when pre-processing documents:
 | Remove Color Marks | Remove marks that may affect OCR accuracy, such as bank stamps.                                                                                                                                  |
 | Whiten Background  | By specifying lower- and upper greyscale bounds, remove possible watermarks that may negatively impact OCR accuracy. Bound values are between 0 and 255, with 0 being black and 255 being white. |
 
-TODO: Add examples of Whiten Background
+Consider the document below, with a "DRAFT" watermark.&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The **AIForged Image Processor Service** can be used to remove the watermark and whiten the background.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
