@@ -14,7 +14,3 @@ This typically requires the user to provide pre-labelled / categorized documents
 
 AIForged currently has the following **Classification Service Types** available:
 
-****[**AIForged Classification**](aiforged-classification.md)****
-
-****[**ABBYY Classification**](abby-classification.md)****
-
