@@ -7,7 +7,7 @@ nav_order: 2
 
 # Microsoft Identity Documents
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Identity Document Service** makes use of pre-trained ID doc models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Name, Surname, ID Number,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 
@@ -25,7 +25,7 @@ The **Microsoft Identity Document Service** makes use of pre-trained ID doc mode
    ![](<../../.gitbook/assets/image (82) (1).png>)
 3.  Select **Microsoft Identity Documents Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 

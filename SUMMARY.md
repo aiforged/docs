@@ -25,6 +25,7 @@
   * [ABBYY Classification](services/classification/abby-classification.md)
   * [AIForged Clustering](services/classification/aiforged-clustering.md)
   * [Microsoft Custom Vision](services/classification/microsoft-custom-vision.md)
+  * [Microsoft Custom Text Classification](services/classification/microsoft-custom-text-classification.md)
 * [OCR](services/ocr/README.md)
   * [Amazon OCR](services/ocr/amazon-ocr.md)
   * [Google OCR](services/ocr/google-ocr.md)

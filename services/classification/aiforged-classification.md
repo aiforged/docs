@@ -14,9 +14,9 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 
 ## Possible use cases
 
-* Distinguish between different types of bank statements
-* Distinguish between different types of Identification documents
-* Distinguish between different types of invoices
+* Distinguish between different types of bank statements.
+* Distinguish between different types of Identification documents.
+* Distinguish between different types of invoices.
 
 ## Service Setup
 
