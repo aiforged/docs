@@ -1,3 +1,10 @@
+---
+title: Microsoft Custom Vision
+parent: Classification
+grand_parent: Understanding Services
+nav_order: 4
+---
+
 # Microsoft Custom Vision
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>

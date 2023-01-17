@@ -1,3 +1,10 @@
+---
+title: Microsoft Custom Text Classification
+parent: Classification
+grand_parent: Understanding Services
+nav_order: 5
+---
+
 # Microsoft Custom Text Classification
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
