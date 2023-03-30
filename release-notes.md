@@ -21,27 +21,22 @@ nav_order: 1
             - This will paste the custom labels as is and won't create new definitions. This is useful when copying labels within the same service.
         - "Paste custom labels from clipboard as new":
             - This will paste the custom labels as is and will create new definitions for each label. This is useful when copying labels from one service to another.
-- Fixed issue with field value being overriden by verification control text automatically when simply viewing a field's value.
-- Restricted editing a field's value to the text editor in the fieldvaluepopupcontrol.
-- Some more polish to new features
+- Fixed issue with field value being automatically overriden by an editor's text when simply viewing a field's value.
+- Restricted editing a field's value to the text editor in the field value popup.
+- Improved the document's value export screen, which can be found in the Inbox, Outbox or Training Box by clicking on the "Export" command button and selecting "Export Screen". Enabling the detailed view will now properly render any tables and allow them to be exported to Excel.
+- Improved the Excel export function in the export screen.
 - Added Export to CSV to export screen.
 - Added Export to JSON to export screen.
-- Started fixing table overlay MS Forms custom tables.
-- Fixed totalscale calculation in the documentverification view.
+- Fixed an issue where label scaling would be incorrect if a document consisted of both portrait and landscape orientated pages.
 - Fixed paramdefhierarchyview not saving changes.
-- Implemented native search in the documents view, with an optional "Deep Search" function.
+- Implemented native search in the documents view, with an optional "Deep Search" function. The "Deep Search" function will search within the extracted values of processed documents. The search can take some time if there are a large number of documents to search through or if the documents have a large number of results.
 - Attempts at fixing "Access Violation" exception that rarely occurs duing app startup.
-- Improved ProcessView log grid.
-- Added DisplayMultiSelectActionSheet
-- Removed devexpress dependency
-- Improved Export screen
-- Fixed scaling issue in labelling
-- Various bug fixes / improvements
-- Added initial implementation of copy and paste for individual labels.
-- Started implementation of custom amount transfer between projects.
-- Updated to WindowsAppSdk 1.2
-- Fixed document Analysis view
+- Added functionality to filter log messages in the document process popup.
+- Removed the ability for users to register themselves. It is now necessary for AIForged consultants or partners to register new users.
+- It is now possible to transfer custom bundle amounts between projects and services in the user group management screen.
 - Added additional details in the transaction view to make it easier to identify services and nested services.
+- Major performance improvements.
+- Various bug fixes.
 
 ### WASM
 A preview of the web version of AIForged Studio is available [Here](https://zealous-forest-0116e2803.2.azurestaticapps.net/)
