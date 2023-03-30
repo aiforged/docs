@@ -33,6 +33,7 @@ nav_order: 1
 - New methods to work with tables have been added to the AIForged SDK which are now available in the code editor.
 - Attempts at fixing "Access Violation" exception that rarely occurs duing app startup.
 - Added functionality to filter log messages in the document process popup.
+- Added a search component to the category selection control. This control is used to filter documents in the document view and to select a category during labelling.
 - Removed the ability for users to register themselves. It is now necessary for AIForged consultants or partners to register new users.
 - It is now possible to transfer custom bundle amounts between projects and services in the user group management screen.
 - Added additional details in the transaction view to make it easier to identify services and nested services.
@@ -41,7 +42,7 @@ nav_order: 1
 - Various bug fixes.
 
 ### WASM
-A preview of the web version of AIForged Studio is available [Here](https://studio.aiforged.com/)
+A preview of the web version of AIForged Studio is available [here.](https://studio.aiforged.com/)
 
 Please remember that this is a preview version and may not be stable and is still undergoing performance optimizations.
 
