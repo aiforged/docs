@@ -28,13 +28,15 @@ nav_order: 1
 - Added Export to CSV to export screen.
 - Added Export to JSON to export screen.
 - Fixed an issue where label scaling would be incorrect if a document consisted of both portrait and landscape orientated pages.
-- Fixed paramdefhierarchyview not saving changes.
+- Improved the experience when creating custom tables during custom labelling.
 - Implemented native search in the documents view, with an optional "Deep Search" function. The "Deep Search" function will search within the extracted values of processed documents. The search can take some time if there are a large number of documents to search through or if the documents have a large number of results.
+- New methods to work with tables have been added to the AIForged SDK which are now available in the code editor.
 - Attempts at fixing "Access Violation" exception that rarely occurs duing app startup.
 - Added functionality to filter log messages in the document process popup.
 - Removed the ability for users to register themselves. It is now necessary for AIForged consultants or partners to register new users.
 - It is now possible to transfer custom bundle amounts between projects and services in the user group management screen.
 - Added additional details in the transaction view to make it easier to identify services and nested services.
+- Migrated to a unified codebase that allows us to compile and publish both our desktop and web versions of AIForged Studio with similar features between the two versions.
 - Major performance improvements.
 - Various bug fixes.
 
