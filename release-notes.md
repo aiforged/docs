@@ -48,7 +48,7 @@ Please remember that this is a preview version and may not be stable and is stil
 
 ## UIPath Activities 1.5.1176.1128
 
-- Added export to CSV List activity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a list of delimeted strings.
+- Added export to CSV List activity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a list of delimited strings.
 - Added export to CSV file actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a CSV text file.
 - Added export to DataTable actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a DataTable object.
 
