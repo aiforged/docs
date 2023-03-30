@@ -41,7 +41,8 @@ nav_order: 1
 - Various bug fixes.
 
 ### WASM
-A preview of the web version of AIForged Studio is available [Here](https://zealous-forest-0116e2803.2.azurestaticapps.net/)
+A preview of the web version of AIForged Studio is available [Here](https://studio.aiforged.com/)
+Please remember this is a preview version and may not be stable and is still undergoing performance optimizations.
 
 ## UIPath Activities 1.5.1176.1128
 
