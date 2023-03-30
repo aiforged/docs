@@ -42,3 +42,11 @@ nav_order: 1
 
 ### WASM
 A preview of the web version of AIForged Studio is available [Here](https://zealous-forest-0116e2803.2.azurestaticapps.net/)
+
+## UIPath Activities 1.5.1176.1128
+
+- Added export to CSV List activity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a list of delimeted strings.
+- Added export to CSV file actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a CSV text file.
+- Added export to DataTable file actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a DataTable object.
+
+
