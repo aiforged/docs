@@ -37,6 +37,7 @@ nav_order: 1
 - Removed the ability for users to register themselves. It is now necessary for AIForged consultants or partners to register new users.
 - It is now possible to transfer custom bundle amounts between projects and services in the user group management screen.
 - Added additional details in the transaction view to make it easier to identify services and nested services.
+- Users can now restore deleted result documents from the inbox / outbox and wizard analysis / training / definition steps. A new command has been made available for this under the "Actions" menu or may simply be available from the command bar, depending on the view.
 - Migrated to a unified codebase that allows us to compile and publish both our desktop and web versions of AIForged Studio with similar features between the two versions.
 - Major performance improvements.
 - Various bug fixes.
