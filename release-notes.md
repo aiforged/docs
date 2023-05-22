@@ -6,6 +6,30 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.4.1 (1.5?) (25-05-2023)
+
+- Consolidated the user group management into a single view for managing a specifc group. Group managers can now view and manage a group's users in a single view, with the functionality of drilling into a users roles and permissions per project and service in the managed group. It is now easier to invite users to a group via the **Add Users** -> **Invite External User** function. This function simply requires and email address for the user to invite. The invited user will receive an email notifying them of the invite, and requesting them to accept it.
+- Implemented specific permissions check for users that can label documents and users that can train documents (in the workflow and in the wizard). This means that additional roles can be implemented that split the responsibility of labelling and training documents between 2 or more users.
+- Further improved permissions in the document verification view (workflow, boxes and wizard) to align with enhanced AIForged security.
+- Added default option to a document's Cost Analysis view to only show records with charges.
+- Added functionality to flag documents for testing. This will create a document parameter named IsTesting on the flagged documents. This parameter can then be checked for either via integration or in custom code. This feature is available in a service's inbox and outbox and can be access via selecting one or more documents, clicking on **Actions** and then selecting **Flag selected documents for testing**.
+- Add a diff viewer to the custom code control's history view. You can now compare code from the selected history record with your current code anywhere you can write custom code. To access this feature simply open your custom code, select the **History** tab, select a history record and click on **View Diff** in the command bar.
+- Added additional details to grouped headers in the Transactions View.
+- Added additional information to Excel exports from the Transactions View.
+- MS Forms: Added a feature where at least 5 training documents need to exist before training is allowed from a workflow item.
+- Reintroduced the **Debits** and **Credits** tabs in the Transactions View.
+- Improved the conditional rules control in the Parameter Definition View to conform with the updated conditional rules in the AIForged platform.
+- Improved UX by providing more useful feedback when certain views or controls are loading data.
+- Reworked Teaching Tips for improved performance.
+- Fixed an issue where copying labels to your clipboard from one project and pasting them in another project would not correctly identify existing parameter definitions in the target project.
+- Fixed an issue that could cause labels to be duplicated under certain conditions during custom labelling.
+- Fixed an issue with transferring custom amounts to users in the group management view.
+- Fixed refresh login function not working when prompted to refresh your login session.
+- Fixed an issue where a user could no longer edit their own profile
+- Updated to WindowsAppSdk 1.3
+- Performance Improvements
+- Various bug fixes and other feature improvements
+
 ## AIForged Studio 1.4
 
 ### Desktop
