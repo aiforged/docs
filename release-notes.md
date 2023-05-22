@@ -8,6 +8,7 @@ nav_order: 1
 
 ## AIForged Studio 1.4.1 (1.5?) (25-05-2023)
 
+### Desktop
 - Consolidated the user group management into a single view for managing a specifc group. Group managers can now view and manage a group's users in a single view, with the functionality of drilling into a users roles and permissions per project and service in the managed group. It is now easier to invite users to a group via the **Add Users** -> **Invite External User** function. This function simply requires and email address for the user to invite. The invited user will receive an email notifying them of the invite, and requesting them to accept it.
 - Implemented specific permissions check for users that can label documents and users that can train documents (in the workflow and in the wizard). This means that additional roles can be implemented that split the responsibility of labelling and training documents between 2 or more users.
 - Further improved permissions in the document verification view (workflow, boxes and wizard) to align with enhanced AIForged security.
@@ -30,7 +31,7 @@ nav_order: 1
 - Performance Improvements
 - Various bug fixes and other feature improvements
 
-## AIForged Studio 1.4
+## AIForged Studio 1.4 (06-04-2023)
 
 ### Desktop
 - The contents of the AIForged Studio window will now scale (up to a certain point) to fit the size of the user's desktop. This frees up a lot of screen real estate on devices with smaller or low resolution monitors.
@@ -71,7 +72,7 @@ A preview of the web version of AIForged Studio is available [here.](https://stu
 
 Please remember that this is a preview version and may not be stable and is still undergoing performance optimizations.
 
-## UIPath Activities 1.5.1176.1128
+## UIPath Activities 1.5.1176.1128 (06-04-2023)
 
 - Added export to CSV List activity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a list of delimited strings.
 - Added export to CSV file actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a CSV text file.
