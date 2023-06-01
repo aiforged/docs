@@ -31,6 +31,10 @@ nav_order: 1
 - Performance Improvements
 - Various bug fixes and other feature improvements
 
+## UIPath Activities 1.5.1247.1318 (01-06-2023)
+
+- Minor bug fix to initialize activity.
+
 ## AIForged Studio 1.4 (06-04-2023)
 
 ### Desktop
