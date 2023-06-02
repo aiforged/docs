@@ -24,7 +24,7 @@ The following languages are available for selection when writing **Custom Code**
 * Python
 * F#
 
-The language can be selected form the **Code Language** dropdown box. Refer to [BaseModule](../../services/custom-service-code/ibasemodule-interface-data-types.md) for the available exposed methods that can be used in **Custom Code**.
+The language can be selected form the **Code Language** dropdown box. Refer to [BaseModule](../../services/custom-service-code/basemodule/ibasemodule-interface-data-types.md) for the available exposed methods that can be used in **Custom Code**.
 
 <figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
