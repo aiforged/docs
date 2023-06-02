@@ -2,7 +2,7 @@
 title: Custom Code - Data Types
 parent: Custom Service Code
 grand_parent: Understanding Services
-nav_order: 3
+nav_order: 2
 ---
 
 # IBaseModule Interface Data Types
