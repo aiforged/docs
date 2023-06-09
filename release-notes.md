@@ -18,10 +18,11 @@ nav_order: 1
 - Added additional details to grouped headers in the Transactions View.
 - Added additional information to Excel exports from the Transactions View.
 - MS Forms: Added a feature where at least 5 training documents need to exist before training is allowed from a workflow item.
-- Reintroduced the **Debits** and **Credits** tabs in the Transactions View.
+- Major rework of the Transactions View and Transactions Audit View
 - Improved the conditional rules control in the Parameter Definition View to conform with the updated conditional rules in the AIForged platform.
 - Improved UX by providing more useful feedback when certain views or controls are loading data.
 - Reworked Teaching Tips for improved performance.
+- It is now no longer necessary to manually rerun rules when publishing changes to a workflow item. Publishing will automatically rerun rules.
 - Fixed an issue where copying labels to your clipboard from one project and pasting them in another project would not correctly identify existing parameter definitions in the target project.
 - Fixed an issue that could cause labels to be duplicated under certain conditions during custom labelling.
 - Fixed an issue with transferring custom amounts to users in the group management view.
