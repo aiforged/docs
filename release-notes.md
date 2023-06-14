@@ -6,7 +6,7 @@ nav_order: 1
 
 # Release Notes
 
-## AIForged Studio 1.4.1 (1.5?) (25-05-2023)
+## AIForged Studio 1.4.1 (14-06-2023)
 
 ### Desktop
 - Consolidated the user group management into a single view for managing a specifc group. Group managers can now view and manage a group's users in a single view, with the functionality of drilling into a users roles and permissions per project and service in the managed group. It is now easier to invite users to a group via the **Add Users** -> **Invite External User** function. This function simply requires and email address for the user to invite. The invited user will receive an email notifying them of the invite, and requesting them to accept it.
@@ -19,9 +19,11 @@ nav_order: 1
 - Added additional information to Excel exports from the Transactions View.
 - MS Forms: Added a feature where at least 5 training documents need to exist before training is allowed from a workflow item.
 - Major rework of the Transactions View and Transactions Audit View
+- Added Tesseract OCR for on-the-fly OCR when drawing / manipulating labels on a document.
 - Improved the conditional rules control in the Parameter Definition View to conform with the updated conditional rules in the AIForged platform.
 - Improved UX by providing more useful feedback when certain views or controls are loading data.
 - Reworked Teaching Tips for improved performance.
+- New way to select items in a datagrid: Click and drag to select multiple items. This is great for selecting multiple documents, etc.
 - It is now no longer necessary to manually rerun rules when publishing changes to a workflow item. Publishing will automatically rerun rules.
 - Fixed an issue where copying labels to your clipboard from one project and pasting them in another project would not correctly identify existing parameter definitions in the target project.
 - Fixed an issue that could cause labels to be duplicated under certain conditions during custom labelling.
