@@ -6,6 +6,10 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.4.2 (15-06-2023)
+### Desktop
+- Hotfix for regression in Add Service Type Selection dialog.
+
 ## AIForged Studio 1.4.1 (14-06-2023)
 
 ### Desktop
