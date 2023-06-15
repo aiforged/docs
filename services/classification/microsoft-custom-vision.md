@@ -9,9 +9,9 @@ nav_order: 4
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-The **Microsoft Custom Vision Service** is a **Classification** service that allows users to customize and embed state-of-the-art computer vision image analysis for specific domains with **Azure Cognitive Services**.&#x20;
+The **Microsoft Custom Vision Service** is a **Classification** service that allows users to customize and embed state-of-the-art computer vision image analysis for specific domains with **Azure Cognitive Services**.
 
-The **Microsoft Custom Vision Service** allows users to create **Custom Tags** from documents or images, based on their own custom needs for image recognition. Users start by uploading samples of each **Custom Tag** and sending them to **Azure Cognitive Services** to train the **Classification** model**.**
+The **Microsoft Custom Vision Service** allows users to create **Custom Tags** from documents or images, based on their own custom needs for image recognition. Users start by uploading samples of each **Custom Tag** and sending them to **Azure Cognitive Services** to train the **Classification** model\*\*.\*\*
 
 ## Possible use cases
 
@@ -34,9 +34,9 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
 
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
-* **Step 3 -** Training&#x20;
+* **Step 3 -** Training
   1. Click **Upload Training Documents** in the command bar\
-     ![](<../../assets/33 (1) (1) (1) (1) (1) (1) (2) (1).png>)
+     ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (1) (1) (1) (7).png>)
   2. Select the **User Defined Category** you want to upload documents to.\
      **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)**.**
   3. Upload files for each **User Defined Category** you wish to train the service on.
@@ -57,14 +57,14 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 | Setting                 | Type                                                               | Required Type | Description                                                                                                                  |
 | ----------------------- | ------------------------------------------------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Hidden        | Processing batch size.                                                                                                       |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Optional      | Days before documents get deleted.                                                                                           |
+| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Hidden        | Processing batch size.                                                                                                       |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                     | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (3).png>)                | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (4).png>)                |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (2).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
+| Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (1).png>)                | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (1) (4).png>)            |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (1).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
 | Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                 | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2).png>)     | Optional      | Remove human comments from a document.                                                                                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (2).png>) | Optional      | Remove human comments from a document.                                                                                       |
 
 ## Add and Process Documents
 

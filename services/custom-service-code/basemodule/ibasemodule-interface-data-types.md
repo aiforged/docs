@@ -2,7 +2,7 @@
 title: Custom Code - Data Types
 parent: Custom Service Code
 grand_parent: Understanding Services
-nav_order: 3
+nav_order: 2
 ---
 
 # IBaseModule Interface Data Types
@@ -21,6 +21,8 @@ The **IBaseModule** interface exposes object data types that can be used in the 
 | **IDocumentParameter**   | A parameter in a document. Can only have one Parameter Definition, but can have multiple Verifications |
 | **IParameterDef**        | A parameter definition object.                                                                         |
 | **IProject**             | An AIForged project.                                                                                   |
-| **IProjectUser**         | An AIForged user linked to a project with Roles and Permissions.                                       |
+| **IProjectUser**         | An AIForged user object linked to a project with Roles and Permissions.                                |
 | **IVerification**        | A verification object containing OCR data and location in a document.                                  |
-| **IWorkItem**            | A work item object that required human-in-the-loop attention.                                          |
+| **IWorkItem**            | A work item object that requires human-in-the-loop attention.                                          |
+
+## Enums
