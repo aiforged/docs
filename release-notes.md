@@ -6,6 +6,10 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.4.3 (19-06-2023)
+### Desktop
+- Hotfix for regression in document extraction results Export Screen.
+
 ## AIForged Studio 1.4.2 (15-06-2023)
 ### Desktop
 - Hotfix for regression in Add Service Type Selection dialog.
