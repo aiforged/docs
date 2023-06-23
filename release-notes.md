@@ -10,6 +10,9 @@ nav_order: 1
 ### Desktop
 - Added orphaned transactions to transactions details view.
 - Minor improvements to workflow.
+- Fixed publish bug when rerunning rules in verification
+- Improved tesseract implementation
+- Other improvements  / fixes
 
 ## AIForged Studio 1.4.3 (19-06-2023)
 ### Desktop
