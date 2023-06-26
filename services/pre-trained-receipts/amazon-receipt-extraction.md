@@ -1,3 +1,10 @@
+---
+title: Amazon Receipt Extraction
+parent: Pretrained Receipts
+grand_parent: Understanding Services
+nav_order: 2
+---
+
 # Amazon Receipt Extraction
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (5).png" alt=""><figcaption></figcaption></figure>

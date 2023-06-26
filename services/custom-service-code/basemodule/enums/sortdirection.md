@@ -1,3 +1,10 @@
+---
+title: SortDirection
+parent: Enums
+grand_parent: Custom Code BaseModule
+nav_order: 6
+---
+
 # SortDirection
 
 ## Description

@@ -1,7 +1,7 @@
 ---
-title: UIPath Activities
-nav_order: 22
-has_children: true
+title: UIPath Introduction
+nav_order: 2
+parent: UIPath Activities
 description: Overview of the AIForged activities in UiPath.
 ---
 
