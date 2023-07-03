@@ -6,6 +6,14 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.4.6 (03-07-2023)
+### Desktop
+- Further refinements to the transaction reporting views
+- Added group filter to transactions view
+- Fixed issue with refresh login function
+- New user accounts created from the group management view will now be auto-activated
+- Other bug fixes / improvements
+
 ## AIForged Studio 1.4.4 (23-06-2023)
 ### Desktop
 - Added orphaned transactions to transactions details view.
