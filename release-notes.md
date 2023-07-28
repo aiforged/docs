@@ -33,6 +33,7 @@ nav_order: 1
 - Implemented generic dataset wizard step for new generic dataset wizard type.
 - Improved row selection styling in datagrids with action buttons.
 - Implemented new "Wallets & Billing" view that allows a user to get an immediate sense of available credits, total usage and credit deposits for their account/s. Users can have access to multiple wallets and can switch between these wallets to view their statistics. Wallets can be shared with other users and credits can be transferred between wallets.
+- Many other bug fixes and improvements.
   
 ## AIForged Studio 1.4.6 (03-07-2023)
 ### Desktop
