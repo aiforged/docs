@@ -6,7 +6,13 @@ nav_order: 1
 
 # Release Notes
 
-## AIForged Studio 1.5.0 (04-08-2023)
+## AIForged Studio 1.5.2 (08-09-2023)
+### Desktop
+- Added correct protocol activation for accepting group invites.
+- Added new view to allow users to accept group invites.
+- Added training options configuration to the project categories view. (Currently this is only utilised by Microsoft Forms with Custom Invoices).
+
+## AIForged Studio 1.5.0 (01-09-2023)
 ### Desktop
 - Re-wrote app initialization to take advantage of newer WinUI APIs and to ensure alignment with WinUI best practices.
 - Increased available window real estate by refactoring the app layout, including breadcrumb positioning, etc.
@@ -32,8 +38,15 @@ nav_order: 1
 - Fixed issues with copying and pasting tables from the clipboard during custom labelling / HITL verification.
 - Implemented generic dataset wizard step for new generic dataset wizard type.
 - Improved row selection styling in datagrids with action buttons.
-- Implemented new "Wallets & Billing" view that allows a user to get an immediate sense of available credits, total usage and credit deposits for their account/s. Users can have access to multiple wallets and can switch between these wallets to view their statistics. Wallets can be shared with other users and credits can be transferred between wallets.
-- Many other bug fixes and improvements.
+- Implemented new "Wallets & Billing" view that allows a user to get an immediate sense of available credits, total usage and credit deposits for their account/s. Users can have access to multiple wallets and can switch between these wallets to view their statistics.
+- Overhaul transactions views which now forms part of "Wallets & Billing".
+- Added a refresh function to the document designer's category documents view.
+- Complete overhaul over the label value popup control to only show relevant information and provide an improved UX.
+- The verification value editor now works with multi-line text.
+- Added many new keyboard shortcuts to the document designer and some other views. Keyboard shortcuts are displayed in tooltips / menu items where available.
+- In the document verification view / HITL: The Verification -> Publish function now correctly honours publish related settings configured in a service.
+- Improved switching between themes.
+- Many other bug fixes and performance improvements.
   
 ## AIForged Studio 1.4.6 (03-07-2023)
 ### Desktop
