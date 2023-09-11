@@ -6,6 +6,48 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.5.2 (08-09-2023)
+### Desktop
+- Added correct protocol activation for accepting group invites.
+- Added new view to allow users to accept group invites.
+- Added training options configuration to the project categories view. (Currently this is only utilised by Microsoft Forms with Custom Invoices).
+
+## AIForged Studio 1.5.0 (01-09-2023)
+### Desktop
+- Re-wrote app initialization to take advantage of newer WinUI APIs and to ensure alignment with WinUI best practices.
+- Increased available window real estate by refactoring the app layout, including breadcrumb positioning, etc.
+- Implemented persisted data for certain project data. This means that for example: if a project is open over multiple tabs, data will be synchronized across the tabs.
+- Fixed issue where definition value updates were not immediately visible in the definitions tree grid.
+- Fixed issue with verification values not being saved when verification controls are hidden.
+- Fixed issue with Parameter Definition Options not serializing correctly.
+- Fixed issue with missing user preferences on new user accounts
+- UX improvements to the Service Wizard.
+- Added additional export options to the custom dataset editor.
+- UX improvements to the custom dataset editor.
+- Custom labelling / HITL table manipulation bug fixes.
+- Custom labelling / HITL canvas sizing issues fixed for documents with small dimensions
+- Implemented optional tab-free navigation. This can be enabled by disabling the "Use Default Tab Navigation" setting in General User Profile settings.
+- Fixed issue with card count in HITL Kanban View.
+- Implemented adding multiple tables using the same Parameter Definition on the same page.
+- Restricted the admin roles available to a user administrator when editing / creating a user's profile.
+- Fixed issues with switching the current application theme.
+- Added double click add and remove shortcuts to the Table Designer.
+- Fixed issue with teaching tips opening despite being globally disabled.
+- Implemented "Quick Dependency Switch" for dependency services.
+- Added additional progress feedback when saving editor changes.
+- Fixed issues with copying and pasting tables from the clipboard during custom labelling / HITL verification.
+- Implemented generic dataset wizard step for new generic dataset wizard type.
+- Improved row selection styling in datagrids with action buttons.
+- Implemented new "Wallets & Billing" view that allows a user to get an immediate sense of available credits, total usage and credit deposits for their account/s. Users can have access to multiple wallets and can switch between these wallets to view their statistics.
+- Overhaul transactions views which now forms part of "Wallets & Billing".
+- Added a refresh function to the document designer's category documents view.
+- Complete overhaul over the label value popup control to only show relevant information and provide an improved UX.
+- The verification value editor now works with multi-line text.
+- Added many new keyboard shortcuts to the document designer and some other views. Keyboard shortcuts are displayed in tooltips / menu items where available.
+- In the document verification view / HITL: The Verification -> Publish function now correctly honours publish related settings configured in a service.
+- Improved switching between themes.
+- Many other bug fixes and performance improvements.
+  
 ## AIForged Studio 1.4.6 (03-07-2023)
 ### Desktop
 - Further refinements to the transaction reporting views
