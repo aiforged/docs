@@ -6,6 +6,16 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.5.3 (15-09-2023)
+### Desktop
+- Added some additional information in the "Wallets & Billing" header.
+- Added new basic drilldown view to "Wallets & Billing" drilldown views with more relevant information at a glance.
+- Added a toggle to the user profile to switch between basic and advanced views for the "Wallets & Billing" and related views.
+- Major speed improvements when drilling into transactions.
+- Fixed issue with DocumentView filters not loading correctly when navigating without tabs.
+- Completely overhauled virtual table overlays in the document designer / document verification view.
+- Other bug fixes and improvements
+
 ## AIForged Studio 1.5.2 (08-09-2023)
 ### Desktop
 - Added correct protocol activation for accepting group invites.
