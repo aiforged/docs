@@ -14,6 +14,7 @@ nav_order: 1
 - Major speed improvements when drilling into transactions.
 - Fixed issue with DocumentView filters not loading correctly when navigating without tabs.
 - Completely overhauled virtual table overlays in the document designer / document verification view.
+- Microsoft Forms: in the HITL document verification / document designer view: for auto-detected and custom tables, cell information is returned for cells with and without values. Cells without values do not contain any location info and thus do not appear in the document overlay. When deleting rows, cells without  location info were not flagged for deletion, only visible cells were flagged for deletion. These cells are now correctly flagged for deletion and will be deleted when saving your changes.
 - Other bug fixes and improvements
 
 ## AIForged Studio 1.5.2 (08-09-2023)
