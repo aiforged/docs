@@ -14,7 +14,7 @@ nav_order: 1
 - Enhancement: Major speed improvements when drilling into transactions.
 - Enhancement: Completely overhauled virtual table overlays in the document designer / document verification view.
 - Enhancement: Microsoft Forms: in the HITL document verification / document designer view: for custom tables, cell information is returned for cells with and without extracted values. Cells without values do not contain any location info and thus do not appear in the document overlay. When deleting rows, cells without  location info were not flagged for deletion, only visible cells were flagged for deletion. These cells are now included when flagging row cells for deletion and will be deleted when saving your changes.
-- Enhancement: Added training options configuration for supported services (Currently only Microsoft Forms: Custom Invoices is supported). Training options can be set from a project's categories view by selecting a category and clicking on the "Training Options" command button.
+- Enhancement: Added additional training options configuration for supported services (Currently only Microsoft Forms: Custom Invoices is supported). Training options can be set from a project's categories view by selecting a category and clicking on the "Training Options" command button.
 - Bug Fix: Fixed issue with DocumentView filters not loading correctly when navigating without tabs.
 - Other bug fixes and improvements
 
