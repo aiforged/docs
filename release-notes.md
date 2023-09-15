@@ -6,6 +6,18 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.5.3 (15-09-2023)
+### Desktop
+- New Feature: Added new basic drilldown view to "Wallets & Billing" drilldown views with more relevant information at a glance.
+- New Feature: Added a toggle to the user profile to switch between basic and advanced views for the "Wallets & Billing" and related views.
+- Enhancement: Added some additional information in the "Wallets & Billing" header.
+- Enhancement: Major speed improvements when drilling into transactions.
+- Enhancement: Completely overhauled virtual table overlays in the document designer / document verification view.
+- Enhancement: Microsoft Forms: in the HITL document verification / document designer view: for custom tables, cell information is returned for cells with and without extracted values. Cells without values do not contain any location info and thus do not appear in the document overlay. When deleting rows, cells without  location info were not flagged for deletion, only visible cells were flagged for deletion. These cells are now included when flagging row cells for deletion and will be deleted when saving your changes.
+- Enhancement: Added training options configuration for supported services (Currently only Microsoft Forms: Custom Invoices is supported). Training options can be set from a project's categories view by selecting a category and clicking on the "Training Options" command button.
+- Bug Fix: Fixed issue with DocumentView filters not loading correctly when navigating without tabs.
+- Other bug fixes and improvements
+
 ## AIForged Studio 1.5.2 (08-09-2023)
 ### Desktop
 - Added correct protocol activation for accepting group invites.
