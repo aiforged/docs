@@ -42,7 +42,7 @@ nav_order: 1
 - Improved startup load speed.
 - Other bug fixes and improvements
 
-- ## UIPath Activities 1.5.1366.1020 (27-09-2023)
+## UIPath Activities 1.5.1366.1020 (27-09-2023)
 
 - Added QA work item activities to the workflow category.
 - Updated AIForged SDK which introduced some additional parameters for some activities.
