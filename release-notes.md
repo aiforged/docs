@@ -6,6 +6,47 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.5.4 (06-10-2023)
+### Desktop
+- Enhancement: Improved the speed and overall stability of the document extraction export view.
+- Enhancement: Confidence color is now calculated on an improved "linear" scale.
+- Enhancement: Major improvements to Code Insight / Code Completion / Intellisense in the Custom Code editor. More enhancements to come.
+- Enhancement: Added optional duplicate key value check when importing values from CSV in the Custom Dataset editor.
+- Enhancement: User administration: User impersonation checks will now correctly use the impersonated user's Id to check permissions when switching / navigating between views.
+- Bug Fix: Fixed issue in the document designer / document verification view, where manipulating a table field marked for deletion would no longer delete that field.
+- Bug Fix: Deleted fields are no longer drawn in the verification controls.
+- Bug Fix: Fixed issue where deleted fields would sometimes still be drawn on the document overlay.
+- Bug Fix: Fixed issue that would cause the Studio to crash when filtering more than once in the Custom Dataset editor.
+- Bug Fix: Fixed an issue where total usage cost would not be correctly displayed in the document cost analysis view.
+- Bug Fix: Fixed an issue that would prevent a user from successfully linking an external login provider from the user profile view.
+- Bug Fix: Fixed an issue that would prevent the MFA QR Code from being scanned when dark theme is enabled.
+- Bug Fix: Fixed an issue that would prevent the MFA QR Code from being scanned using the Microsoft Authenticator App.
+- Bug Fix: Fixed grid line settings not being honoured when enabled in a user's profile.
+- Bug Fix: Fixed an issue where the Custom Dataset editor's new row visuals would not correctly update after clicking the accept row changes button.
+- Bug Fix: Fixed multiple other issues related to adding and committing new rows in the Custom Dataset editor.
+- Bug Fix: Fixed issue that would cause the Studio to freeze in the Custom Code editor when an enum's type could not be determined internally.
+- Bug Fix: Fixed multiple internal issues related to JSON interop deserialization in the Custom Code editor.
+- Bug Fix: Fixed SemanticZoom not correctly zooming to the selected item. This affected views and dialogs such as the Service Type Select dialog when selecting a service type to be added to a project.
+- Bug Fix: Fixed scrollbars not visible in the SemanticZoom control.
+- Bug Fix: Fixed stability and reliability of data persistence between views.
+- Bug Fix: Fixed an issue that would cause the "Actions..." button to not be enabled when selected a node in the Service Definitions view.
+- Bug Fix: Fixed an issue that would cause the whole tree to redraw in the Service Definitions view when a simple setting was changed.
+- Bug Fix: Fixed confusing visual feedback when labels are re-scaled to match the provider scale when saving custom labels in the Document Designer \ Document Verification view.
+- Bug Fix: Fixed an issue where the navigation breadcrumbs were difficult to click.
+- Bug Fix: Fixed an issue where adding / removing a child service from a service would not update visuals.
+- Bug Fix: Fixed multiple issues that would prevent a smooth UX when completing wizard steps using the next step button.
+- Bug Fix: Fixed an issue where the Dependency Service swap function would show the service type select dialog twice.
+- Bug Fix: Fixed an issue where the verification controls would not draw in the Document Designer / Document verification view if a table contained an invalid layout.
+- Bug Fix: Fixed an issue where the "Delete Checked" command button would not be enabled in the Workflow Grid View when selecting a work item.
+- Bug Fix: Fixed an internal exception that could occur when a user is automatically logged out when their session is expired. This would cause the user's profile image to not be cleared.
+- Improved startup load speed.
+- Other bug fixes and improvements
+
+- ## UIPath Activities 1.5.1366.1020 (27-09-2023)
+
+- Added QA work item activities to the workflow category.
+- Updated AIForged SDK which introduced some additional parameters for some activities.
+
 ## AIForged Studio 1.5.3 (15-09-2023)
 ### Desktop
 - New Feature: Added new basic drilldown view to "Wallets & Billing" drilldown views with more relevant information at a glance.
