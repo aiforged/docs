@@ -6,6 +6,12 @@ nav_order: 1
 
 # Release Notes
 
+## UIPath Activities 1.5.1380.942 (12-10-2023)
+- Added transfer and escalate work item activities to allow a UIPath process to transfer / escalate a work item according to a specific method.
+- Added new activity to directly update a document's status given its Id and new status.
+- Added new activities to allow a UIPath process to create logs directly in the AIForged Logging Subsystem. Log messages can also be retrieved based on specified criteria.
+- Updated activities to be inline with the latest AIForged API changes.
+
 ## AIForged Studio 1.5.4 (06-10-2023)
 ### Desktop
 - Enhancement: Improved the speed and overall stability of the document extraction export view.
