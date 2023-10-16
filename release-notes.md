@@ -6,6 +6,26 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.5.5 (13-10-2023)
+### Desktop
+- Enhancement: In the document designer / document verification view: The overlay and control filters are now saved per service type whenever a filter is changed. This means that the filters are now remembered when navigating between documents and between wizards. A change to how user preferences are stored may result in user preferences being reset.
+- Enhancement: Added improved visual feedback when a service type has been disabled and is no longer available on the AIForged platform.
+- Enhancement: The "Invert Selection" button in the documents view (and other views) will now correctly only select and deselect visible data.
+- Enhancement: Added "Resend Invite" command to the user group user administration view in the "Actions" menu. Resending an invite is only allowed for user links that are still in the "Requested" state.
+- Enhancement: Moved the filter controls out of the "Filters and Summary" expander in the documents view. This is an attempt to make applied filters more apparent to a user.
+- Enhancement: Users can now simply click the "Train Service" button in the training step of a classification service's wizard to train all documents. Instead of having to select all document before clicking on "Train Service".
+- Enhancement: The constants generated in the custom code view are now correctly pathed based on service nesting, etc.
+- Bug Fix: Fixed an issue in the document designer / document verification view that could cause the Studio to freeze when overlay brushes are updated.
+- Bug Fix: Fixed an issue where field overlays could be incorrectly offset when a document page is a non-standard size.
+- Bug Fix: Fixed an issue where a user would be required to select a category in the service wizard of a document clustering service.
+- Bug Fix: Fixed an issue in the custom label setup popup that would return duplicate results when searching.
+- Bug Fix: Fixed an issue where a page overlay would not be drawn when scrolling in a zoomed in document designer / document verification view with a non-standard size document \ page.
+- Bug Fix: Fixed multiple issues with the document view's summary cards.
+- Bug Fix: Fixed a potential issue that would cause the Process / Training log view to cause the Studio to freeze.
+- Bug Fix: Fixed a caching issue where column filters would not be cleared when navigating between views of the same type.
+- Updated to the latest Windows App SDK release (1.4.2)
+- Other bug fixes and performance updates.
+
 ## UIPath Activities 1.5.1380.1051 (12-10-2023)
 - Added transfer and escalate work item activities to allow a UIPath process to transfer / escalate a work item according to a specific method.
 - Added new activity to directly update a document's status given its Id and new status.
