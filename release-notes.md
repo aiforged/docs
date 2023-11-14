@@ -6,6 +6,15 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged (14-11-2023)
+### Platform
+- Bug Fix: Improve credit checks when pdf document password protected
+- Bug Fix: MS Neural url selection
+- Enhancement: Improve rules and custom code execution to solve memory leak in Roslyn
+- Bug Fix: Allow users with Verify shred permissions to View parameters
+- New Feature: allow custom code to check if document is in training box
+- Bug Fix: Fix scaling issue with PDF to Image
+
 ## AIForged Studio 1.5.5 (13-10-2023)
 ### Desktop
 - Enhancement: In the document designer / document verification view: The overlay and control filters are now saved per service type whenever a filter is changed. This means that the filters are now remembered when navigating between documents and between wizards. A change to how user preferences are stored may result in user preferences being reset.
