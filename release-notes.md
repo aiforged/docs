@@ -6,6 +6,69 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.6.0 (18-12-2023)
+### Desktop
+
+**Basic Studio**
+-   New: The new Basic Studio layout refines the studio layout and removes or hides controls that are not utilised by general implementers.
+-   Enhancement: Many new views have been introduced and existing views have been enhanced to improve the overall user experience when configuring projects, services, rules and more.
+-   New: Users may select between the Basic Studio and Advanced Studio when logging in for the first time after updating, or by selecting the desired studio layout in the user's profile configuration.
+- 	New: Added first-launch studio type selection.
+- 	New: Implemented simple configuration view for Service Settings.
+- 	New: Implemented simple configuration view for result type parameter definitions.
+- 	New: Implemented blade style view for structured document results.
+- 	New: Implemented Document Hierarchy Flow View to visualise the flow of documents.
+
+**CategoriesSelectionControl**
+- Enhancement: Added function to clear all selections
+
+**Custom Datasets**
+- 	New: Introduced new custom dataset editor for the Basic Studio, with streamlined functionality and straightforward useability.
+- 	New: The new custom dataset editor will select the best available editor for each cell based on the cell's value type.
+- 	New: The new custom dataset editor also allows for code editing and specialised functionality when combined with qualifying datasets such as the ChatGPT Prompt Matrix
+
+**Document Verification View**
+- 	Enhancement: Improved ordering of verification controls
+- 	Bug Fix: Fixed adorner appearance not updating when record training status changed
+- 	Bug Fix: Fixed DocumentsVerificationView canvas incorrectly scrolling when a field has no block info
+- 	Bug Fix: Fixed fill column cells issue
+- 	Bug Fix: Fixed issue with not loading the correct viewer based on the document content type
+
+**Documents View**
+-	Enhancement:Uploading documents will no longer request the user to select a document class if none exist
+
+**ParamDefView**
+-	New: Added create PD functionality to ParamDefView
+
+**Paging**
+-	New: Added page selection dropdown to paging control
+
+**Service Wizard**
+-	New: Added unsaved changes detection for Datasets
+-	Enhancement: Improved unsaved changes detection overall
+-	Enhancement: Improved how views are loaded when a wizard is selected
+
+**User Profile**
+-	Enhancement: Reworked the general user profile settings view
+
+**Transactions**
+-	Bug Fix: Fixed issue with opening training documents from a document reference link
+
+**General**
+-	Enhancement: Migrated to dotnet 8
+-	New: Added column chooser to AIForged datagrids.
+-	New: Added chosen column preferences to user preferences. Chosen columns are saved per view per user.
+-	Enhancement: Implemented unsaved changes check when navigating and closing tabs.
+-	Enhancement: Improved search control's deep pathing search capability
+-	Enhancement: Updated Monaco editor and added some missing properties / updated changed properties
+-	Bug Fix: Fixed issue with DataSetEditor not completely disabling editing when a parameter definition is malformed
+-	Bug Fix: Fixed issue with Service name editor not hiding when changes are saved
+-	Bug Fix: Fixed issue where adding or removing a service to / from a project would no longer update visuals
+- Enhancement: Various performance enhancing changes for DataType controls.
+-	Enhancement: Improved speed of Code Editor and RichTextEditor initial load.
+-	Enhancement: Added group name to Project Control in Projects View
+-	Many other bug fixes and enhancements
+
 ## AIForged (14-11-2023)
 ### Platform
 - Bug Fix: Improve credit checks when pdf document password protected
