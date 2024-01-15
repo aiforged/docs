@@ -6,6 +6,144 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged (14-11-2023)
+### Platform
+- Bug Fix: Improve credit checks when pdf document password protected
+- Bug Fix: MS Neural url selection
+- Enhancement: Improve rules and custom code execution to solve memory leak in Roslyn
+- Bug Fix: Allow users with Verify shred permissions to View parameters
+- New Feature: allow custom code to check if document is in training box
+- Bug Fix: Fix scaling issue with PDF to Image
+
+## AIForged Studio 1.5.5 (13-10-2023)
+### Desktop
+- Enhancement: In the document designer / document verification view: The overlay and control filters are now saved per service type whenever a filter is changed. This means that the filters are now remembered when navigating between documents and between wizards. A change to how user preferences are stored may result in user preferences being reset.
+- Enhancement: Added improved visual feedback when a service type has been disabled and is no longer available on the AIForged platform.
+- Enhancement: The "Invert Selection" button in the documents view (and other views) will now correctly only select and deselect visible data.
+- Enhancement: Added "Resend Invite" command to the user group user administration view in the "Actions" menu. Resending an invite is only allowed for user links that are still in the "Requested" state.
+- Enhancement: Moved the filter controls out of the "Filters and Summary" expander in the documents view. This is an attempt to make applied filters more apparent to a user.
+- Enhancement: Users can now simply click the "Train Service" button in the training step of a classification service's wizard to train all documents. Instead of having to select all document before clicking on "Train Service".
+- Enhancement: The constants generated in the custom code view are now correctly pathed based on service nesting, etc.
+- Bug Fix: Fixed an issue in the document designer / document verification view that could cause the Studio to freeze when overlay brushes are updated.
+- Bug Fix: Fixed an issue where field overlays could be incorrectly offset when a document page is a non-standard size.
+- Bug Fix: Fixed an issue where a user would be required to select a category in the service wizard of a document clustering service.
+- Bug Fix: Fixed an issue in the custom label setup popup that would return duplicate results when searching.
+- Bug Fix: Fixed an issue where a page overlay would not be drawn when scrolling in a zoomed in document designer / document verification view with a non-standard size document \ page.
+- Bug Fix: Fixed multiple issues with the document view's summary cards.
+- Bug Fix: Fixed a potential issue that would cause the Process / Training log view to cause the Studio to freeze.
+- Bug Fix: Fixed a caching issue where column filters would not be cleared when navigating between views of the same type.
+- Updated to the latest Windows App SDK release (1.4.2)
+- Other bug fixes and performance updates.
+
+## UIPath Activities 1.5.1380.1051 (12-10-2023)
+- Added transfer and escalate work item activities to allow a UIPath process to transfer / escalate a work item according to a specific method.
+- Added new activity to directly update a document's status given its Id and new status.
+- Added new activities to allow a UIPath process to create logs directly in the AIForged Logging Subsystem. Log messages can also be retrieved based on specified criteria.
+- Updated activities to be inline with the latest AIForged API changes.
+
+## AIForged Studio 1.5.4 (06-10-2023)
+### Desktop
+- Enhancement: Improved the speed and overall stability of the document extraction export view.
+- Enhancement: Confidence color is now calculated on an improved "linear" scale.
+- Enhancement: Major improvements to Code Insight / Code Completion / Intellisense in the Custom Code editor. More enhancements to come.
+- Enhancement: Added optional duplicate key value check when importing values from CSV in the Custom Dataset editor.
+- Enhancement: User administration: User impersonation checks will now correctly use the impersonated user's Id to check permissions when switching / navigating between views.
+- Bug Fix: Fixed issue in the document designer / document verification view, where manipulating a table field marked for deletion would no longer delete that field.
+- Bug Fix: Deleted fields are no longer drawn in the verification controls.
+- Bug Fix: Fixed issue where deleted fields would sometimes still be drawn on the document overlay.
+- Bug Fix: Fixed issue that would cause the Studio to crash when filtering more than once in the Custom Dataset editor.
+- Bug Fix: Fixed an issue where total usage cost would not be correctly displayed in the document cost analysis view.
+- Bug Fix: Fixed an issue that would prevent a user from successfully linking an external login provider from the user profile view.
+- Bug Fix: Fixed an issue that would prevent the MFA QR Code from being scanned when dark theme is enabled.
+- Bug Fix: Fixed an issue that would prevent the MFA QR Code from being scanned using the Microsoft Authenticator App.
+- Bug Fix: Fixed grid line settings not being honoured when enabled in a user's profile.
+- Bug Fix: Fixed an issue where the Custom Dataset editor's new row visuals would not correctly update after clicking the accept row changes button.
+- Bug Fix: Fixed multiple other issues related to adding and committing new rows in the Custom Dataset editor.
+- Bug Fix: Fixed issue that would cause the Studio to freeze in the Custom Code editor when an enum's type could not be determined internally.
+- Bug Fix: Fixed multiple internal issues related to JSON interop deserialization in the Custom Code editor.
+- Bug Fix: Fixed SemanticZoom not correctly zooming to the selected item. This affected views and dialogs such as the Service Type Select dialog when selecting a service type to be added to a project.
+- Bug Fix: Fixed scrollbars not visible in the SemanticZoom control.
+- Bug Fix: Fixed stability and reliability of data persistence between views.
+- Bug Fix: Fixed an issue that would cause the "Actions..." button to not be enabled when selected a node in the Service Definitions view.
+- Bug Fix: Fixed an issue that would cause the whole tree to redraw in the Service Definitions view when a simple setting was changed.
+- Bug Fix: Fixed confusing visual feedback when labels are re-scaled to match the provider scale when saving custom labels in the Document Designer \ Document Verification view.
+- Bug Fix: Fixed an issue where the navigation breadcrumbs were difficult to click.
+- Bug Fix: Fixed an issue where adding / removing a child service from a service would not update visuals.
+- Bug Fix: Fixed multiple issues that would prevent a smooth UX when completing wizard steps using the next step button.
+- Bug Fix: Fixed an issue where the Dependency Service swap function would show the service type select dialog twice.
+- Bug Fix: Fixed an issue where the verification controls would not draw in the Document Designer / Document verification view if a table contained an invalid layout.
+- Bug Fix: Fixed an issue where the "Delete Checked" command button would not be enabled in the Workflow Grid View when selecting a work item.
+- Bug Fix: Fixed an internal exception that could occur when a user is automatically logged out when their session is expired. This would cause the user's profile image to not be cleared.
+- Improved startup load speed.
+- Other bug fixes and improvements
+
+## UIPath Activities 1.5.1366.1020 (27-09-2023)
+
+- Added QA work item activities to the workflow category.
+- Updated AIForged SDK which introduced some additional parameters for some activities.
+
+## AIForged Studio 1.5.3 (15-09-2023)
+### Desktop
+- New Feature: Added new basic drilldown view to "Wallets & Billing" drilldown views with more relevant information at a glance.
+- New Feature: Added a toggle to the user profile to switch between basic and advanced views for the "Wallets & Billing" and related views.
+- Enhancement: Added some additional information in the "Wallets & Billing" header.
+- Enhancement: Major speed improvements when drilling into transactions.
+- Enhancement: Completely overhauled virtual table overlays in the document designer / document verification view.
+- Enhancement: Microsoft Forms: in the HITL document verification / document designer view: for custom tables, cell information is returned for cells with and without extracted values. Cells without values do not contain any location info and thus do not appear in the document overlay. When deleting rows, cells without  location info were not flagged for deletion, only visible cells were flagged for deletion. These cells are now included when flagging row cells for deletion and will be deleted when saving your changes.
+- Enhancement: Added additional training options configuration for supported services (Currently only Microsoft Forms: Custom Invoices is supported). Training options can be set from a project's categories view by selecting a category and clicking on the "Training Options" command button.
+- Bug Fix: Fixed issue with DocumentView filters not loading correctly when navigating without tabs.
+- Other bug fixes and improvements
+
+## AIForged Studio 1.5.2 (08-09-2023)
+### Desktop
+- Added correct protocol activation for accepting group invites.
+- Added new view to allow users to accept group invites.
+- Added training options configuration to the project categories view. (Currently this is only utilised by Microsoft Forms with Custom Invoices).
+
+## AIForged Studio 1.5.0 (01-09-2023)
+### Desktop
+- Re-wrote app initialization to take advantage of newer WinUI APIs and to ensure alignment with WinUI best practices.
+- Increased available window real estate by refactoring the app layout, including breadcrumb positioning, etc.
+- Implemented persisted data for certain project data. This means that for example: if a project is open over multiple tabs, data will be synchronized across the tabs.
+- Fixed issue where definition value updates were not immediately visible in the definitions tree grid.
+- Fixed issue with verification values not being saved when verification controls are hidden.
+- Fixed issue with Parameter Definition Options not serializing correctly.
+- Fixed issue with missing user preferences on new user accounts
+- UX improvements to the Service Wizard.
+- Added additional export options to the custom dataset editor.
+- UX improvements to the custom dataset editor.
+- Custom labelling / HITL table manipulation bug fixes.
+- Custom labelling / HITL canvas sizing issues fixed for documents with small dimensions
+- Implemented optional tab-free navigation. This can be enabled by disabling the "Use Default Tab Navigation" setting in General User Profile settings.
+- Fixed issue with card count in HITL Kanban View.
+- Implemented adding multiple tables using the same Parameter Definition on the same page.
+- Restricted the admin roles available to a user administrator when editing / creating a user's profile.
+- Fixed issues with switching the current application theme.
+- Added double click add and remove shortcuts to the Table Designer.
+- Fixed issue with teaching tips opening despite being globally disabled.
+- Implemented "Quick Dependency Switch" for dependency services.
+- Added additional progress feedback when saving editor changes.
+- Fixed issues with copying and pasting tables from the clipboard during custom labelling / HITL verification.
+- Implemented generic dataset wizard step for new generic dataset wizard type.
+- Improved row selection styling in datagrids with action buttons.
+- Implemented new "Wallets & Billing" view that allows a user to get an immediate sense of available credits, total usage and credit deposits for their account/s. Users can have access to multiple wallets and can switch between these wallets to view their statistics.
+- Overhaul transactions views which now forms part of "Wallets & Billing".
+- Added a refresh function to the document designer's category documents view.
+- Complete overhaul over the label value popup control to only show relevant information and provide an improved UX.
+- The verification value editor now works with multi-line text.
+- Added many new keyboard shortcuts to the document designer and some other views. Keyboard shortcuts are displayed in tooltips / menu items where available.
+- In the document verification view / HITL: The Verification -> Publish function now correctly honours publish related settings configured in a service.
+- Improved switching between themes.
+- Many other bug fixes and performance improvements.
+  
+## AIForged Studio 1.4.6 (03-07-2023)
+### Desktop
+- Further refinements to the transaction reporting views
+- Added group filter to transactions view
+- Fixed issue with refresh login function
+- New user accounts created from the group management view will now be auto-activated
+- Other bug fixes / improvements
+
 ## AIForged Studio 1.4.4 (23-06-2023)
 ### Desktop
 - Added orphaned transactions to transactions details view.
