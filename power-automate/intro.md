@@ -1,3 +1,9 @@
+---
+title: Microsoft Power Automate
+nav_order: 2
+---
+
+# Microsoft Power Automate
 
 AIForged is a cloud based Intelligent Document Processing solution for solving complex document extraction problems. 
 The AIForged platform seamlessly integrates multiple services into a single model from industry-leading AI services like Microsoft, Google, Amazon, ABBYY, giving you the ability to use these services in tandem for optimum results.

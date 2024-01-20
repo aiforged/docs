@@ -1,3 +1,10 @@
+---
+title: UsageType
+parent: Enums
+grand_parent: Custom Code BaseModule
+nav_order: 7
+---
+
 # UsageType
 
 ## Description

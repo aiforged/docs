@@ -1,3 +1,10 @@
+---
+title: Enums
+parent: Custom Code BaseModule
+grand_parent: Custom Service Code
+nav_order: 1
+---
+
 # Enums
 
 The following **Enum** definitions are defined in **AIForged**:

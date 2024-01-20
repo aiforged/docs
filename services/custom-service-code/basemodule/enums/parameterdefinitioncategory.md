@@ -1,3 +1,10 @@
+---
+title: ParameterDefinitionCategory
+parent: Enums
+grand_parent: Custom Code BaseModule
+nav_order: 5
+---
+
 # ParameterDefinitionCategory
 
 ## Description

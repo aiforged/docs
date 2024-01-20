@@ -1,5 +1,5 @@
 ---
-title: Custom Code - Data Types
+title: Custom Code Data Types
 parent: Custom Service Code
 grand_parent: Understanding Services
 nav_order: 2

@@ -1,3 +1,10 @@
+---
+title: DictionaryLookupMethod
+parent: Enums
+grand_parent: Custom Code BaseModule
+nav_order: 1
+---
+
 # DictionaryLookupMethod
 
 ## Description
