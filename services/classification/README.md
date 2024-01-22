@@ -1,8 +1,4 @@
 ---
-title: Classification
-parent: Understanding Services
-has_children: true
-nav_order: 1
 description: Document and File Classification by way of an AI Model.
 ---
 
@@ -13,4 +9,3 @@ description: Document and File Classification by way of an AI Model.
 This typically requires the user to provide pre-labelled / categorized documents or files to the **AI Model** in order to train it.
 
 AIForged currently has the following **Classification Service Types** available:
-

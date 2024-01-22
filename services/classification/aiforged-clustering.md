@@ -1,10 +1,3 @@
----
-title: AIForged Clustering
-parent: Classification
-grand_parent: Understanding Services
-nav_order: 3
----
-
 # AIForged Clustering
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
@@ -20,14 +13,14 @@ The **AIForged Clustering** service is an in-house developed service that utiliz
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (1).png>)
+   ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **AIForged Clustering Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (7) (1) (4).png" alt=""><figcaption></figcaption></figure>
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on. The **AIForged Clustering Service** will add additional categories as they are clustered.
@@ -51,8 +44,8 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 | Setting                 | Type                                                                    | Required Type | Description                                                                                                                  |
 | ----------------------- | ----------------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                          | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                         | Hidden        | Processing batch size.                                                                                                       |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)                         | Optional      | Days before documents get deleted.                                                                                           |
+| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)                          | Hidden        | Processing batch size.                                                                                                       |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                          | Optional      | Document status used to denote that a document has been processed.                                                           |
 | Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (3) (6).png>)                 | Hidden        | Enable or disable the service.                                                                                               |
 | ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (3) (5).png>)                 |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |

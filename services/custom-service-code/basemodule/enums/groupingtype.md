@@ -1,10 +1,3 @@
----
-title: GroupingType
-parent: Enums
-grand_parent: Custom Code BaseModule
-nav_order: 4
----
-
 # GroupingType
 
 ## Description
@@ -14,4 +7,3 @@ The **GroupingType** enum specifies the group that a **Parameter Definition** be
 ## Members
 
 <table><thead><tr><th width="178.33333333333331">Name</th><th width="87" data-type="number">Value</th><th>Description</th></tr></thead><tbody><tr><td>None</td><td>0</td><td>No grouping specified.</td></tr><tr><td>Page</td><td>1</td><td>The parameter definition relates to a Page type. This definition is the parent for page element definitions, like Paragraphs, Tables, Anchors, Fields, etc.</td></tr><tr><td>Cluster</td><td>2</td><td>The parameter definition relates to a Cluster type.</td></tr><tr><td>Table</td><td>3</td><td>The parameter definition relates to a Table type. This definition is the parent for all Row and Column definitions.</td></tr><tr><td>Row</td><td>4</td><td>The parameter definition relates to a Row type.</td></tr><tr><td>Column</td><td>5</td><td>The parameter definition relates to a Column type.</td></tr><tr><td>Paragraph</td><td>7</td><td>The parameter definition relates to a Paragraph type. This definition is the parent of Line definitions in the document.</td></tr><tr><td>Line</td><td>8</td><td>The parameter definition relates to a Line type. This definition is the parent of Word definitions in the document.</td></tr><tr><td>Word</td><td>9</td><td>The parameter definition relates to a Word type.</td></tr><tr><td>Array</td><td>10</td><td>The parameter definition relates to an Array type. This definition may be used with list elements that are not Custom Tables.</td></tr><tr><td>Form</td><td>11</td><td>The parameter definition relates to a Form type. This parameter definition is the parent for all page definitions in the document.</td></tr><tr><td>Field</td><td>12</td><td>The parameter definition relates to a Field type. This definition is typically used for any Custom Labels on a document.</td></tr><tr><td>Anchor</td><td>13</td><td>The parameter definition relates to an Anchor type. This definition is used internally by AIForged to anchor Fields/Custom Labels to a certain location in the document.</td></tr><tr><td>Unknown</td><td>99</td><td>Unkown groupng type.</td></tr></tbody></table>
-

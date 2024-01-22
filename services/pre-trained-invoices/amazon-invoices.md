@@ -1,10 +1,3 @@
----
-title: Amazon Invoices
-parent: Pretrained Invoices
-grand_parent: Understanding Services
-nav_order: 1
----
-
 # Amazon Invoice Extraction
 
 <figure><img src="../../.gitbook/assets/image (44) (3).png" alt=""><figcaption></figcaption></figure>
@@ -20,14 +13,14 @@ The ​**Amazon Invoice Extraction Service** makes use of pre-trained Invoice mo
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (1).png>)
+   ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **Amazon Invoice Extraction Service** from the available **Service Types.**
 
     <figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
@@ -40,7 +33,7 @@ The ​**Amazon Invoice Extraction Service** makes use of pre-trained Invoice mo
 
 The **Amazon Invoice Extraction** can be configured by the user as a flexible solution. The following **Settings** are available:​
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>EnableTableDetection</td><td><img src="../../.gitbook/assets/image (15) (1) (3).png" alt=""></td><td>Optional</td><td>Specifies whether the service should save any tables detected by the MS Form Recognizer API call.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr><tr><td>WorkflowAlgorithm</td><td><img src="../../.gitbook/assets/image (2) (7).png" alt=""></td><td>Required</td><td>Algorithm used for assigning users for verification for workflow item.</td></tr><tr><td>WorkflowCategory</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Trigger Workflow for all documents in this category (category ID).</td></tr><tr><td>WorkflowDocument</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (6).png" alt=""></td><td>Required</td><td>Enable document workflow for this service.</td></tr><tr><td>WorkflowShred</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (4).png" alt=""></td><td>Required</td><td>Enable document shred workflow for this service.</td></tr><tr><td>WorkflowGracePeriod</td><td><img src="../../.gitbook/assets/image (13) (6).png" alt=""></td><td>Required</td><td>Grace period before a workflow item gets escalated.</td></tr></tbody></table>
+<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>EnableTableDetection</td><td><img src="../../.gitbook/assets/image (15) (5) (1).png" alt=""></td><td>Optional</td><td>Specifies whether the service should save any tables detected by the MS Form Recognizer API call.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr><tr><td>WorkflowAlgorithm</td><td><img src="../../.gitbook/assets/image (2) (7).png" alt=""></td><td>Required</td><td>Algorithm used for assigning users for verification for workflow item.</td></tr><tr><td>WorkflowCategory</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Optional</td><td>Trigger Workflow for all documents in this category (category ID).</td></tr><tr><td>WorkflowDocument</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (6).png" alt=""></td><td>Required</td><td>Enable document workflow for this service.</td></tr><tr><td>WorkflowShred</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (4).png" alt=""></td><td>Required</td><td>Enable document shred workflow for this service.</td></tr><tr><td>WorkflowGracePeriod</td><td><img src="../../.gitbook/assets/image (13) (6).png" alt=""></td><td>Required</td><td>Grace period before a workflow item gets escalated.</td></tr></tbody></table>
 
 ## Add and Process Documents <a href="#add-and-process-documents" id="add-and-process-documents"></a>
 
@@ -56,4 +49,3 @@ It is recommended to only process a few documents at a time, especially if it is
 
 1. In the **Amazon Invoice Extraction Service** click on **Outbox** button.
 2. You can view the **Processing** results by opening a processed doc for verification.
-

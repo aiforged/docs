@@ -1,10 +1,3 @@
----
-title: Upload Document
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 23
----
-
 # --Upload Document
 
 ## About

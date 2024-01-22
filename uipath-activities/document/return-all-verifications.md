@@ -1,10 +1,3 @@
----
-title: Return All Verifications
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 19
----
-
 # Return All Verifications
 
 ## About
@@ -37,8 +30,8 @@ Rerun All Verifications
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (93) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (102) (1).png" alt=""><figcaption></figcaption></figure>

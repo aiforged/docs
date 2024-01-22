@@ -1,10 +1,3 @@
----
-title: Get Work Item Count
-parent: WorkItem
-grand_parent: UIPath Activities
-nav_order: 2
----
-
 # Get Work Item Count
 
 ## About
@@ -47,8 +40,8 @@ Get Work Item Count
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>

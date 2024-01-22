@@ -1,9 +1,3 @@
----
-title: Document Categories
-parent: Documents
-nav_order: 1
----
-
 # Document Categories
 
 Document categories defines the **Type** of document that has been uploaded. Projects Document categories is shared to all its services.
@@ -12,21 +6,21 @@ Document categories defines the **Type** of document that has been uploaded. Pro
 
 1.  From the **Project** page click on Document Categories.
 
-    <figure><img src="../.gitbook/assets/image (10) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 2.  Click on “_Click here to add a new row_” to add a new **Document Category**.
 
-    <figure><img src="../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
 3. Fill in your new row and click on another row in your grid to allow you to add more rows (Note the Id Field is Inserted Automatically)
 4.  After adding All your **Document Categories** click on **Save Changes** in the App Bar.
 
-    <figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
 
 ## How to Delete a Documnt Category
 
 1.  From the **Project** page click on **Document Categories**.
 
-    <figure><img src="../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 2.  Click on the **Trash** icon to remove the document category from the Grid.
 
-    <figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (74) (1).png" alt=""><figcaption></figcaption></figure>
 3. After removing the **Document Categories** click on **Save Changes** in the App Bar.

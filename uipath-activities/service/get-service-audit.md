@@ -1,10 +1,3 @@
----
-title: Get Service Audit
-parent: Service
-grand_parent: UIPath Activities
-nav_order: 1
----
-
 # Get Service Audit
 
 ## About
@@ -37,8 +30,8 @@ Get Service Audit
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (50) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (103) (1).png" alt=""><figcaption></figcaption></figure>

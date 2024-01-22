@@ -1,10 +1,3 @@
----
-title: Get Project By ID
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 3
----
-
 # Get Project By ID
 
 ## About
@@ -29,8 +22,8 @@ Get Project By Id
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (108) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (6).png" alt=""><figcaption></figcaption></figure>

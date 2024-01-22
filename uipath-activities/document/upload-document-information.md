@@ -1,10 +1,3 @@
----
-title: Upload Document Information
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 22
----
-
 # Upload document Information
 
 ## About
@@ -29,8 +22,8 @@ Update Document Information
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49) (2).png" alt=""><figcaption></figcaption></figure>

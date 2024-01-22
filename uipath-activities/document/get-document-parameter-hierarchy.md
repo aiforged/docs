@@ -1,10 +1,3 @@
----
-title: Get Document Parameter Hierarchy
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 9
----
-
 # Get Document Parameter Hierarchy
 
 ## About
@@ -35,8 +28,8 @@ Get Document Parameter Hierarchy
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (105) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (77) (1).png" alt=""><figcaption></figcaption></figure>

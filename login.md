@@ -1,13 +1,8 @@
----
-title: Login
-nav_order: 5
----
-
 # Login
 
 ## AIForged Account
 
-<figure><img src=".gitbook/assets/image (11) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
 * Login with your registered AIForged account.
 * Only a **Username** and a **Password** are required.
@@ -15,7 +10,7 @@ nav_order: 5
 
 ## External Account
 
-<figure><img src=".gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
 * An **External Account**, such as a Social Media account, can be used to login to AIForged.
 * If you have not previously logged in or registered with AIForged, logging in via an **External Account** will register a new AIForged account using the publicly available details from your **External Account**.

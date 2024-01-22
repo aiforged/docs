@@ -1,10 +1,3 @@
----
-title: Copy Document
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 1
----
-
 # Copy Document
 
 ## About
@@ -41,8 +34,8 @@ Copy Document
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (111) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (2).png" alt=""><figcaption></figcaption></figure>

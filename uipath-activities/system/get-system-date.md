@@ -1,10 +1,3 @@
----
-title: Get System Date
-parent: System
-grand_parent: UIPath Activities
-nav_order: 3
----
-
 # Get System Date
 
 ## About

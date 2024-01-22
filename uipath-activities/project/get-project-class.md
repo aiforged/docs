@@ -1,13 +1,4 @@
----
-title: Get Project Class
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 9
----
-
 # \*Get Project Class
-
-
 
 ## About
 
@@ -25,7 +16,7 @@ Get Project Class
 
 **ProjectId** - This is the **Id** that was given to project when the project was created in AIForged. You can view the project Id in AIForged by hovering you mouse anywhere over the project name.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption><p>View of the Project in AIForged.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41) (1).png" alt=""><figcaption><p>View of the Project in AIForged.</p></figcaption></figure>
 
 ### Misc
 
@@ -37,8 +28,8 @@ Get Project Class
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (78) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46) (2).png" alt=""><figcaption></figcaption></figure>

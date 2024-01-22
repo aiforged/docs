@@ -1,15 +1,8 @@
----
-title: ParameterDefinitionCategory
-parent: Enums
-grand_parent: Custom Code BaseModule
-nav_order: 5
----
-
 # ParameterDefinitionCategory
 
 ## Description
 
-The **ParameterDefinitionCategory** enum specifies the category that a **Parameter Definition** belongs to. These can range from actual **Services**, **Field Definitions**, or **Containers**.&#x20;
+The **ParameterDefinitionCategory** enum specifies the category that a **Parameter Definition** belongs to. These can range from actual **Services**, **Field Definitions**, or **Containers**.
 
 ## Members
 

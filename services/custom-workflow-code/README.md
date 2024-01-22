@@ -1,14 +1,6 @@
----
-layout: default
-title: Custom Workflow Code
-parent: Understanding Services
-has_children: true
-nav_order: 5
----
-
 # Custom Workflow Code
 
-#### Global variables in custom workflow code
+## Global variables in custom workflow code
 
 ```csharp
     TModule module { get; set; }
@@ -21,7 +13,7 @@ nav_order: 5
     List<IDocument> docs { get; set; }
 ```
 
-#### The Workflow module is as follow.  It derives from BaseModule
+## The Workflow module is as follows. It derives from BaseModule
 
 ```csharp
 public interface IWorkFlowModule : IVerificationModule, IBaseModule
@@ -38,5 +30,5 @@ public interface IWorkFlowModule : IVerificationModule, IBaseModule
 }
 ```
 
-For more see the information on the [BaseModule](../../custom-code/base-module.md)
+For more see the information on the [BaseModule](../../custom-code/base-module.md).
 

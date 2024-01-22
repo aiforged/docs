@@ -1,10 +1,3 @@
----
-title: Get Document Data
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 7
----
-
 # Get Document Data
 
 ## About
@@ -41,8 +34,8 @@ Get Document Data
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (106) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (6) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (8).png" alt=""><figcaption></figcaption></figure>

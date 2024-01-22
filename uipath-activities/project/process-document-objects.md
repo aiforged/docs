@@ -1,10 +1,3 @@
----
-title: Process Document Objects
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 12
----
-
 # Process Document Objects
 
 ## About
@@ -33,7 +26,7 @@ nav_order: 12
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (80) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 

@@ -1,9 +1,3 @@
----
-title: Initialize
-parent: UIPath Activities
-nav_order: 1
----
-
 # Initialize
 
 ## About
@@ -52,7 +46,7 @@ Initialize
 
 ### Activity View
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 

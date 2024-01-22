@@ -1,15 +1,8 @@
----
-title: Spell Checking
-parent: String
-grand_parent: Rules Engine
-nav_order: 2
----
-
 # Spell Checking
 
 The **Spell Checking** mode can be selected by clicking on **Mode** dropdown list.
 
-<figure><img src="../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 Two **Spell Checking** modes are available:
 

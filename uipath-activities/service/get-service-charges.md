@@ -1,10 +1,3 @@
----
-title: Get Service Charges
-parent: Service
-grand_parent: UIPath Activities
-nav_order: 2
----
-
 # Get Service Charges
 
 ## About
@@ -29,8 +22,8 @@ Get Service Charges
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (113) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (19) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (4).png" alt=""><figcaption></figcaption></figure>

@@ -1,10 +1,3 @@
----
-title: Get Extraction Results
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 13
----
-
 # Get Extraction Results
 
 ## About
@@ -29,8 +22,8 @@ Get Extraction Results
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (97) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>

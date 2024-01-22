@@ -1,10 +1,3 @@
----
-title: Get Document Parameters
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 10
----
-
 # Get Document Parameters
 
 ## About
@@ -37,8 +30,8 @@ Get Document Parameters
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (14) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1).png" alt=""><figcaption></figcaption></figure>

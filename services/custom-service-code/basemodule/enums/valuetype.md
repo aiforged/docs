@@ -1,15 +1,8 @@
----
-title: ValueType
-parent: Enums
-grand_parent: Custom Code BaseModule
-nav_order: 8
----
-
 # ValueType
 
 ## Description
 
-The **ValueType** enum specifies the data type of the value that is expected for the **Parameter** defined by the **Parameter Definition**. The **ValueType** allows the **Rules Engine** to run the correct ruleset when verifying the results of an operation.&#x20;
+The **ValueType** enum specifies the data type of the value that is expected for the **Parameter** defined by the **Parameter Definition**. The **ValueType** allows the **Rules Engine** to run the correct ruleset when verifying the results of an operation.
 
 Each **ValueType** has a pre-defined set of rules that can be configured before, during, or after the training of a service.
 

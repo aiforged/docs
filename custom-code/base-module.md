@@ -1,10 +1,3 @@
----
-layout: default
-title: Currency
-parent: Custom Code
-nav_order: 1
----
-
 # Base Module
 
 The Base Service module is defined as follows:

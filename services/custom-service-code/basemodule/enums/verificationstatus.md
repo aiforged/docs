@@ -1,10 +1,3 @@
----
-title: VerificationStatus
-parent: Enums
-grand_parent: Custom Code BaseModule
-nav_order: 9
----
-
 # VerificationStatus
 
 ## Description

@@ -1,10 +1,3 @@
----
-title: Custom Code Data Types
-parent: Custom Service Code
-grand_parent: Understanding Services
-nav_order: 2
----
-
 # IBaseModule Interface Data Types
 
 The **IBaseModule** interface exposes object data types that can be used in the **Custom Service Code**. The object data types are shown in the following table.

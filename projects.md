@@ -1,6 +1,4 @@
 ---
-title: Projects
-nav_order: 7
 description: >-
   The Projects page displays projects created by you, or that have been shared
   with you, and allows you to create a new project at any time.
@@ -9,23 +7,23 @@ description: >-
 # Projects
 
 The **Projects** page displays all of your accessible projects in a grid of **Project Cards**.\
-Each **Project Card** displays a summary of each [**Service**](broken-reference/) contained within each respective project, as well as the total number of processed [**Documents**](broken-reference/) and the remaining credit balance for that project.
+Each **Project Card** displays a summary of each [**Service**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md) contained within each respective project, as well as the total number of processed [**Documents**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md) and the remaining credit balance for that project.
 
-Clicking on a [**Service**](broken-reference/) icon within a **Project Card** allows you to zoom to that service.
+Clicking on a [**Service**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md) icon within a **Project Card** allows you to zoom to that service.
 
 Clicking a **Project Card** will open the project detail view.
 
 The **Projects** page is opened by default when the AIForged Studio is first opened, and can also be opened by selecting the **Projects** navigation item in the main navigation menu.
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 ## How to create a project
 
-<figure><img src=".gitbook/assets/image (10) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
 * Click on **Create a Project** on the bottom right of the screen.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 * Provide your new **Project** with a name. Ensure that your project name is unique and easily distinguishable for reporting purposes.
 * Enter additional information about your **Project** in the **Description** and **Comment** fields.
@@ -35,7 +33,7 @@ The **Projects** page is opened by default when the AIForged Studio is first ope
 
 ## How to delete a project
 
-<figure><img src=".gitbook/assets/image (79) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **Bin Icon** in the upper right of the **Project Card** to delete the **Project.**
 * A prompt will appear asking you to confirm **Project** deletion.

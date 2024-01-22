@@ -1,10 +1,3 @@
----
-title: Create Verification
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 3
----
-
 # Create Verification
 
 ## About
@@ -41,8 +34,8 @@ Create Verification
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (107) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (82) (1).png" alt=""><figcaption></figcaption></figure>

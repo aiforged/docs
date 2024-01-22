@@ -1,10 +1,3 @@
----
-title: Move Document
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 18
----
-
 # Move Document
 
 ## About
@@ -37,8 +30,8 @@ Move Document
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (112) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (87) (1).png" alt=""><figcaption></figcaption></figure>

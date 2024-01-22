@@ -1,10 +1,3 @@
----
-title: Get Verification Shred
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 17
----
-
 # Get Verification Shred
 
 ## About
@@ -35,8 +28,8 @@ Get Verification Shred
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (1) (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (15) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (7).png" alt=""><figcaption></figcaption></figure>

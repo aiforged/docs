@@ -1,10 +1,3 @@
----
-title: Get Parameter Definition
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 15
----
-
 # Get Parameter Definition
 
 ## About
@@ -29,8 +22,8 @@ Get Parameter definition
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (17) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (88) (1).png" alt=""><figcaption></figcaption></figure>

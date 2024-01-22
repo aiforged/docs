@@ -1,10 +1,3 @@
----
-title: VerificationType
-parent: Enums
-grand_parent: Custom Code BaseModule
-nav_order: 10
----
-
 # VerificationType
 
 ## Description

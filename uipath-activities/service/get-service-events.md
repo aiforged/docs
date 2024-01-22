@@ -1,10 +1,3 @@
----
-title: Get Service Events
-parent: Service
-grand_parent: UIPath Activities
-nav_order: 3
----
-
 # Get Service Events
 
 ## About
@@ -35,8 +28,8 @@ Get Service Events
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (22) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (92) (1).png" alt=""><figcaption></figcaption></figure>
