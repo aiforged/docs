@@ -2,7 +2,7 @@
 #remote_theme: just-the-docs/just-the-docs
 
 #title: "Remote theme example"
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
-color_scheme: dark
+#remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
+#color_scheme: dark
 search_enabled: true
 logo: "/assets/0.png"
