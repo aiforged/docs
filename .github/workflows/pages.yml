@@ -62,15 +62,15 @@ jobs:
         env:
             #GITHUB_PAGES: true
             INPUT_PATH: ./_site/
-      - name: Upload artifact
-        uses: actions/upload-artifact@main
-        with:
-          name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
-          retention-days: 1
-          if-no-files-found: warn
-        env:
-          GITHUB_PAGES: true
+      #- name: Upload artifact
+      #  uses: actions/upload-artifact@main
+      #  with:
+      #    name: github-pages
+      #    path: ${{ runner.temp }}/artifact.tar
+      #    retention-days: 1
+      #    if-no-files-found: warn
+      #  env:
+      #    GITHUB_PAGES: true
 
   # Deployment job
   deploy:
