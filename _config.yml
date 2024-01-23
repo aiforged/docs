@@ -1,8 +1,10 @@
 #theme: jekyll-theme-cayman
 #remote_theme: just-the-docs/just-the-docs
 
-#title: "Remote theme example"
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
-color_scheme: dark
-search_enabled: true
-logo: "/assets/0.png"
+#remote_theme: pages-themes/architect@v0.2.0
+#remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
+#title: "AIForged Documentation"
+#description: "This is the official documentation site for AIForged."
+#color_scheme: dark
+#search_enabled: true
+#logo: "/assets/0.png"
