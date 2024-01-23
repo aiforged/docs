@@ -1,12 +1,12 @@
 # Release Notes
 
-## AIForged Studio 1.6.0 (18-12-2023)
+## AIForged Studio 1.6.0 (24-01-2024)
 ### Desktop
 
 **Basic Studio**
--   New: The new Basic Studio layout refines the studio layout and removes or hides controls that are not utilised by general implementers.
--   Enhancement: Many new views have been introduced and existing views have been enhanced to improve the overall user experience when configuring projects, services, rules and more.
--   New: Users may select between the Basic Studio and Advanced Studio when logging in for the first time after updating, or by selecting the desired studio layout in the user's profile configuration.
+-  New: The new Basic Studio layout refines the studio layout and removes or hides controls that are not utilised by general implementers.
+-  Enhancement: Many new views have been introduced and existing views have been enhanced to improve the overall user experience when configuring projects, services, rules and more.
+-  New: Users may select between the Basic Studio and Advanced Studio when logging in for the first time after updating, or by selecting the desired studio layout in the user's profile configuration.
 - 	New: Added first-launch studio type selection.
 - 	New: Implemented simple configuration view for Service Settings.
 - 	New: Implemented simple configuration view for result type parameter definitions.
@@ -45,23 +45,55 @@
 **User Profile**
 -	Enhancement: Reworked the general user profile settings view
 
-**Transactions**
+**Wallets and Billing**
+- New: Complete overhaul of what was perviously the Transactions view. Transactions are now grouped by Wallet (based on user groups) and provided in a statement format with full drilldown functionality.
+- New: Functionality to transfer wallet credits to another wallet from within the Wallets and Billing view.
 -	Bug Fix: Fixed issue with opening training documents from a document reference link
+
+**Work Flow**
+- New: Added Work Flow reasons. It is now possible to setup an AIForged dataset containing reason codes and descriptions. These reason codes can be used for a multitude of functions, including: Indicating the reason for creating a work item; indicating the reason for escalating a work item; indicating the reason for rejecting a work item. And so forth. Reason codes can be setup to adhere to business best practices and processes and can be accessed externally via AIForged's SDK, UIPath Activities, Power Automate Connector, or direct API calls.
+- New: Reason codes can be enabled by editing the WorkFlowReasonDataSet dataset in your service configuration.
+- New: Reason code selection will be displayed in the following areas of your Work Flow:
+  - Transfer, Escalate, Reject and Delete
+  - When publishing from the Document Verification View
+  - When classifying from the Document Verification View
+  - When rerunning all rules from the Document Verification View
+  - Work item reasons are displayed in work item cards
+  - Work item reasons are displayed in work item grid
+- Enhancement: Improved layouts of Work Flow related dialogs.
+
+**Project / Service Cloning**
+- New: It is now possible to schedule regular cloning of projects / services to a different project. Cloning options can be access from within the Project or Service view by clicking on the Clone command in the command bar.
 
 **General**
 -	Enhancement: Migrated to dotnet 8
 -	New: Added column chooser to AIForged datagrids.
+-	New: Added column chooser to AIForged treegrids.
 -	New: Added chosen column preferences to user preferences. Chosen columns are saved per view per user.
 -	Enhancement: Implemented unsaved changes check when navigating and closing tabs.
 -	Enhancement: Improved search control's deep pathing search capability
 -	Enhancement: Updated Monaco editor and added some missing properties / updated changed properties
--	Bug Fix: Fixed issue with DataSetEditor not completely disabling editing when a parameter definition is malformed
--	Bug Fix: Fixed issue with Service name editor not hiding when changes are saved
--	Bug Fix: Fixed issue where adding or removing a service to / from a project would no longer update visuals
 - Enhancement: Various performance enhancing changes for DataType controls.
 -	Enhancement: Improved speed of Code Editor and RichTextEditor initial load.
 -	Enhancement: Added group name to Project Control in Projects View
--	Many other bug fixes and enhancements
+-	Enhancement: Initial load time improvements for controls hosted in WebViews.
+-	Enhancement: Improved the account activation and forgot password user experience.
+-	Enhancement: Single instancing now works as intended, and opening the app via a URL that starts with aiforged:// should now open in an existing instance of AIForged Studio.
+-	Enhancement: Improvements and minor bug fixes to audit related views.
+-	Enhancement: Improvements and minor bug fixes to logs related views.
+-	Enhancement: Improvements and minor bug fixes to events related views.
+-	Enhancement: Improved responsiveness of closing tabs.
+-	Update: Updated the PDF viewer library used in non-verification scenarios.
+-	Bug Fix: Fixed issue with DataSetEditor not completely disabling editing when a parameter definition is malformed
+-	Bug Fix: Fixed issue with Service name editor not hiding when changes are saved
+-	Bug Fix: Fixed issue where adding or removing a service to / from a project would no longer update visuals
+-	Bug Fix: Fixed issue that could cause the teaching tips not to close.
+-	Major performance improvements.
+-	Many other bug fixes and enhancements.
+
+### Web
+- The web version of the studio has officially entered beta stage. Access AIForged Studio - Web from your browser [here.](https://studio.aiforged.com/)
+- Some features may still be incomplete, and some bugs may still make an appearance.
 
 ## AIForged (14-11-2023)
 
