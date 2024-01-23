@@ -1,13 +1,6 @@
----
-title: Microsoft ID Docs
-parent: Pretrained ID Docs
-grand_parent: Understanding Services
-nav_order: 3
----
-
 # Amazon Identity Documents Extraction
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Amazon Identity Documents Service** makes use of pre-trained ID doc models to extract **Key-Value Pairs** of invoice-related data making use of **Amazon AnalyzeID API**. The processing of invoices returns relevant information from passports, driver licenses, and other identity documentation issued by the US Government, such as **Name, Surname, ID Number,** and **Date of Birth**.
 
@@ -22,14 +15,14 @@ Key names are standardized within the response. For example, if your driver lice
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (1).png>)
+   ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **Amazon Identity Documents Service** from the available **Service Types.**
 
     <figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (1) (3) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
@@ -42,15 +35,15 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 | Setting                 | Type                                                                   | Required Type | Description                                                                                                                  |
 | ----------------------- | ---------------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)                        | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)                         | Hidden        | Processing batch size.                                                                                                       |
+| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                         | Optional      | Days before documents get deleted.                                                                                           |
+| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                        | Hidden        | Processing batch size.                                                                                                       |
 | DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                         | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (1).png>)                    | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (3).png>)                    |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (3).png>)                    | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5) (1).png>)                    |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
 | ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (1).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| IsVerification          | ![](<../../.gitbook/assets/image (15) (1) (3).png>)                    | Optional      | Save the lines and words for verification.                                                                                   |
+| IsVerification          | ![](<../../.gitbook/assets/image (15) (5) (1).png>)                    | Optional      | Save the lines and words for verification.                                                                                   |
 | Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                     | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1).png>)         | Optional      | Remove human comments from a document.                                                                                       |
+| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (4).png>)     | Optional      | Remove human comments from a document.                                                                                       |
 
 ## Add and Process Documents
 

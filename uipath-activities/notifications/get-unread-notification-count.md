@@ -1,10 +1,3 @@
----
-title: Get Unread Notification Count
-parent: Notification
-grand_parent: UIPath Activities
-nav_order: 3
----
-
 # Get Unread Notification Count
 
 ## About
@@ -27,8 +20,8 @@ Get Unread Notification Count
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (90) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (2).png" alt=""><figcaption></figcaption></figure>

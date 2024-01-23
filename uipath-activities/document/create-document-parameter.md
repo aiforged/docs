@@ -1,10 +1,3 @@
----
-title: Create Document Parameter
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 2
----
-
 # Create Document Parameter
 
 ## About
@@ -37,8 +30,8 @@ Create Document Parameter
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (86) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (30) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (3).png" alt=""><figcaption></figcaption></figure>

@@ -1,10 +1,3 @@
----
-title: Process Documents by ID
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 13
----
-
 # Process Documents by ID
 
 ## About
@@ -33,8 +26,8 @@ nav_order: 13
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (79) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,10 +1,3 @@
----
-title: Get Parameter Definition By Hierarchy
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 2
----
-
 # Get Parameter Definition By Hierarchy
 
 ## About
@@ -37,8 +30,8 @@ Get Parameter Definition Hierarchy
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (47) (2).png" alt=""><figcaption></figcaption></figure>

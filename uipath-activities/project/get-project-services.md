@@ -1,10 +1,3 @@
----
-title: Get Project Services
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 10
----
-
 # Get Project Services
 
 ## About
@@ -33,8 +26,8 @@ nav_order: 10
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,10 +1,3 @@
----
-title: Dictionary
-parent: Generic Rules
-grand_parent: Rules Engine
-nav_order: 1
----
-
 # Dictionary
 
 The **Dictionary Rule** can be applied to any type of extracted data and \*\*\*\* provides a means to perform a lookup of an expected word. The user can provide a list of expected words for a field, and using the specified **Lookup Method**, the closest match is used to override the value of the **Parameter**.
@@ -13,7 +6,7 @@ For example, if a form contains a field for a **US State**, then the comprehensi
 
 The **Lookup Method** can be selected from the **Lookup Method** dropdown box.
 
-<figure><img src="../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 The following **Lookup Methods** are available:
 
@@ -27,4 +20,4 @@ The following **Lookup Methods** are available:
 
 The list of **Dictionary Entries** can be specified in the **Dictionary Options** table.
 
-<figure><img src="../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>

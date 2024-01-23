@@ -1,10 +1,3 @@
----
-title: Get Work Items
-parent: WorkItem
-grand_parent: UIPath Activities
-nav_order: 3
----
-
 # Get Work Items
 
 ## About
@@ -57,8 +50,8 @@ Create Work Item
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (95) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (18) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (7).png" alt=""><figcaption></figcaption></figure>

@@ -35,9 +35,10 @@ jobs:
           source: ./
           destination: ./_site
       - name: Upload Pages
-        uses: actions/upload-pages-artifact@v0
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: ./_site
+          path: ./_site/
+          name: github-pages
           retention-days: 1
 #      - name: Upload artifact
 #        uses: actions/upload-pages-artifact@v1
@@ -69,11 +70,15 @@ jobs:
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
           if-no-files-found: warn
+          overwrite: true
         env:
           GITHUB_PAGES: true
 
   # Deployment job
   deploy:
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -82,4 +87,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v3

@@ -1,10 +1,3 @@
----
-title: Flag as Read
-parent: Notification
-grand_parent: UIPath Activities
-nav_order: 1
----
-
 # Flag as Read
 
 ## About
@@ -29,8 +22,8 @@ Flag As Read
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (91) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,10 +1,3 @@
----
-title: Mapping
-parent: Generic Rules
-grand_parent: Rules Engine
-nav_order: 2
----
-
 # Mapping
 
 Similar to the **Dictionary Rule**, the **Mapping Rule** can be applied to any type of extracted data, and is used to automatically map extracted to data to a predefined value. This is especially useful when correcting the extracted data to what is expected.
@@ -13,4 +6,4 @@ For example, a **Numeric** value may expected for a field, but the **OCR Service
 
 The **Replacement Mapping Dictionary** is used to provide a list of values to be mapped. The user is required to provide the **Key** (value to be replaced), and the corresponding mapped value. To add a new entry, click on "_Click here to add a new row"_.
 
-<figure><img src="../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>

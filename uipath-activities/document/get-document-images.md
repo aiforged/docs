@@ -1,10 +1,3 @@
----
-title: Get Document Images
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 8
----
-
 # Get Document Images
 
 ## About
@@ -35,4 +28,4 @@ Get Document Images
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (5).png" alt=""><figcaption></figcaption></figure>

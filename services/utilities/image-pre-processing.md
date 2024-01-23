@@ -1,13 +1,6 @@
----
-title: Image Pre-Processing
-parent: Utilities
-grand_parent: Understanding Services
-nav_order: 7
----
-
 # Image Pre-Processing
 
-<figure><img src="../../.gitbook/assets/image (20) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (4).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Image Processor Service** is used to pre-process documents before being sent to OCR services in order to increase the accuracy of the OCR.
 
@@ -24,10 +17,10 @@ The following operations are available when pre-processing documents:
 | Remove Color Marks | Remove marks that may affect OCR accuracy, such as bank stamps.                                                                                                                                  |
 | Whiten Background  | By specifying lower- and upper greyscale bounds, remove possible watermarks that may negatively impact OCR accuracy. Bound values are between 0 and 255, with 0 being black and 255 being white. |
 
-Consider the document below, with a "DRAFT" watermark.&#x20;
+Consider the document below, with a "DRAFT" watermark.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Image Processor Service** can be used to remove the watermark and whiten the background.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,14 +1,10 @@
 ---
-title: AIForged Classification
-parent: Classification
-grand_parent: Understanding Services
-nav_order: 1
 description: Document and File Content Classification
 ---
 
 # AIForged Classification
 
-<figure><img src="../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Classification Service** is a proprietary **Classification** service designed to automatically categorize documents and files based on their contents. The **AIForged Classification Service** allows easy training of a flexible and scalable classification process that can granularly distinguish among many different **User Defined Categories**.
 
@@ -22,11 +18,10 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (1).png>)
-3.  Select **AIForged Classification Service** from the available **Service Types.**\
+   ![](<../../.gitbook/assets/image (82) (2).png>)
+3.  Select **AIForged Classification Service** from the available **Service Types.**\\
 
-
-    <figure><img src="../../.gitbook/assets/image (30) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (30) (4).png" alt=""><figcaption></figcaption></figure>
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
@@ -51,7 +46,7 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 ## Add and Process Documents
 
 1. In your **Classification Service Card** click on the **Inbox** button.\
-   ![](<../../.gitbook/assets/image (86) (1).png>)
+   ![](<../../.gitbook/assets/image (86) (2).png>)
 2. Drag and drop files over the **Inbox** grid or click on the **Upload** button in the command bar.\
    **The demo test files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20Training.zip)**.**
 3. When prompted to select a category, select the **No Selection** option in the bottom right of the dialog window.

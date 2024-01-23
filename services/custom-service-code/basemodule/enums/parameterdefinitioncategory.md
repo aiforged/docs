@@ -2,7 +2,7 @@
 
 ## Description
 
-The **ParameterDefinitionCategory** enum specifies the category that a **Parameter Definition** belongs to. These can range from actual **Services**, **Field Definitions**, or **Containers**.&#x20;
+The **ParameterDefinitionCategory** enum specifies the category that a **Parameter Definition** belongs to. These can range from actual **Services**, **Field Definitions**, or **Containers**.
 
 ## Members
 

@@ -1,10 +1,3 @@
----
-title: Get Documents
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 12
----
-
 # --Get Documents
 
 ## About

@@ -1,10 +1,3 @@
----
-title: Get Project Category
-parent: Project
-grand_parent: UIPath Activities
-nav_order: 8
----
-
 # Get Project Category
 
 ## About
@@ -29,8 +22,8 @@ Category ID -
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>

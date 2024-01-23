@@ -1,9 +1,3 @@
----
-title: Amazon Mechanical Turk
-parent: Human-in-the-Loop
-nav_order: 2
----
-
 # Amazon Mechanical Turk
 
 ![](<../.gitbook/assets/41 (1) (1) (1) (1) (1) (1) (1).png>)

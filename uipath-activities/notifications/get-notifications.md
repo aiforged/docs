@@ -1,10 +1,3 @@
----
-title: Get Notifications
-parent: Notification
-grand_parent: UIPath Activities
-nav_order: 2
----
-
 # Get Notifications
 
 ## About

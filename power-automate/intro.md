@@ -1,7 +1,6 @@
+# Microsoft Power Automate
 
-AIForged is a cloud based Intelligent Document Processing solution for solving complex document extraction problems. 
-The AIForged platform seamlessly integrates multiple services into a single model from industry-leading AI services like Microsoft, Google, Amazon, ABBYY, giving you the ability to use these services in tandem for optimum results.
-AIForged Intelligent Document Processing enable businesses to increase their output, with greater accuracy, greater speed at a lower cost.
+AIForged is a cloud based Intelligent Document Processing solution for solving complex document extraction problems. The AIForged platform seamlessly integrates multiple services into a single model from industry-leading AI services like Microsoft, Google, Amazon, ABBYY, giving you the ability to use these services in tandem for optimum results. AIForged Intelligent Document Processing enable businesses to increase their output, with greater accuracy, greater speed at a lower cost.
 
 ## Prerequisites
 
@@ -25,13 +24,11 @@ An AIForged account is needed to use AIForged. You can register by installing th
 
 Once the app is installed, you can register by using the simple registration steps [Register](https://docs.aiforged.com/register.html).
 
-To activate the account, you should receive an email with the activation link.  Once you click on the activation link, AIForged will open with activation info.
-Once your account is activated you can login with your credentials and then use your credentials in your connector.
+To activate the account, you should receive an email with the activation link. Once you click on the activation link, AIForged will open with activation info. Once your account is activated you can login with your credentials and then use your credentials in your connector.
 
 ### How to create and train an AIForged service
 
-First you need to create a project container for billing purposes.
-Once your project is created you can add an intelligent service by following the wizard steps in the AIForged application.
+First you need to create a project container for billing purposes. Once your project is created you can add an intelligent service by following the wizard steps in the AIForged application.
 
 Here is a list of practicle examples to extract information from documents
 
@@ -40,7 +37,6 @@ Here is a list of practicle examples to extract information from documents
 [Practical Example - Bank statements](https://docs.aiforged.com/practical-examples/bank-statement.html).
 
 [Practical Example - Credit Application](https://docs.aiforged.com/practical-examples/credit-application-form.html).
-
 
 ## Get started with your connector
 
@@ -61,4 +57,3 @@ For any support or assistance create a support ticket at [AIForged Support](http
 ## FAQ
 
 For more info and FAQ see [AIForged Documentation](https://docs.aiforged.com/).
-

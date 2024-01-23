@@ -1,13 +1,6 @@
----
-title: Copy Docs
-parent: Utilities
-grand_parent: Understanding Services
-nav_order: 5
----
-
 # Copy Documents
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (3).png" alt=""><figcaption></figcaption></figure>
 
 The **Copy Documents Utility** is used to copy documents to and from services.
 

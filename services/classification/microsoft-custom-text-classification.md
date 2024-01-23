@@ -1,13 +1,6 @@
----
-title: Microsoft Custom Text Classification
-parent: Classification
-grand_parent: Understanding Services
-nav_order: 5
----
-
 # Microsoft Custom Text Classification
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Custom Text Classification Service** is a **Classification** service that allows users to supply custom data to train a **Classification Model** with **Azure Cognitive Services for Language**. It is a cloud-based API service that applies machine-learning intelligence to enable you to build custom models for text classification tasks.
 
@@ -35,14 +28,14 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 
 1. Open the **Project Detail View** of the project that you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (1).png>)
+   ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **AIForged Classification Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
@@ -81,14 +74,14 @@ The **Microsoft Form Recognizer Service** can be configured by the user as a fle
 | ------------------------ | ------------------------------------------------------------------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | AccessKey                | ![](<../../.gitbook/assets/image (7) (2).png>)                     | Optional      | Override the Access Key to the configured Google cloud service.                                                                               |
 | ApiVersion               | ![](<../../.gitbook/assets/image (7) (2).png>)                     | Optional      | Override the MS API version to use when making requests.                                                                                      |
-| ArchivingStrategy        | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Optional      | Days before documents get deleted.                                                                                                            |
+| ArchivingStrategy        | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Optional      | Days before documents get deleted.                                                                                                            |
 | BaseURL                  | ![](<../../.gitbook/assets/image (7) (2).png>)                     | Optional      | Override the URL to the configured Google cloud service.                                                                                      |
-| BatchSize                | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Hidden        | Processing batch size.                                                                                                                        |
+| BatchSize                | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Hidden        | Processing batch size.                                                                                                                        |
 | DocumentProcessedStatus  | ![](<../../.gitbook/assets/image (6) (4).png>)                     | Optional      | Document status used to denote that a document has been processed.                                                                            |
-| Enabled                  | ![](<../../.gitbook/assets/image (15) (1) (1).png>)                | Hidden        | Enable or disable the service.                                                                                                                |
+| Enabled                  | ![](<../../.gitbook/assets/image (15) (5) (3).png>)                | Hidden        | Enable or disable the service.                                                                                                                |
 | ExecuteBeforeProcess     | ![](<../../.gitbook/assets/image (15) (1) (1) (4).png>)            |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed                   |
 | ExecuteAfterProcess      | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (1).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed                    |
 | Password                 | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                 | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                                        |
 | RemoveComments           | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (2).png>) | Optional      | Remove human comments from a document.                                                                                                        |
-| TrainingTimeoutInMinutes | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Required      | Specifies after how many minutes the training operation should time out, if not completed by then                                             |
-| TrainingSplitPercentage  | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Required      | Percentage of uploaded training docs to be used for actually training the AI model. The remainder will be used to evaluate the trained model. |
+| TrainingTimeoutInMinutes | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Required      | Specifies after how many minutes the training operation should time out, if not completed by then                                             |
+| TrainingSplitPercentage  | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Required      | Percentage of uploaded training docs to be used for actually training the AI model. The remainder will be used to evaluate the trained model. |

@@ -12,7 +12,7 @@ description: >-
 1. From the **Service Detail View** click on **Share on marketplace.**\
    ![](<../.gitbook/assets/image (37) (3).png>)
 2. You can change any of the details of your shared service.\
-   ![](<../.gitbook/assets/image (78) (1).png>)
+   ![](<../.gitbook/assets/image (78) (2).png>)
    1. **Service Name:** Change the name used to identify your service on the marketplace. Default: Your service's current name.
    2. **Short Description:** Change the short description of your service. This is visible in the marketplace. Default: Your service's current description.
    3. **Detailed Description:** Change the detailed description used to further describe your service and its intended use. (Optional)

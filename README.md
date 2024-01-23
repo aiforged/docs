@@ -1,9 +1,3 @@
----
-layout: default
-title: Index
-nav_exclude: true
----
-
 # How to Install AIForged
 
 The AIForged Studio can be installed via one of our Fastlane releases, or via the Microsoft Store.
@@ -18,36 +12,35 @@ Installing from the Microsoft Store is simple and follows the same process as in
 
 [Install from Microsoft Store](https://apps.microsoft.com/store/detail/aiforged/9N9TV5K8F914)
 
-
 ## SYSTEM REQUIREMENTS
 
 Please ensure that your computer meets or exceeds the following system requirements before installing the AIForged Studio.
 
 **Minimum System Requirements**
 
-| **OS** | Windows 10 version 10.0.19041.0 or higher |
-| :--- | :--- |
-| **Architecture** | x64 |
-| **DISPLAY RESOLUTION** | Best viewed in 1920 x 1080 |
-| **Keyboard** | Keyboard |
-| **Mouse** | Mouse or Touch Support |
-| **DirectX** | Version 9 |
-| **Memory** | 4GB |
-| **Video Memory** | 1 GB |
-| **Processor** | Intel Core i3 or AMD Ryzen 3 |
+| **OS**                 | Windows 10 version 10.0.19041.0 or higher |
+| ---------------------- | ----------------------------------------- |
+| **Architecture**       | x64                                       |
+| **DISPLAY RESOLUTION** | Best viewed in 1920 x 1080                |
+| **Keyboard**           | Keyboard                                  |
+| **Mouse**              | Mouse or Touch Support                    |
+| **DirectX**            | Version 9                                 |
+| **Memory**             | 4GB                                       |
+| **Video Memory**       | 1 GB                                      |
+| **Processor**          | Intel Core i3 or AMD Ryzen 3              |
 
 **Recommended System Requirements**
 
-| **OS** | Windows 11 version 10.0.22000.0 or higher |
-| :--- | :--- |
-| **Architecture** | x64 |
-| **DISPLAY RESOLUTION** | Best viewed in 1920 x 1080 or higher|
-| **Keyboard** | Keyboard |
-| **Mouse** | Mouse or Touch Support |
-| **DirectX** | Version 11 |
-| **Memory** | 8 GB |
-| **Video Memory** | 1 GB |
-| **Processor** | Intel Core i5 or AMD Ryzen 5 |
+| **OS**                 | Windows 11 version 10.0.22000.0 or higher |
+| ---------------------- | ----------------------------------------- |
+| **Architecture**       | x64                                       |
+| **DISPLAY RESOLUTION** | Best viewed in 1920 x 1080 or higher      |
+| **Keyboard**           | Keyboard                                  |
+| **Mouse**              | Mouse or Touch Support                    |
+| **DirectX**            | Version 11                                |
+| **Memory**             | 8 GB                                      |
+| **Video Memory**       | 1 GB                                      |
+| **Processor**          | Intel Core i5 or AMD Ryzen 5              |
 
 **Runs on Windows Server (with Desktop Component) - Build 10.0.19041.0 or higher**
 

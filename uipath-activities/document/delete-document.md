@@ -1,10 +1,3 @@
----
-title: Delete Document
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 5
----
-
 # Delete Document
 
 ## About
@@ -33,4 +26,4 @@ Delete Document
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (4).png" alt=""><figcaption></figcaption></figure>

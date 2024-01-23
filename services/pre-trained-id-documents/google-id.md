@@ -1,15 +1,4 @@
----
-title: Google ID Cards
-parent: Pretrained ID Docs
-grand_parent: Understanding Services
-nav_order: 1
----
-
 # Google Id
-
-
-
-
 
 The ​**Google Identity Parser** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Google Documents AI**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 

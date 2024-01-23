@@ -1,10 +1,3 @@
----
-title: OCR
-parent: Understanding Services
-has_children: true
-nav_order: 9
----
-
 # OCR
 
 **Optical Character Recognition** is the electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo or from subtitle text superimposed on an image.

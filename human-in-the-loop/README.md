@@ -1,15 +1,8 @@
----
-layout: default
-title: Human-in-the-Loop
-nav_order: 19
-has_children: true
----
-
 # Human in the Loop
 
 Although OCR technologies have come a long way, there will still be instances where a little human intervention is required to **Verify** extracted data. To this end, **Workflow Items** can be created for **Human Verification**.
 
-A user can be added to a **Project** or a **Service** with the Verification Role to assist the **OCR Engine** to correct data that have been extracted. The **Work Flow** can be set up to send out notifications to the **HITL** when **Work Flow Item** is created.&#x20;
+A user can be added to a **Project** or a **Service** with the Verification Role to assist the **OCR Engine** to correct data that have been extracted. The **Work Flow** can be set up to send out notifications to the **HITL** when **Work Flow Item** is created.
 
 ## Possible Reasons for HITL
 
@@ -20,4 +13,4 @@ There are multiple reasons for extracted data to be verified by a **HITL**. Thes
 * An applied **Rule** failed the verification of an extracted field. See [Rules Engine](../rules-engine/rules-engine.md) for more information.
 * A required field was not detected by the **OCR Engine**.
 * Supporting document data do not match (E.g. the name on a bank statement does not match the ID cards received. Refer to [Practical Example](../practical-examples/credit-application-process-accept-or-reject-the-application.md) for an example.
-* Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](custom-service-code/) for more information.
+* Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](https://github.com/aiforged/docs/blob/master/human-in-the-loop/custom-service-code/README.md) for more information.

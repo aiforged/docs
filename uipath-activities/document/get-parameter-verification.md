@@ -1,10 +1,3 @@
----
-title: Get Parameter Verification
-parent: Document
-grand_parent: UIPath Activities
-nav_order: 16
----
-
 # Get Parameter Verification
 
 ## About
@@ -31,8 +24,8 @@ Get Parameter definition
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (109) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (94) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,10 +1,3 @@
----
-title: Get Enum Data
-parent: System
-grand_parent: UIPath Activities
-nav_order: 2
----
-
 # Get Enum Data
 
 ## About
@@ -27,8 +20,8 @@ Get Enum Data
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (4).png" alt=""><figcaption></figcaption></figure>

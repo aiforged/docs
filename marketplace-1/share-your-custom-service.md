@@ -9,7 +9,7 @@ description: >-
 1. From the **Service Detail View** click on **Share on marketplace.**\
    <img src="../.gitbook/assets/image (37) (3).png" alt="" data-size="original">
 2. Fill in details regarding your service in the **Share on marketplace view.**\
-   ![](<../.gitbook/assets/image (66).png>)
+   ![](<../.gitbook/assets/image (66) (1).png>)
    1. **Service Name:** Enter a name to identify your service on the marketplace. Default: Your service's current name.
    2. **Short Description:** Enter a short description to describe your service. This is visible in the marketplace. Default: Your service's current description.
    3. **Detailed Description:** Enter a detailed description to further describe your service and its intended use. (Optional)

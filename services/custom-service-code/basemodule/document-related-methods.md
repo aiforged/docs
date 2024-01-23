@@ -1,2 +1,17 @@
 # Document Related Methods
 
+The following method are available regarding document management.
+
+| Method Name                                                                                                                                                            | Description                                                                        | Returns                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------ |
+| GetChildDocuments(IDocument doc, UsageType? usage, List statuses)                                                                                                      | Gets the children documents for a provided document.                               | A list of documents.                       |
+| GetChildDocuments(IDocument doc, int stpdId, UsageType? usage, List statuses)                                                                                          | Gets the children documents for a provided document.                               | A list of documents.                       |
+| GetDocumentData(IDocument doc, List\<DocumentDataType?> types)                                                                                                         | Gets the related data for a provided document.                                     | A list of document data.                   |
+| GetDocumentMaster(IDocument doc)                                                                                                                                       | Gets the master document for a provided document.                                  | The master document object.                |
+| SetDocumentStatus(IDocument doc, DocumentStatus status, string comment, string result, bool appendComment = true, bool appendResult = true, bool setMasterAlso = true) | Sets the status of a provided document.                                            | The document object.                       |
+| CopyDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null)                                    | Copies the document to another service.                                            | The copied document object.                |
+| MoveDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null)                                    | Moves a document to another service.                                               | The moved document.                        |
+| CloneDocumentForTraining(IDocument doc)                                                                                                                                | Clone a document to the training box of a service.                                 | The cloned document.                       |
+| CheckIfDocumentAlreadyInTrainingBox(IDocument doc);                                                                                                                    | Checks whether a document has already been added to the training box of a service. | True if the document exists, false if not. |
+
+&#x20;
