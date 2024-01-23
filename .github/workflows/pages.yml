@@ -35,9 +35,10 @@ jobs:
           source: ./
           destination: ./_site
       - name: Upload Pages
-        uses: actions/upload-pages-artifact@v0
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: ./_site
+          path: ./_site/
+          name: github-pages
           retention-days: 1
 #      - name: Upload artifact
 #        uses: actions/upload-pages-artifact@v1
@@ -62,22 +63,16 @@ jobs:
         env:
             #GITHUB_PAGES: true
             INPUT_PATH: ./_site/
-      #- name: Upload artifact
-      #  uses: actions/upload-artifact@main
-      #  with:
-      #    name: github-pages
-      #    path: ${{ runner.temp }}/artifact.tar
-      #    retention-days: 1
-      #    if-no-files-found: warn
-      #    overwrite: true
-      #  env:
-      #    GITHUB_PAGES: true
-      - name: Upload Pages Artifact
-        uses: action/upload-pages-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
         with:
           name: github-pages
-          path: ./_site/
+          path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
+          if-no-files-found: warn
+          overwrite: true
+        env:
+          GITHUB_PAGES: true
 
   # Deployment job
   deploy:
