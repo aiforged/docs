@@ -17,6 +17,7 @@
 * [Release Notes](release-notes.md)
 * [Reports](reports.md)
 * [Resend activation Email](resend-activation-email.md)
+* [Multi-Factor Authentication](multi-factor-authentication.md)
 * [User Groups](service-users.md)
 * [Settings](settings.md)
 * [Transactions](transactions.md)
@@ -242,4 +243,3 @@
     * [Get Work Item Count](uipath-activities/workitem/get-work-item-count.md)
     * [Get Work Items](uipath-activities/workitem/get-work-items.md)
     * [Get Work Queue](uipath-activities/workitem/get-work-queue.md)
-* [Multi-Factor Authentication](multi-factor-authentication.md)

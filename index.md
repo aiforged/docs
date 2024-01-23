@@ -6,6 +6,7 @@
 * [Login](login.md)
 * [Activate my account](activate-my-account.md)
 * [Resend activation Email](resend-activation-email.md)
+* [Multi-Factor Authentication](multi-factor-authentication.md)
 * [Forgot Password](forgot-password.md)
 * [Projects](projects.md)
 * [Marketplace](marketplace.md)
@@ -71,7 +72,7 @@
   * [AIForged Pdf Converter](services/utilities/aiforged-pdf-converter.md)
 * [Custom Service Code](services/custom-service-code/)
   * [IBaseModule Interface Data Types](https://github.com/aiforged/docs/blob/master/services/custom-service-code/ibasemodule-interface-data-types.md)
-* [Custom Workflow Code](broken-reference)
+* [Custom Workflow Code](broken-reference/)
 * [Human in the Loop](services/human-in-the-loop.md)
 
 ## Documents
