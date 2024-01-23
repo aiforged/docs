@@ -73,10 +73,10 @@ jobs:
       #  env:
       #    GITHUB_PAGES: true
       - name: Upload Pages Artifact
-        uses: action/upload-pages-artifact@main
+        uses: action/upload-pages-artifact@v2
         with:
           name: github-pages
-          path: ./_site
+          path: ./_site/
           retention-days: 1
 
   # Deployment job
