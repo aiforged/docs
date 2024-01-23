@@ -65,7 +65,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@main
         with:
-          name: github-pages
+          name: github-pages2
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
           if-no-files-found: warn
@@ -85,4 +85,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
         with:
-          artifact_name: github-pages
+          artifact_name: github-pages2
