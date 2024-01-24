@@ -8,3 +8,7 @@ description: "This is the official documentation site for the AIForged platform 
 color_scheme: dark
 search_enabled: true
 logo: "/assets/0.png"
+toc:
+    enabled: true
+    h_min: 1
+    h_max: 3
