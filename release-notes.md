@@ -1,5 +1,6 @@
 ---
 title: How To Install AIForged
+category: General
 order: 2
 ---
 
