@@ -1,3 +1,8 @@
+---
+title: How To Install AIForged
+order: 2
+---
+
 # Release Notes
 
 ## AIForged (24-01-2024)
