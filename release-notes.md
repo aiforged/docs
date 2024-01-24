@@ -1,5 +1,20 @@
 # Release Notes
 
+## AIForged (24-01-2024)
+### Platform
+
+- New: Added Work Item reason selection to APIs and added WorkItemReasonDataset generation for qualifying services.
+- New: Added triggers for nested Services.
+- New: Added new ChatGPT prompt matrix to allow fine tuning of ChatGPT prompts.
+- New: Added new Aggregated credit transfer API.
+- Enhancement: Improved handling of malware detection / quarantining for document uploads and email scraping.
+- Enhancement: Added property to transaction schemas to distinguish credit transfers from processing usage.
+- Enhancement: Old and deleted projects can now be archived for record keeping purposes.
+- Enhancement: New Work Item related functions in the custom code module allow updating work items from custom code.
+- Security: Implemented project and service API rate limiter.
+- Bug Fix: Credit transfers did not enforce debit service check.
+- Bug Fix: Users could not update their user profiles.
+
 ## AIForged Studio 1.6.0 (24-01-2024)
 ### Desktop
 
