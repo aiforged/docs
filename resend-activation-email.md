@@ -1,7 +1,6 @@
 ---
-description: >-
-  The Resend Activation Email page can be used in the case that you did not
-  receive your activation email.
+title: Activate my account
+nav_order: 5
 ---
 
 # Resend activation Email

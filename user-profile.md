@@ -1,7 +1,6 @@
 ---
-description: >-
-  The User Profile page allows you to view and edit various details related to
-  your user account.
+title: User profile
+nav_order: 9
 ---
 
 # User Profile

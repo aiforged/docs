@@ -1,5 +1,6 @@
 ---
-description: The Register page is used to Register a new AIForged account.
+title: Register
+nav_order: 3
 ---
 
 # Register

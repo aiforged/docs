@@ -1,5 +1,6 @@
 ---
-description: The Contacts page allows you to add various notification contacts to AIForged.
+title: Contacts
+nav_order: 15
 ---
 
 # Contacts

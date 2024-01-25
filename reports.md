@@ -1,7 +1,6 @@
 ---
-description: >-
-  The Reports Page provides an overview of Projects, Services, Documents, Work
-  Flow, etc. for the current user.
+title: Reports
+nav_order: 12
 ---
 
 # Reports

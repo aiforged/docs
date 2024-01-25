@@ -1,7 +1,6 @@
 ---
 title: How To Install AIForged
-category: General
-order: 1
+nav_order: 2
 ---
 
 # How to Install AIForged

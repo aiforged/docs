@@ -1,7 +1,6 @@
 ---
-description: >-
-  A shared space where you can share your pre-trained services with other users,
-  or request access to pre-trained services from other users.
+title: Marketplace
+nav_order: 16
 ---
 
 # Marketplace

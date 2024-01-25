@@ -1,7 +1,6 @@
 ---
-description: >-
-  The Activate My Account page allows you to activate your newly registered
-  account.
+title: Activate my account
+nav_order: 4
 ---
 
 # Activate my account

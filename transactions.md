@@ -1,5 +1,7 @@
 ---
-description: The Transactions page lists credit transactions made by services in projects.
+title: Transactions
+nav_order: 11
+has_children: true
 ---
 
 # Transactions

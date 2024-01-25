@@ -1,7 +1,6 @@
 ---
-description: >-
-  The User Groups page allows you to manage shared access to your projects and
-  services, either directly or via access groups.
+title: User groups
+nav_order: 14
 ---
 
 # User Groups

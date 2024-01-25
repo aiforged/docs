@@ -1,3 +1,8 @@
+---
+title: Multi-factor authentication
+nav_order: 7
+---
+
 # Multi-Factor Authentication
 
 **Multi-factor authentication** (**MFA**) is a multi-step account login process that requires users to enter more information than just a password. The user's data security is important to **AIForged**, and therefore **MFA** can be set up on an **AIForged** account.

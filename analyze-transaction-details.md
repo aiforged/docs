@@ -1,3 +1,9 @@
+---
+title: Analyze transaction details
+parent: Transactions
+nav_order: 1
+---
+
 # Analyze Transaction details
 
 ![Transactions](.gitbook/assets/transaction-details.png)

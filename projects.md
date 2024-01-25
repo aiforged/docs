@@ -1,7 +1,6 @@
 ---
-description: >-
-  The Projects page displays projects created by you, or that have been shared
-  with you, and allows you to create a new project at any time.
+title: Projects
+nav_order: 10
 ---
 
 # Projects

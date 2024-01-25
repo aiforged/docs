@@ -1,3 +1,8 @@
+---
+title: Login
+nav_order: 6
+---
+
 # Login
 
 ## AIForged Account

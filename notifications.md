@@ -1,7 +1,6 @@
 ---
-description: >-
-  The Notifications page allows you to view all of the Notifications that have
-  been sent to you by the AIForged platform.
+title: Notifications
+nav_order: 17
 ---
 
 # Notifications

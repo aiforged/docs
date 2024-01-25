@@ -1,7 +1,6 @@
 ---
-description: >-
-  The application Settings page allows you to change application specific
-  configurations.
+title: Settings
+nav_order: 19
 ---
 
 # Settings

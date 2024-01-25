@@ -1,7 +1,6 @@
 ---
-description: >-
-  (Obsolete) The payments page displays all the Payments you have made to
-  AIForged
+title: Payments
+nav_order: 13
 ---
 
 # Payments

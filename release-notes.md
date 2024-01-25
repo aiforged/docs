@@ -1,7 +1,6 @@
 ---
-title: How To Install AIForged
-category: General
-order: 2
+title: Release notes
+order: 1
 ---
 
 # Release Notes

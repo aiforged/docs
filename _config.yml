@@ -1,14 +1,10 @@
 #theme: jekyll-theme-cayman
 #remote_theme: sighingnow/jekyll-gitbook
 #remote_theme: pages-themes/slate@v0.2.0
-remote_theme: pages-themes/architect@v0.2.0
-#remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
+#remote_theme: pages-themes/architect@v0.2.0
+remote_theme: just-the-docs/just-the-docs@v0.7.0
 title: "AIForged Documentation"
 description: "This is the official documentation site for the AIForged platform for Intelligent Document Processing."
 color_scheme: dark
 search_enabled: true
 logo: "/assets/0.png"
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
