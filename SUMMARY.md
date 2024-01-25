@@ -7,7 +7,7 @@
 * [Contacts](contacts.md)
 * [Forgot Password](forgot-password.md)
 * [Table of contents](index.md)
-* [How to Install AIForged](install.md)
+* [How to Install AIForged](how-to-install-aiforged.md)
 * [Login](login.md)
 * [Marketplace](marketplace.md)
 * [Notifications](notifications.md)

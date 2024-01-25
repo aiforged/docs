@@ -11,24 +11,19 @@ nav_order: 7
 
 1. On the main **AIForged** screen, go to **User Profile**.\
    ![](<.gitbook/assets/image (257).png>)
-2.  On the **User Profile** screen, select **Sign-in Options**, then **MFA**.\
-
+2.  On the **User Profile** screen, select **Sign-in Options**, then **MFA**.
 
     <figure><img src=".gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
-3.  If no **MFA** is set up, then the following message will be shown. In order to generate a key and the corresponding **QR Code**, select **Generate MFA key**.\
-
+3.  If no **MFA** is set up, then the following message will be shown. In order to generate a key and the corresponding **QR Code**, select **Generate MFA key**.
 
     <figure><img src=".gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
-4.  Once the key is generated, the user can copy the key, or scan the **QR Code** image. The user can also **Disable MFA** from this screen. \
-
+4.  Once the key is generated, the user can copy the key, or scan the **QR Code** image. The user can also **Disable MFA** from this screen.
 
     <figure><img src=".gitbook/assets/image (261).png" alt=""><figcaption><p>Note: This is only an example code.</p></figcaption></figure>
 
-
-
 ## Sign-in providers
 
-**AIForged** provides the following sign-in providers.&#x20;
+**AIForged** provides the following sign-in providers.
 
 <figure><img src=".gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
