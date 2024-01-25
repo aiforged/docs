@@ -1,8 +1,3 @@
----
-title: Work queue
-nav_order: 18
----
-
 # Work Queue
 
 ![WorkQueue](/assets/WorkQueue.png)
