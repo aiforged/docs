@@ -1,3 +1,8 @@
+---
+title: How to install AIForged
+nav_order: 2
+---
+
 # How to Install AIForged
 
 The AIForged Studio can be installed via one of our Fastlane releases, or via the Microsoft Store.

@@ -1,6 +1,6 @@
 ---
 title: Release notes
-order: 1
+nav_order: 1
 ---
 
 # Release Notes

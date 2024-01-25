@@ -1,5 +1,5 @@
 ---
-title: Activate my account
+title: Resend activation email
 nav_order: 5
 ---
 

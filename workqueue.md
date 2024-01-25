@@ -1,3 +1,8 @@
+---
+title: Release notes
+nav_order: 15
+---
+
 # Work Queue
 
 ![WorkQueue](/assets/WorkQueue.png)
