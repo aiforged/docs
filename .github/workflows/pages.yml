@@ -34,14 +34,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Upload Pages
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./_site
-          name: github-pages
-          retention-days: 1
-#      - name: Upload artifact
-#        uses: actions/upload-pages-artifact@v1
       - name: Archive artifact
         shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
         run: |
@@ -63,16 +55,22 @@ jobs:
         env:
             #GITHUB_PAGES: true
             INPUT_PATH: ./_site/
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Pages
+        uses: actions/upload-pages-artifact@v2
         with:
+          path: ./_site
           name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
-          if-no-files-found: warn
-          overwrite: true
-        env:
-          GITHUB_PAGES: true
+      #- name: Upload artifact
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: github-pages
+      #    path: ${{ runner.temp }}/artifact.tar
+      #    retention-days: 1
+      #    if-no-files-found: warn
+      #    overwrite: true
+      #  env:
+      #    GITHUB_PAGES: true
 
   # Deployment job
   deploy:
