@@ -5,6 +5,23 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.6.1 (26-01-2024)
+### Desktop
+
+**Document Verification**
+- Enhancement: Improved user role permissions effectiveness in the Document Verification View
+- Bug Fix: Fixed adorner label ZIndex. Sometimes cusom label headers would disappear due to race condition.
+
+**User Groups Management**
+- Enhancement: Improved repsonsiveness and overall UX in the user groups management views
+
+**Work Flow**
+- Enhancement: Added QA work item type functionality to the Work Flow.
+
+**General**
+- Other: Restricted About View navigation exploit.
+- Many minor layout updates / improvements
+
 ## AIForged (24-01-2024)
 ### Platform
 
