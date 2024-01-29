@@ -40,7 +40,9 @@ jobs:
           tar \
             --dereference --hard-dereference \
             --directory "$INPUT_PATH" \
-            -cvf "/home/runner/work/_temp/artifact.tar" \
+            -cvf "$RUNNER_TEMP\artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
             .
         env:
           #GITHUB_PAGES: true
@@ -50,19 +52,19 @@ jobs:
         run: |
           tar \
             --dereference --hard-dereference \
-            -rf "/home/runner/work/_temp/artifact.tar" \
+            -rf "$RUNNER_TEMP\artifact.tar" \
             ./.gitbook/
         env:
             #GITHUB_PAGES: true
             INPUT_PATH: ./_site/
-      - name: Upload Pages
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./_site
-          name: github-pages
-          retention-days: 1
+      #- name: Upload Pages
+      #  uses: actions/upload-pages-artifact@v2
+      #  with:
+      #    path: ./_site
+      #    name: github-pages
+      #    retention-days: 1
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
@@ -85,4 +87,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
