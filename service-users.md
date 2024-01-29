@@ -38,7 +38,9 @@ In the **Select Roles** dialog select the desired access level/s to assign to th
 <figure><img src=".gitbook/assets/image (53) (2).png" alt=""><figcaption></figcaption></figure>
 
 In the following dialog select the **Project** that the selected user/s will be given access to.\
-![](<.gitbook/assets/image (31) (3).png>)
+
+
+<figure><img src=".gitbook/assets/image (31) (3).png" alt=""><figcaption></figcaption></figure>
 
 (Optional) In the following dialog select the **Service** that the selected user/s will be given access to. If a user should receive access to all **Services** in the selected **Project**, select the **No Selection** option.
 
