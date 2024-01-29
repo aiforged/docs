@@ -6,13 +6,13 @@ nav_order: 10
 # Projects
 
 The **Projects** page displays all of your accessible projects in a grid of **Project Cards**.\
-Each **Project Card** displays a summary of each [**Service**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md) contained within each respective project, as well as the total number of processed [**Documents**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md) and the remaining credit balance for that project.
+Each **Project Card** displays a summary of each [**Service**](services/understanding-services.md) contained within each respective project, as well as the total number of processed [**Documents**](documents/) and the remaining credit balance for that project.
 
-Clicking on a [**Service**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md) icon within a **Project Card** allows you to zoom to that service.
+Clicking on a [**Service**](services/understanding-services.md) icon within a **Project Card** allows you to zoom to that service.
 
 Clicking a **Project Card** will open the project detail view.
 
-The **Projects** page is opened by default when the AIForged Studio is first opened, and can also be opened by selecting the **Projects** navigation item in the main navigation menu.
+The **Projects** page is opened by default when the **AIForged Studio** is launched and can also be opened by selecting the **Projects** navigation item in the main navigation menu.
 
 <figure><img src=".gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 

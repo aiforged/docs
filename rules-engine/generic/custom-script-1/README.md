@@ -38,4 +38,4 @@
  
 </code></pre>
 
-For more see the information on the [BaseModule](../../../custom-code/base-module.md)
+For more see the information on the [BaseModule](broken-reference)

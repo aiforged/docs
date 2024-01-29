@@ -8,7 +8,7 @@ A service typically has an **Inbox** and **Outbox.** The **Inbox** stores object
 
 Depending on the service type, a service can also have a **Definition Box**, **Training Box**, and **Label Box.**
 
-Multiple **Services** can be nested within a **Service**. These nested services are called **Child Services**. **Child Services** will automatically be added to a service depending on the **Service Type's** dependencies, or [**Rule Type**](../rules-engine/rules-engine.md) \*\*\*\* dependencies, but can also be manually added to extend a service's functionality.
+Multiple **Services** can be nested within a **Service**. These nested services are called **Child Services**. **Child Services** will automatically be added to a service depending on the **Service Type's** dependencies, or [**Rule Type**](../rules-engine/rules-engine.md) dependencies, but can also be manually added to extend a service's functionality.
 
 The example below shows a **Service Card** within a **Service's Detail View**, which in this case represents a **Parent Service** with three **Child Services**.
 
@@ -34,7 +34,7 @@ The following **Action Buttons** can be found in a **Service Card**, the number 
 2.  At the bottom of the **Project Detail View**, select **Add Service.**
 
     <figure><img src="../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
-3.  The **Add New Service** dialogue will open.\\
+3.  The **Add New Service** dialogue will open.
 
     <figure><img src="../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 4. Select the **Service Type** of the **Service** you want to add and click on **Select**.

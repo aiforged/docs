@@ -61,6 +61,6 @@ The list of **Transactions** can be exported to Microsoft Excel format (xlsx) by
     This view will show a detailed summary of **Transactions** for the **Service**.
 
     <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-3.  Clicking on **Open Service** will open the **Service Detail View** for the [**Service**](https://github.com/aiforged/docs/blob/master/broken-reference/README.md).
+3.  Clicking on **Open Service** will open the **Service Detail View** for the [**Service**](services/understanding-services.md).
 
     <figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p><br></p></figcaption></figure>
