@@ -5,6 +5,19 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.6.3 (06-02-2024)
+### Desktop - Hotfix
+
+**Parameter Definitions**
+- Bug Fix: Fixed drag and drop result definitions functionality.
+- Bug Fix: Improved visual synchronization between multiple open definition views of the same service.
+
+## AIForged Studio 1.6.2 (01-02-2024)
+### Desktop - Hotfix
+
+**Usergroup Management**
+- Bug Fix: Fixed issue preventing some owners from managing their usergroups.
+
 ## AIForged Studio 1.6.1 (26-01-2024)
 ### Desktop
 
