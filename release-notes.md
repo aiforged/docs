@@ -6,7 +6,7 @@ nav_order: 1
 # Release Notes
 
 ## AIForged Studio 1.6.7 (28-02-2024)
-### Desktop - Hotfix
+### Desktop
 
 **Dataset Editor**
 - Enhancement: Added additional controls to the basic dataset editor to support additional value types.
