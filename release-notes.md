@@ -5,6 +5,42 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.6.7 (28-02-2024)
+### Desktop - Hotfix
+
+**Dataset Editor**
+- Enhancement: Added additional controls to the basic dataset editor to support additional value types.
+
+**Document Results Export**
+- Enhancement: Improved speed of the details view data generation.
+- Enhancement: Improved consistency of exported column names.
+
+## AIForged Studio 1.6.6 (16-02-2024)
+### Desktop - Hotfix
+
+**Dataset Editor**
+- Bug Fix: Fixed issue that could prevent a user with valid permissions from editing values / fields.
+- Bug Fix: Fixed issue where the basic dataset editor would not detect value changes.
+
+## AIForged Studio 1.6.5 (14-02-2024)
+### Desktop - Hotfix
+
+**Custom Labelling**
+- Enhancement: Made improvements to ensure that Parameter Definitions copied between services have their settings initialized.
+- Bug Fix: Fixed issue where user preferences not having loaded would cause custom label configs not to load.
+
+**Documents**
+- Bug Fix: Fixed issue with export button not being visible due to race condition.
+
+**General**
+- Bug Fix: Fixed regression causing user preferences to load too late.
+
+## AIForged Studio 1.6.4 (13-02-2024)
+### Desktop - Hotfix
+
+**General**
+- Bug Fix: Fixed an issue that could cause an unsuccessful update of the unpackaged version of the AIForged Studio.
+
 ## AIForged Studio 1.6.3 (06-02-2024)
 ### Desktop - Hotfix
 
