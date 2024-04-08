@@ -5,6 +5,113 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged (10-04-2024)
+### Platform
+
+**User Groups**
+- Overhaul: User and user group management has been completely overhauled for the AIForged platform. See the Studio changelog for more information on the overall changes.
+
+**ChatGPT Document Extraction**
+- Enhancement: New prompting techniques have been added to allow for structured entity extraction from long form documents such as legal agreements and policy documents.
+
+## AIForged Studio 1.7.0 (10-04-2024)
+### Desktop
+
+**User Groups**
+- Enhancement: User group management has been completely overhauled.
+  - The new hierarchy for user groups is as follows: Project <- User Group <- User Group Role <- User.
+  - User permissions are now situated at the role level, where users are linked to a role, a group role is linked to a user group, and a user group is linked to a project.
+  - An infinite number of user groups can be linked to a project, an infinite number of group roles can be linked to a group, and so forth.
+  - A group role can be assigned multiple permissions. And those permissions will ultimately determine the level of access linked users have to a specific project.
+  - The ability for a user to be added to a user group can be restricted by domain.
+- Enhancement: The UI and UX have been completely overhauled to reflect this change and to improve the overall user group management experience.
+
+**ChatGPT Document Extraction**
+- Prompt editors have been improved to reflect the enhancement to prompting techniques. It is now possible to prompt a model multiple times for the same document text using Sticky prompts and prompt indexes. More information will be added to our documentation in due course.
+
+**AIForged Copilot Preview**
+- New Feature: We have worked hard on bringing Copilot functionality to the AIForged Studio. The AIForged Assistant is currently in preview and can be accessed by enabling Teaching Tips in your user profile and clicking on the new Assistant Icon next to the Teaching Tip help icon in any view or tab.
+  - The AIForged Assistant is able to guide you through your journey with AIForged and is particularly useful for setting up new projects and services.
+  - The AIForged Assistant can also perform certain tasks for you, such as creating, opening and changing Projects and Services and their respective settings. It can even read and summarise information from extracted documents. It has the ability to create and assign work items, or make adjustments to definition rule settings. It can even add, update or read records to and from datasets.
+  -  Kindly note that the AIForged Assistant is still very much in preview form and any information or assistance it provides may be incomplete, inaccurate or completely irrelevant.
+
+**Custom Labelling**
+- Enhancement: Improved the rendering of verification controls for nested tables and clusters.
+- Bug Fix: Fixed issue with Line and Word adorner scaling.
+
+**Documents**
+- Enhancement: It is now possible to drill up in a document hierarchy when the **Master Id** column is visible in the documents grid and the document is part of a document hierarchy by clicking on the Master Id of a document.
+- Enhancement: Added a new Rerun All Verifications option for documents selected in the documents grid.
+
+**Document Results Export**
+- Enhancement: Improved exporting of nested tables and clusters
+
+**Projects**
+- Enhancement: Added option to hide empty projects in the Projects view.
+
+**Wallets and Billing**
+- Enhancement: Improved the overall credit management experience by adding new credit creation and transfer functionality where applicable.
+
+**Basic Studio**
+- Enhancement: Added new streamlined and simplified Service details view for those that want to get going faster.
+
+**Workflow**
+- Enhancement: Added new bulk actions for super users and administrators in the Data tab of the Workflow view.
+
+**General**
+- Enhancement: Added Excel Export functionality to the Service Pricing view.
+- Bug Fix: Fixed scaling issue experienced with combo boxes when the overall window scale was less than native.
+- Migrated to WindowsAppSdk 1.5
+
+## AIForged Studio 1.6.7 (28-02-2024)
+### Desktop
+
+**Dataset Editor**
+- Enhancement: Added additional controls to the basic dataset editor to support additional value types.
+
+**Document Results Export**
+- Enhancement: Improved speed of the details view data generation.
+- Enhancement: Improved consistency of exported column names.
+
+## AIForged Studio 1.6.6 (16-02-2024)
+### Desktop - Hotfix
+
+**Dataset Editor**
+- Bug Fix: Fixed issue that could prevent a user with valid permissions from editing values / fields.
+- Bug Fix: Fixed issue where the basic dataset editor would not detect value changes.
+
+## AIForged Studio 1.6.5 (14-02-2024)
+### Desktop - Hotfix
+
+**Custom Labelling**
+- Enhancement: Made improvements to ensure that Parameter Definitions copied between services have their settings initialized.
+- Bug Fix: Fixed issue where user preferences not having loaded would cause custom label configs not to load.
+
+**Documents**
+- Bug Fix: Fixed issue with export button not being visible due to race condition.
+
+**General**
+- Bug Fix: Fixed regression causing user preferences to load too late.
+
+## AIForged Studio 1.6.4 (13-02-2024)
+### Desktop - Hotfix
+
+**General**
+- Bug Fix: Fixed an issue that could cause an unsuccessful update of the unpackaged version of the AIForged Studio.
+
+## AIForged Studio 1.6.3 (06-02-2024)
+### Desktop - Hotfix
+
+**Parameter Definitions**
+- Bug Fix: Fixed drag and drop result definitions functionality.
+- Bug Fix: Improved visual synchronization between multiple open definition views of the same service.
+
+## AIForged Studio 1.6.2 (01-02-2024)
+### Desktop - Hotfix
+
+**Usergroup Management**
+- Bug Fix: Fixed issue preventing some owners from managing their usergroups.
+
 ## AIForged Studio 1.6.1 (26-01-2024)
 ### Desktop
 
