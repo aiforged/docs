@@ -5,7 +5,7 @@ nav_order: 1
 
 # Release Notes
 
-## AIForged Studio 1.7.20 (07-06-2024)
+## AIForged Studio 1.7.20 (14-06-2024)
 ### Desktop
 
 **Document Verification**
