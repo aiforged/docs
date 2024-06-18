@@ -5,6 +5,74 @@ nav_order: 1
 
 # Release Notes
 
+## AIForged Studio 1.7.20 (07-06-2024)
+### Desktop
+
+**Document Verification**
+- Bug Fix: Fixed intermittent issue with studio crashing due to layout cycle detection when lazy rendering Verification Controls.
+- Enhancement: Major improvements to verification control ordering, specifically for fields that require verification.
+- Enhancement: Improvements to the visibility of verification controls for fields that require verification.
+- Enhancement: Verification editor changes can now be confirmed by the Enter key.
+- Enhancement: Other quality of life visual improvements.
+
+**Service Wizard**
+- Enhancement: Improved UX when project categories are expected to be automatically refreshed.
+
+**Service Wizard: LLM Prompt Studio**
+- Bug Fix: Fixed prompt name changes not triggering unsaved changes flag.
+- Enhancement: Prompt Preview now shows the combined prompt for the currently selected prompt's index
+- Enhancement: Prompt Index selection control is now hidden when a prompt is configured as Sticky.
+- Bug Fix: Fixed not being able to scroll the Prompt Preview
+- Enhancement: The config to switch between JSON and markdown editor is now saved and checked per prompt
+- Enhancement: It is now easier to configure prompts and move between prompt configs
+
+**Work Items**
+- Bug Fix: Fixed issue with create work items popup not loading available service users.
+- Bug Fix: Fixed issue with all work item popups loading all service users instead of only verifydoc users at startup.
+
+**Documents View**
+- Moved bulk actions availability to advanced view.
+
+**Custom Datasets**
+- Enhancement: Improved JSON import reliability.
+
+## AIForged Studio 1.7.10 (07-06-2024)
+### Desktop
+
+**Document Verification**
+- Buf Fix: Fixed issue with displaying tables that contain only a single row.
+
+**Document Categories**
+- Enhancement: Improvements to the document category views.
+- Enhancement: Implemented new MS Forms specific training type options in category training options.
+- Bug Fix: Can no longer delete the default category in a project.
+
+**ExportView**
+- Enhancement: Improved loading speed of extraction results.
+- Enhancement: Improved rendering of nested tables and clusters
+- Enhancement: Changed JSON export to export the visible data.
+
+**Service Wizard**
+- Enhancement: Added function to create a custom dataset directly from a service's wizard.
+
+**Service Wizard: LLM Prompt Studio**
+- New Feature: Implemented new LLM Prompt Studio with improved quality of life when designing, editing, configuring and testing prompts. The new mini studio is automatically enabled when navigation to the prompt matrix step in an LLM service such as the Chat GPT Extractor service.
+
+**User Groups**
+- Bug Fix: Fixed an issue that would cause an inconsistent user experience in the user groups view
+
+**AIForged Copilot Preview**
+- Enhancement: Some improvements to the AIForged copilot.
+- Enhancement: The copilot will now react more responsively to requests and has an improved memory.
+
+**General**
+- Issue fix: Passwords will now be hidden in the UI. Once they are set, they cannot be viewed again.
+- Minor bug fixes to simple service view.
+- Minor bug fixes to navigation and memory management
+- Minor bug fixes to selection controls used in the documents and user groups management views.
+- Updated to the latest Windows App SDK release
+- Various other minor bug fixes and improvements
+
 ## AIForged (10-04-2024)
 ### Platform
 
