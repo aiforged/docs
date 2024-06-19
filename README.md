@@ -11,9 +11,6 @@ Our Fastlane releases include a traditional MSI installer which makes distributi
 
 Both versions of our Fastlane installers include auto-update features to keep your installation of the AIForged Studio up to date.
 
-This is a big change, OH NO!\
-please do not approve this!
-
 [Install from the Fastlane](https://aiforgedstorage.blob.core.windows.net/install/index.html)
 
 Installing from the Microsoft Store is simple and follows the same process as installing any other app from the Microsoft Store.
