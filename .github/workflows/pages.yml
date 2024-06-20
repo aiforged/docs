@@ -18,30 +18,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        timeout-minutes: 5
         
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '12.18.2'  # Using Node.js version 12.18.2
+        timeout-minutes: 5
 
       - name: Install npm
         run: npm install -g npm@6.14.5  # Using npm version 6.14.5
+        timeout-minutes: 5
 
       - name: Install GitBook CLI
         run: npm install -g gitbook-cli
+        timeout-minutes: 5
 
       - name: Fetch GitBook version 3.2.3
         run: gitbook fetch 3.2.3
+        timeout-minutes: 5
 
       - name: Install GitBook plugins
         run: gitbook install || true  # Ignore errors from `gitbook install`
+        timeout-minutes: 5
 
       - name: Build GitBook
         run: gitbook build . ./_book
+        timeout-minutes: 5
 
       - name: Archive the GitBook output
         shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
@@ -53,6 +59,7 @@ jobs:
             .
         env:
           INPUT_PATH: ./_book/
+        timeout-minutes: 5
           
       - name: Add .gitbook to existing tar
         shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
@@ -62,7 +69,8 @@ jobs:
             -rf "/home/runner/work/_temp/artifact.tar" \
             ./.gitbook/
         env:
-            INPUT_PATH: ./_book/
+          INPUT_PATH: ./_book/
+        timeout-minutes: 5
             
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -70,10 +78,11 @@ jobs:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
-          if-no-files-found: warn
+          if-no-files-found: error  # Fail if no files are found to catch issues early
           overwrite: true
         env:
           GITHUB_PAGES: true
+        timeout-minutes: 5
 
   deploy:
     permissions:
@@ -85,6 +94,16 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: ./_book
+        timeout-minutes: 5
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          artifact_path: ./_book
+        timeout-minutes: 5
