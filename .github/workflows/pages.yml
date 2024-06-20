@@ -3,7 +3,6 @@ name: Deploy GitBook to GitHub Pages
 on:
   push:
     branches: ["master"]
-
   workflow_dispatch:
 
 permissions:
@@ -26,11 +25,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '12.18.2'  # Using Node.js version 12.18.2
+          node-version: '12.18.2'
         timeout-minutes: 5
 
       - name: Install npm
-        run: npm install -g npm@6.14.5  # Using npm version 6.14.5
+        run: npm install -g npm@6.14.5
         timeout-minutes: 5
 
       - name: Install GitBook CLI
@@ -42,46 +41,22 @@ jobs:
         timeout-minutes: 5
 
       - name: Install GitBook plugins
-        run: gitbook install || true  # Ignore errors from `gitbook install`
+        run: gitbook install || true
         timeout-minutes: 5
 
       - name: Build GitBook
         run: gitbook build . ./_book
         timeout-minutes: 5
 
-      - name: Archive the GitBook output
-        shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
-        run: |
-          tar \
-            --dereference --hard-dereference \
-            --directory "./_book" \
-            -cvf "/home/runner/work/_temp/artifact.tar" \
-            .
-        env:
-          INPUT_PATH: ./_book/
-        timeout-minutes: 5
-          
-      - name: Add .gitbook to existing tar
-        shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
-        run: |
-          tar \
-            --dereference --hard-dereference \
-            -rf "/home/runner/work/_temp/artifact.tar" \
-            ./.gitbook/
-        env:
-          INPUT_PATH: ./_book/
-        timeout-minutes: 5
-
   deploy:
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_book
