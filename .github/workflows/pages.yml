@@ -101,8 +101,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
+          path: ${{ runner.temp }}
         timeout-minutes: 5  
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
