@@ -5,7 +5,7 @@ nav_order: 2
 
 # 📥 How to Install AIForged
 
-## Installation Options.
+## Installation Options
 
 ### Microsoft Store
 
