@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Deploy GitBook to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -27,32 +27,32 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          source: ./
-          destination: ./_site
-      - name: Upload Pages
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./_site
-          name: github-pages
-          retention-days: 1
-#      - name: Upload artifact
-#        uses: actions/upload-pages-artifact@v1
-      - name: Archive artifact
+          node-version: '14'
+
+      - name: Install GitBook CLI
+        run: npm install -g gitbook-cli
+
+      - name: Install GitBook plugins
+        run: gitbook install
+
+      - name: Build GitBook
+        run: gitbook build . ./_book
+      
+      - name: Archive the GitBook output
         shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
         run: |
           tar \
             --dereference --hard-dereference \
-            --directory "$INPUT_PATH" \
+            --directory "./_book" \
             -cvf "/home/runner/work/_temp/artifact.tar" \
             .
         env:
-          #GITHUB_PAGES: true
-          INPUT_PATH: ./_site/
+          INPUT_PATH: ./_book/
+          
       - name: Add .gitbook to existing tar
         shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
         run: |
@@ -61,8 +61,8 @@ jobs:
             -rf "/home/runner/work/_temp/artifact.tar" \
             ./.gitbook/
         env:
-            #GITHUB_PAGES: true
-            INPUT_PATH: ./_site/
+            INPUT_PATH: ./_book/
+            
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
