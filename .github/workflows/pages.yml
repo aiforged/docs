@@ -30,9 +30,6 @@ jobs:
       - name: Install GitBook CLI
         run: npm install -g gitbook-cli
 
-      - name: Fetch GitBook version 3.2.3
-        run: gitbook fetch 3.2.3
-
       - name: Install GitBook plugins
         run: gitbook install || true  # Ignore errors from `gitbook install`
 
