@@ -3,7 +3,7 @@
 * [📣 Release Notes](README.md)
 * [📥 How to Install AIForged](<README (1).md>)
 * [✏️ Register](register.md)
-* [✅ Activate my account.](activate-my-account.md)
+* [✅ Activate my account](activate-my-account.md)
 * [❓ Forgot Password](forgot-password.md)
 * [🔐 Login](login.md)
 * [🔂 Multi-Factor Authentication](multi-factor-authentication.md)
