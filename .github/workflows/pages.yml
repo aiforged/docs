@@ -98,7 +98,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: github-pages
-          path: ./_book
+          path: ${{ runner.temp }}
         timeout-minutes: 5  
       - name: Deploy to GitHub Pages
         id: deployment
