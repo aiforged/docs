@@ -3,24 +3,38 @@ title: Activate my account
 nav_order: 4
 ---
 
-# Activate my account
+# ✅ Activate my account
 
-<figure><img src=".gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+The **Activate My Account** page facilitates the activation process for your newly registered account.
 
-* The **Activate My Account** page allows you to activate your newly registered account.
-* Clicking the **Activate My Account** link in the account activation email should automatically open the AIForged Studio and bring you to this page, it will also automatically fill in the required information.
+### Activation Process
 
-## Required details
+1. **Open Activation Link**: Clicking the **Activate My Account** link in the account activation email will automatically open AIForged Studio and direct you to this page, prefilling the necessary details.
+2. **Required Details**:
+   * **Username/E-mail Address**: Use the unique username or e-mail address you registered with.
+   * **Activation Token**: Enter the activation token provided in your activation email.
 
-* The unique **Username/E-mail** **Address** that you registered with.
-* The **Activation Token** that you received with your account activation email.
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-## Troubleshooting
+### Resend Activation Email
 
-**Should you experience any difficulty in activating your AIForged Account please check the following**
+If you need to resend the activation email, follow these steps:
 
-* Ensure that your **Device** is connected to the **Internet**.
-* If you are using AIForged on a business or enterprise network, please check with your network administrators that the AIForged **Service Endpoint URL** is allowed outbound access via your network. This URL can be found in the [**Settings**](settings.md) section of the AIForged Studio.
-* If you have deployed AIForged on-premises, please make sure to add the correct **Service Endpoint URL** in the [**Settings**](settings.md) section of the AIForged Studio.
-* Check that the activation email has not been filtered into your **junk** or **spam** folder.
-* Ensure that your details have been entered correctly and that the activation token matches exactly with the token in the activation email.
+1. **Access Resend Option**:
+   * Simply click on the button that says **Don't have a token**.
+2. **Enter Your Details**:
+   * You will be prompted to enter your email address or username associated with your account.
+3. **Receive Instructions**:
+   * An activation email with instructions will be sent again to the provided email address.
+
+### Troubleshooting
+
+If you encounter any issues activating your AIForged account, please consider the following:
+
+* **Internet Connection**: Ensure your device is connected to the Internet.
+* **Network Settings**:
+  * If you are using AIForged on a business or enterprise network, verify with your network administrators that the AIForged Service Endpoint URL is allowed outbound access. You can find this URL in the Settings section of AIForged Studio.
+  * For on-premises deployments, ensure the correct Service Endpoint URL is added in the Settings section of AIForged Studio.
+* **Email Issues**:
+  * Check your junk or spam folder for the activation email.
+  * Verify that the details entered match exactly with those provided during registration, including the activation token.

@@ -3,6 +3,6 @@ title: Register
 nav_order: 3
 ---
 
-# Register
+# ✏️ Register
 
-Please contact your AIForged Partner or Consultant to assist you with setting up a new AIForged account.
+To set up a new AIForged account, please contact your AIForged Partner or Consultant for assistance.
