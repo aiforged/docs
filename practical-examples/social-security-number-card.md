@@ -71,5 +71,5 @@ The purpose of this process is to extract the **Social Security number**, the **
 23. Now that the documents have been labeled, we can request the train operation. In step 5, click on **Train Service**. Again the progress dialogue will show the progress of the training operation. Note that after training has been completed successfully, the status will change to **Trained**.
 
     <figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-24. At this stage, the service is trained, and documents can be loaded into the [**Inbox**](../documents/documents-inbox.md) of the service and can be processed.
-25. The OCR results can be viewed in the [**Outbox**](../documents/documents-outbox.md) of the service.
+24. At this stage, the service is trained, and documents can be loaded into the [**Inbox**](broken-reference) of the service and can be processed.
+25. The OCR results can be viewed in the [**Outbox**](broken-reference) of the service.

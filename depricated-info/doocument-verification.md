@@ -6,13 +6,13 @@
 
 ![verification usage](../.gitbook/assets/verification-Usage.png)
 
-1.Click on any of the tags 2.Click on the "Usage" command in the command bar 3.This will open up the usage page you can view the usage page [Here](Verification/document-analytics.md)
+1.Click on any of the tags 2.Click on the "Usage" command in the command bar 3.This will open up the usage page you can view the usage page [Here](verification/document-analytics.md)
 
 ## Cost Analysis
 
 ![verification Cost Analysis](../.gitbook/assets/verification-CostAnalysis.png)
 
-* The "Cost Analysis" Command takes you to the Analytics page [Here](Verification/document-analytics.md)
+* The "Cost Analysis" Command takes you to the Analytics page [Here](verification/document-analytics.md)
 
 ## Definition
 

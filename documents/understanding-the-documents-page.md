@@ -1,43 +1,5 @@
 # Understanding the Documents page
 
-## Types of documents
-
-you can identify 3 main categories: structured, semi-structured and unstructured. Each type of document comes with its own set of challenges.
-
-### Structured documents
-
-![](<../.gitbook/assets/structured-document (1) (1).png>)
-
-Structured documents generally focus on collecting information in a precise format, guiding the person who is filling them with precise areas where each piece of data needs to be entered.
-
-### Semi-structured
-
-![](<../.gitbook/assets/semi-structured (1).png>)
-
-Semi-structured documents are documents that do not follow a strict format the way structured forms do and are not bound to specified data fields. These don't have a fixed form but follow a common format.
-
-## Unstructured
-
-![](<../.gitbook/assets/un-structured (1) (1).png>)
-
-Unstructured documents are documents in which the information isn't organized according to a clear, structured model.
-
-## Available Fields
-
-| Field Name   | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| Id           | Displays the generated Id of the Document               |
-| Master       |                                                         |
-| Date Created | Displays the date the Document was uploaded to AiForged |
-| Filename     | Displays the Filename of the Document                   |
-| Type         | Displays the file type of the document                  |
-| Usage        | Displays the current Usage of the Document              |
-| Status       | Displays the Status of the document                     |
-| Actions      | Displays Actions that is available to this document     |
-| Comment      | Displays Comments left on this document                 |
-| Result       | Displays the Result of this document                    |
-| Category     | Displays the Category                                   |
-
 ## Document Actions
 
 *   Opens a document for verification.
