@@ -9,7 +9,7 @@ They serve as quick-access points within AIForged Studio, offering essential inf
 * **Project Name**: Clearly identifies the project.
 * **Summary Information**: Provides key details such as project description or relevant metadata.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Clicking on a project card opens the full project for detailed exploration and management.

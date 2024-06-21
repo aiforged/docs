@@ -30,7 +30,7 @@ Get Project By Id
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Get Project By Id Activity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>Get Project By Id Activity</p></figcaption></figure>
 
 ### Activity Property View
 

@@ -12,7 +12,7 @@ A webhook is a mechanism that allows one system or application to send real-time
 2. Create a new **Service** of any type or select an existing one.
 3.  Once in the Service, select the **Add Utility** button.
 
-    <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (10) (4).png" alt=""><figcaption></figcaption></figure>
 4.  In the **Utilities** section, select the **WebHook Utility** Service.
 
     <figure><img src="../../.gitbook/assets/image (1) (8).png" alt=""><figcaption></figcaption></figure>
@@ -22,7 +22,7 @@ A webhook is a mechanism that allows one system or application to send real-time
 
 The following settings are available to configure a **WebHook Service**. These setting can be used to setup the conditions when a webhook should fire.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The following **Document** options are available.
 

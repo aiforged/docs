@@ -1,6 +1,6 @@
 # Amazon Identity Documents Extraction
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Amazon Identity Documents Service** makes use of pre-trained ID doc models to extract **Key-Value Pairs** of invoice-related data making use of **Amazon AnalyzeID API**. The processing of invoices returns relevant information from passports, driver licenses, and other identity documentation issued by the US Government, such as **Name, Surname, ID Number,** and **Date of Birth**.
 
