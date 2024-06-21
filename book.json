@@ -1,21 +1,7 @@
 {
     "plugins": [
       "hints",
-      "livereload",
-      "highlight",
-      "search",
-      "lunr",
-      "sharing",
-      "fontsettings",
-      "theme-default"
-    ],
-    "pluginsConfig": {
-      "hints": {
-        "css": "default"
-      },
-      "theme-default": {
-        "showLevel": true
-      }
-    }
+      "search"
+    ]
   }
   
