@@ -10,18 +10,18 @@ It is important to identify the type of document first, and then choose an appro
 
 ### Structured documents
 
-![](<../.gitbook/assets/structured-document (1) (1).png>)
-
 Structured documents generally focus on collecting information in a precise format, guiding the person who is filling them with precise areas where each piece of data needs to be entered.
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ### Semi-structured
 
-![](<../.gitbook/assets/semi-structured (1).png>)
-
 Semi-structured documents are documents that do not follow a strict format the way structured forms do and are not bound to specified data fields. These don't have a fixed form but follow a common format.
+
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 #### Unstructured
 
-![](<../.gitbook/assets/un-structured (1) (1).png>)
-
 Unstructured documents are documents in which the information isn't organized according to a clear, structured model.
+
+<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
