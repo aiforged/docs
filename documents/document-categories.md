@@ -1,12 +1,16 @@
 # ❓ Document Categories
 
-Document categories define the type of document that has been uploaded. Example: Bank-Statement, ID, or Invoice
+Document categories define the type of document that has been uploaded.&#x20;
+
+{% hint style="info" %}
+Example: Bank-Statement, ID, or Invoice
+{% endhint %}
 
 {% hint style="info" %}
 Document Categories are shared across all services in the project
 {% endhint %}
 
-## How to create Document Categories
+## How to create a document category
 
 1.  From the **Project** page click on Document Categories.
 

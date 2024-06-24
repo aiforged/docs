@@ -1,32 +1,65 @@
-# Understanding the Documents page
+# 🧠 Understanding the Documents page
+
+## Overview&#x20;
+
+The documents page displays all the documents in the specified location. Example: Inbox, Outbox, or even training box
+
+{% hint style="info" %}
+The document actions and commands change depending on the compatible usage
+{% endhint %}
+
+## Quick Filter
+
+The Quick Filter allows you to quickly define which documents you want to view.
+
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+
+* **Document Properties**: Filter documents by specific properties such as File Name, IDs, or File Type.
+* **Category**: Filter documents by specified categories, such as Invoices, Contracts, or documents with no category.
+* **Usage**: Filter documents based on their location. Examples include Inbox, Outbox, or the TrainingBox.
+* **Status**: Filter documents by specific statuses, such as Received, Error, or Processed.
+* **From Date**: Filter documents by the date they entered the service.
+* **To Date**: Filter documents up to the last date they entered the service.
+
+## Document search
+
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+The search functionality only searches for documents on the current page
+{% endhint %}
+
+* **Normal Search:** searches through all the document attributes to find the document
+* **Deep search:** searches through all the document parameters, and also within the content content to find potential hits
 
 ## Document Actions
 
-*   Opens a document for verification.
+* Open a document for verification
 
-    <figure><img src="../.gitbook/assets/image (27) (2).png" alt=""><figcaption></figcaption></figure>
-*   Trigger a document for processing.
+<figure><img src="../.gitbook/assets/image (27) (2).png" alt=""><figcaption></figcaption></figure>
+
+*   Process the document
 
     <figure><img src="../.gitbook/assets/image (29) (4).png" alt=""><figcaption></figcaption></figure>
-*   open documents linked to the current document. The number indicates the count.
+*   View the linked documents (see [Understanding-document-flows](understanding-document-flows.md))
 
     <figure><img src="../.gitbook/assets/image (33) (6).png" alt=""><figcaption></figcaption></figure>
 *   Open the document on the OS.
 
     <figure><img src="../.gitbook/assets/image (36) (3).png" alt=""><figcaption></figcaption></figure>
-*   Download the document to local disk.
+*   Download the document to your local disk.
 
     <figure><img src="../.gitbook/assets/image (35) (2).png" alt=""><figcaption></figcaption></figure>
 *   Edit the document.
 
     <figure><img src="../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
-*   Open document hierarchy.
+*   View the document hierarchy.
 
     <figure><img src="../.gitbook/assets/image (30) (1) (2).png" alt=""><figcaption></figcaption></figure>
-*   Open document structured results.
+*   View the document's structured results.
 
     <figure><img src="../.gitbook/assets/image (42) (2).png" alt=""><figcaption></figcaption></figure>
-*   Show document result.
+*   View document result.
 
     <figure><img src="../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 *   Open document verification audit trail.
@@ -36,128 +69,46 @@
 
     <figure><img src="../.gitbook/assets/image (21) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-## Sort the Documents grid
+### Sort the Documents grid
 
-* You can **Sort** the documents page by clicking on any of the table headers.
-* All Sorting of the documents happens **server side.**
-*   To do multiple column sorting use **CTRL + Left Mouse Click** on the columns.
+* You can **sort** the documents page by clicking on any of the table headers.
 
-    <figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+To sort multiple column sorting use **CTRL + Left Mouse Click** on the columns.
+{% endhint %}
 
-## Bulk Actions
+<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
-The Bulk Action allows you to update all the selected Documents.
+## Process Multiple Documents
 
-<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+The _**Process Selected** action_ allows you to process all the selected documents
 
-### Bulk Document Category Update
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-1.  To do a Bulk category Update click on **Bulk Actions**, then **Change Category for All Documents**.
-
-    <figure><img src="../.gitbook/assets/image (11) (5).png" alt=""><figcaption></figcaption></figure>
-2. A popup will appear asking what Document Status you would like to update.
-3. Once you have selected the Status another popup will appear.
-4. Select the Usage of the documents you would like to update, after selecting the Usage another popup will appear asking you to select the Categories you would like to update.
-5. Select the Category you would like to update it to and click yes on the Next popup.
-6. Your category update should be completed.
-
-### Bulk Status Updates
-
-The Bulk Status Update Action allows you to update all the selected Document statuses.
-
-1.  To do a Bulk Status Update click on Bulk Actions, then Change Status for All Documents.
-
-    <figure><img src="../.gitbook/assets/image (6) (5).png" alt=""><figcaption></figcaption></figure>
-2. A popup will appear asking what Document Status you would like to update.
-3. Once you have selected the Status another popup will appear.
-4. Select the Status you want to Update it to, after selecting a value another popup will appear.
-5. Select the Document Usage you would like to update, the next prompt will ask to what Usage you would like to update to.
-6. After selecting yes your Statuses should be updated.
-
-### Bulk Copy
-
-The Bulk Copy Action allows you to **copy** the documents to another project and service.
-
-1.  To do a Bulk Copy click on **Bulk Actions,** then **Copy All Documents.**
-
-    <figure><img src="../.gitbook/assets/image (25) (3).png" alt=""><figcaption></figcaption></figure>
-2. A popup will appear asking to select a destination project.
-3. Once you have selected the Destination project, another popup will appear asking to select the Destination Service.
-4. Select the Status you want to Copy, after selecting a value another popup will appear.
-5. Select the Target Status you want the copied documents to be, after selecting a value another popup will appear.
-6. Select the Document Usage you want to copy, the next prompt will ask to what Usage you would like the copied documents to be.
-7. After completing all the prompts and yes has been clicked your documents should **copy**.
-
-### Bulk Move
-
-The Bulk Move Action allows you to **move** the documents to another project and service.
-
-1.  To do a Bulk Move click on **Bulk Actions**, then **Move All Documents**.
-
-    <figure><img src="../.gitbook/assets/image (43) (3).png" alt=""><figcaption></figcaption></figure>
-2. A popup will appear asking to select a destination project.
-3. Once you have selected the Destination project, another popup will appear asking to select the Destination service.
-4. Select the Status you want to Copy, after selecting a value another popup will appear.
-5. Select the Target Status you want the copied documents to be, after selecting a value another popup will appear.
-6. Select the Document Usage you want to copy, the next prompt will ask to what Usage you would like the copied documents to be.
-7. After completing all the prompts and yes has been clicked your documents should **move**.
-
-## Process Checked
-
-The Process Checked Action allows you to **process** selected documents.
-
-![](<../.gitbook/assets/69 (1) (2).png>)
-
-1. To **Process** a checked document, check all the documents you would like to process.
-2.  Click on the **Process Checked** Action in the app bar.
+1. Select all the documents you would like to process
+2.  Click on the **Process Selected** Action in the command bar.
 
     <figure><img src="../.gitbook/assets/image (23) (4).png" alt=""><figcaption></figcaption></figure>
-3. A popup will appear to check if you want to process the documents, click yes.
-4. A Log Events popup will appear displaying the progress of **processing** the documents.
-
-## Copy Checked
-
-The Process Checked Action allows you to **process** selected documents.
-
-![](<../.gitbook/assets/71 (1).png>)
-
-1. To **Copy** a checked document, check all the document you would like to copy.
-2. Click on the Copy Checked click on the **Copy Selected Documents** **Action** in the app bar.![](<../.gitbook/assets/image (2) (8).png>)
-3. A popup will appear asking to select a destination project.
-4. Once you have selected the Destination project, another popup will appear asking to select the Destination service.
-5. Select the Status you want to Copy, after selecting a value another popup will appear.
-6. Select the Target Status you want the copied documents to be, after selecting a value another popup will appear.
-7. Select the Document Usage you want to copy, the next prompt will ask to what Usage you would like the copied documents to be.
-8. After completing all the prompts and yes has been clicked your documents should **move**.
-
-## Delete Checked
-
-The Delete Checked Action allows you to **delete** selected documents.
-
-1. To **Delete** a checked document, check all the documents you would like to delete.
-2.  Click the **Delete Checked** Action in the app bar.
-
-    <figure><img src="../.gitbook/assets/image (34) (2).png" alt=""><figcaption></figcaption></figure>
-3. On the prompt click “Yes” to approve the deletion of the documents.
-
-## Set Checked Status
-
-The Checked Status Action allows you to change the selected documents statuses selected documents.
-
-1. To **Set the Status** of a checked document, check all the documents you would like to change the Status of.
-2.  Click the **Set Selected Checked Status** Action in the app bar.
-
-    <figure><img src="../.gitbook/assets/image (9) (8).png" alt=""><figcaption></figcaption></figure>
-3. On the First prompt select the new **Status**
-4. On the next prompt click “Yes” to approve the Status change of the checked documents
+3. Define the processing parameters
 
 ## Upload and Download
 
-The Upload Action allows you to upload a new document.
+* The Upload Action allows you to upload a new document.
+* The Download action allows you to download the selected documents to your local machine
 
 <figure><img src="../.gitbook/assets/image (13) (8).png" alt=""><figcaption></figcaption></figure>
 
-1. Click the **Upload** Action in the app bar.
-2. In the popup Select the Status of the Document being uploaded
-3. After selecting the Status select the document category to be uploaded
-4. Select the document on your local machine to be uploaded and click “Open”
+#### Upload
+
+1. Click the **Upload** Action in the command bar.
+2. Select the document category
+3. Select the file to be uploaded
+
+#### Download
+
+1. Select the documents that you would like to download&#x20;
+2. Click the **Download** action in the command bar
+3. Specify the save location
+
+
+

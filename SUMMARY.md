@@ -14,7 +14,7 @@
   * [⏩ Understanding Document Flows](documents/understanding-document-flows.md)
   * [➕ Document Attributes](documents/document-attributes.md)
   * [❓ Document Categories](documents/document-categories.md)
-  * [Understanding the Documents page](documents/understanding-the-documents-page.md)
+  * [🧠 Understanding the Documents page](documents/understanding-the-documents-page.md)
 * [Work Queue](workqueue.md)
 * [Analyze Transaction details](analyze-transaction-details.md)
 * [Contacts](contacts.md)
