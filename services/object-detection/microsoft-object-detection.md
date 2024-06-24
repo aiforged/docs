@@ -6,7 +6,7 @@
 
 Consider the example below of a blonde woman; the image has been categorized as a **"people\_portrait"**, and the caption was returned as "**a woman with blonde hair**".
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Furthermore, **Face Detection** has supplied the gender and the estimated age of the woman.
 

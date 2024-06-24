@@ -11,7 +11,7 @@ The **User Profile** page allows you to view and edit various details related to
 
 To open the **User Profile** page, simply select the **User** **Profile** navigation item from the **Settings** area of the navigation menu.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### User
 
@@ -22,7 +22,7 @@ The User page allows you to edit your user details, and change your password
 1. Edit or fill in the **User Details** you want to change or add.
 2. Click on the **Update User** button in the command bar.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Your Username and User cannot be changed
@@ -83,7 +83,7 @@ API keys offer a unique key to authenticate yourself programmatically
 
 **View your API Key**
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Notification Preferences&#x20;
 
@@ -99,7 +99,7 @@ Notifications are sent on a **OPT-IN** Basis&#x20;
 
 ### Example
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Teaching Tips
 
@@ -109,7 +109,7 @@ Notifications are sent on a **OPT-IN** Basis&#x20;
 
 <figure><img src=".gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## General Setting
 
@@ -117,5 +117,5 @@ General Settings contain the preferences of the logged-in user.&#x20;
 
 These settings affect the overall look and feel of the UI
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 

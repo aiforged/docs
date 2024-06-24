@@ -15,7 +15,7 @@ Creating a project in AIForged Studio is a straightforward process:
 
 1. **Navigate to Projects View**
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (6).png" alt=""><figcaption></figcaption></figure>
 
 2.  **Initiate Project Creation**
 
@@ -29,7 +29,7 @@ Creating a project in AIForged Studio is a straightforward process:
 
     Provide a name for your project and optionally include additional information relevant to the project.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (8).png" alt=""><figcaption></figcaption></figure>
 
 3. **Confirm Project Creation**
 
