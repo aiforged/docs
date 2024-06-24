@@ -9,7 +9,7 @@
 * [🔂 Multi-Factor Authentication](multi-factor-authentication.md)
 * [🎛️ Projects](projects/README.md)
   * [🧠 Understanding Projects](projects/understanding-projects.md)
-* [documents](documents/README.md)
+* [Documents](documents/README.md)
   * [ℹ️ Documemt Types](documents/documemt-types.md)
   * [⏩ Understanding Document Flows](documents/understanding-document-flows.md)
   * [➕ Document Attributes](documents/document-attributes.md)
