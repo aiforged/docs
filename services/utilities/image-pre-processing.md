@@ -23,4 +23,4 @@ Consider the document below, with a "DRAFT" watermark.
 
 The **AIForged Image Processor Service** can be used to remove the watermark and whiten the background.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
