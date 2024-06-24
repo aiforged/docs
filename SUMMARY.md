@@ -17,7 +17,7 @@
   * [➕ Document Attributes](documents/document-attributes.md)
   * [❓ Document Categories](documents/document-categories.md)
   * [🧠 Understanding the Documents page](documents/understanding-the-documents-page.md)
-* [📩 Notification Hinstory](notifications.md)
+* [📩 Notification History](notifications.md)
 * [Work Queue](workqueue.md)
 * [Analyze Transaction details](analyze-transaction-details.md)
 * [Contacts](contacts.md)
