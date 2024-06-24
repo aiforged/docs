@@ -9,11 +9,11 @@ The **Reports** **Page** provides access to various reports for **Projects,** **
 
 These pages are **Interactive**, and you can actively adjust filters or drill into report objects.
 
-<figure><img src=".gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 The navigation panel at the bottom of the **Reports Page** provides access to a broad selection of reporting categories and scopes.
 
-<figure><img src=".gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 There are currently 34 **Report Views** available:
 

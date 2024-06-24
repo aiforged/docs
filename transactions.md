@@ -4,63 +4,45 @@ nav_order: 11
 has_children: true
 ---
 
-# Transactions
+# 💰 Wallets and Billing
 
-The **Transactions** page lists all transactions made by each service and can be viewed by selecting the **Transactions** navigation item from the main navigation menu.\
-\
-You can drill into the transactions of specific **Projects** or **Services** by clicking its name in the list of transactions.
+## Overview
 
-<figure><img src=".gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+The **Wallets and Billing** page lists all transactions made by each service and can be viewed by selecting the **Wallets and Billing** navigation item from the main navigation menu.
 
-## Filter Transactions
+{% hint style="info" %}
+Wallets and billing are updated in real-time
+{% endhint %}
 
-The **From** and **To** date filters can be set to view transactions in any time window.
+## Filters
 
-<figure><img src=".gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-The list of **Transactions** can be exported to Microsoft Excel format (xlsx) by selecting **Export To Excel**.
+| Filter                         | Effect                                              |
+| ------------------------------ | --------------------------------------------------- |
+| From Date                      | The end date of the statement                       |
+| To Date                        | The End date of the statement                       |
+| Group Interval                 | Transactions group interval Example: 7/ 30/ 60 days |
+| Show Deleted Projects/Services | Shows/ Hides deleted projects  and services         |
+| Show all related Transaction   | Show all the related transactions to a project      |
 
-<figure><img src=".gitbook/assets/image (15) (2) (2).png" alt=""><figcaption></figcaption></figure>
+## Transactions
 
-## Available Fields
+Each service will accumulate transactions as it processes documents
 
-### Token Usage
+{% hint style="info" %}
+Each service will be monitored and charged accordingly
+{% endhint %}
 
-| Field Name   | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| Project      | Displays the project name                            |
-| Service      | Displays the service name                            |
-| Service type | Displays the type of service                         |
-| User         | Displays the user name                               |
-| Count        | Displays the current credits used                    |
-| Tokens       | Displays your remaining token count for that project |
+* **Opening Balance**: Indicates the balance the project opened within the "From date" filter.
+* **Closing Balance**: Indicates the final balance of a project from the "To date" filter.
+* **Projects In**: Indicates how many credits were transferred into the project.
+* **Projects Out**: Indicates how many credits were transferred out of the project.
+* **Credits Used**: Indicates the amount of credits the service consumed.
+* **Services**: All the services within the project that have a charge associated with them.
 
-### Token Credits
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-| Field Name | Description                                          |
-| ---------- | ---------------------------------------------------- |
-| Project    | Displays the project name                            |
-| Bundle     | Displays the service name                            |
-| User       | Displays the user name                               |
-| Count      | Displays the current credits used                    |
-| Tokens     | Displays your remaining token count for that project |
-
-## Actions
-
-1.  Clicking on **View All Transaction Details** in the **Action** bar will navigate you to the **Transaction Details** page for the specific **Project**.
-
-    <figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-
-    This view will show a detailed summary of **Transactions** for the **Project**.
-
-    <figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
-2.  Clicking on **View Details** in the **Action** bar will navigate you to the **Transaction Details** page for the specific **Service**.
-
-    <figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
-
-    This view will show a detailed summary of **Transactions** for the **Service**.
-
-    <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-3.  Clicking on **Open Service** will open the **Service Detail View** for the [**Service**](services/understanding-services.md).
-
-    <figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p><br></p></figcaption></figure>
+{% hint style="info" %}
+To drill down, select the service to see an Itemised Bill
+{% endhint %}
