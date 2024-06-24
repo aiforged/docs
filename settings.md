@@ -3,15 +3,25 @@ title: Settings
 nav_order: 19
 ---
 
-# Settings
+# ⚙️ Settings
+
+## Overview
 
 To access the application **Settings** page, simply click the **Settings** navigation item from the **Settings** area of the navigation menu.
 
-The **Settings** page allows you to change the **AIForged Platform Service Endpoint URL**, setup **Proxy Server** settings or change the current application **Theme**.
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (12) (4) (1).png" alt=""><figcaption></figcaption></figure>
+The **Settings** page allows you to:
+
+* Change the AIForged Platform Service Endpoint URL
+* Set up Proxy Server settings
+* Change the current application theme
 
 ## Connectivity
+
+{% hint style="info" %}
+The connectivity page is useful when you host AiForged on your own Tenant
+{% endhint %}
 
 The **Connectivity** page allows the user to change connectivity settings. The user can specify:
 
@@ -23,24 +33,14 @@ The **Connectivity** page allows the user to change connectivity settings. The u
 
 <figure><img src=".gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
+#### Add an Endpoint
+
 To add a new **Service Endpoint**, click on the **Add Button**.
 
 <figure><img src=".gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
 ## Theme
 
-The **Theme** page allows the user to select the current theme and to enable or disable UI interaction feedback audio.
+The **Theme** page allows the user to select the current theme and enable or disable UI interaction feedback audio.
 
-<figure><img src=".gitbook/assets/image (6) (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Change Theme Mode
-
-To change the current **Theme** click on the radio button of the **Theme** you want to select.
-
-![](<.gitbook/assets/image (38) (1) (1) (1) (1) (1).png>)
-
-### Sound
-
-Click the toggle to enable or disable UI feedback sounds.
-
-![](<.gitbook/assets/image (10) (1) (1) (1) (1) (1).png>)
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

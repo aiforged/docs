@@ -11,7 +11,7 @@ The **Forgot Password** page allows you to reset your password in the event that
 
 1. **Access Forgot Password Page**: Navigate to the Forgot Password page from the login screen.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. **Enter Required Details**:
 

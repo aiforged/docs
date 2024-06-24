@@ -14,7 +14,7 @@ The **Activate My Account** page facilitates the activation process for your new
    * **Username/E-mail Address**: Use the unique username or e-mail address you registered with.
    * **Activation Token**: Enter the activation token provided in your activation email
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (9).png" alt=""><figcaption></figcaption></figure>
 
 ### Resend Activation Email
 
