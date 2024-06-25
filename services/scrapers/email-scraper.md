@@ -32,7 +32,7 @@ Any email provider can be used if the correct settings are applied&#x20;
 3. Apply the following settings
 
 {% tabs %}
-{% tab title="Microdoft 365" %}
+{% tab title="Microsoft 365" %}
 **Service Type:** IMAP
 
 **Server:** Your Email Server _<mark style="color:blue;">Default (outlook.office365.com)</mark>_
