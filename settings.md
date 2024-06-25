@@ -43,4 +43,4 @@ To add a new **Service Endpoint**, click on the **Add Button**.
 
 The **Theme** page allows the user to select the current theme and enable or disable UI interaction feedback audio.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

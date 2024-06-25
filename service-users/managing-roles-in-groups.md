@@ -37,7 +37,7 @@ Creating a role in AIForged is a straightforward process:
    * **Group Type:** Select the Role (see[ User Permissions outline](managing-roles-in-groups.md#user-permissions-outline))
    * **Validity Date**: Optionally, set the start and end dates for the role's validity.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Confirm Role Creation**: Complete the process to create the role.
 
