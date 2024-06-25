@@ -3,7 +3,8 @@
     "hints",
     "search",
     "collapsible-chapters",
-    "insert-logo"
+    "insert-logo",
+    "tabs2"
   ],
   "pluginsConfig": {
     "insert-logo": {
