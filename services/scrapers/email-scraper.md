@@ -59,7 +59,7 @@ Any email provider can be used if the correct settings are applied&#x20;
 
 **Username:** The Email address that will be used for scraping
 
-**Password:** The Email address **App-Specific** Password
+**Password:** The Email address [**App-Specific** ](https://support.google.com/accounts/answer/185833?hl=en)Password
 
 **Remove XOAUTH2:** YES
 
