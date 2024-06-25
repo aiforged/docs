@@ -51,10 +51,6 @@ Any email provider can be used if the correct settings are applied&#x20;
 {% endtab %}
 
 {% tab title="Gmail" %}
-{% hint style="danger" %}
-Important: Gmail requires app-specific passwords to function properly
-{% endhint %}
-
 **Service Type:** IMAP
 
 **Server:** Your Email Server _<mark style="color:blue;">Default (imap.gmail.com)</mark>_
@@ -63,7 +59,7 @@ Important: Gmail requires app-specific passwords to function properly
 
 **Username:** The Email address that will be used for scraping
 
-**Password:** The Email address Password
+**Password:** The Email address **App-Specific** Password
 
 **Remove XOAUTH2:** YES
 
