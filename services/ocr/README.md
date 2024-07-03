@@ -1,11 +1,16 @@
-# OCR
+# 💡 OCR
 
-**Optical Character Recognition** is the electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo or from subtitle text superimposed on an image.
+Optical Character Recognition (OCR) is a technology that converts different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data.
 
-**OCR** is currently a heavily competitive application area in **Information Technology**, with most of the **Tech Giants**, such as **Google**, **Microsoft**, and **Amazon**, to name a few, constantly competing against each other to provide top-notch **Cloud Based** implementations for **OCR Services**.
+{% hint style="info" %}
+OCR software scans the text of a document and translates the characters into code that can be used for data processing. It recognizes printed or handwritten text characters inside digital images of physical documents.
+{% endhint %}
 
-**AIForged** extends its operations and functionality by harnessing the power of these OCR solutions. Currently, a series of external **OCR Services** are incorporated by **AIForged**:
+**AIForged** extends its operations and functionality by harnessing the power of these OCR solutions.&#x20;
+
+Currently, a series of external **OCR Services** are incorporated by **AIForged**:
 
 * **Microsoft**
 * **Google**
 * **Amazon**
+* **Tesseract OCR**
