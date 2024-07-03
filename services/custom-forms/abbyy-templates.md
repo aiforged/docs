@@ -1,2 +1,0 @@
-# Abbyy Templates
-

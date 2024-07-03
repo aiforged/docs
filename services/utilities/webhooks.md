@@ -34,6 +34,6 @@ The following **WebHook** options are avaiable.
 
 ## Custom Code Invocation
 
-A **WebHook Service** can be invoked via **Custom Code**. The [BaseModule](../custom-service-code/basemodule/) provides the following method to invoke a **WebHook Service**.
+A **WebHook Service** can be invoked via **Custom Code**. The [BaseModule](../../depricated-info/custom-service-code/basemodule/) provides the following method to invoke a **WebHook Service**.
 
 <table><thead><tr><th width="287">Method Name</th><th>Description</th><th>Returns</th></tr></thead><tbody><tr><td><p><strong>CallWebHookAsync</strong>(</p><p>IDocument srcdoc,</p><p>IDocument masterdoc = null, IDocumentParameter par = null, IParameterDef def = null, IVerification verification = null, IWorkItem wi = null, int? webHookServiceId = null)</p></td><td>Calls a webhook service to post data to an external system.</td><td>The webhook call result.</td></tr></tbody></table>

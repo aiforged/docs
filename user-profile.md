@@ -22,7 +22,7 @@ The User page allows you to edit your user details, and change your password
 1. Edit or fill in the **User Details** you want to change or add.
 2. Click on the **Update User** button in the command bar.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Your Username and User cannot be changed

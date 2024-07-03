@@ -1,2 +1,0 @@
-# Pre-Trained Receipts
-

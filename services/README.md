@@ -2,19 +2,63 @@
 
 ## Overview
 
-AI services in AIForged are 1st and 3rd party processing engines designed to perform specific tasks.
+AI services in AIForged are first and third-party processing engines designed to perform specific tasks. These AI services can be connected using utilities and verification engines.
+
+### Types of AI Services
+
+There are various types of AI services tailored for specific tasks:
+
+* **Scrapers**: Extract documents from specified locations (e.g., mailboxes).
+* **Classifiers**: Identify the type of each page or document.
+* **Extractors and Verifiers**: Identify and verify information on documents.
+* **OCR (Optical Character Recognition)**: Extract text from images.
+* **Object Detection**: Identify objects within images.
+* **Speech Recognition**: Convert speech from audio files into text.
+
+## AI Services Structure
+
+AI services can operate in different configurations:
+
+* **Sequence**: Services execute one after another.
+* **Independent**: Services operate individually.
+* **Parallel**: Services run simultaneously.
+* **Tandem**: Services collaborate closely with each other.
 
 {% hint style="info" %}
-Ai Services can be connected by the use of Utilities and verification engines
+Understanding these structures is crucial to leveraging the full potential of AI services.
 {% endhint %}
 
-## Types of Services
+## AI Service Operations
 
-There are various types of services. It is important to understand the kind of [documents ](../documents/documemt-types.md)you are working with to choose the appropriate service for your goal.
+{% hint style="info" %}
+AI services can be connected in **ANY** order.
+{% endhint %}
 
-* **Scrapers**: Scrap documents from a specified location (e.g., mailbox).
-* **Classifiers**: Identify what each page is.
-* **Extractors and Verifiers**: Identify and verify information on a document.
-* **OCR (Optical Character Recognition)**: Extract text from images.
-* **Object Detection**: Detect objects in an image.
-* **Speech Recognition**: Recognize speech in audio files.
+### Individual AI Services
+
+An individual AI service operates independently and does not require input from any other service.
+
+### Dependent AI Services
+
+Dependent AI services rely on additional functionalities, such as OCR or custom logic, which can be applied:
+
+* **Before Processing**: Enhances the input before primary processing.
+* **After Processing**: Improves or validates output after initial processing.
+
+#### Example:
+
+If the Microsoft Forms recognizer is inadequate, custom code can be integrated into the process to achieve the desired outcome
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Dependent AI Services are set up the same way as normal AI Services
+{% endhint %}
+
+### Verification AI Services
+
+Verification AI services are triggered based on specific conditions, such as low confidence in a field. These services can be set up in the rule engine.
+
+{% hint style="info" %}
+Verification AI Services can be set up in the Rule Engine
+{% endhint %}

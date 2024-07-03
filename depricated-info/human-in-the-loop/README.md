@@ -10,7 +10,7 @@ There are multiple reasons for extracted data to be verified by a **HITL**. Thes
 
 * Poor **OCR Confidence** due to poor quality documents.
 * Illegible handwriting on handwritten forms.
-* An applied **Rule** failed the verification of an extracted field. See [Rules Engine](../../rules-engine/rules-engine.md) for more information.
+* An applied **Rule** failed the verification of an extracted field. See [Rules Engine](../rules-engine/rules-engine.md) for more information.
 * A required field was not detected by the **OCR Engine**.
-* Supporting document data do not match (E.g. the name on a bank statement does not match the ID cards received. Refer to [Practical Example](../../practical-examples/credit-application-process-accept-or-reject-the-application.md) for an example.
+* Supporting document data do not match (E.g. the name on a bank statement does not match the ID cards received. Refer to [Practical Example](../practical-examples/credit-application-process-accept-or-reject-the-application.md) for an example.
 * Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](../../human-in-the-loop/custom-service-code/) for more information.

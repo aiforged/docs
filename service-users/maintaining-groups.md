@@ -16,7 +16,7 @@ Creating a group in AIForged is a straightforward process:
 2. **Initiate Group Creation**: Click on "Create a new group" to begin the group creation process.
 3. **Specify Group Details**: Provide a name for the group and optionally include additional information relevant to the group.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Confirm Group Creation**: Complete the process to create the group.
 
