@@ -17,6 +17,8 @@
   * [➕ Document Attributes](documents/document-attributes.md)
   * [❓ Document Categories](documents/document-categories.md)
   * [🧠 Understanding the Documents page](documents/understanding-the-documents-page.md)
+  * [↗️ Processing documents](documents/processing-documents/README.md)
+    * [Processing Paramaters](documents/processing-documents/processing-paramaters.md)
 * [👥 User Groups](service-users/README.md)
   * [📓 Maintaining Groups](service-users/maintaining-groups.md)
   * [📏 Managing Roles in Groups](service-users/managing-roles-in-groups.md)

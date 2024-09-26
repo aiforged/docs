@@ -14,14 +14,14 @@ Once the email is scraped, an [attachment utility](../utilities/attachment-utili
 * **Microsoft 365**
 
 {% hint style="info" %}
-Any email provider can be used if the correct settings are applied&#x20;
+Any email provider can be used if the correct settings are applied
 {% endhint %}
 
 ## Setup Guide
 
 1. Create an **Email Scraping** service
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -47,7 +47,7 @@ Any email provider can be used if the correct settings are applied&#x20;
 
 **Folder:** The folder to monitor
 
-**Processed Folder:** The folder to move processed emails&#x20;
+**Processed Folder:** The folder to move processed emails
 {% endtab %}
 
 {% tab title="Gmail" %}
@@ -65,7 +65,7 @@ Any email provider can be used if the correct settings are applied&#x20;
 
 **Folder:** The folder to monitor
 
-**Processed Folder:** The folder to move processed emails&#x20;
+**Processed Folder:** The folder to move processed emails
 {% endtab %}
 {% endtabs %}
 
