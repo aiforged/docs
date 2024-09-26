@@ -57,7 +57,7 @@
   * [🎙️ Speech](services/speech/README.md)
     * [Microsoft Speech to Text](services/speech/microsoft-speech-to-text.md)
   * [Utilities](services/utilities/README.md)
-    * [Attachment Utility](services/utilities/attachment-utility.md)
+    * [📂 Attachment Utility](services/utilities/attachment-utility.md)
     * [AIForged Digitizer](services/utilities/aiforged-digitizer.md)
     * [AIForged Image Splitter](services/utilities/aiforged-image-splitter.md)
     * [AIForged Pdf Converter](services/utilities/aiforged-pdf-converter.md)
