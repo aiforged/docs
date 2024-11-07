@@ -67,13 +67,13 @@ This section will discuss in detail the code that is required to implement the *
     <figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. \*\*\*\* Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\\
 
-    <figure><img src="../.gitbook/assets/image (13) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
     Enter **Name** in the Column Name textbox, and click on **New Column** to add a column for **Name**. Repeat for the column name **Salary**.
 
     <figure><img src="../.gitbook/assets/image (49) (3).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
 6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\\
 
     ```csharp

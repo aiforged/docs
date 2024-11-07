@@ -38,4 +38,4 @@ You can share your own pre-trained service to the AIForged Marketplace.
 
 Follow the instructions at [**Share your pre-trained service**](marketplace-1/share-your-custom-service.md) to share your service.
 
-To [**Mange your shared service**](https://app.gitbook.com/s/0rqlYSeVcAktcbKF7wDh/marketplace-1/share-your-custom-service-1) follow the linked instructions.
+To [**Mange your shared service**](broken-reference) follow the linked instructions.

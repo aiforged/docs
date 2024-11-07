@@ -7,7 +7,7 @@ nav_order: 2
 
 # Microsoft Forms Recognizer
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Form Recognizer Service** learns the structure of your forms to intelligently extract text and data. It ingests text from forms, applies machine learning technology to identify keys and tables, and then outputs structured data that includes the relationships within the original file. That way, you can extract information quickly, accurately, and tailored to your specific content, without heavy manual intervention or extensive data science expertise.
 
@@ -26,7 +26,7 @@ Form Recognizer extracts **Key-Value Pairs** and tables from documents and inclu
 5. Click the “Next” Action in the Action Bar to save the Service
 6. **Step 2** Classes, to add a Class View to [Document Categories](microsoft-forms-recognizer.md) (Click next to save categories)
 7. **Step 3** Training \*
-   1. ![](<../../assets/33 (1) (1) (1) (1) (1) (2).png>) Click “Upload Training Documents” in the Action Bar
+   1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1).png>) Click “Upload Training Documents” in the Action Bar
    2. Select the Document Category you want to upload documents to. **The demos training files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie\_larcai\_com/EVXJvXsMjM1Gnmhcic-UUnoB99xK0fDRjsaZREkx63PFHg?e=4RtU6d)
    3. Upload Documents for each category you want to train
    4. Click Train Service once all documents have been uploaded

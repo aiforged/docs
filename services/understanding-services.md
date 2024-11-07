@@ -14,32 +14,32 @@ A service typically has an **Inbox** and **Outbox.** The **Inbox** stores object
 
 Depending on the service type, a service can also have a **Definition Box**, **Training Box**, and **Label Box.**
 
-Multiple **Services** can be nested within a **Service**. These nested services are called **Child Services**. **Child Services** will automatically be added to a service depending on the **Service Type's** dependencies, or [**Rule Type**](../rules-engine/rules-engine.md) **** dependencies, but can also be manually added to extend a service's functionality.
+Multiple **Services** can be nested within a **Service**. These nested services are called **Child Services**. **Child Services** will automatically be added to a service depending on the **Service Type's** dependencies, or [**Rule Type**](../rules-engine/rules-engine.md) dependencies, but can also be manually added to extend a service's functionality.
 
 The example below shows a **Service Card** within a **Service's Detail View**, which in this case represents a **Parent Service** with three **Child Services**.
 
-<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 The following **Action Buttons** can be found in a **Service Card**, the number indicates the document count for each of the boxes:
 
-| Action Button        | Icon                                            | Descritpion                                                                                                        |
-| -------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Definition           | ![](<../.gitbook/assets/image (14) (2).png>)    | Opens the **Definitions box** of the service. (Only valid for **Classification** and **Extraction Service Types**) |
-| Training             | ![](<../.gitbook/assets/image (26) (1).png>)    | Opens the **Training box** of the service. (Only valid for **Classification** and **Extraction Service Types**)    |
-| Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)     | Opens the **Label box** of the service. (Only valid for **Classification** and **Extraction Service Types**)       |
-| Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>) | Opens the **Inbox** of the service.                                                                                |
-| Outbox               | ![](<../.gitbook/assets/image (15) (3).png>)    | Opens the **Outbox** of the service.                                                                               |
-| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)    | Opens the **Configuration Wizard** of the service.                                                                 |
-| Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1).png>) | Opens the **Configuration page** of the service.                                                                   |
-| Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)    | Opens the **Service Logs** of the service.                                                                         |
-| Delete Service       | ![](<../.gitbook/assets/image (16) (4).png>)    | Deletes the service.                                                                                               |
+| Action Button        | Icon                                                | Descritpion                                                                                                        |
+| -------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Definition           | ![](<../.gitbook/assets/image (14) (2).png>)        | Opens the **Definitions box** of the service. (Only valid for **Classification** and **Extraction Service Types**) |
+| Training             | ![](<../.gitbook/assets/image (26) (1).png>)        | Opens the **Training box** of the service. (Only valid for **Classification** and **Extraction Service Types**)    |
+| Labelled             | ![](<../.gitbook/assets/image (8) (1).png>)         | Opens the **Label box** of the service. (Only valid for **Classification** and **Extraction Service Types**)       |
+| Inbox                | ![](<../.gitbook/assets/image (6) (2) (1).png>)     | Opens the **Inbox** of the service.                                                                                |
+| Outbox               | ![](<../.gitbook/assets/image (4) (3) (1) (2).png>) | Opens the **Outbox** of the service.                                                                               |
+| Configuration Wizard | ![](<../.gitbook/assets/image (12) (2).png>)        | Opens the **Configuration Wizard** of the service.                                                                 |
+| Service Definitions  | ![](<../.gitbook/assets/image (3) (2) (1).png>)     | Opens the **Configuration page** of the service.                                                                   |
+| Service Logs         | ![](<../.gitbook/assets/image (10) (5).png>)        | Opens the **Service Logs** of the service.                                                                         |
+| Delete Service       | ![](<../.gitbook/assets/image (16) (4).png>)        | Deletes the service.                                                                                               |
 
 ## How to create a Service?
 
 1. Open an existing **Project**, or create a new **Project**.
 2.  At the bottom of the **Project Detail View**, select **Add Service.**
 
-    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20) (3) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 3.  The **Add New Service** dialogue will open.\
 
 

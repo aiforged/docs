@@ -1,45 +1,56 @@
 ---
-
-title: Get Work Item Count
-parent: UIPath Project
-grand_parent: UIPath Activities
-nav_order: 2
+description: >-
+  Get the number of work items that belong to the currently authenticated user
+  based on various filters.
 ---
 
 # Get Work Item Count
 
-## About
+**Properties**
 
-Creates a work item of a document
+* **Input**
+  * **Project Id**
+    * **Type:**`int?`
+    * **Description:** Filter by a project's unique identifier. This is an optional argument.
+  * **Work Item Type**
+    * **Type:**`WorkItemType?`
+    * **Description:** Filter by work item type (e.g.,`WorkItemType.Document`). This is an optional argument.
+  * **Work Item Action**
+    * **Type:**`WorkItemAction?`
+    * **Description:** Filter by work item action that the user should perform (e.g.,`WorkItemAction.Verify`). This is an optional argument.
+  * **Work Item Status**
+    * **Type:**`WorkItemStatus?`
+    * **Description:** Filter by work item status (e.g.,`WorkItemStatus.Created`). This is an optional argument.
+  * **Document Id**
+    * **Type:**`int?`
+    * **Description:** Filter by a document's unique identifier. This is an optional argument.
+  * **Shred Id**
+    * **Type:**`int?`
+    * **Description:** Filter by a shred's unique identifier. This is an optional argument.
+  * **Start Date**
+    * **Type:**`DateTime?`
+    * **Description:** Filter from starting date. This is an optional argument.
+  * **End Date**
+    * **Type:**`DateTime?`
+    * **Description:** Filter up to end date. This is an optional argument.
+  * **Comment**
+    * **Type:**`string`
+    * **Description:** Filter by comment. This is an optional argument.
 
-### Display Name
+**Usage**
 
-Create Work Item
+1. **Setup Activity:**
+   * Add the "Get Work Item Count" activity to your UiPath workflow.
+   * Configure the optional input arguments to specify the criteria for filtering work items. This can include project or document-related filters, date/time ranges, and other attributes of the work items such as type, action, and status.
+2. **Execution:**
+   * The activity executes asynchronously, retrieving the count of work items that match the specified filter criteria for the currently authenticated user.
+   * It uses the configured API context to access the work item data via the work item client.
+3. **Output:**
+   * The activity returns an`int`, representing the count of work items that match the specified filters.
 
-### Input
+**Considerations**
 
-**Comment -** \<String> The work item message
-
-**Context** - Requires a context for the connection to AIForged. Includes connection configuration information, user information and authentication information. This is a regular VB or C# expression.
-
-**Document Id -** \<Int32> A List of unique document ID's to create a work item from
-
-**End Date -** \<DateTime> Filter up to end date
-
-**Project ID**
-
-### Misc
-
-**Private -** If not selected, the values of variables and arguments are at Verbose level.
-
-**Result - <**Returns AIForged.API.WorkItem**>**&#x20;
-
-## Activity Preview
-
-### Activity View
-
-![](../../.gitbook/assets/image.png)
-
-### Activity Property View
-
-![](<../../.gitbook/assets/image (1).png>)
+* **Filter Criteria:** Use the available filters to narrow down the work items to those relevant to your analysis or management needs.
+* **Date and Time Filters:** Utilize the date filters to focus on work items within a specific timeframe, improving performance and relevance of the results.
+* **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the work item count to prevent unauthorized actions.
+* **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or unexpected API responses.

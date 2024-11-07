@@ -8,7 +8,7 @@ description: Document and File Content Classification
 
 # AIForged Classification
 
-<figure><img src="../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **AIForged Classification Service** is a proprietary **Classification** service designed to automatically categorize documents and files based on their contents. The **AIForged Classification Service** allows easy training of a flexible and scalable classification process that can granularly distinguish among many different **User Defined Categories**.
 
@@ -24,14 +24,14 @@ The **AIForged Classification Service** is a proprietary **Classification** serv
 2. Click on the **Add Service** button in the command bar.\
    ![](<../../.gitbook/assets/image (82).png>)
 3. Select **AIForged Classification Service** from the available **Service Types.**\
-   ****![](<../../.gitbook/assets/image (30).png>)****
+   ![](<../../.gitbook/assets/image (30).png>)
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).\
    ![](<../../.gitbook/assets/image (85).png>)
    1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
    2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
    3. **Step 3 -** Training \*
-      1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1).png>) Click **Upload Training Documents** in the command bar
+      1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (3).png>) Click **Upload Training Documents** in the command bar
       2. Select the **User Defined Category** you want to upload documents to.\
          **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)**.**
       3. Upload files for each **User Defined Category** you wish to train the service on.

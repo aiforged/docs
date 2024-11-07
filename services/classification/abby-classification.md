@@ -25,14 +25,14 @@ The **ABBYY Classification Service** is an advanced **Classification** service d
 2. Click on the **Add Service** button in the command bar.\
    ![](<../../.gitbook/assets/image (82).png>)
 3. Select **ABBYY Classification Service** from the available **Service Types.**\
-   ****![](<../../.gitbook/assets/image (83).png>)****
+   ![](<../../.gitbook/assets/image (83).png>)
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).\
    ![](<../../.gitbook/assets/image (45).png>)
    1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
    2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
    3. **Step 3 -** Training \*
-      1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1).png>) Click **Upload Training Documents** in the command bar
+      1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (3).png>) Click **Upload Training Documents** in the command bar
       2. Select the **User Defined Category** you want to upload documents to.\
          **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20Training.zip)**.**
       3. Upload files for each **User Defined Category** you wish to train the service on.
