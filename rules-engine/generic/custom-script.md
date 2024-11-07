@@ -21,8 +21,4 @@ The language can be selected form the **Code Language** dropdown box. Refer to [
 
 <figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
-For detailed documentation please see:
-
-{% content-ref url="../../custom-service-code/" %}
-[custom-service-code](../../custom-service-code/)
-{% endcontent-ref %}
+For detailed documentation please see: [Custom Code](../../custom-service-code/README.md)
