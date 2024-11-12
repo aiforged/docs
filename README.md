@@ -5,6 +5,26 @@ nav_order: 1
 
 # 📣 Release Notes
 
+### **UIPath Activities 1.6.1777.1031 (12-11-2024)**
+
+#### New Features
+
+* **GetAuditTrail Activity**: Introduced a new activity to retrieve audit trails, enhancing visibility and tracking of processes.
+* **Activity Timeout Property**: Added a timeout property to both the Process Document and GetAuditTrail activities, providing better control over execution times.
+
+#### Enhancements
+
+* **Recursive Delete Parameters**: Added recursive delete parameters to the Delete Document activity, allowing for more flexible and comprehensive document management.
+* **Hard Delete Parameter**: Introduced a hard delete parameter to the Delete Document activity to ensure documents can be permanently removed when needed.
+* **Package Split**: NuGet packages have been split to support both .NET Framework and .NET Standard:
+  * **AIForged.Legacy**: Supports Windows Legacy projects.
+  * **AIForged**: Continues to support modern-only projects.
+* **Framework Migration**: Migrated .NET Framework support to version .NET Framework 4.7.2, aligning with modern development standards.
+
+#### Notes
+
+This release is designed to improve compatibility, enhance functionality, and ensure a smoother development experience. The split of NuGet packages into dedicated versions for legacy and modern projects allows for better dependency management and security updates, while maintaining a unified codebase to simplify maintenance and development.
+
 ### AIForged Studio 1.7.20 (14-06-2024)
 
 #### Desktop
