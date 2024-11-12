@@ -120,6 +120,7 @@
   * [Python](sdk/python.md)
   * [Typescript](sdk/typescript.md)
 * [UIPath Activities](uipath-activities/README.md)
+  * [Comprehensive Networking Tutorial for UIPath Developers](uipath-activities/comprehensive-networking-tutorial-for-uipath-developers.md)
   * [Initialize Connection Context](uipath-activities/initialize-connection-context.md)
   * [Audit](uipath-activities/audit/README.md)
     * [Get Audit Trail](uipath-activities/audit/get-audit-trail.md)
