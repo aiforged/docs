@@ -77,7 +77,7 @@ An IP address is a unique identifier assigned to each device connected to a netw
 
 #### 1.4 Common Network Status Codes
 
-When interacting with web services, servers return status codes to indicate the result of a request. These codes help diagnose issues, and it's crucial to understand their origin—whether from the endpoint server or a proxy server.
+When interacting with web services, servers return status codes to indicate the result of a request. These codes are crucial for diagnosing issues, and understanding their origin—whether from the endpoint server or a proxy server—can help in effectively troubleshooting problems.
 
 * **200 OK:** The request was successful.
 * **404 Not Found:** The requested resource couldn't be found, possibly due to a wrong URL.
@@ -89,10 +89,26 @@ When interacting with web services, servers return status codes to indicate the 
 
 **Understanding Status Codes from Different Sources**
 
-Status codes can originate from either the endpoint server or a proxy server:
+Status codes can originate from either the endpoint server or a proxy server. Here are some techniques to determine the source of the issue:
 
-* **Endpoint Server:** The final server that processes the request and returns a response. An error code from here typically indicates an issue with the server itself or the requested resource.
-* **Proxy Server:** An intermediary that forwards requests and responses between the client and the endpoint server. An error code from a proxy might indicate issues with the connection to the endpoint server or with the proxy's configuration.
+1. **Examine the Response Headers:**
+   * Response headers often contain information about the server that generated the response. Look for headers like`Via`,`X-Cache`, or`X-Proxy-ID`, which might indicate that a proxy was involved in the request.
+   * A header like`Server`can give insights into the endpoint server type.
+2. **Check for Error Messages:**
+   * The response body might contain error messages or codes specific to the proxy or the endpoint server. For example, a message explicitly mentioning "proxy" or "gateway" likely points to an issue with the proxy.
+3. **Analyze Network Logs:**
+   * Network monitoring tools can log requests and responses, including the paths taken by requests. By analyzing these logs, you can identify if a request was routed through a proxy.
+   * Look for repeated patterns or bottlenecks that might suggest where the issue lies.
+4. **Use Traceroute:**
+   * Traceroute can help identify the path that data takes to reach the endpoint server. If the traceroute fails or shows delays at specific hops, it might indicate issues with a proxy server along the route.
+5. **Test Direct and Indirect Access:**
+   * If possible, bypass the proxy and send a request directly to the endpoint server. Comparing the results of direct and indirect requests can help identify where the problem originates.
+6. **Check Proxy Configuration:**
+   * Review the configuration of any proxy servers involved. Misconfigurations can lead to incorrect forwarding of requests or inappropriate responses.
+7. **Consult Documentation or Support:**
+   * If the service you're interacting with has documentation or support, consult these resources. They might provide insights or known issues related to proxy or endpoint server errors.
+
+By applying these techniques, developers can better understand whether a network status code originates from an endpoint server or a proxy server, enabling more targeted troubleshooting and resolution of network issues.
 
 ***
 
