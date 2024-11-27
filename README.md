@@ -5,7 +5,82 @@ nav_order: 1
 
 # 📣 Release Notes
 
-### **UIPath Activities 1.6.1777.1031 (12-11-2024)**
+## AIForged Studio 1.9.0 (29-11-2024)
+
+### Desktop
+
+#### New Features
+
+* **Create Project Blade:** Added a new interface for creating projects, improving user workflow.
+* **User Preferences for Workflow View:** Introduced a user preference option to select preferred workflow views for a more personalized experience.
+* **Prompt Configuration Enhancements:** Added new controls for configuring parent-child prompt relations and variable mappings, with automatic detection of variable names in prompt text.
+* **JSON Response Format Setup:** Added new functionality and an editor to configure the JSON response format for each prompt, enhancing flexibility in prompt management.
+
+#### Enhancements
+
+* **Project Creation Process:** Improved to allow adding projects to a group during creation.
+* **Adorner Thumb Controls:** Reworked grip areas and improved disposal logic for better user interaction.
+* **LLM Prompt Config:** Reworked the control to utilize settings cards and added new configuration settings for enhanced flexibility.
+* **Semantic Kernel Update:** Updated to the latest version for improved AI capabilities.
+
+#### Bug Fixes
+
+* **UI and Layout Improvements:** Resolved various UI issues, including layout cycles and scrolling problems in multiple views.
+* **Session Management:** Fixed session validation loops and minor bugs with session expiry detection.
+* **Document Verification:** Fixed issues with label inversion, copy to clipboard logic, and virtual table nesting.
+* **Service Management:** Corrected issues related to deleting services and updating views accordingly.
+* **Editor and Config Controls:** Implemented fixes for prompt config controls, code editor scrolling, and introduced a "save" keyboard shortcut in the Monaco editor.
+
+#### Technical Improvements
+
+* **Dependency Updates:** Updated dependencies and refactored code to support new versions and features.
+* **Navigation and Caching:** Started work on disabling navigation cache to resolve issues, improving navigation handling.
+* **Error Handling:** Added exception handling in critical operations to prevent potential crashes.
+* **Performance Enhancements:** Refactored string operations to use more efficient memory extensions and improved base view model logic.
+* **WASM and Toolkit Migration:** Fixed issues post-migration to Community Toolkit 8 and migrated to WindowsAppSDK 1.6.
+* **Migration to .NET 9:** Upgraded the framework to .NET 9, offering better performance and new features.
+
+#### Ongoing Developments
+
+* **AOT Publishing Preparation:** Began updating classes for Ahead-of-Time (AoT) publishing.
+* **LLM Editor Improvements:** Continued enhancements to the LLM Prompt Editor and related configurations.
+* **Visual and UX Enhancements:** Made minor visual improvements to various components, including Service Wizard Cards and project views.
+
+#### Notes
+
+This release focuses on improving the user experience through better configuration options, enhanced project management features, and robust error handling. Continued efforts in optimizing code, upgrading to .NET 9, and updating dependencies ensure a stable and efficient system.
+
+## Platform (29-11-2024)
+
+#### New Features
+
+* **Add RAG (Retrieval-Augmented Generation):** Introduced a new feature to enhance generation capabilities by retrieving relevant information.
+* **Add Custom Semantic Kernel Modules:** New modules to allow more customized and fine-grained semantic processing.
+* **Add text to speech:** Added functionality to convert text into spoken words, enhancing accessibility and user interaction.
+
+#### Enhancements
+
+* **AttachImageData Page Limit Increase:** Updated the page limit from 20 to 50 for the ChatGPT service, allowing for more data to be processed per request.
+* **Prompt Variable Mapping with JSON:** Now accepts JSON as a configuration format when using the template approach with the ChatGPT Extractor, offering more flexibility in data handling.
+* **Default Processed Document Status Change:** Changed the default status for nested OCR service documents to `InterimProcessed` from `Processed`, for better status tracking.
+* **Speech to Text Improvement:** Enhanced the accuracy and speed of converting spoken words into text.
+
+#### Bug Fixes
+
+* **Transaction Count Fix:** Corrected the issue of incorrect counts when creating transactions for nested OCR services.
+* **ChatGPT Classifier Price Fix:** Resolved the problem where ChatGPT classifier transactions were created with a price of 0.
+* **ChatGPT Service Exception Fix:** Fixed an issue where older ChatGPT services would throw exceptions if not reinitialized properly.
+
+#### Runtime
+
+* **.Net 9.0 Upgrade:** Upgraded to .Net 9.0 for improved performance and security.
+* **Rate Limiting Protection Improvement:** Enhanced rate limiting protection mechanisms to better handle traffic and prevent abuse.
+
+#### Notes
+
+This release focuses on expanding features, improving existing functionalities, and resolving critical bugs to enhance overall system performance and user experience. The introduction of new features like RAG and text to speech opens up new possibilities for users, while enhancements to existing services improve efficiency and usability. Upgrading to .Net 9.0 ensures the platform remains secure and performant.
+
+## **UIPath Activities 1.6.1777.1031 (12-11-2024)**
 
 #### New Features
 
@@ -25,9 +100,74 @@ nav_order: 1
 
 This release is designed to improve compatibility, enhance functionality, and ensure a smoother development experience. The split of NuGet packages into dedicated versions for legacy and modern projects allows for better dependency management and security updates, while maintaining a unified codebase to simplify maintenance and development.
 
-### AIForged Studio 1.7.20 (14-06-2024)
+## AIForged Studio 1.8.2 (08-08-2024)
 
-#### Desktop
+### Desktop
+
+#### Bug Fixes
+
+* **Parameter Definition Override:** Resolved an issue affecting parameter definitions during certain operations.
+* **Session Dialog Stability:** Improved the stability of session dialogs to prevent potential crashes.
+* **Resource Management:** Fixed issues with resource cleanup processes to enhance system performance.
+* **UI Element Renaming:** Updated internal naming conventions for consistency.
+* **Style Exception Resolution:** Addressed exceptions occurring in specific build configurations.
+* **Code Editor Improvements:** Enhanced editor functionality and updated to the latest version for better performance.
+* **Legacy Table Handling:** Fixed longstanding issues related to table row manipulations.
+* **Code Editor Scrolling:** Corrected scrolling issues within the code editor for better usability.
+* **Wizard Navigation Fixes:** Resolved issues affecting navigation and display within multi-step processes.
+* **User Session Management:** Made improvements to session handling for a smoother user experience.
+
+#### Enhancements
+
+* **Document Verification View:** Minor updates to improve handling of deleted fields.
+* **Service Wizard View:** Improved view updates when navigating between configuration steps.
+* **Permissions and Binding:** Addressed various permission and binding issues to ensure proper functionality.
+* **Ongoing Developments:** Continued work on enhancing build processes and other areas of the system.
+
+## AIForged Studio 1.8.0 (05-08-2024)
+
+### Desktop
+
+#### Work Items
+
+* **User Search Control Refactor:** Excluded users in the user search control can now be included when necessary during Work Item creation.
+* **User Role Display Fix:** Corrected the user role dropdown to show only roles available in a project, rather than all roles.
+* **Dynamic Group Roles:** UI now accurately displays group roles that exist within a project when creating, transferring, escalating, or rejecting a work item.
+* **Multi-User Sessions:** Users can now log in with multiple sessions and easily switch between them via the Accounts flyout, though session duration is limited by authentication token expiry.
+* **Session Management Improvements:** Improved settings storage for packaged apps and enhancements to multi-user session management.
+
+#### Document Verification
+
+* **Verification Field Ordering:** Further improved the ordering of nested verification fields and made minor bug fixes related to verification control ordering.
+* **Quality of Life Enhancements:** Implemented various QOL improvements to verification and improved the ordering of table cells based on verification requirements.
+* **Verification Controls Overhaul:** Major updates to verification controls in document verification view for better usability and polish.
+* **Additional Features:** Added controls for definition condition filters, tooltips to type settings controls, and the ability to re-process documents within the document verification view.
+
+#### User Experience Improvements
+
+* **Settings Controls Overhaul:** Complete redesign of settings controls to align with Windows 11 aesthetics.
+* **Prompt Configuration:** Streamlined UX for prompt configuration changes and added "Enable All Options" toggles to Process and Training dialogs.
+* **Project View Enhancements:** Fixed group names visibility under project names and improved table virtual overlay rendering.
+
+#### Technical Improvements
+
+* **Community Toolkit Migration:** Migrated to Community Toolkit 8 for better functionality.
+* **Performance Enhancements:** Improved UI responsiveness by adjusting default UI thread priority and improved memory management and garbage collection.
+* **Dependency Updates:** Updated dependencies for improved stability and performance.
+
+#### Bug Fixes and Maintenance
+
+* **General Bug Fixes:** Addressed issues related to workflow items, workflow reason datasets, and export view model for nested clusters.
+* **Service View Fixes:** Minor fixes to Basic Service View and refresh issues in the basic service view.
+* **Navigation and Permissions:** Fixed main navigation view items permissions to align with backend changes.
+* **Document Processing:** Added auto document refresh post-processing and improved memory management in the process view.
+* **Session Expiry Handling:** Resolved issues with logging back in after session expiry and profile switching not updating the current user.
+* **AIForged Assistant Update:** Updated to use GPT-4o Mini with full chat history retention of up to 16 messages.
+* **Miscellaneous Fixes:** Various other improvements and bug fixes, including fixing a memory leak in PersistenceService and improving document preview loading.
+
+## AIForged Studio 1.7.20 (14-06-2024)
+
+### Desktop
 
 **Document Verification**
 
@@ -63,9 +203,9 @@ This release is designed to improve compatibility, enhance functionality, and en
 
 * **Enhancement**: Improved JSON import reliability.
 
-### AIForged Studio 1.7.10 (07-06-2024)
+## AIForged Studio 1.7.10 (07-06-2024)
 
-#### Desktop
+### Desktop
 
 **Document Verification**
 
