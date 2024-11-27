@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "hints",
+    "gitbook-plugin-hints",
     "search",
     "collapsible-chapters",
     "insert-logo",
