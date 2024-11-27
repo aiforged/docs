@@ -10,6 +10,7 @@
   "license": "MIT",  
   "devDependencies": {  
     "gitbook-plugin-hints": "1.0.2",
+    "honkit-plugin-search-plus": "1.0.0",
     "gitbook-plugin-collapsible-chapters": "0.1.8",
     "gitbook-plugin-insert-logo": "0.1.5",
     "gitbook-plugin-tabs2": "0.1.3",
