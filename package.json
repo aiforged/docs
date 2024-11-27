@@ -9,7 +9,6 @@
   "author": "Larc Technologies",  
   "license": "MIT",  
   "devDependencies": {  
-    "gitbook-plugin-hints": "^0.0.7",  
     "honkit": "^4.0.0"  
   }  
 }  
