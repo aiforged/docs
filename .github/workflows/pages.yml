@@ -28,8 +28,12 @@ jobs:
           node-version: '18'    # Using Node.js v18  
         timeout-minutes: 5  
     
-      - name: Install npm Dependencies and Build HonKit
+      - name: Install npm Dependencies
         run: npm install  
+        timeout-minutes: 5  
+
+      - name: Build HonKit
+        run: npm run build  
         timeout-minutes: 5  
   
       - name: Configure GitHub Pages  
