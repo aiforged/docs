@@ -32,10 +32,6 @@ jobs:
         run: npm install  
         timeout-minutes: 5  
 
-      - name: Override NodeJS stack size
-        run: /bin/bash -c "ulimit -s 65500; exec /usr/local/bin/node --stack-size=65500 /path/to/app.js"
-        timeout-minutes: 5  
-
       - name: Build HonKit
         run: npm run build  
         timeout-minutes: 30  
