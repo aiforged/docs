@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "hints",
     "search",
     "collapsible-chapters",
     "insert-logo",
