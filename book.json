@@ -1,7 +1,7 @@
 {
   "plugins": [
     "hints",
-    "search",
+    "search-plus",
     "collapsible-chapters",
     "insert-logo",
     "tabs2"
