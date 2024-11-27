@@ -1,0 +1,15 @@
+{  
+  "name": "honkit-to-gitpages",  
+  "version": "1.0.0",  
+  "description": "Deploys gitbook to GitHub pages",  
+  "main": "index.js",  
+  "scripts": {  
+    "build": "honkit build . ./_book"  
+  },  
+  "author": "Larc Technologies",  
+  "license": "MIT",  
+  "devDependencies": {  
+    "gitbook-plugin-hints": "^0.0.7",  
+    "honkit": "^4.0.0"  
+  }  
+}  
