@@ -5,6 +5,14 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## AIForged Studio 1.9.1 (21-01-2025) - Hotfix Release
+
+### Desktop
+
+Bug Fix
+
+* Fixed issue that prevented reCAPTCHA from functioning.
+
 ## AIForged Studio 1.9.0 (29-11-2024)
 
 ### Desktop
