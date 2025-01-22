@@ -37,7 +37,7 @@ To upload a new profile picture
 1. Click on the **Upload New Picture** button
 2. Select your profile picture.
 
-<figure><img src=".gitbook/assets/image (15) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (3) (11).png" alt=""><figcaption></figcaption></figure>
 
 ## Sign-in Options
 
@@ -85,16 +85,16 @@ API keys offer a unique key to authenticate yourself programmatically
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Notification Preferences&#x20;
+## Notification Preferences
 
-Notifications are sent on a **OPT-IN** Basis&#x20;
+Notifications are sent on a **OPT-IN** Basis
 
 ### Setting up your notifications
 
 1. Choose the event that you would like to be notified
 2. Create a notification group
 3. Enter the notification type
-4. Provide the recipiants&#x20;
+4. Provide the recipiants
 5. Save the changes
 
 ### Example
@@ -113,9 +113,8 @@ Notifications are sent on a **OPT-IN** Basis&#x20;
 
 ## General Setting
 
-General Settings contain the preferences of the logged-in user.&#x20;
+General Settings contain the preferences of the logged-in user.
 
 These settings affect the overall look and feel of the UI
 
 <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
-

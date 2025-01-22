@@ -1,7 +1,7 @@
 # Table of contents
 
 * [📣 Release Notes](README.md)
-* [📬 How to Install AIForged](how-to-install-aiforged.md)
+* [📥 How to Install AIForged](how-to-install-aiforged.md)
 * [✏️ Register.](register.md)
 * [✅ Activate my account](activate-my-account.md)
 * [❓ Forgot Password](forgot-password.md)

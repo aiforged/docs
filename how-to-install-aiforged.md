@@ -1,4 +1,4 @@
-# 📬 How to Install AIForged
+# 📥 How to Install AIForged
 
 ### Installation Options <a href="#installation-options" id="installation-options"></a>
 
