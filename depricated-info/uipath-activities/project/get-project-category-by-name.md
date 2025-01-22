@@ -22,7 +22,7 @@ Category Name -
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (16) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
