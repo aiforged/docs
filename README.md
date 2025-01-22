@@ -5,11 +5,34 @@ nav_order: 1
 
 # 📣 Release Notes
 
+
+## Platform (22-01-2025)
+#### New Features
+
+* **Add Document Intelligence:** Upgrade Document Intelligence feature from preview to General Availability.
+* **Add Claude Extraction (Preview):** Add preview of Claude extraction.
+* **Add OCR Layout Service**: For structured extraction into Markdown.
+
+#### Improvements
+
+* **Reports:** Improve work item, document and credit usage reports.
+* **Runtime**: Update to .net 9.0.1 security patch.
+* **Semantic Kernel (Preview)**: Update to latest 1.33.1 SDK
+* **LLM Services**: improve JSON validation checks, add OCR alignment feature
+* **Google Document AI:** Add prebuild models: Bank Statements, Expense, Ids, Invoices, Pay Slips, US Driver Licenses, Us Passports, Utilities, W2, W9
+
+**Bug fixes**
+
+* **ChatGPT**: fix incorrect probability calculation when no images attached
+* **Service Initialization**: Add small fix for service initialization
+
+
+
 ## AIForged Studio 1.9.1 (21-01-2025) - Hotfix Release
 
 ### Desktop
 
-Bug Fix
+**Bug Fix**
 
 * Fixed issue that prevented reCAPTCHA from functioning.
 
