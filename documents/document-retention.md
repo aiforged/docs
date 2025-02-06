@@ -33,8 +33,7 @@ All delete requests are logged and available on the audit view
 
 ## Archiving strategy (Automatic)
 
-Each service has an archiving strategy that automatically cleans documents older than a comfortable age\
-
+Each service has an archiving strategy that automatically cleans documents older than a comfortable age
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -42,8 +41,8 @@ Each service has an archiving strategy that automatically cleans documents older
 The archiving strategy will soft delete documents for 30 days, before automatically hard deleting them
 {% endhint %}
 
-{% hint style="info" %}
-Archiving will be logged and available on the audit view
+{% hint style="danger" %}
+Automatic deletion will NOT be logged
 {% endhint %}
 
 ## Audited information
