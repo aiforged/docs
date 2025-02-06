@@ -42,9 +42,8 @@ jobs:
         timeout-minutes: 10  
   
       - name: Upload GitHub Pages Artifact  
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:  
-          name: 'github-pages'
           path: './_book'  
         timeout-minutes: 10  
   
