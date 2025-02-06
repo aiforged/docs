@@ -14,6 +14,7 @@
 * [📃 Documents](documents/README.md)
   * [ℹ️ Documemt Types](documents/documemt-types.md)
   * [⏩ Understanding Document Flows](documents/understanding-document-flows.md)
+  * [Document Retention](documents/document-retention.md)
   * [➕ Document Attributes](documents/document-attributes.md)
   * [❓ Document Categories](documents/document-categories.md)
   * [🧠 Understanding the Documents page](documents/understanding-the-documents-page.md)

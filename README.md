@@ -5,26 +5,26 @@ nav_order: 1
 
 # 📣 Release Notes
 
-## **Platform (22-01-2025)**
+## Platform (22-01-2025)
 
-#### **New Features**
+#### New Features
 
-* **Add Document Intelligence**: Promoted the Document Intelligence feature from preview to General Availability.
-* **Add Claude Extraction (Preview)**: Introduced the preview of Claude extraction functionality.
-* **Add OCR Layout Service**: Enhanced structured extraction into Markdown with the OCR Layout Service.
+* **Add Document Intelligence:** Upgrade Document Intelligence feature from preview to General Availability.
+* **Add Claude Extraction (Preview):** Add preview of Claude extraction.
+* **Add OCR Layout Service**: For structured extraction into Markdown.
 
-#### **Improvements**
+#### Improvements
 
-* **Reports**: Enhanced work item, document, and credit usage reports for better insights.
-* **Runtime**: Applied the .NET 9.0.1 security patch for improved runtime security.
-* **Semantic Kernel (Preview)**: Updated to the latest 1.33.1 SDK for enhanced AI capabilities.
-* **LLM Services**: Improved JSON validation checks and introduced an OCR alignment feature.
-* **Google Document AI**: Added prebuilt models for Bank Statements, Expense Reports, IDs, Invoices, Pay Slips, US Driver Licenses, US Passports, Utility Bills, W2, and W9 forms.
+* **Reports:** Improve work item, document and credit usage reports.
+* **Runtime**: Update to .net 9.0.1 security patch.
+* **Semantic Kernel (Preview)**: Update to latest 1.33.1 SDK
+* **LLM Services**: improve JSON validation checks, add OCR alignment feature
+* **Google Document AI:** Add prebuild models: Bank Statements, Expense, Ids, Invoices, Pay Slips, US Driver Licenses, Us Passports, Utilities, W2, W9
 
-#### **Bug Fixes**
+**Bug fixes**
 
-* **ChatGPT**: Resolved an issue with incorrect probability calculations when no images are attached.
-* **Service Initialization**: Implemented a minor fix for service initialization to improve reliability.
+* **ChatGPT**: fix incorrect probability calculation when no images attached
+* **Service Initialization**: Add small fix for service initialization
 
 ## AIForged Studio 1.9.1 (21-01-2025) - Hotfix Release
 
