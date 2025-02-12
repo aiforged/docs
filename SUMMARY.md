@@ -26,6 +26,7 @@
   * [👤 Managing Users](service-users/managing-users.md)
 * [📩 Notification History](notifications.md)
 * [💰 Wallets and Billing](transactions.md)
+* [Cloning](cloning.md)
 * [👓 AI Services](services/README.md)
   * [🧲 Scrapers](services/scrapers/README.md)
     * [📧 Email Scraper](services/scrapers/email-scraper.md)
