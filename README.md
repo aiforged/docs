@@ -5,6 +5,19 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## AIForged Studio 1.9.10 (14-02-2025) - Hotfix Release
+
+### Desktop
+
+#### **Enhancements**
+
+* **Performance Optimization:** Improved memory usage, optimized object management, and adjusted runtime configurations to enhance responsiveness and eliminate freezing issues.
+* **Dependency Updates:** Updated to stable versions of key libraries and frameworks, including WindowsAppSdk 1.6, CommunityToolkit, and Syncfusion, to ensure better compatibility and stability.
+
+#### **Bug Fixes**
+
+* Resolved freezing issues caused by .NET 9 GC optimizations and improved overall application stability.
+
 ## Platform (22-01-2025)
 
 #### New Features
