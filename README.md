@@ -5,6 +5,61 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## \*\*\*New - AIForged Studio - Web 1.0.0 (11-04-2025)
+
+We are proud to announce the availability of the new web based AIForged Studio built entirely from the ground up in a performant web specific framework.
+
+The new AIForged Studio web interface provides familiar yet improved functionality for configuring and managing everything in your AIForged Tenant from projects to services to transactional statements and more.
+
+**What's included in this release?**
+
+* **Project creation and management**&#x20;
+  * With a new unified view of documents and their various statuses within a project.&#x20;
+  * Quick start project creation that allows you to select your initial AIForged service during initial project creation.
+* **Service creation and management**&#x20;
+  * Easy access to service settings and field definitions without needing to navigate multiple views and screens.
+  * Including a revamped service configuration wizard.
+  * Context aware service views show you only what you need to see, while remaining fully configurable for advanced users.
+* **Document labelling and training**&#x20;
+  * A revamped labelling experience paves the way for a more efficient and user friendly service-configuration and model-training experience.
+* **LLM (Large Language Model) service configuration**
+  * A more intuitive prompt engineering experience awaits you in the service view of LLM and ChatGPT extractors.
+  * The new LLM service type from AIForged allows you to leverage the power of multiple LLM models to enhance your IDP (Intelligent Document Processing) process.
+* **Organization Management**
+  * A more intuitive organization management screen allows you to quickly setup your Tenants and organization groups and to configure role based access to projects for existing and new organization members.
+* **Tenant context:**
+  * Everything you do in the new AIForged Studio is governed by your selected Tenant / Organization, making it easier to manage what users are allowed to do.
+* **Less cluttered, more intuitive**
+  * With an approach to minimize clutter and only show users what they need to see, the new AIForged Studio brings you a much improved overall user experience.
+* **Much more**
+
+The new AIForged Studio is available today at [https://studio.aiforged.com](https://studio.aiforged.com).
+
+## AIForged Studio - Desktop 1.9.20 (11-04-2025)
+
+#### **Enhancements**
+
+* **New Organization and Tenant based functionality:** Allows you to configure roles and permissions based on your organizational (or other preferred) hierarchy. Provides finer control over roles and permissions based access to projects.
+
+Bug Fixes
+
+* **New WinUI related improvements:** New WindowsAppSDK releases from Microsoft include improvements and fixes for various slowdowns and freezes experienced by users while navigating and using the desktop version of the AIForged Studio.
+
+## Platform (11-04-2025)
+
+**New Features**
+
+* **Tenant level access control:**&#x20;
+  * Allows you to configure roles and permissions based on your organizational (or other preferred) hierarchy. Provides finer control over roles and permissions based access to projects.
+  * Improved APIs for group, role and member management.
+  * Improved APIs for project and user creation.
+  * Improved APIs for project and service management.
+
+**Bug Fixes**
+
+* Resolved an issue that could cause certain document types to prevent further automatic processing of documents.
+* Various other minor bug fixes in various APIs.
+
 ## AIForged Studio 1.9.10 (14-02-2025) - Hotfix Release
 
 ### Desktop
