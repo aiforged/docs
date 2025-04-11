@@ -37,11 +37,11 @@ The new AIForged Studio is available today at [https://studio.aiforged.com](http
 
 ## AIForged Studio - Desktop 1.9.20 (11-04-2025)
 
-#### **Enhancements**
+**Enhancements**
 
 * **New Organization and Tenant based functionality:** Allows you to configure roles and permissions based on your organizational (or other preferred) hierarchy. Provides finer control over roles and permissions based access to projects.
 
-Bug Fixes
+**Bug Fixes**
 
 * **New WinUI related improvements:** New WindowsAppSDK releases from Microsoft include improvements and fixes for various slowdowns and freezes experienced by users while navigating and using the desktop version of the AIForged Studio.
 
