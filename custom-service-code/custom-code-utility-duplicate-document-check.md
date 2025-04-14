@@ -5,7 +5,7 @@ description: >-
   processing duplicate documents.
 ---
 
-# Custom Code Utility: Duplicate Document Check
+# Custom Code Example: Duplicate Document Check
 
 This code sample will look at implementing an MD5 hash check against documents that will be processed by a service. Each document's MD5 hash will be checked against the MD5 hashes stored within a custom dataset. If a match is found, the offending document will be placed into an error state, removed from further processing, and a corresponding workflow item will be created. If a match is not found, then the document's MD5 hash will be stored in the custom dataset, and the document will be allowed to continue with processing.
 
@@ -13,48 +13,48 @@ To start, let's add a new **Custom Code utility service** to an existing **Email
 The **Email Scraping** service includes a nested **Attachment** service by default that performs individual processing on attachments from scraped emails. This is the service where we will nest our **Custom Code** utility.
 
 * First, open the **Service Detail View** for the **Email Scraping** service by clicking on its **Service Card** in your project.\
-  ![](<../../.gitbook/assets/image (12) (6).png>)
+  ![](<../.gitbook/assets/image (12) (6).png>)
 * Click on an empty space within the header of the nested **Attachment Service Card** to open the **Attachment** service's detail view:\
-  ![](<../../.gitbook/assets/image (15) (8).png>)
+  ![](<../.gitbook/assets/image (15) (8).png>)
 * Click on the **Add Utility** button in the **Command Bar**.\
-  ![](<../../.gitbook/assets/image (3) (11).png>)
+  ![](<../.gitbook/assets/image (3) (11).png>)
 * Select **Custom Code** from the **Service Type Selection Dialog** under the **Utilities** section and then click on **Select** to confirm your selection.\
-  ![](<../../.gitbook/assets/image (21) (6).png>)
+  ![](<../.gitbook/assets/image (21) (6).png>)
 
 Next, we need to add a **Custom Dataset** to our new **Custom Code utility service**. The **Custom Dataset** will store the MD5 hash strings for our non-duplicate documents.
 
 1. To do this, open the **Configuration View** of our newly nested **Custom Code utility service** by clicking on the button with the **Gear Icon** in its nested service card.\
-   ![](<../../.gitbook/assets/image (10) (8).png>)
+   ![](<../.gitbook/assets/image (10) (8).png>)
 2. In the configuration view select the main definition for our **Custom Code utility service** (the first configuration line), and then click on **Create Custom Dataset.**\
-   ![](<../../.gitbook/assets/image (6) (9).png>)
+   ![](<../.gitbook/assets/image (6) (9).png>)
 3. Enter **Duplicate History** as the name for our **Custom Dataset**, and click on **Submit**.\
-   ![](<../../.gitbook/assets/image (9) (6).png>)
+   ![](<../.gitbook/assets/image (9) (6).png>)
 4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor:\
-   ![](<../../.gitbook/assets/image (16) (5).png>)\
-   ![](<../../.gitbook/assets/image (11) (6).png>)
+   ![](<../.gitbook/assets/image (16) (5).png>)\
+   ![](<../.gitbook/assets/image (11) (6).png>)
 
 We are going to add two **Fields** to our **Custom Dataset**. **Fields** are visualized as **Columns** within our dataset editor. These **Fields** will contain an MD5 hash string as well as a unique document identifier for each document processed by our **Custom Code**.
 
 To add these **Fields** to the **Custom Dataset**, enter the name of the column in the **Column Name** field in the editor and click on **New Column:**
 
 * Add **MD5Hash** as a new column:\
-  ![](<../../.gitbook/assets/image (18) (8).png>)
+  ![](<../.gitbook/assets/image (18) (8).png>)
 * Add **DocumentId** as a new column.\
-  ![](<../../.gitbook/assets/image (19) (5).png>)
+  ![](<../.gitbook/assets/image (19) (5).png>)
 
 Click on **Save** to save the changes made to the **Custom Dataset**.\
-![](<../../.gitbook/assets/image (17) (5).png>)
+![](<../.gitbook/assets/image (17) (5).png>)
 
 Your **Custom Dataset** should now look as follows in the configuration view (you may need to refresh the view):\
-![](<../../.gitbook/assets/image (2) (9).png>)
+![](<../.gitbook/assets/image (2) (9).png>)
 
 Next, we need to add some code to our **Custom Code** utility.
 
 Close the **Configuration View** for the **Custom Code** utility, and click on the **Code** button on the nested **Service Card**.\
-![](<../../.gitbook/assets/image (4) (7).png>)
+![](<../.gitbook/assets/image (4) (7).png>)
 
 * Select **C#** from the **Code Language** dropdown.\
-  ![](<../../.gitbook/assets/image (5) (10).png>)
+  ![](<../.gitbook/assets/image (5) (10).png>)
 * Copy and paste the following code into the code editor area:
 
 ```csharp
@@ -81,24 +81,25 @@ ParameterDefViewModel fieldMD5Hash = dataset.FindField(/* MD5Hash field definiti
 
 //Initialise list to store skipped docs
 List<int> skippedDocIds = new List<int>();
+int groupId = /* Group Id for verification users here */;
 
 //Get the various users that may be used in our work item creation
-List<IProjectUser> adminusers = module.GetUsers(parentservice.Id, LinkType.Shared, new List<string> { "admin", "verifyadmin" })?.Where(u => u.Status == ProjectUserStatus.Approved && u.UserId == "03900e73-0d04-4d22-8061-c9e6f27773e5")?.ToList();
+List<(IGroupRole role, IGroupRoleUser user)> adminusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.Administrator, GroupRoleType.VerifyAdmin], null);
 foreach (var usr in adminusers) 
 {
-    logger.LogInformation("{stpd} Admin User {id} {status} {role}", stpd.Name, usr.UserId, usr.Status, usr.Role);    
+    logger.LogInformation("{stpd} Admin User {id} {status} {role}", stpd.Name, usr.user.UserId, usr.user.Status, usr.role.Type);    
 }
 
-List<IProjectUser> doclayoutusers = module.GetUsers(parentservice.Id, LinkType.Shared, new List<string> { "doclayout" })?.Where(u => u.Status == ProjectUserStatus.Approved)?.ToList();
+List<(IGroupRole role, IGroupRoleUser user)> doclayoutusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.DocLayout], null);
 foreach (var usr in doclayoutusers) 
 {
-    logger.LogInformation("{stpd} Document Layout User {id} {status} {role}", stpd.Name, usr.UserId, usr.Status, usr.Role);    
+    logger.LogInformation("{stpd} Document Layout User {id} {status} {role}", stpd.Name, usr.user.UserId, usr.user.Status, usr.role.Type);    
 }
 
-List<IProjectUser> verifyusers = module.GetUsers(parentservice.Id, LinkType.Shared, new List<string> { "verifydoc" })?.Where(u => u.Status == ProjectUserStatus.Approved)?.ToList();
+List<(IGroupRole role, IGroupRoleUser user)> verifyusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.VerifyDoc], null);
 foreach (var usr in verifyusers) 
 {
-    logger.LogInformation("{stpd} Verification User {id} {status} {role}", stpd.Name, usr.UserId, usr.Status, usr.Role);    
+    logger.LogInformation("{stpd} Verification User {id} {status} {role}", stpd.Name, usr.user.UserId, usr.user.Status, usr.role.Type);    
 }
 
 //Step through each document and test whether or not it is a duplicate
@@ -112,12 +113,12 @@ foreach (IDocument childDoc in docs)
         { 
             logger.LogInformation("{stpd} Document is in error state: {docid}", stpd.Name, childDoc.Id);
             //This work item will be assigned to a verification user
-            var usr = module.PickRandom(verifyusers, null);
+            var usr = module.PickRandom(verifyusers.Select(tuple => tuple.user).Distinct().ToList(), null);
 
             if (usr != null) 
             {
                 //Create a new work item and pass the current document comment, which will contain the error message, as the work item message
-                var wi = module.CreateWorkItem(usr, 
+                var wi = module.CreateWorkItem(usr.UserId, 
                     WorkItemType.Document, 
                     WorkItemStatus.Created, 
                     WorkItemAction.Verify, 
@@ -130,8 +131,15 @@ foreach (IDocument childDoc in docs)
                     null, 
                     null, 
                     null, 
+                    groupId,
                     childDoc.Comment, 
-                    childDoc.Result);            
+                    childDoc.Result,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null);            
                 module.SaveChanges();
             }
             continue;
@@ -139,7 +147,7 @@ foreach (IDocument childDoc in docs)
 
         logger.LogInformation("{stpd} Process Document {docid} {docfilename}", stpd.Name, childDoc.Id, childDoc.Filename);
         logger.LogInformation("{stpd} Get document data", stpd.Name);
-        
+
         //We need to get our document data / bytes in order to calculate an MD5 hash
         var docData = module.GetDocumentData(childDoc, null);
 
@@ -189,10 +197,10 @@ foreach (IDocument childDoc in docs)
             //Log and create a work item to notify Human in the Loop of the duplcate document
             logger.LogInformation("{stpd} Document already processed: Previous document info: {docId}", stpd.Name, docId);
             module.SetDocumentStatus(childDoc, DocumentStatus.Error, $"Document already processed: Previous document info: {checkHash.GetValue(fieldDocId)}", null, true, false, true);
-            var usr = module.PickRandom(verifyusers, null);
+            var usr = module.PickRandom(verifyusers.Select(tuple => tuple.user).Distinct().ToList(), null);
             if (usr != null) 
             {
-                var wi = module.CreateWorkItem(usr, 
+                var wi = module.CreateWorkItem(usr.UserId, 
                     WorkItemType.Document, 
                     WorkItemStatus.Created, 
                     WorkItemAction.Verify, 
@@ -205,11 +213,19 @@ foreach (IDocument childDoc in docs)
                     null, 
                     null, 
                     null, 
+                    groupId,
+                    childDoc.Comment, 
+                    childDoc.Result,
+                    null,
+                    null,
+                    null,
+                    null,
                     $"Document already processed: Previous document info: {docId}", 
-                    $"Document already processed: Previous document info: {docId}");      
+                    $"Document already processed: Previous document info: {docId}");
+
                 module.SaveChanges();      
             }
-            
+
             //Add the document to list of documents excluded from processing
             skippedDocIds.Add(childDoc.MasterId ?? childDoc.Id);
             continue;
@@ -223,7 +239,7 @@ foreach (IDocument childDoc in docs)
 
         newHashRecord.SetValue(fieldDocId.Id, $"Parent Doc Id: {childDoc.MasterId.ToString()} | Doc Id: {childDoc.Id.ToString()}" );
         newHashRecord.SetValue(fieldMD5Hash.Id, hashString);
-        
+
         //Persist the dataset record to the Document History custom dataset
         await module.SaveDataSetRecord(dataset, newHashRecord);
         logger.LogInformation("{stpd} Hash record created. Continuing...", stpd.Name);
@@ -261,9 +277,9 @@ For the MD5 Hash calculation to work, add the following assembly signature to th
 
 * System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\
   \
-  ![](<../../.gitbook/assets/image (195).png>)
+  ![](<../.gitbook/assets/image (195).png>)
 
 Be sure to **Save** your custom code changes regularly by clicking on the **Save** button in the command bar.\
-![](<../../.gitbook/assets/image (8) (7).png>)
+![](<../.gitbook/assets/image (8) (7).png>)
 
 To test that our **Custom Code** is working as designed we can send some duplicate documents to our **Email Scraping** service. If your custom code was setup correctly, then any duplicate documents will be placed into an error state, work items will be created and they will not be processed by any further nested services within the email scraping service.
