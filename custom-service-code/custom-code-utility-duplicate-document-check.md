@@ -57,6 +57,7 @@ Close the **Configuration View** for the **Custom Code** utility, and click on t
   ![](<../.gitbook/assets/image (5) (10).png>)
 * Copy and paste the following code into the code editor area:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```csharp
 //Log the start of our custom code processing
 logger.LogInformation("{stpd} Start", stpd.Name);
@@ -75,13 +76,13 @@ logger.LogInformation("{stpd} Found {count} docs...", stpd.Name, docs.Count());
 
 //Retrieve our Duplicate History custom dataset. Replace the Id of the dataset and its fields with the Ids from your dataset and fields
 logger.LogInformation("{stpd} Get Custom History DataSet", stpd.Name);
-ICustomDataSet dataset = module.GetDataSetByDef(stpd, /* Document History definition Id here */, false, false, null, null, null, null);
-ParameterDefViewModel fieldDocId = dataset.FindField(/* DocumentId field definition Id here */);
-ParameterDefViewModel fieldMD5Hash = dataset.FindField(/* MD5Hash field definition Id here */);
+ICustomDataSet dataset = module.GetDataSetByDef(stpd, 263926, false, false, null, null, null, null);
+ParameterDefViewModel fieldDocId = dataset.FindField(263928);
+ParameterDefViewModel fieldMD5Hash = dataset.FindField(263927);
 
 //Initialise list to store skipped docs
 List<int> skippedDocIds = new List<int>();
-int groupId = /* Group Id for verification users here */;
+int groupId = 1867;
 
 //Get the various users that may be used in our work item creation
 List<(IGroupRole role, IGroupRoleUser user)> adminusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.Administrator, GroupRoleType.VerifyAdmin], null);
@@ -268,6 +269,7 @@ foreach (var skippedDocId in skippedDocIds)
 //Return the list of documents that will continue processing
 return new AIForged.Services.ProcessResult(docs);
 ```
+{% endcode %}
 
 * Replace **/\* Document History definition Id here \*/** with the unique identifier for the **Document History** custom dataset that you created.
 * Replace **/\* DocumentId field definition Id here \*/** with the unique identifier for the **DocumentId** dataset field that you created.
