@@ -5,6 +5,17 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## **UiPath Activities 1.6.1974.1129 (28-05-2025)**
+
+#### New Activities
+
+* **Documents:**
+  * Deep Search: Search through processed documents for specific extracted values.
+* **Reports:**&#x20;
+  * Work items: Returns a DataTable with the number of created work items for a specified period using the specified filters and grouping.
+  * Straight Through Processing: Returns a list of DataTable objects containing the processed numbers and straight through rates of documents per service per processing route taken.
+  * Document Flow Report: Returns a list of DataTable objects containing the document counts for various stages of document processing per service per route taken.
+
 ## \*\*\*New - AIForged Studio - Web 1.0.0 (11-04-2025)
 
 We are proud to announce the availability of the new web based AIForged Studio built entirely from the ground up in a performant web specific framework.
