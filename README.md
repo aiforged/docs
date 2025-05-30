@@ -15,6 +15,8 @@ nav_order: 1
   * Work items: Returns a DataTable with the number of created work items for a specified period using the specified filters and grouping.
   * Straight Through Processing: Returns a list of DataTable objects containing the processed numbers and straight through rates of documents per service per processing route taken.
   * Document Flow Report: Returns a list of DataTable objects containing the document counts for various stages of document processing per service per route taken.
+* **Windows Legacy Projects:**
+  * This will be the last release of the AIForged Legacy package for UiPath - Windows Legacy projects. These projects have been obsoleted by UiPath for quite some time and should no longer be used for new processes and libraries. They are also no longer an option in the newest versions of the UiPath Studio.
 
 ## \*\*\*New - AIForged Studio - Web 1.0.0 (11-04-2025)
 
