@@ -1,20 +1,20 @@
-# 🧠 Understanding Projects
+# 🧠 Understanding Agents
 
-### Project Cards
+### Agent Cards
 
-Project cards in AIForged Studio provide concise summaries of each project.&#x20;
+Agent cards in AIForged Studio provide concise summaries of each agent.
 
-They serve as quick-access points within AIForged Studio, offering essential information about each project at a glance. They typically include:
+They serve as a quick reference of an agent's status, offering essential information about each agent at a glance. They typically include:
 
 * **Project Name**: Clearly identifies the project.
-* **Summary Information**: Provides key details such as project description or relevant metadata.
+* **Summary Information**: Provides key details such as project description, available balance and relevant metadata about contained services.
 
-<figure><img src="../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
-Clicking on a project card opens the full project for detailed exploration and management.
+Clicking on an agent card opens the full agent for detailed exploration and management.
 {% endhint %}
 
 {% hint style="info" %}
-To manage a service, see [Ai Services ](../services/)
+To manage a service, see [Ai Services](../services/)
 {% endhint %}

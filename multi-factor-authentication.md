@@ -9,30 +9,29 @@ Multi-factor authentication (MFA) enhances account security by requiring users t
 
 ### Adding MFA to Your Account
 
-1. **Access User Profile**:\
-   ![](<.gitbook/assets/image (257).png>)
-2. **Navigate to Sign-in Options**:
+1. **Access your User Profile by clicking on your username**:\
+   \
+   ![](<.gitbook/assets/image (28).png>)
+2. **Navigate to Security options**:
 
-* Within your User Profile, select **Sign-in Options** and then choose **MFA**.
+* Within your User Profile, select **Security**.\
+  ![](<.gitbook/assets/image (30).png>)\
 
-<figure><img src=".gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
 3. **Generate MFA Key**:
 
 * If MFA is not yet set up, you will see a prompt to generate an MFA key.
-* Click the **Generate MFA key** to proceed.
-
-<figure><img src=".gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+* Click on **Click here to enable MFA** to proceed.\
+  ![](<.gitbook/assets/image (31).png>)
 
 4. **Copy Key or Scan QR Code**:
 
-* &#x20;Once the MFA key is generated, you can either copy the key provided or scan the QR Code image using an authenticator app.
-
-<figure><img src=".gitbook/assets/image (261).png" alt=""><figcaption><p>Note: This is only an example code.</p></figcaption></figure>
+* Once the MFA key is generated, you can either copy the key provided or scan the QR Code image using an authenticator app.\
+  ![](<.gitbook/assets/image (32).png>)
 
 5. **Manage MFA:**
 
-* From the MFA settings screen, you can enable or disable MFA as needed for your account.
+* From the MFA block, you can enable or disable MFA as needed for your account.
 
 {% hint style="info" %}
 When you reset your password, MFA is automatically disabled

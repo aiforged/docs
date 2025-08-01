@@ -34,4 +34,4 @@ Move Document
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (87) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (87) (1) (1).png" alt=""><figcaption></figcaption></figure>

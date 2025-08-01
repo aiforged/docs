@@ -38,7 +38,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
     * **Step 2 -** Verification of any documents that have been processed.\
       ![](<../../.gitbook/assets/image (84) (1).png>)
 
-    <figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Service Configuration Settings
 

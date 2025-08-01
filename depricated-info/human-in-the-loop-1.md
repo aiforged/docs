@@ -47,7 +47,7 @@ The **HITL Work Flow** queue shows **Work Flow Items** that have been created fo
 
 Every **Work Flow Item** has a **URL** link that can be used in a browser. This will launch the AIForged UI and open the Verification window for the entire **Document** or **Shred**. The link to the **Verification Work Flow Item** can be copied by clicking on the **Link Icon**.
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pasting this link in a web browser will result in the user being asked to open the **AIForgred UI**.
 
@@ -71,7 +71,7 @@ The **Document Data Control** bar on the right-hand side shows the fields that r
 
 To verify the value of the extracted text, click on the **Pencil** icon. This will open a dialogue that provides actions to the user to verify the field.
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 The value of the field is shown in the text box. If the OCR text is correct, the user can accept the Verification by clicking on the **Check Mark**.
 
@@ -89,7 +89,7 @@ Once all the Field Parameters that required Verification have been verified, the
 
 It is also possible to accept all **Verification** without manually verifying each **Field** that required **Verification**. Select **Verification** from the **Actions Bar**, then select **Accept All** to immediately accepts all **Verification** values.
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 This action will also immediately place the document in the **Processed** state from the **Verification** state.
 

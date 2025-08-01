@@ -1,6 +1,6 @@
 # ❓ Document Categories
 
-Document categories define the type of document that has been uploaded.&#x20;
+Document categories define the type of document that has been uploaded. Document categories are also used by classifiers to classify documents.
 
 {% hint style="info" %}
 Example: Bank-Statement, ID, or Invoice
@@ -12,30 +12,38 @@ Document Categories are shared across all services in the project
 
 ## How to create a document category
 
-1.  From the **Project** page click on Document Categories.
+1.  From the **any service** in your **agent**, open its **Service Configuration Wizard** and proceed to the **Categories** step:\
 
-    <figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
-2.  Click on “_Click here to add a new row_” to add a new **Document Category**.
 
-    <figure><img src="../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
-3. Fill in your new row and click on another row in your grid to allow you to add more rows&#x20;
+    <div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
+
+
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+2.  In the "**Add a new category**" textbox, enter the category name, for example **Invoice** and press Enter or click on the add ![](<../.gitbook/assets/image (4).png>) button.\
+
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+
+
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
-Note the ID field is Inserted Automatically
+Note the category description is optional but may help other users.
 {% endhint %}
 
-1.  After adding All your **Document Categories** click on **Save Changes** in the App Bar.
+## How to Delete a Document Category
 
-    <figure><img src="../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
+1.  From the **any service** in your **agent**, open its **Service Configuration Wizard** and proceed to the **Categories** step:\
 
-## How to Delete a Documnt Category
 
-1.  From the **Project** page click on **Document Categories**.
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-2.  Click on the **Trash** icon to remove the document category from the Grid.
 
-    <figure><img src="../.gitbook/assets/image (74) (1).png" alt=""><figcaption></figcaption></figure>
-3. After removing the **Document Categories** click on **Save Changes** in the App Bar.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+2.  Click on the ![](<../.gitbook/assets/image (9).png>) (delete) button in the category card for the document category you want to delete\
+
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure></div>

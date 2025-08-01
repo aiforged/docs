@@ -102,4 +102,4 @@ To successfully use the _AIForged_ activities in _UiPath Studio,_ the minimum li
 
 The name of the package is: **AIForged** by **AIForged**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>Screenshot of Manage Packages Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption><p>Screenshot of Manage Packages Screen</p></figcaption></figure>

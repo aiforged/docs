@@ -10,22 +10,22 @@ AIForged offers two options for document and data retention: Automatic and Manua
 
 ### Document deletion
 
-* Soft delete (Recoverable)
-* Hard Delete (Unrecoverable/ permanent deletion)&#x20;
+* Soft delete (Recoverable for up to 30 days after deletion)
+* Hard Delete (Unrecoverable/ permanent deletion)
 
 ### Document deletion options
 
 * Delete Physical Document
-* Delete Results generated&#x20;
+* Delete Results generated
 * Hard/ Soft - deletion
 
 {% hint style="danger" %}
-Soft delete documents are automatically hard deleted after 30 days
+Soft deleted documents are automatically hard deleted after 30 days
 {% endhint %}
 
 ## Manual document deletion (Full Control)
 
-Administrators and Training Users can delete documents on command via the UI or API, They can select [#document-deletion-options](document-retention.md#document-deletion-options "mention")
+Administrators and Developers can delete documents on command via the UI or API, They can select [#document-deletion-options](document-retention.md#document-deletion-options "mention")
 
 {% hint style="info" %}
 All delete requests are logged and available on the audit view
@@ -33,9 +33,9 @@ All delete requests are logged and available on the audit view
 
 ## Archiving strategy (Automatic)
 
-Each service has an archiving strategy that automatically cleans documents older than a comfortable age
+Each service has an archiving strategy that can be configured to automatically soft delete documents older than a specified age.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="warning" %}
 The archiving strategy will soft delete documents for 30 days, before automatically hard deleting them
@@ -47,20 +47,13 @@ Automatic deletion will NOT be logged
 
 ## Audited information
 
-Information kept in the audit view includes:&#x20;
+Information kept in the audit view includes:
 
-* Document ID&#x20;
-* Project ID&#x20;
-* Service ID&#x20;
-* File Name&#x20;
-* Date of deletion&#x20;
-* IP Address&#x20;
-* Document Category&#x20;
+* Document ID
+* Project ID
+* Service ID
+* File Name
+* Date of deletion
+* IP Address
+* Document Category
 * File Type
-
-
-
-
-
-
-

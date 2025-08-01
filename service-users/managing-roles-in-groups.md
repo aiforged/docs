@@ -1,51 +1,82 @@
-# 📏 Managing Roles in Groups
+# 📏 Managing Roles within Usergroups
 
-### Overview
+Effectively managing roles ensures that users have the appropriate access and responsibilities within your agents. In AIForged, roles are flexible and can be tailored to match your organization’s unique requirements. See [.](./ "mention") for a further overview of this functionality in AIForged.
 
-Roles in AIForged are specific sets of permissions and responsibilities assigned to users within a project. Each role is linked to a single project and can have an optional validity date.
+***
 
-## Managing Roles
+### Understanding Roles and Permissions
 
-#### User Permissions outline
+AIForged supports multiple roles, each granting specific permissions within a project or group. Users can be assigned one or more roles, and custom logic can be applied to further refine their behavior.
 
-There are many types of permissions and roles that a user can have. Here is an outline of each role
+**Common Roles**
 
-{% hint style="info" %}
-The roles and behavior can be customized with custom logic&#x20;
-{% endhint %}
+| **Owner**         | Full, unrestricted access to the agent, including all service configurations and documents.       |
+| ----------------- | ------------------------------------------------------------------------------------------------- |
+| **Administrator** | Authority to manage and configure the agent, including user management and agent settings.        |
+| **Developer**     | Ability to create, modify, and test AI agents and services within the agent.                      |
+| **Verify**        | Access to Human In The Loop (HITL) features to manage exceptions and validate business rules.     |
+| **Layout**        | Permission to use the document wizard and train documents, enhancing AI learning and performance. |
+| **View**          | Read-only access, allowing the user to see agent details without making any changes or edits.     |
 
-{% hint style="info" %}
-A user can have multiple roles assigned to them
-{% endhint %}
+> **Tip:**\
+> You can assign multiple roles to a single user to combine permissions as needed.
 
-* **Owner**: This role has full, unrestricted access to the project, including all service configurations and documents.
-* **Administrator**: This role has access to manage and shape the project.
-* **Verify-**: This role provides users with access to Human In The Loop (HITL) to manage exceptions and business rules.
-* **Layout-**: This role allows users to access the wizard and train documents.
-* **View-**: This role grants viewing rights only, allowing the user to see the project without editing any documents.
+***
 
 ### Creating a Role
 
-Creating a role in AIForged is a straightforward process:
+Follow these steps to create a new role within a Usergroup:
 
-1. **Navigate to Usergroups**: Access the Usergroups section in AIForged.
-2. **Select the Group**: Choose the group where you want to create the role.
-3. **Initiate Role Creation**: Click on "Create Role" to begin the role creation process.
-4. **Specify Role Details**:
-   * **Project**: Select the project to which the role will be linked.
-   * **Name**: Provide a name for the role.
-   * **Group Type:** Select the Role (see[ User Permissions outline](managing-roles-in-groups.md#user-permissions-outline))
-   * **Validity Date**: Optionally, set the start and end dates for the role's validity.
+1.  **Navigate to Organisations**\
+    Go to the Organisations section in AIForged.\
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. **Confirm Role Creation**: Complete the process to create the role.
+    <div align="left"><figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure></div>
+2.  **Select the Relevant Group**\
+    Choose the Usergroup where you wish to add a new role. Click on its name to open its management view.\
+
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure></div>
+3.  **Initiate Role Creation**\
+    Click on the **Create Role** ![](<../.gitbook/assets/image (91).png>) button to start defining a new role.\
+
+
+    <figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+4.  **Fill in Role Details**
+
+    1. **Role Name**\
+       Enter a clear and descriptive name for the role.
+    2. **Select Permissions**\
+       Choose the appropriate role permissions from the available permission options.
+    3.  **Link Agent (Optional)**\
+        Select the agent this role will be associated with.
+
+        > _Tip:_ Leaving this blank means this role’s permissions will apply implicitly to any other roles in the group that have an agent explicitly linked to them.
+    4. **Members (Optional)**\
+       Start inviting members or create new users directly from the role management dialog!
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure></div>
+5. **Confirm and Save**\
+   Review the details and complete the process to create your new role.
+
+***
 
 ### Deleting a Role
 
-To delete an existing role, follow these steps:
+To remove a role from a Usergroup, follow these steps:
 
-1. **See More Options**: Click on the "More options" button for the role you wish to delete.
-2. **Select Delete**: Choose the delete option to permanently remove the role from the system.
+1.  **Access More Options**\
+    Locate the role you wish to delete and click the **More options** action.\
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+2.  **Select Delete**\
+    Click on the **Delete** option.
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure></div>
+
+
+3.  **Confirm Deletion**\
+    If you are sure you want to delete the user role, then click on **Yes**, otherwise click **No**
+
+    <figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>

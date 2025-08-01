@@ -1,6 +1,7 @@
 ---
 title: Settings
 nav_order: 19
+hidden: true
 ---
 
 # ⚙️ Settings
@@ -37,7 +38,7 @@ The **Connectivity** page allows the user to change connectivity settings. The u
 
 To add a new **Service Endpoint**, click on the **Add Button**.
 
-<figure><img src=".gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (80) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Theme
 

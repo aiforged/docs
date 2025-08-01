@@ -49,7 +49,7 @@ Dependent AI services rely on additional functionalities, such as OCR or custom 
 
 If the Microsoft Forms recognizer is inadequate, custom code can be integrated into the process to achieve the desired outcome
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Dependent AI Services are set up the same way as normal AI Services

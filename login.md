@@ -39,7 +39,7 @@ If you are unable to log in to AIForged, follow these steps:
    * If using AIForged on a business or enterprise network:
      * Check with your network administrators to ensure that the AIForged Service Endpoint URL is allowed outbound access via your network. This URL can be found in the Settings section of the AIForged Studio.
    * If you have deployed AIForged on-premises:
-     * Ensure you have added the correct Service Endpoint URL in the Settings section of the AIForged Studio.
+     * Ensure you are accessing the AIForged Studio via the correct internal URL.
 3. **Confirm Account Registration**:
    * If logging in with an AIForged Account:
      * Ensure you have previously registered with the provided email address on the AIForged platform.

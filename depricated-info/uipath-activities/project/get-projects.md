@@ -22,4 +22,4 @@
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>

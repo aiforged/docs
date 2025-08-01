@@ -1,12 +1,12 @@
 # Google Object Detection
 
-<figure><img src="../../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Google Object Detection** detects objects, faces, and landmarks using **Google Vision**. The service detects objects within images and returns the **Metadata** of objects contained in the image. For example, if a person is present in the image, tags may include facial features, such as nose, ear, lip, etc. The service checks whether the image contains offensive material and can be labeled as **Adult**, **Racy**, **Violence**, or **Medical** with a certain degree of confidence.
 
 Consider the example below of a blonde woman. The object is identified as a "**Person**" and a list of **Tag** items is returned.
 
-<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61) (2).png" alt=""><figcaption></figcaption></figure>
 
 The image provided is deemed not to be offensive, with the imaged being labeled with the following degrees of certainty.
 
@@ -42,7 +42,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1 -** Service Config (Displays the service setting, you can change it as required).
 * Click the “Next” Action in the Action Bar to save the Service.

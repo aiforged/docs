@@ -3,41 +3,46 @@ title: Projects
 nav_order: 10
 ---
 
-# 🎛️ Projects
+# 🎛️ Agents
 
 ### Overview
 
-Projects in AIForged Studio are containers for [AI services](../services/).  A project can encapsulate an entire solution, and there is no limit to the amount of AI services that can be present in a Project
+Agents in AIForged are containers for [AI services](../services/), and are essential for user access management. An agent can encapsulate an entire solution, and there is no limit to the amount of AI services that can be present in an agent.
 
 ### Creating a project
 
-Creating a project in AIForged Studio is a straightforward process:
+Creating an agent in AIForged Studio is a straightforward process:
 
-1. **Navigate to Projects View**
-
-<figure><img src="../.gitbook/assets/image (7) (6).png" alt=""><figcaption></figcaption></figure>
-
-2.  **Initiate Project Creation**
-
-    Click on "Create a new project" to begin the project creation process.
-
-<figure><img src="../.gitbook/assets/image (6) (6).png" alt=""><figcaption></figcaption></figure>
+1.  **From the home view click on the** ![](<../.gitbook/assets/image (45).png>) **(Create a new agent) button.**\
 
 
+    <div align="left"><figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure></div>
+2. **Select an optional starting service**:\
+   You can opt to create your new agent with or without an intial AI service.
+   1.  To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:\
 
-3.  **Specify Project Details**:&#x20;
 
-    Provide a name for your project and optionally include additional information relevant to the project.
+       <figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+   2.  Alternatively, you can select an initial service type to start with, for example, an **LLM Extractor** under the **Extract & Verify** group of AI services, and then click on **Create**.\
 
-<figure><img src="../.gitbook/assets/image (8) (8).png" alt=""><figcaption></figcaption></figure>
 
-3. **Confirm Project Creation**
+       <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+3.  **Name your agent**
 
-### Deleting/ Disabling a Project
+    Provide a name for your agent and optionally include additional information relevant to the agent.\
 
-To disable or delete a project, click on the "More options" button, and select your option
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <div align="left"><figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure></div>
+
+
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure></div>
+
+### Deleting/ Disabling an Agent
+
+To disable or delete an agent, click on the ![](<../.gitbook/assets/image (52).png>) "**More agent related actions**" button, and select the action to perform.
+
+<div align="left"><figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 **Deleting a project:** Permanently deletes it from the system

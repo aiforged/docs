@@ -16,14 +16,14 @@ Wallets and billing are updated in real-time
 
 ## Filters
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Filter                         | Effect                                              |
 | ------------------------------ | --------------------------------------------------- |
 | From Date                      | The end date of the statement                       |
 | To Date                        | The End date of the statement                       |
 | Group Interval                 | Transactions group interval Example: 7/ 30/ 60 days |
-| Show Deleted Projects/Services | Shows/ Hides deleted projects  and services         |
+| Show Deleted Projects/Services | Shows/ Hides deleted projects and services          |
 | Show all related Transaction   | Show all the related transactions to a project      |
 
 ## Transactions

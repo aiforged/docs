@@ -12,19 +12,19 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 2. Create a new **Service**.
 3.  Select **MS Forms Recognizer - Bank Statements** from the **Extract & Verify** group.
 
-    <figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (75) (1).png" alt=""><figcaption></figcaption></figure>
 4.  The **Configuration Wizard** for the service will appear.\\
 
-    <figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (59) (2).png" alt=""><figcaption></figcaption></figure>
 5.  (Optional) Rename the **service name** and **service description**.
 
-    <figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (91) (1).png" alt=""><figcaption></figcaption></figure>
 6.  Click on **Next: Step 2 - Categories** (or click on **Step 2** Wizard Step).
 
-    <figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (69) (1).png" alt=""><figcaption></figcaption></figure>
 7.  Add a new **Category** to upload the training documents.
 
-    <figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,10 +46,10 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
     <figure><img src="../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 13. Select the desired **Execution Parameters** for analyzing the documents. Normally, the default values will suffice. Click **Process**.
 
-    <figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (105) (1).png" alt=""><figcaption></figcaption></figure>
 14. A progress dialogue will be displayed during the processing of the request. The **Progress Logs** can be expanded to scrutinize detailed logging of the progress. Once the operation is complete, the dialogue can be closed.
 
-    <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 15. After the documents are analyzed, the layout of the document is available in a structured format. These documents are demarcated by the **Analyzed** status. By using **Custom Labelling**, the service can be trained to detect values relative to the document layout. Click **Next: Step 4 - Custom Labeling** (or click on **Step 4** Wizard Step).
 
     <figure><img src="../../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
@@ -75,5 +75,5 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 23. Now that the documents have been labeled, we can request the train operation. In step 5, click on **Train Service**. Again the progress dialogue will show the progress of the training operation. Note that after training has been completed successfully, the status will change to **Trained**.
 
     <figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
-24. At this stage, the service is trained, and documents can be loaded into the [**Inbox** ](broken-reference)of the service and can be processed.
-25. The OCR results can be viewed in the [**Outbox**](broken-reference) of the service.
+24. At this stage, the service is trained, and documents can be loaded into the [**Inbox** ](broken-reference/)of the service and can be processed.
+25. The OCR results can be viewed in the [**Outbox**](broken-reference/) of the service.

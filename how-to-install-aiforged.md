@@ -1,43 +1,22 @@
-# 📬 How to Install AIForged
+# 📬 How to access AIForged
 
-### Installation Options <a href="#installation-options" id="installation-options"></a>
+### AIForged Studio <a href="#installation-options" id="installation-options"></a>
 
-#### Microsoft Store <a href="#microsoft-store" id="microsoft-store"></a>
+The AIForged Studio is where you configure your AI agents and services, manage user access as well as your wallets and billing.
 
-Installing AIForged Studio from the Microsoft Store is straightforward and follows the same process as any other Microsoft Store app.
+#### Production
 
-[Install from the Microsoft Store](https://apps.microsoft.com/store/detail/aiforged/9N9TV5K8F914)
+The AIForged Studio is available at [https://studio.aiforged.com](https://studio.aiforged.com/) or at your own tenant's internal URL.
 
-#### Fastlane Releases <a href="#fastlane-releases" id="fastlane-releases"></a>
+#### Beta and Dev branches
 
-AIForged Studio can also be installed via our Fastlane releases, offering two installer types:
+From time to time beta and dev builds will be made available at [https://beta.studio.aiforged.com](https://beta.studio.aiforged.com/)\
+&#xNAN;_&#x42;eta and dev builds are not production ready and should not be used to manage agents that are in production. No liability will be accepted when using beta or dev builds to manage agents that are in production._
 
-1. **MSI Installer**: This traditional installer simplifies distribution and management at an enterprise level.
-2. **MSIX Installer**: This modern installer packages AIForged Studio and installs it to your local Microsoft Packages directory, similar to apps from the Microsoft Store.
+### API Endpoints
 
-Both installer types from Fastlane include auto-update features to keep AIForged Studio up to date. For more details and to download the installers, please visit the Fastlane page.
+The AIForged API endpoints can be accessed via the OpenAPI / Swagger pages available at
 
-[Install from the Fastlane](https://aiforgedstorage.blob.core.windows.net/install/index.html)
-
-#### System Requirements <a href="#system-requirements" id="system-requirements"></a>
-
-Ensure your computer meets or exceeds the following system requirements before installing AIForged Studio.
-
-| Category           | Minimum Requirement                       | Maximum Requirement                       |
-| ------------------ | ----------------------------------------- | ----------------------------------------- |
-| OS                 | Windows 10 version 10.0.19041.0 or higher | Windows 11 version 10.0.22000.0 or higher |
-| Architecture       | x64                                       | x64                                       |
-| Display Resolution | 1920 x 1080                               | 1920 x 1080 or higher                     |
-| Mouse              | Mouse or Touch Support                    | Mouse or Touch Support                    |
-| DirectX            | Version 9                                 | Version 11                                |
-| Memory             | 4 GB                                      | 8 GB                                      |
-| Video Memory       | 1 GB                                      | 1 GB                                      |
-| Processor          | Intel Core i3 or AMD Ryzen 3              | Intel Core i5 or AMD Ryzen 5              |
-
-**Runs on Windows Server (with Desktop Component) - Build 10.0.19041.0 or higher**
-
-### Documentation Repository <a href="#documentation-repository" id="documentation-repository"></a>
-
-This is the repository for AIForged documentation.
-
-[View the published documentation here](http://docs.aiforged.com/)
+* [https://portal.aiforged.com/swagger](https://portal.aiforged.com/swagger)
+* [https://dev.aiforged.com/swagger](https://app.gitbook.com/o/9rG3KVbeO8AwmuvAW3UX/s/b9yHiim3e00taqY3rkcs/)
+* [https://sandbox.aiforged.com/swagger](https://sandbox.aiforged.com/swagger)

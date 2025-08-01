@@ -34,4 +34,4 @@ Rerun All Verifications
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (102) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (102) (1) (1).png" alt=""><figcaption></figcaption></figure>

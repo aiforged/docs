@@ -9,20 +9,20 @@ nav_order: 9
 
 The **User Profile** page allows you to view and edit various details related to **your** user account.
 
-To open the **User Profile** page, simply select the **User** **Profile** navigation item from the **Settings** area of the navigation menu.
-
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+To open the **User Profile** page, simply click on your user name or icon in the top right-hand corner of the AIForged Studio.\
+\
+![](<.gitbook/assets/image (33).png>)
 
 ### User
 
-The User page allows you to edit your user details, and change your password
+The **General** tab allows you to edit your user details, and allows quick access to other sections such as **Security.**
 
 #### Edit your details
 
 1. Edit or fill in the **User Details** you want to change or add.
-2. Click on the **Update User** button in the command bar.
-
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+2. Changes are saved when submitted / accepted.\
+   \
+   ![](<.gitbook/assets/image (34).png>)
 
 {% hint style="info" %}
 Your Username and User cannot be changed
@@ -30,27 +30,31 @@ Your Username and User cannot be changed
 
 ## Profile Picture
 
-A profile picture is a picture of **you** or your **company**
+A profile picture is a great way to personalise your profile.
 
 To upload a new profile picture
 
-1. Click on the **Upload New Picture** button
-2. Select your profile picture.
+1. Click on your profile icon or drag and drop an image over your profile icon.
 
-<figure><img src=".gitbook/assets/image (15) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure></div>
 
-## Sign-in Options
+## Security
 
-<figure><img src=".gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+### Password
 
-### Link External Login Provider
+You can change your password in the **Password** card. Simply follow the prompts, complete the necessary details (old password, new password and security check) and click on **Save**.
 
-#### External Account
+<div align="left"><figure><img src=".gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure></div>
 
-1. **New Users**: If you haven't previously logged in or registered with AIForged, logging in with an External Account will automatically create a new AIForged account using the publicly available details from your External Account.
-2. **Existing Users**: If you already have an AIForged account, you can link an External Account to your existing AIForged account. This can be done via your User Profile settings. Once linked, you can log in using either your AIForged credentials or the linked External Account.
+<div align="left"><figure><img src=".gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure></div>
 
-#### Available External Accounts:
+### Login Providers
+
+If you have logged in with any of the available external login providers, then they will be listed in the Login Providers card, with the option to unlink a provider.
+
+<div align="left"><figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure></div>
+
+#### Available External Login Providers:
 
 * Microsoft
 * Facebook
@@ -60,62 +64,41 @@ To upload a new profile picture
 * LinkedIn
 * Azure Active Directory (via Microsoft)
 
-1.  Click on the **Link External Login Provider** button.
-
-    <figure><img src=".gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
-2. Select an **External** **Provider** from the list of providers.
-3. Sign in to the provider.
-4. Your unique provider link ID will appear within the **External Provider Card** if the link is successful.
-
 ### Unlink provider
 
-To unlink a specific provider simply click on the **Unlink** button in the **External Provider Card**.
+To unlink a specific provider simply click on the **Unlink** button in the **Login Provider Card**.
 
-<figure><img src=".gitbook/assets/image (17) (1) (3).png" alt=""><figcaption></figcaption></figure>
-
-### Multi Factor Autehntication
+### Multi Factor Authentication
 
 See [Multi-Factor Authentication](multi-factor-authentication.md)
 
 ### API Key
 
-API keys offer a unique key to authenticate yourself programmatically
+API keys offer a unique key used to authenticate an account programatically via the API endpoints or SDK.
 
-**View your API Key**
+**View your API Key**\
+![](<.gitbook/assets/image (41).png>)\
+\
+![](<.gitbook/assets/image (42).png>)
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Notification Preferences
 
-## Notification Preferences&#x20;
-
-Notifications are sent on a **OPT-IN** Basis&#x20;
+Notifications are sent on an **OPT-IN** Basis
 
 ### Setting up your notifications
 
-1. Choose the event that you would like to be notified
+1. Choose the event that you would like to be notified for
 2. Create a notification group
 3. Enter the notification type
-4. Provide the recipiants&#x20;
+4. Provide the recipients
 5. Save the changes
 
 ### Example
 
 <figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Teaching Tips
+## Studio Preferences
 
-**Teaching Tips** displays hints on various pages regarding usage and functionality.
+Studio preferences allow you to customise various aspects of the UI, such as default filter ranges, and default behaviours for certain views and dialogs.
 
-**Teaching Tips** can be disabled globally for your user account by toggling the **Teaching Tips Toggle** to off.
-
-<figure><img src=".gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-## General Setting
-
-General Settings contain the preferences of the logged-in user.&#x20;
-
-These settings affect the overall look and feel of the UI
-
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
