@@ -24,7 +24,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     let logLines = [];
 
     // 1. Fix image tags: ![](<path>) -> ![](path), then encode path
-    content = content.replace(/!\[\]\(\s*(<)?(.+?)(>)?\s*\)/g, (match, open, p1, close) => {
+    content = content.replace(/!\[\]\(\s*(<)?(.+)(>)?\s*\)/g, (match, open, p1, close) => {
         let pathToEncode = p1.trim();
         let encodedPath = encodePath(pathToEncode);
         if (encodedPath !== pathToEncode || open || close) {
@@ -36,7 +36,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     });
 
     // 2. Fix raw <img src="..."> tags to encode the src attribute path
-    content = content.replace(/<img([^>]*?)src\s*=\s*(['"])(.+?)\2([^>]*?)>/gi, (match, pre, quote, src, post) => {
+    content = content.replace(/<img([^>]*?)src\s*=\s*(['"])(.+)\2([^>]*?)>/gi, (match, pre, quote, src, post) => {
         let encodedSrc = encodePath(src);
         if (encodedSrc !== src) {
             totalImgSrcFixed++;
