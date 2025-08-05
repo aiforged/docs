@@ -50,40 +50,52 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     });
 
     // 3. Remove <figure ...> and </figure> tags, keep content
-    content = content.replace(/<figure[^>]*>/gi, match => {
-        totalFigureTagsStripped++;
-        logLines.push(`[figure open tag] Removed: ${match}`);
-        fileChanged = true;
-        return '';
-    });
-    content = content.replace(/<\/figure>/gi, match => {
-        totalFigureTagsStripped++;
-        logLines.push(`[figure close tag] Removed: ${match}`);
-        fileChanged = true;
-        return '';
-    });
+    //content = content.replace(/<figure[^>]*>/gi, match => {
+    //    totalFigureTagsStripped++;
+    //    logLines.push(`[figure open tag] Removed: ${match}`);
+    //    fileChanged = true;
+    //    return '';
+    //});
+    //content = content.replace(/<\/figure>/gi, match => {
+    //    totalFigureTagsStripped++;
+    //    logLines.push(`[figure close tag] Removed: ${match}`);
+    //    fileChanged = true;
+    //    return '';
+    // });
 
     // 4. Remove <div ...> and </div> tags, keep content
+    //content = content.replace(/<div[^>]*>/gi, match => {
+    //    totalDivTagsStripped++;
+    //    logLines.push(`[div open tag] Removed: ${match}`);
+    //    fileChanged = true;
+    //    return '';
+    //});
+    //content = content.replace(/<\/div>/gi, match => {
+    //    totalDivTagsStripped++;
+    //    logLines.push(`[div close tag] Removed: ${match}`);
+    //    fileChanged = true;
+    //    return '';
+    //});
+
+    // 4. Strip attributes from <div ...> tags, keep <div> and </div>
     content = content.replace(/<div[^>]*>/gi, match => {
         totalDivTagsStripped++;
-        logLines.push(`[div open tag] Removed: ${match}`);
+        logLines.push(`[div open tag] Stripped attributes: ${match} -> <div>`);
         fileChanged = true;
-        return '';
+        return '<div>';
     });
     content = content.replace(/<\/div>/gi, match => {
-        totalDivTagsStripped++;
-        logLines.push(`[div close tag] Removed: ${match}`);
-        fileChanged = true;
-        return '';
+        logLines.push(`[div close tag] Kept: ${match}`);
+        return '</div>';
     });
 
     // 5. Remove <figcaption ...>...</figcaption> including content
-    content = content.replace(/<figcaption[^>]*>[\s\S]*?<\/figcaption>/gi, match => {
-        totalFigcaptionBlocksRemoved++;
-        logLines.push(`[figcaption block] Removed: ${match.replace(/\n/g, ' ')}`);
-        fileChanged = true;
-        return '';
-    });
+    //content = content.replace(/<figcaption[^>]*>[\s\S]*?<\/figcaption>/gi, match => {
+    //    totalFigcaptionBlocksRemoved++;
+    //    logLines.push(`[figcaption block] Removed: ${match.replace(/\n/g, ' ')}`);
+    //    fileChanged = true;
+    //    return '';
+    //});
 
     // 6. Remove trailing backslashes from list items
     content = content.split('\n').map((line, idx) => {
