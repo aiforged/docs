@@ -128,6 +128,14 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
             return `${listPrefix} <div>`;
         }
     );
+    // Inline <figure> tags after list text
+    content = content.replace(
+        /(^\s*([-*+]|\d+\.)[^\n\S]*[^\n]*?)(\n+\s*<figure>\s*\n*)/gm,
+        (match, listPrefix, bullet, figureBlock) => {
+            return `${listPrefix} <figure>`;
+        }
+    );
+    
     // Remove newlines just after <div> and just before </div>
     content = content.replace(/<div>\s+/g, '<div>');
     content = content.replace(/\s+<\/div>/g, '</div>');
@@ -135,6 +143,14 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     // Remove newlines and spaces before <div> and after </div> globally (not just in lists)
     content = content.replace(/[\r\n]+\s*<div>/g, ' <div>');
     content = content.replace(/<\/div>\s*[\r\n]+/g, '</div> ');
+
+    // Remove newlines just after <figure> and just before </figure>
+    content = content.replace(/<figure>\s+/g, '<figure>');
+    content = content.replace(/\s+<\/figure>/g, '</figure>');
+
+    // Remove newlines and spaces before <figure> and after </figure> globally (not just in lists)
+    content = content.replace(/[\r\n]+\s*<figure>/g, ' <figure>');
+    content = content.replace(/<\/figure>\s*[\r\n]+/g, '</figure> ');
 
     // Write file if changed and log details
     if (fileChanged) {
