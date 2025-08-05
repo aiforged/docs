@@ -1,4 +1,5 @@
 {
+  "title": "AIForged Documentation",
   "plugins": [
     "hints",
     "search-plus",
