@@ -4,7 +4,6 @@ const path = require('path');
 
 // Helper: encode URI path, but not the whole URL (so ../ and / remain)
 function encodePath(str) {
-    // Only encode the filename part, not the slashes
     return str.split('/').map(encodeURIComponent).join('/');
 }
 
@@ -14,6 +13,7 @@ let totalFigureTagsStripped = 0;
 let totalDivTagsStripped = 0;
 let totalFigcaptionBlocksRemoved = 0;
 let totalBackslashesRemoved = 0;
+let totalImgSrcFixed = 0;
 let totalFilesChanged = 0;
 
 glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
@@ -24,10 +24,8 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     let logLines = [];
 
     // 1. Fix image tags: ![](<path>) -> ![](path), then encode path
-    // Handles both ![](<...>) and ![](...) with unsafe characters
-    content = content.replace(/!\[\]\((<)?([^)\s]+(?: [^)]*)?)(>)?\)/g, (match, open, p1, close) => {
+    content = content.replace(/!\[\]\(\s*(<)?(.+?)(>)?\s*\)/g, (match, open, p1, close) => {
         let pathToEncode = p1.trim();
-        // Only encode if not already encoded
         let encodedPath = encodePath(pathToEncode);
         if (encodedPath !== pathToEncode || open || close) {
             totalImageTagsFixed++;
@@ -37,7 +35,21 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
         return `![](${encodedPath})`;
     });
 
-    // 2. Remove <figure ...> and </figure> tags, keep content
+    // 2. Fix raw <img src="..."> tags to encode the src attribute path
+    content = content.replace(/<img([^>]*?)src\s*=\s*(['"])(.+?)\2([^>]*?)>/gi, (match, pre, quote, src, post) => {
+        let encodedSrc = encodePath(src);
+        if (encodedSrc !== src) {
+            totalImgSrcFixed++;
+            const before = match;
+            const after = `<img${pre}src=${quote}${encodedSrc}${quote}${post}>`;
+            logLines.push(`[img tag] Before: ${before}\n         After:  ${after}`);
+            fileChanged = true;
+            return after;
+        }
+        return match;
+    });
+
+    // 3. Remove <figure ...> and </figure> tags, keep content
     content = content.replace(/<figure[^>]*>/gi, match => {
         totalFigureTagsStripped++;
         logLines.push(`[figure open tag] Removed: ${match}`);
@@ -51,7 +63,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
         return '';
     });
 
-    // 3. Remove <div ...> and </div> tags, keep content
+    // 4. Remove <div ...> and </div> tags, keep content
     content = content.replace(/<div[^>]*>/gi, match => {
         totalDivTagsStripped++;
         logLines.push(`[div open tag] Removed: ${match}`);
@@ -65,7 +77,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
         return '';
     });
 
-    // 4. Remove <figcaption ...>...</figcaption> including content
+    // 5. Remove <figcaption ...>...</figcaption> including content
     content = content.replace(/<figcaption[^>]*>[\s\S]*?<\/figcaption>/gi, match => {
         totalFigcaptionBlocksRemoved++;
         logLines.push(`[figcaption block] Removed: ${match.replace(/\n/g, ' ')}`);
@@ -73,7 +85,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
         return '';
     });
 
-    // 5. Remove trailing backslashes from list items
+    // 6. Remove trailing backslashes from list items
     content = content.split('\n').map((line, idx) => {
         const listRegex = /^(\s*(?:-|\*|\+|\d+\.)\s.*?)(\\+)\s*$/;
         if (listRegex.test(line)) {
@@ -102,6 +114,7 @@ console.log('\n[fix-gitbook-markdown] ---- SUMMARY ----');
 console.log(`  Files processed:                ${totalFilesProcessed}`);
 console.log(`  Files changed:                  ${totalFilesChanged}`);
 console.log(`  Image tags fixed/encoded:       ${totalImageTagsFixed}`);
+console.log(`  <img src> paths encoded:        ${totalImgSrcFixed}`);
 console.log(`  <figure> tags stripped:         ${totalFigureTagsStripped}`);
 console.log(`  <div> tags stripped:            ${totalDivTagsStripped}`);
 console.log(`  <figcaption> blocks removed:    ${totalFigcaptionBlocksRemoved}`);
