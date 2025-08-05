@@ -57,7 +57,6 @@ Close the **Configuration View** for the **Custom Code** utility, and click on t
   ![](<../.gitbook/assets/image (5) (10).png>)
 * Copy and paste the following code into the code editor area:
 
-{% code lineNumbers="true" fullWidth="true" %}
 ```csharp
 //Log the start of our custom code processing
 logger.LogInformation("{stpd} Start", stpd.Name);
@@ -269,7 +268,6 @@ foreach (var skippedDocId in skippedDocIds)
 //Return the list of documents that will continue processing
 return new AIForged.Services.ProcessResult(docs);
 ```
-{% endcode %}
 
 * Replace **/\* Document History definition Id here \*/** with the unique identifier for the **Document History** custom dataset that you created.
 * Replace **/\* DocumentId field definition Id here \*/** with the unique identifier for the **DocumentId** dataset field that you created.
