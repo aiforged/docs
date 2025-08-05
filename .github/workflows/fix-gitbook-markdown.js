@@ -24,7 +24,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     let logLines = [];
 
     // 1. Fix image tags: ![](<path>) -> ![](path), then encode path
-    content = content.replace(/!\[\]\(\s*(<)?(.+)(>)?\s*\)/g, (match, open, p1, close) => {
+    content = content.replace(/!\[\]\(\s*(<)?([\w\d\/\(\)\.\s]*)(>)?\s*\)/gi, (match, open, p1, close) => {
         let pathToEncode = p1.trim();
         let encodedPath = encodePath(pathToEncode);
         if (encodedPath !== pathToEncode || open || close) {
