@@ -13,27 +13,17 @@ Agents in AIForged are containers for [AI services](../services/), and are essen
 
 Creating an agent in AIForged Studio is a straightforward process:
 
-1.  **From the home view click on the** <img src="../.gitbook/assets/image (45).png"> **(Create a new agent) button.**
-    ![](<../.gitbook/assets/image (48).png>)
-2. **Select an optional starting service**:\
+-  **From the home view click on the** <img src="../.gitbook/assets/image (45).png"> **(Create a new agent) button.**
+   <img src="../.gitbook/assets/image (48).png">
+- **Select an optional starting service**:\
    You can opt to create your new agent with or without an intial AI service.
-   1.  To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:\
-
-
+   -  To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:
        <figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
-   2.  Alternatively, you can select an initial service type to start with, for example, an **LLM Extractor** under the **Extract & Verify** group of AI services, and then click on **Create**.\
-
-
+   -  Alternatively, you can select an initial service type to start with, for example, an **LLM Extractor** under the **Extract & Verify** group of AI services, and then click on **Create**.
        <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
-3.  **Name your agent**
-
-    Provide a name for your agent and optionally include additional information relevant to the agent.\
-
-
+-  **Name your agent**
+    Provide a name for your agent and optionally include additional information relevant to the agent.
     <div align="left"><figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure></div>
-
-
-
     <div align="left"><figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Deleting/ Disabling an Agent
