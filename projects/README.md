@@ -9,7 +9,7 @@ nav_order: 10
 
 Agents in AIForged are containers for [AI services](../services/), and are essential for user access management. An agent can encapsulate an entire solution, and there is no limit to the amount of AI services that can be present in an agent.
 
-### Creating a project
+### Creating an agent
 
 Creating an agent in AIForged Studio is a straightforward process:
 
@@ -45,9 +45,9 @@ To disable or delete an agent, click on the ![](<../.gitbook/assets/image (52).p
 <div align="left"><figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
-**Deleting a project:** Permanently deletes it from the system
+**Deleting an agent:** Permanently deletes it from the system
 {% endhint %}
 
 {% hint style="info" %}
-**Disabling a project:** Temporarily disables all processing in all the AI services within the service
+**Disabling an agent:** Temporarily disables all processing in all the AI services within the agent until re-activated
 {% endhint %}
