@@ -29,12 +29,12 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
         let encodedPath = encodePath(pathToEncode);
         if (encodedPath !== pathToEncode || open || close) {
             totalImageTagsFixed++;
-            //logLines.push(`[image tag] Before: ${match}\n            After: <img src="${encodedPath}">`);
-            logLines.push(`[image tag] Before: ${match}\n            After: ![](<${encodedPath}>)`);
+            logLines.push(`[image tag] Before: ${match}\n            After: <img src="${encodedPath}">`);
+            //logLines.push(`[image tag] Before: ${match}\n            After: ![](<${encodedPath}>)`);
             fileChanged = true;
         }
-        //return `<img src="${encodedPath}">`;
-        return `![](<${encodedPath}>)`;
+        return `<img src="${encodedPath}">`;
+        //return `![](<${encodedPath}>)`;
     });
 
     // 2. Fix raw <img src="..."> tags to encode the src attribute path
@@ -63,7 +63,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     //    logLines.push(`[figure close tag] Removed: ${match}`);
     //    fileChanged = true;
     //    return '';
-    // });
+    //});
 
     // 4. Remove <div ...> and </div> tags, keep content
     //content = content.replace(/<div[^>]*>/gi, match => {
@@ -100,17 +100,41 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     //});
 
     // 6. Remove trailing backslashes from list items
-    //content = content.split('\n').map((line, idx) => {
-    //    const listRegex = /^(\s*(?:-|\*|\+|\d+\.)\s.*?)(\\+)\s*$/;
-    //    if (listRegex.test(line)) {
-    //        const before = line;
-    //        line = line.replace(/(\\+)\s*$/, '');
-    //        totalBackslashesRemoved++;
-    //        logLines.push(`[list backslash] Line ${idx + 1} Before: ${before}\n                   After:  ${line}`);
-    //        fileChanged = true;
-    //    }
-    //    return line;
-    //}).join('\n');
+    content = content.split('\n').map((line, idx) => {
+        const listRegex = /^(\s*(?:-|\*|\+|\d+\.)\s.*?)(\\+)\s*$/;
+        if (listRegex.test(line)) {
+            const before = line;
+            line = line.replace(/(\\+)\s*$/, '');
+            totalBackslashesRemoved++;
+            logLines.push(`[list backslash] Line ${idx + 1} Before: ${before}\n                   After:  ${line}`);
+            fileChanged = true;
+        }
+        return line;
+    }).join('\n');
+
+    // 7. Inline <img> and <div> tags in lists (remove leading/trailing newlines and whitespace)
+    // Inline <img> tags after list text
+    content = content.replace(
+        /(^\s*([-*+]|\d+\.)[^\n\S]*[^\n]*?)(\n+\s*<img\b[^>]*>\s*\n+)/gm,
+        (match, listPrefix, bullet, imgBlock) => {
+            const imgTag = imgBlock.replace(/^\s*|\s*$/g, '');
+            return `${listPrefix} ${imgTag}\n`;
+        }
+    );
+    // Inline <div> tags after list text
+    content = content.replace(
+        /(^\s*([-*+]|\d+\.)[^\n\S]*[^\n]*?)(\n+\s*<div>\s*\n*)/gm,
+        (match, listPrefix, bullet, divBlock) => {
+            return `${listPrefix} <div>`;
+        }
+    );
+    // Remove newlines just after <div> and just before </div>
+    content = content.replace(/<div>\s+/g, '<div>');
+    content = content.replace(/\s+<\/div>/g, '</div>');
+
+    // Remove newlines and spaces before <div> and after </div> globally (not just in lists)
+    content = content.replace(/[\r\n]+\s*<div>/g, ' <div>');
+    content = content.replace(/<\/div>\s*[\r\n]+/g, '</div> ');
 
     // Write file if changed and log details
     if (fileChanged) {
