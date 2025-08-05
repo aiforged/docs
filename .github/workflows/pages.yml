@@ -42,6 +42,12 @@ jobs:
           npm install
         timeout-minutes: 5
 
+      - name: Install Markdown preprocessor dependencies
+        run: npm install glob
+
+      - name: Preprocess Markdown for HonKit compatibility
+        run: node .github/workflows/fix-gitbook-markdown.js
+
       - name: Build HonKit
         run: npm run build
         timeout-minutes: 30
