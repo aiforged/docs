@@ -13,10 +13,8 @@ Agents in AIForged are containers for [AI services](../services/), and are essen
 
 Creating an agent in AIForged Studio is a straightforward process:
 
-1.  **From the home view click on the** <img src="../.gitbook/assets/image (45).png"> **(Create a new agent) button.**\
-
-
-    <div align="left"><figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure></div>
+1.  **From the home view click on the** <img src="../.gitbook/assets/image (45).png"> **(Create a new agent) button.**
+    ![](<../.gitbook/assets/image (48).png>)
 2. **Select an optional starting service**:\
    You can opt to create your new agent with or without an intial AI service.
    1.  To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:\
