@@ -36,12 +36,12 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     });
 
     // 2. Fix raw <img src="..."> tags to encode the src attribute path
-    content = content.replace(/<img([^>]*?)src\s*=\s*(['"])(.+)\2([^>]*?)>/gi, (match, pre, quote, src, post) => {
+    content = content.replace(/(<img\b[^>]*\bsrc\s*=\s*)(["'])([^"']+)\2/gi, (match, pre, quote, src) => {
         let encodedSrc = encodePath(src);
         if (encodedSrc !== src) {
             totalImgSrcFixed++;
             const before = match;
-            const after = `<img${pre}src=${quote}${encodedSrc}${quote}${post}>`;
+            const after = `${pre}${quote}${encodedSrc}${quote}`;
             logLines.push(`[img tag] Before: ${before}\n         After:  ${after}`);
             fileChanged = true;
             return after;
