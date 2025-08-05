@@ -98,17 +98,17 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     //});
 
     // 6. Remove trailing backslashes from list items
-    content = content.split('\n').map((line, idx) => {
-        const listRegex = /^(\s*(?:-|\*|\+|\d+\.)\s.*?)(\\+)\s*$/;
-        if (listRegex.test(line)) {
-            const before = line;
-            line = line.replace(/(\\+)\s*$/, '');
-            totalBackslashesRemoved++;
-            logLines.push(`[list backslash] Line ${idx + 1} Before: ${before}\n                   After:  ${line}`);
-            fileChanged = true;
-        }
-        return line;
-    }).join('\n');
+    //content = content.split('\n').map((line, idx) => {
+    //    const listRegex = /^(\s*(?:-|\*|\+|\d+\.)\s.*?)(\\+)\s*$/;
+    //    if (listRegex.test(line)) {
+    //        const before = line;
+    //        line = line.replace(/(\\+)\s*$/, '');
+    //        totalBackslashesRemoved++;
+    //        logLines.push(`[list backslash] Line ${idx + 1} Before: ${before}\n                   After:  ${line}`);
+    //        fileChanged = true;
+    //    }
+    //    return line;
+    //}).join('\n');
 
     // Write file if changed and log details
     if (fileChanged) {
