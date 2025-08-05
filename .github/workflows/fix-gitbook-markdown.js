@@ -1,6 +1,12 @@
 const fs = require('fs');
-const path = require('path');
 const glob = require('glob');
+const path = require('path');
+
+// Helper: encode URI path, but not the whole URL (so ../ and / remain)
+function encodePath(str) {
+    // Only encode the filename part, not the slashes
+    return str.split('/').map(encodeURIComponent).join('/');
+}
 
 let totalFilesProcessed = 0;
 let totalImageTagsFixed = 0;
@@ -17,12 +23,18 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     let fileChanged = false;
     let logLines = [];
 
-    // 1. Fix image tags: ![](<path>) -> ![](path)
-    content = content.replace(/!\[\]\(<([^>]+)>\)/g, (match, p1) => {
-        totalImageTagsFixed++;
-        logLines.push(`[image tag] Before: ${match}\n            After: ![](${p1})`);
-        fileChanged = true;
-        return `![](${p1})`;
+    // 1. Fix image tags: ![](<path>) -> ![](path), then encode path
+    // Handles both ![](<...>) and ![](...) with unsafe characters
+    content = content.replace(/!\[\]\((<)?([^)\s]+(?: [^)]*)?)(>)?\)/g, (match, open, p1, close) => {
+        let pathToEncode = p1.trim();
+        // Only encode if not already encoded
+        let encodedPath = encodePath(pathToEncode);
+        if (encodedPath !== pathToEncode || open || close) {
+            totalImageTagsFixed++;
+            logLines.push(`[image tag] Before: ${match}\n            After: ![](${encodedPath})`);
+            fileChanged = true;
+        }
+        return `![](${encodedPath})`;
     });
 
     // 2. Remove <figure ...> and </figure> tags, keep content
@@ -89,7 +101,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
 console.log('\n[fix-gitbook-markdown] ---- SUMMARY ----');
 console.log(`  Files processed:                ${totalFilesProcessed}`);
 console.log(`  Files changed:                  ${totalFilesChanged}`);
-console.log(`  Image tags fixed:               ${totalImageTagsFixed}`);
+console.log(`  Image tags fixed/encoded:       ${totalImageTagsFixed}`);
 console.log(`  <figure> tags stripped:         ${totalFigureTagsStripped}`);
 console.log(`  <div> tags stripped:            ${totalDivTagsStripped}`);
 console.log(`  <figcaption> blocks removed:    ${totalFigcaptionBlocksRemoved}`);
