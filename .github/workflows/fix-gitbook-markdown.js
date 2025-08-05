@@ -29,11 +29,11 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
         let encodedPath = encodePath(pathToEncode);
         if (encodedPath !== pathToEncode || open || close) {
             totalImageTagsFixed++;
-            logLines.push(`[image tag] Before: ${match}\n            After: <img src="${encodedPath}">`);
+            logLines.push(`[image tag] Before: ${match}\n            After: <img src="${pathToEncode}">`);
             //logLines.push(`[image tag] Before: ${match}\n            After: ![](<${encodedPath}>)`);
             fileChanged = true;
         }
-        return `<img src="${encodedPath}">`;
+        return `<img src="${pathToEncode}">`;
         //return `![](<${encodedPath}>)`;
     });
 
