@@ -23,7 +23,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
     let fileChanged = false;
     let logLines = [];
 
-    // 1. Fix image tags: ![](<path>) -> ![](path), then encode path
+    // 1. Convert ![](<path>) and ![](path) to <img src="encoded_path">
     content = content.replace(/!\[\]\(\s*(<)?([\w\d\/\(\)\.\s]*)(>)?\s*\)/gi, (match, open, p1, close) => {
         let pathToEncode = p1.trim();
         let encodedPath = encodePath(pathToEncode);
@@ -32,7 +32,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
             logLines.push(`[image tag] Before: ${match}\n            After: ![](${encodedPath})`);
             fileChanged = true;
         }
-        return `![](${encodedPath})`;
+        return `<img src="${encodedPath}">`;
     });
 
     // 2. Fix raw <img src="..."> tags to encode the src attribute path
