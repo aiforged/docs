@@ -1,62 +1,107 @@
 # Amazon Receipt Extraction
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The ​**Amazon Receipt Extraction Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. **Microsoft Receipts** allows users to categorize and visualize their expenses. Below is an example of a receipt.
+The Amazon Receipt Extraction Service in AIForged uses **Amazon Textract**'s pre-trained receipt models to extract key-value pairs and line items from receipts. The service retrieves essential data commonly found on receipts—such as Subtotal, VAT, Total, Date, Receipt Number, Vendor Name, Shipping Address Recipient, and Purchase Orders. Individual line items are also extracted and presented in a structured format.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+This service is ideal for automating expense tracking, financial reconciliation, and visualizing receipt data for business intelligence.
+{% endhint %}
 
-The service extracts basic fields that can typically be found on a **Receipt**, such as the **Receipt #**, **Receipt Date**, **Vendor Name**, **Shipping Address Recipient**, and **Purchase Orders**, to name a few. In addition to this, the line items are also extracted.
+***
 
-<figure><img src="../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+### Supported Content Types
 
-## Supported Content Types
+* PDF
+* JPEG
+* PNG
 
-* Pdf
-* jpeg
-* png
+{% hint style="info" %}
+If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
+{% endhint %}
 
-If you need to use a different type of content, you can use the **AIForged Pdf Converter**.
+***
 
-## Possible use cases
+### Possible Use Cases
 
-* Extract data from receipts
-* Visualize your receipts data
+* Automatically extract and organize data from receipts for expense management.
+* Visualize and analyze receipt data for financial reporting and audits.
 
-## Service Setup
+***
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select **Amazon Receipt Extraction Service** from the available **Service Types.**
+### Service Setup
 
-    <figure><img src="../../.gitbook/assets/image (5) (6).png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
-    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+Follow these steps to add and configure the **Amazon Receipt Extraction Service** to your agent:
 
-    * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
-    * **Step 2 -** Verification of any documents that have been processed.\
-      ![](<../../.gitbook/assets/image (84) (1).png>)
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Amazon Invoice Extraction Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button.
+3. **Select Service Type**\
+   Choose **Amazon Receipt Extraction Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (60).png>)
+4. **Configure the Service Wizard**\
+   Open the Service Configuration Wizard.\
+   ![](<../../.gitbook/assets/image (61).png>)  or  ![](<../../.gitbook/assets/image (62).png>)
+   * **Step 1: General Settings**\
+     Configure core settings.\
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+     ![](<../../.gitbook/assets/image (63).png>)
+   * **Step 2: User Defined Categories**\
+     Add any categories you wish to use for organizing your processed documents.\
+     ![](<../../.gitbook/assets/image (64).png>)
+   * **Step 3: Analysis**\
+     Upload some documents for analysis to generate the applicable fields for your documents.\
+     ![](<../../.gitbook/assets/image (65).png>)
+   * **Step 4: Verification**\
+     Review, configure and verify any generated fields.\
+     ![](<../../.gitbook/assets/image (66).png>)
 
-    <figure><img src="../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
-## Service Configuration Settings
+### Service Configuration Settings
 
-The **Amazon Receipt Extraction Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+Most users can proceed with the default settings. Advanced configuration is available for custom workflows.
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>AccessKey</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the Access Key to the configured AWS cloud service.</td></tr><tr><td>BaseURL</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the URL to the configured AWS cloud service.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>CheckElectronic</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Optional</td><td>Check if the document is electronic and extract text from there.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>MinSize</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Minimum size of the document to OCR.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr></tbody></table>
+***
 
-## Add and Process Documents
+### Add and Process Documents
 
-1. In the **Amazon Receipt Extraction Service** click on **Inbox** in the App Bar.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20%20Testing.zip)​
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+To upload and process identity documents using the **Amazon Receipt Extraction Service**:
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+1. **Open Service**\
+   In the **Amazon Receipt Extraction Service**, click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (67).png>)
+2. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, leave as **No selection**.
+3. **Process Documents**\
+   After uploading, select the documents to process and click **Process Checked**.
 
-## View Processed Documents
+{% hint style="info" %}
+**Tip:** For new services, process a small batch first to verify the results before scaling up.
+{% endhint %}
 
-1. In the **Amazon Receipt Extraction Service** click on **Outbox** button.
-2. You can view the **Processing** results by opening a processed doc for verification.
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the **Amazon Receipt Extraction Service**.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view and verify the extracted results.
+
+***
+
+### Troubleshooting Tips
+
+* **Missing or Incorrect Data?**
+  * Ensure the uploaded receipts are clear and legible. Blurred or faded images may reduce extraction accuracy.
+  * Confirm that the file type is supported (PDF, JPEG, PNG).
+  * Some receipt layouts may not be fully supported; check if your receipt matches common formats.
+* **Line Items Not Extracted?**
+  * Make sure your receipts display line items in a standard table or itemized list format.
+  * Handwritten or highly stylized receipts may affect extraction accuracy.
+* **Upload or Processing Errors?**
+  * Try re-uploading the document or using a different sample to rule out file-specific issues.
+  * If errors persist, check your agent's service configuration or contact support for assistance.
+* **Performance Issues?**
+  * Processing large batches may take longer. Start with smaller batches to ensure service responsiveness.

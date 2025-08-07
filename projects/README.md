@@ -13,26 +13,26 @@ Agents in AIForged are containers for [AI services](../services/), and are essen
 
 Creating an agent in AIForged Studio is a straightforward process:
 
-* **From the home view click on the** ![](<../.gitbook/assets/image (45).png>) **(Create a new agent) button.** ![](<../.gitbook/assets/image (48).png>)
+* **From the home view click on the** ![](<../.gitbook/assets/image (45) (1).png>) **(Create a new agent) button.** ![](<../.gitbook/assets/image (48) (1).png>)
 * **Select an optional starting service**:\
   You can opt to create your new agent with or without an intial AI service.
   *   To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:
 
-      <figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
   *   Alternatively, you can select an initial service type to start with, for example, an **LLM Extractor** under the **Extract & Verify** group of AI services, and then click on **Create**.
 
-      <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Name your agent** Provide a name for your agent and optionally include additional information relevant to the agent.
 
-    <div align="left"><figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-    <div align="left"><figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Deleting/ Disabling an Agent
 
-To disable or delete an agent, click on the ![](<../.gitbook/assets/image (52).png>) "**More agent related actions**" button, and select the action to perform.
+To disable or delete an agent, click on the ![](<../.gitbook/assets/image (52) (1).png>) "**More agent related actions**" button, and select the action to perform.
 
-<div align="left"><figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 **Deleting an agent:** Permanently deletes it from the system

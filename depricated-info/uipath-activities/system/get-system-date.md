@@ -24,4 +24,4 @@ Get System Date
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68) (1) (1).png" alt=""><figcaption></figcaption></figure>

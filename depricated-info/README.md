@@ -1,2 +1,6 @@
-# Depricated Info
+---
+hidden: true
+---
+
+# Deprecated Documentation
 

@@ -1,6 +1,6 @@
 # Google Object Detection
 
-<figure><img src="../../.gitbook/assets/image (48) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Google Object Detection** detects objects, faces, and landmarks using **Google Vision**. The service detects objects within images and returns the **Metadata** of objects contained in the image. For example, if a person is present in the image, tags may include facial features, such as nose, ear, lip, etc. The service checks whether the image contains offensive material and can be labeled as **Adult**, **Racy**, **Violence**, or **Medical** with a certain degree of confidence.
 
@@ -10,7 +10,7 @@ Consider the example below of a blonde woman. The object is identified as a "**P
 
 The image provided is deemed not to be offensive, with the imaged being labeled with the following degrees of certainty.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 Furthermore, **Face Detection** tries to detect **Emotions** with a certain degree of confidence. In this case, joy is deemed to be the overwhelming emotion shown with a degree of "**Very Likely**". The other emotions are detected with a degree of "**Very Unlikely**".
 

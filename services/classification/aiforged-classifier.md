@@ -1,61 +1,106 @@
 # AIForged Classifier
 
-AiForged Classifier is a classification engine that uses supervised ML techniques to identify each page and group them into their respective classes.
+### Overview
 
-AIForged Classifier is relatively cheap and reliable and requires little to no maintenance throughout the project's lifetime
+The AIForged Classifier is a powerful classification engine that leverages supervised machine learning techniques to identify each page and group documents into their respective classes. It is designed to be cost-effective, reliable, and requires minimal maintenance throughout the agent's lifetime.
 
-## Creating an AIforged classifier
+> **Tip:** The AIForged Classifier is ideal for automating the organization and classification of documents, saving both time and effort in large-scale document processing tasks.
 
-### Before you start:
+***
 
-Be sure to have the following at hand:
+### Before You Start
 
-* At least **5-10** examples of each class/ category you want to classify
-* A Project with sufficient credits
+Make sure you have the following prerequisites:
 
-### Initialize the service
+* At least 5–10 example documents for each class or category you want to classify.
+* An agent with sufficient credits to perform training and classification.
 
-1. Navigate to the project in which you want to add the classifier
-2. Create an AIforged classifier
+***
 
-<figure><img src="../../.gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
+### Creating an AIForged Classifier
 
-## Setting up the Classifier
+1. **Initialize the Service**
+   * Navigate to the agent where you want to add the classifier.\
+     ![](<../../.gitbook/assets/image (4).png>)
+   * Create a new AIForged Classifier service.\
+     ![](<../../.gitbook/assets/image (5).png>)
+2. **Set Up the Classifier**
+   * Open the AIForged Classifier wizard within your agent.\
+     ![](<../../.gitbook/assets/image (6).png>) or ![](<../../.gitbook/assets/image (9).png>)\
+     ![](<../../.gitbook/assets/image (8).png>)
+   * Adjust the classifier according to your requirements.
+   * Review and apply the recommended settings for optimal results.
 
-1. Navigate to the AIForged classifier's Wizard
-2. Tune the service to the specification
-
-#### recommended settings
-
-<table><thead><tr><th width="243">Setting</th><th>Overview</th></tr></thead><tbody><tr><td>Enabled</td><td>Enable processing in the Service</td></tr><tr><td>Auto Execution</td><td>Automatically process documents in the service</td></tr><tr><td>Force PDF Image</td><td>Removes any artifacts or hidden objects on the PDF. (Only process the PDFs as images)</td></tr><tr><td>Merge To PDF</td><td>Group the classification results into individual PDFs based on the classes.</td></tr></tbody></table>
-
-### Training the classifier
-
-After the setup is completed, it is time to train the classifier with custom data
-
-1.  **Define the classes:**
-
-    Navigate to categories, and add all the possible categories
-
-<figure><img src="../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
-
-2. **Upload your data:** Navigate to Training, and upload each class
+| **Setting**         | **Description**                                                                              | **Recommendation**                                                                                                       |
+| ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Enabled**         | Enable processing in the service.                                                            | On (enabled)                                                                                                             |
+| **Auto Execution**  | Automatically process documents in the service as they are added.                            | On (enabled)                                                                                                             |
+| **Force PDF Image** | Process PDFs as images only. Removes artifacts or hidden objects for cleaner classification. | Only enabled when experiencing issues with accurate classification. This will increase the training and processing time. |
+| **Merge To PDF**    | Group classified pages into individual PDFs based on the detected classes.                   | On (enabled) if you want grouped output; otherwise, off if you want separate documents for each page.                    |
 
 {% hint style="info" %}
-Only one class can be uploaded at a time
+Enabling **Force PDF Image** can help if you experience issues with inconsistent or incorrect classification results from scanned or complex PDFs.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Use **Merge To PDF** if you want each class/category to be output as a consolidated PDF document.
+{% endhint %}
 
-3. Confirm the information
-4. **Train the classifier:**
+***
 
-<figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
+### Training the Classifier
 
-## Processing documents
+1. **Define the Classes**
+   * Go to the "Categories" step.
+   * Add all possible categories (classes) you want the classifier to recognize.\
+     ![](<../../.gitbook/assets/image (10).png>)
+2. **Upload Training Data**
+   * Navigate to the "Training" step.
+   * Upload example documents for each class.
+   * **Note:** Only one class/category should be uploaded at a time.\
+     ![](<../../.gitbook/assets/image (11).png>)
+3. **Confirm the Information**
+   * Review your categories and training data to ensure accuracy.
+4. **Train the Classifier**
+   * Start the training process using your uploaded examples and defined categories by clicking on the train ![](<../../.gitbook/assets/image (13).png>) button.\
+     ![](<../../.gitbook/assets/image (12).png>)
 
-Once the service is trained, documents can now be uploaded to the inbox and processed
+***
 
-Your AIForged classifier is now ready to use!\\
+### Processing Documents
 
-<figure><img src="../../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
+* Once the classifier has been successfully trained, you can upload documents to the agent's inbox for automated classification and processing.
+* Your AIForged Classifier is now ready to use!
+
+***
+
+### Troubleshooting Tips
+
+* **Classifier Not Performing Well?**
+  * Double-check that you have enough training samples (at least 5–10 per class).
+  * Ensure each training document is clearly labeled and belongs to only one class.
+  * Avoid uploading duplicate or very similar documents across different classes.
+* **Training Fails to Start or Complete?**
+  * Confirm that your agent has sufficient credits.
+  * Ensure your training documents are in supported formats (e.g., PDF, TIFF).
+  * Check for any upload errors in the "Training" section.
+* **Classifier Not Detecting New Categories?**
+  * Make sure all desired categories are added before uploading training data.
+  * Retrain the classifier after adding new categories or additional samples.
+
+***
+
+### Best Practices for Optimal Training
+
+* **Use Diverse Examples:**\
+  Collect a variety of representative documents for each class to improve classifier accuracy.
+* **Regularly Retrain:**\
+  Periodically retrain your classifier as you gather new document types or encounter misclassifications.
+* **Keep Classes Distinct:**\
+  Ensure that classes are well-defined and documents are not ambiguous between categories.
+* **Validate with Real Data:**\
+  After training, test with real incoming documents to verify and fine-tune classifier performance.
+* **Incremental Improvement:**\
+  Continuously add new samples for classes that show lower accuracy and retrain as needed.
+
+> **Tip:** Document your categories and training process, so you can maintain and improve your classifier over time.

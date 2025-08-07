@@ -10,7 +10,7 @@ hidden: true
 
 To access the application **Settings** page, simply click the **Settings** navigation item from the **Settings** area of the navigation menu.
 
-<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Settings** page allows you to:
 

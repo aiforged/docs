@@ -16,7 +16,7 @@ If you have not received an account activation email within 30 minutes of your a
    * **Username/E-mail Address**: Use the unique username or e-mail address you registered with.
    * **Activation Token**: Enter the activation token provided in your activation email if it is not already pre-populated.
 
-<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Troubleshooting
 

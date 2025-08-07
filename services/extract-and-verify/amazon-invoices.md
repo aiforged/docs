@@ -1,51 +1,93 @@
 # Amazon Invoice Extraction
 
-<figure><img src="../../.gitbook/assets/image (44) (3).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The ​**Amazon Invoice Extraction Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
+The Amazon Invoice Extraction Service in AIForged utilizes pre-trained invoice models to extract key-value pairs and detailed line items from invoices. This service returns essential invoice data—including Subtotal, VAT, Total, Date, and more—and presents individual line items in a structured table format.
 
-## Possible use cases <a href="#possible-use-cases" id="possible-use-cases"></a>
+{% hint style="info" %}
+This service is ideal for automating invoice data entry, financial reconciliation, and reporting workflows.
+{% endhint %}
 
-* Extracting invoice-related data.
-* Extracting individual line items that may appear on an invoice.
+***
 
-## Service Setup
+### Possible Use Cases
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select **Amazon Invoice Extraction Service** from the available **Service Types.**
+* Extracting invoice-related data for accounting or auditing.
+* Automatically capturing individual line items for ERP or expense systems.
 
-    <figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
-4. A new **Service Configuration Wizard** will open:\
-   (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+***
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Service Setup
 
-1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
-2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
-3. **Step 3 -** Verification of any documents that have been processed.
-4. **Step 4** - The **Definition Document** should be created after the **Service** has been trained successfully.
-5. Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
-   ![](<../../.gitbook/assets/image (84) (1).png>)
+Follow these steps to add and configure the **Amazon Invoice Extraction Service** to your agent:
 
-## Service Configuration Settings
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Amazon Invoice Extraction Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button.
+3. **Select Service Type**\
+   Choose **Amazon Invoice Extraction Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (53).png>)
+4. **Configure the Service Wizard**\
+   Open the Service Configuration Wizard.\
+   ![](<../../.gitbook/assets/image (54).png>)  or  ![](<../../.gitbook/assets/image (55).png>)
+   * **Step 1: General Settings**\
+     Configure core settings.\
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+     ![](<../../.gitbook/assets/image (56).png>)
+   * **Step 2: User Defined Categories**\
+     Add any categories you wish to use for organizing your processed documents.\
+     ![](<../../.gitbook/assets/image (57).png>)
+   * **Step 3: Analysis**\
+     Upload some documents for analysis to generate the applicable fields for your documents.\
+     ![](<../../.gitbook/assets/image (58).png>)
+   * **Step 4: Verification**\
+     Review, configure and verify any generated fields.\
+     ![](<../../.gitbook/assets/image (59).png>)
 
-The **Amazon Invoice Extraction** can be configured by the user as a flexible solution. The following **Settings** are available:​
+***
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>EnableTableDetection</td><td><img src="../../.gitbook/assets/image (15) (5) (1).png" alt=""></td><td>Optional</td><td>Specifies whether the service should save any tables detected by the MS Form Recognizer API call.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr><tr><td>WorkflowAlgorithm</td><td><img src="../../.gitbook/assets/image (2) (7).png" alt=""></td><td>Required</td><td>Algorithm used for assigning users for verification for workflow item.</td></tr><tr><td>WorkflowCategory</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Optional</td><td>Trigger Workflow for all documents in this category (category ID).</td></tr><tr><td>WorkflowDocument</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (6).png" alt=""></td><td>Required</td><td>Enable document workflow for this service.</td></tr><tr><td>WorkflowShred</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (4).png" alt=""></td><td>Required</td><td>Enable document shred workflow for this service.</td></tr><tr><td>WorkflowGracePeriod</td><td><img src="../../.gitbook/assets/image (13) (6).png" alt=""></td><td>Required</td><td>Grace period before a workflow item gets escalated.</td></tr></tbody></table>
+### Service Configuration Settings
 
-## Add and Process Documents <a href="#add-and-process-documents" id="add-and-process-documents"></a>
+Most users can proceed with the default settings. Advanced configuration is available for custom workflows.
 
-1. In the **Amazon Invoice Extraction Service** click on **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20%20Testing.zip)​
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+***
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+### Add and Process Documents
 
-## View Processed Documents <a href="#view-processed-documents" id="view-processed-documents"></a>
+To upload and process identity documents using the **Amazon Invoice Extraction Service**:
 
-1. In the **Amazon Invoice Extraction Service** click on **Outbox** button.
-2. You can view the **Processing** results by opening a processed doc for verification.
+1. **Open Service**\
+   In the **Amazon Invoice Extraction Service**, click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (50).png>)
+2. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, leave as **No selection**.
+3. **Process Documents**\
+   After uploading, select the documents to process and click **Process Checked**.
+
+{% hint style="info" %}
+**Tip:** For new services, process a small batch first to verify the results before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the **Amazon Invoice Extraction Service**.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view and verify the extracted results.
+
+***
+
+### Troubleshooting Tips
+
+* **Incomplete or Incorrect Data?**
+  * Ensure the uploaded invoices are clear and legible. Faded or heavily skewed scans may lead to missing data.
+  * Check that the document is a true invoice; receipts and statements may not be fully supported.
+* **Line Items Not Extracted?**
+  * Make sure your invoices have a standard table or item layout. Very complex or unusual table formats may affect extraction accuracy.
+* **Upload or Processing Errors?**
+  * Confirm that your files are in supported formats (PDF, image formats).
+  * Try re-uploading the document or using a different sample to rule out file-specific issues.
+* **Performance Issues?**
+  * Processing large batches may take longer. Start with smaller batches to ensure responsiveness.

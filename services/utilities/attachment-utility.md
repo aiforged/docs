@@ -20,4 +20,4 @@ This Utility will only produce Inbox Documents
 
 2. Add the attachment service
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>

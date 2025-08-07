@@ -1,69 +1,86 @@
 # AIForged Clustering
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The **AIForged Clustering** service is an in-house developed service that utilizes **Machine Learning** techniques to group unlabeled data. he **AIForged Clustering** service relies on **Unsupervised Machine Learning** classify documents into **Clusters** or **Categories**.
+The **AIForged Clustering Service** is an in-house developed machine learning solution designed to group unlabeled documents and data. Leveraging unsupervised machine learning, this service automatically classifies documents into logical clusters or categories—without the need for predefined labels.
 
-## Possible use cases
+{% hint style="info" %}
+Clustering is ideal for sorting large volumes of documents, especially when you don’t have labeled training data or need to discover new document types.
+{% endhint %}
 
-* Distinguish between different types or variants of similar documents.
-* Sort large volumes of documents into logical groups.
+***
 
-## Service Setup
+### Possible Use Cases
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select **AIForged Clustering Service** from the available **Service Types.**
+* **Distinguish between different types or variants of similar documents.**
+* **Automatically sort and organize large volumes of documents into logical groups or categories.**
 
-    <figure><img src="../../.gitbook/assets/image (7) (1) (4).png" alt=""><figcaption></figcaption></figure>
-4. A new **Service Configuration Wizard** will open:\
-   (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+***
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
+### Service Setup
 
-* **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
-* **Step 2 -** Allows adding **User Defined Categories** to train the service on. The **AIForged Clustering Service** will add additional categories as they are clustered.
-* **Step 3 -** Training \*
-  1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (1) (1) (1) (6).png>) Click **Upload Training Documents** in the command bar
-  2. Select the **User Defined Category** you want to upload documents to.\
-     **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)**.**
-  3. Upload files for each **User Defined Category** you wish to train the service on.
-  4. Once you have uploaded all your documents, click the **Train Service** button in the command bar to train your service.
-  5. Click **Process** on the dialog window that appears. Leave all settings as default.
-  6. A progress dialog will appear displaying the progress of the training.\
-     Training times can vary depending on the number of files that have been uploaded for training.
-  7. The progress dialog should automatically close once the training has completed.
-* **Step 4** - The **Definition Document** should be created after the **Service** has been trained successfully.
-* Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
-  ![](<../../.gitbook/assets/image (84) (1).png>)
+Follow these steps to add and configure the AIForged Clustering Service for your agent:
 
-## Service Configuration Settings
+1. **Open the Agent  View**\
+   Navigate to the agent where you want to add the clustering service.
+2. **Add the Clustering Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (14).png>) button.
+3. **Select Service Type**\
+   In the **Classification** service category choose **AIForged Clustering** from the available service types.\
+   ![](<../../.gitbook/assets/image (15).png>)
+4. **Configure via the Service Wizard**\
+   Open the service configuration wizard.\
+   ![](<../../.gitbook/assets/image (16).png>)  or  ![](<../../.gitbook/assets/image (17).png>)
+   * **Step 1:**\
+     Configure general service settings.\
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+     ![](<../../.gitbook/assets/image (18).png>)
+   * **Step 2:**\
+     Add any User Defined Categories you want to train the service on.\
+     &#xNAN;_&#x54;he Clustering Service will automatically add new categories as it discovers clusters._\
+     ![](<../../.gitbook/assets/image (19).png>)
+   * **Step 3: Training**
+     1. Click **Upload Training Documents** ![](<../../.gitbook/assets/image (20).png>) or drag and drop files over the documents grid.\
+        ![](<../../.gitbook/assets/image (21).png>)
+     2. Select the User Defined Category for your uploads.
+     3. Upload demo or real files for each category you wish to train.
+     4. After uploading, make sure no documents are selected and click the **Train Service** ![](<../../.gitbook/assets/image (22).png>) button.
+     5. In the dialog window that appears, click **Process** and leave all settings as default.
+     6.  A progress dialog will show training progress; it will close automatically when training is complete.
 
-The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+         > **Tip:** Training times vary depending on the number of files uploaded.
+   * **Step 4:**\
+     After successful training, you can start clustering documents.
 
-| Setting                 | Type                                                                    | Required Type | Description                                                                                                                  |
-| ----------------------- | ----------------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (14) (6).png>)                         | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (5) (3).png>)                          | Hidden        | Processing batch size.                                                                                                       |
-| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                          | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15) (1) (3) (6).png>)                 | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (3) (5).png>)                 |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (10).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                      | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (11).png>) | Optional      | Remove human comments from a document.                                                                                       |
+***
 
-## Add and Process Documents
+### Add and Process Documents
 
-1. In the **AIForged Clustering Service** click on **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie\_larcai\_com/Ec-\_k8RmUqNAv6WgCgwItfcBTRp1Gk0V6OeyTj2S3SIUQg?e=EquxX9)**.**
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+To upload and process documents using the Clustering Service:
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+1. **Open Service**\
+   In the AIForged Studio open the clustering service.
+2.  **Upload Documents**\
+    Locate and upload files from your local machine.
 
-## View Processed Documents <a href="#view-processed-documents" id="view-processed-documents"></a>
+    > **Tip:** Demo test files are available at the provided link.
 
-1. In the **AIForged Clustering Service** click on the **Outbox** button.
-2. You can view your **Processing** results by opening a processed doc for verification.
+    \
+    Click the **Upload** ![](<../../.gitbook/assets/image (20).png>) button or drag and drop files over the document grid.\
+    ![](<../../.gitbook/assets/image (23).png>)
+3. **Choose Category (Optional)**\
+   If you already know the document category, select it. Otherwise, choose **No selection**.
+4. **Process Documents**\
+   After uploading, check the documents to be processed and click on the **Process** ![](<../../.gitbook/assets/image (24).png>) button.
+
+{% hint style="info" %}
+It is recommended to process a small batch first, especially if this is a new service, to validate results before full-scale processing.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* In the Clustering Service, change the usage filter to **Outbox**.\
+  ![](<../../.gitbook/assets/image (25).png>)
+* Open any processed document to view clustering results and perform verification.

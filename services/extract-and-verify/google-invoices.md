@@ -1,6 +1,6 @@
 # Google Invoice Parser
 
-<figure><img src="../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The ​**Google Invoice Parser Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Google Documents AI**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 
@@ -18,7 +18,7 @@ No custom training of a **Google Invoice Parser Service** is required. The servi
    ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **Google Invoice Parser Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. A new **Service Configuration Wizard** will open:\
    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 

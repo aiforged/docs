@@ -1,74 +1,113 @@
 # 📧 Email Scraper
 
-## Overview
+### Overview
 
-Email scrapers are designed to check for new emails in a mailbox periodically. If new emails are found, the scraper downloads them into the service.
+The Email Scraper in AIForged is designed to check mailboxes for new emails at scheduled intervals. When new emails are detected, the scraper downloads them into the platform for processing. Attachments are then automatically extracted using the built-in attachment utility, streamlining document intake and workflow automation.
 
 {% hint style="info" %}
-Once the email is scraped, an [attachment utility](../utilities/attachment-utility.md) can be used to retrieve all the attachments from the email.
+With the latest updates, AIForged Email Scraper now supports device code flow authentication for Microsoft 365, providing a secure and user-friendly way to connect to modern mailboxes.
 {% endhint %}
 
-## Supported Platforms
+***
 
-* **Gmail**
-* **Microsoft 365**
+### Supported Platforms
+
+* **Gmail**\
+  Connect to Gmail accounts using IMAP with app-specific passwords.
+* **Microsoft 365**\
+  Authenticate using device code flow for secure integration with Microsoft 365 mailboxes.
+* **Other Email Providers**\
+  Any email provider can be used, provided the correct IMAP settings are applied.
+
+***
+
+### Prompt-less Code Flow Authentication (Microsoft 365)
+
+AIForged now supports prompt-less code flow for Microsoft 365 mailbox integration, removing the need for any manual user interaction after setup.
+
+* **How it works:**\
+  Simply provide your Azure AD Tenant ID and Client ID (from your registered Azure application) in the Email Scraper settings.
+* **Setup:**
+  1. Register an application in your Azure AD tenant.
+  2. Note the **Tenant ID** and **Client ID** from the registration.
+  3. Enter these values in the Email Scraper configuration.
+* **Operation:**\
+  The Email Scraper will authenticate and retrieve a device token automatically during its first scheduled run. From the second scheduled run onward, it will begin retrieving emails—no user prompts or approvals required.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Any email provider can be used if the correct settings are applied
+This is the recommended and most secure way to connect Microsoft 365 mailboxes, as no passwords are stored and no user interaction is needed after setup.
 {% endhint %}
 
-## Setup Guide
+***
 
-1. Create an **Email Scraping** service
+### Setup Guide
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+Follow these steps to create and configure an Email Scraping service in AIForged:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
+1. **Add an Email Scraper Service** \
+   Add an email scraper service to your agent, either manually or via the service flow configurator.
+2. **Open Service Settings**\
+   Apply the following settings, depending on your email provider:
 
-2. Navigate to the **wizard**
+#### Microsoft 365 (Recommended)
 
-<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+* **Service Type:** IMAP
+* **Server:** outlook.office365.com
+* **Port:** 993
+* **Username:** The email address to be scraped
+* **Password:** Not required when using prompt-less code flow
+* **Prompt-less Code Flow:** Yes (enable this option)
+* **Tenant ID:** Your Azure AD tenant ID
+* **Client ID:** Your Azure app registration client ID
+* **Remove XOAUTH2:** No
+* **Folder:** The mailbox folder to monitor (e.g., Inbox)
+* **Processed Folder:** The folder where processed emails will be moved
 
-3. Apply the following settings
+#### Gmail
 
-{% tabs %}
-{% tab title="Microsoft 365" %}
-**Service Type:** IMAP
+* **Service Type:** IMAP
+* **Server:** imap.gmail.com
+* **Port:** 993
+* **Username:** The email address to be scraped
+* **Password:** App-specific password (required by Google for third-party IMAP access)
+* **Remove XOAUTH2:** Yes
+* **Folder:** The mailbox folder to monitor (e.g., Inbox)
+* **Processed Folder:** The folder where processed emails will be moved
 
-**Server:** Your Email Server _<mark style="color:blue;">Default (outlook.office365.com)</mark>_
+#### Other Providers
 
-**Port:** Email Port _<mark style="color:blue;">Default 993</mark>_
+* **Service Type:** IMAP
+* **Server:** Provider-specific IMAP server address
+* **Port:** Typically 993
+* **Username:** The email address to be scraped
+* **Password:** Email account password or app-specific password
+* **Remove XOAUTH2:** As required by your provider
+* **Folder:** The mailbox folder to monitor
+* **Processed Folder:** The folder where processed emails will be moved
 
-**Username:** The Email address that will be used for scraping
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-**Password:** The Email address Password
 
-**Remove XOAUTH2:** No
 
-**Folder:** The folder to monitor
+3. **Enable Auto Execution**\
+   Make sure to turn on the "Auto Execution" option so the scraper runs at scheduled intervals.
 
-**Processed Folder:** The folder to move processed emails
-{% endtab %}
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-{% tab title="Gmail" %}
-**Service Type:** IMAP
+***
 
-**Server:** Your Email Server _<mark style="color:blue;">Default (imap.gmail.com)</mark>_
-
-**Port:** Email Port _<mark style="color:blue;">Default 993</mark>_
-
-**Username:** The Email address that will be used for scraping
-
-**Password:** The Email address [**App-Specific** ](https://support.google.com/accounts/answer/185833?hl=en)Password
-
-**Remove XOAUTH2:** YES
-
-**Folder:** The folder to monitor
-
-**Processed Folder:** The folder to move processed emails
-{% endtab %}
-{% endtabs %}
+### Additional Tips
 
 {% hint style="info" %}
-Remember to switch on "**Auto Execution**"
+For the highest security, use device code flow with Microsoft 365 and avoid storing plain-text credentials.
+{% endhint %}
+
+{% hint style="info" %}
+Use app-specific passwords for Gmail, as Google requires this for third-party IMAP access.
+{% endhint %}
+
+{% hint style="info" %}
+Set up different scrapers for different folders or mailboxes to keep processing organized.
 {% endhint %}

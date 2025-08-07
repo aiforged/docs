@@ -1,61 +1,97 @@
 # Amazon Identity Documents Extraction
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Overview
 
-The **Amazon Identity Documents Service** makes use of pre-trained ID doc models to extract **Key-Value Pairs** of invoice-related data making use of **Amazon AnalyzeID API**. The processing of invoices returns relevant information from passports, driver licenses, and other identity documentation issued by the US Government, such as **Name, Surname, ID Number,** and **Date of Birth**.
+The Amazon Identity Documents Service in AIForged leverages pre-trained ID document models from Amazon's AnalyzeID API to extract key-value pairs from a variety of identity documents, such as passports, driver licenses, and other US Government-issued IDs. The service is designed to return standardized, reliable information—such as Name, Surname, ID Number, and Date of Birth—regardless of the document's source or format.
 
-Key names are standardized within the response. For example, if your driver license says LIC# (license number) and passport says Passport No, **Analyze ID** response will return the standardized key as **Document ID** along with the raw key (e.g. LIC#). This standardization lets customers easily combine information across many IDs that use different terms for the same concept.
+{% hint style="info" %}
+**Note:** Key names are standardized within the AnalyzeID response. For example, a driver's license field labeled "LIC#" (license number) and a passport field labeled "Passport No" will both be returned as "Document ID" in the output, alongside the original label. This makes it easy to combine and compare data across different types of identity documents.
+{% endhint %}
 
-## Possible use cases <a href="#possible-use-cases" id="possible-use-cases"></a>
+***
 
-* Extracting invoice-related data.
-* Match Name and Surname fields to other supporting docs to verify the identity of a person.
+### Possible Use Cases
 
-## Service Setup
+* Extracting identity data from passports, driver licenses, and other official documents for onboarding or compliance.
+* Matching Name and Surname fields across multiple documents to verify an individual's identity.
+* Automating data entry or validation for KYC (Know Your Customer) processes.
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select **Amazon Identity Documents Service** from the available **Service Types.**
+***
 
-    <figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
-    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+### Service Setup
 
-    <figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+Follow these steps to add and configure the **Amazon Identity Documents Service** to your agent:
 
-    * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
-    * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
-    * **Step 3 -** Verification of any documents that have been processed.\
-      ![](<../../.gitbook/assets/image (84) (1).png>)
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Amazon Identity Documents Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button.
+3. **Select Service Type**\
+   Choose **Amazon Identity Documents Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (43).png>)
+4. **Configure the Service Wizard**\
+   Open the Service Configuration Wizard.\
+   ![](<../../.gitbook/assets/image (44).png>)  or  ![](<../../.gitbook/assets/image (45).png>)
+   * **Step 1: General Settings**\
+     Configure core settings.\
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+     ![](<../../.gitbook/assets/image (46).png>)
+   * **Step 2: User Defined Categories**\
+     Add any categories you wish to use for organizing your processed documents.\
+     ![](<../../.gitbook/assets/image (47).png>)
+   * **Step 3: Analysis**\
+     Upload some documents for analysis to generate the applicable fields for your documents.\
+     ![](<../../.gitbook/assets/image (48).png>)
+   * **Step 4: Verification**\
+     Review, configure and verify any generated fields.\
+     ![](<../../.gitbook/assets/image (49).png>)
 
-## Service Configuration Settings
+***
 
-The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+### Service Configuration Settings
 
-| Setting                 | Type                                                                   | Required Type | Description                                                                                                                  |
-| ----------------------- | ---------------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                         | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                        | Hidden        | Processing batch size.                                                                                                       |
-| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                         | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (3).png>)                    | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (5) (1).png>)                    |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (1).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| IsVerification          | ![](<../../.gitbook/assets/image (15) (5) (1).png>)                    | Optional      | Save the lines and words for verification.                                                                                   |
-| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                     | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (4).png>)     | Optional      | Remove human comments from a document.                                                                                       |
+Most users can proceed with the default settings. Advanced configuration is available for custom workflows.
 
-## Add and Process Documents
+***
 
-1. In the **Amazon Identity Documents Service** click on **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie\_larcai\_com/Ec-\_k8RmUqNAv6WgCgwItfcBTRp1Gk0V6OeyTj2S3SIUQg?e=EquxX9)**.**
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+### Add and Process Documents
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+To upload and process identity documents using the Amazon Identity Documents Service:
 
-## View Processed Documents <a href="#view-processed-documents" id="view-processed-documents"></a>
+1. **Open Service**\
+   In the Amazon Identity Documents Service, click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (50).png>)
+2. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, leave as **No selection**.
+3. **Process Documents**\
+   After uploading, select the documents to process and click **Process Checked**.
 
-1. In the **Amazon Identity Documents Service** click on the **Outbox** button.
-2. You can view your **Processing** results by opening a processed doc for verification.
+{% hint style="info" %}
+**Tip:** For new services, process a small batch first to verify the results before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the Amazon Identity Documents Service.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view and verify the extracted results.
+
+***
+
+### Troubleshooting Tips
+
+* **Unexpected or Missing Fields?**
+  * Ensure uploaded documents are clear and legible; poor quality scans may reduce extraction accuracy.
+  * Check that the document type is supported (e.g., passport, driver license, US government-issued ID).
+  * Review the raw key-value pairs in the output for alternate field names.
+* **Standardization Issues?**
+  * Remember that the service returns both standardized key names and raw keys. Check both in your results.
+  * If your workflow relies on a specific field name, use the standardized key for consistency.
+* **Upload or Processing Errors?**
+  * Confirm file types are supported (PDF, image formats).
+  * Try re-uploading the document or processing a different sample to rule out file-specific issues.
+  * If multiple errors occur, check your agent's service configuration or contact support for further assistance.
+* **Performance Concerns?**
+  * Large batches may take longer to process. Start with smaller batches to ensure service responsiveness.

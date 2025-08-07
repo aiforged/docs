@@ -1,64 +1,78 @@
 # 👓 AI Services
 
-## Overview
+### Overview
 
-AI services in AIForged are first and third-party processing engines designed to perform specific tasks. These AI services can be connected using utilities and verification engines.
+AI services in AIForged are specialized processing engines—either first-party or third-party—designed to perform targeted automation and data processing tasks. These services can be flexibly connected using built-in utilities and verification engines to form robust document and data workflows.
+
+***
 
 ### Types of AI Services
 
-There are various types of AI services tailored for specific tasks:
+AIForged offers a variety of AI services, each tailored for specific functions:
 
-* **Scrapers**: Extract documents from specified locations (e.g., mailboxes).
-* **Classifiers**: Identify the type of each page or document.
-* **Extractors and Verifiers**: Identify, extract and verify information from documents.
-* **OCR (Optical Character Recognition)**: Extract text from images.
-* **Object Detection**: Identify objects within images.
-* **Speech Recognition**: Convert speech from audio files into text.
+* **Scrapers**\
+  Extract documents or data from specified sources (e.g., mailboxes, folders, cloud storage).
+* **Classifiers**\
+  Identify and classify the type or category of each page or document.
+* **Extractors and Verifiers**\
+  Extract targeted information from documents and verify its accuracy and validity.
+* **OCR (Optical Character Recognition)**\
+  Convert images or scanned documents into machine-readable text.
+* **Object Detection**\
+  Identify and locate objects within images.
+* **Speech Recognition**\
+  Convert spoken words in audio files into text.
 
-## AI Services Structure
+> **Tip:** You can combine different AI services to automate complex, multi-step processing scenarios.
 
-AI services can operate in different configurations:
+***
 
-* **Sequence**: Services execute one after another.
-* **Independent**: Services operate individually.
-* **Parallel**: Services run simultaneously.
-* **Tandem**: Services collaborate closely with each other.
+### AI Services Structure
 
-{% hint style="info" %}
-Understanding these structures is crucial to leveraging the full potential of AI services.
-{% endhint %}
+AI services in AIForged can be configured in several ways to best fit your workflow needs:
 
-## AI Service Operations
+* **Sequence**\
+  Services execute one after another in a defined order.
+* **Independent**\
+  Services operate completely independently from one another.
+* **Parallel**\
+  Multiple services run simultaneously, each working on the same or different data.
+* **Tandem**\
+  Services collaborate closely, with outputs from one service feeding directly into another.
 
-{% hint style="info" %}
-AI services can be connected in **ANY** order.
-{% endhint %}
+Understanding these structural options is key to leveraging the full power and flexibility of AIForged.
 
-### Individual AI Services
+***
 
-An individual AI service operates independently and does not require input from any other service.
+### AI Service Operations
 
-### Dependent AI Services
+AI services can be connected in any order, allowing for customized processing pipelines.
 
-Dependent AI services rely on additional functionalities, such as OCR or custom logic, which can be applied:
+#### Individual AI Services
 
-* **Before Processing**: Enhances the input before primary processing.
-* **After Processing**: Improves or validates output after initial processing.
+* Operate independently.
+* Do not require input from any other service.
+* Suitable for simple, single-step automation tasks.
 
-#### Example:
+#### Dependent AI Services
 
-If the Microsoft Forms recognizer is inadequate, custom code can be integrated into the process to achieve the desired outcome
+* Rely on additional functionality (such as OCR or custom logic).
+* Can be configured to run:
+  * **Before Processing:** Pre-processes input to enhance data quality.
+  * **After Processing:** Post-processes results for validation or further enrichment.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+**Example:**\
+If the Microsoft Document Intelligence service does not provide the desired accuracy, you can integrate custom code before or after its execution to improve results.
 
-{% hint style="info" %}
-Dependent AI Services are set up the same way as normal AI Services
-{% endhint %}
+> **Tip:** Dependent AI services are set up using the same process as standard AI services.
+
+***
 
 ### Verification AI Services
 
-Verification AI services are triggered based on specific conditions, such as low confidence in a field. These services can be set up in the rule engine.
+Verification AI services are triggered automatically based on specific conditions—such as when a field’s confidence score falls below a set threshold.
 
-{% hint style="info" %}
-Verification AI Services can be set up in the Rule Engine
-{% endhint %}
+* Can be configured and managed within the Rule Engine.
+* Enable automated double-checking and human-in-the-loop escalation for improved data quality.
+
+> **Tip:** Use Verification AI services for critical data points where accuracy is essential.

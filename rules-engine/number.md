@@ -14,4 +14,4 @@ The option to remove any invalid character (**Non-Numerical**) can be selected t
 
 Additional parsing formats and other cultures can be added to the Number Rule Type by clicking on the "_Click here to add new row_".
 
-<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>

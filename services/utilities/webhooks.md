@@ -30,7 +30,7 @@ The following **Document** options are available.
 
 The following **WebHook** options are avaiable.
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Custom Code Invocation
 

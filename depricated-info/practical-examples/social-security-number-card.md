@@ -4,7 +4,7 @@
 
 This is an example of a **Social Security** card.
 
-<figure><img src="../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The purpose of this process is to extract the **Social Security number**, the **Full Name**, and the **Expiration Date**. The detailed steps are as follows:
 
@@ -39,13 +39,13 @@ The purpose of this process is to extract the **Social Security number**, the **
     <figure><img src="../../.gitbook/assets/image (86) (1).png" alt=""><figcaption></figcaption></figure>
 12. Select the documents you want to include in training the service (a minimum of 5 is required for MS Forms Recognizer), and select **Analyze Documents**.
 
-    <figure><img src="../../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (47) (1) (1).png" alt=""><figcaption></figcaption></figure>
 13. Select the desired **Execution Parameters** for analyzing the documents. Normally, the default values will suffice. Click **Process**.
 
     <figure><img src="../../.gitbook/assets/image (105) (1).png" alt=""><figcaption></figcaption></figure>
 14. A progress dialogue will be displayed during the processing of the request. The **Progress Logs** can be expanded to scrutinize detailed logging of the progress. Once the operationis complete, the dialogue can be closed.
 
-    <figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
 15. After the documents are analyzed, the layout of the document is available in a structured format. These documents are demarcated by the **Analyzed** status. By using **Custom Labelling**, the service can be trained to detect values relative to the document layout. Click **Next: Step 4 - Custom Labeling** (or click on **Step 4** Wizard Step).
 
     <figure><img src="../../.gitbook/assets/image (78) (1).png" alt=""><figcaption></figcaption></figure>
@@ -54,7 +54,7 @@ The purpose of this process is to extract the **Social Security number**, the **
     <figure><img src="../../.gitbook/assets/image (89) (1).png" alt=""><figcaption></figcaption></figure>
 17. Details and metadata of the detected layout **Parameters** can be viewed by clicking on the bounding box of the text.
 
-    <figure><img src="../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
 18. In the case of Social Security cards, we are interested in extracting the **SSN**, the **Full Name** and the **Date of Issue** fields. To start labeling, click on the preview of the document in the **Document Designer**, and drag the region where a field can be found.
 
     <figure><img src="../../.gitbook/assets/image (95) (1).png" alt=""><figcaption></figcaption></figure>
