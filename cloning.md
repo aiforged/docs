@@ -5,369 +5,233 @@ nav_order: 3
 
 # Cloning
 
+## Overview
+
+Cloning in AIForged enables teams to quickly duplicate agents and services, supporting a variety of scenarios such as DevOps, testing, demonstrations, and cross-tenant collaboration. This process helps maintain consistency between environments and accelerates development workflows.
+
+---
+
 ## Reasons for Cloning
 
 ### DevOps
 
-Cloning is part of the AIForged DevOps Lifecycle. It assists AIForged developers to clone a “Live” agent / service to a “Dev” agent / service. This allows the developer / implementer to make changes to agent and service configuration and test the impact without affecting the “Live” agent.
+Cloning is a fundamental part of the AIForged DevOps lifecycle. Developers can clone a “Live” agent or service into a “Dev” environment, make changes to settings and training data, and safely test the impact of these changes—without affecting the production agent.
 
-{% hint style="info" %}
-Cloning is also ideal for creating demo or sandbox copies of an agent.
-{% endhint %}
+- Enables safe experimentation and validation before deploying changes to production.
+- Supports the creation of demo or sandbox copies for training, presentations, or customer walkthroughs.
+
+> **Tip:** Cloning is only available in the Production environment. The cloning scheduler is not enabled on Sandbox or Development environments.
+
+### Demos and Research
+
+Cloning also allows agents and services to be duplicated across tenants or projects for demo or research purposes, supporting collaboration and experimentation in isolated environments.
+
+---
 
 ## Cloning Scheduler
 
-Cloning runs as a scheduled job. Once cloning is configured the scheduler will execute the cloning at scheduled times. Schedules can be configured for daily or weekly runs. If you require ad-hoc cloning, we suggest to schedule the cloning to run daily and to then disable it once the cloning job has started.
+Cloning operations are executed as scheduled backend jobs. Once cloning is configured, the scheduler handles execution. Schedules can be set for daily or weekly runs.
 
-### How to schedule cloning
+- For ad-hoc cloning, schedule it as daily and then disable the schedule after the operation starts.
 
-You need to create cloning options first. Once that is done the cloning schedule will be created and appear in the service settings / definitions view.
+### Creating and Managing Cloning Schedules
 
-<figure><img src="assets/cloning.definitions.png" alt="Cloning Definitions Settings"><figcaption><p>Cloning Definitions Settings</p></figcaption></figure>
+1. **Create Cloning Options**  
+   Before setting a schedule, define your cloning options.
+2. **Access Service Settings/Definitions**  
+   Once options are set, the cloning schedule appears in the service settings or definitions view.
 
-<figure><img src="assets/cloning.interval.png" alt="Cloning Interval"><figcaption><p>Cloning Interval</p></figcaption></figure>
+### Modifying Cloning Options and Validation Checks
 
-### How to change the options and validation checks
+Adjust cloning options and validation settings as needed. Initiating these changes will update both cloning options and the schedule.
 
-This will create cloning options and initiate cloning schedule.
+---
 
-<figure><img src="assets/cloning.start.png" alt="Start with Cloning"><figcaption><p>Start with Cloning</p></figcaption></figure>
+## Agent Cloning Options
 
-<figure><img src="assets/clone.source.dest.png" alt="Cloning Source and Destination"><figcaption><p>Cloning Source and Destination</p></figcaption></figure>
+A wide range of cloning options can be configured, offering granular control over what is cloned. Many options are interdependent and can have complex nested effects.
 
-<figure><img src="assets/clone.options.png" alt="Cloning Options"><figcaption><p>Cloning Options</p></figcaption></figure>
+> **Tip:** Review all options carefully before cloning, especially when cloning user access or sensitive data.
 
-<figure><img src="assets/clone.options.definitions.png" alt="Cloning Definition Options"><figcaption><p>Cloning Definition Options</p></figcaption></figure>
+Below are detailed definitions for each agent cloning option, organized by configuration tab.
 
-<figure><img src="assets/clone.options.docs.png" alt="Cloning Document Options"><figcaption><p>Cloning Document Options</p></figcaption></figure>
+---
 
-<figure><img src="assets/clone.options.provider.png" alt="Cloning Provider Options"><figcaption><p>Cloning Provider Options</p></figcaption></figure>
+### Source / Destination
 
-<figure><img src="assets/clone.options.validations.png" alt="Cloning Calidation Checks"><figcaption><p>Cloning Validation Checks</p></figcaption></figure>
+Configure which agent and service will be used as the source and destination for the cloning process.
 
-## Cloning Options
+- **Source Agent**  
+  *Description:* The agent from which all selected data, services, and configurations will be cloned.
+  *Purpose:* This is your starting point for the cloning process.
 
-A large number of Cloning options can be configured. These options are related and interdependent. These options are comprehensive with very complex nested affects.
+- **Destination Agent**  
+  *Description:* The agent where the cloned data, services, and configurations will be copied to.
+  *Purpose:* Choose the target agent that will receive the cloned content.
 
-```csharp
-bool Classes;
-```
+- **Source Service (Optional)**  
+  *Description:* A specific service within the source agent to clone.
+  *Purpose:* Use this if you only want to clone a particular service, not the entire agent.
 
-Clone classes, sometimes you may not want to clone classes. Then disable this cloning for classes.
+- **Destination Service (Optional)**  
+  *Description:* The target service within the destination agent to receive the cloned data.
+  *Purpose:* Direct the cloned service content to a specific service in the destination agent.
 
-```csharp
-bool ProjectUsers; 
-```
+---
 
-Clone project users links. This will clone and give users access to the new project. Please be aware of the security risks of this option.
+### Cloning Options
 
-```csharp
-bool Service; 
-```
+Control which features, services, and logs are included in the cloning process.
 
-Enable the cloning of all top level services linked to a project. The service and its settings will be cloned.
+- **Clone all services**  
+  *Description:* Clones all services linked to the source agent.
+  *Purpose:* Ensures all connected services are copied to the destination agent.
 
-```csharp
-bool ServiceRecursive; 
-```
+- **Clone services recursively**  
+  *Description:* Also clones any nested or dependent services within each service.
+  *Purpose:* Use this to maintain complex service hierarchies.
 
-To enabled cloning of nested/recursive services. This only has an effect if Service cloning is enabled.
+- **Clone service definition settings**  
+  *Description:* Includes all configuration and processing settings for each service.
+  *Purpose:* Ensures the destination agent matches the source agent’s setup.
 
-```csharp
-bool ServiceDefSettings; 
-```
+- **Clone document categories**  
+  *Description:* Clones all document category structures.
+  *Purpose:* Maintains document organization and classification.
 
-Clone service definitions settings. This should be enabled if service cloning is enabled. This will allow runtime/processing settings to be cloned.
+- **Clone workflow items**  
+  *Description:* Clones workflow items such as tasks and automation steps.
+  *Purpose:* Preserves workflow automation in the destination agent.
 
-```csharp
-bool ParamDefSettings;
-```
+- **Clone audit logs**  
+  *Description:* Copies audit logs from the source agent.
+  *Purpose:* Retains a history of changes and activity for compliance or analysis.
 
-Clone parameter definitions settings.\
-This allow for custom code and rule settings to be cloned. This should normally be enabled.
+- **Clone service processing logs**  
+  *Description:* Copies internal processing logs from each service.
+  *Purpose:* Useful for troubleshooting and validation in the destination agent.
 
-```csharp
-List<ParameterDefinitionCategory?> ParamDefCategories;
-```
+- **Clone wallets and billing transactions**  
+  *Description:* Clones associated billing and wallet transaction records.
+  *Purpose:* Use with caution—intended for financial auditing or migration scenarios.
 
-Limit cloning of parameter definition categories. Normally this is not configured and should only be configured in advanced situations.
+- **Clone interval (days)**  
+  *Description:* Sets how often the cloning operation should be scheduled (in days).
+  *Purpose:* Automate cloning at regular intervals for continuous sync or backup.
 
-```csharp
-bool Ratings;
-```
+---
 
-Clone ratings user gave a service. Does not have any processing impact.
+### Document Cloning Options
 
-```csharp
-bool Documents;
-```
+Fine-tune which document types and associated data are cloned.
 
-Enabled cloning of documents. This mus be enabled to for documents to be cloned. Additional setting will apply. See additions document usage settings.
+#### Clone Documents
 
-```csharp
-int? DocumentFromId;
-```
-
-For performance, only clone documents from a certain document Id range. This is also helpfull for clong only a certain range of document id's.
-
-```csharp
-int? DocumentToId;
-```
-
-For performance, only clone documents to a certain document Id range. This is also helpfull for clong only a certain range of document id's.
-
-```csharp
-bool? DocumentDescending;
-```
-
-Clone documents in reverse descending order. Normally cloning start with oldest documents first and then move to newer documents. Sometimes you may want to start cloning with newest documents and move back in time to older documents.
-
-```csharp
-List<int> DocumentIds;
-```
-
-Optionally limit document cloning to very specific document Ids. This is used in combination of document usages.
-
-```csharp
-List<int?> DocumentCategoriesSrc;
-```
-
-Only clone documents with of a specific source classification or vendor This is a list of classification ids
-
-```csharp
-List<int?> DocumentCategoriesDst;
-```
-
-Only clone documents with of a specific destination classification or vendor This is a list of classification ids
-
-```csharp
-Dictionary<UsageType, List<string>> SkipDocs;
-```
-
-To bypass or skip documents of a certain usage and filename. Usefull to bypass datasets with certain names... e.g. UsageType.DataSet: \["ExtractionPatterns", "StoreMaster", "Storemaster New", "PurchaseOrdersItems", "PurchaseOrders", "CostCenters", "GLCodes"]
-
-```csharp
-Dictionary<DocumentStatus, List<string>> SkipStatus;
-```
-
-Skip Documents of a certain status and filename. This is similair to the document usage skip list.
-
-```csharp
-int DocumentMaxDegreeOfParallelism;
-```
-
-Process documents in Parallel for better performance performance.
-
-```csharp
-bool DocumentsDeletedState;
-```
-
-Normally documents in a deleted state are not cloned. Used this to enabled cloning of deleted documents. Sometime you may wish to clone documents currently in a "soft delete" state.
-
-```csharp
-bool DocumentsDataSet;
-```
-
-Clone datasets via documents
-
-```csharp
-bool DocumentsInbox;
-```
-
-Enable or disable cloning of inbox documents
-
-```csharp
-bool DocumentsOutBox;
-```
-
-Enable or disable cloning of outbox documents
-
-```csharp
-bool DocumentsDefinitions;
-```
-
-Enable or disable cloning of definition documents
-
-```csharp
-bool DocumentsTraining;
-```
-
-Enable or disable cloning of training documents
-
-```csharp
-bool DocumentsLabelling;
-```
-
-Enable or disable cloning of labelling documents
-
-```csharp
-bool DocumentData;
-```
-
-Enable or disable cloning of documents data. This is also dependant on Documents flags
-
-```csharp
-bool Parameters;
-```
-
-Enable or disable cloning of document parameters. This ia heavy in processing, but all values and parameters on documnets are cloned.
-
-```csharp
-bool Verifications;
-```
-
-Enable or disable cloning of document verifications. This should normally be enabled when parameter cloning is enabled.
-
-```csharp
-bool RedoVerifications;
-```
-
-When verifications are cloned, you may wish to redo verification. This should only be used once off.
-
-```csharp
-bool Work;
-```
-
-Enable cloning of work items related to documents.
-
-```csharp
-bool Audit;
-```
-
-Enable cloning of audit records.
-
-```csharp
-bool Logs;
-```
-
-Enable cloning document processing logs.
-
-```csharp
-bool Transactions;
-```
-
-Enable cloning of transactions. This should normally be disabled. This will copy debit trsansactions and may cause unintended charge to occur.
-
-```csharp
-bool Payments;
-```
-
-Enable cloning of payment records. Can only be selected with Transactions.
-
-```csharp
-bool ProviderProjects;
-```
-
-Services may be executed in the cloud or by remote serice providers. This will clone projects and configurations on provider. This is normally required. e.g. clone MS Forms, Document Intelligence projects on provider
-
-```csharp
-bool ProviderModels;
-```
-
-This will clone models on a provider. This is normally required. e.g. clone MS Forms, Document Intelligence projects on provider
-
-```csharp
-ICloneChecks Checks;
-```
-
-Additional cloning checks to finetune the and allow additional cloning checks.
-
-### Cloning Validation Checks
-
-Clone check assist with performance and syncing requirements. These related checks will only be used when the relevant cloning setting is enabled. e.g. ReProcessInboxDocument will only have an effect when inbox document are cloned.
-
-```csharp
-bool ProjectExist;
-```
-
-Check if a project exists before creating a new project. Search by using the name.
-
-```csharp
-bool DoNotCreatePD;
-```
-
-Do not create definitions. Otherwise it will use and extensive search to find a similar parameter definition.
-
-```csharp
-bool ReProcessDocumentDataOnly;
-```
-
-Only reprocess clone document data. Do not reporcess parameters and verifications...
-
-```csharp
-bool ReProcessDataSetDocument;
-```
-
-Enabled reprocessing of Dataset documents. If the document is found, it will skip any further processing. If this setting is enabled, it will retry to process and sync parameters and verifications.
-
-```csharp
-bool ReProcessInboxDocument;
-```
-
-Enabled reprocessing of inbox documents If the document is found, it will skip any further processing. If this setting is enabled, it will retry to process and sync parameters and verifications.
-
-```csharp
-bool ReProcessOutboxDocument;
-```
-
-Enabled reprocessing of outbox documents If the document is found, it will skip any further processing. If this setting is enabled, it will retry to process and sync parameters and verifications.
-
-```csharp
-bool ReProcessDefinitionDocument;
-```
-
-Enabled reprocessing of definitions documents If the document is found, it will skip any further processing. If this setting is enabled, it will retry to process and sync parameters and verifications.
-
-```csharp
-bool ReProcessTrainingDocument;
-```
-
-Enabled reprocessing of training documents If the document is found, it will skip any further processing. If this setting is enabled, it will retry to process and sync parameters and verifications.
-
-```csharp
-bool ReProcessLabellingDocument;
-```
-
-Enabled reprocessing of labelling documents. If the document is found, it will skip any further processing. If this setting is enabled, it will retry to process and sync parameters and verifications.
-
-```csharp
-bool ParameterExists;
-```
-
-Do additional check to see if a parameter already exists.
-
-```csharp
-bool VerificationExists;
-```
-
-Check if a verification parameter already exist.
-
-```csharp
-bool TransactionExists; //by default check - we dont want to duplicate 
-```
-
-Additional checks to see if a transaction already exists to avoid duplicate transactions.
-
-```csharp
-bool AuditExists;
-```
-
-Additional checks to see if an audit record already exists to avoid duplicates
-
-```csharp
-bool WorkItemsExists;
-```
-
-Additional checks to see if a work items already exists to avoid duplicates
-
-```csharp
-bool LogsExists;
-```
-
-Additional checks to see if a log record already exists to avoid duplicates
-
-```csharp
-bool PaymentExists;
-```
-
-Additional checks to see if a payment already exists to avoid duplicates By default this check is enabled - we dont want to duplicate payments.
+- **Inbox documents**  
+  *Description:* Clone all documents from the agent’s inbox.
+- **Outbox documents**  
+  *Description:* Clone all documents from the agent’s outbox.
+- **Training documents**  
+  *Description:* Clone any documents used for agent training.
+- **Labelling documents**  
+  *Description:* Clone documents used for labeling and annotation tasks.
+- **Definition documents**  
+  *Description:* Clone documents used to define agent or service behavior.
+- **Dataset documents**  
+  *Description:* Clone documents used as datasets for processing or training.
+
+#### Clone Documents Data
+
+- **Clone document data**  
+  *Description:* Copy all document data (content, metadata, etc.).
+- **Document parameters**  
+  *Description:* Clone parameters associated with each document.
+- **Document parameters verifications**  
+  *Description:* Clone verification results for document parameters.
+- **Rerun verifications after cloning**  
+  *Description:* Re-execute verifications on cloned documents in the destination agent.
+
+#### Clone Other Documents Data
+
+- **Clone soft deleted documents**  
+  *Description:* Include documents marked as deleted (soft delete) in the cloning process.
+- **Clone documents in descending order**  
+  *Description:* Clone documents starting from the most recent to the oldest.
+- **Clone from document with...**  
+  *Description:* Limit cloning to documents with a specific starting document ID.
+- **Clone to document with Id**  
+  *Description:* Limit cloning to documents up to a specific ending document ID.
+
+---
+
+### Parameter Definition Options
+
+Fine-tune which parameter definition features are cloned to the destination agent.
+
+- **Clone parameter definition settings**  
+  *Description:* Clone all parameter definition settings, including custom code, rules, and logic.
+- **Parameter definition categories**  
+  *Description:* Specify which parameter categories to include.  
+  *Purpose:* Use this to narrow cloning to certain categories for advanced scenarios.
+
+---
+
+### Validation Options
+
+Select the validations to be performed during the cloning process.
+
+#### Agent Validations
+
+- **Destination agent must exist**  
+  *Description:* Ensure the destination agent is present before cloning.
+- **Don't overwrite existing wallets and billing transactions**  
+  *Description:* Prevents cloning from overwriting any existing billing or wallet data.
+- **Don't overwrite existing service processing logs**  
+  *Description:* Keeps existing service processing logs in the destination agent.
+- **Don't overwrite existing workflow items**  
+  *Description:* Keeps existing workflow tasks in the destination agent.
+- **Don't overwrite existing audit entries**  
+  *Description:* Keeps existing audit records in the destination agent.
+
+#### Service Validations
+
+- **Only clone to existing parameter definitions**  
+  *Description:* Only clone parameter definitions if they already exist in the destination agent.
+
+#### Document Validations
+
+- **Only re-process document data**  
+  *Description:* Restrict reprocessing to document data only (not parameters/verifications).
+- **Re-process outbox documents**  
+  *Description:* Reprocess outbox documents during cloning.
+- **Re-process inbox documents**  
+  *Description:* Reprocess inbox documents during cloning.
+- **Re-process training documents**  
+  *Description:* Reprocess training documents during cloning.
+- **Re-process labelling documents**  
+  *Description:* Reprocess labelling documents during cloning.
+- **Re-process definition documents**  
+  *Description:* Reprocess definition documents during cloning.
+- **Re-process dataset documents**  
+  *Description:* Reprocess dataset documents during cloning.
+- **Don't overwrite existing document parameters**  
+  *Description:* Keeps existing document parameter data in the destination agent.
+
+---
+
+### Advanced Options
+
+Control additional cloning functions related to cloud or external service providers.
+
+- **Clone provider projects**  
+  *Description:* Clone projects and configurations from external providers (e.g., MS Forms, Document Intelligence).
+- **Clone provider models**  
+  *Description:* Clone AI models from external providers.
+
+---
+
+Tip: Always test cloning in a non-production environment before running in production.
+Tip: When cloning user access, review permissions to avoid accidental over-sharing.
+Tip: Use document ID filters for large agents to improve performance and avoid unnecessary cloning.
+Tip: Regularly review scheduled cloning jobs and disable them when not needed to save resources.
+Tip: If unsure about any setting, consult AIForged support or documentation before proceeding.
