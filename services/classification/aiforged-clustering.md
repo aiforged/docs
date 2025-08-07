@@ -24,24 +24,24 @@ Follow these steps to add and configure the AIForged Clustering Service for your
 1. **Open the Agent  View**\
    Navigate to the agent where you want to add the clustering service.
 2. **Add the Clustering Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (14).png>) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (14) (1).png>) button.
 3. **Select Service Type**\
    In the **Classification** service category choose **AIForged Clustering** from the available service types.\
-   ![](<../../.gitbook/assets/image (15).png>)
+   ![](<../../.gitbook/assets/image (15) (1).png>)
 4. **Configure via the Service Wizard**\
    Open the service configuration wizard.\
-   ![](<../../.gitbook/assets/image (16).png>)  or  ![](<../../.gitbook/assets/image (17).png>)
+   ![](<../../.gitbook/assets/image (16) (1).png>)  or  ![](<../../.gitbook/assets/image (17) (1).png>)
    * **Step 1:**\
      Configure general service settings.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](<../../.gitbook/assets/image (18).png>)
+     ![](<../../.gitbook/assets/image (18) (1).png>)
    * **Step 2:**\
      Add any User Defined Categories you want to train the service on.\
      &#xNAN;_&#x54;he Clustering Service will automatically add new categories as it discovers clusters._\
-     ![](<../../.gitbook/assets/image (19).png>)
+     ![](<../../.gitbook/assets/image (19) (1).png>)
    * **Step 3: Training**
-     1. Click **Upload Training Documents** ![](<../../.gitbook/assets/image (20).png>) or drag and drop files over the documents grid.\
-        ![](<../../.gitbook/assets/image (21).png>)
+     1. Click **Upload Training Documents** ![](<../../.gitbook/assets/image (20) (1).png>) or drag and drop files over the documents grid.\
+        ![](<../../.gitbook/assets/image (21) (1).png>)
      2. Select the User Defined Category for your uploads.
      3. Upload demo or real files for each category you wish to train.
      4. After uploading, make sure no documents are selected and click the **Train Service** ![](<../../.gitbook/assets/image (22).png>) button.
@@ -66,10 +66,10 @@ To upload and process documents using the Clustering Service:
     > **Tip:** Demo test files are available at the provided link.
 
     \
-    Click the **Upload** ![](<../../.gitbook/assets/image (20).png>) button or drag and drop files over the document grid.\
+    Click the **Upload** ![](<../../.gitbook/assets/image (20) (1).png>) button or drag and drop files over the document grid.\
     ![](<../../.gitbook/assets/image (23).png>)
 3. **Choose Category (Optional)**\
-   If you already know the document category, select it. Otherwise, choose **No selection**.
+   If you already know the document category, select it. Otherwise, select **No category**.
 4. **Process Documents**\
    After uploading, check the documents to be processed and click on the **Process** ![](<../../.gitbook/assets/image (24).png>) button.
 

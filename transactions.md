@@ -41,7 +41,7 @@ Each service will be monitored and charged accordingly
 * **Credits Used**: Indicates the amount of credits the service consumed.
 * **Services**: All the services within the project that have a charge associated with them.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 To drill down, select the service to see an Itemised Bill

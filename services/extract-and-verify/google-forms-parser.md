@@ -1,40 +1,119 @@
 # Google Forms Parser
 
-<figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The **Google Form Service** can extract text and layout information in **Key-Value Pairs** from a given document. The input document must be of one of the supported content types - 'application/pdf', 'image/jpeg', 'image/png' or 'image/tiff'. Alternatively, use 'application/json' type to specify the Url location of the document to be analyzed.
+The **Google Forms Parser** service in AIForged extracts text and layout information as **Key-Value Pairs** from a wide range of document types. It supports both direct file uploads and processing of documents available via URL (in JSON format). This service is ideal for digitizing forms, extracting structured data, and automating workflows that rely on Google form-like layouts.
 
-## Supported Content Types
+{% hint style="info" %}
+This service streamlines the extraction of structured data from scanned forms and digital documents, enabling fast, accurate automation for business processes and analytics.
+{% endhint %}
 
-* Pdf
-* jpeg
-* png
-* tiff
+***
 
-If you need to use a different type of content, you can use the **AiForged Pdf Converter**.
+### Supported Content Types
 
-## Setup Service
+* PDF
+* JPEG
+* PNG
+* TIFF
 
-1. Open the project you would like to add the service to
-2. Click on Add Service
-3. Select the Microsoft Receipt Tracker Service
-4. **Step 1** – Service (Displays the service setting, you can change it as required)
-5. Click the “Next” Action in the Action Bar to save the Service
-6. **Step 2** Verification, TODO
+{% hint style="info" %}
+If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
+{% endhint %}
 
-## Add and Process Documents
+***
 
-1. In the **Google Form Parser Service** click on the **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20%20Testing.zip)
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+### Possible Use Cases
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+* Digitize and extract key-value data from paper or digital forms.
+* Automate business workflows that depend on form submissions.
+* Integrate scanned form data into databases, CRM, or analytics tools.
+* Pre-process documents for downstream classification or validation.
 
-## View Processed Documents <a href="#view-processed-documents" id="view-processed-documents"></a>
+***
 
-1. In the **Google Forms Parser Service** click on the **Outbox** button.
-2. You can view the **Processing** results by opening a processed doc for verification.
+### Service Setup
 
-## Possible use cases
+Follow these steps to add and configure the **Google Forms Parser** to your agent:
+
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Google Forms Parser Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (1).png>) button.
+3. **Select Service Type**\
+   Choose **Google Forms Parser** from the available service types.\
+   ![](../../.gitbook/assets/image.png)
+4. **Configure the Service Wizard**\
+   Open the Service Configuration Wizard.\
+   ![](<../../.gitbook/assets/image (2).png>)  or  ![](<../../.gitbook/assets/image (3).png>)
+   * **Step 1: General Settings**\
+     Configure the service name, description, and other core settings.\
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+     ![](<../../.gitbook/assets/image (4).png>)
+   * **Step 2: User Defined Categories**\
+     Add any categories you wish to use for organizing your processed documents.\
+     ![](<../../.gitbook/assets/image (5).png>)
+   * **Step 3: Analysis**\
+     Upload some documents for analysis to generate the applicable fields for your forms.\
+     ![](<../../.gitbook/assets/image (6).png>)
+   * **Step 4: Verification**\
+     Review, configure, and verify any generated fields.\
+     ![](<../../.gitbook/assets/image (7).png>)
+
+***
+
+### Service Configuration Settings
+
+Most users can proceed with default settings. Advanced configuration is available for custom workflows.
+
+***
+
+### Add and Process Documents
+
+To upload and process documents using the **Google Forms Parser**:
+
+1. **Open Service**\
+   In the **Google Forms Parser**, click the **Upload** ![](<../../.gitbook/assets/image (8).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (9).png>)
+2. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, select **No category**.
+3. **Process Documents**\
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10).png>) button.
+
+{% hint style="info" %}
+**Tip:** For new services, process a small batch first to verify the results before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the **Google Forms Parser**.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view and verify the extracted results.
+
+***
+
+### Troubleshooting Tips
+
+* **Missing or Incorrect Data?**
+  * Ensure the uploaded forms are clear and legible. Blurred or faded scans may reduce extraction accuracy.
+  * Confirm that the file type is supported (PDF, JPEG, PNG, TIFF).
+  * Some form layouts may not be fully supported; check if your form matches standard Google Forms layouts.
+* **Key-Value Pairs Not Extracted?**
+  * Make sure your forms use recognizable labels and standard field positions.
+  * Highly stylized or handwritten forms may affect extraction accuracy.
+* **Upload or Processing Errors?**
+  * Try re-uploading the document or using a different sample to rule out file-specific issues.
+  * If errors persist, check your agent's service configuration or contact support for assistance.
+* **Performance Issues?**
+  * Processing large batches may take longer. Start with smaller batches to ensure service responsiveness.
+
+***
+
+### Best Practices
+
+* Use high-quality, scanned forms with clear fields and labels.
+* Regularly review and verify extracted data to fine-tune your categories and settings.
+* Organize documents into categories for easier retrieval and downstream processing.
+* Test with a variety of real-world form samples to ensure robust extraction.

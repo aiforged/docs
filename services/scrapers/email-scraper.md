@@ -34,7 +34,7 @@ AIForged now supports prompt-less code flow for Microsoft 365 mailbox integratio
 * **Operation:**\
   The Email Scraper will authenticate and retrieve a device token automatically during its first scheduled run. From the second scheduled run onward, it will begin retrieving emails—no user prompts or approvals required.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is the recommended and most secure way to connect Microsoft 365 mailboxes, as no passwords are stored and no user interaction is needed after setup.
@@ -87,14 +87,14 @@ Follow these steps to create and configure an Email Scraping service in AIForged
 * **Folder:** The mailbox folder to monitor
 * **Processed Folder:** The folder where processed emails will be moved
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 3. **Enable Auto Execution**\
    Make sure to turn on the "Auto Execution" option so the scraper runs at scheduled intervals.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
