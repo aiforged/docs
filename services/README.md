@@ -10,7 +10,7 @@ There are various types of AI services tailored for specific tasks:
 
 * **Scrapers**: Extract documents from specified locations (e.g., mailboxes).
 * **Classifiers**: Identify the type of each page or document.
-* **Extractors and Verifiers**: Identify and verify information on documents.
+* **Extractors and Verifiers**: Identify, extract and verify information from documents.
 * **OCR (Optical Character Recognition)**: Extract text from images.
 * **Object Detection**: Identify objects within images.
 * **Speech Recognition**: Convert speech from audio files into text.
