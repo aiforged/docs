@@ -9,21 +9,17 @@ nav_order: 3
 
 ### DevOps
 
-Cloning is part of the AIForged DevOps Lifecycle. It assists AIForged developers to clone a “Live” project / service to at “Dev” project / service. Then the developer can make changes to settings and training data and test the impact the change will have on the “Live” project.
+Cloning is part of the AIForged DevOps Lifecycle. It assists AIForged developers to clone a “Live” agent / service to a “Dev” agent / service. This allows the developer / implementer to make changes to agent and service configuration and test the impact without affecting the “Live” agent.
 
-It can also assist with making “demo” copies of a project.
+{% hint style="info" %}
+Cloning is also ideal for creating demo or sandbox copies of an agent.
+{% endhint %}
 
-Clone can only be done on the Production environment. The cloning scheduler is not enabled on Sandbox or Development environments.
+## Cloning Scheduler
 
-### Demos or Other
+Cloning runs as a scheduled job. Once cloning is configured the scheduler will execute the cloning at scheduled times. Schedules can be configured for daily or weekly runs. If you require ad-hoc cloning, we suggest to schedule the cloning to run daily and to then disable it once the cloning job has started.
 
-Cloning can be done across tenants and projects to demo or research proposes.
-
-## Cloining Scheduler
-
-Cloning run as a scheduled backend job. Once cloning is configured the scheduler will run cloning. Schedules can be configured for daily or weekly runs. If you require ad-hoc cloning, we suggested to schedule it for daily and then disable the schedule once it started.
-
-### How to create and change the schedule
+### How to schedule cloning
 
 You need to create cloning options first. Once that is done the cloning schedule will be created and appear in the service settings / definitions view.
 

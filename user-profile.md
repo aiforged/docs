@@ -83,19 +83,21 @@ API keys offer a unique key used to authenticate an account programatically via 
 
 ## Notification Preferences
 
-Notifications are sent on an **OPT-IN** Basis
+Notifications are sent on an **OPT-IN** basis
 
 ### Setting up your notifications
 
-1. Choose the event that you would like to be notified for
-2. Create a notification group
-3. Enter the notification type
-4. Provide the recipients
-5. Save the changes
+1. Provide your notification setting for a name
+2. Select the notification area
+3. Select the notification triggers
+4. Select the notification type
+5. Add an existing contact or create a new contact
 
 ### Example
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Studio Preferences
 
