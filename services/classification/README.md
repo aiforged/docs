@@ -20,7 +20,6 @@ AIForged currently provides the following **Classification Service Types**:
 | AIForged Clustering                | Unsupervised grouping of documents based on content similarity                  | [aiforged-clustering.md](aiforged-clustering.md "mention")         |
 | ChatGPT Classification             | AI-powered, context-aware classification using ChatGPT models                   | [chatgpt-classifier.md](chatgpt-classifier.md "mention")           |
 | Microsoft Custom Text Classifier   | Text classification for custom categories using Microsoft’s language models     | [microsoft-custom-text-classification.md](microsoft-custom-text-classification.md "mention") |
-| Microsoft Custom Vision            | Classification of images and visual documents using Microsoft’s Vision AI        | [microsoft-custom-text-classification.md](microsoft-custom-text-classification.md "mention") |
 
 ***
 
