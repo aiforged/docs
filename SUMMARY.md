@@ -43,7 +43,7 @@
     * [Amazon Receipt Extraction](services/extract-and-verify/amazon-receipt-extraction.md)
     * [Google Forms Parser](services/extract-and-verify/google-forms-parser.md)
     * [Google Invoice Parser](services/extract-and-verify/google-invoices.md)
-    * [Microsoft Forms Recognizer](services/extract-and-verify/microsoft-forms-recognizer.md)
+    * [Document Intelligence](services/extract-and-verify/microsoft-forms-recognizer.md)
     * [Microsoft Forms Custom Invoices](services/extract-and-verify/microsoft-forms-custom-invoices.md)
     * [Microsoft Identity Documents](services/extract-and-verify/microsoft-id.md)
     * [Microsoft Invoices](services/extract-and-verify/microsoft-forms-invoices.md)

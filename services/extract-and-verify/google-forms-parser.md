@@ -54,7 +54,7 @@ Follow these steps to add and configure the **Google Forms Parser** to your agen
      Add any categories you wish to use for organizing your processed documents.\
      ![](<../../.gitbook/assets/image (5).png>)
    * **Step 3: Analysis**\
-     Upload some documents for analysis to generate the applicable fields for your forms.\
+     Upload some documents for analysis, select them and click on the **Analysis** ![](<../../.gitbook/assets/image (125).png>) button to generate the applicable fields for your forms.\
      ![](<../../.gitbook/assets/image (6).png>)
    * **Step 4: Verification**\
      Review, configure, and verify any generated fields.\

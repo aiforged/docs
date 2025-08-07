@@ -43,7 +43,7 @@ Follow these steps to add and configure the **Google Invoice Parser Service** to
       Add any categories you wish to use for organizing your processed documents.\
       ![](<../../.gitbook/assets/image (19).png>)
    3. **Step 3: Analysis**\
-      Upload some documents for analysis to generate the applicable fields for your forms.\
+      Upload some documents for analysis, select them and click on the **Analysis** ![](<../../.gitbook/assets/image (125).png>) button to generate the applicable fields for your forms.\
       ![](<../../.gitbook/assets/image (20).png>)
    4. **Step 4: Verification**\
       Review and verify any documents that have been processed.&#x20;

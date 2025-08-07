@@ -39,7 +39,7 @@ Follow these steps to add and configure the **Amazon Invoice Extraction Service*
      Add any categories you wish to use for organizing your processed documents.\
      ![](<../../.gitbook/assets/image (57).png>)
    * **Step 3: Analysis**\
-     Upload some documents for analysis to generate the applicable fields for your documents.\
+     Upload some documents for analysis, select them and click on the **Analysis** ![](<../../.gitbook/assets/image (125).png>) button to generate the applicable fields for your forms.\
      ![](<../../.gitbook/assets/image (58).png>)
    * **Step 4: Verification**\
      Review, configure and verify any generated fields.\

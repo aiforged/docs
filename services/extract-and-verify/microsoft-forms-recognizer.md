@@ -1,62 +1,197 @@
-# Microsoft Forms Recognizer
+# Document Intelligence
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The **Microsoft Form Recognizer Service** learns the structure of your forms to intelligently extract text and data. It ingests text from forms, applies machine learning technology to identify keys and tables, and then outputs structured data that includes the relationships within the original file. That way, you can extract information quickly, accurately, and tailored to your specific content, without heavy manual intervention or extensive data science expertise.
+The Microsoft Document Intelligence Service (formerly Microsoft Form Recognizer) in AIForged uses advanced AI to intelligently extract text, key-value pairs, tables, and layout data from your documents. Leveraging Microsoft’s Custom Layout technology, this service learns the structure of your forms, enabling the extraction of structured data—including complex field relationships—without requiring extensive data science expertise.
 
-Form Recognizer extracts **Key-Value Pairs** and tables from documents and includes the following options:
+{% hint style="info" %}
+Document Intelligence includes a built-in classifier. You define classifications (categories) in Step 2 of the service wizard, and these are used throughout the workflow to ensure accurate document routing and extraction.
+{% endhint %}
 
-* **Custom** – Form Recognizer learns the structure of your forms (invoices, POS, industry specific records) to intelligently extract text and data. It ingests text from forms, and then outputs structured data that includes the relationships within the original file. That way, you can extract information quickly, accurately, and tailored to your specific content, without heavy manual intervention or extensive data science expertise.
-* **Prebuilt** – Detects and extracts data from US receipts using optical character recognition (OCR). Our receipt model enables you to easily extract structured data from receipts such as merchant name, subtotal, tax, line items, transaction total and more.
-* **Layout** – Detects and extracts text and table structure (row1, column1…row n column n) from documents using optical character recognition (OCR).
+{% hint style="info" %}
+While Microsoft Form Recognizer is still available in AIForged, it has been marked for deprecation. It is strongly recommended to use **Document Intelligence** for all new solutions and migrations going forward.
+{% endhint %}
 
-## Setup and Train Service
+***
 
-1. Open the project you would like to add the service to
-2. Click on Add Service
-3. Select the Microsoft Forms Recognizer
-4. **Step 1** – Service (Displays the service setting, you can change it as required)
-5. Click the “Next” Action in the Action Bar to save the Service
-6. **Step 2** Classes, to add a Class View to [Document Categories](microsoft-forms-recognizer.md) (Click next to save categories)
-7. **Step 3** Training \*
-   1. ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (1) (1) (1) (3).png>) Click “Upload Training Documents” in the Action Bar
-   2. Select the Document Category you want to upload documents to. **The demos training files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie_larcai_com/EVXJvXsMjM1Gnmhcic-UUnoB99xK0fDRjsaZREkx63PFHg?e=4RtU6d)
-   3. Upload Documents for each category you want to train
-   4. Click Train Service once all documents have been uploaded
-   5. A log Window will open displaying the current logs for the Training Document
-   6. Click the Next button when done training
-8. **Step 4** Definition, the definition Document would be created after the Service has trained successfully
+### Possible Use Cases
 
-## Add and Process Documents
+* Extracting structured data from complex, custom forms (e.g., invoices, bank statements, proof of payment).
+* Digitizing and automating manual data entry from paper or scanned documents.
+* Supporting compliance, audits, and analytics by transforming unstructured documents into usable data.
+* Integrating extracted data into workflows, databases, or third-party systems.
 
-1. In your Microsoft Forms Recognizer Service click on the **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demos test files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie_larcai_com/Ec-_k8RmUqNAv6WgCgwItfcBTRp1Gk0V6OeyTj2S3SIUQg?e=EquxX9)
-5. After all the documents have been uploaded you can check the documents to be processed, click on “Processed Checked” to process the documents
+***
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+### Supported Content Types
 
-## View Processed Documents
+* PDF
+* Images (JPEG, PNG, TIFF, etc.)
 
-1. In the **Microsoft Form Recognizer Service** click on **Outbox** button.
-2. You can view the **Processing** results by opening a processed doc for verification.
+{% hint style="info" %}
+If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
+{% endhint %}
 
-## Possible use cases
+***
 
-* Handwritten forms that need the information to be extracted.
-* Images that have information to be extracted
-* PDFs that have information to be extracted (Proof of payments, Bank Statements etc.).
+### Service Setup
 
-## Supported Content Types
+Follow these steps to add and configure the **Microsoft Document Intelligence (Custom Layout)** service to your agent:
 
-* Pdf
-* images
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Document Intelligence Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+3. **Select Service Type**\
+   Choose **Microsoft Document Intelligence** from the available service types.\
+   ![](<../../.gitbook/assets/image (126).png>)
+4. **Configure the Service Wizard**\
+   Open the Service Configuration Wizard.\
+   ![](<../../.gitbook/assets/image (141).png>)  or  ![](<../../.gitbook/assets/image (142).png>)
+   * **Step 1: Service**\
+     Configure the core settings for your service.\
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+     ![](<../../.gitbook/assets/image (145).png>)
+   * **Step 2: Categories**\
+     Create document categories for your different types of documents. These are required for training and organization.\
+     ![](<../../.gitbook/assets/image (149).png>)
+   * **Step 3: Workflow Reason Dataset**\
+     Populate the dataset with reason codes and information used with Human-In-The-Loop Workflow Actions.\
+     ![](<../../.gitbook/assets/image (155).png>)
+   * **Step 4: Analysis**\
+     Upload documents for pre-training and analysis. Select the correct category for each document when uploading.\
+     ![](<../../.gitbook/assets/image (164).png>)
+   * **Step 5: Labelling**\
+     Start labelling fields on documents to train the extraction model.\
+     ![](<../../.gitbook/assets/image (166).png>)
+   * **Step 6: Training**\
+     Train the labelled documents.\
+     ![](<../../.gitbook/assets/image (167).png>)
+   * **Step 7: Definition**\
+     After successful training, a definition document will be created.\
+     ![](<../../.gitbook/assets/image (171).png>)
+   * **Step 8: Verification**\
+     Use this step to verify the keys/fields defined or extracted during training.\
+     ![](<../../.gitbook/assets/image (174).png>)
 
-If you need to use a different type of content, you can use the **AIForged Pdf Converter**.
+{% hint style="danger" %}
+Be sure to assign the correct category to each document during upload in Step 4: Analysis. This is critical for accurate classification and model training.
+{% endhint %}
 
-## Service Configuration Settings
+***
 
-The **Microsoft Form Recognizer Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+### Field Labelling Workflow
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>EnableSelectionMarks</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (3).png" alt=""></td><td>Optional</td><td>Specifies whether the service should save any selection marks returned by MS Form API call.</td></tr><tr><td>EnableTableDetection</td><td><img src="../../.gitbook/assets/image (15) (5) (1).png" alt=""></td><td>Optional</td><td>Specifies whether the service should save any tables detected by the MS Form Recognizer API call.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed</td></tr><tr><td>MatchHeadingLevenshteinConfidence</td><td><img src="../../.gitbook/assets/image (19) (2).png" alt=""></td><td>Optional</td><td>Try to match heading columns using a Levenshtein confidence. This is useful when poor quality docs might misidentify characters when trying to match tables to existing table parameter definitions.</td></tr><tr><td>MinimumColumnMatchCount</td><td><img src="../../.gitbook/assets/image (16) (1) (2).png" alt=""></td><td>Optional</td><td>The minimum number of columns required to be matched to map the table to an existing table parameter definition. If this number of column can't be matched, then a new table definition is created.</td></tr><tr><td>MatchTablesWithSameColumnCount</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (2).png" alt=""></td><td></td><td>Try to match a table to an existing table parameter definition by using column counts only. This is especially useful when tables span multiple pages without repeating headers on each page.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr><tr><td>SaveOCRLayout</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (7).png" alt=""></td><td></td><td>Save the OCR layout of the documents (Lines, words, etc.).</td></tr><tr><td>WorkflowAlgorithm</td><td><img src="../../.gitbook/assets/image (2) (7).png" alt=""></td><td>Required</td><td>Algorithm used for assigning users for verification for workflow item.</td></tr><tr><td>WorkflowDocument</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (6).png" alt=""></td><td>Required</td><td>Enable document workflow for this service.</td></tr><tr><td>WorkflowShred</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (4).png" alt=""></td><td>Required</td><td>Enable document shred workflow for this service.</td></tr><tr><td>WorkflowGracePeriod</td><td><img src="../../.gitbook/assets/image (13) (6).png" alt=""></td><td>Required</td><td>Grace period before a workflow item gets escalated.</td></tr></tbody></table>
+Labelling is a crucial step for training the Document Intelligence extraction engine. Here’s how to label fields effectively:
+
+1. **Open the Labelling Step**\
+   Go to **Step 5: Labelling** in the wizard.\
+   ![](<../../.gitbook/assets/image (166).png>)
+2.  **Select Document Category**\
+    Use the filter to select the document category whose documents you want to label.
+
+    > {% hint style="info" %}
+    > Only documents that have already been analyzed in Step 4 will be available for labelling.
+    > {% endhint %}
+3. **Select a Document**\
+   Choose a document from the list to begin labelling.\
+   ![](<../../.gitbook/assets/image (176).png>)
+4. **Label Fields on the Document**
+   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](<../../.gitbook/assets/image (179).png>) button.\
+     ![](<../../.gitbook/assets/image (178).png>)
+   * Draw the label on the document by clicking and dragging over the relevant field.\
+     ![](<../../.gitbook/assets/image (182).png>)
+   * Once labelled, it will automatically select the next available label definition. Press **Tab** to navigate through available labels.
+   * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.\
+     ![](<../../.gitbook/assets/image (183).png>)
+   * Label definitions with a green check mark have been successfully labelled on the document.
+5. **Labelling Controls**
+   * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](<../../.gitbook/assets/image (186).png>) button.
+   * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](<../../.gitbook/assets/image (189).png>) button.
+   * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](<../../.gitbook/assets/image (190).png>) button to continue where you left off.
+6. **Copy & Paste Labels**
+   * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](<../../.gitbook/assets/image (191).png>).
+   * Paste labels onto a different document using **Paste Labels from Clipboard** ![](<../../.gitbook/assets/image (193).png>).
+
+<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
+{% endhint %}
+
+***
+
+### Service Configuration Settings
+
+The **Microsoft Document Intelligence Service** provides flexible settings to tailor the service to your workflow. Common settings include:
+
+| Setting                           | Description                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------------- |
+| Enabled                           | Enable or disable this service.                                                     |
+| Password                          | For service authentication. Can be set per document or via custom code.             |
+| Base URL                          | The URL to your Azure Document Intelligence service.                                |
+| Execute On Trigger                | Define when to execute (e.g., on upload, update, or delete).                        |
+| ArchivingStrategy                 | Number of days before documents are deleted.                                        |
+| BatchSize                         | Number of documents processed per batch (usually hidden/advanced).                  |
+| DocumentProcessedStatus           | Status label for processed documents.                                               |
+| EnableSelectionMarks              | Save selection marks (checkboxes, etc.) detected by the API.                        |
+| EnableTableDetection              | Save tables detected in the document.                                               |
+| MatchHeadingLevenshteinConfidence | Use fuzzy matching for table headers, improving extraction from poor-quality scans. |
+| MinimumColumnMatchCount           | Minimum column matches required for table mapping.                                  |
+| MatchTablesWithSameColumnCount    | Match tables by column count when headers are not repeated.                         |
+| RemoveComments                    | Remove human comments from the document.                                            |
+| SaveOCRLayout                     | Save OCR layout, including lines and words.                                         |
+| WorkflowAlgorithm                 | Assign workflow algorithms for document verification.                               |
+| WorkflowDocument                  | Enable document workflow features.                                                  |
+| WorkflowShred                     | Enable document shred workflow.                                                     |
+| WorkflowGracePeriod               | Grace period before workflow escalation.                                            |
+
+***
+
+To upload and process documents using the **Google Forms Parser**:
+
+1. **Open Service**\
+   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](<../../.gitbook/assets/image (8).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (199).png>)
+2. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, select **No category**.
+3. **Process Documents**\
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10).png>) button.
+
+{% hint style="info" %}
+**Tip:** For new services, process a small batch first to verify the results before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the **Microsoft Document Intelligence Service**.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view and verify the extracted results.
+
+***
+
+### Troubleshooting Tips
+
+* **Missing or Incorrect Data?**
+  * Ensure uploaded documents are clear and legible. Poor quality scans or images reduce extraction accuracy.
+  * Confirm that the file type is supported (PDF, JPEG, PNG, TIFF, etc.).
+  * Complex or highly stylized layouts may require more careful labelling and analysis.
+* **Tables or Key-Value Pairs Not Extracted?**
+  * Make sure tables and fields are clearly structured in your documents.
+  * Use the labelling and analysis steps to improve model accuracy.
+* **Upload or Processing Errors?**
+  * Try re-uploading the document or using a different sample to rule out file-specific issues.
+  * If errors persist, check your service settings or contact support.
+* **Performance Issues?**
+  * Large document batches may take longer to process. Start with smaller batches to ensure responsiveness.
+
+***
+
+### Best Practices
+
+* Use high-quality scans or digital originals for best extraction results.
+* Label and categorize documents accurately to improve model performance.
+* Regularly review and update your definition documents as forms or layouts evolve.
+* Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
