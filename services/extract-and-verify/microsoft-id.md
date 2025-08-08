@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Microsoft Identity Documents
 
 <figure><img src="../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>

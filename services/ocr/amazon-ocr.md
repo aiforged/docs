@@ -24,11 +24,11 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
    ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select the **Amazon OCR Service**.
 
-    <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1 -** Service Config (Displays the service setting, you can change it as required).
 * Click the “Next” Action in the Action Bar to save the Service.

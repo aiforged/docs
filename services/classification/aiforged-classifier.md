@@ -21,13 +21,13 @@ Make sure you have the following prerequisites:
 
 1. **Initialize the Service**
    * Navigate to the agent where you want to add the classifier.\
-     ![](<../../.gitbook/assets/image (4) (1).png>)
+     ![](<../../.gitbook/assets/image (4) (1) (1).png>)
    * Create a new AIForged Classifier service.\
-     ![](<../../.gitbook/assets/image (5) (1).png>)
+     ![](<../../.gitbook/assets/image (5) (1) (1).png>)
 2. **Set Up the Classifier**
    * Open the AIForged Classifier wizard within your agent.\
-     ![](<../../.gitbook/assets/image (6) (1).png>) or ![](<../../.gitbook/assets/image (9) (1).png>)\
-     ![](<../../.gitbook/assets/image (8) (1).png>)
+     ![](<../../.gitbook/assets/image (6) (1) (1).png>) or ![](<../../.gitbook/assets/image (9) (1) (1).png>)\
+     ![](<../../.gitbook/assets/image (8) (1) (1).png>)
    * Adjust the classifier according to your requirements.
    * Review and apply the recommended settings for optimal results.
 
@@ -53,17 +53,17 @@ Use **Merge To PDF** if you want each class/category to be output as a consolida
 1. **Define the Classes**
    * Go to the "Categories" step.
    * Add all possible categories (classes) you want the classifier to recognize.\
-     ![](<../../.gitbook/assets/image (10) (1).png>)
+     ![](<../../.gitbook/assets/image (10) (1) (1).png>)
 2. **Upload Training Data**
    * Navigate to the "Training" step.
    * Upload example documents for each class.
    * **Note:** Only one class/category should be uploaded at a time.\
-     ![](<../../.gitbook/assets/image (11) (1).png>)
+     ![](<../../.gitbook/assets/image (11) (1) (1).png>)
 3. **Confirm the Information**
    * Review your categories and training data to ensure accuracy.
 4. **Train the Classifier**
-   * Start the training process using your uploaded examples and defined categories by clicking on the train ![](<../../.gitbook/assets/image (13) (1).png>) button.\
-     ![](<../../.gitbook/assets/image (12) (1).png>)
+   * Start the training process using your uploaded examples and defined categories by clicking on the train ![](<../../.gitbook/assets/image (13) (1) (1).png>) button.\
+     ![](<../../.gitbook/assets/image (12) (1) (1).png>)
 
 ***
 

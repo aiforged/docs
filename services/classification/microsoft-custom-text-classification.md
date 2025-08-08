@@ -62,17 +62,17 @@ Follow these steps to add and configure the Microsoft Custom Text Classification
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the classification service.
 2. **Add the Classification Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (30).png>) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (30) (1).png>) button.
 3. **Select Service Type**\
    Choose **Microsoft Custom Text Classifier Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (31).png>)
+   ![](<../../.gitbook/assets/image (31) (1).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (32).png>)  or  ![](<../../.gitbook/assets/image (33).png>)
+   ![](<../../.gitbook/assets/image (32) (1).png>)  or  ![](<../../.gitbook/assets/image (33) (1).png>)
    * **Step 1: General Settings**\
      Configure the core settings. Default settings are sufficient for most use cases.
      * Set the **Training/Testing Split Percentage** as desired (default: 80% training, 20% testing).\
-       ![](<../../.gitbook/assets/image (34).png>)
+       ![](<../../.gitbook/assets/image (34) (1).png>)
    * **Step 2: Define Categories**\
      Add user-defined categories for your classification task.\
      ![](<../../.gitbook/assets/image (35).png>)

@@ -89,7 +89,7 @@ Once all the Field Parameters that required Verification have been verified, the
 
 It is also possible to accept all **Verification** without manually verifying each **Field** that required **Verification**. Select **Verification** from the **Actions Bar**, then select **Accept All** to immediately accepts all **Verification** values.
 
-<figure><img src="../.gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This action will also immediately place the document in the **Processed** state from the **Verification** state.
 

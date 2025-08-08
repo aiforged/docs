@@ -42,12 +42,12 @@ When designing your questions, make sure they are appropriate for single-page ev
 ### Configuration Steps
 
 1. **Service Setup**
-   * Create a new GPT Classifier service within your agent by clicking on the **Add Service** ![](<../../.gitbook/assets/image (26).png>) button.\
-     ![](<../../.gitbook/assets/image (27).png>)
+   * Create a new GPT Classifier service within your agent by clicking on the **Add Service** ![](<../../.gitbook/assets/image (26) (1).png>) button.\
+     ![](<../../.gitbook/assets/image (27) (1).png>)
    * No need to upload training data.
 2. **Step 2: Hint Matrix (Optional)**
    * Optionally, add a Hint Matrix dataset to provide additional context to the model for more nuanced classification.\
-     ![](<../../.gitbook/assets/image (28).png>)
+     ![](<../../.gitbook/assets/image (28) (1).png>)
 3.  **Step 3: Define the Question Matrix**
 
     * In the "QuestionMatrix" step of the wizard, create your question and answer set:\
@@ -64,7 +64,7 @@ When designing your questions, make sure they are appropriate for single-page ev
     > **Tip:** For best results, use 2–3 page-focused questions per category to allow the classifier to accurately weight responses and improve category determination.
 4. **Step 4: Define Categories**
    * Add all the document categories you want to classify. Link these to your question matrix.\
-     ![](<../../.gitbook/assets/image (29).png>)
+     ![](<../../.gitbook/assets/image (29) (1).png>)
 
 ***
 

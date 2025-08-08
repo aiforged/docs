@@ -10,7 +10,7 @@ hidden: true
 
 To access the application **Settings** page, simply click the **Settings** navigation item from the **Settings** area of the navigation menu.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Settings** page allows you to:
 
@@ -44,4 +44,4 @@ To add a new **Service Endpoint**, click on the **Add Button**.
 
 The **Theme** page allows the user to select the current theme and enable or disable UI interaction feedback audio.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

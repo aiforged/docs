@@ -39,26 +39,28 @@ Follow these steps to add and configure the **Google Forms Parser** to your agen
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Google Forms Parser Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (1).png>) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (1) (1).png>) button.
 3. **Select Service Type**\
    Choose **Google Forms Parser** from the available service types.\
-   ![](../../.gitbook/assets/image.png)
+   ![](<../../.gitbook/assets/image (34).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (2).png>)  or  ![](<../../.gitbook/assets/image (3).png>)
+   ![](<../../.gitbook/assets/image (2) (1).png>)\
+   or\
+   ![](<../../.gitbook/assets/image (3) (1).png>)
    * **Step 1: General Settings**\
      Configure the service name, description, and other core settings.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](<../../.gitbook/assets/image (4).png>)
+     ![](<../../.gitbook/assets/image (4) (1).png>)
    * **Step 2: User Defined Categories**\
      Add any categories you wish to use for organizing your processed documents.\
-     ![](<../../.gitbook/assets/image (5).png>)
+     ![](<../../.gitbook/assets/image (5) (1).png>)
    * **Step 3: Analysis**\
      Upload some documents for analysis, select them and click on the **Analysis** ![](<../../.gitbook/assets/image (125).png>) button to generate the applicable fields for your forms.\
-     ![](<../../.gitbook/assets/image (6).png>)
+     ![](<../../.gitbook/assets/image (6) (1).png>)
    * **Step 4: Verification**\
      Review, configure, and verify any generated fields.\
-     ![](<../../.gitbook/assets/image (7).png>)
+     ![](<../../.gitbook/assets/image (7) (1).png>)
 
 ***
 
@@ -73,12 +75,12 @@ Most users can proceed with default settings. Advanced configuration is availabl
 To upload and process documents using the **Google Forms Parser**:
 
 1. **Open Service**\
-   In the **Google Forms Parser**, click the **Upload** ![](<../../.gitbook/assets/image (8).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (9).png>)
+   In the **Google Forms Parser**, click the **Upload** ![](<../../.gitbook/assets/image (8) (1).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (9) (1).png>)
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.

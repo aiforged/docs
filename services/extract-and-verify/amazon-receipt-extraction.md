@@ -42,7 +42,9 @@ Follow these steps to add and configure the **Amazon Receipt Extraction Service*
    ![](<../../.gitbook/assets/image (60).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (61).png>)  or  ![](<../../.gitbook/assets/image (62).png>)
+   ![](<../../.gitbook/assets/image (61).png>)\
+   or\
+   ![](<../../.gitbook/assets/image (62).png>)
    * **Step 1: General Settings**\
      Configure core settings.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
@@ -75,7 +77,7 @@ To upload and process identity documents using the **Amazon Receipt Extraction S
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (11).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (11) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.

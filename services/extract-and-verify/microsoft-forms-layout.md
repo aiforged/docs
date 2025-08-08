@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Microsoft Forms Layout
 
 <figure><img src="../../.gitbook/assets/image (24) (3).png" alt=""><figcaption></figcaption></figure>

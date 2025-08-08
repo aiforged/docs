@@ -15,26 +15,26 @@ Available document actions and commands change depending on the selected documen
 The Quick Filter allows you to quickly define which documents you want to view.\
 
 
-<div align="left"><figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Document Properties**: Filter documents by specific properties such as File Name, IDs, or File Type.\
-  ![](<../.gitbook/assets/image (13) (1) (1).png>)
+  ![](<../.gitbook/assets/image (13) (1) (1) (1).png>)
 * **Category**: Filter documents by specified categories, such as Invoices, Contracts, or documents with no category.\
-  ![](<../.gitbook/assets/image (14) (1) (1).png>)
+  ![](<../.gitbook/assets/image (14) (1) (1) (1).png>)
 * **Usage**: Filter documents based on their location. Examples include Inbox, Outbox, or the TrainingBox.\
-  ![](<../.gitbook/assets/image (15) (1) (1).png>)
+  ![](<../.gitbook/assets/image (15) (1) (1) (1).png>)
 * **Status**: Filter documents by specific statuses, such as Received, Error, or Processed.\
-  ![](<../.gitbook/assets/image (16) (1) (1).png>)
+  ![](<../.gitbook/assets/image (16) (1) (1) (1).png>)
 * **From Date**: Filter documents by the date they entered the service.\
-  ![](<../.gitbook/assets/image (17) (1) (1).png>)
+  ![](<../.gitbook/assets/image (17) (1) (1) (1).png>)
 * **To Date**: Filter documents up to the last date they entered the service.\
-  ![](<../.gitbook/assets/image (18) (1) (1).png>)
+  ![](<../.gitbook/assets/image (18) (1) (1) (1).png>)
 
 ## Document search
 
-<div align="left"><figure><img src="../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="danger" %}
 The search functionality only searches for documents on the current page
@@ -46,17 +46,17 @@ The search functionality only searches for documents on the current page
 ## Document Actions
 
 * Open a document for verification\
-  ![](<../.gitbook/assets/image (21) (1) (1).png>)
+  ![](<../.gitbook/assets/image (21) (1) (1) (1).png>)
 * Process the document\
-  ![](<../.gitbook/assets/image (20) (1) (1).png>)
+  ![](<../.gitbook/assets/image (20) (1) (1) (1).png>)
 *   View the linked documents (see [Understanding-document-flows](understanding-document-flows.md))\
 
 
-    <figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Open the document on the OS.\
-  ![](<../.gitbook/assets/image (23) (1).png>)
+  ![](<../.gitbook/assets/image (23) (1) (1).png>)
 * Download the document to your local disk.\
-  ![](<../.gitbook/assets/image (24) (1).png>)
+  ![](<../.gitbook/assets/image (24) (1) (1).png>)
 * View the document hierarchy.\
   ![](<../.gitbook/assets/image (54) (1).png>)
 * View the document's structured results (**Extract & Verify** services only).\
@@ -64,7 +64,7 @@ The search functionality only searches for documents on the current page
 * Open document verification audit trail (**Extract & Verify** services only).\
   ![](<../.gitbook/assets/image (56) (1).png>)
 * Open document logs.\
-  ![](<../.gitbook/assets/image (25) (1).png>)
+  ![](<../.gitbook/assets/image (25) (1) (1).png>)
 
 ### Sort the Documents grid
 

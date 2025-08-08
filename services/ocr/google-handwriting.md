@@ -2,11 +2,11 @@
 
 ​
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Write a caption​The **Google Handwriting Service** reads text from images for you to use. Any detected handwriting will be extracted per **Area**, which will contain a list of **Paragraphs** (if applicable) and **Words.** An example is shown below.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Supported Content Types
 

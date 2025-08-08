@@ -47,7 +47,9 @@ Follow these steps to add and configure the **Microsoft Document Intelligence (C
    ![](<../../.gitbook/assets/image (126).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (141).png>)  or  ![](<../../.gitbook/assets/image (142).png>)
+   ![](<../../.gitbook/assets/image (141).png>)\
+   or\
+   ![](<../../.gitbook/assets/image (142).png>)
    * **Step 1: Service**\
      Configure the core settings for your service.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
@@ -151,12 +153,12 @@ The **Microsoft Document Intelligence Service** provides flexible settings to ta
 To upload and process documents using the **Google Forms Parser**:
 
 1. **Open Service**\
-   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](<../../.gitbook/assets/image (8).png>) button or drag and drop files over the document grid.\
+   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](<../../.gitbook/assets/image (8) (1).png>) button or drag and drop files over the document grid.\
    ![](<../../.gitbook/assets/image (199).png>)
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.

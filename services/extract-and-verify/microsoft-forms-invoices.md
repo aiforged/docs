@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Microsoft Invoices
 
 ​
@@ -20,7 +24,7 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
    ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **Microsoft Invoices Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
