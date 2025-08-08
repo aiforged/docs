@@ -15,8 +15,9 @@
     "gitbook-plugin-insert-logo": "0.1.5",
     "gitbook-plugin-tabs2": "0.1.3",
     "honkit": "6.0.3",
-    "honkit-plugin-highlight": "6.0.3",
-    "honkit-plugin-theme-default": "6.0.3"
+    "honkit/honkit-plugin-highlight": "6.0.3",
+    "honkit/honkit-plugin-theme-default": "6.0.3"
   }  
 }  
+
 
