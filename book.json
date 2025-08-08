@@ -2,7 +2,6 @@
   "title": "AIForged Documentation",
   "plugins": [
     "hints",
-    "search",
     "collapsible-chapters",
     "insert-logo",
     "tabs2",
