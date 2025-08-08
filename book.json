@@ -2,12 +2,12 @@
   "title": "AIForged Documentation",
   "plugins": [
     "hints",
-    "search-plus",
+    "search",
     "collapsible-chapters",
     "insert-logo",
     "tabs2",
-    "theme-default",
-    "highlight"
+    "highlight",
+    "theme-default"
   ],
   "pluginsConfig": {
     "insert-logo": {
