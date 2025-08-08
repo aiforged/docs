@@ -14,10 +14,4 @@
       "style": "max-width: 200px; max-height: 50px; padding: 10px 0; background: none;"
     }
   },
-  "scripts": {
-    "website": "scripts/website.js"
-  },
-  "styles": {
-    "website": "styles/website.css"
-  }
 }
