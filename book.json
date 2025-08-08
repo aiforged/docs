@@ -13,5 +13,11 @@
       "url": "https://aiforged.com/wp-content/uploads/2022/08/cropped-AIForged-Logo-and-tagline_Default.png",
       "style": "max-width: 200px; max-height: 50px; padding: 10px 0; background: none;"
     }
+  },
+  "styles": {
+    "website": [
+      "styles/navigation.css",
+      "styles/custom.css"
+    ]
   }
 }
