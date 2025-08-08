@@ -18,9 +18,6 @@
     "website": "scripts/website.js"
   },
   "styles": {
-    "website": [
-      "styles/navigation.css",
-      "styles/custom.css"
-    ]
+    "website": "styles/website.css"
   }
 }
