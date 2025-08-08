@@ -6,7 +6,8 @@
     "collapsible-chapters",
     "insert-logo",
     "tabs2",
-    "honkit-plugin-theme-default"
+    "honkit-plugin-theme-default",
+    "honkit-plugin-highlight"
   ],
   "pluginsConfig": {
     "insert-logo": {
