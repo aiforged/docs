@@ -101,7 +101,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
 
     // 6. Remove trailing backslashes from list items
     content = content.split('\n').map((line, idx) => {
-        const listRegex = /^(\s*(?:.*)\s.*?)(\\+)\s*$;
+        const listRegex = /^(\s*(?:.*)\s.*?)(\\+)\s*$/gi;
         if (listRegex.test(line)) {
             const before = line;
             line = line.replace(/(\\+)\s*$/, '');
