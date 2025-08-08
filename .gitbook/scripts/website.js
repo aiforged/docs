@@ -14,3 +14,10 @@ gitbook.events.bind("start", function() {
         });
     });
 });
+
+gitbook.events.bind("start", function() {
+    if (!localStorage.getItem("bookColorTheme")) {
+        localStorage.setItem("bookColorTheme", "night");
+        document.querySelector("html").classList.add("color-theme-night");
+    }
+});
