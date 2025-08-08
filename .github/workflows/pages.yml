@@ -53,7 +53,7 @@ jobs:
         timeout-minutes: 30
 
       - name: Build Pagefind Search Index
-        run: npx pagefind --source _book
+        run: npx pagefind --site _book
 
       - name: Configure GitHub Pages
         id: pages
