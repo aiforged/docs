@@ -1,20 +1,21 @@
 gitbook.events.bind("start", function() {
-    var container = $('<div id="search-container"></div>')
-        .css({ padding: "10px" });
+    var container = $('<div id="search-container"></div>').css({ padding: "10px" });
     $(".book-summary").prepend(container);
 
-    // Load Pagefind CSS
-    $('head').append('<link rel="stylesheet" href="pagefind/pagefind-ui.css">');
+    // Use root-relative URLs
+    $('head').append('<link rel="stylesheet" href="/pagefind/pagefind-ui.css">');
 
-    // Load Pagefind UI JS and initialize
-    $.getScript("pagefind/pagefind-ui.js", function() {
-        new PagefindUI({
-            element: "#search-container",
-            showImages: false
-        });
+    $.getScript("/pagefind/pagefind-ui.js", function() {
+        if (typeof PagefindUI === "function") {
+            new PagefindUI({
+                element: "#search-container",
+                showImages: false
+            });
+        }
     });
 });
 
+// Default theme color to Night mode on first visit
 gitbook.events.bind("start", function() {
     if (!localStorage.getItem("bookColorTheme")) {
         localStorage.setItem("bookColorTheme", "night");
