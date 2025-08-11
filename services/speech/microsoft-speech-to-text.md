@@ -1,52 +1,147 @@
 # Microsoft Speech to Text
 
-<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The **Microsoft Speech-to-Text Service** can quickly and accurately transcribe audio to text in more than **30** languages. Customize models to enhance accuracy for domain-specific terminology.
+The Microsoft Speech-to-Text Service in AIForged uses Microsoft’s Azure AI Speech to accurately transcribe audio into text across many languages. Transcripts are stored in the document’s Result property for downstream search, analytics, or workflow automation. Models can be tailored to improve accuracy for domain-specific vocabulary.
 
-## Supported Content Types
+{% hint style="info" %}
+Tip: Use this service to quickly turn recorded meetings, calls, or podcasts into searchable, actionable text. For structured data extraction from documents, use Document Intelligence.
+{% endhint %}
 
-* Mp3
+***
 
-## Possible use cases
+### Permissions Required
 
-* Extracting Music lyrics from a song.
-* Create meeting notes based on recorded audio.
+Members must belong to one of the following AIForged user group roles to add and configure this service:
 
-## Service Setup
+* Owner
+* Administrator
+* Developer
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select **Microsoft Speech-to-Text Service** from the available **Service Types.**
+{% hint style="info" %}
+Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
+{% endhint %}
 
-    <figure><img src="../../.gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
-    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+***
 
-    <figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
+### Supported Content Types
 
-    * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
-    * **Step 2 -** Verification of any documents that have been processed.\
-      ![](<../../.gitbook/assets/image (84) (1).png>)
+* MP3
+* WAV (PCM)
 
-## Service Configuration Settings
+{% hint style="info" %}
+Tip: If your audio is in another format (e.g., M4A, AAC, OGG), transcode it to MP3 or WAV using your preferred media converter before uploading.
+{% endhint %}
 
-The **Microsoft Speech-to-Text Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+***
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>AccessKey</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the Access Key to the configured Microsoft cloud service.</td></tr><tr><td>BaseURL</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the URL to the configured Microsoft cloud service.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr></tbody></table>
+### Possible Use Cases
 
-## Add and Process Documents
+* Generate meeting minutes or summaries from recorded sessions.
+* Transcribe customer calls for QA, analytics, or compliance.
+* Produce captions/subtitles for training videos and webinars.
+* Extract music lyrics or spoken content from audio tracks (subject to licensing).
 
-1. In the **Microsoft Speech-to-Text Service** click on the **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demos test files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie\_larcai\_com/Ec-\_k8RmUqNAv6WgCgwItfcBTRp1Gk0V6OeyTj2S3SIUQg?e=EquxX9)**.**
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+***
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+### Service Setup
 
-## View Processed Documents
+Follow these steps to add and configure the Microsoft Speech-to-Text Service to your agent:
 
-1. In the **Microsoft Speech-to-Text Service** click on the **Outbox** button.
-2. You can view the **Processing** results by opening a processed doc for verification.
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Microsoft Speech-to-Text Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+3. **Select Service Type**\
+   Choose **Microsoft Speech-to-Text Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (274).png>)
+4. **Configure the Service Wizard**
+   1. Open the Service Configuration Wizard.
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+      2.
+
+          <figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+   2.  **Step 1: General Settings** Configure the service name, description, and core settings. \_Default settings are sufficient for most use cases.
+
+       <figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Service Configuration Settings
+
+Most users can proceed with the default settings. Advanced configuration is available for custom workflows.
+
+| Setting                 | Type     | Required? | Description                                                                     |
+| ----------------------- | -------- | --------- | ------------------------------------------------------------------------------- |
+| ArchivingStrategy       | Optional | No        | Number of days before documents are deleted.                                    |
+| AccessKey               | Optional | No        | Override the Microsoft cloud access key (typically not required in AIForged).   |
+| BaseURL                 | Optional | No        | Override the Speech-to-Text endpoint (advanced; usually not required).          |
+| BatchSize               | Hidden   | -         | Processing batch size.                                                          |
+| DocumentProcessedStatus | Optional | No        | Status applied after successful transcription.                                  |
+| Enabled                 | Hidden   | -         | Enable or disable the service.                                                  |
+| ExecuteBeforeProcess    | Optional | No        | If configured as a child service, execute before the parent service.            |
+| ExecuteAfterProcess     | Optional | No        | If configured as a child service, execute after the parent service.             |
+| Language                | Optional | No        | Specify the primary spoken language of the audio (e.g., en-US).                 |
+| Password                | Optional | No        | Authentication/password handling; can be set per document via Custom Code.      |
+| RemoveComments          | Optional | No        | Remove human comments/annotations in document metadata (not typical for audio). |
+
+{% hint style="info" %}
+Tip: If unsure, keep defaults unless you have a specific processing or integration requirement. Setting the correct Language improves transcription accuracy.
+{% endhint %}
+
+***
+
+### Add and Process Documents
+
+To upload and process audio using the Microsoft Speech-to-Text Service:
+
+1. **Open Service**\
+   When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
+2. **Upload Audio**\
+   Click the **Upload** ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid (MP3 or WAV).\
+   ![](<../../.gitbook/assets/image (278).png>)
+3. **Select Category (Optional)**\
+   If you know the category for the audio, select it. Otherwise, select **No category**.
+4. **Process Documents**\
+   After uploading, select the audio files to process and click **Process Checked**.
+
+{% hint style="info" %}
+Tip: For new services, process a small batch first to verify transcription quality before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the **Microsoft Speech-to-Text Service**.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view the transcript in the **Result** property.
+
+***
+
+### Troubleshooting Tips
+
+* **Transcript missing words or inaccurate?**
+  * Ensure clear audio: minimize background noise, echo, or music.
+  * Set the correct Language (e.g., en-GB vs en-US).
+  * Prefer mono recordings with consistent levels; avoid clipping.
+* **Long files take a while to complete?**
+  * Longer recordings may be processed asynchronously by the provider and take more time.
+  * Split very long audio into smaller segments to keep processing responsive.
+* **Audio won’t process?**
+  * Confirm the file format is MP3 or WAV and not DRM‑protected/encrypted.
+  * Re‑export the audio with a standard codec and a constant sample rate (e.g., 16 kHz mono WAV or 128 kbps mono MP3).
+* **Multiple speakers in a single recording?**
+  * Overlapping speakers and crosstalk reduce accuracy; use separate microphones when possible or pre-segment the audio.
+
+***
+
+### Best Practices
+
+* Record at a consistent level in a quiet environment; reduce background noise and reverberation.
+* Use mono channels for speech; 16 kHz or higher sample rate is recommended for better accuracy.
+* Set the correct Language to match the audio content.
+* Trim long silences and split long recordings into smaller parts for faster, more reliable processing.
+* Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.

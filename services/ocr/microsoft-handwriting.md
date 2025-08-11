@@ -1,56 +1,177 @@
 # Microsoft Handwriting
 
-<figure><img src="../../.gitbook/assets/image (61) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-The **Microsoft Handwriting Service** reads text from images for you to use. Any detected handwriting will be extracted per **Line**, which will contain a list of **Words**. An example is shown below.
+The Microsoft Handwriting Service in AIForged uses Microsoft’s OCR (Azure AI Vision Read) to extract handwritten text from documents. Detected handwriting is returned as structured elements by Line, each containing a list of Words, and a consolidated plain-text output is stored in the document’s Result property for downstream rules, analytics, or integration.
 
-<figure><img src="../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Use this service to digitize handwritten notes, annotations, or form entries and make them searchable or available for downstream validation and processing.
+{% endhint %}
 
-## Supported Content Types
+***
 
-* Images
-* Pdf
+### Permissions Required
 
-If you need to use a different type of content, you can use the **AIForged Pdf Converter**.
+Members must belong to one of the following AIForged user group roles to add and configure this service:
 
-## Possible use cases
+* Owner
+* Administrator
+* Developer
 
-* Extract any handwritten information from documents.
+{% hint style="info" %}
+Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
+{% endhint %}
 
-## Service Setup
+***
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select the **Microsoft Handwriting Service**.
+### Supported Content Types
 
-    <figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
-    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+* PDF
+* JPEG
+* PNG
+* TIFF
 
-    <figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
+{% endhint %}
 
-* **Step 1 -** Service Config (Displays the service setting, you can change it as required).
-* Click the “Next” Action in the Action Bar to save the Service.
-* **Step 2 -** Verification. No verification required.
+***
 
-## Service Configuration Settings
+### Possible Use Cases
 
-The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+* Extract handwritten fields from forms and scanned pages for indexing and analytics.
+* Digitize notes, annotations, and signatures for search and retrieval.
+* Feed handwritten data into human-in-the-loop verification, business rules, or workflow pipelines.
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>AccessKey</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the Access Key to the configured Microsoft cloud service.</td></tr><tr><td>BaseURL</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the URL to the configured Microsoft cloud service.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>IsVerification</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td>Optional</td><td>Save the lines and words for verification.</td></tr><tr><td>Language</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Hint at the language to use when performing OCR.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr></tbody></table>
+***
 
-## Add and Process Documents <a href="#add-and-process-documents" id="add-and-process-documents"></a>
+### Service Setup
 
-1. In the **Microsoft Handwriting Service** click on **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://larchold-my.sharepoint.com/:u:/g/personal/jannie_larcai_com/Ec-_k8RmUqNAv6WgCgwItfcBTRp1Gk0V6OeyTj2S3SIUQg?e=EquxX9)**.**
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+Follow these steps to add and configure the Microsoft Handwriting Service to your agent:
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Microsoft Handwriting Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+3. **Select Service Type**\
+   Choose **Microsoft Handwriting Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (265).png>)
+4. **Configure the Service Wizard**
+   1. Open the Service Configuration Wizard.
+      1.
 
-## View Processed Documents <a href="#view-processed-documents" id="view-processed-documents"></a>
+          <figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+      2.
 
-1. In the **Microsoft Handwriting Service** click on the **Outbox** button.
-2. You can view your **Processing** results by opening a processed doc for verification.
+          <figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
+   2. **Step 1: General Settings**\
+      Configure the service name, description, and core settings.\
+      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+
+   3. **Step 2: Verification**\
+      Typically no verification is required for handwriting extraction unless you plan a human-in-the-loop review.\
+
+
+***
+
+### Service Configuration Settings
+
+Most users can proceed with default settings. Advanced configuration is available for custom workflows.
+
+| Setting                 | Type     | Required? | Description                                                                   |
+| ----------------------- | -------- | --------- | ----------------------------------------------------------------------------- |
+| ArchivingStrategy       | Optional | No        | Number of days before documents are deleted.                                  |
+| AccessKey               | Optional | No        | Override the Microsoft cloud access key (typically not required in AIForged). |
+| BaseURL                 | Optional | No        | Override the Microsoft OCR endpoint (advanced; usually not required).         |
+| BatchSize               | Hidden   | -         | Processing batch size.                                                        |
+| DocumentProcessedStatus | Optional | No        | Status applied after successful processing.                                   |
+| Enabled                 | Hidden   | -         | Enable or disable the service.                                                |
+| ExecuteBeforeProcess    | Optional | No        | If configured as a child service, execute before the parent service.          |
+| ExecuteAfterProcess     | Optional | No        | If configured as a child service, execute after the parent service.           |
+| IsVerification          | Optional | No        | Save lines and words for human verification.                                  |
+| Language                | Optional | No        | Provide a language hint to improve recognition accuracy.                      |
+| MinSize                 | Optional | No        | Minimum document size threshold to trigger OCR.                               |
+| Password                | Optional | No        | Authentication/password handling; can be set per document using Custom Code.  |
+| RemoveComments          | Optional | No        | Remove human comments/annotations before processing.                          |
+
+{% hint style="info" %}
+If unsure, keep defaults unless you have a specific processing or integration requirement.
+{% endhint %}
+
+***
+
+### Known Limitations
+
+* PDF handling
+  * Password‑protected PDFs cannot be processed directly.
+* Image quality and layout
+  * Low-resolution, skewed, or noisy images reduce handwriting recognition accuracy.
+  * Highly stylized cursive or overlapping strokes may impact results.
+* Languages and scripts
+  * Handwriting support exists for many languages, but accuracy varies by script, print quality, and scan quality.
+  * Mixed multi-language pages may yield variable results.
+* Output structure
+  * The consolidated text is available in Result; enable IsVerification if you also need per-line/word visualization.
+
+{% hint style="info" %}
+Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
+{% endhint %}
+
+{% hint style="info" %}
+Tip: For very large PDFs or TIFFs, consider chunking by page range to keep processing responsive. Use the AIForged Document Splitter for this task.
+{% endhint %}
+
+***
+
+### Add and Process Documents
+
+To upload and process documents using the Microsoft Handwriting Service:
+
+1. **Open Service**\
+   When you open the **Microsoft Handwriting Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
+2. **Upload Documents**\
+   Click the **Upload** ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (268).png>)
+3. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, leave as **No selection**.
+4. **Process Documents**\
+   After uploading, select the documents to process and click **Process Checked**.
+
+{% hint style="info" %}
+Tip: For new services, process a small batch first to verify handwriting extraction before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Use the usage filter to select **Outbox** in the Microsoft Handwriting Service.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view the extracted text in the **Result** property and, if enabled, the per-line/word verification view.
+
+***
+
+### Troubleshooting Tips
+
+* **Handwriting not recognized or incomplete?**
+  * Improve scan quality (aim for 300 DPI), deskew pages, and reduce noise.
+  * Provide a Language hint matching the document’s primary language.
+* **Unexpected characters or word breaks?**
+  * Highly stylized or cursive handwriting can cause tokenization issues; increase contrast and reduce artifacts before uploading.
+* **Slow performance on large files?**
+  * Split very large PDFs/TIFFs into smaller ranges using the AIForged Document Splitter.
+  * Process in smaller batches to keep the UI responsive.
+* **Upload or processing errors?**
+  * Re-upload a clean copy to rule out file corruption.
+  * If the PDF is password-protected, provide the password via Custom Code pre-processing.
+  * Review service settings and try again.
+
+***
+
+### Best Practices
+
+* Capture or scan at 300 DPI or higher with good contrast; avoid shadows and skew.
+* Provide a Language hint when processing non‑English documents to improve recognition.
+* Keep categories organized to simplify filtering and downstream rules.
+* Validate results on a representative sample before processing at scale.
+* Enable IsVerification if you need to review lines and words visually alongside the Result text.
