@@ -144,15 +144,6 @@ See: [Documents → Document Types](documents/document-types.md)
 
 ---
 
-## Conventions in this documentation
-
-- Admonitions: `!!! note`, `!!! tip`, `!!! warning`, `!!! info` call out important guidance
-- Enums and APIs: Values are shown with explicit numeric values where applicable
-- Code snippets: Provided in C# unless otherwise stated; align to BaseModule APIs
-- Links: Relative links to sections/pages within this site
-
----
-
 ## Where to go next
 
 - Documents  
