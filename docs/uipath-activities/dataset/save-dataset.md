@@ -34,3 +34,4 @@ description: Save changes to an existing custom dataset.
 * **Merge Option:** Use the merge option carefully to control whether changes should replace existing data or be combined with it.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application saving the dataset to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
+ IgnoreCase Multiline IgnoreCase Multiline

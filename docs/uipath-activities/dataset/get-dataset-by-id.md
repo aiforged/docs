@@ -55,3 +55,4 @@ description: Retrieve a custom dataset and optionally its data.
 * **Data Integrity:** Ensure the parameter definition ID is valid and correctly specified to avoid errors during retrieval.
 * **Search and Sort:** Utilize search and sort options to efficiently retrieve and organize dataset data according to specific criteria.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the dataset to prevent unauthorized actions.
+ IgnoreCase Multiline IgnoreCase Multiline

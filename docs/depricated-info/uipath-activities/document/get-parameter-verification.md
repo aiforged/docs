@@ -24,8 +24,10 @@ Get Parameter definition
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (109) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%28109%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (94) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2894%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

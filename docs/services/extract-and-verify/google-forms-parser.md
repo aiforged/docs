@@ -119,3 +119,4 @@ To upload and process documents using the **Google Forms Parser**:
 * Regularly review and verify extracted data to fine-tune your categories and settings.
 * Organize documents into categories for easier retrieval and downstream processing.
 * Test with a variety of real-world form samples to ensure robust extraction.
+ IgnoreCase Multiline IgnoreCase Multiline

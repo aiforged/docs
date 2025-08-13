@@ -52,3 +52,4 @@ When you reset your password, MFA is automatically disabled
 {% hint style="info" %}
 You can configure your AIForged account to utilize these external services for authentication. Any linked providers can be unlinked from your AIForged account at any time.
 {% endhint %}
+ IgnoreCase Multiline IgnoreCase Multiline

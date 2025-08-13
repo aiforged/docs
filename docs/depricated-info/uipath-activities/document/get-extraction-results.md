@@ -22,8 +22,10 @@ Get Extraction Results
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (97) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2897%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2832%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

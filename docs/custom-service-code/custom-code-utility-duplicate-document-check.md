@@ -314,7 +314,7 @@ To compute MD5, add this assembly to the Custom Code “Assemblies” list:
 
 * `System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image%20%2822%29.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -324,7 +324,7 @@ To compute MD5, add this import to the Custom Code “Imports” list:
 
 * `System.Security.Cryptography`
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image%20%2823%29.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -389,3 +389,5 @@ Click the **Save** ![](<../.gitbook/assets/image (24).png>) button or use the ke
   Include additional heuristics (e.g., page count + file size) for pre-filtering before hashing large files.
 * Custom work item routing\
   Swap WorkItemMethod.Random for Idle or HighThroughput, or route to ProjectOwner/DocumentOwner depending on your workflow.
+
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -20,8 +20,10 @@ Get Unread Notification Count
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (90) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2890%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (44) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2844%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

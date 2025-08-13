@@ -50,3 +50,4 @@ description: Export multiple documents' extraction results to a combined CSV fil
 * **File Path:** Ensure that the specified file path is valid and accessible. The application must have write permissions to save the file at the specified location.
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
 * **Combining Rows:** When combining by external ID, ensure that the external ID field is consistently populated across documents to achieve the desired output.
+ IgnoreCase Multiline IgnoreCase Multiline

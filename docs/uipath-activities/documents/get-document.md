@@ -28,3 +28,4 @@ description: Retrieve a document's information by its unique identifier.
 * **Data Integrity:** Ensure that the document ID is valid and accessible to avoid errors during the retrieval process.
 * **Further Processing:** The resulting`DocumentViewModel`object can be used for further processing, analysis, or reporting within your workflow.
 * **Performance:** The execution time may vary depending on the system's load and the document's complexity. Ensure your system is configured to handle the expected load efficiently.
+ IgnoreCase Multiline IgnoreCase Multiline

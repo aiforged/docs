@@ -55,3 +55,4 @@ description: Copy a document to another service
 * **Data Integrity:** Ensure that the target project and service IDs are valid and accessible within your system to prevent errors during the copy operation.
 * **Performance:** Copying a large number of documents may impact performance. Consider handling such operations in batches if needed.
 * **Flexibility:** The activity provides flexibility in managing document metadata, such as usage type and status, during the copy process.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -12,3 +12,4 @@ The Dataset activities in the AIForged UiPath Activities provides a comprehensiv
 * **Performance Considerations**: Handling large datasets can impact performance, so these activities include options like pagination and selective data inclusion to optimize processing times and resource usage. Users can configure these options to balance performance with data retrieval needs effectively.
 
 By utilizing the dataset activities, users can enhance their automation workflows with robust data management capabilities, driving more informed decision-making and efficient operations.
+ IgnoreCase Multiline IgnoreCase Multiline

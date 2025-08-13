@@ -115,7 +115,7 @@ Labelling is a crucial step for training the Document Intelligence extraction en
    * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](<../../.gitbook/assets/image (191).png>).
    * Paste labels onto a different document using **Paste Labels from Clipboard** ![](<../../.gitbook/assets/image (193).png>).
 
-<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image%20%28197%29.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
@@ -197,3 +197,5 @@ To upload and process documents using the **Google Forms Parser**:
 * Label and categorize documents accurately to improve model performance.
 * Regularly review and update your definition documents as forms or layouts evolve.
 * Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
+
+ IgnoreCase Multiline IgnoreCase Multiline

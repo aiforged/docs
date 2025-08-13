@@ -42,3 +42,4 @@ _Other legacy and specialized services are also available; please consult the AI
 {% hint style="info" %}
 Need to extract and verify data from a new or custom document type? Reach out to the AIForged team to discuss your requirements!
 {% endhint %}
+ IgnoreCase Multiline IgnoreCase Multiline

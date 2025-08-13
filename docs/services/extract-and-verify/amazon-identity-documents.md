@@ -97,3 +97,4 @@ To upload and process identity documents using the Amazon Identity Documents Ser
   * If multiple errors occur, check your agent's service configuration or contact support for further assistance.
 * **Performance Concerns?**
   * Large batches may take longer to process. Start with smaller batches to ensure service responsiveness.
+ IgnoreCase Multiline IgnoreCase Multiline

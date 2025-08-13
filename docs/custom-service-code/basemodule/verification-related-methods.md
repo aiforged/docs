@@ -232,3 +232,4 @@ Tip:
   * A: Functionally either works; for performance, batch your SaveChanges calls where safe.
 * Q: In field-level custom code, can I use the provided verification variable directly?
   * A: Yes—return new AIForged.Services.ProcessResult(verification) and use AddVerification on that context.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -165,3 +165,4 @@ Tip: Start with a single operation, test, then enable more as needed. Over-proce
   Yes—most operations (e.g., Greyscale, Remove Color Marks) are designed for both color and black-and-white scans.
 * **How do I revert if the output is too aggressive?**\
   Adjust or disable one operation at a time and re-test with your sample document.
+ IgnoreCase Multiline IgnoreCase Multiline

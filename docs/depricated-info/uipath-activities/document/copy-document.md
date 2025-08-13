@@ -34,8 +34,10 @@ Copy Document
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (111) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%28111%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (43) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2843%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

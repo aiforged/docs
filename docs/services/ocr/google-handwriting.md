@@ -63,7 +63,7 @@ Follow these steps to add and configure the Google Handwriting service to your a
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image%20%28255%29.png" alt=""><figcaption></figcaption></figure>
       2. ![](<../../.gitbook/assets/image (251).png>)\
 
    2. **Step 1: General Settings**\
@@ -187,3 +187,5 @@ To upload and process documents using the Google Handwriting service:
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * **What languages are supported?**
   * Many languages are supported; accuracy varies by script and image quality. Provide a Language hint when possible and test with samples.
+
+ IgnoreCase Multiline IgnoreCase Multiline

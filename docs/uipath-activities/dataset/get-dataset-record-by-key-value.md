@@ -42,3 +42,4 @@ description: Get a dataset record by its key value.
 * **Verification Data:** Use the Include Verifications option to obtain additional verification-related data if necessary.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the dataset record to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
+ IgnoreCase Multiline IgnoreCase Multiline

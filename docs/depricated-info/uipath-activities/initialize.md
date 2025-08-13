@@ -46,8 +46,10 @@ Initialize
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image%20%2830%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (18) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image%20%2818%29%20%286%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

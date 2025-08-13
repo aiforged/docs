@@ -238,3 +238,4 @@ For the MD5 Hash calculation to work, add `System.Security.Cryptography.Algorith
   * Use standard C# if/else logic in your script, referencing the parameter or value as needed.
 * **What happens if my code throws an exception?**
   * The error is logged and processing may halt for the current document. Always use error handling to avoid workflow interruptions.
+ IgnoreCase Multiline IgnoreCase Multiline

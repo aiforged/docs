@@ -1,12 +1,12 @@
 # Audit
 
-![Audit](../../.gitbook/assets/service-audit.png)
+![Audit](../../assets/service-audit.png)
 
 * The Audit page displays transactions made by the service
 
 ## Filter Audits
 
-![Audit](../../.gitbook/assets/services-audit-filter.png)
+![Audit](../../assets/services-audit-filter.png)
 
 1. Click on the date you want to filter
 2. Select your date
@@ -18,3 +18,5 @@
 | Run            |                                                      |
 | Date Created   | Displays the date the process transaction was done   |
 | Modied Created | Displays the date the modiefied transaction was done |
+
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -46,3 +46,4 @@ description: Rerun rules on a given verification.
 * **Optional Updates:** Use the optional inputs to modify the verification's value, confidence, or status as necessary before rerunning.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application performing the rerun operation to prevent unauthorized actions.
 * **Verification Logic:** Understand the logic and rules applied during verification reruns to ensure the desired outcome.
+ IgnoreCase Multiline IgnoreCase Multiline

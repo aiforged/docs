@@ -24,3 +24,4 @@ This activity does not require any input properties, as it is designed to retrie
 * **Time Consistency:** Use this activity to ensure that operations within your workflow are synchronized with the platform's system time, which can be crucial for time-sensitive tasks.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the system date to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or unexpected API responses.
+ IgnoreCase Multiline IgnoreCase Multiline

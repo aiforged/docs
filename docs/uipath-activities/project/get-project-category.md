@@ -32,3 +32,4 @@ description: Retrieve a category object for a given project/category combination
 * **Data Integrity:** Ensure that the project ID and category ID are correctly specified to avoid errors during retrieval. The IDs must match exactly as stored in the system.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the category to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
+ IgnoreCase Multiline IgnoreCase Multiline

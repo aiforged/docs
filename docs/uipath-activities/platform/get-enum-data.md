@@ -24,3 +24,4 @@ This activity does not require any input properties, as it is designed to retrie
 * **Data Retrieval:** The activity retrieves all available enum data from the platform, which can be used for various operations in subsequent workflow steps.
 * **Permissions:** Ensure that the necessary permissions are in place for the user or application retrieving the enum data to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or unexpected API responses.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -7,3 +7,4 @@ nav_order: 8
 
 # Miscellaneous Methods
 
+ IgnoreCase Multiline IgnoreCase Multiline

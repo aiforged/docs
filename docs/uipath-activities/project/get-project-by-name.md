@@ -29,3 +29,4 @@ description: Retrieve a project by its name.
 * **Unique Names:** Ensure that project names are unique within your system to avoid ambiguity. If multiple projects share the same name, ensure you have a mechanism to handle such cases.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the project to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data
+ IgnoreCase Multiline IgnoreCase Multiline

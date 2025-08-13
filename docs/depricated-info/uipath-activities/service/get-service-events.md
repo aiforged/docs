@@ -28,8 +28,10 @@ Get Service Events
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%28194%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (92) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2892%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

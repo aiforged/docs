@@ -42,3 +42,4 @@ Not sure which OCR engine to use? Start with Amazon or Microsoft OCR for general
 {% hint style="info" %}
 Need help selecting or configuring an OCR engine? Contact the AIForged team for expert guidance on best-fit solutions and advanced use cases.
 {% endhint %}
+ IgnoreCase Multiline IgnoreCase Multiline

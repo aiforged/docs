@@ -22,8 +22,10 @@ Get Project By Name
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (110) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%28110%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (3) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%283%29%20%2810%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

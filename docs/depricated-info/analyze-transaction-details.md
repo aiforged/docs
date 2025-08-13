@@ -6,19 +6,19 @@ nav_order: 1
 
 # Analyze Transaction details
 
-![Transactions](../.gitbook/assets/transaction-details.png)
+![Transactions](../assets/transaction-details.png)
 
 Displays the detailx of each transaction
 
 ## Filter transactions
 
-![Filters](../.gitbook/assets/transaction-details-filters.png)
+![Filters](../assets/transaction-details-filters.png)
 
 To filter the transactions page click select your filters, then click filter
 
 ### Available filters
 
-![Filters](../.gitbook/assets/transaction-details-filters.png)
+![Filters](../assets/transaction-details-filters.png)
 
 * From Date
 * To date
@@ -42,18 +42,20 @@ To filter the transactions page click select your filters, then click filter
 
 ### Usage by Weekday pie Chart
 
-![transactions ussage](../.gitbook/assets/transaction-details-chart-1.png)
+![transactions ussage](../assets/transaction-details-chart-1.png)
 
 The Usage by Weekday piechart displays the usage of all your services by weekday
 
 ### Usage by Date pie Chart
 
-![transactions ussage by service](../.gitbook/assets/transaction-details-chart-2.png)
+![transactions ussage by service](../assets/transaction-details-chart-2.png)
 
 The Usage by date piechart displays the usage of all your services by date
 
 ## Actions
 
-![transactions usage by service](../.gitbook/assets/transaction-details-actions-1.png)
+![transactions usage by service](../assets/transaction-details-actions-1.png)
 
 * Clicking on the "Export to Excel" in the Action bar will download an excel export file to your local machine
+
+ IgnoreCase Multiline IgnoreCase Multiline

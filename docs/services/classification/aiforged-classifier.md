@@ -104,3 +104,4 @@ Use **Merge To PDF** if you want each class/category to be output as a consolida
   Continuously add new samples for classes that show lower accuracy and retrain as needed.
 
 > **Tip:** Document your categories and training process, so you can maintain and improve your classifier over time.
+ IgnoreCase Multiline IgnoreCase Multiline

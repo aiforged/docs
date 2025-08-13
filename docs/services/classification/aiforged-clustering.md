@@ -84,3 +84,4 @@ It is recommended to process a small batch first, especially if this is a new se
 * In the Clustering Service, change the usage filter to **Outbox**.\
   ![](<../../.gitbook/assets/image (25) (1) (1).png>)
 * Open any processed document to view clustering results and perform verification.
+ IgnoreCase Multiline IgnoreCase Multiline

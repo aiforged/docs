@@ -78,16 +78,16 @@ Utilities run as part of the parent’s lifecycle. Use Execute Before Process or
    The wizard includes the following sections:
    * General\
      Enable the service, set optional authentication, and decide if it should execute on triggers.\
-     ![](../../.gitbook/assets/Digitizer2.png)
+     ![](../../assets/Digitizer2.png)
    * Auto Execution\
      Configure Batch Size and whether the Digitizer should run before or after other processes.\
-     ![](../../.gitbook/assets/Digitizer3.png)
+     ![](../../assets/Digitizer3.png)
    * Processing\
      Set the post-processing document status, force PDFs to image-only if needed, and merge images into a single PDF.\
-     ![](../../.gitbook/assets/Digitizer4.png)
+     ![](../../assets/Digitizer4.png)
    * Advanced\
      Configure overlay options (use original image as background), background color/opacity, archiving, and comment removal.\
-     ![](../../.gitbook/assets/Digitizer.png)
+     ![](../../assets/Digitizer.png)
 
 _The default settings are sufficient for most use cases. Only adjust advanced options if you have specific workflow or integration requirements._
 
@@ -182,3 +182,5 @@ Tip: For new services, process a small batch first to verify the digitized outpu
 * Use the Digitizer as a pre-processor ahead of extraction, classification, or rules to ensure consistent, searchable inputs.
 * Start with a pilot set to validate output, then scale; tune dependent OCR, overlay, and batching as needed.
 * For very large or multi-volume archives, use Execute On Trigger and schedule Auto Execution to spread the load.
+
+ IgnoreCase Multiline IgnoreCase Multiline

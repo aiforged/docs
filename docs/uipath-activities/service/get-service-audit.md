@@ -54,3 +54,4 @@ description: Retrieve the audit result for a specified service based on various 
 * **Related Transactions:** Decide whether to include related transactions based on your audit requirements.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the audit results to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
+ IgnoreCase Multiline IgnoreCase Multiline

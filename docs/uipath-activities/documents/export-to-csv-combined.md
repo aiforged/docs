@@ -44,3 +44,4 @@ description: Export multiple documents' extraction results to a combined CSV lis
 * **CSV Formatting:** The chosen CSV separator should not conflict with the data content to ensure proper CSV formatting.
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
 * **Combining Rows:** When combining by external ID, ensure that the external ID field is consistently populated across documents to achieve the desired output.
+ IgnoreCase Multiline IgnoreCase Multiline

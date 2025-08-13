@@ -14,3 +14,4 @@ There are multiple reasons for extracted data to be verified by a **HITL**. Thes
 * A required field was not detected by the **OCR Engine**.
 * Supporting document data do not match (E.g. the name on a bank statement does not match the ID cards received. Refer to [Practical Example](../practical-examples/credit-application-process-accept-or-reject-the-application.md) for an example.
 * Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](../../human-in-the-loop/custom-service-code/) for more information.
+ IgnoreCase Multiline IgnoreCase Multiline

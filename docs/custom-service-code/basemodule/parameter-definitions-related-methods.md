@@ -215,3 +215,4 @@ To prevent duplicate training entries and keep training sets clean.
 * Use filters (categories, grouping, value types) when resolving by name to avoid ambiguity.
 * After copy/move/clone/status changes, call `module.SaveChanges()` to persist updates.
 * Combine definition lookups with parameter/document methods to build robust flows.
+ IgnoreCase Multiline IgnoreCase Multiline

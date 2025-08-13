@@ -22,8 +22,10 @@ Delete Document
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (13) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2813%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (22) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2822%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

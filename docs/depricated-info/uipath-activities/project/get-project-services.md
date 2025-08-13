@@ -26,8 +26,10 @@
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (5) (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%285%29%20%288%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (96) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2896%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

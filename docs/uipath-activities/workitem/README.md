@@ -13,3 +13,4 @@ The Workitem activities of the AIForged UiPath Activities offers a powerful suit
 * **Performance Considerations**: Managing large volumes of work items can impact performance. Users are encouraged to implement best practices for task management, such as using filtering and batching options, to optimize resource usage and maintain responsive workflows.
 
 By integrating workitem activities into your UiPath workflows, you can enhance your ability to manage tasks, improve collaboration, and ensure efficient execution of your automation processes, driving greater productivity and operational excellence.
+ IgnoreCase Multiline IgnoreCase Multiline

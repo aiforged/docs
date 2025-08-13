@@ -46,3 +46,4 @@ description: Export a document's extraction results to a CSV list.
 * **Data Selection:** Ensure that the document IDs, project ID, and service ID are accurate and accessible to avoid errors during the export process.
 * **CSV Formatting:** The chosen CSV separator should not conflict with the data content to ensure proper CSV formatting.
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
+ IgnoreCase Multiline IgnoreCase Multiline

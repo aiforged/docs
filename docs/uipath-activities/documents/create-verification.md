@@ -53,3 +53,4 @@ description: Create a new verification result on a specified document parameter.
 * **Data Integrity:** Ensure that the document and parameter IDs are valid and accessible to prevent errors during verification creation.
 * **Optional Inputs:** Use the optional text fields to provide context or additional information about the verification, which can be useful for auditing or review purposes.
 * **Confidence Inheritance:** If a previous verification is provided, block info and confidence values are inherited, which can help maintain consistency in verification metrics.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -36,3 +36,4 @@ Configure vision services as standalone pipelines or as verification services (c
 {% hint style="info" %}
 Vision services can be combined with extraction, classification, and workflow utilities for advanced, automated document and media pipelines.
 {% endhint %}
+ IgnoreCase Multiline IgnoreCase Multiline

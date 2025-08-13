@@ -243,3 +243,4 @@ Description: Unknown or not-yet-classified data type.
   * A: Use TelephoneNo to enable formatting/validation rules specific to phone numbers.
 * Q: When should I use Data vs Picture?
   * A: Use Picture for image-centric processing; use Data for generic binary payloads.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -22,8 +22,10 @@ Category Name -
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2816%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (39) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2839%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

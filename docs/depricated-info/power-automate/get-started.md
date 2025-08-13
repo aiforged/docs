@@ -21,3 +21,4 @@ Choose the schedule
 Your flow can look like this:
 
 Powerautomate will show the history of the runs
+ IgnoreCase Multiline IgnoreCase Multiline

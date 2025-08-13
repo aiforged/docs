@@ -6,7 +6,7 @@ When processing a document, multiple processing parameters are available that ca
 
 ## Processing parameters
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../assets/image%20%2879%29.png" alt=""><figcaption></figcaption></figure></div>
 
 ***
 
@@ -16,3 +16,5 @@ When processing a document, multiple processing parameters are available that ca
 * **Delete Linked Documents**: Deletes all linked (Outbox, Training, etc.) documents associated with the Inbox document.
 * **Delete Linked Documents Recursively**: Deletes the entire hierarchy of linked documents.
 * **Force Re-Processing**: Forces the document to be fully processed again (default). On some services setting this false will allow the processing to bypass certain pre-processing functions such as document OCR if the document was previously processed.
+
+ IgnoreCase Multiline IgnoreCase Multiline

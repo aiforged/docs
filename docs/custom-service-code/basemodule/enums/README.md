@@ -16,3 +16,4 @@ The following **Enum** definitions are defined in **AIForged**:
 * [WorkItemMethod](workitemmethod.md)
 * [WorkItemStatus](workitemstatus.md)
 * [WorkItemType](workitemtype.md)
+ IgnoreCase Multiline IgnoreCase Multiline

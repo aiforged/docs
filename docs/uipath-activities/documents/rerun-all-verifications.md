@@ -51,3 +51,4 @@ description: Rerun rules on all verifications in a document.
 * **Reset Option:** Be cautious with the reset option, as it will overwrite any manual changes made by users.
 * **Post-processing:** Understand the implications of running custom code, workflows, utilities, and webhooks to ensure they align with your business logic.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application performing the rerun operation to prevent unauthorized actions.
+ IgnoreCase Multiline IgnoreCase Multiline

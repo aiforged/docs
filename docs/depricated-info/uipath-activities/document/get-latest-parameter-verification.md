@@ -26,8 +26,10 @@ Get Latest Parameter Verification
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2835%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (48) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2848%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -44,7 +44,7 @@ Each user is assigned to one or more Usergroups and inherits permissions based o
 * **Globally:** Across all AI agents within the Organisation.
 * **Specifically:** To selected AI agents or services only.
 
-<figure><img src="../.gitbook/assets/Usergroups.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/Usergroups.png" alt=""><figcaption></figcaption></figure>
 
 ### Example Scenario
 
@@ -53,3 +53,5 @@ Suppose your Organisation processes invoices and contracts using different AI ag
 * Create a Tenant Group to govern overall access.
 * Establish nested Usergroups for "Invoice Processing" and "Contract Review."
 * Assign roles so only Document Verifiers can approve processed documents, while Developers can update AI agent logic.
+
+ IgnoreCase Multiline IgnoreCase Multiline

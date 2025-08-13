@@ -37,3 +37,4 @@ Need transcription for a different provider or specialized workflow? Reach out t
 {% hint style="info" %}
 Speech-to-text services can be combined with other AIForged utilities for downstream classification, sentiment analysis, or keyword extraction—enabling full audio-to-insight pipelines!
 {% endhint %}
+ IgnoreCase Multiline IgnoreCase Multiline

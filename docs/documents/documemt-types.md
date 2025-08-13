@@ -25,7 +25,7 @@ Structured documents present information in a fixed, predictable layout with cle
   * Use high-quality scans or digital originals
   * If handwriting is present, enable selection marks/handwriting options where available
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Semi-structured documents
 
@@ -44,7 +44,7 @@ Semi-structured documents don’t follow a single rigid template, but they do fo
   * Use services trained for invoices/receipts to handle variability
   * For tables, enable table detection and verify column mapping
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Unstructured documents
 
@@ -63,4 +63,6 @@ Unstructured documents contain rich free-form text with little to no consistent 
   * Start with robust OCR/layout extraction
   * Apply targeted extraction rules, NLP, or verification to pinpoint entities and clauses
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image%20%282%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

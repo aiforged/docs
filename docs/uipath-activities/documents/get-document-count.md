@@ -79,3 +79,4 @@ description: >-
 * **Data Filtering:** Utilize the optional filters effectively to count only the necessary documents, improving performance and reducing processing time.
 * **Data Integrity:** Ensure that the project ID and any specified filters are valid and accessible to avoid errors during the retrieval process.
 * **Accuracy:** The returned count reflects the number of documents that meet all the specified criteria, providing an accurate measure for reporting or further processing.
+ IgnoreCase Multiline IgnoreCase Multiline

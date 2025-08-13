@@ -13,3 +13,4 @@ The Service activities of the AIForged UiPath Activities provides a robust set o
 * **Performance Considerations**: While service activities are designed to be efficient, managing extensive service data can impact performance. Users are encouraged to utilize filtering options and optimize configurations to maintain responsive and effective workflows.
 
 By integrating service activities into your UiPath workflows, you can enhance your ability to manage and optimize your services, driving improved operational efficiency and strategic alignment across your automation initiatives.
+ IgnoreCase Multiline IgnoreCase Multiline

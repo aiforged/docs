@@ -28,8 +28,10 @@ Get Verification Shred
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (1) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%281%29%20%2810%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (15) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2815%29%20%287%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

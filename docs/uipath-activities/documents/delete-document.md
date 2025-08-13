@@ -37,3 +37,4 @@ description: Delete a document by its unique identifier.
 * **Data Integrity:** Ensure that the document ID is valid and accessible to avoid errors during deletion.
 * **Cascading Deletions:** Be cautious when setting the`Delete Recursively`and`Delete Training Documents`flags, as these will result in multiple documents being deleted, which may impact related workflows or data integrity.
 * **Irreversible Action:** Deleting documents is usually irreversible, so ensure that backups or confirmations are in place if needed.
+ IgnoreCase Multiline IgnoreCase Multiline

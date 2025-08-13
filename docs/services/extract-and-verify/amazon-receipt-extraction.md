@@ -107,3 +107,4 @@ To upload and process identity documents using the **Amazon Receipt Extraction S
   * If errors persist, check your agent's service configuration or contact support for assistance.
 * **Performance Issues?**
   * Processing large batches may take longer. Start with smaller batches to ensure service responsiveness.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -98,3 +98,4 @@ description: >-
 * **Data Filtering:** Utilize the optional filters effectively to retrieve only the necessary documents, improving performance and reducing processing time.
 * **Data Integrity:** Ensure that the project and service IDs are valid and accessible to avoid errors during the retrieval process.
 * **Pagination:** Use the Page No and Page Size properties to manage large datasets efficiently, retrieving only the required subset of documents.
+ IgnoreCase Multiline IgnoreCase Multiline

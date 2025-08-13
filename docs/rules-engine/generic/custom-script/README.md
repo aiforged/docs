@@ -40,3 +40,4 @@
  </code></pre>
 
 For more see the information on the [BaseModule](../../../custom-code/base-module.md)
+ IgnoreCase Multiline IgnoreCase Multiline

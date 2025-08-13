@@ -34,8 +34,10 @@ Get Document Data
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (106) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%28106%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (6) (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%286%29%20%288%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

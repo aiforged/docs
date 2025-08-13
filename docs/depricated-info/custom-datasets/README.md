@@ -7,3 +7,4 @@
 * When structured data needs to be shared between multiple **Services**.
 
 A user can manage **Custom Datasets** either via the **AIForged Studio**, or by a [Custom Code](../../custom-service-code/basemodule/custom-dataset-related-methods.md) implementation.
+ IgnoreCase Multiline IgnoreCase Multiline

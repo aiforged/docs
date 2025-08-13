@@ -45,3 +45,4 @@ If you are unable to log in to AIForged, follow these steps:
      * Ensure you have previously registered with the provided email address on the AIForged platform.
      * If you have registered but are still unable to log in, use the "Forgot Password" function to reset your password.
 4. **Contact Support**: If you continue to experience issues, contact your AIForged representative for further assistance.
+ IgnoreCase Multiline IgnoreCase Multiline

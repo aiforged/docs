@@ -50,7 +50,7 @@ Follow these steps to add and configure the **Amazon OCR Service** to your agent
    * **Step 1: General Settings**\
      Configure core OCR settings such as service name and description.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](../../.gitbook/assets/Untitled.jpg)
+     ![](../../assets/Untitled.jpg)
    * **Step 2: Verification**\
      No verification is typically required for text extraction services unless paired with downstream validation.
 
@@ -175,3 +175,5 @@ Members must belong to one of the following AIForged user group roles to add and
 {% hint style="info" %}
 Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 {% endhint %}
+
+ IgnoreCase Multiline IgnoreCase Multiline

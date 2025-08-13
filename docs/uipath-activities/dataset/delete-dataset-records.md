@@ -37,3 +37,4 @@ description: Delete multiple dataset records by their key IDs.
 * **Permanent Deletion:** Be aware that deleting dataset records is usually irreversible. Confirm the action before proceeding.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application performing the deletion to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
+ IgnoreCase Multiline IgnoreCase Multiline

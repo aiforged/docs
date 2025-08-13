@@ -24,8 +24,10 @@ Get Document Images
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%282%29%20%286%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (12) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2812%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

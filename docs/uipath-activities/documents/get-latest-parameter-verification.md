@@ -39,3 +39,4 @@ description: >-
 * **Data Integrity:** Ensure that the document ID and any specified parameter or definition IDs are valid and accessible to avoid errors during the retrieval process.
 * **Optional Parameters:** You can choose to specify either a document parameter ID or a parameter definition ID to narrow the search for verification data. If both are provided, the system will use the most specific filter available.
 * **Further Processing:** The resulting`VerificationViewModel`can be used for further processing, analysis, or reporting within your workflow.
+ IgnoreCase Multiline IgnoreCase Multiline

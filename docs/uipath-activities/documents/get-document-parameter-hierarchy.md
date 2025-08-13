@@ -41,3 +41,4 @@ description: Retrieve the full document parameter hierarchy for a given document
 * **Data Integrity:** Ensure that the document ID and service ID are valid and accessible to avoid errors during the retrieval process.
 * **Optional Filters:** Use the optional filters to tailor the retrieval process to your specific needs, such as including verification data or focusing on a specific page.
 * **Performance:** The execution time may vary depending on the size and complexity of the document and its parameters. Ensure the system is configured to handle the expected load efficiently.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -36,7 +36,7 @@ To upload a new profile picture
 
 1. Click on your profile icon or drag and drop an image over your profile icon.
 
-<div align="left"><figure><img src=".gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="assets/image%20%2836%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
 ## Security
 
@@ -44,15 +44,15 @@ To upload a new profile picture
 
 You can change your password in the **Password** card. Simply follow the prompts, complete the necessary details (old password, new password and security check) and click on **Save**.
 
-<div align="left"><figure><img src=".gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="assets/image%20%2839%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src=".gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="assets/image%20%2840%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
 ### Login Providers
 
 If you have logged in with any of the available external login providers, then they will be listed in the Login Providers card, with the option to unlink a provider.
 
-<div align="left"><figure><img src=".gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="assets/image%20%2837%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
 #### Available External Login Providers:
 
@@ -95,12 +95,14 @@ Notifications are sent on an **OPT-IN** basis
 
 ### Example
 
-<figure><img src=".gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/image%20%2868%29.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ## Studio Preferences
 
 Studio preferences allow you to customise various aspects of the UI, such as default filter ranges, and default behaviours for certain views and dialogs.
 
-<figure><img src=".gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/image%20%2843%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -41,3 +41,4 @@ description: Export a document's extraction results to a list of DataTable.
 * **Data Selection:** Ensure that the document IDs, project ID, and service ID are accurate and accessible to avoid errors during the export process.
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
 * **Data Handling:** The resulting DataTables can be used for further processing, analysis, or reporting within your workflow, providing a structured format for the extracted data.
+ IgnoreCase Multiline IgnoreCase Multiline

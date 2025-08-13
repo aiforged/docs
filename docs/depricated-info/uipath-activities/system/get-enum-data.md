@@ -20,8 +20,10 @@ Get Enum Data
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (37) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2837%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (31) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2831%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

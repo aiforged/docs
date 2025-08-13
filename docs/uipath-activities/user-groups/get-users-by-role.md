@@ -29,3 +29,4 @@ description: Retrieve the users associated with a specified role.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the users to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Role Scope:** The activity retrieves all users within the specified role, facilitating operations that require access to role-based user information.
+ IgnoreCase Multiline IgnoreCase Multiline

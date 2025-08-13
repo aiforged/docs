@@ -42,3 +42,4 @@ description: Retrieve all events for a specified service within a specified time
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the events to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Event Analysis:** Use the retrieved event information for monitoring, analysis, or reporting purposes within your workflow.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -20,6 +20,8 @@ Get Data Types
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%289%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
+
+ IgnoreCase Multiline IgnoreCase Multiline

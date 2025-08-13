@@ -66,3 +66,4 @@ The available methods are organized into the following functional groups:
 ***
 
 If you need help with a specific method, or want a deep dive into a particular workflow, just check the subpages—or reach out to the AIForged team for tailored support!
+ IgnoreCase Multiline IgnoreCase Multiline

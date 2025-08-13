@@ -13,3 +13,4 @@ The User Groups activities of the AIForged UiPath Activities provides a comprehe
 * **Performance Considerations**: While user groups activities are designed for efficiency, managing a large number of groups or roles may impact performance. Users are encouraged to utilize best practices for group management to optimize resource usage and maintain responsive workflows.
 
 By incorporating user groups activities into your UiPath workflows, you can enhance your ability to manage team structures, enforce security policies, and ensure effective collaboration, driving improved operational efficiency and organizational alignment.
+ IgnoreCase Multiline IgnoreCase Multiline

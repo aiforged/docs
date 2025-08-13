@@ -40,3 +40,4 @@ description: Returns the shred image for a given verification.
 * **Data Integrity:** Ensure that the document ID, parameter ID, and verification ID are valid and accessible to avoid errors during the retrieval process.
 * **Inline Option:** The`Inline`property determines how the image is returned. Ensure this is configured according to your workflow's requirements.
 * **Further Processing:** The resulting`FileResponse`can be used for further processing, analysis, or display within your workflow, depending on how the shred image is intended to be utilized.
+ IgnoreCase Multiline IgnoreCase Multiline

@@ -29,3 +29,4 @@ description: Retrieve the service charges for a specified service.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the service charges to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Charge Information:** Use the retrieved charge information for financial analysis, billing, or cost management purposes within your workflow.
+ IgnoreCase Multiline IgnoreCase Multiline

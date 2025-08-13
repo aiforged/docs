@@ -14,3 +14,4 @@
 | Source id   | Displays the current Source id                 |
 | Result Type | Displays the result tyype                      |
 | Result Id   | Displays the result id                         |
+ IgnoreCase Multiline IgnoreCase Multiline

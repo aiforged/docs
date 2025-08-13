@@ -34,8 +34,10 @@ Create Verification
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (107) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%28107%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (82) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2882%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

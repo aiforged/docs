@@ -34,7 +34,7 @@ All delete requests are logged and available on the audit view
 
 Each service has an archiving strategy that can be configured to automatically soft delete documents older than a specified age.
 
-<div align="left"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../assets/image%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="warning" %}
 The archiving strategy will soft delete documents for 30 days, before automatically hard deleting them
@@ -57,3 +57,5 @@ Information kept in the audit view includes:
 * Document Category
 * File Type
 
+
+ IgnoreCase Multiline IgnoreCase Multiline

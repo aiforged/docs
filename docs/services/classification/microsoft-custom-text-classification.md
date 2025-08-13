@@ -125,3 +125,4 @@ Follow these steps to add and configure the Microsoft Custom Text Classification
 * **OCR Issues:**
   * If text extraction is poor, try a different OCR engine or adjust OCR settings.
   * Use clear, high-quality source documents for best OCR accuracy.
+ IgnoreCase Multiline IgnoreCase Multiline

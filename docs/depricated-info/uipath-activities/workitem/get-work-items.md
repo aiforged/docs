@@ -50,8 +50,10 @@ Create Work Item
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (95) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2895%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (18) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image%20%2818%29%20%287%29.png" alt=""><figcaption></figcaption></figure>
+
+ IgnoreCase Multiline IgnoreCase Multiline

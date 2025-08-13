@@ -20,3 +20,4 @@ The AIForged API endpoints can be accessed via the OpenAPI / Swagger pages avail
 * [https://portal.aiforged.com/swagger](https://portal.aiforged.com/swagger)
 * [https://dev.aiforged.com/swagger](https://app.gitbook.com/o/9rG3KVbeO8AwmuvAW3UX/s/b9yHiim3e00taqY3rkcs/)
 * [https://sandbox.aiforged.com/swagger](https://sandbox.aiforged.com/swagger)
+ IgnoreCase Multiline IgnoreCase Multiline

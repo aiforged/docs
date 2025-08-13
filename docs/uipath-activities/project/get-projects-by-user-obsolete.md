@@ -28,3 +28,4 @@ This activity does not require any input properties, as it operates based on the
 * **User Context:** Ensure that the API context is correctly initialized and that the current user is authenticated to retrieve the projects.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the projects to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or unexpected API responses.
+ IgnoreCase Multiline IgnoreCase Multiline
