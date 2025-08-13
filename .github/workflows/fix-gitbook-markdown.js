@@ -142,7 +142,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
 
     // Remove newlines and spaces before <div> and after </div> globally (not just in lists)
     content = content.replace(/[\r\n]+\s*<div>/g, ' <div>');
-    content = content.replace(/<\/div>\s*[\r\n]+/g, '</div> ');
+    //content = content.replace(/<\/div>\s*[\r\n]+/g, '</div> ');
 
     // Remove newlines just after <figure> and just before </figure>
     content = content.replace(/<figure>\s+/g, '<figure>');
@@ -150,7 +150,7 @@ glob.sync('**/*.md', { ignore: '**/node_modules/**' }).forEach(file => {
 
     // Remove newlines and spaces before <figure> and after </figure> globally (not just in lists)
     content = content.replace(/[\r\n]+\s*<figure>/g, ' <figure>');
-    content = content.replace(/<\/figure>\s*[\r\n]+/g, '</figure> ');
+    //content = content.replace(/<\/figure>\s*[\r\n]+/g, '</figure> ');
 
     // Write file if changed and log details
     if (fileChanged) {
