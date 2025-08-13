@@ -40,21 +40,21 @@ Follow these steps to add and configure the Microsoft Object Detection service t
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft Object Detection Service**\
-   Click the **Add Service** ![](../../.gitbook/assets/image.png) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (3).png>) button.
 3. **Select Service Type**\
    Choose **Microsoft Object Detection Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (1).png>)
+   ![](<../../.gitbook/assets/image (4).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
       2.
 
-          <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
    2. **Step 1: General Settings** Configure the service settings.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-      ![](<../../.gitbook/assets/image (4).png>)
+      ![](<../../.gitbook/assets/image (7).png>)
    3. **Step 2: Verification** No verification required for basic detection.
 
 ***
@@ -105,7 +105,7 @@ To upload and process documents using the Microsoft Object Detection Service:
    When you open the Microsoft Object Detection Service, you will be presented with the documents currently queued or processed in the Inbox.
 2. **Upload Documents**\
    Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid. \
-   ![](<../../.gitbook/assets/image (5).png>)
+   ![](<../../.gitbook/assets/image (8).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 4. **Process Documents**\

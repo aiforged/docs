@@ -42,7 +42,7 @@ Follow these steps to add and configure the Google Object Detection service to y
    Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button in the command bar.
 3. **Select Service Type**\
    Choose **Google Object Detection Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (6).png>)
+   ![](<../../.gitbook/assets/image (9).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
    2. **Step 1: Service Config** \
@@ -98,7 +98,7 @@ To upload and process documents using the Google Object Detection service:
    When you open the service, you will see documents currently queued or processed in the **Inbox**.
 2. **Upload Documents**\
    Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (7).png>)
+   ![](<../../.gitbook/assets/image (10).png>)
 3. **Select Category (Optional)**\
    Select a category if desired; otherwise, select **No category**.
 4. **Process Documents**\

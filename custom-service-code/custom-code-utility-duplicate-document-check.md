@@ -49,12 +49,12 @@ Note: MD5 is adequate for duplicate detection in most business contexts. For str
 
 ### Step 1 — Add the Custom Code Utility
 
-1. Open the Service Flow Configurator for the Email Scraping service by clicking on the **Open Service Flow Configurator** ![](<../.gitbook/assets/image (9).png>) button.\
-   ![](<../.gitbook/assets/image (8).png>)
-2. Expand the Utilities service group.\
-   ![](<../.gitbook/assets/image (10).png>)
-3. Drag the **Custom Code** service type card over the **Attachment Service** card, then to the **Post-Processor** drop point.\
+1. Open the Service Flow Configurator for the Email Scraping service by clicking on the **Open Service Flow Configurator** ![](<../.gitbook/assets/image (12).png>) button.\
    ![](<../.gitbook/assets/image (11).png>)
+2. Expand the Utilities service group.\
+   ![](<../.gitbook/assets/image (13).png>)
+3. Drag the **Custom Code** service type card over the **Attachment Service** card, then to the **Post-Processor** drop point.\
+   ![](<../.gitbook/assets/image (14).png>)
 4. Save.
 
 {% hint style="info" %}
@@ -66,26 +66,26 @@ Recommendation: Position this Custom Code utility as a post-processor (execute a
 ### Step 2 — Create the “Duplicate History” Custom Dataset
 
 1. Open the **Parameter Definitions** dialog of the new **Custom Code** utility service.\
-   ![](<../.gitbook/assets/image (12).png>)
-2. Click on the **Create Custom Dataset** ![](<../.gitbook/assets/image (13).png>) button.
+   ![](<../.gitbook/assets/image (15).png>)
+2. Click on the **Create Custom Dataset** ![](<../.gitbook/assets/image (16).png>) button.
 3. Enter **Duplicate History** in the **Name** field and add the following two columns:
    1. MD5Hash (ValueType: String)
    2. DocumentId (ValueType: String)
 4. Click **Create** to persist the dataset schema.\
-   ![](<../.gitbook/assets/image (14).png>)
+   ![](<../.gitbook/assets/image (17).png>)
 
 Your dataset should now appear in the **Service Parameter Definitions** dialog:\
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (18).png>)
 
 ***
 
 ### Step 3 — Add the Custom Code
 
 1. Close the **Service Parameter Definitions** dialog and click the Code button on the nested **Custom Code** service card.\
-   ![](<../.gitbook/assets/image (16).png>)\
+   ![](<../.gitbook/assets/image (19).png>)\
 
 2. Select CSharp as Code Language.\
-   ![](<../.gitbook/assets/image (17).png>)
+   ![](<../.gitbook/assets/image (20).png>)
 3. Paste the reference implementation below into the editor.
 
 #### Reference Implementation
@@ -314,7 +314,7 @@ To compute MD5, add this assembly to the Custom Code “Assemblies” list:
 
 * `System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -324,13 +324,13 @@ To compute MD5, add this import to the Custom Code “Imports” list:
 
 * `System.Security.Cryptography`
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Step 7 — Save Your Code
 
-Click the **Save** ![](<../.gitbook/assets/image (21).png>) button or use the key combination **Ctrl+S** regularly to persist changes.
+Click the **Save** ![](<../.gitbook/assets/image (24).png>) button or use the key combination **Ctrl+S** regularly to persist changes.
 
 ***
 

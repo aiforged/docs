@@ -1,8 +1,4 @@
----
-icon: check-double
----
-
-# Field Rules (Rules Engine)
+# 📑 Field Rules (Rules Engine)
 
 After data has been extracted by a **Service** from a document, the **AIForged Rules Engine** is invoked to validate the OCR text returned. A certain **Rule Type** can be applied to a field on a document to trigger manual **Human-in-the-Loop** intervention when the OCR test does not meet the conditions of the **Rule**. A **Rule** can also be used to correct the OCR text (such as converting letters to a corresponding number where a number is expected) or matching format patterns (such as matching date patterns containing special characters like '/' or '-', or e-mail addresses expecting characters like '@' and '.').
 

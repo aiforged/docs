@@ -54,9 +54,9 @@ The search functionality only searches for documents on the current page
 
     <figure><img src="../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Open the document on the OS.\
-  ![](<../.gitbook/assets/image (23) (1) (1).png>)
+  ![](<../.gitbook/assets/image (23) (1) (1) (1).png>)
 * Download the document to your local disk.\
-  ![](<../.gitbook/assets/image (24) (1) (1).png>)
+  ![](<../.gitbook/assets/image (24) (1) (1) (1).png>)
 * View the document hierarchy.\
   ![](<../.gitbook/assets/image (54) (1).png>)
 * View the document's structured results (**Extract & Verify** services only).\
@@ -64,7 +64,7 @@ The search functionality only searches for documents on the current page
 * Open document verification audit trail (**Extract & Verify** services only).\
   ![](<../.gitbook/assets/image (56) (1).png>)
 * Open document logs.\
-  ![](<../.gitbook/assets/image (25) (1) (1).png>)
+  ![](<../.gitbook/assets/image (25) (1) (1) (1).png>)
 
 ### Sort the Documents grid
 

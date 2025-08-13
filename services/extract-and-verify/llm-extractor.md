@@ -50,13 +50,13 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
    Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **LLM Extractor** from the available service types.\
-   ![](<../../.gitbook/assets/image (23).png>)
+   ![](<../../.gitbook/assets/image (23) (1).png>)
 4.  **Configure the Service Wizard**\
     Open the Service Configuration Wizard.\
-    ![](<../../.gitbook/assets/image (24).png>)\
+    ![](<../../.gitbook/assets/image (24) (1).png>)\
     or
 
-    <figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Step 1: General Settings**\
       Configure core settings such as service enablement, parallel prompt execution, and connection details for your LLM provider (e.g., Azure OpenAI).\

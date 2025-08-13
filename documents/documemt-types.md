@@ -1,27 +1,66 @@
-# ℹ️ Documemt Types
+# ℹ️ Document Types
 
-## Types of documents
+### Types of documents
 
-It's possible to categorise documents into 3 distinct types: structured, semi-structured, and unstructured. Each type of document comes with its own set of challenges.
+It’s possible to categorize documents into three distinct types: structured, semi-structured, and unstructured. Each type comes with its own extraction challenges and typically benefits from different AI approaches.
 
 {% hint style="info" %}
-It is important to identify the type of document first, and then choose an appropriate [AI service](../services/)
+Identify the document type first, then choose an appropriate [AI service](https://0.0.0.0/services/) and configuration to maximize accuracy and speed.
 {% endhint %}
 
 ### Structured documents
 
-Structured documents generally focus on collecting information in a precise format, guiding the person who is filling them in, with precise fields where each piece of data needs to be entered.
+Structured documents present information in a fixed, predictable layout with clearly defined fields (often with boxes, labels, and consistent positions). Because their format is standardized, they lend themselves to high-precision extraction with minimal ambiguity.
 
-<figure><img src="../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* Characteristics:
+  * Fixed templates and layouts
+  * Clearly labeled fields and stable positions
+  * Minimal visual or textual variability between instances
+* Common examples:
+  * Application forms, standardized claim forms, registration forms
+* Typical challenges:
+  * Low-quality scans or skewed images can reduce detection accuracy
+  * Handwritten entries may require specialized OCR or handwriting models
+* Tips:
+  * Use high-quality scans or digital originals
+  * If handwriting is present, enable selection marks/handwriting options where available
 
-### Semi-structured
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Semi-structured documents are documents that do not follow a strict format the way structured forms do and are not bound to specified data fields. These don't have a fixed form but follow a common format. A good example of a semi-structured document is an invoice. Where the layout can differ from vendor to vendor, but the expected information and location of information remains relatively the similar.
+### Semi-structured documents
 
-<figure><img src="../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Semi-structured documents don’t follow a single rigid template, but they do follow common patterns. Core fields are consistent conceptually (e.g., “Invoice Number,” “Total,” “Date”), yet their positions, labels, and formats can vary by issuer or layout. Extraction for this class typically benefits from pretrained models that learn the “concepts” rather than fixed coordinates.
 
-#### Unstructured
+* Characteristics:
+  * Repeating concepts with variable positions and labels
+  * Moderate layout diversity across sources/vendors
+  * Tables and line items are common
+* Common examples:
+  * Invoices, receipts, purchase orders, statements
+* Typical challenges:
+  * Field labels vary (e.g., “Invoice #”, “Inv No.”, “Bill No.”)
+  * Line items may appear in different table shapes or across multiple pages
+* Tips:
+  * Use services trained for invoices/receipts to handle variability
+  * For tables, enable table detection and verify column mapping
 
-Unstructured documents are documents in which the information isn't organized according to a clear, structured model and can differ from document to document. A good example of an unstructured document is a contract or policy schedule.
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Unstructured documents
+
+Unstructured documents contain rich free-form text with little to no consistent layout or fixed fields. Valuable information may be embedded in paragraphs, clauses, or mixed content. These require layout-aware OCR coupled with semantic understanding or targeted rules.
+
+* Characteristics:
+  * Free-form text; minimal consistent structure
+  * Information is context-dependent and dispersed
+  * High variability between documents
+* Common examples:
+  * Contracts, policies, letters, emails, reports
+* Typical challenges:
+  * Key data resides in narrative text rather than labeled fields
+  * Requires semantic parsing, entity recognition, or custom rules
+* Tips:
+  * Start with robust OCR/layout extraction
+  * Apply targeted extraction rules, NLP, or verification to pinpoint entities and clauses
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

@@ -67,11 +67,11 @@ To upload and process documents using the Clustering Service:
 
     \
     Click the **Upload** ![](<../../.gitbook/assets/image (20) (1) (1) (1).png>) button or drag and drop files over the document grid.\
-    ![](<../../.gitbook/assets/image (23) (1).png>)
+    ![](<../../.gitbook/assets/image (23) (1) (1).png>)
 3. **Choose Category (Optional)**\
    If you already know the document category, select it. Otherwise, select **No category**.
 4. **Process Documents**\
-   After uploading, check the documents to be processed and click on the **Process** ![](<../../.gitbook/assets/image (24) (1).png>) button.
+   After uploading, check the documents to be processed and click on the **Process** ![](<../../.gitbook/assets/image (24) (1) (1).png>) button.
 
 {% hint style="info" %}
 It is recommended to process a small batch first, especially if this is a new service, to validate results before full-scale processing.
@@ -82,5 +82,5 @@ It is recommended to process a small batch first, especially if this is a new se
 ### View Processed Documents
 
 * In the Clustering Service, change the usage filter to **Outbox**.\
-  ![](<../../.gitbook/assets/image (25) (1).png>)
+  ![](<../../.gitbook/assets/image (25) (1) (1).png>)
 * Open any processed document to view clustering results and perform verification.

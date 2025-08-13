@@ -44,7 +44,7 @@ Follow these steps to add and configure the **Custom Invoices** service to your 
    Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Document Intelligence – Custom Invoices** from the available service types.\
-   ![](<../../.gitbook/assets/image (22).png>)
+   ![](<../../.gitbook/assets/image (25).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
    ![](<../../.gitbook/assets/image (1) (1).png>)\
