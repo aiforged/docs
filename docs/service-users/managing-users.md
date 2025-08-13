@@ -11,29 +11,29 @@ Effectively managing members within roles is crucial for maintaining secure and 
 
 **Steps to Add a Member to a Role**
 
-1.  **Navigate to Organisations**\
+1.  **Navigate to Organisations**
     Go to the **Organisations** section in AIForged.
 
     <div align="left"><figure><img src="../assets/image%20%2898%29.png" alt=""><figcaption></figcaption></figure></div>
-2.  **Select the Group**\
+2.  **Select the Group**
     Find and select the group containing the role you want to manage. Click on its name to open the management view.
 
     <div align="left"><figure><img src="../assets/image%20%2899%29.png" alt=""><figcaption></figcaption></figure></div>
-3.  **Select the Role**\
+3.  **Select the Role**
     Click on the role to which you want to add members. This will open the role management view.
 
     <div align="left"><figure><img src="../assets/image%20%28100%29.png" alt=""><figcaption></figcaption></figure></div>
-4.  **Open the Add Member Dialog**\
+4.  **Open the Add Member Dialog**
     Click the ![](../assets/image%20%28101%29.png) button to open the member dialog.
 
     <div align="left"><figure><img src="../assets/image%20%28102%29.png" alt=""><figcaption></figcaption></figure></div>
-5. **Choose How to Add a Member**\
+5. **Choose How to Add a Member**
    You have three options for linking a member to a role:
    * **Link an Existing Member from the Current Tenant Group:**
      * Ensure the **Search Tenant Members** tab is selected.
      * Enter the member’s name or email address to search.
      * Select the member to link and click **Add**.
-     *   This will queue the member to be linked; they will be added once you click **Save**.\
+     *   This will queue the member to be linked; they will be added once you click **Save**.
          &#xNAN;_&#x54;ip: Screenshot of the Search Tenant Members tab._
 
          <figure><img src="../assets/image%20%28103%29.png" alt=""><figcaption></figcaption></figure>
@@ -56,7 +56,7 @@ Effectively managing members within roles is crucial for maintaining secure and 
      *   The member will be queued for creation and linking; you may receive a security prompt when you click **Save**.
 
          <figure><img src="../assets/image%20%28106%29.png" alt=""><figcaption></figcaption></figure>
-6.  **Save Changes**\
+6.  **Save Changes**
     Click **Save** to finalize the addition of all queued members to the role.
 
     <figure><img src="../assets/image%20%28107%29.png" alt=""><figcaption></figcaption></figure>
@@ -69,29 +69,29 @@ Removing a member from a role will immediately revoke their access to the associ
 
 **Steps to Remove a Member from a Role**
 
-1.  **Navigate to Organisations**\
+1.  **Navigate to Organisations**
     Go to the **Organisations** section in AIForged.
 
     <div align="left"><figure><img src="../assets/image%20%2898%29.png" alt=""><figcaption></figcaption></figure></div>
-2.  **Select the Group**\
+2.  **Select the Group**
     Find and select the group containing the relevant role.
 
     <div align="left"><figure><img src="../assets/image%20%2899%29.png" alt=""><figcaption></figcaption></figure></div>
-3.  **Select the Role**\
+3.  **Select the Role**
     Click on the role from which you want to remove members to open the role management view.
 
     <div align="left"><figure><img src="../assets/image%20%28100%29.png" alt=""><figcaption></figcaption></figure></div>
-4.  **Find the Member**\
+4.  **Find the Member**
     Use the search function or scroll to locate the member you wish to remove.
 
     <div align="left"><figure><img src="../assets/image%20%28109%29.png" alt=""><figcaption></figcaption></figure></div>
-5.  **Open the Member Options**\
-    Click the **More options** action button next to the member’s name.\
+5.  **Open the Member Options**
+    Click the **More options** action button next to the member’s name.
 
 
     <div align="left"><figure><img src="../assets/image%20%28110%29.png" alt=""><figcaption></figcaption></figure></div>
-6.  **Select Remove**\
-    Click the **Remove or Unlink** option to remove the member from the role.\
+6.  **Select Remove**
+    Click the **Remove or Unlink** option to remove the member from the role.
 
 
     <div align="left"><figure><img src="../assets/image%20%28111%29.png" alt=""><figcaption></figcaption></figure></div>
@@ -112,5 +112,6 @@ Removing a member from a role will immediately revoke their access to the associ
 ***
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

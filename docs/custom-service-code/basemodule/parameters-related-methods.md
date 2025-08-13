@@ -8,7 +8,7 @@ These methods let you find and work with Parameter Definitions (fields/labels) a
 
 #### FindParameterDef (by ID)
 
-Signature: \
+Signature:  
 `FindParameterDef(int id) : IParameterDef`
 
 Description: Returns a parameter definition (field/label/setting) by its unique ID.
@@ -35,7 +35,7 @@ Tip:
 
 #### FindParameterDef (by name with optional filters)
 
-Signature: \
+Signature:  
 `FindParameterDef( string name, int? parentId = null, int? classId = null, List<ParameterDefinitionCategory?> categories = null, List<GroupingType?> grouping = null, List<ValueType?> vtypes = null ) : IParameterDef`
 
 Description: Finds a parameter definition by name with optional filters (parent, class, category, grouping, value types) to disambiguate similarly named fields.
@@ -70,7 +70,7 @@ Tip:
 
 #### FindParameterDef (by name within a service)
 
-Signature: \
+Signature:  
 `FindParameterDef( string name, int stpdId, int? parentId = null, int? classId = null, List<ParameterDefinitionCategory?> categories = null, List<GroupingType?> grouping = null, List<ValueType?> vtypes = null ) : IParameterDef`
 
 Description: Finds a parameter definition by name scoped to a specific service definition (stpdId), with optional filters.
@@ -106,7 +106,7 @@ Tip:
 
 #### FindSetting (by name)
 
-Signature: \
+Signature:  
 `FindSetting(string name) : IParameterDef`
 
 Description: Finds a service setting by name in the current context.
@@ -133,7 +133,7 @@ Tip:
 
 #### FindSetting (by service definition + parent)
 
-Signature: \
+Signature:  
 `FindSetting(IParameterDef stpd, string name, int? parentId) : IParameterDef`
 
 Description: Finds a setting by name within a specific service definition (stpd) and optional parent container.
@@ -160,7 +160,7 @@ Tip:
 
 #### CopyDocument
 
-Signature: \
+Signature:  
 `CopyDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null) : IDocument`
 
 Description: Copies a document to another service, optionally setting status/usage and adjusting category.
@@ -184,7 +184,7 @@ Tip:
 
 #### MoveDocument
 
-Signature: \
+Signature:  
 `MoveDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null) : IDocument`
 
 Description: Moves a document to another service and removes it from the source.
@@ -208,7 +208,7 @@ Tip:
 
 #### CloneDocumentForTraining
 
-Signature: \
+Signature:  
 `CloneDocumentForTraining(IDocument doc) : IDocument`
 
 Description: Clones a document into a service’s training box.
@@ -232,7 +232,7 @@ Tip:
 
 #### CheckIfDocumentAlreadyInTrainingBox
 
-Signature: \
+Signature:  
 `CheckIfDocumentAlreadyInTrainingBox(IDocument doc) : bool`s
 
 Description: Checks whether a document has already been added to a service’s training box.
@@ -274,3 +274,4 @@ Tip:
 * Q: Why are Copy/Move/Clone methods listed here?
   * A: They’re commonly executed soon after resolving definitions/settings when orchestrating cross-service flows; including them here reflects typical usage patterns
  IgnoreCase Multiline IgnoreCase Multiline
+

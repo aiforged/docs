@@ -48,7 +48,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service. \
+2. Click the Add Service dropdown and select Utility Service.  
    ![](../../assets/image%20%28288%29.png)
 3. Choose **Move Documents**.
 4. In the utility’s settings, specify when it should run:
@@ -183,5 +183,6 @@ The Move Documents utility is highly configurable to fit your workflow needs. Be
 * **How do I verify moves?**
   * Check the destination service’s Inbox/Outbox; the document will not be in the source.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

@@ -10,7 +10,7 @@ These methods help you select assignees, measure performance, and create Human-i
 
 #### PickRandom
 
-Signature: \
+Signature:  
 `IProjectUser PickRandom(List<IProjectUser> projectUsers, string excludeUserId)`
 
 Description: Picks a random project user from the provided list, excluding the specified user ID if provided.
@@ -39,7 +39,7 @@ Tip:
 
 #### GetUserKpi
 
-Signature: \
+Signature:  
 `object GetUserKpi(WorkItemType type, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus status, WorkItemAction action)`\
 `object GetUserKpi(int projectId, int groupId, WorkItemType type, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus status, WorkItemAction action)`
 
@@ -73,7 +73,7 @@ Tip:
 
 #### GetHighThroughputUserId
 
-Signature: \
+Signature:  
 `string GetHighThroughputUserId(DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus status)`\
 `string GetHighThroughputUserId(int projectId, int groupId, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus status)`\
 `string GetHighThroughputUserId(string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus? status = null)`\
@@ -111,7 +111,7 @@ Tip:
 
 #### GetIdleUserId
 
-Signature: \
+Signature:  
 `string GetIdleUserId(WorkItemType type, WorkItemAction action, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus? status = null)`\
 `string GetIdleUserId(int projectId, int groupId, WorkItemType type, WorkItemAction action, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus? status = null)`\
 `string GetIdleUserId(WorkItemType type, string excludeUserId, WorkItemAction action, WorkItemStatus? status = null)`\
@@ -149,7 +149,7 @@ Tip:
 
 #### CreateWorkItem
 
-Signature: \
+Signature:  
 `string CreateWorkItem(IProjectUser pu, WorkItemType type, WorkItemStatus status, WorkItemAction action, WorkItemMethod method, TimeSpan graceperiod, int? serviceId, int? documentId, int? shredId, int? defId, int? transactionId, int? verificationId, int? workItemId, string info, string comment, WorkItemReason? reason = null, int? reasonLookup = null, int? reasonRecord = null, string reasonCode = null, string reasonDescription = null, string reasonComment = null)`
 
 Description: Creates a new work item for the specified user and context; returns the assigned user ID.
@@ -221,3 +221,4 @@ Tip:
 * Q: What if no eligible user is found?
   * A: Fall back to PickRandom from a broader pool, or queue for auto-assignment when a user becomes available.
  IgnoreCase Multiline IgnoreCase Multiline
+

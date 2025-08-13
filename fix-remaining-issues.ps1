@@ -1,66 +1,101 @@
-# Map GitBook types to MkDocs admonition types
-function Map-Type([string]$t) {
-  switch ($t.ToLower()) {
-    'note'      { 'note' }
-    'info'      { 'info' }
-    'tip'       { 'tip' }
-    'success'   { 'success' }
-    'warning'   { 'warning' }
-    'important' { 'warning' }   # no native 'important' -> warning
-    'danger'    { 'danger' }
-    'error'     { 'danger' }
-    default     { 'note' }
-  }
-}
-
-# Indent block content by 4 spaces for admonition body
-function Indent-Block([string]$s) {
-  $lines = $s -split '\r?\n'
-  $indented = $lines | ForEach-Object {
-    if ([string]::IsNullOrEmpty($_)) { '    ' } else { '    ' + $_ }
-  }
-  return ($indented -join "`n")
-}
+# CONFIG
+# Only adjust inside list items and their continuations (recommended)
+$OnlyInLists = $true
 
 $docsRoot = (Resolve-Path -LiteralPath "docs").Path
 $changed = $false
-$totalConverted = 0
+$filesChanged = 0
 
-# Regex options: IgnoreCase + Singleline (dot matches newlines) + Multiline not needed
-$opts = [System.Text.RegularExpressions.RegexOptions]::IgnoreCase -bor `
-        [System.Text.RegularExpressions.RegexOptions]::Singleline
+# Regex helpers
+# Fenced code blocks (``` or ~~~)
+$rxFence = '^\s*(```|~~~)'
+# List starts: "- ", "* ", "+ ", or "1. "
+$rxListStart = '^\s*(?:[-*+]\s|\d+\.\s)'
+# Continuation lines: at least 2 leading spaces with non-space
+$rxListCont  = '^\s{2,}\S'
+
+# Lines that are ONLY slash markers, possibly spaced: "\" or "/ /" (keep indentation as empty line)
+$rxOnlyMarkers = '^\s*(?:[\/\\](?:\s+[\/\\])*)\s*$'
+
+# Trailing markers at EOL (allow no space before markers):
+# Keep group 'keep' (everything before markers), drop markers (slashes and spaces)
+$rxTrailingMarkers = '^(?<keep>.*?)(?<markers>(?:[\/\\](?:\s+[\/\\])*)\s*)$'
 
 Get-ChildItem -Path $docsRoot -Recurse -Filter *.md -File | ForEach-Object {
-  $path = $_.FullName
-  $text = Get-Content -Raw -LiteralPath $path -Encoding utf8
-  $out  = $text
+  $p = $_.FullName
+  $raw = Get-Content -Raw -LiteralPath $p -Encoding utf8
 
-  # 1) {% hint style="info" %} ... {% endhint %}  (accepts " or ' quotes)
-  $rxHint = New-Object System.Text.RegularExpressions.Regex `
-    '{%\s*hint\s+style\s*=\s*["'']([^"''\r\n]+)["'']\s*%}\s*(.*?)\s*{%\s*endhint\s*%}', $opts
+  # Preserve original line endings
+  $useCRLF = $raw -match "`r`n"
+  $lines   = $raw -split '\r?\n'
+  $out     = New-Object System.Collections.Generic.List[string]
 
-  $out = $rxHint.Replace($out, {
-    param($m)
-    $kind = Map-Type $m.Groups[1].Value
-    $body = Indent-Block $m.Groups[2].Value
-    "!!! $kind`n$body"
-  })
+  $inFence = $false
+  $inList  = $false
+  $touched = $false
 
-  # 2) {% note %}...{% endnote %}, {% warning %}...{% endwarning %}, etc.
-  $rxSimple = New-Object System.Text.RegularExpressions.Regex `
-    '{%\s*(note|info|tip|success|warning|important|danger|error)\s*%}\s*(.*?)\s*{%\s*end\1\s*%}', $opts
+  for ($i = 0; $i -lt $lines.Count; $i++) {
+    $line = $lines[$i]
 
-  $out = $rxSimple.Replace($out, {
-    param($m)
-    $kind = Map-Type $m.Groups[1].Value
-    $body = Indent-Block $m.Groups[2].Value
-    "!!! $kind`n$body"
-  })
+    # Toggle fence state
+    if ($line -match $rxFence) { $inFence = -not $inFence }
 
-  if ($out -ne $text) {
-    Set-Content -LiteralPath $path -Value $out -Encoding utf8
-    Write-Host "Converted GitBook hints to admonitions in: $path"
-    $changed = $true
-    $totalConverted++
+    # Track list context (outside fences)
+    if (-not $inFence) {
+      if ($line -match $rxListStart) {
+        $inList = $true
+      } elseif ([string]::IsNullOrWhiteSpace($line)) {
+        $inList = $false
+      } elseif ($line -match $rxListCont) {
+        # continuation keeps inList as-is
+      } else {
+        $inList = $false
+      }
+    }
+
+    # Skip within fenced code blocks
+    if ($inFence) {
+      $out.Add($line)
+      continue
+    }
+
+    # If limiting scope to lists and we're not in a list, pass through
+    if ($OnlyInLists -and -not $inList) {
+      $out.Add($line)
+      continue
+    }
+
+    # Case 1: line is ONLY markers -> convert to a blank line
+    if ($line -match $rxOnlyMarkers) {
+      $out.Add('')
+      $touched = $true
+      continue
+    }
+
+    # Case 2: trailing markers at end of a content line (no space required before markers)
+    if ($line -match $rxTrailingMarkers) {
+      $keep = $Matches['keep']
+
+      # If there were any markers removed, write the cleaned line
+      if ($keep -ne $line) {
+        $out.Add($keep)
+        $touched = $true
+        continue
+      }
+    }
+
+    # Default: unchanged
+    $out.Add($line)
+  }
+
+  if ($touched) {
+    $joiner = $useCRLF ? "`r`n" : "`n"
+    $newText = [string]::Join($joiner, $out)
+    if ($newText -ne $raw) {
+      Set-Content -LiteralPath $p -Value $newText -Encoding utf8
+      Write-Host "Normalized GitBook slash breaks in: $p"
+      $changed = $true
+      $filesChanged++
+    }
   }
 }

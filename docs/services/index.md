@@ -10,17 +10,17 @@ AI services in AIForged are specialized processing engines—either first-party 
 
 AIForged offers a variety of AI services, each tailored for specific functions:
 
-* **Scrapers**\
+* **Scrapers**
   Extract documents or data from specified sources (e.g., mailboxes, folders, cloud storage).
-* **Classifiers**\
+* **Classifiers**
   Identify and classify the type or category of each page or document.
-* **Extractors and Verifiers**\
+* **Extractors and Verifiers**
   Extract targeted information from documents and verify its accuracy and validity.
-* **OCR (Optical Character Recognition)**\
+* **OCR (Optical Character Recognition)**
   Convert images or scanned documents into machine-readable text.
-* **Object Detection**\
+* **Object Detection**
   Identify and locate objects within images.
-* **Speech Recognition**\
+* **Speech Recognition**
   Convert spoken words in audio files into text.
 
 > **Tip:** You can combine different AI services to automate complex, multi-step processing scenarios.
@@ -31,13 +31,13 @@ AIForged offers a variety of AI services, each tailored for specific functions:
 
 AI services in AIForged can be configured in several ways to best fit your workflow needs:
 
-* **Sequence**\
+* **Sequence**
   Services execute one after another in a defined order.
-* **Independent**\
+* **Independent**
   Services operate completely independently from one another.
-* **Parallel**\
+* **Parallel**
   Multiple services run simultaneously, each working on the same or different data.
-* **Tandem**\
+* **Tandem**
   Services collaborate closely, with outputs from one service feeding directly into another.
 
 Understanding these structural options is key to leveraging the full power and flexibility of AIForged.
@@ -77,3 +77,4 @@ Verification AI services are triggered automatically based on specific condition
 
 > **Tip:** Use Verification AI services for critical data points where accuracy is essential.
  IgnoreCase Multiline IgnoreCase Multiline
+

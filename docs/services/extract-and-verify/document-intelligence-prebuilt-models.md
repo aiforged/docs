@@ -32,28 +32,28 @@ The **Document Intelligence – Prebuilt Models** service in AIForged allows you
 
 Follow these steps to add and configure the **Prebuilt Models** service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Prebuilt Models Service**\
+2. **Add the Prebuilt Models Service**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**\
-   Choose **Document Intelligence – Prebuilt Models** from the available service types.\
+3. **Select Service Type**
+   Choose **Document Intelligence – Prebuilt Models** from the available service types.
    ![](../../assets/image%20%2815%29%20%281%29.png)
-4. **Configure the Service Wizard**\
-   Open the Service Configuration Wizard.\
-   ![](../../assets/image%20%2816%29%20%281%29.png)\
-   or\
+4. **Configure the Service Wizard**
+   Open the Service Configuration Wizard.
+   ![](../../assets/image%20%2816%29%20%281%29.png)
+   or
    ![](../../assets/image%20%2817%29%20%281%29.png)
-   * **Step 1: Service**\
-     Select your desired **Prebuilt Model** from the dropdown (e.g., Invoices, Receipts, IdDocuments, USPersonalTax, BankStatements, Checks, CreditCards, BusinessCards, Contracts, Layout, and more).\
+   * **Step 1: Service**
+     Select your desired **Prebuilt Model** from the dropdown (e.g., Invoices, Receipts, IdDocuments, USPersonalTax, BankStatements, Checks, CreditCards, BusinessCards, Contracts, Layout, and more).
      ![](../../assets/image%20%2818%29%20%281%29.png)
      !!! info
     Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format.
-   * **Step 2: Categories**\
-     Optionally, create document categories for organizational or workflow purposes.\
+   * **Step 2: Categories**
+     Optionally, create document categories for organizational or workflow purposes.
      ![](../../assets/image%20%2819%29%20%281%29.png)
-   * **Step 3: Verification**\
-     Use this step to verify the keys/fields extracted by the selected prebuilt model.\
+   * **Step 3: Verification**
+     Use this step to verify the keys/fields extracted by the selected prebuilt model.
      ![](../../assets/image%20%2820%29%20%281%29.png)
 
 ***
@@ -78,51 +78,51 @@ Most users can proceed with the default settings. Key configuration options incl
 
 ### Available Prebuilt Models
 
-* **Document**\
+* **Document**
   General document extraction (key-value pairs, tables, etc.)
-* **Invoices**\
+* **Invoices**
   Extraction of invoice fields, totals, vendor details, line items, and more.
-* **Receipts**\
+* **Receipts**
   Extraction of merchant, transaction, and line item information from receipts.
-* **IdDocuments**\
+* **IdDocuments**
   Extraction of information from identity documents (passports, ID cards, driver’s licenses).
-* **USHealthInsurance**\
+* **USHealthInsurance**
   Extraction from US health insurance cards.
-* **USPersonalTax**\
+* **USPersonalTax**
   US personal tax forms (general).
-* **USPersonalTaxW2**\
+* **USPersonalTaxW2**
   US IRS W-2 wage and tax statement forms.
-* **USPersonalTax1098**\
+* **USPersonalTax1098**
   US IRS 1098 mortgage interest statement forms.
-* **USPersonalTax1098E**\
+* **USPersonalTax1098E**
   US IRS 1098-E student loan interest statement forms.
-* **USPersonalTax1098T**\
+* **USPersonalTax1098T**
   US IRS 1098-T tuition statement forms.
-* **USMortgage1003**\
+* **USMortgage1003**
   US mortgage loan application (1003) forms.
-* **USMortgage1004**\
+* **USMortgage1004**
   US mortgage appraisal (1004) forms.
-* **USMortgage1005**\
+* **USMortgage1005**
   US verification of employment (1005) forms.
-* **USMortgage1008**\
+* **USMortgage1008**
   US mortgage transmittal summary (1008) forms.
-* **USPayStubs**\
+* **USPayStubs**
   US payroll/pay stub documents.
-* **UBankStatements**\
+* **UBankStatements**
   US bank statements.
-* **USChecks**\
+* **USChecks**
   US bank checks.
-* **CreditCards**\
+* **CreditCards**
   Credit card statements and related documents.
-* **USMarriageCertificates**\
+* **USMarriageCertificates**
   US marriage certificates.
-* **Contracts**\
+* **Contracts**
   Legal contract extraction.
-* **BusinessCards**\
+* **BusinessCards**
   Business card extraction (contact details, organization, etc.).
-* **OCR**\
+* **OCR**
   Optical Character Recognition (raw text extraction and layout).
-* **Layout**\
+* **Layout**
   Extraction of tables, lines, and structural layout from documents.
 
 ***
@@ -131,12 +131,12 @@ Most users can proceed with the default settings. Key configuration options incl
 
 To upload and process documents using the **Prebuilt Models** service:
 
-1. **Open Service**\
-   In the Prebuilt Models service, click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.\
+1. **Open Service**
+   In the Prebuilt Models service, click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%2821%29%20%281%29.png)
-2. **Select Category (Optional)**\
+2. **Select Category (Optional)**
    If you have defined categories, select the appropriate one; otherwise, select **No category**.
-3. **Process Documents**\
+3. **Process Documents**
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
 !!! info
@@ -146,7 +146,7 @@ To upload and process documents using the **Prebuilt Models** service:
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the **Prebuilt Models** service.\
+* Select **Outbox** in the usage filter in the **Prebuilt Models** service.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted results.
 
@@ -172,5 +172,6 @@ To upload and process documents using the **Prebuilt Models** service:
 * Review the extracted data fields for each document type to understand model outputs.
 * Keep your Azure Document Intelligence API credentials up to date.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

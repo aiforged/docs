@@ -23,30 +23,30 @@ No custom training is required; the service utilizes robust, internal pre-built 
 
 Follow these steps to add and configure the **Google Invoice Parser Service** to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Google Invoice Parser Service**\
-   Click the **Add Service** ![](../../assets/image%20%2815%29%20%281%29%20%281%29.png) button in the command bar.\
+2. **Add the Google Invoice Parser Service**
+   Click the **Add Service** ![](../../assets/image%20%2815%29%20%281%29%20%281%29.png) button in the command bar.
 
-3. **Select Service Type**\
-   Choose **Google Invoice Parser Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Google Invoice Parser Service** from the available service types.
    ![](../../assets/image%20%2814%29%20%281%29%20%281%29.png)
-4. **Configure the Service Wizard**\
-   Open the Service Configuration Wizard.\
-   ![](../../assets/image%20%2816%29%20%281%29%20%281%29.png)\
-   or\
+4. **Configure the Service Wizard**
+   Open the Service Configuration Wizard.
+   ![](../../assets/image%20%2816%29%20%281%29%20%281%29.png)
+   or
    ![](../../assets/image%20%2817%29%20%281%29%20%281%29.png)
-   1. &#x20;**Step 1: General Settings**\
-      Configure the core settings. \
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   1. &#x20;**Step 1: General Settings**
+      Configure the core settings.  
+      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
       ![](../../assets/image%20%2818%29%20%281%29%20%281%29.png)
-   2. **Step 2: User Defined Categories**\
-      Add any categories you wish to use for organizing your processed documents.\
+   2. **Step 2: User Defined Categories**
+      Add any categories you wish to use for organizing your processed documents.
       ![](../../assets/image%20%2819%29%20%281%29%20%281%29.png)
-   3. **Step 3: Analysis**\
-      Upload some documents for analysis, select them and click on the **Analysis** ![](../../assets/image%20%28125%29.png) button to generate the applicable fields for your forms.\
+   3. **Step 3: Analysis**
+      Upload some documents for analysis, select them and click on the **Analysis** ![](../../assets/image%20%28125%29.png) button to generate the applicable fields for your forms.
       ![](../../assets/image%20%2820%29%20%281%29%20%281%29.png)
-   4. **Step 4: Verification**\
+   4. **Step 4: Verification**
       Review and verify any documents that have been processed.&#x20;
 
 ***
@@ -61,12 +61,12 @@ Most users can proceed with default settings. Advanced configuration is availabl
 
 To upload and process documents using the **Google Forms Parser**:
 
-1. **Open Service**\
-   In the **Google Forms Parser**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.\
+1. **Open Service**
+   In the **Google Forms Parser**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%289%29%20%281%29%20%281%29.png)
-2. **Select Category (Optional)**\
+2. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, select **No category**.
-3. **Process Documents**\
+3. **Process Documents**
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
 !!! info
@@ -76,7 +76,7 @@ To upload and process documents using the **Google Forms Parser**:
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the **Google Forms Parser**.\
+* Select **Outbox** in the usage filter in the **Google Forms Parser**.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted results.
 
@@ -105,5 +105,7 @@ To upload and process documents using the **Google Forms Parser**:
 * Regularly review and validate extracted data to improve downstream workflows.
 * Organize your documents into categories to keep your processing structured and efficient.
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

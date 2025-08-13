@@ -10,7 +10,7 @@ These methods let you query, search, add, update, and delete records in Custom D
 
 #### GetDataSetRecord
 
-Signature: \
+Signature:  
 `ICustomDataSetRecord GetDataSetRecord(ICustomDataSet dataset, int fieldId, string fieldValue, bool isExactMatch)`
 
 Description: Returns a single dataset record where the specified field matches the given value (exact match or not).
@@ -37,7 +37,7 @@ When to use:
 
 #### GetDataSetFieldValues (by field definition)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetValue> GetDataSetFieldValues(ICustomDataSet dataset, IParameterDef field)`
 
 Description: Returns all distinct values for a given dataset field.
@@ -58,7 +58,7 @@ When to use:
 
 #### GetDataSetFieldValues (by field ID)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetValue> GetDataSetFieldValues(ICustomDataSet dataset, int fieldId)`
 
 Description: Returns all distinct values for the specified dataset field ID.
@@ -77,7 +77,7 @@ Tip:
 
 #### LookupDataSetRecord (by field ID)
 
-Signature: \
+Signature:  
 `ICustomDataSetRecord LookupDataSetRecord(ICustomDataSet dataset, int fieldId, string fieldValue, bool regexMatch, bool isExactMatch)`
 
 Description: Finds a single record by field ID using exact or regex matching (regexMatch takes precedence).
@@ -98,7 +98,7 @@ When to use:
 
 #### LookupDataSetRecord (by field name)
 
-Signature: \
+Signature:  
 `ICustomDataSetRecord LookupDataSetRecord(ICustomDataSet dataset, string fieldName, string fieldValue, bool regexMatch, bool isExactMatch)`
 
 Description: Finds a single record by field name with exact or regex matching.
@@ -117,7 +117,7 @@ Tip:
 
 #### SearchDataSetRecords (by field IDs)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetRecord> SearchDataSetRecords(ICustomDataSet dataset, List<(int fieldId, string fieldValue)> search, bool regexMatch, bool isExactMatch)`
 
 Description: Returns records that match all provided fieldId/value pairs (AND semantics), with regex and/or exact matching.
@@ -141,7 +141,7 @@ When to use:
 
 #### SearchDataSetRecords (by field names)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetRecord> SearchDataSetRecords(ICustomDataSet dataset, List<(string fieldName, string fieldValue)> search, bool regexMatch, bool isExactMatch)`
 
 Description: Returns records that match all provided fieldName/value pairs (AND semantics), with regex and/or exact matching.
@@ -165,7 +165,7 @@ Tip:
 
 #### GetDataSetGetBestValue
 
-Signature: \
+Signature:  
 `ICustomDataSetValue GetDataSetGetBestValue(ICustomDataSet dataset, int fieldId, string value, bool ignoreCase = true)`
 
 Description: Returns the best matching value for a field based on heuristic matching (e.g., case-insensitive similarity).
@@ -185,7 +185,7 @@ When to use:
 
 #### GetDataSetGetBestRecord
 
-Signature: \
+Signature:  
 `ICustomDataSetRecord GetDataSetGetBestRecord(ICustomDataSet dataset, int fieldId, string value, bool ignoreCase = true)`
 
 Description: Returns the best matching record for a given field/value using heuristic matching.
@@ -204,7 +204,7 @@ Tip:
 
 #### DeleteDataSetRecord (single record)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(ICustomDataSetRecord record)`
 
 Description: Deletes the specified dataset record.
@@ -224,7 +224,7 @@ When to use:
 
 #### DeleteDataSetRecord (multiple records)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(List<ICustomDataSetRecord> records)`
 
 Description: Deletes all provided records.
@@ -243,7 +243,7 @@ Tip:
 
 #### DeleteDataSetRecord (by key value)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(ICustomDataSet dataset, string keyValue)`
 
 Description: Deletes a record using the dataset’s key value (the record’s unique key).
@@ -262,7 +262,7 @@ When to use:
 
 #### DeleteDataSetRecord (by key ID)
 
-Signature: \
+Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(ICustomDataSet dataset, int keyId)`
 
 Description: Deletes a record using the dataset’s key ID.
@@ -281,7 +281,7 @@ Tip:
 
 #### SaveDataSetRecord
 
-Signature: \
+Signature:  
 `int SaveDataSetRecord(ICustomDataSet dataset, ICustomDataSetRecord record)`
 
 Description: Creates or updates a single dataset record; returns the number of field values saved.
@@ -302,7 +302,7 @@ When to use:
 
 #### SaveDataSet
 
-Signature: \
+Signature:  
 `int SaveDataSet(ICustomDataSet dataset, bool mergeData)`
 
 Description: Persists the dataset changes in bulk. When mergeData is true, merges with existing data where supported.
@@ -340,3 +340,4 @@ Tip:
 * Q: What does SaveDataSet vs SaveDataSetRecord save?
   * A: SaveDataSetRecord saves one record’s values; SaveDataSet persists broader dataset state and can merge.
  IgnoreCase Multiline IgnoreCase Multiline
+

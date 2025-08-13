@@ -14,7 +14,7 @@ Agents in AIForged are containers for [AI services](../services//index.md), and 
 Creating an agent in AIForged Studio is a straightforward process:
 
 * **From the home view click on the** ![](../assets/image%20%2845%29%20%281%29.png) **(Create a new agent) button.** ![](../assets/image%20%2848%29%20%281%29.png)
-* **Select an optional starting service**:\
+* **Select an optional starting service**:
   You can opt to create your new agent with or without an intial AI service.
   *   To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:
 
@@ -41,6 +41,7 @@ To disable or delete an agent, click on the ![](../assets/image%20%2852%29%20%28
     **Disabling an agent:** Temporarily disables all processing in all the AI services within the agent until re-activated
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

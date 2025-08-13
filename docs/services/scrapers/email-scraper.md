@@ -24,11 +24,11 @@ Members must belong to one of the following AIForged user group roles to add and
 
 ### Supported Platforms
 
-* Gmail\
+* Gmail
   Connect to Gmail accounts using IMAP with app‑specific passwords.
-* Microsoft 365\
+* Microsoft 365
   Authenticate using prompt‑less device code flow for secure mailbox integration.
-* Other Email Providers\
+* Other Email Providers
   Any IMAP‑capable provider can be used with the correct settings.
 
 ***
@@ -45,16 +45,16 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Email Scraper in your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Email Scraper**\
+2. **Add the Email Scraper**
    Click the **Add Service** !\[]\(../../assets/image%20%2842).png) button and choose **Email Scraper** from the available service types.
-3. **Configure the Service Wizard**\
+3. **Configure the Service Wizard**
    Open the Service Configuration Wizard.
-   * Step 1: General Settings\
-     Name the service and add a description.\
+   * Step 1: General Settings
+     Name the service and add a description.
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-   * Step 2: Platform Settings\
+   * Step 2: Platform Settings
      Enter the IMAP settings for your provider (see provider sections below).
 
 ***
@@ -63,7 +63,7 @@ Follow these steps to add and configure the Email Scraper in your agent:
 
 AIForged supports prompt‑less device code flow for Microsoft 365. After initial setup, no user interaction is required on scheduled runs.
 
-* How it works\
+* How it works
   Provide your Azure AD Tenant ID and Client ID (from your Azure app registration) in the Email Scraper settings.
 * Setup
   1. Register an application in your Azure AD tenant.
@@ -72,7 +72,7 @@ AIForged supports prompt‑less device code flow for Microsoft 365. After initia
 
 <figure><img src="../../assets/image%20%28279%29.png" alt=""><figcaption></figcaption></figure>
 
-* Operation\
+* Operation
   The scraper retrieves a device token automatically on its first scheduled run. On subsequent runs, it retrieves emails without prompts.
 
 !!! info
@@ -195,13 +195,13 @@ Turn on Auto Execution to run the scraper at scheduled intervals. Adjust the int
 
 Get results in minutes:
 
-1. Add the service\
+1. Add the service
    Open your agent, click **Add Service**, and select **Email Scraper**.
-2. Configure provider settings\
+2. Configure provider settings
    Choose Microsoft 365 (prompt‑less device code flow), Gmail, or Other IMAP and enter the required fields.
-3. Enable Auto Execution\
+3. Enable Auto Execution
    Turn on Auto Execution and set a reasonable interval.
-4. Review imports\
+4. Review imports
    Open the Email Scraper service grid to verify that emails are retrieved and attachments are extracted.
 
 !!! info
@@ -223,4 +223,5 @@ Get results in minutes:
   * Yes. Use separate scrapers for different mailboxes or folders to keep workflows organized and scalable.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

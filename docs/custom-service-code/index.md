@@ -36,15 +36,15 @@ Custom Code utilities are not standalone services.\
 
 Get up and running in five steps:
 
-1. **Attach the Custom Code utility**\
+1. **Attach the Custom Code utility**
    Add it to a parent service as a pre- or post-processor via the service view or Service Flow Configurator.
-2. **Open the code editor**\
+2. **Open the code editor**
    Click into the Custom Code utility’s editor in your workflow UI.
-3. **Choose your language**\
+3. **Choose your language**
    Select C#, Visual Basic, F#, IronPython, or SemanticKernel (natural language).
-4. **Write & save your code**\
+4. **Write & save your code**
    Script your logic, add any needed Imports/Assemblies, and click Save to compile.
-5. **Test and monitor**\
+5. **Test and monitor**
    Run a test batch, review logs for debugging, and iterate on your logic.
 
 !!! info
@@ -54,19 +54,19 @@ Get up and running in five steps:
 
 ### Common Patterns in AIForged Custom Code
 
-* **Field/Parameter Validation:**\
+* **Field/Parameter Validation:**
   Normalize, validate, or reformat extracted values (dates, phone numbers, currency).
-* **Deduplication:**\
+* **Deduplication:**
   Compute an MD5 hash of each document and check against a custom dataset to prevent duplicate processing.
-* **Field/Label Enrichment:**\
+* **Field/Label Enrichment:**
   Call external APIs or look up values in custom datasets to enrich extracted data.
-* **Conditional Routing:**\
+* **Conditional Routing:**
   Move or copy documents to different services based on extracted field values or statuses.
-* **Work Item Triggering:**\
+* **Work Item Triggering:**
   Create HITL work items or escalate to specific users when business logic flags an issue.
-* **Status Management:**\
+* **Status Management:**
   Programmatically update document status or add comments/results after custom checks.
-* **Custom Notifications:**\
+* **Custom Notifications:**
   Use Webhook utilities or Custom Code to send notifications or external events on status changes.
 
 !!! info
@@ -110,13 +110,13 @@ Get up and running in five steps:
 
 ### FAQ
 
-* **Can I make HTTP/API calls?**\
+* **Can I make HTTP/API calls?**
   Yes! Use standard .NET HTTP clients or IronPython (or SemanticKernel for natural language triggers).
-* **Can I access and modify document fields?**\
+* **Can I access and modify document fields?**
   Absolutely. Use the BaseModule API to read, update, and verify parameters/fields/labels.
-* **Is there a limit to what I can script?**\
+* **Is there a limit to what I can script?**
   Custom Code runs in a secure .NET sandbox; avoid long-running/blocking code and always include error handling.
-* **How do I debug my code?**\
+* **How do I debug my code?**
   Use `logger.LogInformation` and check logs via the AIForged UI.
 
 ***
@@ -235,7 +235,7 @@ catch (Exception ex)
 
 ### How to Return Results in Custom Code
 
-*   **Batch/Utility Script Level:**\
+*   **Batch/Utility Script Level:**
     Always end with:
 
     ```csharp
@@ -243,7 +243,7 @@ catch (Exception ex)
     ```
 
     (docs is the processed result documents collection.)
-*   **Field/Label/Parameter Definition Level:**\
+*   **Field/Label/Parameter Definition Level:**
     Always end with:
 
     ```csharp
@@ -447,4 +447,5 @@ await module.SaveChanges();
 * Use `await module.SaveDataSetRecord(dataset, record);` for each new or updated record.
 * For performance, group related changes and call `await module.SaveChanges();` after a batch if your logic allows.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

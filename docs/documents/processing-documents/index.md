@@ -24,7 +24,7 @@ Processing can be done in various ways:
 3.  Click on the **Process** button
 
     <div align="left"><figure><img src="../../assets/image%20%2873%29.png" alt=""><figcaption></figcaption></figure></div>
-4.  Tune the [processing parameters](processing-paramaters.md) and click on **Process**\
+4.  Tune the [processing parameters](processing-paramaters.md) and click on **Process**
 
 
     <div align="left"><figure><img src="../../assets/image%20%2878%29.png" alt=""><figcaption></figcaption></figure></div>
@@ -36,15 +36,15 @@ This is set up in the service settings. This will automatically process document
 1.  Open the service settings dialog:
 
     <div align="left"><figure><img src="../../assets/image%20%2874%29.png" alt=""><figcaption></figcaption></figure></div>
-2.  In the **Auto Execution** tab set the **Batch Size** (recommended 10 -30 documents)\
+2.  In the **Auto Execution** tab set the **Batch Size** (recommended 10 -30 documents)
 
 
     <div align="left"><figure><img src="../../assets/image%20%2875%29.png" alt=""><figcaption></figcaption></figure></div>
-3.  Set the **Execution Interval** (minimum 10 minutes)\
+3.  Set the **Execution Interval** (minimum 10 minutes)
 
 
     <div align="left"><figure><img src="../../assets/image%20%2876%29.png" alt=""><figcaption></figcaption></figure></div>
-4.  Set the **Auto Execution option** to True\
+4.  Set the **Auto Execution option** to True
 
 
     <div align="left"><figure><img src="../../assets/image%20%2877%29.png" alt=""><figcaption></figcaption></figure></div>
@@ -57,4 +57,5 @@ This is set up in the service settings. This will automatically process document
 Refer to API/ SDK/ Bot documentation
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

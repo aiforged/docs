@@ -35,12 +35,12 @@ You can configure this service as a standalone processor or as a verification se
 
 Follow these steps to add and configure the Microsoft Object Detection service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Microsoft Object Detection Service**\
+2. **Add the Microsoft Object Detection Service**
    Click the **Add Service** ![](../../assets/image%20%283%29.png) button.
-3. **Select Service Type**\
-   Choose **Microsoft Object Detection Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Microsoft Object Detection Service** from the available service types.
    ![](../../assets/image%20%284%29.png)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
@@ -50,8 +50,8 @@ Follow these steps to add and configure the Microsoft Object Detection service t
       2.
 
           <figure><img src="../../assets/image%20%286%29.png" alt=""><figcaption></figcaption></figure>
-   2. **Step 1: General Settings** Configure the service settings.\
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   2. **Step 1: General Settings** Configure the service settings.
+      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
       ![](../../assets/image%20%287%29.png)
    3. **Step 2: Verification** No verification required for basic detection.
 
@@ -98,14 +98,14 @@ The Microsoft Object Detection Service is highly configurable. The following set
 
 To upload and process documents using the Microsoft Object Detection Service:
 
-1. **Open Service**\
+1. **Open Service**
    When you open the Microsoft Object Detection Service, you will be presented with the documents currently queued or processed in the Inbox.
-2. **Upload Documents**\
-   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid. \
+2. **Upload Documents**
+   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.  
    ![](../../assets/image%20%288%29.png)
-3. **Select Category (Optional)**\
+3. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, select **No category**.
-4. **Process Documents**\
+4. **Process Documents**
    After uploading, select the documents to process and click **Process Checked**.
 
 !!! info
@@ -162,5 +162,7 @@ To upload and process documents using the Microsoft Object Detection Service:
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

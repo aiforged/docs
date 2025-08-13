@@ -33,23 +33,23 @@ The **Amazon OCR Service** in AIForged uses Amazon Textract to extract raw text 
 
 Follow these steps to add and configure the **Amazon OCR Service** to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Amazon OCR Service**\
+2. **Add the Amazon OCR Service**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**\
-   Choose **Amazon OCR Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Amazon OCR Service** from the available service types.
    ![](../../assets/image%20%28204%29.png)
-4. **Configure the Service Wizard**\
-   Open the Service Configuration Wizard.\
-   ![](../../assets/image%20%28207%29.png)\
-   or\
+4. **Configure the Service Wizard**
+   Open the Service Configuration Wizard.
+   ![](../../assets/image%20%28207%29.png)
+   or
    ![](../../assets/image%20%28209%29.png)
-   * **Step 1: General Settings**\
-     Configure core OCR settings such as service name and description.\
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   * **Step 1: General Settings**
+     Configure core OCR settings such as service name and description.
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
      ![](../../assets/Untitled.jpg)
-   * **Step 2: Verification**\
+   * **Step 2: Verification**
      No verification is typically required for text extraction services unless paired with downstream validation.
 
 ***
@@ -84,12 +84,12 @@ Most users can proceed with default settings; however, advanced settings can be 
 
 To upload and process documents using the **Amazon OCR Service**:
 
-1. **Open Service**\
-   In the **Amazon OCR Service**, click the ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.\
+1. **Open Service**
+   In the **Amazon OCR Service**, click the ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%28216%29.png)
-2. **Select Category (Optional)**\
+2. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, select **No category**.
-3. **Process Documents**\
+3. **Process Documents**
    After uploading, select the documents to process and click **Process Checked**.
 
 !!! info
@@ -99,7 +99,7 @@ To upload and process documents using the **Amazon OCR Service**:
 
 ### View Processed Documents
 
-* In the **Amazon OCR Service**, set the usage filter to **Outbox**.\
+* In the **Amazon OCR Service**, set the usage filter to **Outbox**.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the extracted text in the **Result** property.
 
@@ -171,5 +171,6 @@ Members must belong to one of the following AIForged user group roles to add and
     Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

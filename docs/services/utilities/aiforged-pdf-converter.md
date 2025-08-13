@@ -49,7 +49,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service.\
+2. Click the Add Service dropdown and select Utility Service.
    ![](../../assets/image%20%28288%29.png)&#x20;
 3. Choose the utility (e.g., AIForged PDF Converter).
 4. In the utility’s settings, specify when it should run:
@@ -74,27 +74,27 @@ Utility services are not configured as standalone services. Attach them to a par
 
 Most users can keep defaults. Common settings include:
 
-* Enabled\
+* Enabled
   Turn the service on or off.
-* Execute On Trigger\
+* Execute On Trigger
   Run automatically on relevant events (e.g., document upload/update) when attached to a parent service.
-* Execute Before Process / Execute After Process\
+* Execute Before Process / Execute After Process
   Control whether the conversion runs as a pre‑processor or post‑processor relative to the parent service.
-* Document Processed Status\
+* Document Processed Status
   Status applied to the item after conversion (e.g., Processed).
-* Force PDF Image\
+* Force PDF Image
   Flatten PDFs to image‑only pages (removes objects/layers/widgets) for consistent OCR downstream.
-* Merge To PDF\
+* Merge To PDF
   Merge multiple images into a single PDF.
-* Page Range (if available)\
+* Page Range (if available)
   Convert only a subset of pages in very large inputs.
-* Output Quality / DPI (if available)\
+* Output Quality / DPI (if available)
   Set the render quality for image‑based PDFs.
-* Archiving Strategy\
+* Archiving Strategy
   Days before documents are deleted (lifecycle management).
-* Remove Comments\
+* Remove Comments
   Remove human comments/annotations before downstream processing.
-* Password\
+* Password
   Provide a password (via Custom Code per document) to unlock protected PDFs before conversion.
 
 !!! info
@@ -105,7 +105,7 @@ Most users can keep defaults. Common settings include:
 ### View Converted Outputs
 
 * Converted PDFs appear as part of the parent service’s processing flow.
-* After the parent completes, filter by Outbox to review normalized PDFs.\
+* After the parent completes, filter by Outbox to review normalized PDFs.
 
 
 ***
@@ -167,5 +167,6 @@ Most users can keep defaults. Common settings include:
 * What should I do for extremely large PDFs or TIFFs?
   * Use the AIForged Document Splitter to chunk by page range for responsiveness and reliability.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

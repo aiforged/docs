@@ -50,7 +50,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Add Utility Service. \
+2. Click the Add Service dropdown and select Add Utility Service.  
    ![](../../assets/image%20%28288%29.png)
 3. Choose AIForged Image Splitter.
 4. In the utility’s settings, specify when it should run:
@@ -78,25 +78,25 @@ Utility services are not configured as standalone services. Attach them to a par
 
 Most users can proceed with defaults. Common settings include:
 
-* Enabled\
+* Enabled
   Turn the service on or off.
-* Execute On Trigger\
+* Execute On Trigger
   Run automatically on key events (e.g., on document upload or update).
-* Batch Size\
+* Batch Size
   Processing batch size per run (Auto Execution).
-* Document Processed Status\
+* Document Processed Status
   Status applied after the split operation completes (e.g., Processed).
-* Page Range (optional, if available)\
+* Page Range (optional, if available)
   Limit splitting to a specific page range for large documents.
-* Output Image Format (optional, if available)\
+* Output Image Format (optional, if available)
   Choose the output image format for pages (e.g., JPEG/PNG/TIFF).
-* Image Quality/DPI (optional, if available)\
+* Image Quality/DPI (optional, if available)
   Set the desired DPI/quality for generated page images.
-* Archiving Strategy\
+* Archiving Strategy
   Days before documents get deleted (lifecycle management).
-* Remove Comments\
+* Remove Comments
   Remove human comments/annotations before processing.
-* Password\
+* Password
   Provide a password (via Custom Code per document) to unlock protected PDFs before splitting.
 
 !!! info
@@ -124,13 +124,13 @@ Most users can proceed with defaults. Common settings include:
 
 To split documents using the Image Splitter:
 
-1. Open Service\
+1. Open Service
    When you open the Image Splitter, you will be presented with the documents currently queued or processed in the **Inbox**.
-2. Upload or provide the source document\
+2. Upload or provide the source document
    Click **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) or drag and drop files onto the grid (multi-page PDF or multi-page TIFF).
-3. Process\
+3. Process
    Select the documents to split and click **Process Checked**.
-4. Review per-page outputs\
+4. Review per-page outputs
    Each page will appear as a separate Outbox document, ready for copy/move to downstream services.
 
 !!! info
@@ -140,7 +140,7 @@ To split documents using the Image Splitter:
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the Image Splitter service.\
+* Select **Outbox** in the usage filter in the Image Splitter service.
   ![](../../assets/image%20%2851%29.png)
 * Open any per-page Outbox document to review the page image and associated metadata.
 
@@ -174,13 +174,13 @@ To split documents using the Image Splitter:
 
 Get results in minutes:
 
-1. Add the service\
+1. Add the service
    Open your agent, click **Add Service**, and select **Image Splitter**.
-2. Upload a multi-page document\
+2. Upload a multi-page document
    PDF or multi-page TIFF are recommended.
-3. Process\
+3. Process
    Select the document and click **Process Checked**.
-4. Review & route\
+4. Review & route
    Open **Outbox** and route per-page outputs to downstream services (Copy/Move utilities, OCR, etc.).
 
 !!! info
@@ -201,5 +201,7 @@ Get results in minutes:
 * How do I handle password-protected PDFs?
   * Use the AIForged Custom Code utility to provide the password per document so AIForged can unlock files before splitting.
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

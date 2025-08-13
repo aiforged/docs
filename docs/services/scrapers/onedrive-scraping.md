@@ -48,24 +48,24 @@ The OneDrive Scraper can ingest most common file types stored in OneDrive, inclu
 
 Follow these steps to add and configure the OneDrive Scraper to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the OneDrive Scraper**\
-   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button and choose **OneDrive Scraper**.\
+2. **Add the OneDrive Scraper**
+   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button and choose **OneDrive Scraper**.
    ![](../../assets/image%20%28281%29.png)
-3. **Configure the Service Wizard**\
+3. **Configure the Service Wizard**
    The wizard includes the following sections:
-   * **General**\
-     Enable the service and provide any required authentication parameters.\
+   * **General**
+     Enable the service and provide any required authentication parameters.
      ![](../../assets/image%20%28282%29.png)
-   * **Auto Execution**\
-     Set the automatic run schedule and batch size (how many items are pulled per cycle).\
+   * **Auto Execution**
+     Set the automatic run schedule and batch size (how many items are pulled per cycle).
      ![](../../assets/image%20%28283%29.png)
-   * **Processing**\
-     Choose the Document Processed Status and whether to force PDFs to image-only for downstream OCR.\
+   * **Processing**
+     Choose the Document Processed Status and whether to force PDFs to image-only for downstream OCR.
      ![](../../assets/image%20%28284%29.png)
-   * **Advanced**\
-     Provide Microsoft Graph details (Client Id, Scopes), and target identifiers (e.g., Share Id).\
+   * **Advanced**
+     Provide Microsoft Graph details (Client Id, Scopes), and target identifiers (e.g., Share Id).
      ![](../../assets/image%20%28285%29.png)
 
 _The default settings are sufficient for most use cases. Only fill the Advanced fields that apply to your folder and authentication setup._
@@ -102,11 +102,11 @@ Most users can proceed with the default settings. Advanced configuration is avai
 
 To begin ingesting files using the OneDrive Scraper:
 
-1. **Connect the target folder**\
+1. **Connect the target folder**
    In Advanced settings, provide the required Microsoft Graph details (Client Id, Scopes) and the target folder via Share Id.
-2. **Enable Auto Execution**\
+2. **Enable Auto Execution**
    Set your schedule and Batch Size in Auto Execution. The scraper will run at the configured interval and import new/updated files.
-3. **Run a first pass (optional)**\
+3. **Run a first pass (optional)**
    Trigger a manual run to validate the configuration if your environment supports a “Run Now” action.
 
 When you open the OneDrive Scraper, you will be presented with the documents currently queued or processed in the Inbox.
@@ -120,7 +120,7 @@ When you open the OneDrive Scraper, you will be presented with the documents cur
 
 * Open the OneDrive Scraper grid to see newly ingested files.
 * Open an item to review its metadata and confirm downstream services are picking it up as expected.
-* After downstream processing, use the usage filter to select **Outbox** to review processed results.\
+* After downstream processing, use the usage filter to select **Outbox** to review processed results.
   ![](../../assets/image%20%2851%29.png)
 
 ***
@@ -180,13 +180,13 @@ When you open the OneDrive Scraper, you will be presented with the documents cur
 
 Get results in minutes:
 
-1. Add the service\
+1. Add the service
    Open your agent, click **Add Service**, and select **OneDrive Scraper**.
-2. Set Microsoft Graph details\
+2. Set Microsoft Graph details
    In Advanced: paste your **Client Id**, confirm **Scopes** (e.g., Files.Read.All), and provide the **Share Id** for the target folder.
-3. Enable Auto Execution\
+3. Enable Auto Execution
    Set the schedule and **Batch Size**.
-4. Validate\
+4. Validate
    Run a first pass (optional) and confirm new files appear in the scraper grid and flow to downstream services.
 
 !!! info
@@ -207,5 +207,6 @@ Get results in minutes:
 * What about password-protected PDFs?
   * Use **Custom Code** to provide the password per document so AIForged can unlock files before processing.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

@@ -9,24 +9,24 @@ Multi-factor authentication (MFA) enhances account security by requiring users t
 
 ### Adding MFA to Your Account
 
-1. **Access your User Profile by clicking on your username**:\
-   \
+1. **Access your User Profile by clicking on your username**:
+    
    ![](assets/image%20%2828%29%20%281%29%20%281%29.png)
 2. **Navigate to Security options**:
 
-* Within your User Profile, select **Security**.\
-  ![](assets/image%20%2830%29%20%281%29%20%281%29.png)\
+* Within your User Profile, select **Security**.
+  ![](assets/image%20%2830%29%20%281%29%20%281%29.png)
 
 
 3. **Generate MFA Key**:
 
 * If MFA is not yet set up, you will see a prompt to generate an MFA key.
-* Click on **Click here to enable MFA** to proceed.\
+* Click on **Click here to enable MFA** to proceed.
   ![](assets/image%20%2831%29%20%281%29%20%281%29.png)
 
 4. **Copy Key or Scan QR Code**:
 
-* Once the MFA key is generated, you can either copy the key provided or scan the QR Code image using an authenticator app.\
+* Once the MFA key is generated, you can either copy the key provided or scan the QR Code image using an authenticator app.
   ![](assets/image%20%2832%29%20%281%29%20%281%29.png)
 
 5. **Manage MFA:**
@@ -51,5 +51,7 @@ Multi-factor authentication (MFA) enhances account security by requiring users t
 !!! info
     You can configure your AIForged account to utilize these external services for authentication. Any linked providers can be unlinked from your AIForged account at any time.
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

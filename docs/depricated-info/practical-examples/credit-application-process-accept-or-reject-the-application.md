@@ -35,14 +35,14 @@ This section will discuss in detail the code that is required to implement the *
     ```csharp
     logger.LogInformation("{stpd} Start", stpd.Name);
     ```
-3.  Get the **Parameter Definitions** of the specific fields of interest specified on the [**Credit Application Form**](credit-application-form.md), and compare the extracted values with what is provided by the supporting docs, [**Bank Statements**](bank-statement.md)**,** and [**Social Security Card**](social-security-number-card.md). In this sample, it is required to iterate through the **transaction items** extracted from the **Bank Statement** service. To this end, the **Parameter Definitions** for the **Description** and **Amount** columns in the **Transactions Table** of the **Bank Statements** service. The **Parameter Definition** IDs of these columns can be used to retrieve the **Parameter Definition** objects by calling **module.FindParameters**.\\
+3.  Get the **Parameter Definitions** of the specific fields of interest specified on the [**Credit Application Form**](credit-application-form.md), and compare the extracted values with what is provided by the supporting docs, [**Bank Statements**](bank-statement.md)**,** and [**Social Security Card**](social-security-number-card.md). In this sample, it is required to iterate through the **transaction items** extracted from the **Bank Statement** service. To this end, the **Parameter Definitions** for the **Description** and **Amount** columns in the **Transactions Table** of the **Bank Statements** service. The **Parameter Definition** IDs of these columns can be used to retrieve the **Parameter Definition** objects by calling **module.FindParameters**.\
 
     ```csharp
     IParameterDef pdDescription = module.FindParameterDef(78090);    //Replace 78090 with your Paramdef ID
     IParameterDef pdCredit = module.FindParameterDef(78092);        //Replace 78092 with your Paramdef ID
     IParameterDef pdAccountHolderName = module.FindParameterDef(78148);    //Replace 78148 with your Paramdef ID
     ```
-4.  In order to save the values of the **Parameters** defined by the **Parameter Definitions**, a **Custom Dataset** is created in order to share the extracted values between services. This dataset needs to be created using the **Settings View** of the **Parent Service** of the **Custom Service Code.**\\
+4.  In order to save the values of the **Parameters** defined by the **Parameter Definitions**, a **Custom Dataset** is created in order to share the extracted values between services. This dataset needs to be created using the **Settings View** of the **Parent Service** of the **Custom Service Code.**\
 
     ***
 
@@ -59,7 +59,7 @@ This section will discuss in detail the code that is required to implement the *
     This will create a **Parameter Definition** for the **BankStatementsDataset Custom Dataset**. Note the ID of the **Parameter Definition**.\\
 
     <figure><img src="../../assets/image%20%28242%29.png" alt=""><figcaption></figcaption></figure>
-5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. \*\*\*\* Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\\
+5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. \*\*\*\* Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\
 
     <figure><img src="../../assets/image%20%28214%29.png" alt=""><figcaption></figcaption></figure>
 
@@ -68,7 +68,7 @@ This section will discuss in detail the code that is required to implement the *
     <figure><img src="../../assets/image%20%28206%29.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../assets/image%20%28143%29.png" alt=""><figcaption></figcaption></figure>
-6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\\
+6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\
 
     ```csharp
     var parentservice = module.GetParentService();
@@ -80,7 +80,7 @@ This section will discuss in detail the code that is required to implement the *
     ParameterDefViewModel name = dataset.FindField(78820);  // Name
     ParameterDefViewModel salary = dataset.FindField(78821);   // Salary
     ```
-8.  Iterate through all the documents that was processed in the batch. Add a **try-catch** clause to handle any exceptions:\\
+8.  Iterate through all the documents that was processed in the batch. Add a **try-catch** clause to handle any exceptions:\
 
     ```csharp
     foreach (IDocument doc in docs) 
@@ -250,4 +250,5 @@ foreach (IDocument doc in docs)
 \\
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

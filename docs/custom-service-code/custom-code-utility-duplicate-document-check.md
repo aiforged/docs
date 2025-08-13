@@ -48,11 +48,11 @@ At a high level:
 
 ### Step 1 — Add the Custom Code Utility
 
-1. Open the Service Flow Configurator for the Email Scraping service by clicking on the **Open Service Flow Configurator** ![](../assets/image%20%2812%29.png) button.\
+1. Open the Service Flow Configurator for the Email Scraping service by clicking on the **Open Service Flow Configurator** ![](../assets/image%20%2812%29.png) button.
    ![](../assets/image%20%2811%29.png)
-2. Expand the Utilities service group.\
+2. Expand the Utilities service group.
    ![](../assets/image%20%2813%29.png)
-3. Drag the **Custom Code** service type card over the **Attachment Service** card, then to the **Post-Processor** drop point.\
+3. Drag the **Custom Code** service type card over the **Attachment Service** card, then to the **Post-Processor** drop point.
    ![](../assets/image%20%2814%29.png)
 4. Save.
 
@@ -63,13 +63,13 @@ At a high level:
 
 ### Step 2 — Create the “Duplicate History” Custom Dataset
 
-1. Open the **Parameter Definitions** dialog of the new **Custom Code** utility service.\
+1. Open the **Parameter Definitions** dialog of the new **Custom Code** utility service.
    ![](../assets/image%20%2815%29.png)
 2. Click on the **Create Custom Dataset** ![](../assets/image%20%2816%29.png) button.
 3. Enter **Duplicate History** in the **Name** field and add the following two columns:
    1. MD5Hash (ValueType: String)
    2. DocumentId (ValueType: String)
-4. Click **Create** to persist the dataset schema.\
+4. Click **Create** to persist the dataset schema.
    ![](../assets/image%20%2817%29.png)
 
 Your dataset should now appear in the **Service Parameter Definitions** dialog:\
@@ -79,10 +79,10 @@ Your dataset should now appear in the **Service Parameter Definitions** dialog:\
 
 ### Step 3 — Add the Custom Code
 
-1. Close the **Service Parameter Definitions** dialog and click the Code button on the nested **Custom Code** service card.\
-   ![](../assets/image%20%2819%29.png)\
+1. Close the **Service Parameter Definitions** dialog and click the Code button on the nested **Custom Code** service card.
+   ![](../assets/image%20%2819%29.png)
 
-2. Select CSharp as Code Language.\
+2. Select CSharp as Code Language.
    ![](../assets/image%20%2820%29.png)
 3. Paste the reference implementation below into the editor.
 
@@ -372,7 +372,7 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
 
 ### Extensions (Optional)
 
-*   Use SHA‑256 instead of MD5\
+*   Use SHA‑256 instead of MD5
     Replace MD5 with SHA256 for stronger collision resistance:
 
     ```csharp
@@ -380,13 +380,14 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
     var hashBytes = sha.ComputeHash(bytes);
     var hashString = BitConverter.ToString(hashBytes).Replace("-", "");
     ```
-* Make MD5Hash the dataset Key\
+* Make MD5Hash the dataset Key
   Enforce uniqueness at the dataset level to prevent duplicate inserts.
-* Broaden matching logic\
+* Broaden matching logic
   Include additional heuristics (e.g., page count + file size) for pre-filtering before hashing large files.
-* Custom work item routing\
+* Custom work item routing
   Swap WorkItemMethod.Random for Idle or HighThroughput, or route to ProjectOwner/DocumentOwner depending on your workflow.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

@@ -46,12 +46,12 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Microsoft Handwriting Service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Microsoft Handwriting Service**\
+2. **Add the Microsoft Handwriting Service**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**\
-   Choose **Microsoft Handwriting Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Microsoft Handwriting Service** from the available service types.
    ![](../../assets/image%20%28265%29.png)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
@@ -61,12 +61,12 @@ Follow these steps to add and configure the Microsoft Handwriting Service to you
       2.
 
           <figure><img src="../../assets/image%20%28267%29.png" alt=""><figcaption></figcaption></figure>
-   2. **Step 1: General Settings**\
-      Configure the service name, description, and core settings.\
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   2. **Step 1: General Settings**
+      Configure the service name, description, and core settings.
+      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
 
-   3. **Step 2: Verification**\
-      Typically no verification is required for handwriting extraction unless you plan a human-in-the-loop review.\
+   3. **Step 2: Verification**
+      Typically no verification is required for handwriting extraction unless you plan a human-in-the-loop review.
 
 
 ***
@@ -121,14 +121,14 @@ Most users can proceed with default settings. Advanced configuration is availabl
 
 To upload and process documents using the Microsoft Handwriting Service:
 
-1. **Open Service**\
+1. **Open Service**
    When you open the **Microsoft Handwriting Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
-2. **Upload Documents**\
-   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.\
+2. **Upload Documents**
+   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%28268%29.png)
-3. **Select Category (Optional)**\
+3. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, leave as **No selection**.
-4. **Process Documents**\
+4. **Process Documents**
    After uploading, select the documents to process and click **Process Checked**.
 
 !!! info
@@ -138,7 +138,7 @@ To upload and process documents using the Microsoft Handwriting Service:
 
 ### View Processed Documents
 
-* Use the usage filter to select **Outbox** in the Microsoft Handwriting Service.\
+* Use the usage filter to select **Outbox** in the Microsoft Handwriting Service.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the extracted text in the **Result** property and, if enabled, the per-line/word verification view.
 
@@ -170,5 +170,6 @@ To upload and process documents using the Microsoft Handwriting Service:
 * Enable IsVerification if you need to review lines and words visually alongside the Result text.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

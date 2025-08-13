@@ -34,24 +34,24 @@ The Google OCR Service in AIForged uses Google Cloud’s OCR capabilities to ext
 
 Follow these steps to add and configure the Google OCR Service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Google OCR Service**\
+2. **Add the Google OCR Service**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png)  button.
-3. **Select Service Type**\
-   Choose **Google OCR Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Google OCR Service** from the available service types.
    ![](../../assets/image%20%28224%29.png)
-4. **Configure the Service Wizard**\
-   Open the Service Configuration Wizard.\
-   ![](../../assets/image%20%28226%29.png)\
-   &#x20;or \
+4. **Configure the Service Wizard**
+   Open the Service Configuration Wizard.
+   ![](../../assets/image%20%28226%29.png)
+   &#x20;or  
    ![](../../assets/image%20%28227%29.png)
-   * **Step 1: General Settings**\
-     Configure core settings such as service name and description.\
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   * **Step 1: General Settings**
+     Configure core settings such as service name and description.
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
      ![](../../assets/image%20%28228%29.png)
-   * **Step 2: Verification**\
-     No verification is typically required for plain text OCR unless paired with downstream validation.\
+   * **Step 2: Verification**
+     No verification is typically required for plain text OCR unless paired with downstream validation.
 
 
 ***
@@ -86,14 +86,14 @@ Most users can proceed with the default settings. Advanced configuration is avai
 
 To upload and process documents using the Google OCR Service:
 
-1. **Open Service**\
+1. **Open Service**
    When you open the Google OCR Service, you will be presented with the documents currently queued or processed in the Inbox.
-2. **Upload Documents**\
+2. **Upload Documents**
    Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.![](../../assets/image%20%28233%29.png)
-3. **Select Category (Optional)**\
+3. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, select **No category**.
-4. **Process Documents**\
-   After uploading, select the documents to process and click **Process Checked**.\
+4. **Process Documents**
+   After uploading, select the documents to process and click **Process Checked**.
    ![](../../assets/image%20%2851%29.png)
 
 !!! info
@@ -103,7 +103,7 @@ To upload and process documents using the Google OCR Service:
 
 ### View Processed Documents
 
-* Use the usage filter to select **Outbox** in the Google OCR Service.\
+* Use the usage filter to select **Outbox** in the Google OCR Service.
 
 * Open any processed document to view the extracted text in the **Result** property.
 
@@ -209,5 +209,7 @@ Members must belong to one of the following AIForged user group roles to add and
 !!! info
     Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

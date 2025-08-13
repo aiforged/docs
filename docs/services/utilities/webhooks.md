@@ -49,7 +49,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service. \
+2. Click the Add Service dropdown and select Utility Service.  
    ![](../../assets/image%20%28288%29.png)
 3. Choose WebHook Utility.
 4. In the utility’s settings, specify when it should run:
@@ -275,5 +275,6 @@ Get a webhook integrated in minutes:
 
 * Always use HTTPS endpoints and include authentication headers. You can further secure by whitelisting AIForged IPs or using custom secret headers.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

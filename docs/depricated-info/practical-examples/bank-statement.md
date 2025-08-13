@@ -13,7 +13,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 3.  Select **MS Forms Recognizer - Bank Statements** from the **Extract & Verify** group.
 
     <figure><img src="../../assets/image%20%2875%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-4.  The **Configuration Wizard** for the service will appear.\\
+4.  The **Configuration Wizard** for the service will appear.\
 
     <figure><img src="../../assets/image%20%2859%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
 5.  (Optional) Rename the **service name** and **service description**.
@@ -69,7 +69,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 
     <figure><img src="../../assets/image%20%28235%29.png" alt=""><figcaption></figcaption></figure>
 21. Repeat steps 18 - 20 for all the documents uploaded for training.
-22. Once all the documents are labeled, the model of the service can be trained. Click on **Next: Step 5 - Training** (or click on **Step 5** Wizard Step).\\
+22. Once all the documents are labeled, the model of the service can be trained. Click on **Next: Step 5 - Training** (or click on **Step 5** Wizard Step).\
 
     <figure><img src="../../assets/image%20%28210%29.png" alt=""><figcaption></figcaption></figure>
 23. Now that the documents have been labeled, we can request the train operation. In step 5, click on **Train Service**. Again the progress dialogue will show the progress of the training operation. Note that after training has been completed successfully, the status will change to **Trained**.
@@ -79,4 +79,5 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 25. The OCR results can be viewed in the **Outbox** of the service.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

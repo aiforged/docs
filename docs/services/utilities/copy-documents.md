@@ -51,7 +51,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service. \
+2. Click the Add Service dropdown and select Utility Service.  
    ![](../../assets/image%20%28288%29.png)
 3. Choose **Copy Documents**.
 4. In the utility’s settings, specify when it should run:
@@ -192,5 +192,6 @@ Get results in minutes:
 * **How do I verify copy results?**
   * Check the destination service’s Inbox/Outbox and confirm copied files and expected metadata.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

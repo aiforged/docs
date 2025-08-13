@@ -20,8 +20,8 @@ The **General** tab allows you to edit your user details, and allows quick acces
 #### Edit your details
 
 1. Edit or fill in the **User Details** you want to change or add.
-2. Changes are saved when submitted / accepted.\
-   \
+2. Changes are saved when submitted / accepted.
+    
    ![](assets/image%20%2834%29%20%281%29%20%281%29.png)
 
 !!! info
@@ -105,5 +105,7 @@ Studio preferences allow you to customise various aspects of the UI, such as def
 <figure><img src="assets/image%20%2843%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

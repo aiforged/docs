@@ -51,7 +51,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service. \
+2. Click the Add Service dropdown and select Utility Service.  
    ![](../../assets/image%20%28288%29.png)
 3. Choose **AIForged Image Processor**.
 4. In the utility’s settings, specify when it should run:
@@ -152,14 +152,16 @@ Key configuration options (may vary by environment):
 
 ### FAQ
 
-* **Can I apply multiple operations at once?**\
+* **Can I apply multiple operations at once?**
   Yes—combine as many as needed for your use case. Test your chain on sample docs to avoid removing desired content.
-* **How do I know which settings to use?**\
+* **How do I know which settings to use?**
   Start with the most obvious issue (e.g., watermark, skew), test, and then incrementally add more processing.
-* **Will this work on color scans?**\
+* **Will this work on color scans?**
   Yes—most operations (e.g., Greyscale, Remove Color Marks) are designed for both color and black-and-white scans.
-* **How do I revert if the output is too aggressive?**\
+* **How do I revert if the output is too aggressive?**
   Adjust or disable one operation at a time and re-test with your sample document.
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

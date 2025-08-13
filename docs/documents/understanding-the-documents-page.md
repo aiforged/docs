@@ -18,17 +18,17 @@ The Quick Filter allows you to quickly define which documents you want to view.\
 
 <figure><img src="../assets/image%20%2812%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
-* **Document Properties**: Filter documents by specific properties such as File Name, IDs, or File Type.\
+* **Document Properties**: Filter documents by specific properties such as File Name, IDs, or File Type.
   ![](../assets/image%20%2813%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-* **Category**: Filter documents by specified categories, such as Invoices, Contracts, or documents with no category.\
+* **Category**: Filter documents by specified categories, such as Invoices, Contracts, or documents with no category.
   ![](../assets/image%20%2814%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-* **Usage**: Filter documents based on their location. Examples include Inbox, Outbox, or the TrainingBox.\
+* **Usage**: Filter documents based on their location. Examples include Inbox, Outbox, or the TrainingBox.
   ![](../assets/image%20%2815%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-* **Status**: Filter documents by specific statuses, such as Received, Error, or Processed.\
+* **Status**: Filter documents by specific statuses, such as Received, Error, or Processed.
   ![](../assets/image%20%2816%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-* **From Date**: Filter documents by the date they entered the service.\
+* **From Date**: Filter documents by the date they entered the service.
   ![](../assets/image%20%2817%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-* **To Date**: Filter documents up to the last date they entered the service.\
+* **To Date**: Filter documents up to the last date they entered the service.
   ![](../assets/image%20%2818%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 ## Document search
@@ -43,25 +43,25 @@ The Quick Filter allows you to quickly define which documents you want to view.\
 
 ## Document Actions
 
-* Open a document for verification\
+* Open a document for verification
   ![](../assets/image%20%2821%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-* Process the document\
+* Process the document
   ![](../assets/image%20%2820%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
-*   View the linked documents (see [Understanding-document-flows](understanding-document-flows.md))\
+*   View the linked documents (see [Understanding-document-flows](understanding-document-flows.md))
 
 
     <figure><img src="../assets/image%20%2822%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-* Open the document on the OS.\
+* Open the document on the OS.
   ![](../assets/image%20%2823%29%20%281%29%20%281%29%20%281%29.png)
-* Download the document to your local disk.\
+* Download the document to your local disk.
   ![](../assets/image%20%2824%29%20%281%29%20%281%29%20%281%29.png)
-* View the document hierarchy.\
+* View the document hierarchy.
   ![](../assets/image%20%2854%29%20%281%29.png)
-* View the document's structured results (**Extract & Verify** services only).\
+* View the document's structured results (**Extract & Verify** services only).
   ![](../assets/image%20%2855%29%20%281%29.png)
-* Open document verification audit trail (**Extract & Verify** services only).\
+* Open document verification audit trail (**Extract & Verify** services only).
   ![](../assets/image%20%2856%29%20%281%29.png)
-* Open document logs.\
+* Open document logs.
   ![](../assets/image%20%2825%29%20%281%29%20%281%29%20%281%29.png)
 
 ### Sort the Documents grid
@@ -77,25 +77,25 @@ The Quick Filter allows you to quickly define which documents you want to view.\
 
 The _**Process Selected**&#x20;_&#x20;![](../assets/image%20%2859%29%20%281%29.png)  button  allows you to process multiple documents at a time.
 
-1.  Select all the documents you would like to process\
+1.  Select all the documents you would like to process
 
 
     <figure><img src="../assets/image%20%2861%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 2.  Click on the **Process Selected** Action in the command bar.
 
     <figure><img src="../assets/image%20%2863%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-3.  Select the processing parameters (or leave as default to process normally) in the processing options popup and click on **Process**.\
+3.  Select the processing parameters (or leave as default to process normally) in the processing options popup and click on **Process**.
 
 
     <div align="left"><figure><img src="../assets/image%20%2864%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
 ## Upload and Download
 
-*   The **Upload** ![](../assets/image%20%2865%29%20%281%29.png) button allows you to upload one or more documents. Alternatively you can drag and drop files over the Documents grid to upload them.\
+*   The **Upload** ![](../assets/image%20%2865%29%20%281%29.png) button allows you to upload one or more documents. Alternatively you can drag and drop files over the Documents grid to upload them.
 
 
     <figure><img src="../assets/image%20%2866%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-*   The **Download** button allows you to download the selected documents to your local machine\
+*   The **Download** button allows you to download the selected documents to your local machine
 
 
     <figure><img src="../assets/image%20%2867%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
@@ -112,6 +112,7 @@ The _**Process Selected**&#x20;_&#x20;![](../assets/image%20%2859%29%20%281%29.p
 2. Click the **Download** button in the command bar
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

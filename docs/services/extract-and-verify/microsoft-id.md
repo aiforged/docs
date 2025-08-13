@@ -16,19 +16,19 @@ The **Microsoft Identity Document Service** makes use of pre-trained ID doc mode
 ## Service Setup
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
+2. Click on the **Add Service** button in the command bar.
    ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Identity Documents Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image%20%282%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
+4.  A new **Service Configuration Wizard** will open:
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
     <figure><img src="../../assets/image%20%281%29%20%282%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
-    * **Step 3 -** Verification of any documents that have been processed.\
+    * **Step 3 -** Verification of any documents that have been processed.
       ![](../../assets/image%20%2884%29%20%281%29.png)
 
 ## Service Configuration Settings
@@ -58,4 +58,5 @@ It is recommended to only process a few documents at a time, especially if it is
 * Match Name and Surname fields to other supporting docs to verify the identity of a person.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

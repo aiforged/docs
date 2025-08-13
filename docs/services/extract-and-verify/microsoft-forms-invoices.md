@@ -20,12 +20,12 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
 ## Service Setup
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
+2. Click on the **Add Service** button in the command bar.
    ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Invoices Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image%20%2827%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
+4.  A new **Service Configuration Wizard** will open:
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
     <figure><img src="../../assets/image%20%283%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
@@ -34,7 +34,7 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
     2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
     3. **Step 3 -** Verification of any documents that have been processed.
     4. **Step 4** - The **Definition Document** should be created after the **Service** has been trained successfully.
-    5. Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
+    5. Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.
        ![](../../assets/image%20%2884%29%20%281%29.png)
 
 ## Service Configuration Settings
@@ -59,4 +59,5 @@ It is recommended to only process a few documents at a time, especially if it is
 2. You can view the **Processing** results by opening a processed doc for verification.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

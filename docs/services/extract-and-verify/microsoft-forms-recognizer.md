@@ -35,42 +35,42 @@ The Microsoft Document Intelligence Service (formerly Microsoft Form Recognizer)
 
 Follow these steps to add and configure the **Microsoft Document Intelligence (Custom Layout)** service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Document Intelligence Service**\
+2. **Add the Document Intelligence Service**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**\
-   Choose **Microsoft Document Intelligence** from the available service types.\
+3. **Select Service Type**
+   Choose **Microsoft Document Intelligence** from the available service types.
    ![](../../assets/image%20%28126%29.png)
-4. **Configure the Service Wizard**\
-   Open the Service Configuration Wizard.\
-   ![](../../assets/image%20%28141%29.png)\
-   or\
+4. **Configure the Service Wizard**
+   Open the Service Configuration Wizard.
+   ![](../../assets/image%20%28141%29.png)
+   or
    ![](../../assets/image%20%28142%29.png)
-   * **Step 1: Service**\
-     Configure the core settings for your service.\
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   * **Step 1: Service**
+     Configure the core settings for your service.
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
      ![](../../assets/image%20%28145%29.png)
-   * **Step 2: Categories**\
-     Create document categories for your different types of documents. These are required for training and organization.\
+   * **Step 2: Categories**
+     Create document categories for your different types of documents. These are required for training and organization.
      ![](../../assets/image%20%28149%29.png)
-   * **Step 3: Workflow Reason Dataset**\
-     Populate the dataset with reason codes and information used with Human-In-The-Loop Workflow Actions.\
+   * **Step 3: Workflow Reason Dataset**
+     Populate the dataset with reason codes and information used with Human-In-The-Loop Workflow Actions.
      ![](../../assets/image%20%28155%29.png)
-   * **Step 4: Analysis**\
-     Upload documents for pre-training and analysis. Select the correct category for each document when uploading.\
+   * **Step 4: Analysis**
+     Upload documents for pre-training and analysis. Select the correct category for each document when uploading.
      ![](../../assets/image%20%28164%29.png)
-   * **Step 5: Labelling**\
-     Start labelling fields on documents to train the extraction model.\
+   * **Step 5: Labelling**
+     Start labelling fields on documents to train the extraction model.
      ![](../../assets/image%20%28166%29.png)
-   * **Step 6: Training**\
-     Train the labelled documents.\
+   * **Step 6: Training**
+     Train the labelled documents.
      ![](../../assets/image%20%28167%29.png)
-   * **Step 7: Definition**\
-     After successful training, a definition document will be created.\
+   * **Step 7: Definition**
+     After successful training, a definition document will be created.
      ![](../../assets/image%20%28171%29.png)
-   * **Step 8: Verification**\
-     Use this step to verify the keys/fields defined or extracted during training.\
+   * **Step 8: Verification**
+     Use this step to verify the keys/fields defined or extracted during training.
      ![](../../assets/image%20%28174%29.png)
 
 !!! danger
@@ -82,25 +82,25 @@ Follow these steps to add and configure the **Microsoft Document Intelligence (C
 
 Labelling is a crucial step for training the Document Intelligence extraction engine. Here’s how to label fields effectively:
 
-1. **Open the Labelling Step**\
-   Go to **Step 5: Labelling** in the wizard.\
+1. **Open the Labelling Step**
+   Go to **Step 5: Labelling** in the wizard.
    ![](../../assets/image%20%28166%29.png)
-2.  **Select Document Category**\
+2.  **Select Document Category**
     Use the filter to select the document category whose documents you want to label.
 
     > !!! info
     > Only documents that have already been analyzed in Step 4 will be available for labelling.
         >
-3. **Select a Document**\
-   Choose a document from the list to begin labelling.\
+3. **Select a Document**
+   Choose a document from the list to begin labelling.
    ![](../../assets/image%20%28176%29.png)
 4. **Label Fields on the Document**
-   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](../../assets/image%20%28179%29.png) button.\
+   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](../../assets/image%20%28179%29.png) button.
      ![](../../assets/image%20%28178%29.png)
-   * Draw the label on the document by clicking and dragging over the relevant field.\
+   * Draw the label on the document by clicking and dragging over the relevant field.
      ![](../../assets/image%20%28182%29.png)
    * Once labelled, it will automatically select the next available label definition. Press **Tab** to navigate through available labels.
-   * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.\
+   * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.
      ![](../../assets/image%20%28183%29.png)
    * Label definitions with a green check mark have been successfully labelled on the document.
 5. **Labelling Controls**
@@ -147,12 +147,12 @@ The **Microsoft Document Intelligence Service** provides flexible settings to ta
 
 To upload and process documents using the **Google Forms Parser**:
 
-1. **Open Service**\
-   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.\
+1. **Open Service**
+   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%28199%29.png)
-2. **Select Category (Optional)**\
+2. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, select **No category**.
-3. **Process Documents**\
+3. **Process Documents**
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
 !!! info
@@ -162,7 +162,7 @@ To upload and process documents using the **Google Forms Parser**:
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the **Microsoft Document Intelligence Service**.\
+* Select **Outbox** in the usage filter in the **Microsoft Document Intelligence Service**.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted results.
 
@@ -193,5 +193,6 @@ To upload and process documents using the **Google Forms Parser**:
 * Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

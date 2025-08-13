@@ -10,7 +10,7 @@ These methods let you determine if verification is required, count verification 
 
 #### RequireVerification
 
-Signature: \
+Signature:  
 `RequireVerification(IDocument doc) : bool`\
 `RequireVerification(int docId) : bool`
 
@@ -35,7 +35,7 @@ When to use:
 
 #### GetVerificationsCount
 
-Signature: \
+Signature:  
 `GetVerificationsCount(IDocument doc) : int`\
 `GetVerificationsCount(int docId) : int`
 
@@ -60,7 +60,7 @@ Tip:
 
 #### GetVerificationParameters
 
-Signature: \
+Signature:  
 `GetVerificationParameters(IDocument doc) : List`
 
 Description: Returns the list of document parameters (fields) that require verification.
@@ -87,7 +87,7 @@ Tip:
 
 #### FindVerification (overloads)
 
-Signature: \
+Signature:  
 `FindVerification(IDocument doc, IParameterDef pd, int? index = null) : (IVerification verification, IDocumentParameter parameter)`\
 `FindVerification(IDocument doc, int pdId, int? index = null) : (IVerification verification, IDocumentParameter parameter)`\
 `FindVerification(int docId, int pdId, int? index = null) : (IVerification verification, IDocumentParameter parameter)`\
@@ -124,7 +124,7 @@ Tip:
 
 #### FindVerifications (overloads)
 
-Signature: \
+Signature:  
 `FindVerifications(IDocumentParameter parameter) : IEnumerable`\
 `FindVerifications(int? parameterId) : IEnumerable`\
 `FindVerifications(int? parameterId, VerificationType? type, VerificationStatus? status, string provider = null, string valuefilter = null, string infofilter = null, DateTime? fromDate = null, DateTime? toDate = null) : IEnumerable`
@@ -162,7 +162,7 @@ Tip:
 
 #### FindVerification (filtered single)
 
-Signature: \
+Signature:  
 `FindVerification(int? parameterId, VerificationType? type, VerificationStatus? status, string provider = null, string valuefilter = null, string infofilter = null, DateTime? fromDate = null, DateTime? toDate = null) : IVerification`
 
 Description: Returns a single verification item matching the specified filters for the given parameter.
@@ -189,7 +189,7 @@ Tip:
 
 #### AddVerification
 
-Signature: \
+Signature:  
 `AddVerification(IVerification v, string result, string info = null) : IVerification`\
 `AddVerification(IVerification v, VerificationStatus status, string result, string info = null) : IVerification`
 
@@ -233,3 +233,4 @@ Tip:
 * Q: In field-level custom code, can I use the provided verification variable directly?
   * A: Yes—return new AIForged.Services.ProcessResult(verification) and use AddVerification on that context.
  IgnoreCase Multiline IgnoreCase Multiline
+

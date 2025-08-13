@@ -51,7 +51,7 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service. \
+2. Click the Add Service dropdown and select Utility Service.  
    ![](../../assets/image%20%28288%29.png)
 3. Choose the utility (e.g., AIForged Digitizer, AIForged Image Splitter).
 4. In the utility’s settings, specify when it should run:
@@ -70,19 +70,19 @@ Utility services are not configured as standalone services. Attach them to a par
 !!! info
     Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
-1. Configure the Service Wizard\
+1. Configure the Service Wizard
    The wizard includes the following sections:
-   * General\
-     Enable the service, set optional authentication, and decide if it should execute on triggers.\
+   * General
+     Enable the service, set optional authentication, and decide if it should execute on triggers.
      ![](../../assets/Digitizer2.png)
-   * Auto Execution\
-     Configure Batch Size and whether the Digitizer should run before or after other processes.\
+   * Auto Execution
+     Configure Batch Size and whether the Digitizer should run before or after other processes.
      ![](../../assets/Digitizer3.png)
-   * Processing\
-     Set the post-processing document status, force PDFs to image-only if needed, and merge images into a single PDF.\
+   * Processing
+     Set the post-processing document status, force PDFs to image-only if needed, and merge images into a single PDF.
      ![](../../assets/Digitizer4.png)
-   * Advanced\
-     Configure overlay options (use original image as background), background color/opacity, archiving, and comment removal.\
+   * Advanced
+     Configure overlay options (use original image as background), background color/opacity, archiving, and comment removal.
      ![](../../assets/Digitizer.png)
 
 _The default settings are sufficient for most use cases. Only adjust advanced options if you have specific workflow or integration requirements._
@@ -126,14 +126,14 @@ Most users can proceed with defaults. The following settings map to the wizard t
 
 To digitize documents using the AIForged Digitizer:
 
-1. Open Service\
+1. Open Service
    When you open the AIForged Digitizer, you will be presented with the documents currently queued or processed in the Inbox.
-2. Upload Documents\
-   Click the Upload ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.\
+2. Upload Documents
+   Click the Upload ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
 
-3. Select Category (Optional)\
+3. Select Category (Optional)
    If you know the category for the document, select it. Otherwise, select **No category**.![](../../assets/image%20%28287%29.png)
-4. Process Documents\
+4. Process Documents
    After uploading, select the documents to process and click Process Checked.
 
 !!! info
@@ -143,7 +143,7 @@ To digitize documents using the AIForged Digitizer:
 
 ### View Processed Documents
 
-* Select Outbox in the usage filter in the AIForged Digitizer.\
+* Select Outbox in the usage filter in the AIForged Digitizer.
   ![](../../assets/image%20%2851%29.png)
 * Open a processed document to preview the digitized output. The resulting PDF contains a selectable text layer and, if enabled, a visual overlay.
 * Download the digitized PDF if needed for external systems.
@@ -177,5 +177,7 @@ To digitize documents using the AIForged Digitizer:
 * For very large or multi-volume archives, use Execute On Trigger and schedule Auto Execution to spread the load.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

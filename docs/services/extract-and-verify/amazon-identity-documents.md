@@ -21,30 +21,30 @@ The Amazon Identity Documents Service in AIForged leverages pre-trained ID docum
 
 Follow these steps to add and configure the **Amazon Identity Documents Service** to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Amazon Identity Documents Service**\
+2. **Add the Amazon Identity Documents Service**
    Click the **Add Service** ![](../../assets/image%20%2842%29.png) button.
-3. **Select Service Type**\
-   Choose **Amazon Identity Documents Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Amazon Identity Documents Service** from the available service types.
    ![](../../assets/image%20%2843%29.png)
-4. **Configure the Service Wizard**\
-   Open the Service Configuration Wizard.\
-   ![](../../assets/image%20%2844%29.png)\
-   or\
+4. **Configure the Service Wizard**
+   Open the Service Configuration Wizard.
+   ![](../../assets/image%20%2844%29.png)
+   or
    ![](../../assets/image%20%2845%29.png)
-   * **Step 1: General Settings**\
-     Configure core settings.\
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+   * **Step 1: General Settings**
+     Configure core settings.
+     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
      ![](../../assets/image%20%2846%29.png)
-   * **Step 2: User Defined Categories**\
-     Add any categories you wish to use for organizing your processed documents.\
+   * **Step 2: User Defined Categories**
+     Add any categories you wish to use for organizing your processed documents.
      ![](../../assets/image%20%2847%29.png)
-   * **Step 3: Analysis**\
-     Upload some documents for analysis, select them and click on the **Analysis** ![](../../assets/image%20%28125%29.png) button to generate the applicable fields for your forms.\
+   * **Step 3: Analysis**
+     Upload some documents for analysis, select them and click on the **Analysis** ![](../../assets/image%20%28125%29.png) button to generate the applicable fields for your forms.
      ![](../../assets/image%20%2848%29.png)
-   * **Step 4: Verification**\
-     Review, configure and verify any generated fields.\
+   * **Step 4: Verification**
+     Review, configure and verify any generated fields.
      ![](../../assets/image%20%2849%29.png)
 
 ***
@@ -59,12 +59,12 @@ Most users can proceed with the default settings. Advanced configuration is avai
 
 To upload and process identity documents using the Amazon Identity Documents Service:
 
-1. **Open Service**\
-   In the Amazon Identity Documents Service, click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.\
+1. **Open Service**
+   In the Amazon Identity Documents Service, click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%2850%29.png)
-2. **Select Category (Optional)**\
+2. **Select Category (Optional)**
    If you know the category for the document, select it. Otherwise, select **No category**.
-3. **Process Documents**\
+3. **Process Documents**
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2813%29%20%281%29%20%281%29.png) button.
 
 !!! info
@@ -74,7 +74,7 @@ To upload and process identity documents using the Amazon Identity Documents Ser
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the Amazon Identity Documents Service.\
+* Select **Outbox** in the usage filter in the Amazon Identity Documents Service.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted results.
 
@@ -96,5 +96,6 @@ To upload and process identity documents using the Amazon Identity Documents Ser
 * **Performance Concerns?**
   * Large batches may take longer to process. Start with smaller batches to ensure service responsiveness.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

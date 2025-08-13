@@ -34,18 +34,18 @@
 
 Follow these steps to add and configure the Google Object Detection service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Google Object Detection Service**\
+2. **Add the Google Object Detection Service**
    Click the **Add Service** ![](../../assets/image%20%2842%29.png) button in the command bar.
-3. **Select Service Type**\
-   Choose **Google Object Detection Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Google Object Detection Service** from the available service types.
    ![](../../assets/image%20%289%29.png)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
-   2. **Step 1: Service Config** \
+   2. **Step 1: Service Config**  
       Configure the service settings as required.&#x20;
-   3. **Step 2: Verification**\
+   3. **Step 2: Verification**
       No verification required.
 
 ***
@@ -91,14 +91,14 @@ The **Google Object Detection Service** can be customized for your workflow. The
 
 To upload and process documents using the Google Object Detection service:
 
-1. **Open Service**\
+1. **Open Service**
    When you open the service, you will see documents currently queued or processed in the **Inbox**.
-2. **Upload Documents**\
-   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.\
+2. **Upload Documents**
+   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%2810%29.png)
-3. **Select Category (Optional)**\
+3. **Select Category (Optional)**
    Select a category if desired; otherwise, select **No category**.
-4. **Process Documents**\
+4. **Process Documents**
    Select the uploaded documents and click **Process Checked**.
 
 !!! info
@@ -108,7 +108,7 @@ To upload and process documents using the Google Object Detection service:
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the Google Object Detection Service.\
+* Select **Outbox** in the usage filter in the Google Object Detection Service.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to review detected objects, tags, emotions, and content moderation scores.
 
@@ -167,5 +167,7 @@ Get results in minutes:
 * **How do I improve results for specialized domains (e.g., manufacturing, healthcare)?**
   * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 
 

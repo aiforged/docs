@@ -20,13 +20,13 @@ Make sure you have the following prerequisites:
 ### Creating an AIForged Classifier
 
 1. **Initialize the Service**
-   * Navigate to the agent where you want to add the classifier.\
+   * Navigate to the agent where you want to add the classifier.
      ![](../../assets/image%20%284%29%20%281%29%20%281%29%20%281%29.png)
-   * Create a new AIForged Classifier service.\
+   * Create a new AIForged Classifier service.
      ![](../../assets/image%20%285%29%20%281%29%20%281%29%20%281%29.png)
 2. **Set Up the Classifier**
-   * Open the AIForged Classifier wizard within your agent.\
-     ![](../../assets/image%20%286%29%20%281%29%20%281%29%20%281%29.png) or ![](../../assets/image%20%289%29%20%281%29%20%281%29%20%281%29.png)\
+   * Open the AIForged Classifier wizard within your agent.
+     ![](../../assets/image%20%286%29%20%281%29%20%281%29%20%281%29.png) or ![](../../assets/image%20%289%29%20%281%29%20%281%29%20%281%29.png)
      ![](../../assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
    * Adjust the classifier according to your requirements.
    * Review and apply the recommended settings for optimal results.
@@ -50,17 +50,17 @@ Make sure you have the following prerequisites:
 
 1. **Define the Classes**
    * Go to the "Categories" step.
-   * Add all possible categories (classes) you want the classifier to recognize.\
+   * Add all possible categories (classes) you want the classifier to recognize.
      ![](../../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29.png)
 2. **Upload Training Data**
    * Navigate to the "Training" step.
    * Upload example documents for each class.
-   * **Note:** Only one class/category should be uploaded at a time.\
+   * **Note:** Only one class/category should be uploaded at a time.
      ![](../../assets/image%20%2811%29%20%281%29%20%281%29%20%281%29.png)
 3. **Confirm the Information**
    * Review your categories and training data to ensure accuracy.
 4. **Train the Classifier**
-   * Start the training process using your uploaded examples and defined categories by clicking on the train ![](../../assets/image%20%2813%29%20%281%29%20%281%29%20%281%29.png) button.\
+   * Start the training process using your uploaded examples and defined categories by clicking on the train ![](../../assets/image%20%2813%29%20%281%29%20%281%29%20%281%29.png) button.
      ![](../../assets/image%20%2812%29%20%281%29%20%281%29%20%281%29.png)
 
 ***
@@ -90,18 +90,19 @@ Make sure you have the following prerequisites:
 
 ### Best Practices for Optimal Training
 
-* **Use Diverse Examples:**\
+* **Use Diverse Examples:**
   Collect a variety of representative documents for each class to improve classifier accuracy.
-* **Regularly Retrain:**\
+* **Regularly Retrain:**
   Periodically retrain your classifier as you gather new document types or encounter misclassifications.
-* **Keep Classes Distinct:**\
+* **Keep Classes Distinct:**
   Ensure that classes are well-defined and documents are not ambiguous between categories.
-* **Validate with Real Data:**\
+* **Validate with Real Data:**
   After training, test with real incoming documents to verify and fine-tune classifier performance.
-* **Incremental Improvement:**\
+* **Incremental Improvement:**
   Continuously add new samples for classes that show lower accuracy and retrain as needed.
 
 > **Tip:** Document your categories and training process, so you can maintain and improve your classifier over time.
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

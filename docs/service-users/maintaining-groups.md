@@ -6,14 +6,14 @@ See [.](./ "mention") for an overview of this functionality in AIForged.
 
 Creating a group in AIForged is a straightforward process:
 
-1.  **Navigate to Organisations**: Access the Organisations section in AIForged.\
+1.  **Navigate to Organisations**: Access the Organisations section in AIForged.
 
 
     <div align="left"><figure><img src="../assets/image%20%2880%29.png" alt=""><figcaption></figcaption></figure></div>
 2.  **Initiate Group Creation**: Click on the "Create a new group" ![](../assets/image%20%2882%29.png) button to open the create group dialog.
 
     <div align="left"><figure><img src="../assets/image%20%2881%29.png" alt=""><figcaption></figcaption></figure></div>
-3.  **Specify Group Details**: Provide a name for the group and optionally include additional information relevant to the group. \
+3.  **Specify Group Details**: Provide a name for the group and optionally include additional information relevant to the group.  
 
 
     <figure><img src="../assets/image%20%2883%29.png" alt=""><figcaption></figcaption></figure>
@@ -27,7 +27,7 @@ Creating a group in AIForged is a straightforward process:
 
 To delete an existing group, follow these steps:
 
-1.  **See More Options**: Click on the "Actions" button for the group you wish to delete.\
+1.  **See More Options**: Click on the "Actions" button for the group you wish to delete.
 
 
     <figure><img src="../assets/image%20%2886%29.png" alt=""><figcaption></figcaption></figure>
@@ -40,4 +40,6 @@ To delete an existing group, follow these steps:
     <figure><img src="../assets/image%20%2888%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+
+
 

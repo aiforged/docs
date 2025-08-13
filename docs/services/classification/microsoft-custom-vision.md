@@ -19,12 +19,12 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
 ## Service Setup
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
+2. Click on the **Add Service** button in the command bar.
    ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Custom Vision Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image%20%282%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
+4.  A new **Service Configuration Wizard** will open:
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
     <figure><img src="../../assets/image%20%28123%29.png" alt=""><figcaption></figcaption></figure>
@@ -32,20 +32,20 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
 * **Step 3 -** Training
-  1. Click **Upload Training Documents** in the command bar\
+  1. Click **Upload Training Documents** in the command bar
      ![](../../assets/33%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%287%29.png)
-  2. Select the **User Defined Category** you want to upload documents to.\
+  2. Select the **User Defined Category** you want to upload documents to.
      **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)**.**
   3. Upload files for each **User Defined Category** you wish to train the service on.
   4.  Once you have uploaded all your documents, click the **Train Service** button in the command bar to train your service. (**Note** that training can take **several** minutes!)
 
       <figure><img src="../../assets/image%20%284%29%20%286%29.png" alt=""><figcaption></figcaption></figure>
   5. Click **Process** on the dialog window that appears. Leave all settings as default.
-  6. A progress dialog will appear displaying the progress of the training.\
+  6. A progress dialog will appear displaying the progress of the training.
      Training times can vary depending on the number of files that have been uploaded for training.
   7. The progress dialog should automatically close once the training has been completed.
 * **Step 4** - Verification. No verification required.
-* Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
+* Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.
   ![](../../assets/image%20%2884%29%20%281%29.png)
 
 ## Service Configuration Settings
@@ -79,4 +79,5 @@ It is recommended to only process a few documents at a time, especially if it is
 2. You can view your **Processing** results by opening a processed doc for verification.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

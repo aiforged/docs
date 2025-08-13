@@ -87,15 +87,15 @@ Utility services are not configured as standalone services. Attach them to a par
 
 AIForged Custom Code utilities let you script in a range of popular languages, ensuring flexibility for both traditional developers and business users:
 
-* **C#**\
+* **C#**
   The default language, offering powerful .NET capabilities for validations, transformations, and integrations.
-* **Visual Basic**\
+* **Visual Basic**
   Use familiar VB.NET syntax for business logic and field enrichment.
-* **F#**\
+* **F#**
   Functional programming for advanced data processing or compact rules.
-* **IronPython**\
+* **IronPython**
   Write logic in Python syntax, ideal for data wrangling and users from a Python background.
-* **SemanticKernel (Natural Language)**\
+* **SemanticKernel (Natural Language)**
   Write your code logic in plain English (or other supported natural languages). The AI model interprets your intent and executes the logic, making automation accessible to non-programmers and enabling rapid prototyping.
 
 !!! info
@@ -233,4 +233,5 @@ foreach (IDocument childDoc in docs)
 * **What happens if my code throws an exception?**
   * The error is logged and processing may halt for the current document. Always use error handling to avoid workflow interruptions.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

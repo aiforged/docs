@@ -45,12 +45,12 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Microsoft Speech-to-Text Service to your agent:
 
-1. **Open the Agent View**\
+1. **Open the Agent View**
    Navigate to the agent where you want to add the service.
-2. **Add the Microsoft Speech-to-Text Service**\
+2. **Add the Microsoft Speech-to-Text Service**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**\
-   Choose **Microsoft Speech-to-Text Service** from the available service types.\
+3. **Select Service Type**
+   Choose **Microsoft Speech-to-Text Service** from the available service types.
    ![](../../assets/image%20%28274%29.png)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
@@ -93,14 +93,14 @@ Most users can proceed with the default settings. Advanced configuration is avai
 
 To upload and process audio using the Microsoft Speech-to-Text Service:
 
-1. **Open Service**\
+1. **Open Service**
    When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
-2. **Upload Audio**\
-   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid (MP3 or WAV).\
+2. **Upload Audio**
+   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid (MP3 or WAV).
    ![](../../assets/image%20%28278%29.png)
-3. **Select Category (Optional)**\
+3. **Select Category (Optional)**
    If you know the category for the audio, select it. Otherwise, select **No category**.
-4. **Process Documents**\
+4. **Process Documents**
    After uploading, select the audio files to process and click **Process Checked**.
 
 !!! info
@@ -110,7 +110,7 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 
 ### View Processed Documents
 
-* Select **Outbox** in the usage filter in the **Microsoft Speech-to-Text Service**.\
+* Select **Outbox** in the usage filter in the **Microsoft Speech-to-Text Service**.
   ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the transcript in the **Result** property.
 
@@ -142,5 +142,6 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
