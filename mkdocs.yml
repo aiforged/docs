@@ -7,7 +7,6 @@ theme:
   features:
     - navigation.sections
     - navigation.indexes
-    - navigation.expand
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -18,7 +17,7 @@ theme:
     - scheme: default
       primary: custom
       accent: custom
-      
+
 extra_css:
   - assets/theme.css
 
