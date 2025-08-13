@@ -2,7 +2,7 @@
 
 ## Overview
 
-The documents page displays all the documents in the specified location. Example: Inbox, Outbox, or even the Training box (for [AI Services](../services/) that require training).
+The documents page displays all the documents in the specified location. Example: Inbox, Outbox, or even the Training box (for [AI Services](../services//index.md) that require training).
 
 <figure><img src="../assets/image%20%2870%29.png" alt=""><figcaption></figcaption></figure>
 
@@ -115,4 +115,5 @@ The _**Process Selected**&#x20;_&#x20;![](../assets/image%20%2859%29%20%281%29.p
 2. Click the **Download** button in the command bar
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

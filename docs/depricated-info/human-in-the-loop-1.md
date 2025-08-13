@@ -10,10 +10,10 @@ There are multiple reasons for extracted data to be verified by a **HITL**. Thes
 
 * Poor **OCR Confidence** due to poor quality documents.
 * Illegible handwriting on handwritten forms.
-* An applied **Rule** failed the verification of an extracted field. See [Rules Engine](broken-reference) for more information.
+* An applied **Rule** failed the verification of an extracted field. See Rules Engine for more information.
 * A required field was not detected by the **OCR Engine**.
 * Supporting document data do not match (E.g. the name on a bank statement does not match the ID cards received. Refer to [Practical Example](practical-examples/credit-application-process-accept-or-reject-the-application.md) for an example.
-* Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](../custom-service-code/) for more information.
+* Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](../custom-service-code//index.md) for more information.
 
 ## Work Flow and Work Flow Items
 
@@ -96,3 +96,4 @@ This action will also immediately place the document in the **Processed** state 
 <figure><img src="../assets/image%20%287%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+

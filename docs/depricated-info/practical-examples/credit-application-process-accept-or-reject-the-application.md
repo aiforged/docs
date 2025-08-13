@@ -9,7 +9,7 @@ This example process will include the following steps:
 1. Extracting data from a [**Credit Application Form**](credit-application-form.md).
 2. Extracting data from a corresponding [**Social Security card**](social-security-number-card.md).
 3. Extracting data from a corresponding [**Bank Statement**](bank-statement.md).
-4. Comparing results from step 1 with the results of step 2 and step 3, and ultimately [**approving or rejecting the application**](credit-application-process-accept-or-reject-the-application.md#how-to-write-custom-code-to-compare-values-from-the-different-services.).
+4. Comparing results from step 1 with the results of step 2 and step 3, and ultimately [**approving or rejecting the application**](credit-application-process-accept-or-reject-the-application.md#how-to-write-custom-code-to-compare-values-from-the-different-services).
 
 ## How to write Custom Service Code to compare values from the different services.
 
@@ -17,11 +17,11 @@ At this stage, all the data has been extracted from all the relevant documentati
 
 If the Social Security numbers don't match, the application will be rejected. Similarly, if the salaries don't match within a threshold of 20 %, the application will be **rejected**. Otherwise, if both fields match the application will be **approved**.
 
-In order to write custom code that will execute after document data has been extracted, a **Custom Service Code** utility must be added to the service. Please see [**Custom Service Code**](../../custom-service-code/) to add this utility and an overview of object data types and method prototypes.
+In order to write custom code that will execute after document data has been extracted, a **Custom Service Code** utility must be added to the service. Please see [**Custom Service Code**](../../custom-service-code//index.md) to add this utility and an overview of object data types and method prototypes.
 
 ## Code sample walkthrough (C#)
 
-This section will discuss in detail the code that is required to implement the **rejection logic of the Credit Application** process, as explained in the [previous section](credit-application-process-accept-or-reject-the-application.md#how-to-write-custom-workflow-code-to-compare-values-from-the-different-services.).
+This section will discuss in detail the code that is required to implement the **rejection logic of the Credit Application** process, as explained in the [previous section](credit-application-process-accept-or-reject-the-application.md#how-to-write-custom-workflow-code-to-compare-values-from-the-different-services).
 
 1.  Check the number of docs linked to the service and skip **Custom Service Code** execution if no documents exist.
 
@@ -250,3 +250,4 @@ foreach (IDocument doc in docs)
 \\
 
  IgnoreCase Multiline IgnoreCase Multiline
+

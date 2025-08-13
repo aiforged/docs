@@ -16,7 +16,8 @@ Clicking on an agent card opens the full agent for detailed exploration and mana
 {% endhint %}
 
 {% hint style="info" %}
-To manage a service, see [Ai Services](../services/)
+To manage a service, see [Ai Services](../services//index.md)
 {% endhint %}
 
  IgnoreCase Multiline IgnoreCase Multiline
+

@@ -7,7 +7,7 @@ nav_order: 10
 
 ### Overview
 
-Agents in AIForged are containers for [AI services](../services/), and are essential for user access management. An agent can encapsulate an entire solution, and there is no limit to the amount of AI services that can be present in an agent.
+Agents in AIForged are containers for [AI services](../services//index.md), and are essential for user access management. An agent can encapsulate an entire solution, and there is no limit to the amount of AI services that can be present in an agent.
 
 ### Creating an agent
 
@@ -43,4 +43,5 @@ To disable or delete an agent, click on the ![](../assets/image%20%2852%29%20%28
 {% endhint %}
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

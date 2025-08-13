@@ -32,3 +32,24 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight
+
+nav:
+  - Home: index.md
+  - Documents:
+      - Overview: documents/index.md
+  - Services:
+      - Overview: services/index.md
+  - Rules engine:
+      - Overview: rules-engine/index.md
+  - SDK:
+      - Overview: sdk/index.md
+  - UiPath activities:
+      - Overview: uipath-activities/index.md
+  - Projects:
+      - Overview: projects/index.md
+  - Service users:
+      - Overview: service-users/index.md
+  - Custom service code:
+      - Overview: custom-service-code/index.md
+  - Deprecated info:
+      - Overview: depricated-info/index.md
