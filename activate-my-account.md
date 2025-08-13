@@ -3,7 +3,7 @@ title: Activate my account
 nav_order: 4
 ---
 
-# ✅ Activate my account
+# 🏡 Activate my account
 
 To activate your account, follow the instructions in the account activation email.
 
