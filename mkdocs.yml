@@ -42,11 +42,9 @@ nav:
   - 🔐 Login: login.md
   - 🔂 Multi-Factor Authentication: multi-factor-authentication.md
   - 🤵 User Profile: user-profile.md
-
   - 💡 Agents:
     - Overview: projects/index.md
     - 🧠 Understanding Agents: projects/understanding-projects.md
-
   - 📃 Documents:
     - Overview: documents/index.md
     - ℹ️ Document Types: documents/documemt-types.md
@@ -57,17 +55,14 @@ nav:
     - ↗️ Processing documents:
       - Overview: documents/processing-documents/index.md
       - Processing Paramaters: documents/processing-documents/processing-paramaters.md
-
   - 👥 Organisations and User Groups:
     - Overview: service-users/index.md
     - 📓 Maintaining Groups: service-users/maintaining-groups.md
     - 📏 Managing Roles within Usergroups: service-users/managing-roles-in-groups.md
     - 👤 Role Member Management: service-users/managing-users.md
-
   - 📩 Notification History: notifications.md
   - 💰 Wallets and Billing: transactions.md
   - 🖇️ Cloning: cloning.md
-
   - 👓 AI Services:
     - Overview: services/index.md
     - 🗂️ Scrapers:
@@ -122,7 +117,6 @@ nav:
       - Overview: services/object-detection/index.md
       - Google Object Detection: services/object-detection/google-object-detection.md
       - Microsoft Object Detection: services/object-detection/microsoft-object-detection.md
-
   - ✨ Custom Code:
     - Overview: custom-service-code/index.md
     - ⚙️ BaseModule:
@@ -152,7 +146,6 @@ nav:
         - WorkItemStatus: custom-service-code/basemodule/enums/workitemstatus.md
         - WorkItemType: custom-service-code/basemodule/enums/workitemtype.md
     - Custom Code Example: Duplicate Document Check: custom-service-code/custom-code-utility-duplicate-document-check.md
-
   - 📑 Field Rules (Rules Engine):
     - Overview: rules-engine/index.md
     - String:
@@ -178,13 +171,11 @@ nav:
       - RegEx: rules-engine/generic/regex.md
       - Web API: rules-engine/generic/web-api.md
       - Workflow Script: rules-engine/generic/workflow-script.md
-
   - SDK Downloads:
     - Overview: sdk/index.md
     - .Net: sdk/.net.md
     - Python: sdk/python.md
     - Typescript: sdk/typescript.md
-
   - UIPath Activities:
     - Overview: uipath-activities/index.md
     - Comprehensive Networking Tutorial for UIPath Developers:
@@ -300,7 +291,6 @@ nav:
       - Get Work Queue: uipath-activities/workitem/get-work-queue.md
       - Transfer Work Item: uipath-activities/workitem/transfer-work-item.md
       - Update Work Item: uipath-activities/workitem/update-work-item.md
-
   - Deprecated Documentation:
     - Overview: depricated-info/index.md
     - Training Box: depricated-info/training-box.md
@@ -400,7 +390,7 @@ nav:
         - Get Project Categories: depricated-info/uipath-activities/project/get-project-categories.md
         - Get Project Category By Name: depricated-info/uipath-activities/project/get-project-category-by-name.md
         - Get Project Category: depricated-info/uipath-activities/project/get-project-category.md
-        - *Get Project Class: depricated-info/uipath-activities/project/get-project-class.md
+        - Get Project Class: depricated-info/uipath-activities/project/get-project-class.md
         - Get Project Services: depricated-info/uipath-activities/project/get-project-services.md
         - Get Projects: depricated-info/uipath-activities/project/get-projects.md
         - Get Project By Id: depricated-info/uipath-activities/project/initialize.md
@@ -422,5 +412,4 @@ nav:
         - Get Work Item Count: depricated-info/uipath-activities/workitem/get-work-item-count.md
         - Get Work Items: depricated-info/uipath-activities/workitem/get-work-items.md
         - Get Work Queue: depricated-info/uipath-activities/workitem/get-work-queue.md
-
     - ⚙️ Settings: depricated-info/settings.md
