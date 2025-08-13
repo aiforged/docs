@@ -38,13 +38,11 @@ Make sure you have the following prerequisites:
 | **Force PDF Image** | Process PDFs as images only. Removes artifacts or hidden objects for cleaner classification. | Only enabled when experiencing issues with accurate classification. This will increase the training and processing time. |
 | **Merge To PDF**    | Group classified pages into individual PDFs based on the detected classes.                   | On (enabled) if you want grouped output; otherwise, off if you want separate documents for each page.                    |
 
-{% hint style="info" %}
-Enabling **Force PDF Image** can help if you experience issues with inconsistent or incorrect classification results from scanned or complex PDFs.
-{% endhint %}
+!!! info
+    Enabling **Force PDF Image** can help if you experience issues with inconsistent or incorrect classification results from scanned or complex PDFs.
 
-{% hint style="info" %}
-Use **Merge To PDF** if you want each class/category to be output as a consolidated PDF document.
-{% endhint %}
+!!! info
+    Use **Merge To PDF** if you want each class/category to be output as a consolidated PDF document.
 
 ***
 
@@ -105,4 +103,5 @@ Use **Merge To PDF** if you want each class/category to be output as a consolida
 
 > **Tip:** Document your categories and training process, so you can maintain and improve your classifier over time.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

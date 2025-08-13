@@ -4,9 +4,8 @@
 
 The AIForged Image Processor is a utility service used to pre-process documents before OCR or downstream extraction. By applying operations such as background whitening, comment removal, deskewing, noise reduction, and more, this utility can dramatically improve OCR accuracy and the reliability of downstream workflows.
 
-{% hint style="info" %}
-Use the Image Processor as a pre-processor to clean up scans, remove unwanted marks, or normalize visuals before handing documents off to OCR or classification services.
-{% endhint %}
+!!! info
+    Use the Image Processor as a pre-processor to clean up scans, remove unwanted marks, or normalize visuals before handing documents off to OCR or classification services.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -31,9 +29,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * JPEG
 * PNG
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter before processing.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter before processing.
 
 ***
 
@@ -70,9 +67,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -118,9 +114,8 @@ Key configuration options (may vary by environment):
 * **Archiving Strategy:** Days before processed documents are deleted.
 * **Document Processed Status:** Status to apply after processing (helps downstream routing).
 
-{% hint style="info" %}
-Tip: Start with a single operation, test, then enable more as needed. Over-processing can sometimes remove desired content!
-{% endhint %}
+!!! info
+    Tip: Start with a single operation, test, then enable more as needed. Over-processing can sometimes remove desired content!
 
 ***
 
@@ -166,4 +161,5 @@ Tip: Start with a single operation, test, then enable more as needed. Over-proce
 * **How do I revert if the output is too aggressive?**\
   Adjust or disable one operation at a time and re-test with your sample document.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

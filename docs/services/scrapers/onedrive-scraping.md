@@ -4,9 +4,8 @@
 
 The OneDrive Scraper in AIForged connects to a specified OneDrive folder via Microsoft Graph and imports new or updated files into your agent on a schedule. This enables a simple “drop folder” intake pattern for documents that need to flow into downstream services (OCR, Document Intelligence, rules, exports, etc.).
 
-{% hint style="info" %}
-Use OneDrive Scraper to create a secure, hands-off intake pipeline: team members (or partners) drop files into a shared OneDrive folder, and AIForged automatically ingests them for processing.
-{% endhint %}
+!!! info
+    Use OneDrive Scraper to create a secure, hands-off intake pipeline: team members (or partners) drop files into a shared OneDrive folder, and AIForged automatically ingests them for processing.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -33,9 +31,8 @@ The OneDrive Scraper can ingest most common file types stored in OneDrive, inclu
 * Office documents (Word, Excel, PowerPoint)
 * Text files
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter downstream to normalize inputs for processing.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter downstream to normalize inputs for processing.
 
 ***
 
@@ -96,9 +93,8 @@ Most users can proceed with the default settings. Advanced configuration is avai
   * Identifier: Optional context identifier (e.g., user or drive context) if required by your setup.
   * Share Id: The OneDrive share ID of the target folder to monitor.
 
-{% hint style="info" %}
-AIForged handles token acquisition for Microsoft Graph using a secure, modern auth flow—no passwords are stored. Provide the Client Id and required scopes; if your organization’s security requires it, you can also use Custom Code to inject additional parameters.
-{% endhint %}
+!!! info
+    AIForged handles token acquisition for Microsoft Graph using a secure, modern auth flow—no passwords are stored. Provide the Client Id and required scopes; if your organization’s security requires it, you can also use Custom Code to inject additional parameters.
 
 ***
 
@@ -115,9 +111,8 @@ To begin ingesting files using the OneDrive Scraper:
 
 When you open the OneDrive Scraper, you will be presented with the documents currently queued or processed in the Inbox.
 
-{% hint style="info" %}
-Tip: Start with a small Batch Size until you confirm everything is flowing correctly, then increase gradually to match your volume.
-{% endhint %}
+!!! info
+    Tip: Start with a small Batch Size until you confirm everything is flowing correctly, then increase gradually to match your volume.
 
 ***
 
@@ -145,13 +140,11 @@ Tip: Start with a small Batch Size until you confirm everything is flowing corre
 * Password-protected PDFs
   * Downstream services cannot process protected PDFs unless a password is provided.
 
-{% hint style="info" %}
-Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting size or time limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting size or time limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -196,9 +189,8 @@ Get results in minutes:
 4. Validate\
    Run a first pass (optional) and confirm new files appear in the scraper grid and flow to downstream services.
 
-{% hint style="info" %}
-Tip: Begin with a small test set in the OneDrive folder to validate end-to-end flow before rolling out to larger teams or suppliers.
-{% endhint %}
+!!! info
+    Tip: Begin with a small test set in the OneDrive folder to validate end-to-end flow before rolling out to larger teams or suppliers.
 
 ***
 
@@ -215,4 +207,5 @@ Tip: Begin with a small test set in the OneDrive folder to validate end-to-end f
 * What about password-protected PDFs?
   * Use **Custom Code** to provide the password per document so AIForged can unlock files before processing.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

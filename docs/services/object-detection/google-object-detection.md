@@ -4,9 +4,8 @@
 
 **Google Object Detection** in AIForged leverages Google Vision to detect objects, faces, and landmarks within images and PDFs. The service analyzes images and returns metadata for each detected item—including object tags, facial features, and content moderation labels (such as Adult, Racy, Violence, or Medical, each with a confidence score). It can also assess emotions on detected faces (e.g., joy, sorrow, anger, surprise).
 
-{% hint style="info" %}
-Use Google Object Detection to enrich your workflows with deep visual insights—identify people, objects, settings, and potentially sensitive content for downstream automation or compliance.
-{% endhint %}
+!!! info
+    Use Google Object Detection to enrich your workflows with deep visual insights—identify people, objects, settings, and potentially sensitive content for downstream automation or compliance.
 
 ***
 
@@ -15,9 +14,8 @@ Use Google Object Detection to enrich your workflows with deep visual insights�
 * Images (JPEG, PNG, BMP, GIF)
 * PDF
 
-{% hint style="info" %}
-If you need to process other content types, use the AIForged PDF Converter utility to generate a compatible file.
-{% endhint %}
+!!! info
+    If you need to process other content types, use the AIForged PDF Converter utility to generate a compatible file.
 
 ***
 
@@ -84,9 +82,8 @@ The **Google Object Detection Service** can be customized for your workflow. The
 | Password                | Optional | No        | Used for service authentication (can be set per document).            |
 | RemoveComments          | Optional | No        | Remove human comments from documents before processing.               |
 
-{% hint style="info" %}
-Tip: Start with the default settings. Only adjust advanced options if needed for custom workflows or integrations.
-{% endhint %}
+!!! info
+    Tip: Start with the default settings. Only adjust advanced options if needed for custom workflows or integrations.
 
 ***
 
@@ -104,9 +101,8 @@ To upload and process documents using the Google Object Detection service:
 4. **Process Documents**\
    Select the uploaded documents and click **Process Checked**.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify detection results before scaling up.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify detection results before scaling up.
 
 ***
 
@@ -153,9 +149,8 @@ Get results in minutes:
 3. Process and review detected tags, faces, emotions, and content moderation scores.
 4. Use Outbox filtering to verify and route outputs as needed.
 
-{% hint style="info" %}
-Tip: Begin with a small test batch to confirm results, then expand as needed for your workflow.
-{% endhint %}
+!!! info
+    Tip: Begin with a small test batch to confirm results, then expand as needed for your workflow.
 
 ***
 
@@ -172,4 +167,5 @@ Tip: Begin with a small test batch to confirm results, then expand as needed for
 * **How do I improve results for specialized domains (e.g., manufacturing, healthcare)?**
   * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

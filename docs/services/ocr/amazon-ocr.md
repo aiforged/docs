@@ -4,9 +4,8 @@
 
 The **Amazon OCR Service** in AIForged uses Amazon Textract to extract raw text from documents, without preserving layout information. The extracted text is stored in the **Result** property of the document for downstream processing, analysis, or integration.
 
-{% hint style="info" %}
-Use this service when you need plain text extraction from images or PDFs for workflows such as data mining, regex pattern detection, and downstream AI processing.
-{% endhint %}
+!!! info
+    Use this service when you need plain text extraction from images or PDFs for workflows such as data mining, regex pattern detection, and downstream AI processing.
 
 ***
 
@@ -16,9 +15,8 @@ Use this service when you need plain text extraction from images or PDFs for wor
 * JPEG
 * PNG
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -77,9 +75,8 @@ Most users can proceed with default settings; however, advanced settings can be 
 | **Password**                | Optional | No        | Authentication password (can be set per document).               |
 | **RemoveComments**          | Optional | No        | Remove human comments before processing.                         |
 
-{% hint style="info" %}
-If unsure, keep defaults unless you have a specific processing or integration requirement.
-{% endhint %}
+!!! info
+    If unsure, keep defaults unless you have a specific processing or integration requirement.
 
 ***
 
@@ -95,9 +92,8 @@ To upload and process documents using the **Amazon OCR Service**:
 3. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to confirm OCR accuracy before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to confirm OCR accuracy before scaling up.
 
 ***
 
@@ -158,9 +154,8 @@ The following provider constraints apply to Amazon Textract-backed OCR:
 * Query features (if used)
   * Per-page limits apply (e.g., max queries per page in sync/async modes).
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -172,9 +167,9 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

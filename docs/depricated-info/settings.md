@@ -20,9 +20,8 @@ The **Settings** page allows you to:
 
 ## Connectivity
 
-{% hint style="info" %}
-The connectivity page is useful when you host AiForged on your own Tenant
-{% endhint %}
+!!! info
+    The connectivity page is useful when you host AiForged on your own Tenant
 
 The **Connectivity** page allows the user to change connectivity settings. The user can specify:
 
@@ -47,3 +46,4 @@ The **Theme** page allows the user to select the current theme and enable or dis
 <figure><img src="../assets/image%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+

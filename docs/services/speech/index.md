@@ -10,9 +10,8 @@ description: >-
 
 Speech-to-text technology—also known as speech recognition—converts spoken language into written text using advanced AI algorithms. This enables you to transcribe meeting recordings, calls, interviews, or any other audio source, making voice data searchable, actionable, and automatable in your business processes.
 
-{% hint style="info" %}
-AIForged speech-to-text services bring fast, accurate transcription to your agents, supporting over 30 languages and domain-specific vocabulary tuning.
-{% endhint %}
+!!! info
+    AIForged speech-to-text services bring fast, accurate transcription to your agents, supporting over 30 languages and domain-specific vocabulary tuning.
 
 The following Speech-to-Text service is currently available in AIForged:
 
@@ -20,9 +19,8 @@ The following Speech-to-Text service is currently available in AIForged:
 | ------------------------ | ----------------------------------------------------------- | --------------------------- |
 | Microsoft Speech-to-Text | Accurate, scalable transcription for meetings, calls, media | microsoft-speech-to-text.md |
 
-{% hint style="info" %}
-Need transcription for a different provider or specialized workflow? Reach out to the AIForged team to discuss your requirements.
-{% endhint %}
+!!! info
+    Need transcription for a different provider or specialized workflow? Reach out to the AIForged team to discuss your requirements.
 
 ***
 
@@ -34,7 +32,7 @@ Need transcription for a different provider or specialized workflow? Reach out t
 * Extracting music lyrics or spoken content from audio tracks
 * Integrating audio-to-text conversion into custom workflows or downstream rules
 
-{% hint style="info" %}
-Speech-to-text services can be combined with other AIForged utilities for downstream classification, sentiment analysis, or keyword extraction—enabling full audio-to-insight pipelines!
-{% endhint %}
+!!! info
+    Speech-to-text services can be combined with other AIForged utilities for downstream classification, sentiment analysis, or keyword extraction—enabling full audio-to-insight pipelines!
  IgnoreCase Multiline IgnoreCase Multiline
+

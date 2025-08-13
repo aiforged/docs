@@ -4,9 +4,8 @@
 
 The Email Scraper in AIForged checks configured mailboxes at scheduled intervals and imports new emails into your agent. Attachments are automatically extracted using the built‑in attachment utility, streamlining document intake and downstream automation.
 
-{% hint style="info" %}
-Use the Email Scraper to centralize document intake from mailboxes and automatically extract attachments for processing by other services in your agent.
-{% endhint %}
+!!! info
+    Use the Email Scraper to centralize document intake from mailboxes and automatically extract attachments for processing by other services in your agent.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -77,9 +75,8 @@ AIForged supports prompt‑less device code flow for Microsoft 365. After initia
 * Operation\
   The scraper retrieves a device token automatically on its first scheduled run. On subsequent runs, it retrieves emails without prompts.
 
-{% hint style="info" %}
-This is the recommended and most secure way to connect Microsoft 365 mailboxes—no stored passwords and no manual prompts after setup.
-{% endhint %}
+!!! info
+    This is the recommended and most secure way to connect Microsoft 365 mailboxes—no stored passwords and no manual prompts after setup.
 
 ***
 
@@ -158,9 +155,8 @@ Turn on Auto Execution to run the scraper at scheduled intervals. Adjust the int
 * HTML‑only or malformed emails
   * Some messages may contain only HTML or malformed headers that reduce metadata extraction quality.
 
-{% hint style="info" %}
-Tip: For large mailboxes, start with a narrow Folder scope and use a dedicated Processed Folder to avoid re‑processing and to keep runs fast.
-{% endhint %}
+!!! info
+    Tip: For large mailboxes, start with a narrow Folder scope and use a dedicated Processed Folder to avoid re‑processing and to keep runs fast.
 
 ***
 
@@ -208,9 +204,8 @@ Get results in minutes:
 4. Review imports\
    Open the Email Scraper service grid to verify that emails are retrieved and attachments are extracted.
 
-{% hint style="info" %}
-Tip: Start with a single mailbox and folder, confirm correct operation, then expand to additional folders or scrapers.
-{% endhint %}
+!!! info
+    Tip: Start with a single mailbox and folder, confirm correct operation, then expand to additional folders or scrapers.
 
 ***
 
@@ -228,3 +223,4 @@ Tip: Start with a single mailbox and folder, confirm correct operation, then exp
   * Yes. Use separate scrapers for different mailboxes or folders to keep workflows organized and scalable.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

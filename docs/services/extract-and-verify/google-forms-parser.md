@@ -4,9 +4,8 @@
 
 The **Google Forms Parser** service in AIForged extracts text and layout information as **Key-Value Pairs** from a wide range of document types. It supports both direct file uploads and processing of documents available via URL (in JSON format). This service is ideal for digitizing forms, extracting structured data, and automating workflows that rely on Google form-like layouts.
 
-{% hint style="info" %}
-This service streamlines the extraction of structured data from scanned forms and digital documents, enabling fast, accurate automation for business processes and analytics.
-{% endhint %}
+!!! info
+    This service streamlines the extraction of structured data from scanned forms and digital documents, enabling fast, accurate automation for business processes and analytics.
 
 ***
 
@@ -17,9 +16,8 @@ This service streamlines the extraction of structured data from scanned forms an
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -82,9 +80,8 @@ To upload and process documents using the **Google Forms Parser**:
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -120,4 +117,5 @@ To upload and process documents using the **Google Forms Parser**:
 * Organize documents into categories for easier retrieval and downstream processing.
 * Test with a variety of real-world form samples to ensure robust extraction.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -18,17 +18,15 @@ AIForged offers two options for document and data retention: Automatic and Manua
 * Delete Results generated
 * Hard/ Soft - deletion
 
-{% hint style="danger" %}
-Soft deleted documents are automatically hard deleted after 30 days
-{% endhint %}
+!!! danger
+    Soft deleted documents are automatically hard deleted after 30 days
 
 ## Manual document deletion (Full Control)
 
 Administrators and Developers can delete documents on command via the UI or API, They can select [#document-deletion-options](document-retention.md#document-deletion-options "mention")
 
-{% hint style="info" %}
-All delete requests are logged and available on the audit view
-{% endhint %}
+!!! info
+    All delete requests are logged and available on the audit view
 
 ## Archiving strategy (Automatic)
 
@@ -36,13 +34,11 @@ Each service has an archiving strategy that can be configured to automatically s
 
 <div align="left"><figure><img src="../assets/image%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
-{% hint style="warning" %}
-The archiving strategy will soft delete documents for 30 days, before automatically hard deleting them
-{% endhint %}
+!!! warning
+    The archiving strategy will soft delete documents for 30 days, before automatically hard deleting them
 
-{% hint style="danger" %}
-Automatic deletion will NOT be logged
-{% endhint %}
+!!! danger
+    Automatic deletion will NOT be logged
 
 ## Audited information
 
@@ -59,3 +55,4 @@ Information kept in the audit view includes:
 
 
  IgnoreCase Multiline IgnoreCase Multiline
+

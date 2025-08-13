@@ -22,9 +22,8 @@ At a high level:
 3. If a match exists, the document is flagged as Error, skipped from downstream processing, and a HITL work item is created.
 4. If no match is found, the hash is recorded and the document continues.
 
-{% hint style="info" %}
-Note: MD5 is adequate for duplicate detection in most business contexts. For stronger collision resistance, see the “Extensions” section to switch to SHA‑256.
-{% endhint %}
+!!! info
+    Note: MD5 is adequate for duplicate detection in most business contexts. For stronger collision resistance, see the “Extensions” section to switch to SHA‑256.
 
 ***
 
@@ -57,9 +56,8 @@ Note: MD5 is adequate for duplicate detection in most business contexts. For str
    ![](../assets/image%20%2814%29.png)
 4. Save.
 
-{% hint style="info" %}
-Recommendation: Position this Custom Code utility as a post-processor (execute after the parent) to prevent duplicates from flowing into downstream steps.
-{% endhint %}
+!!! info
+    Recommendation: Position this Custom Code utility as a post-processor (execute after the parent) to prevent duplicates from flowing into downstream steps.
 
 ***
 
@@ -302,9 +300,8 @@ Where indicated in the code:
 * FieldDocIdDefId → Your DocumentId field definition ID
 * GroupId → Your group for verification user assignment
 
-{% hint style="info" %}
-For stability, consider reading these IDs from service settings (Parameter Definitions with Category=Setting) or use Constants instead of hard-coding.
-{% endhint %}
+!!! info
+    For stability, consider reading these IDs from service settings (Parameter Definitions with Category=Setting) or use Constants instead of hard-coding.
 
 ***
 
@@ -391,4 +388,5 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
   Swap WorkItemMethod.Random for Idle or HighThroughput, or route to ProjectOwner/DocumentOwner depending on your workflow.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

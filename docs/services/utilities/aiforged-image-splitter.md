@@ -4,9 +4,8 @@
 
 The AIForged Image Splitter is a utility service that splits multi-page documents into individual page images. For each page, the service creates a separate Outbox document that can be copied or moved to other services either manually or via the Copy/Move utility services. This enables page-level routing, OCR, QA, and targeted downstream workflows.
 
-{% hint style="info" %}
-Tip: Use the Image Splitter to generate per-page inputs for downstream services (e.g., OCR per page, page-level classification), or to create page-level artifacts for review and routing.
-{% endhint %}
+!!! info
+    Tip: Use the Image Splitter to generate per-page inputs for downstream services (e.g., OCR per page, page-level classification), or to create page-level artifacts for review and routing.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -31,9 +29,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * JPEG
 * PNG
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible input before splitting.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible input before splitting.
 
 ***
 
@@ -69,13 +66,11 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
-{% hint style="info" %}
-Tip: Attach Image Splitter as a pre-processor to generate page-level items before OCR or classification, or as a post-processor to branch page-level review after core processing.
-{% endhint %}
+!!! info
+    Tip: Attach Image Splitter as a pre-processor to generate page-level items before OCR or classification, or as a post-processor to branch page-level review after core processing.
 
 ***
 
@@ -104,9 +99,8 @@ Most users can proceed with defaults. Common settings include:
 * Password\
   Provide a password (via Custom Code per document) to unlock protected PDFs before splitting.
 
-{% hint style="info" %}
-Tip: Some options may vary by environment. If you don’t see a setting listed here, proceed with defaults or contact your administrator for guidance.
-{% endhint %}
+!!! info
+    Tip: Some options may vary by environment. If you don’t see a setting listed here, proceed with defaults or contact your administrator for guidance.
 
 ***
 
@@ -121,9 +115,8 @@ Tip: Some options may vary by environment. If you don’t see a setting listed h
 * Very large documents
   * High page counts increase processing time and can impact throughput.
 
-{% hint style="info" %}
-Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
 
 ***
 
@@ -140,9 +133,8 @@ To split documents using the Image Splitter:
 4. Review per-page outputs\
    Each page will appear as a separate Outbox document, ready for copy/move to downstream services.
 
-{% hint style="info" %}
-Tip: For very large documents, start with a smaller batch or page range to validate outputs before processing the entire file.
-{% endhint %}
+!!! info
+    Tip: For very large documents, start with a smaller batch or page range to validate outputs before processing the entire file.
 
 ***
 
@@ -191,9 +183,8 @@ Get results in minutes:
 4. Review & route\
    Open **Outbox** and route per-page outputs to downstream services (Copy/Move utilities, OCR, etc.).
 
-{% hint style="info" %}
-Tip: Begin with a representative multi-page document to validate end-to-end flow before scaling up.
-{% endhint %}
+!!! info
+    Tip: Begin with a representative multi-page document to validate end-to-end flow before scaling up.
 
 ***
 
@@ -210,4 +201,5 @@ Tip: Begin with a representative multi-page document to validate end-to-end flow
 * How do I handle password-protected PDFs?
   * Use the AIForged Custom Code utility to provide the password per document so AIForged can unlock files before splitting.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

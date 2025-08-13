@@ -4,19 +4,16 @@
 
 The **LLM Extractor** service in AIForged leverages cutting-edge generative AI models (LLMs) to extract structured data from documents using user-defined prompts. With support for multi-prompt workflows, template and child prompting, and full configurability of model parameters, LLM Extractor provides unparalleled flexibility for custom data extraction—without needing to train or label traditional models.
 
-{% hint style="info" %}
-LLM Extractor empowers you to extract exactly the data you want, in your preferred format, by designing prompts and structured response templates tailored to your use case.
-{% endhint %}
+!!! info
+    LLM Extractor empowers you to extract exactly the data you want, in your preferred format, by designing prompts and structured response templates tailored to your use case.
 
-{% hint style="info" %}
-Even though other LLM service are still available in AIForged such as ChatGPT Extractor and Claude Extractor, it is recommended to use and / or migrate to the LLM Extractor service as the other services have been deprecated.
-{% endhint %}
+!!! info
+    Even though other LLM service are still available in AIForged such as ChatGPT Extractor and Claude Extractor, it is recommended to use and / or migrate to the LLM Extractor service as the other services have been deprecated.
 
-{% hint style="warning" %}
-**❗ Important:**\
-**For all prompt types (Plain Text, JSON, Structured Data), your prompt must always include a clear instruction that the output/result must be in valid JSON format.**\
-&#xNAN;_&#x54;his ensures that responses from the AI model are structured and can be reliably parsed for downstream processing._
-{% endhint %}
+!!! warning
+    **❗ Important:**\
+    **For all prompt types (Plain Text, JSON, Structured Data), your prompt must always include a clear instruction that the output/result must be in valid JSON format.**\
+    &#xNAN;_&#x54;his ensures that responses from the AI model are structured and can be reliably parsed for downstream processing._
 
 ***
 
@@ -25,9 +22,8 @@ Even though other LLM service are still available in AIForged such as ChatGPT Ex
 * PDF
 * Images (JPEG, PNG, TIFF, etc.)
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -188,9 +184,8 @@ LLM Extractor provides robust configuration to tailor extraction to your needs:
 | Output Content Type          | Specify the output format (e.g., Markdown, JSON, etc.).                  |
 | OCR/DI Layout Dependency     | Configure which OCR/DI service is used to extract text from documents.   |
 
-{% hint style="info" %}
-**Tip:** All model parameters and prompt chaining options are fully customizable—experiment to find the best combination for your use case!
-{% endhint %}
+!!! info
+    **Tip:** All model parameters and prompt chaining options are fully customizable—experiment to find the best combination for your use case!
 
 ***
 
@@ -204,9 +199,8 @@ To upload and process documents using the **LLM Extractor**:
 2. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**. Prompts will execute in order of their index, using the selected models and response formats.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify extraction results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify extraction results before scaling up.
 
 ***
 
@@ -242,4 +236,5 @@ To upload and process documents using the **LLM Extractor**:
 * Regularly review extracted results, updating prompts and response formats as your needs evolve.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

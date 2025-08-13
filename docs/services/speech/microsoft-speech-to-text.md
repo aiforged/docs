@@ -4,9 +4,8 @@
 
 The Microsoft Speech-to-Text Service in AIForged uses Microsoft’s Azure AI Speech to accurately transcribe audio into text across many languages. Transcripts are stored in the document’s Result property for downstream search, analytics, or workflow automation. Models can be tailored to improve accuracy for domain-specific vocabulary.
 
-{% hint style="info" %}
-Tip: Use this service to quickly turn recorded meetings, calls, or podcasts into searchable, actionable text. For structured data extraction from documents, use Document Intelligence.
-{% endhint %}
+!!! info
+    Tip: Use this service to quickly turn recorded meetings, calls, or podcasts into searchable, actionable text. For structured data extraction from documents, use Document Intelligence.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -29,9 +27,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * MP3
 * WAV (PCM)
 
-{% hint style="info" %}
-Tip: If your audio is in another format (e.g., M4A, AAC, OGG), transcode it to MP3 or WAV using your preferred media converter before uploading.
-{% endhint %}
+!!! info
+    Tip: If your audio is in another format (e.g., M4A, AAC, OGG), transcode it to MP3 or WAV using your preferred media converter before uploading.
 
 ***
 
@@ -87,9 +84,8 @@ Most users can proceed with the default settings. Advanced configuration is avai
 | Password                | Optional | No        | Authentication/password handling; can be set per document via Custom Code.      |
 | RemoveComments          | Optional | No        | Remove human comments/annotations in document metadata (not typical for audio). |
 
-{% hint style="info" %}
-Tip: If unsure, keep defaults unless you have a specific processing or integration requirement. Setting the correct Language improves transcription accuracy.
-{% endhint %}
+!!! info
+    Tip: If unsure, keep defaults unless you have a specific processing or integration requirement. Setting the correct Language improves transcription accuracy.
 
 ***
 
@@ -107,9 +103,8 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 4. **Process Documents**\
    After uploading, select the audio files to process and click **Process Checked**.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify transcription quality before scaling up.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify transcription quality before scaling up.
 
 ***
 
@@ -147,4 +142,5 @@ Tip: For new services, process a small batch first to verify transcription quali
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

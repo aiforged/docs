@@ -6,9 +6,8 @@ Effectively managing members within roles is crucial for maintaining secure and 
 
 #### Adding Members to a Role
 
-{% hint style="info" %}
-Assigning a member to a role shares access to the agent and all its services with that member.
-{% endhint %}
+!!! info
+    Assigning a member to a role shares access to the agent and all its services with that member.
 
 **Steps to Add a Member to a Role**
 
@@ -101,19 +100,17 @@ Removing a member from a role will immediately revoke their access to the associ
 
 #### Tips and Best Practices
 
-{% hint style="info" %}
-_Regularly review role memberships to ensure only authorized members have access to critical agents and services._
-{% endhint %}
+!!! info
+    _Regularly review role memberships to ensure only authorized members have access to critical agents and services._
 
-{% hint style="info" %}
-_Use descriptive names for roles and groups to make management clearer as your organization grows._
-{% endhint %}
+!!! info
+    _Use descriptive names for roles and groups to make management clearer as your organization grows._
 
-{% hint style="info" %}
-_When inviting or creating new members, double-check email addresses and permissions to prevent accidental access issues._
-{% endhint %}
+!!! info
+    _When inviting or creating new members, double-check email addresses and permissions to prevent accidental access issues._
 
 ***
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

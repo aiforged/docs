@@ -8,9 +8,8 @@ description: Document and File Classification by way of an AI Model.
 
 Classification services in AIForged use machine learning and advanced AI models to automatically categorize documents and files into predefined groups based on their content. This enables smarter routing, search, and automation across your document workflows.
 
-{% hint style="info" %}
-Classification engines can analyze and classify documents on a per-page basis for granular control.
-{% endhint %}
+!!! info
+    Classification engines can analyze and classify documents on a per-page basis for granular control.
 
 AIForged currently provides the following **Classification Service Types**:
 
@@ -30,7 +29,7 @@ AIForged currently provides the following **Classification Service Types**:
 * Supporting compliance by ensuring documents are correctly categorized
 * Enhancing search, analytics, and reporting with accurate document tagging
 
-{% hint style="info" %}
-Need a custom classification workflow? Contact the AIForged team to discuss your unique requirements!
-{% endhint %}
+!!! info
+    Need a custom classification workflow? Contact the AIForged team to discuss your unique requirements!
  IgnoreCase Multiline IgnoreCase Multiline
+

@@ -4,9 +4,8 @@
 
 The Amazon Invoice Extraction Service in AIForged utilizes pre-trained invoice models to extract key-value pairs and detailed line items from invoices. This service returns essential invoice data—including Subtotal, VAT, Total, Date, and more—and presents individual line items in a structured table format.
 
-{% hint style="info" %}
-This service is ideal for automating invoice data entry, financial reconciliation, and reporting workflows.
-{% endhint %}
+!!! info
+    This service is ideal for automating invoice data entry, financial reconciliation, and reporting workflows.
 
 ***
 
@@ -67,9 +66,8 @@ To upload and process identity documents using the **Amazon Invoice Extraction S
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2812%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -94,4 +92,5 @@ To upload and process identity documents using the **Amazon Invoice Extraction S
 * **Performance Issues?**
   * Processing large batches may take longer. Start with smaller batches to ensure responsiveness.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

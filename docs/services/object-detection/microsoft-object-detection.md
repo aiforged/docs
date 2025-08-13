@@ -6,9 +6,8 @@
 
 You can configure this service as a standalone processor or as a verification service. As a verification service, it can be triggered by the AIForged rules engine to enrich or validate extracted values from another provider (e.g., calling object detection on an extracted image from Microsoft Document Intelligence).
 
-{% hint style="info" %}
-Tip: Use as a verification service to automatically enrich or check image fields from extraction workflows, or as a standalone service for bulk image/object analysis.
-{% endhint %}
+!!! info
+    Tip: Use as a verification service to automatically enrich or check image fields from extraction workflows, or as a standalone service for bulk image/object analysis.
 
 ***
 
@@ -17,9 +16,8 @@ Tip: Use as a verification service to automatically enrich or check image fields
 * Images (JPEG, PNG, BMP, GIF)
 * PDF (images will be extracted from pages for processing)
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file before object detection.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file before object detection.
 
 ***
 
@@ -91,9 +89,8 @@ The Microsoft Object Detection Service is highly configurable. The following set
 | Password                | Optional | No        | Used for service authentication. Can be set per document or via Custom Code. |
 | RemoveComments          | Optional | No        | Remove human comments from a document before processing.                     |
 
-{% hint style="info" %}
-Most users can proceed with default settings. Adjust only if needed for advanced scenarios or integration requirements.
-{% endhint %}
+!!! info
+    Most users can proceed with default settings. Adjust only if needed for advanced scenarios or integration requirements.
 
 ***
 
@@ -111,9 +108,8 @@ To upload and process documents using the Microsoft Object Detection Service:
 4. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify object detection results before scaling up.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify object detection results before scaling up.
 
 ***
 
@@ -166,4 +162,5 @@ Tip: For new services, process a small batch first to verify object detection re
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

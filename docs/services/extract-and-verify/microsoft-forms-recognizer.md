@@ -4,13 +4,11 @@
 
 The Microsoft Document Intelligence Service (formerly Microsoft Form Recognizer) in AIForged uses advanced AI to intelligently extract text, key-value pairs, tables, and layout data from your documents. Leveraging Microsoft’s Custom Layout technology, this service learns the structure of your forms, enabling the extraction of structured data—including complex field relationships—without requiring extensive data science expertise.
 
-{% hint style="info" %}
-Document Intelligence includes a built-in classifier. You define classifications (categories) in Step 2 of the service wizard, and these are used throughout the workflow to ensure accurate document routing and extraction.
-{% endhint %}
+!!! info
+    Document Intelligence includes a built-in classifier. You define classifications (categories) in Step 2 of the service wizard, and these are used throughout the workflow to ensure accurate document routing and extraction.
 
-{% hint style="info" %}
-While Microsoft Form Recognizer is still available in AIForged, it has been marked for deprecation. It is strongly recommended to use **Document Intelligence** for all new solutions and migrations going forward.
-{% endhint %}
+!!! info
+    While Microsoft Form Recognizer is still available in AIForged, it has been marked for deprecation. It is strongly recommended to use **Document Intelligence** for all new solutions and migrations going forward.
 
 ***
 
@@ -28,9 +26,8 @@ While Microsoft Form Recognizer is still available in AIForged, it has been mark
 * PDF
 * Images (JPEG, PNG, TIFF, etc.)
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -76,9 +73,8 @@ Follow these steps to add and configure the **Microsoft Document Intelligence (C
      Use this step to verify the keys/fields defined or extracted during training.\
      ![](../../assets/image%20%28174%29.png)
 
-{% hint style="danger" %}
-Be sure to assign the correct category to each document during upload in Step 4: Analysis. This is critical for accurate classification and model training.
-{% endhint %}
+!!! danger
+    Be sure to assign the correct category to each document during upload in Step 4: Analysis. This is critical for accurate classification and model training.
 
 ***
 
@@ -92,9 +88,9 @@ Labelling is a crucial step for training the Document Intelligence extraction en
 2.  **Select Document Category**\
     Use the filter to select the document category whose documents you want to label.
 
-    > {% hint style="info" %}
+    > !!! info
     > Only documents that have already been analyzed in Step 4 will be available for labelling.
-    > {% endhint %}
+        >
 3. **Select a Document**\
    Choose a document from the list to begin labelling.\
    ![](../../assets/image%20%28176%29.png)
@@ -117,9 +113,8 @@ Labelling is a crucial step for training the Document Intelligence extraction en
 
 <figure><img src="../../assets/image%20%28197%29.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
-{% endhint %}
+!!! info
+    Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
 
 ***
 
@@ -160,9 +155,8 @@ To upload and process documents using the **Google Forms Parser**:
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -199,4 +193,5 @@ To upload and process documents using the **Google Forms Parser**:
 * Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

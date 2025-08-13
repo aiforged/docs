@@ -6,9 +6,8 @@
 
 The Google Handwriting Service in AIForged uses Google Cloud’s handwriting recognition to extract handwritten text from images and PDFs. Results are captured as structured elements—Areas, Paragraphs, and Words—for accurate localization, and a consolidated plain-text output is available in the document’s Result property for downstream processing.
 
-{% hint style="info" %}
-Use this service when you need to digitize handwritten notes, forms, or annotations and make them searchable or available for downstream rules and analytics.
-{% endhint %}
+!!! info
+    Use this service when you need to digitize handwritten notes, forms, or annotations and make them searchable or available for downstream rules and analytics.
 
 ***
 
@@ -20,9 +19,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -33,9 +31,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -96,9 +93,8 @@ Most users can proceed with default settings. Advanced configuration is availabl
 | Password                | Optional | No        | Authentication/password handling; can be set per document using Custom Code. |
 | RemoveComments          | Optional | No        | Remove human comments/annotations before processing.                         |
 
-{% hint style="info" %}
-If unsure, keep defaults unless you have a specific processing or integration requirement.
-{% endhint %}
+!!! info
+    If unsure, keep defaults unless you have a specific processing or integration requirement.
 
 ***
 
@@ -110,13 +106,11 @@ If unsure, keep defaults unless you have a specific processing or integration re
 * Large PDFs or high-resolution images take longer to process; consider batching or splitting for throughput.
 * Password-protected PDFs cannot be processed unless a password is provided.
 
-{% hint style="info" %}
-Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting provider limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting provider limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -134,9 +128,8 @@ To upload and process documents using the Google Handwriting service:
 4. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -189,4 +182,5 @@ To upload and process documents using the Google Handwriting service:
   * Many languages are supported; accuracy varies by script and image quality. Provide a Language hint when possible and test with samples.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

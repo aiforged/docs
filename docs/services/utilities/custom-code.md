@@ -4,9 +4,8 @@
 
 The Custom Code utility in AIForged empowers you to script custom logic directly in your agent workflows. It lets you validate, enrich, transform, or route extracted data from Document Intelligence or any other service. With full access to the runtime context and the BaseModule API, you can reference documents, parameters (fields/labels), verifications, datasets, and more. Use it to call external APIs, enforce business rules, or perform any advanced operation that’s beyond standard service settings.
 
-{% hint style="info" %}
-Tip: Start with a focused task—such as validating field formats or flagging duplicates—and expand your Custom Code as your workflow evolves.
-{% endhint %}
+!!! info
+    Tip: Start with a focused task—such as validating field formats or flagging duplicates—and expand your Custom Code as your workflow evolves.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -28,9 +26,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 
 * Any document or data type handled by the parent service. Custom Code runs in context—accessing all relevant documents, fields, and extracted data.
 
-{% hint style="info" %}
-If you need to normalize input formats, use the PDF Converter or other pre-processing utilities upstream of your Custom Code.
-{% endhint %}
+!!! info
+    If you need to normalize input formats, use the PDF Converter or other pre-processing utilities upstream of your Custom Code.
 
 ***
 
@@ -67,9 +64,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -82,9 +78,8 @@ Utilities run as part of the parent’s lifecycle. Use Execute Before Process or
 * **Logging:** Use the provided logger to output debug or info messages.
 * **Error Handling:** Always use try/catch and log exceptions.
 
-{% hint style="info" %}
-For field/parameter logic, you can access and modify values, add verifications, or trigger workflow actions. For document-level logic, you can process document batches, create work items, or update statuses.
-{% endhint %}
+!!! info
+    For field/parameter logic, you can access and modify values, add verifications, or trigger workflow actions. For document-level logic, you can process document batches, create work items, or update statuses.
 
 ***
 
@@ -103,9 +98,8 @@ AIForged Custom Code utilities let you script in a range of popular languages, e
 * **SemanticKernel (Natural Language)**\
   Write your code logic in plain English (or other supported natural languages). The AI model interprets your intent and executes the logic, making automation accessible to non-programmers and enabling rapid prototyping.
 
-{% hint style="info" %}
-Tip: Start with C# for maximum compatibility and support, or try SemanticKernel for rapid prototyping and business-rule scripting in natural language.
-{% endhint %}
+!!! info
+    Tip: Start with C# for maximum compatibility and support, or try SemanticKernel for rapid prototyping and business-rule scripting in natural language.
 
 **How to choose the language:**
 
@@ -168,9 +162,8 @@ foreach (IDocument childDoc in docs)
 }
 ```
 
-{% hint style="info" %}
-For the MD5 Hash calculation to work, add `System.Security.Cryptography.Algorithms` to your list of assemblies in the code editor.
-{% endhint %}
+!!! info
+    For the MD5 Hash calculation to work, add `System.Security.Cryptography.Algorithms` to your list of assemblies in the code editor.
 
 ***
 
@@ -182,7 +175,8 @@ For the MD5 Hash calculation to work, add `System.Security.Cryptography.Algorith
 4. Save your script and test with representative documents.
 5. Monitor logs and outputs to validate behavior.
 
-{% hint style="info" %} Tip: Start simple (e.g., field normalization or one-off API call), then iterate as your workflow matures. {% endhint %}
+!!! info
+    Tip: Start simple (e.g., field normalization or one-off API call), then iterate as your workflow matures.
 
 ***
 
@@ -239,3 +233,4 @@ For the MD5 Hash calculation to work, add `System.Security.Cryptography.Algorith
 * **What happens if my code throws an exception?**
   * The error is logged and processing may halt for the current document. Always use error handling to avoid workflow interruptions.
  IgnoreCase Multiline IgnoreCase Multiline
+

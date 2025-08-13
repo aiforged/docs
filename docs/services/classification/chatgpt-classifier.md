@@ -4,21 +4,17 @@
 
 The GPT Classifier in AIForged empowers you to categorize documents using advanced language models, without the need for traditional supervised training. Instead, you configure a question and answer matrix linked to your document categories, guiding the model's classification logic.
 
-{% hint style="info" %}
-Unlike traditional classifiers, the GPT Classifier does not require uploading training data. Instead, you guide the model’s classification logic by configuring a question and answer matrix linked to your document categories.
-{% endhint %}
+!!! info
+    Unlike traditional classifiers, the GPT Classifier does not require uploading training data. Instead, you guide the model’s classification logic by configuring a question and answer matrix linked to your document categories.
 
-{% hint style="info" %}
-The GPT Classifier is designed for page-by-page classification. Each page is evaluated independently, so your questions should be relevant and answerable for a single page.
-{% endhint %}
+!!! info
+    The GPT Classifier is designed for page-by-page classification. Each page is evaluated independently, so your questions should be relevant and answerable for a single page.
 
-{% hint style="warning" %}
-Due to the nature of "Page by Page" classification (and dependent on the LLM model version and configuration of the Hint and Question Matrixes), ChatGPT classification might not be suited for certain types of lengthy documents.
-{% endhint %}
+!!! warning
+    Due to the nature of "Page by Page" classification (and dependent on the LLM model version and configuration of the Hint and Question Matrixes), ChatGPT classification might not be suited for certain types of lengthy documents.
 
-{% hint style="info" %}
-GPT services are charged by [Token Usage](https://platform.openai.com/tokenizer).
-{% endhint %}
+!!! info
+    GPT services are charged by [Token Usage](https://platform.openai.com/tokenizer).
 
 ***
 
@@ -33,9 +29,8 @@ GPT services are charged by [Token Usage](https://platform.openai.com/tokenizer)
 * **Page-by-Page Classification:**\
   Classification is performed individually for each page within a document.
 
-{% hint style="info" %}
-When designing your questions, make sure they are appropriate for single-page evaluation, as each page is assessed separately.
-{% endhint %}
+!!! info
+    When designing your questions, make sure they are appropriate for single-page evaluation, as each page is assessed separately.
 
 ***
 
@@ -85,9 +80,8 @@ Below are some example questions you can use for typical document categories. Re
 | Report         | What kind of information is summarized here?      | Financial Report          | ._Report._       |
 | Cover Sheet    | Is this page a cover or title page?               | Yes or No                 | ^(Yes            |
 
-{% hint style="info" %}
-Tailor your questions to the language, structure, and cues present on a typical page of each category.
-{% endhint %}
+!!! info
+    Tailor your questions to the language, structure, and cues present on a typical page of each category.
 
 ***
 
@@ -131,4 +125,5 @@ Once your configuration is complete:
 * **Performance Issues?**
   * Large documents with many pages may take longer to process. Test with smaller samples first.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

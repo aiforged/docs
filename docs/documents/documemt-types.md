@@ -4,9 +4,8 @@
 
 It’s possible to categorize documents into three distinct types: structured, semi-structured, and unstructured. Each type comes with its own extraction challenges and typically benefits from different AI approaches.
 
-{% hint style="info" %}
-Identify the document type first, then choose an appropriate [AI service](https://0.0.0.0/services/) and configuration to maximize accuracy and speed.
-{% endhint %}
+!!! info
+    Identify the document type first, then choose an appropriate [AI service](https://0.0.0.0/services/) and configuration to maximize accuracy and speed.
 
 ### Structured documents
 
@@ -66,3 +65,4 @@ Unstructured documents contain rich free-form text with little to no consistent 
 <figure><img src="../assets/image%20%282%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+

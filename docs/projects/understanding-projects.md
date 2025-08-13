@@ -11,13 +11,12 @@ They serve as a quick reference of an agent's status, offering essential informa
 
 <div align="left"><figure><img src="../assets/image%20%2853%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
-{% hint style="info" %}
-Clicking on an agent card opens the full agent for detailed exploration and management.
-{% endhint %}
+!!! info
+    Clicking on an agent card opens the full agent for detailed exploration and management.
 
-{% hint style="info" %}
-To manage a service, see [Ai Services](../services//index.md)
-{% endhint %}
+!!! info
+    To manage a service, see [Ai Services](../services//index.md)
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

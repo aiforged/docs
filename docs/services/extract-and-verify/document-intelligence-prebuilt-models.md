@@ -4,9 +4,8 @@
 
 The **Document Intelligence – Prebuilt Models** service in AIForged allows you to instantly extract structured data from common document types using Microsoft’s rich library of pre-trained models. With no need for training or manual labelling, you can rapidly process a wide array of standardized forms—including invoices, receipts, ID documents, bank statements, tax forms, and more.
 
-{% hint style="info" %}
-Prebuilt Models let you start extracting data from supported forms right away—simply select a model and upload your documents. No training or labelling required.
-{% endhint %}
+!!! info
+    Prebuilt Models let you start extracting data from supported forms right away—simply select a model and upload your documents. No training or labelling required.
 
 ***
 
@@ -15,9 +14,8 @@ Prebuilt Models let you start extracting data from supported forms right away—
 * PDF
 * Images (JPEG, PNG, TIFF, etc.)
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -49,7 +47,8 @@ Follow these steps to add and configure the **Prebuilt Models** service to your 
    * **Step 1: Service**\
      Select your desired **Prebuilt Model** from the dropdown (e.g., Invoices, Receipts, IdDocuments, USPersonalTax, BankStatements, Checks, CreditCards, BusinessCards, Contracts, Layout, and more).\
      ![](../../assets/image%20%2818%29%20%281%29.png)
-     {% hint style="info" %} Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format. {% endhint %}
+     !!! info
+    Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format.
    * **Step 2: Categories**\
      Optionally, create document categories for organizational or workflow purposes.\
      ![](../../assets/image%20%2819%29%20%281%29.png)
@@ -72,9 +71,8 @@ Most users can proceed with the default settings. Key configuration options incl
 | Allow Process Table Creation | Enable to create new table definitions for unknown tables. |
 | Save OCR Layout              | Save OCR layout including lines and words.                 |
 
-{% hint style="info" %}
-No training, labelling, or dataset upload is needed for prebuilt models—just select your model and start processing.
-{% endhint %}
+!!! info
+    No training, labelling, or dataset upload is needed for prebuilt models—just select your model and start processing.
 
 ***
 
@@ -141,9 +139,8 @@ To upload and process documents using the **Prebuilt Models** service:
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -175,4 +172,5 @@ To upload and process documents using the **Prebuilt Models** service:
 * Review the extracted data fields for each document type to understand model outputs.
 * Keep your Azure Document Intelligence API credentials up to date.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

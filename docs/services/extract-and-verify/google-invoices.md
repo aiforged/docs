@@ -6,9 +6,8 @@ The **Google Invoice Parser Service** in AIForged uses pre-trained invoice model
 
 No custom training is required; the service utilizes robust, internal pre-built invoice models for fast and accurate extraction from invoice documents.
 
-{% hint style="info" %}
-This service is ideal for automating invoice data entry, streamlining financial reconciliation, and improving the accuracy and speed of business workflows that rely on invoice processing.
-{% endhint %}
+!!! info
+    This service is ideal for automating invoice data entry, streamlining financial reconciliation, and improving the accuracy and speed of business workflows that rely on invoice processing.
 
 ***
 
@@ -70,9 +69,8 @@ To upload and process documents using the **Google Forms Parser**:
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -107,4 +105,5 @@ To upload and process documents using the **Google Forms Parser**:
 * Regularly review and validate extracted data to improve downstream workflows.
 * Organize your documents into categories to keep your processing structured and efficient.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

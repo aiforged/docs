@@ -4,9 +4,8 @@
 
 The Workflow Code Utility in AIForged extends Custom Code scripting with additional methods tailored for advanced workflow automation and Human-in-the-Loop (HITL) scenarios. Use it to dynamically assign, prioritize, or create verification work items, balance workloads, and build KPI-driven routing for users and roles.
 
-{% hint style="info" %}
-Tip: Use Workflow Code Utility for smart, data-driven distribution of verification tasks and to automate escalations or prioritization based on user activity and performance.
-{% endhint %}
+!!! info
+    Tip: Use Workflow Code Utility for smart, data-driven distribution of verification tasks and to automate escalations or prioritization based on user activity and performance.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -62,9 +60,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -174,9 +171,8 @@ if (kpi.AverageCompletionTime > TimeSpan.FromHours(24))
 }
 ```
 
-{% hint style="info" %}
-Tip: Use SaveChanges() after each assignment or escalation to ensure work items are committed promptly.
-{% endhint %}
+!!! info
+    Tip: Use SaveChanges() after each assignment or escalation to ensure work items are committed promptly.
 
 ***
 
@@ -189,9 +185,8 @@ Get started with smart work item assignment:
 3. Save and test with a batch of work items.
 4. Use logging to review the assignment decisions and adjust logic as needed.
 
-{% hint style="info" %}
-Tip: Combine KPI-based user selection with fallback logic (e.g., random or idle user assignment) for robust, fair workload distribution.
-{% endhint %}
+!!! info
+    Tip: Combine KPI-based user selection with fallback logic (e.g., random or idle user assignment) for robust, fair workload distribution.
 
 ***
 
@@ -238,3 +233,4 @@ Tip: Combine KPI-based user selection with fallback logic (e.g., random or idle 
 * **How do I track assignment performance?**
   * Use GetUserKpi and GetHighThroughputUserId to monitor per-user throughput and adjust rules accordingly.
  IgnoreCase Multiline IgnoreCase Multiline
+

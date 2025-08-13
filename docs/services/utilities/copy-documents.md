@@ -6,9 +6,8 @@
 
 The Copy Documents utility in AIForged enables seamless, automated transfer of documents from one service to another within your agent’s workflow. It’s used as a pre-process or post-process utility, most often to "hand off" documents between processing steps (e.g., from OCR to classification). The utility supports filtering by file extension, document status, category, and usage, and can set/reset document metadata as needed.
 
-{% hint style="info" %}
-Tip: The Copy Documents utility is the default internal transport method when you configure flows in the service flow configurator. It keeps your pipeline modular and your document routing flexible.
-{% endhint %}
+!!! info
+    Tip: The Copy Documents utility is the default internal transport method when you configure flows in the service flow configurator. It keeps your pipeline modular and your document routing flexible.
 
 ***
 
@@ -20,9 +19,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -32,9 +30,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * Images (JPEG, PNG, TIFF)
 * Office documents (if supported by downstream services)
 
-{% hint style="info" %}
-If you need to normalize formats, use the AIForged PDF Converter as a pre-processor before copying.
-{% endhint %}
+!!! info
+    If you need to normalize formats, use the AIForged PDF Converter as a pre-processor before copying.
 
 ***
 
@@ -70,9 +67,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -116,9 +112,8 @@ Most users can keep defaults, but the Copy Documents utility is highly configura
 * **Comment Reset:** Clear the target comment.
 * **Check Before Copy:** Prevents duplicate copying of the same file.
 
-{% hint style="info" %}
-Tip: If you’re unsure about a field, start with defaults and adjust after testing your pipeline.
-{% endhint %}
+!!! info
+    Tip: If you’re unsure about a field, start with defaults and adjust after testing your pipeline.
 
 ***
 
@@ -136,9 +131,8 @@ Tip: If you’re unsure about a field, start with defaults and adjust after test
 * **Performance:** Copying large batches or very large files may impact throughput—use batch sizing and scheduling to avoid bottlenecks.
 * **Metadata mapping:** If categories, statuses, or usages are misconfigured, documents may not route as intended.
 
-{% hint style="info" %}
-Tip: Use explicit filters (extensions, status, patterns) and enable Check Before Copy to avoid unwanted duplicates.
-{% endhint %}
+!!! info
+    Tip: Use explicit filters (extensions, status, patterns) and enable Check Before Copy to avoid unwanted duplicates.
 
 ***
 
@@ -180,9 +174,8 @@ Get results in minutes:
 3. Save and run a small test batch.
 4. Review the target service to confirm documents were copied as expected.
 
-{% hint style="info" %}
-Tip: Start simple, then add advanced filters and mapping as your workflow grows.
-{% endhint %}
+!!! info
+    Tip: Start simple, then add advanced filters and mapping as your workflow grows.
 
 ***
 
@@ -199,4 +192,5 @@ Tip: Start simple, then add advanced filters and mapping as your workflow grows.
 * **How do I verify copy results?**
   * Check the destination service’s Inbox/Outbox and confirm copied files and expected metadata.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

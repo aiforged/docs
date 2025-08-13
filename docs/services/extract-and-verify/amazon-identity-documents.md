@@ -4,9 +4,8 @@ Overview
 
 The Amazon Identity Documents Service in AIForged leverages pre-trained ID document models from Amazon's AnalyzeID API to extract key-value pairs from a variety of identity documents, such as passports, driver licenses, and other US Government-issued IDs. The service is designed to return standardized, reliable information—such as Name, Surname, ID Number, and Date of Birth—regardless of the document's source or format.
 
-{% hint style="info" %}
-**Note:** Key names are standardized within the AnalyzeID response. For example, a driver's license field labeled "LIC#" (license number) and a passport field labeled "Passport No" will both be returned as "Document ID" in the output, alongside the original label. This makes it easy to combine and compare data across different types of identity documents.
-{% endhint %}
+!!! info
+    **Note:** Key names are standardized within the AnalyzeID response. For example, a driver's license field labeled "LIC#" (license number) and a passport field labeled "Passport No" will both be returned as "Document ID" in the output, alongside the original label. This makes it easy to combine and compare data across different types of identity documents.
 
 ***
 
@@ -68,9 +67,8 @@ To upload and process identity documents using the Amazon Identity Documents Ser
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2813%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -98,4 +96,5 @@ To upload and process identity documents using the Amazon Identity Documents Ser
 * **Performance Concerns?**
   * Large batches may take longer to process. Start with smaller batches to ensure service responsiveness.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

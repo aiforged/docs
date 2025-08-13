@@ -4,9 +4,8 @@
 
 The Microsoft Handwriting Service in AIForged uses Microsoft’s OCR (Azure AI Vision Read) to extract handwritten text from documents. Detected handwriting is returned as structured elements by Line, each containing a list of Words, and a consolidated plain-text output is stored in the document’s Result property for downstream rules, analytics, or integration.
 
-{% hint style="info" %}
-Use this service to digitize handwritten notes, annotations, or form entries and make them searchable or available for downstream validation and processing.
-{% endhint %}
+!!! info
+    Use this service to digitize handwritten notes, annotations, or form entries and make them searchable or available for downstream validation and processing.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -31,9 +29,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -94,9 +91,8 @@ Most users can proceed with default settings. Advanced configuration is availabl
 | Password                | Optional | No        | Authentication/password handling; can be set per document using Custom Code.  |
 | RemoveComments          | Optional | No        | Remove human comments/annotations before processing.                          |
 
-{% hint style="info" %}
-If unsure, keep defaults unless you have a specific processing or integration requirement.
-{% endhint %}
+!!! info
+    If unsure, keep defaults unless you have a specific processing or integration requirement.
 
 ***
 
@@ -113,13 +109,11 @@ If unsure, keep defaults unless you have a specific processing or integration re
 * Output structure
   * The consolidated text is available in Result; enable IsVerification if you also need per-line/word visualization.
 
-{% hint style="info" %}
-Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -137,9 +131,8 @@ To upload and process documents using the Microsoft Handwriting Service:
 4. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify handwriting extraction before scaling up.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify handwriting extraction before scaling up.
 
 ***
 
@@ -177,4 +170,5 @@ Tip: For new services, process a small batch first to verify handwriting extract
 * Enable IsVerification if you need to review lines and words visually alongside the Result text.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

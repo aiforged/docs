@@ -4,9 +4,8 @@
 
 The **AIForged Clustering Service** is an in-house developed machine learning solution designed to group unlabeled documents and data. Leveraging unsupervised machine learning, this service automatically classifies documents into logical clusters or categories—without the need for predefined labels.
 
-{% hint style="info" %}
-Clustering is ideal for sorting large volumes of documents, especially when you don’t have labeled training data or need to discover new document types.
-{% endhint %}
+!!! info
+    Clustering is ideal for sorting large volumes of documents, especially when you don’t have labeled training data or need to discover new document types.
 
 ***
 
@@ -73,9 +72,8 @@ To upload and process documents using the Clustering Service:
 4. **Process Documents**\
    After uploading, check the documents to be processed and click on the **Process** ![](../../assets/image%20%2824%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-It is recommended to process a small batch first, especially if this is a new service, to validate results before full-scale processing.
-{% endhint %}
+!!! info
+    It is recommended to process a small batch first, especially if this is a new service, to validate results before full-scale processing.
 
 ***
 
@@ -85,4 +83,5 @@ It is recommended to process a small batch first, especially if this is a new se
   ![](../../assets/image%20%2825%29%20%281%29%20%281%29.png)
 * Open any processed document to view clustering results and perform verification.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

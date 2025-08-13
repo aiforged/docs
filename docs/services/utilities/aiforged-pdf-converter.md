@@ -4,9 +4,8 @@
 
 The AIForged PDF Converter is a utility service that converts incoming files into standardized PDF outputs for consistent downstream processing. Use it to normalize mixed inputs (images, multi‑page TIFFs, and—where enabled—common Office formats) into PDFs, optionally flattening them to image‑only pages for predictable OCR and extraction results.
 
-{% hint style="info" %}
-Use the PDF Converter as a pre-processor to ensure every document entering your pipeline is a clean, consistent PDF—ideal for OCR, classification, and verification services.
-{% endhint %}
+!!! info
+    Use the PDF Converter as a pre-processor to ensure every document entering your pipeline is a clean, consistent PDF—ideal for OCR, classification, and verification services.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -30,9 +28,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * PDF: for normalization/flattening to image‑only if needed
 * Office documents (DOCX, XLSX, PPTX) where enabled in your environment
 
-{% hint style="info" %}
-If your content is in a different format, you can route it through the PDF Converter first, then send the normalized PDF to downstream services. Availability of some conversions (e.g., Office formats) may depend on your environment.
-{% endhint %}
+!!! info
+    If your content is in a different format, you can route it through the PDF Converter first, then send the normalized PDF to downstream services. Availability of some conversions (e.g., Office formats) may depend on your environment.
 
 ***
 
@@ -68,9 +65,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -101,9 +97,8 @@ Most users can keep defaults. Common settings include:
 * Password\
   Provide a password (via Custom Code per document) to unlock protected PDFs before conversion.
 
-{% hint style="info" %}
-If OCR is required, pair the PDF Converter (pre‑processing) with Digitizer or an OCR service. Use Force PDF Image to standardize tricky PDFs for more reliable OCR.
-{% endhint %}
+!!! info
+    If OCR is required, pair the PDF Converter (pre‑processing) with Digitizer or an OCR service. Use Force PDF Image to standardize tricky PDFs for more reliable OCR.
 
 ***
 
@@ -126,13 +121,11 @@ If OCR is required, pair the PDF Converter (pre‑processing) with Digitizer or 
 * Office format conversion (if applicable)
   * Availability and fidelity may depend on your environment; complex formatting can vary when converted.
 
-{% hint style="info" %}
-Use the AIForged Custom Code utility as a pre‑processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Use the AIForged Custom Code utility as a pre‑processor to set the password per document, so that AIForged can unlock documents before processing.
 
-{% hint style="info" %}
-For very large PDFs or TIFFs, consider chunking by page range to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    For very large PDFs or TIFFs, consider chunking by page range to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -174,4 +167,5 @@ For very large PDFs or TIFFs, consider chunking by page range to keep processing
 * What should I do for extremely large PDFs or TIFFs?
   * Use the AIForged Document Splitter to chunk by page range for responsiveness and reliability.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

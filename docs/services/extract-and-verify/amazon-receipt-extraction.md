@@ -4,9 +4,8 @@
 
 The Amazon Receipt Extraction Service in AIForged uses **Amazon Textract**'s pre-trained receipt models to extract key-value pairs and line items from receipts. The service retrieves essential data commonly found on receipts—such as Subtotal, VAT, Total, Date, Receipt Number, Vendor Name, Shipping Address Recipient, and Purchase Orders. Individual line items are also extracted and presented in a structured format.
 
-{% hint style="info" %}
-This service is ideal for automating expense tracking, financial reconciliation, and visualizing receipt data for business intelligence.
-{% endhint %}
+!!! info
+    This service is ideal for automating expense tracking, financial reconciliation, and visualizing receipt data for business intelligence.
 
 ***
 
@@ -16,9 +15,8 @@ This service is ideal for automating expense tracking, financial reconciliation,
 * JPEG
 * PNG
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -79,9 +77,8 @@ To upload and process identity documents using the **Amazon Receipt Extraction S
 3. **Process Documents**\
    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2811%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify the results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify the results before scaling up.
 
 ***
 
@@ -108,4 +105,5 @@ To upload and process identity documents using the **Amazon Receipt Extraction S
 * **Performance Issues?**
   * Processing large batches may take longer. Start with smaller batches to ensure service responsiveness.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -2,13 +2,11 @@
 
 Document categories define the type of document that has been uploaded. Document categories are also used by classifiers to classify documents.
 
-{% hint style="info" %}
-Example: Bank-Statement, ID, or Invoice
-{% endhint %}
+!!! info
+    Example: Bank-Statement, ID, or Invoice
 
-{% hint style="info" %}
-Document Categories are shared across all services in the project
-{% endhint %}
+!!! info
+    Document Categories are shared across all services in the project
 
 ## How to create a document category
 
@@ -29,9 +27,8 @@ Document Categories are shared across all services in the project
 
     <div align="left"><figure><img src="../assets/image%20%288%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
-{% hint style="info" %}
-Note the category description is optional but may help other users.
-{% endhint %}
+!!! info
+    Note the category description is optional but may help other users.
 
 ## How to Delete a Document Category
 
@@ -49,4 +46,5 @@ Note the category description is optional but may help other users.
     <div align="left"><figure><img src="../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

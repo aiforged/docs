@@ -8,9 +8,8 @@ description: >-
 
 Documents are the heartbeat of your IDP workflows in AIForged. This section brings together everything you need to confidently ingest, classify, extract, verify, and manage documents at scale—directly within the Service view.
 
-{% hint style="info" %}
-New to AIForged? Start with Document Types to pick the right AI service and training approach for your use case, then follow the flow through attributes and categories.
-{% endhint %}
+!!! info
+    New to AIForged? Start with Document Types to pick the right AI service and training approach for your use case, then follow the flow through attributes and categories.
 
 ### In this section
 
@@ -36,3 +35,4 @@ New to AIForged? Start with Document Types to pick the right AI service and trai
 * Trace a document’s lifecycle end-to-end (statuses, verifications, results) within the Service view.
 * Apply best practices for naming, categorization, and retention to keep projects tidy and compliant.
  IgnoreCase Multiline IgnoreCase Multiline
+

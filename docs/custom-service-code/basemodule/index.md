@@ -4,9 +4,8 @@
 
 The **BaseModule** is the central API for all custom logic in AIForged. It serves as the entry point for your scripts—providing rich access to services, documents, fields (parameters), verifications, datasets, work items, and more. All custom code, whether for validation, enrichment, integration, or workflow automation, interacts with AIForged via the `module` object, which exposes the full range of BaseModule methods.
 
-{% hint style="info" %}
-Tip: Use BaseModule as your “toolbox”—it exposes everything you need to read, update, create, search, and orchestrate data, documents, and processes in AIForged custom code.
-{% endhint %}
+!!! info
+    Tip: Use BaseModule as your “toolbox”—it exposes everything you need to read, update, create, search, and orchestrate data, documents, and processes in AIForged custom code.
 
 ***
 
@@ -67,3 +66,4 @@ The available methods are organized into the following functional groups:
 
 If you need help with a specific method, or want a deep dive into a particular workflow, just check the subpages—or reach out to the AIForged team for tailored support!
  IgnoreCase Multiline IgnoreCase Multiline
+

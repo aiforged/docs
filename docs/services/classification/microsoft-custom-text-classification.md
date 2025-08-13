@@ -4,9 +4,8 @@
 
 The Microsoft Custom Text Classification Service in AIForged leverages Azure Cognitive Services for Language to enable powerful, custom document classification. This cloud-based API allows you to train machine learning models on your own labeled data, providing flexibility and high accuracy for text classification tasks.
 
-{% hint style="info" %}
-This service is ideal for organizations with unique document types, custom workflows, or specific classification needs that aren’t addressed by out-of-the-box models.
-{% endhint %}
+!!! info
+    This service is ideal for organizations with unique document types, custom workflows, or specific classification needs that aren’t addressed by out-of-the-box models.
 
 ***
 
@@ -36,9 +35,8 @@ This service is ideal for organizations with unique document types, custom workf
 * Images
 * Text files
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter as a pre-processor to generate a compatible file for classification.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter as a pre-processor to generate a compatible file for classification.
 
 ***
 
@@ -126,4 +124,5 @@ Follow these steps to add and configure the Microsoft Custom Text Classification
   * If text extraction is poor, try a different OCR engine or adjust OCR settings.
   * Use clear, high-quality source documents for best OCR accuracy.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

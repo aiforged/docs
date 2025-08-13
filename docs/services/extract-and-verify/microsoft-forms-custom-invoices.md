@@ -8,9 +8,8 @@ description: Custom invoice training
 
 The **Document Intelligence – Custom Invoices** service in AIForged extends Microsoft Document Intelligence, adding advanced features for invoice extraction—such as automatic Vendor and Business Unit detection via configurable datasets and enhanced Line Items table detection. These capabilities enable highly accurate invoice processing, tailored to complex business needs.
 
-{% hint style="info" %}
-Custom Invoices improves accuracy for multi-vendor and multi-business unit environments, and makes line item extraction more flexible and robust for diverse invoice formats.
-{% endhint %}
+!!! info
+    Custom Invoices improves accuracy for multi-vendor and multi-business unit environments, and makes line item extraction more flexible and robust for diverse invoice formats.
 
 ***
 
@@ -19,9 +18,8 @@ Custom Invoices improves accuracy for multi-vendor and multi-business unit envir
 * PDF
 * Images (JPEG, PNG, TIFF, etc.)
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -70,9 +68,9 @@ Follow these steps to add and configure the **Custom Invoices** service to your 
        Upload invoices for pre-training and analysis.\
        ![](../../assets/image%20%287%29%20%281%29.png)
 
-       > {% hint style="info" %}
-       > Assign the correct document category during upload for effective classification and model training.
-       > {% endhint %}
+       > !!! info
+    > Assign the correct document category during upload for effective classification and model training.
+           >
    * **Step 6: Labelling**\
      Label all required fields on sample invoices.\
      **Labelling the line items table is optional.**\
@@ -110,9 +108,9 @@ Labelling is a crucial step for training the Document Intelligence extraction en
 2.  **Select Document Category**\
     Use the filter to select the document category whose documents you want to label.
 
-    > {% hint style="info" %}
+    > !!! info
     > Only documents that have already been analyzed in Step 4 will be available for labelling.
-    > {% endhint %}
+        >
 3. **Select a Document**\
    Choose a document from the list to begin labelling.\
    ![](../../assets/image%20%28176%29.png)
@@ -135,9 +133,8 @@ Labelling is a crucial step for training the Document Intelligence extraction en
 
 <figure><img src="../../assets/image%20%28197%29.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
-{% endhint %}
+!!! info
+    Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
 
 ***
 
@@ -153,9 +150,8 @@ To upload and process invoices using **Custom Invoices**:
 3. **Process Documents**\
    After uploading, select the invoices to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify results before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify results before scaling up.
 
 ***
 
@@ -166,9 +162,8 @@ Before sending an invoice to Document Intelligence for extraction, the service c
 * Automated selection of the correct extraction model (rather than relying on Document Intelligence composed models)
 * Improved accuracy for invoices across multiple vendors or business units
 
-{% hint style="info" %}
-Ensure your Vendor and Business Unit datasets are kept up to date for best results.
-{% endhint %}
+!!! info
+    Ensure your Vendor and Business Unit datasets are kept up to date for best results.
 
 ***
 
@@ -181,9 +176,8 @@ Ensure your Vendor and Business Unit datasets are kept up to date for best resul
 * **Category-Level Overrides:**\
   If you label the line items table, you must override the detection in the document category training options by specifying the table name (e.g., "Items"). This is configurable per document category.
 
-{% hint style="info" %}
-Labelling the line items table is optional. If you do label it, always set the override in the category’s training options to ensure correct extraction.
-{% endhint %}
+!!! info
+    Labelling the line items table is optional. If you do label it, always set the override in the category’s training options to ensure correct extraction.
 
 ***
 
@@ -222,4 +216,5 @@ Labelling the line items table is optional. If you do label it, always set the o
 * Regularly review extracted results for continuous improvement.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

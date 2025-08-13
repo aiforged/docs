@@ -4,9 +4,8 @@
 
 The Tesseract OCR Service in AIForged uses the open‑source Tesseract engine to extract plain text from images and PDFs. It returns raw text (no layout preservation) and stores the output in the document’s Result property for downstream rules, regex, analytics, or integration. Optionally, you can save lines and words for verification.
 
-{% hint style="info" %}
-Use this service when you need fast, cost‑effective plain text extraction from scans or images. For structured fields and tables, consider a Document Intelligence service.
-{% endhint %}
+!!! info
+    Use this service when you need fast, cost‑effective plain text extraction from scans or images. For structured fields and tables, consider a Document Intelligence service.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -31,9 +29,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -94,9 +91,8 @@ Most users can proceed with default settings. Advanced configuration is availabl
 | Password                | Optional | No        | Authentication/password handling; can be set per document using Custom Code.                      |
 | RemoveComments          | Optional | No        | Remove human comments/annotations before processing.                                              |
 
-{% hint style="info" %}
-If AccessKey or BaseURL fields appear in your environment, leave them empty. Tesseract in AIForged does not require provider keys or endpoints.
-{% endhint %}
+!!! info
+    If AccessKey or BaseURL fields appear in your environment, leave them empty. Tesseract in AIForged does not require provider keys or endpoints.
 
 ***
 
@@ -114,9 +110,8 @@ To upload and process documents using the Tesseract OCR Service:
 4. Process Documents\
    After uploading, select the documents to process and click Process Checked.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify OCR results before scaling up.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify OCR results before scaling up.
 
 ***
 
@@ -164,13 +159,12 @@ Tip: For new services, process a small batch first to verify OCR results before 
 * Languages: Accuracy depends on the selected language packs; choose the correct language(s) for best results.
 * Password‑protected PDFs: Cannot be processed directly.
 
-{% hint style="info" %}
-Tip: Use the AIForged Custom Code utility as a pre‑processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Tip: Use the AIForged Custom Code utility as a pre‑processor to set the password per document, so that AIForged can unlock documents before processing.
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

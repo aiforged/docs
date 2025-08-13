@@ -2,9 +2,8 @@
 
 Custom Code in AIForged allows you to script custom logic, validations, data enrichment, and advanced automation directly into your workflow—unlocking endless flexibility for your agents. Write code in your favorite language (C#, Visual Basic, F#, IronPython, or even natural language with SemanticKernel) to add business rules, call APIs, transform fields, or orchestrate document routing, all from within the platform.
 
-{% hint style="info" %}
-Tip: Use Custom Code utilities to validate or enrich extracted fields, deduplicate documents, call external APIs, or implement bespoke business rules—without waiting for core platform changes!
-{% endhint %}
+!!! info
+    Tip: Use Custom Code utilities to validate or enrich extracted fields, deduplicate documents, call external APIs, or implement bespoke business rules—without waiting for core platform changes!
 
 ***
 
@@ -28,9 +27,8 @@ Custom Code utilities are not standalone services.\
      * Drop to the right for Post-processor.&#x20;
   4. Save.
 
-{% hint style="info" %}
-Custom Code runs as part of the parent service’s lifecycle—never configure it as a standalone service!
-{% endhint %}
+!!! info
+    Custom Code runs as part of the parent service’s lifecycle—never configure it as a standalone service!
 
 ***
 
@@ -49,9 +47,8 @@ Get up and running in five steps:
 5. **Test and monitor**\
    Run a test batch, review logs for debugging, and iterate on your logic.
 
-{% hint style="info" %}
-Tip: Use logger.LogInformation for debugging, and always wrap error-prone code in try/catch blocks.
-{% endhint %}
+!!! info
+    Tip: Use logger.LogInformation for debugging, and always wrap error-prone code in try/catch blocks.
 
 ***
 
@@ -72,9 +69,8 @@ Tip: Use logger.LogInformation for debugging, and always wrap error-prone code i
 * **Custom Notifications:**\
   Use Webhook utilities or Custom Code to send notifications or external events on status changes.
 
-{% hint style="info" %}
-For each pattern, leverage the BaseModule APIs and reference parameters and definitions by their IDs for robustness. Modularize logic for reusability.
-{% endhint %}
+!!! info
+    For each pattern, leverage the BaseModule APIs and reference parameters and definitions by their IDs for robustness. Modularize logic for reusability.
 
 ***
 
@@ -86,9 +82,8 @@ For each pattern, leverage the BaseModule APIs and reference parameters and defi
 * **IronPython**
 * **SemanticKernel** (write business rules in plain language, interpreted by AI)
 
-{% hint style="info" %}
-Select your preferred language from the dropdown in the code editor. Use SemanticKernel for natural language logic and rapid prototyping.
-{% endhint %}
+!!! info
+    Select your preferred language from the dropdown in the code editor. Use SemanticKernel for natural language logic and rapid prototyping.
 
 ***
 
@@ -452,3 +447,4 @@ await module.SaveChanges();
 * Use `await module.SaveDataSetRecord(dataset, record);` for each new or updated record.
 * For performance, group related changes and call `await module.SaveChanges();` after a batch if your logic allows.
  IgnoreCase Multiline IgnoreCase Multiline
+

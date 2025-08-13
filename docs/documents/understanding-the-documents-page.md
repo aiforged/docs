@@ -6,9 +6,8 @@ The documents page displays all the documents in the specified location. Example
 
 <figure><img src="../assets/image%20%2870%29.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Available document actions and commands change depending on the selected document **Usage**
-{% endhint %}
+!!! info
+    Available document actions and commands change depending on the selected document **Usage**
 
 ## Quick Filter
 
@@ -36,9 +35,8 @@ The Quick Filter allows you to quickly define which documents you want to view.\
 
 <div align="left"><figure><img src="../assets/image%20%2819%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
-{% hint style="danger" %}
-The search functionality only searches for documents on the current page
-{% endhint %}
+!!! danger
+    The search functionality only searches for documents on the current page
 
 * **Normal Search:** searches through all the document attributes to find the document
 * **Deep search:** searches through all the document parameters, and also within the content content to find potential hits
@@ -70,9 +68,8 @@ The search functionality only searches for documents on the current page
 
 * You can **sort** the documents page by clicking on any of the table headers.
 
-{% hint style="info" %}
-To sort multiple column sorting use **CTRL + Left Mouse Click** on the columns.
-{% endhint %}
+!!! info
+    To sort multiple column sorting use **CTRL + Left Mouse Click** on the columns.
 
 <figure><img src="../assets/image%20%2858%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
@@ -115,5 +112,6 @@ The _**Process Selected**&#x20;_&#x20;![](../assets/image%20%2859%29%20%281%29.p
 2. Click the **Download** button in the command bar
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

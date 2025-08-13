@@ -24,9 +24,8 @@ The **General** tab allows you to edit your user details, and allows quick acces
    \
    ![](assets/image%20%2834%29%20%281%29%20%281%29.png)
 
-{% hint style="info" %}
-Your Username and User cannot be changed
-{% endhint %}
+!!! info
+    Your Username and User cannot be changed
 
 ## Profile Picture
 
@@ -106,4 +105,5 @@ Studio preferences allow you to customise various aspects of the UI, such as def
 <figure><img src="assets/image%20%2843%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

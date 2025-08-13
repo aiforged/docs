@@ -34,14 +34,13 @@ To disable or delete an agent, click on the ![](../assets/image%20%2852%29%20%28
 
 <div align="left"><figure><img src="../assets/image%20%2851%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
-{% hint style="info" %}
-**Deleting an agent:** Permanently deletes it from the system
-{% endhint %}
+!!! info
+    **Deleting an agent:** Permanently deletes it from the system
 
-{% hint style="info" %}
-**Disabling an agent:** Temporarily disables all processing in all the AI services within the agent until re-activated
-{% endhint %}
+!!! info
+    **Disabling an agent:** Temporarily disables all processing in all the AI services within the agent until re-activated
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

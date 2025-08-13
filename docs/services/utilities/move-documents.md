@@ -4,9 +4,8 @@
 
 The **AIForged Move Documents utility** is designed to move documents from one service to another within your agent’s workflow—ensuring that only one copy of a document exists in the system at any given time. This is ideal for processes where you want to prevent duplication and maintain a clean, single-instance flow between services.
 
-{% hint style="info" %}
-Unlike the Copy Documents utility, Move Documents removes the document from the source service after moving it to the destination, streamlining your workflow and reducing clutter.
-{% endhint %}
+!!! info
+    Unlike the Copy Documents utility, Move Documents removes the document from the source service after moving it to the destination, streamlining your workflow and reducing clutter.
 
 ***
 
@@ -18,9 +17,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -30,9 +28,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * Images (JPEG, PNG, TIFF)
 * Office documents (if supported by downstream services)
 
-{% hint style="info" %}
-If you need to normalize file formats before moving, use the AIForged PDF Converter as a pre-processor utility.
-{% endhint %}
+!!! info
+    If you need to normalize file formats before moving, use the AIForged PDF Converter as a pre-processor utility.
 
 ***
 
@@ -67,9 +64,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -110,9 +106,8 @@ The Move Documents utility is highly configurable to fit your workflow needs. Be
 * **Category Reset:** Clear the target category after moving.
 * **Check Before Move:** Prevents moving a file more than once.
 
-{% hint style="info" %}
-Tip: Use Source Extension, Source Pattern, and Source Category filters to precisely control which documents are moved. Enable Check Before Move to avoid accidental duplicate moves.
-{% endhint %}
+!!! info
+    Tip: Use Source Extension, Source Pattern, and Source Category filters to precisely control which documents are moved. Enable Check Before Move to avoid accidental duplicate moves.
 
 ***
 
@@ -172,9 +167,8 @@ Tip: Use Source Extension, Source Pattern, and Source Category filters to precis
 3. Save and run a small test batch.
 4. Review the target service to confirm documents were moved and are no longer present in the source.
 
-{% hint style="info" %}
-Start simple, then refine your filters and mapping as your workflow evolves.
-{% endhint %}
+!!! info
+    Start simple, then refine your filters and mapping as your workflow evolves.
 
 ***
 
@@ -189,4 +183,5 @@ Start simple, then refine your filters and mapping as your workflow evolves.
 * **How do I verify moves?**
   * Check the destination service’s Inbox/Outbox; the document will not be in the source.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

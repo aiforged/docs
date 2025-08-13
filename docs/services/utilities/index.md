@@ -8,9 +8,8 @@ description: Pre- and post-processing utilities to power up your AIForged agent 
 
 AIForged Utility Services are in-house developed tools that augment your agent workflows by providing powerful pre-processing and post-processing automation. These utilities are not intended as standalone services—instead, you attach them to core services to clean up, normalize, enrich, route, or validate documents and data at any point in your pipeline.
 
-{% hint style="info" %}
-Attach utility services to parent services as pre- or post-processors to build robust, modular, and highly customizable document workflows.
-{% endhint %}
+!!! info
+    Attach utility services to parent services as pre- or post-processors to build robust, modular, and highly customizable document workflows.
 
 The following are the latest and most capable Utility Services available in AIForged:
 
@@ -26,9 +25,8 @@ The following are the latest and most capable Utility Services available in AIFo
 | Webhooks                | Call external APIs/webhooks on document or agent events             | webhooks.md                |
 | Workflow Code           | Advanced HITL and routing automation for verification workflows     | workflow-code.md           |
 
-{% hint style="info" %}
-Utility services are designed to be attached as pre- or post-processors; do not configure them as standalone services. Use the Service Flow Configurator or parent service’s view to attach and schedule them.
-{% endhint %}
+!!! info
+    Utility services are designed to be attached as pre- or post-processors; do not configure them as standalone services. Use the Service Flow Configurator or parent service’s view to attach and schedule them.
 
 ***
 
@@ -40,7 +38,7 @@ Utility services are designed to be attached as pre- or post-processors; do not 
 * Automate complex HITL assignments and escalation with Workflow Code utilities.
 * Build modular, maintainable pipelines that are easy to audit and extend.
 
-{% hint style="info" %}
-Need help designing your workflow? The AIForged team can help you select and configure the right utilities for your scenario.
-{% endhint %}
+!!! info
+    Need help designing your workflow? The AIForged team can help you select and configure the right utilities for your scenario.
  IgnoreCase Multiline IgnoreCase Multiline
+

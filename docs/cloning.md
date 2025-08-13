@@ -30,9 +30,8 @@ Cloning also allows agents and services to be duplicated across tenants or proje
 
 Cloning operations are executed as scheduled jobs. Once cloning is configured, the scheduler handles execution. Schedules can be set for daily or weekly runs.
 
-{% hint style="info" %}
-For ad-hoc cloning, schedule it as daily and then disable the schedule after the operation starts.
-{% endhint %}
+!!! info
+    For ad-hoc cloning, schedule it as daily and then disable the schedule after the operation starts.
 
 ### Creating and Managing Cloning Schedules
 
@@ -220,24 +219,20 @@ Control additional cloning functions related to cloud or external service provid
 
 ***
 
-{% hint style="info" %}
-Always test cloning in a non-production environment before running in production.&#x20;
-{% endhint %}
+!!! info
+    Always test cloning in a non-production environment before running in production.&#x20;
 
-{% hint style="info" %}
-When cloning user access, review permissions to avoid accidental over-sharing.&#x20;
-{% endhint %}
+!!! info
+    When cloning user access, review permissions to avoid accidental over-sharing.&#x20;
 
-{% hint style="info" %}
-Use document ID filters for large agents to improve performance and avoid unnecessary cloning.&#x20;
-{% endhint %}
+!!! info
+    Use document ID filters for large agents to improve performance and avoid unnecessary cloning.&#x20;
 
-{% hint style="info" %}
-Regularly review scheduled cloning jobs and disable them when not needed to save resources.&#x20;
-{% endhint %}
+!!! info
+    Regularly review scheduled cloning jobs and disable them when not needed to save resources.&#x20;
 
-{% hint style="info" %}
-If unsure about any setting, consult AIForged support or documentation before proceeding.
-{% endhint %}
+!!! info
+    If unsure about any setting, consult AIForged support or documentation before proceeding.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

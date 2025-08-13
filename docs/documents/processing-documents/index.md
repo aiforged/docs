@@ -10,9 +10,8 @@ Processing can be done in various ways:
 * Auto Batch Processing
 * API/ SDK/ BOT
 
-{% hint style="info" %}
-Processing a document produces a result file, processing it multiple times with the default processing parameters produces multiple output files
-{% endhint %}
+!!! info
+    Processing a document produces a result file, processing it multiple times with the default processing parameters produces multiple output files
 
 ## Processing documents in the AIForged Studio
 
@@ -50,12 +49,12 @@ This is set up in the service settings. This will automatically process document
 
     <div align="left"><figure><img src="../../assets/image%20%2877%29.png" alt=""><figcaption></figcaption></figure></div>
 
-{% hint style="info" %}
-Documents older than 7 days will not be auto-processed
-{% endhint %}
+!!! info
+    Documents older than 7 days will not be auto-processed
 
 ## API Processing
 
 Refer to API/ SDK/ Bot documentation
 
  IgnoreCase Multiline IgnoreCase Multiline
+

@@ -4,9 +4,8 @@
 
 The Google OCR Service in AIForged uses Google Cloud’s OCR capabilities to extract plain text from documents. It returns raw text without preserving layout or structure and stores the output in the document’s Result property for downstream processing, analysis, or integration.
 
-{% hint style="info" %}
-Use this service when you need reliable plain text extraction for workflows such as data mining, regex pattern detection, search indexing, or downstream AI processing.
-{% endhint %}
+!!! info
+    Use this service when you need reliable plain text extraction for workflows such as data mining, regex pattern detection, search indexing, or downstream AI processing.
 
 ***
 
@@ -17,9 +16,8 @@ Use this service when you need reliable plain text extraction for workflows such
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -79,9 +77,8 @@ Most users can proceed with the default settings. Advanced configuration is avai
 | Password                | Optional | No        | Authentication password; can be set per document via custom code.                                   |
 | RemoveComments          | Optional | No        | Remove human comments/annotations before processing.                                                |
 
-{% hint style="info" %}
-If unsure, keep defaults unless you have a specific processing or integration requirement.
-{% endhint %}
+!!! info
+    If unsure, keep defaults unless you have a specific processing or integration requirement.
 
 ***
 
@@ -99,9 +96,8 @@ To upload and process documents using the Google OCR Service:
    After uploading, select the documents to process and click **Process Checked**.\
    ![](../../assets/image%20%2851%29.png)
 
-{% hint style="info" %}
-**Tip:** For new services, process a small batch first to verify OCR accuracy before scaling up.
-{% endhint %}
+!!! info
+    **Tip:** For new services, process a small batch first to verify OCR accuracy before scaling up.
 
 ***
 
@@ -168,9 +164,8 @@ The following provider constraints apply to Amazon Textract-backed OCR:
 * Query features (if used)
   * Per-page limits apply (e.g., max queries per page in sync/async modes).
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ### Known Limitations
 
@@ -198,9 +193,8 @@ The following provider constraints apply to Amazon Textract-backed OCR:
 * Query features (if used)
   * Per-page limits apply (e.g., max queries per page in sync/async modes).
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -212,8 +206,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

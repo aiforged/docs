@@ -8,9 +8,8 @@ description: AI-powered extraction and verification of data from documents and f
 
 Extract & Verify services in AIForged leverage advanced AI and machine learning models to automatically extract key fields, tables, and structured data from a wide range of document types—including invoices, receipts, identity documents, and forms. These services are designed not only to extract information, but also to verify, validate, and standardize data as part of your document processing pipeline.
 
-{% hint style="info" %}
-Extract & Verify engines support both automated and human-in-the-loop verification to ensure the highest levels of data quality and compliance.
-{% endhint %}
+!!! info
+    Extract & Verify engines support both automated and human-in-the-loop verification to ensure the highest levels of data quality and compliance.
 
 The following are the **most capable and up-to-date Extract & Verify service types** available in AIForged.
 
@@ -26,9 +25,8 @@ The following are the **most capable and up-to-date Extract & Verify service typ
 | Document Intelligence – Prebuilt Models | Instant extraction using Microsoft’s pretrained models (invoices, IDs, etc.) | microsoft-forms-invoices.md        |
 | LLM Extractor                           | GenAI-based extraction using configurable prompts and response formats       | llm-extractor.md                   |
 
-{% hint style="info" %}
-_Other legacy and specialized services are also available; please consult the AIForged team if you need assistance with earlier service types or specialized use cases._
-{% endhint %}
+!!! info
+    _Other legacy and specialized services are also available; please consult the AIForged team if you need assistance with earlier service types or specialized use cases._
 
 ***
 
@@ -39,7 +37,7 @@ _Other legacy and specialized services are also available; please consult the AI
 * Automated validation and compliance checks for regulated industries
 * Streamlining onboarding, KYC, and expense reporting processes
 
-{% hint style="info" %}
-Need to extract and verify data from a new or custom document type? Reach out to the AIForged team to discuss your requirements!
-{% endhint %}
+!!! info
+    Need to extract and verify data from a new or custom document type? Reach out to the AIForged team to discuss your requirements!
  IgnoreCase Multiline IgnoreCase Multiline
+

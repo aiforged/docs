@@ -6,9 +6,8 @@
 
 The AIForged Digitizer is a utility service that converts scanned or image-based documents into searchable PDFs by adding a text layer to each page. It can also draw a visual overlay to indicate where text was detected for easier validation. The Digitizer uses a dependent OCR engine (default: Tesseract) and can be switched to another OCR (e.g., Microsoft OCR or Google OCR) in the Service Configuration Wizard if you need different language support or accuracy characteristics.
 
-{% hint style="info" %}
-Use the Digitizer as a pre-processor to make documents searchable and consistent before downstream extraction, classification, or rules. It can also run automatically on triggers as new files arrive.
-{% endhint %}
+!!! info
+    Use the Digitizer as a pre-processor to make documents searchable and consistent before downstream extraction, classification, or rules. It can also run automatically on triggers as new files arrive.
 
 ***
 
@@ -20,9 +19,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -33,9 +31,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -70,9 +67,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 1. Configure the Service Wizard\
    The wizard includes the following sections:
@@ -91,9 +87,8 @@ Utilities run as part of the parent’s lifecycle. Use Execute Before Process or
 
 _The default settings are sufficient for most use cases. Only adjust advanced options if you have specific workflow or integration requirements._
 
-{% hint style="info" %}
-Step 2 in the wizard shows the dependent OCR service (default: Tesseract). You can change this to Microsoft OCR or Google OCR if required.
-{% endhint %}
+!!! info
+    Step 2 in the wizard shows the dependent OCR service (default: Tesseract). You can change this to Microsoft OCR or Google OCR if required.
 
 ***
 
@@ -122,9 +117,8 @@ Most users can proceed with defaults. The following settings map to the wizard t
 * Dependent OCR (Step 2: Service)
   * Choose the OCR engine used by the Digitizer (default: Tesseract). Switch to Microsoft or Google OCR if you need different language coverage or accuracy.
 
-{% hint style="info" %}
-If the default Tesseract engine does not produce the expected results, switch the dependent OCR to Microsoft OCR or Google OCR in Step 2 and set a suitable Language hint.
-{% endhint %}
+!!! info
+    If the default Tesseract engine does not produce the expected results, switch the dependent OCR to Microsoft OCR or Google OCR in Step 2 and set a suitable Language hint.
 
 ***
 
@@ -142,9 +136,8 @@ To digitize documents using the AIForged Digitizer:
 4. Process Documents\
    After uploading, select the documents to process and click Process Checked.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify the digitized output and ensure downstream services receive what they need.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify the digitized output and ensure downstream services receive what they need.
 
 ***
 
@@ -184,4 +177,5 @@ Tip: For new services, process a small batch first to verify the digitized outpu
 * For very large or multi-volume archives, use Execute On Trigger and schedule Auto Execution to spread the load.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

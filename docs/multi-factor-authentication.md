@@ -33,9 +33,8 @@ Multi-factor authentication (MFA) enhances account security by requiring users t
 
 * From the MFA block, you can enable or disable MFA as needed for your account.
 
-{% hint style="info" %}
-When you reset your password, MFA is automatically disabled
-{% endhint %}
+!!! info
+    When you reset your password, MFA is automatically disabled
 
 ## Sign-in providers
 
@@ -49,8 +48,8 @@ When you reset your password, MFA is automatically disabled
 * Twitter
 * API Key
 
-{% hint style="info" %}
-You can configure your AIForged account to utilize these external services for authentication. Any linked providers can be unlinked from your AIForged account at any time.
-{% endhint %}
+!!! info
+    You can configure your AIForged account to utilize these external services for authentication. Any linked providers can be unlinked from your AIForged account at any time.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

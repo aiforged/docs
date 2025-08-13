@@ -6,9 +6,8 @@
 
 The Microsoft OCR Service in AIForged uses Microsoft’s OCR (Azure AI Vision Read) to extract plain text from documents. It returns raw text without preserving layout or structure and stores the output in the document’s Result property for downstream processing, regex, analytics, or integration. Optionally, you can save lines and words for verification.
 
-{% hint style="info" %}
-Use this service when you need reliable plain text extraction from images or PDFs for downstream rules, search indexing, or analytics. For structured field and table extraction, consider Microsoft Document Intelligence.
-{% endhint %}
+!!! info
+    Use this service when you need reliable plain text extraction from images or PDFs for downstream rules, search indexing, or analytics. For structured field and table extraction, consider Microsoft Document Intelligence.
 
 ***
 
@@ -20,9 +19,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -33,9 +31,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * PNG
 * TIFF
 
-{% hint style="info" %}
-If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
-{% endhint %}
+!!! info
+    If your content is in a different format, use the AIForged PDF Converter to generate a compatible file.
 
 ***
 
@@ -98,9 +95,8 @@ Most users can proceed with default settings. Advanced configuration is availabl
 | Password                | Optional | No        | Authentication/password handling; can be set per document using Custom Code.  |
 | RemoveComments          | Optional | No        | Remove human comments/annotations before processing.                          |
 
-{% hint style="info" %}
-If unsure, keep defaults unless you have a specific processing or integration requirement.
-{% endhint %}
+!!! info
+    If unsure, keep defaults unless you have a specific processing or integration requirement.
 
 ***
 
@@ -119,13 +115,11 @@ If unsure, keep defaults unless you have a specific processing or integration re
 * Layout
   * This service returns raw text in the Result property (no preserved layout). Enable IsVerification to store lines and words when you need visual verification.
 
-{% hint style="info" %}
-Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-{% endhint %}
+!!! info
+    Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
 
-{% hint style="info" %}
-Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting provider limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-{% endhint %}
+!!! info
+    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting provider limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
 ***
 
@@ -143,9 +137,8 @@ To upload and process documents using the Microsoft OCR Service:
 4. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**.
 
-{% hint style="info" %}
-Tip: For new services, process a small batch first to verify OCR accuracy before scaling up.
-{% endhint %}
+!!! info
+    Tip: For new services, process a small batch first to verify OCR accuracy before scaling up.
 
 ***
 
@@ -199,9 +192,8 @@ Get results in minutes:
 4. Review\
    Switch the usage filter to **Outbox** and open a processed document to view text in the Result property.
 
-{% hint style="info" %}
-Tip: Begin with a small, representative batch to validate output and tune settings.
-{% endhint %}
+!!! info
+    Tip: Begin with a small, representative batch to validate output and tune settings.
 
 ***
 
@@ -219,4 +211,5 @@ Tip: Begin with a small, representative batch to validate output and tune settin
   * Split large PDFs/TIFFs by page range with the AIForged Document Splitter to keep processing responsive and avoid provider limits.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

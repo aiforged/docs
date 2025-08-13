@@ -6,9 +6,8 @@
 
 The Webhook Utility in AIForged allows you to call an external API automatically when key events occur in your workflow—such as when a document’s property changes (e.g., status, category). You can configure the request body in C#, shape the payload as needed, and trigger calls for fine-grained integration with your external systems, SaaS tools, or custom endpoints.
 
-{% hint style="info" %}
-Tip: Use webhooks for real-time integration—notify external systems when documents are created, updated, or processed, or trigger downstream automation when business milestones occur.
-{% endhint %}
+!!! info
+    Tip: Use webhooks for real-time integration—notify external systems when documents are created, updated, or processed, or trigger downstream automation when business milestones occur.
 
 ***
 
@@ -20,9 +19,8 @@ Members must belong to one of the following AIForged user group roles to add and
 * Administrator
 * Developer
 
-{% hint style="info" %}
-Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
-{% endhint %}
+!!! info
+    Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 
 ***
 
@@ -31,9 +29,8 @@ Tip: Role membership is managed in Organisations > Roles. Assign members to role
 * JSON (default, customizable via C# code)
 * Any HTTP payload type (you can set Content-Type and build the body as required)
 
-{% hint style="info" %}
-Webhook payloads are typically JSON, but you can fully control the outgoing request body and headers in your configuration.
-{% endhint %}
+!!! info
+    Webhook payloads are typically JSON, but you can fully control the outgoing request body and headers in your configuration.
 
 ***
 
@@ -68,9 +65,8 @@ Utility services are not configured as standalone services. Attach them to a par
    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
-{% hint style="info" %}
-Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
-{% endhint %}
+!!! info
+    Utilities run as part of the parent’s lifecycle. Use Execute Before Process or Execute After Process to control the timing. Avoid configuring utility services as standalone services.
 
 ***
 
@@ -111,9 +107,8 @@ Below are the main configuration settings, mapped to the wizard tabs and shown i
 * **Domain:** Domain for webhook credentials, if required.
 * **Retry Count / Delay:** Configure retry attempts and delay between retries if webhook fails.
 
-{% hint style="info" %}
-Tip: If you’re unsure about a field, start with defaults and refine after testing your integration.
-{% endhint %}
+!!! info
+    Tip: If you’re unsure about a field, start with defaults and refine after testing your integration.
 
 ***
 
@@ -177,9 +172,8 @@ To wire up a webhook for real-time integration:
 3. Set any filters needed (Category, Usage, Status, etc.).
 4. Save and test with a typical document event (e.g., status change).
 
-{% hint style="info" %}
-Tip: Always test with a controlled event and a development endpoint before enabling in production.
-{% endhint %}
+!!! info
+    Tip: Always test with a controlled event and a development endpoint before enabling in production.
 
 ***
 
@@ -197,9 +191,8 @@ Tip: Always test with a controlled event and a development endpoint before enabl
 * Authentication and HTTPS requirements must be met by the external endpoint.
 * If you use filtering (by category, usage, extension, etc.), ensure your rules match the intended events.
 
-{% hint style="info" %}
-Tip: Use the Retry Count and Retry Delay settings to gracefully handle temporary endpoint outages.&#x20;
-{% endhint %}
+!!! info
+    Tip: Use the Retry Count and Retry Delay settings to gracefully handle temporary endpoint outages.&#x20;
 
 ***
 
@@ -237,9 +230,8 @@ Get a webhook integrated in minutes:
 3. Enable or schedule the utility.
 4. Trigger a test event and verify delivery.
 
-{% hint style="info" %}
-Tip: Use a service like webhook.site or a local mock server for initial testing.
-{% endhint %}
+!!! info
+    Tip: Use a service like webhook.site or a local mock server for initial testing.
 
 ***
 
@@ -283,4 +275,5 @@ Tip: Use a service like webhook.site or a local mock server for initial testing.
 
 * Always use HTTPS endpoints and include authentication headers. You can further secure by whitelisting AIForged IPs or using custom secret headers.
  IgnoreCase Multiline IgnoreCase Multiline
+
 

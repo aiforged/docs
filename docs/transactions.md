@@ -10,9 +10,8 @@ has_children: true
 
 The **Wallets and Billing** page lists all transactions made by each service and can be viewed by selecting the **Wallets and Billing** navigation item from the main navigation menu.
 
-{% hint style="info" %}
-Wallets and billing are updated in real-time
-{% endhint %}
+!!! info
+    Wallets and billing are updated in real-time
 
 ## Filters
 
@@ -30,9 +29,8 @@ Wallets and billing are updated in real-time
 
 Each service will accumulate transactions as it processes documents
 
-{% hint style="info" %}
-Each service will be monitored and charged accordingly
-{% endhint %}
+!!! info
+    Each service will be monitored and charged accordingly
 
 * **Opening Balance**: Indicates the balance the project opened within the "From date" filter.
 * **Closing Balance**: Indicates the final balance of a project from the "To date" filter.
@@ -43,8 +41,8 @@ Each service will be monitored and charged accordingly
 
 <figure><img src="assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-To drill down, select the service to see an Itemised Bill
-{% endhint %}
+!!! info
+    To drill down, select the service to see an Itemised Bill
 
  IgnoreCase Multiline IgnoreCase Multiline
+
