@@ -2,6 +2,18 @@ site_name: AIForged Documentation
 
 theme:
   name: material
+  features:
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: indigo
+    - scheme: default
+      primary: teal
+      accent: indigo
 
 plugins:
   - search
