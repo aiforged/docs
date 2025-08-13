@@ -34,6 +34,7 @@ markdown_extensions:
   - pymdownx.highlight
 
 nav:
+  - 🏡 Home: index.md
   - 📣 Release Notes: release-notes.md
   - 📬 How to access AIForged: how-to-install-aiforged.md
   - ✏️ Register: register.md
