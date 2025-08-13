@@ -48,7 +48,8 @@ Follow these steps to add and configure the **Prebuilt Models** service to your 
    ![](<../../.gitbook/assets/image (17) (1).png>)
    * **Step 1: Service**\
      Select your desired **Prebuilt Model** from the dropdown (e.g., Invoices, Receipts, IdDocuments, USPersonalTax, BankStatements, Checks, CreditCards, BusinessCards, Contracts, Layout, and more).\
-     ![](<../../.gitbook/assets/image (18) (1).png>) \{% hint style="info" %\} Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format. \{% endhint %\}
+     ![](<../../.gitbook/assets/image (18) (1).png>)
+     {% hint style="info" %} Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format. {% endhint %}
    * **Step 2: Categories**\
      Optionally, create document categories for organizational or workflow purposes.\
      ![](<../../.gitbook/assets/image (19) (1).png>)
