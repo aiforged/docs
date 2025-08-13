@@ -145,7 +145,7 @@ nav:
         - WorkItemMethod: custom-service-code/basemodule/enums/workitemmethod.md
         - WorkItemStatus: custom-service-code/basemodule/enums/workitemstatus.md
         - WorkItemType: custom-service-code/basemodule/enums/workitemtype.md
-    - Custom Code Example: Duplicate Document Check: custom-service-code/custom-code-utility-duplicate-document-check.md
+    - Custom Code Example - Duplicate Document Check: custom-service-code/custom-code-utility-duplicate-document-check.md
   - 📑 Field Rules (Rules Engine):
     - Overview: rules-engine/index.md
     - String:
@@ -164,7 +164,7 @@ nav:
       - Overview: rules-engine/generic/index.md
       - Custom Script:
         - Overview: rules-engine/generic/custom-script/index.md
-        - Example: Validate Social Security Number: rules-engine/generic/custom-script/example-validate-social-security-number.md
+        - Example - Validate Social Security Number: rules-engine/generic/custom-script/example-validate-social-security-number.md
       - Database: rules-engine/generic/database.md
       - Dictionary: rules-engine/generic/dictionary.md
       - Mapping: rules-engine/generic/mapping.md
@@ -320,7 +320,7 @@ nav:
       - Service users: depricated-info/subpages/service-users.md
     - Custom Workflow Code:
       - Overview: depricated-info/custom-workflow-code/index.md
-      - Example: Create Human in the loop: depricated-info/custom-workflow-code/example-create-human-in-the-loop.md
+      - Example - Create Human in the loop: depricated-info/custom-workflow-code/example-create-human-in-the-loop.md
     - Contacts: depricated-info/contacts.md
     - Work Queue: depricated-info/workqueue.md
     - power-automate:
@@ -331,7 +331,7 @@ nav:
       - Overview: depricated-info/practical-examples/index.md
       - Bank Statement: depricated-info/practical-examples/bank-statement.md
       - Credit Application Form: depricated-info/practical-examples/credit-application-form.md
-      - Credit Application Process: Accept or Reject the Application: depricated-info/practical-examples/credit-application-process-accept-or-reject-the-application.md
+      - Credit Application Process - Accept or Reject the Application: depricated-info/practical-examples/credit-application-process-accept-or-reject-the-application.md
       - Practical Examples: depricated-info/practical-examples/practicle-examples.md
       - Social Security Number Card: depricated-info/practical-examples/social-security-number-card.md
       - Utility Invoice: depricated-info/practical-examples/utility-invoice.md
