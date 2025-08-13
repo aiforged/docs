@@ -1,70 +1,166 @@
 # Microsoft Object Detection
 
-<figure><img src="../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-**Microsoft Object Detection** detects objects, faces, and landmarks using **Azure Computer Vision**. The service detects objects within images and returns the **Metadata** of objects contained in the image in the form of a list of **Tags**. For example, if a person is present in the image, tags may include facial features, such as nose, ear, lip, etc. The **Best Caption** that best describes the image and gives the context of the image is also returned.
+**Microsoft Object Detection** in AIForged leverages Azure Computer Vision to detect objects, faces, and landmarks within images. The service returns a rich set of metadata—including a list of detected object tags, facial features (with age and gender estimation), best-fit captions for the image context, and content moderation results (such as racy/offensive material detection).
 
-Consider the example below of a blonde woman; the image has been categorized as a **"people\_portrait"**, and the caption was returned as "**a woman with blonde hair**".
+You can configure this service as a standalone processor or as a verification service. As a verification service, it can be triggered by the AIForged rules engine to enrich or validate extracted values from another provider (e.g., calling object detection on an extracted image from Microsoft Document Intelligence).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Tip: Use as a verification service to automatically enrich or check image fields from extraction workflows, or as a standalone service for bulk image/object analysis.
+{% endhint %}
 
-Furthermore, **Face Detection** has supplied the gender and the estimated age of the woman.
+***
 
-<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+### Supported Content Types
 
-It is also specified that the image does not contain any racy or offensive material.
+* Images (JPEG, PNG, BMP, GIF)
+* PDF (images will be extracted from pages for processing)
 
-<figure><img src="../../.gitbook/assets/image (28) (2).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+If your content is in a different format, use the AIForged PDF Converter to generate a compatible file before object detection.
+{% endhint %}
 
-## Supported Content Types
+***
 
-* Images
-* Pdf
+### Possible Use Cases
 
-If you need to use a different type of content, you can use the **AIForged Pdf Converter**.
+* Detect and count faces, estimate age and gender.
+* Analyze images for emotions, scene or object tags, and best-fit captions.
+* Determine if an image contains racy or offensive content.
+* Count or classify similar objects (e.g., counting cars in a parking lot).
+* Enrich extracted image fields from Document Intelligence with object or face metadata.
 
-## Possible use cases
+***
 
-* Detect faces and estimate the age of a person.
-* Detect emotions and ages on faces.
-* Identify the setting/nature of a picture.
-* Determine whether an image can contain offensive material.
-* Get a count of similar objects (e.g. counting cars).
+### Service Setup
 
-## Service Setup
+Follow these steps to add and configure the Microsoft Object Detection service to your agent:
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select the **Microsoft Object Detection Service**.
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Microsoft Object Detection Service**\
+   Click the **Add Service** ![](../../.gitbook/assets/image.png) button.
+3. **Select Service Type**\
+   Choose **Microsoft Object Detection Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (1).png>)
+4. **Configure the Service Wizard**
+   1. Open the Service Configuration Wizard.
+      1.
 
-    <figure><img src="../../.gitbook/assets/image (21) (4).png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
-    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+          <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+      2.
 
-    <figure><img src="../../.gitbook/assets/image (11) (4).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+   2. **Step 1: General Settings** Configure the service settings.\
+      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
+      ![](<../../.gitbook/assets/image (4).png>)
+   3. **Step 2: Verification** No verification required for basic detection.
 
-* **Step 1 -** Service Config (Displays the service setting, you can change it as required).
-* Click the “Next” Action in the Action Bar to save the Service.
-* **Step 2 -** Verification. No verification required.
+***
 
-## Service Configuration Settings
+### Example Results
 
-The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+*   **People Portrait Example:**
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>AccessKey</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the Access Key to the configured Microsoft cloud service.</td></tr><tr><td>BaseURL</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the URL to the configured Microsoft cloud service.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>Language</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Hint at the language to use when performing OCR.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr></tbody></table>
+    The image is categorized as **"people\_portrait"** with the caption "a woman with blonde hair".
+*   **Face Detection/Analysis:**
 
-## Add and Process Documents
+    Gender and estimated age are returned for detected faces.
+*   **Content Moderation:**
 
-1. In the **Microsoft Object Detection Service** click on **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20%20Testing.zip)
-5. After all the documents have been uploaded you can check the documents to be processed, click on **Processed Checked** to process the documents.
+    The image is flagged as not containing racy or offensive material.
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+***
 
-## View Processed Documents
+### Service Configuration Settings
 
-1. In the **Microsoft Object Detection Service** click on **Outbox** button.
-2. You can view your **Processing** results by opening a processed doc for verification.
+The Microsoft Object Detection Service is highly configurable. The following settings are available (your UI may show these grouped by wizard section):
+
+| Setting                 | Type     | Required? | Description                                                                  |
+| ----------------------- | -------- | --------- | ---------------------------------------------------------------------------- |
+| ArchivingStrategy       | Optional | No        | Days before documents get deleted.                                           |
+| AccessKey               | Optional | No        | Override the Access Key to the configured Microsoft cloud service.           |
+| BaseURL                 | Optional | No        | Override the URL to the configured Microsoft cloud service.                  |
+| BatchSize               | Hidden   | -         | Processing batch size.                                                       |
+| DocumentProcessedStatus | Optional | No        | Status applied after object detection.                                       |
+| Enabled                 | Hidden   | -         | Enable or disable the service.                                               |
+| ExecuteBeforeProcess    | Optional | No        | If set as a child service, run before the parent service.                    |
+| ExecuteAfterProcess     | Optional | No        | If set as a child service, run after the parent service.                     |
+| Language                | Optional | No        | Language hint (rarely required for object detection).                        |
+| Password                | Optional | No        | Used for service authentication. Can be set per document or via Custom Code. |
+| RemoveComments          | Optional | No        | Remove human comments from a document before processing.                     |
+
+{% hint style="info" %}
+Most users can proceed with default settings. Adjust only if needed for advanced scenarios or integration requirements.
+{% endhint %}
+
+***
+
+### Add and Process Documents
+
+To upload and process documents using the Microsoft Object Detection Service:
+
+1. **Open Service**\
+   When you open the Microsoft Object Detection Service, you will be presented with the documents currently queued or processed in the Inbox.
+2. **Upload Documents**\
+   Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid. \
+   ![](<../../.gitbook/assets/image (5).png>)
+3. **Select Category (Optional)**\
+   If you know the category for the document, select it. Otherwise, select **No category**.
+4. **Process Documents**\
+   After uploading, select the documents to process and click **Process Checked**.
+
+{% hint style="info" %}
+Tip: For new services, process a small batch first to verify object detection results before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+*   Select **Outbox** in the usage filter in the Microsoft Object Detection Service.&#x20;
+
+    ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to view and verify the detected objects, faces, tags, and captions.
+
+***
+
+### Troubleshooting Tips
+
+* **Objects or faces not detected?**
+  * Ensure images are clear, well-lit, and not too small or low-resolution.
+  * Check that the image format is supported (see Supported Content Types).
+* **Slow processing?**
+  * Large images or PDFs with many pages may take longer to process.
+  * Process smaller batches or split large PDFs if needed.
+* **Results missing for certain classes?**
+  * Not all object types, faces, or captions may be detected in all images—test with varied samples.
+* **Upload or processing errors?**
+  * Re-upload a clean file to rule out corruption.
+  * If using PDFs, ensure images are extractable or convert to image format before upload.
+
+***
+
+### Best Practices
+
+* Use high-quality, well-lit images for best detection results.
+* If using as a verification service, configure the rules engine to call Microsoft Object Detection on specific extracted image fields.
+* Regularly test with a representative set of images to monitor detection quality and ensure consistent tagging/captioning.
+* For content moderation or compliance, review racy/offensive flags and log results for auditing.
+* Use categories and Outbox filters to keep workflows organized.
+
+***
+
+### FAQ
+
+* **Can I use Microsoft Object Detection as a verification service?**
+  * Yes. Configure the rules engine to trigger object detection on extracted image fields for enrichment or validation.
+* **Does the service support multi-page PDFs?**
+  * Yes. Images are extracted from each page for processing, but results may vary by page content.
+* **What metadata is returned?**
+  * Tags, captions, detected faces (with age/gender), and content moderation flags.
+* **How do I detect and count specific objects (e.g., cars)?**
+  * Check the returned tags for object types; the count of repeated tags gives an object count.
+* **What if my images are password-protected PDFs?**
+  * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.

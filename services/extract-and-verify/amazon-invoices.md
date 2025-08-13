@@ -65,7 +65,7 @@ To upload and process identity documents using the **Amazon Invoice Extraction S
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (12) (1).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (12) (1) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.

@@ -134,7 +134,7 @@ To split documents using the Image Splitter:
 1. Open Service\
    When you open the Image Splitter, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. Upload or provide the source document\
-   Click **Upload** ![](<../../.gitbook/assets/image (13).png>) or drag and drop files onto the grid (multi-page PDF or multi-page TIFF).
+   Click **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) or drag and drop files onto the grid (multi-page PDF or multi-page TIFF).
 3. Process\
    Select the documents to split and click **Process Checked**.
 4. Review per-page outputs\

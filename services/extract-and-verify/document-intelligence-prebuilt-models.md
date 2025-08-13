@@ -40,24 +40,21 @@ Follow these steps to add and configure the **Prebuilt Models** service to your 
    Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Document Intelligence – Prebuilt Models** from the available service types.\
-   ![](<../../.gitbook/assets/image (15).png>)
+   ![](<../../.gitbook/assets/image (15) (1).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (16).png>)\
+   ![](<../../.gitbook/assets/image (16) (1).png>)\
    or\
-   ![](<../../.gitbook/assets/image (17).png>)
-   *   **Step 1: Service**\
-       Select your desired **Prebuilt Model** from the dropdown (e.g., Invoices, Receipts, IdDocuments, USPersonalTax, BankStatements, Checks, CreditCards, BusinessCards, Contracts, Layout, and more).\
-       ![](<../../.gitbook/assets/image (18).png>)
-       {% hint style="info" %}
-       Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format.
-       {% endhint %}
+   ![](<../../.gitbook/assets/image (17) (1).png>)
+   * **Step 1: Service**\
+     Select your desired **Prebuilt Model** from the dropdown (e.g., Invoices, Receipts, IdDocuments, USPersonalTax, BankStatements, Checks, CreditCards, BusinessCards, Contracts, Layout, and more).\
+     ![](<../../.gitbook/assets/image (18) (1).png>) \{% hint style="info" %\} Each prebuilt model is tailored for a specific document type and returns structured key-value pairs, tables, and fields optimized for that format. \{% endhint %\}
    * **Step 2: Categories**\
      Optionally, create document categories for organizational or workflow purposes.\
-     ![](<../../.gitbook/assets/image (19).png>)
+     ![](<../../.gitbook/assets/image (19) (1).png>)
    * **Step 3: Verification**\
      Use this step to verify the keys/fields extracted by the selected prebuilt model.\
-     ![](<../../.gitbook/assets/image (20).png>)
+     ![](<../../.gitbook/assets/image (20) (1).png>)
 
 ***
 
@@ -136,12 +133,12 @@ No training, labelling, or dataset upload is needed for prebuilt models—just s
 To upload and process documents using the **Prebuilt Models** service:
 
 1. **Open Service**\
-   In the Prebuilt Models service, click the **Upload** ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (21).png>)
+   In the Prebuilt Models service, click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (21) (1).png>)
 2. **Select Category (Optional)**\
    If you have defined categories, select the appropriate one; otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10) (1).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10) (1) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.

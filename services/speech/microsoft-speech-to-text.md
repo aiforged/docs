@@ -100,7 +100,7 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 1. **Open Service**\
    When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Audio**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid (MP3 or WAV).\
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid (MP3 or WAV).\
    ![](<../../.gitbook/assets/image (278).png>)
 3. **Select Category (Optional)**\
    If you know the category for the audio, select it. Otherwise, select **No category**.

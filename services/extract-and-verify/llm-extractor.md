@@ -199,7 +199,7 @@ LLM Extractor provides robust configuration to tailor extraction to your needs:
 To upload and process documents using the **LLM Extractor**:
 
 1. **Open Service**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid.\
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
    ![](<../../.gitbook/assets/image (33).png>)
 2. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**. Prompts will execute in order of their index, using the selected models and response formats.

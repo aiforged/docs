@@ -1,70 +1,173 @@
 # Google Object Detection
 
-<figure><img src="../../.gitbook/assets/image (48) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-**Google Object Detection** detects objects, faces, and landmarks using **Google Vision**. The service detects objects within images and returns the **Metadata** of objects contained in the image. For example, if a person is present in the image, tags may include facial features, such as nose, ear, lip, etc. The service checks whether the image contains offensive material and can be labeled as **Adult**, **Racy**, **Violence**, or **Medical** with a certain degree of confidence.
+**Google Object Detection** in AIForged leverages Google Vision to detect objects, faces, and landmarks within images and PDFs. The service analyzes images and returns metadata for each detected item—including object tags, facial features, and content moderation labels (such as Adult, Racy, Violence, or Medical, each with a confidence score). It can also assess emotions on detected faces (e.g., joy, sorrow, anger, surprise).
 
-Consider the example below of a blonde woman. The object is identified as a "**Person**" and a list of **Tag** items is returned.
+{% hint style="info" %}
+Use Google Object Detection to enrich your workflows with deep visual insights—identify people, objects, settings, and potentially sensitive content for downstream automation or compliance.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (61) (2).png" alt=""><figcaption></figcaption></figure>
+***
 
-The image provided is deemed not to be offensive, with the imaged being labeled with the following degrees of certainty.
+### Supported Content Types
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (3).png" alt=""><figcaption></figcaption></figure>
+* Images (JPEG, PNG, BMP, GIF)
+* PDF
 
-Furthermore, **Face Detection** tries to detect **Emotions** with a certain degree of confidence. In this case, joy is deemed to be the overwhelming emotion shown with a degree of "**Very Likely**". The other emotions are detected with a degree of "**Very Unlikely**".
+{% hint style="info" %}
+If you need to process other content types, use the AIForged PDF Converter utility to generate a compatible file.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+***
 
-## Supported Content Types
+### Possible Use Cases
 
-* Images
-* Pdf
+* Detect faces and estimate the age or gender of people in images.
+* Analyze emotions and attributes on detected faces.
+* Identify the scene or setting (e.g., "Person," "Landscape," "Vehicle").
+* Determine if an image contains offensive or restricted content.
+* Count similar objects (e.g., cars, bottles).
+* Enrich extracted image fields from Document Intelligence and other extraction services with object metadata.
 
-If you need to use a different type of content, you can use the **AIForged Pdf Converter**.
+***
 
-## Possible use cases
+### Service Setup
 
-* Detect faces and estimate the age of a person.
-* Detect emotions and ages on faces.
-* Identify the setting/nature of a picture.
-* Determine whether an image can contain offensive material.
-* Get a count of similar objects (e.g. counting cars).
+Follow these steps to add and configure the Google Object Detection service to your agent:
 
-## Service Setup
+1. **Open the Agent View**\
+   Navigate to the agent where you want to add the service.
+2. **Add the Google Object Detection Service**\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button in the command bar.
+3. **Select Service Type**\
+   Choose **Google Object Detection Service** from the available service types.\
+   ![](<../../.gitbook/assets/image (6).png>)
+4. **Configure the Service Wizard**
+   1. Open the Service Configuration Wizard.
+   2. **Step 1: Service Config** \
+      Configure the service settings as required.&#x20;
+   3. **Step 2: Verification**\
+      No verification required.
 
-1. Open the **Project Detail View** of the project you would like to add the service to.
-2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
-3.  Select the **Google Object Detection Service**.
+***
 
-    <figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
-4.  A new **Service Configuration Wizard** will open:\
-    (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
+### Example Results
 
-    <figure><img src="../../.gitbook/assets/image (13) (3) (1).png" alt=""><figcaption></figcaption></figure>
+*   **Object Detection Example:**
 
-* **Step 1 -** Service Config (Displays the service setting, you can change it as required).
-* Click the “Next” Action in the Action Bar to save the Service.
-* **Step 2 -** Verification. No verification required.
+    The object is identified as a "\*\*Person\*\*" and a list of \*\*Tag\*\* items is returned.
+*   **Content Moderation Example:**
 
-## Service Configuration Settings
+    The image is labeled with confidence scores for Adult, Racy, Violence, and Medical content (all "unlikely" in this case).
+*   **Face Detection/Emotions Example:**
 
-The **Microsoft OCR Service** can be configured by the user as a flexible solution. The following **Settings** are available:
+    The face is detected and emotions such as joy are scored (e.g., "Very Likely" for Joy).
 
-<table><thead><tr><th width="256">Setting</th><th width="126">Type</th><th width="139">Required Type</th><th>Description</th></tr></thead><tbody><tr><td>ArchivingStrategy</td><td><img src="../../.gitbook/assets/image (14) (6).png" alt=""></td><td>Optional</td><td>Days before documents get deleted.</td></tr><tr><td>AccessKey</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the Access Key to the configured Microsoft cloud service.</td></tr><tr><td>BaseURL</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Override the URL to the configured Microsoft cloud service.</td></tr><tr><td>BatchSize</td><td><img src="../../.gitbook/assets/image (5) (3).png" alt=""></td><td>Hidden</td><td>Processing batch size.</td></tr><tr><td>DocumentProcessedStatus</td><td><img src="../../.gitbook/assets/image (6) (4).png" alt=""></td><td>Optional</td><td>Document status used to denote that a document has been processed.</td></tr><tr><td>Enabled</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""></td><td>Hidden</td><td>Enable or disable the service.</td></tr><tr><td>ExecuteBeforeProcess</td><td><img src="../../.gitbook/assets/image (15) (1) (3) (2).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>before</strong> the parent service gets executed.</td></tr><tr><td>ExecuteAfterProcess</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (2) (7).png" alt=""></td><td></td><td>When set up as a child service, specify whether this service should be executed <strong>after</strong> the parent service gets executed.</td></tr><tr><td>Language</td><td><img src="../../.gitbook/assets/image (7) (2).png" alt=""></td><td>Optional</td><td>Hint at the language to use when performing OCR.</td></tr><tr><td>Password</td><td><img src="../../.gitbook/assets/image (3) (5) (1).png" alt=""></td><td>Optional</td><td>Used for service authentication. Custom Code can be used to set the password. Can be set per document.</td></tr><tr><td>RemoveComments</td><td><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (2) (1) (3).png" alt=""></td><td>Optional</td><td>Remove human comments from a document.</td></tr></tbody></table>
+***
 
-## Add and Process Documents
+### Service Configuration Settings
 
-1. In the **Google Object Detection Service** click on **Inbox** button.
-2. Select the Status you want to upload and use Status **None** or **Received** for new documents that have not been processed yet.
-3. Select an optional category if you know the category for the document, if you don’t want to select one just click on “No selection”.
-4. Find the files on your Local machine and upload them. **The demo's test files can be found at the following link:** [**Click here**](https://docs.aiforged.com/DemoDocuments/ABBYY%20Classification%20%20Testing.zip)
-5. After all the documents have been uploaded you can check the documents to be processed, click on “Processed Checked” to process the documents.
+The **Google Object Detection Service** can be customized for your workflow. The following settings are available:
 
-It is recommended to only process a few documents at a time, especially if it is a new service to properly test if you receive the results you want before processing everything.
+| Setting                 | Type     | Required? | Description                                                           |
+| ----------------------- | -------- | --------- | --------------------------------------------------------------------- |
+| ArchivingStrategy       | Optional | No        | Days before documents get deleted.                                    |
+| AccessKey               | Optional | No        | Override the Google Cloud API key (not typically needed in AIForged). |
+| BaseURL                 | Optional | No        | Override the Google Vision endpoint (advanced; usually not required). |
+| BatchSize               | Hidden   | -         | Processing batch size.                                                |
+| DocumentProcessedStatus | Optional | No        | Document status used to denote that a document has been processed.    |
+| Enabled                 | Hidden   | -         | Enable or disable the service.                                        |
+| ExecuteBeforeProcess    | Optional | No        | Run before the parent service (when used as a utility).               |
+| ExecuteAfterProcess     | Optional | No        | Run after the parent service (when used as a utility).                |
+| Language                | Optional | No        | Language hint (rarely required for object detection).                 |
+| Password                | Optional | No        | Used for service authentication (can be set per document).            |
+| RemoveComments          | Optional | No        | Remove human comments from documents before processing.               |
 
-## View Processed Documents
+{% hint style="info" %}
+Tip: Start with the default settings. Only adjust advanced options if needed for custom workflows or integrations.
+{% endhint %}
 
-1. In the **Google Object Detection Service** click on **Outbox** button.
-2. You can view your **Processing** results by opening a processed doc for verification.
+***
+
+### Add and Process Documents
+
+To upload and process documents using the Google Object Detection service:
+
+1. **Open Service**\
+   When you open the service, you will see documents currently queued or processed in the **Inbox**.
+2. **Upload Documents**\
+   Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (7).png>)
+3. **Select Category (Optional)**\
+   Select a category if desired; otherwise, select **No category**.
+4. **Process Documents**\
+   Select the uploaded documents and click **Process Checked**.
+
+{% hint style="info" %}
+Tip: For new services, process a small batch first to verify detection results before scaling up.
+{% endhint %}
+
+***
+
+### View Processed Documents
+
+* Select **Outbox** in the usage filter in the Google Object Detection Service.\
+  ![](<../../.gitbook/assets/image (51).png>)
+* Open any processed document to review detected objects, tags, emotions, and content moderation scores.
+
+***
+
+### Troubleshooting Tips
+
+* **Missing detections or low accuracy?**
+  * Use high-quality images (good lighting, sharp focus).
+  * Add a language hint if processing images with text in non-English languages.
+* **Unexpected content moderation results?**
+  * Review images flagged as Adult, Racy, Violence, or Medical for accuracy.
+  * Test with known clean and flagged examples to understand confidence thresholds.
+* **Faces/emotions not detected?**
+  * Ensure faces are large enough and clearly visible.
+  * Test with a variety of sample images to calibrate expectations.
+* **Upload or processing errors?**
+  * Re-upload images, confirm supported formats, or try a different sample to rule out file-specific issues.
+  * For large PDFs, consider splitting before upload.
+
+***
+
+### Best Practices
+
+* Use high-resolution, well-lit images for best results.
+* Organize outputs with categories for streamlined downstream routing.
+* Combine with verification or classification steps to maximize workflow value.
+* Pilot with a representative set of images before scaling to production.
+
+***
+
+### Quick Start
+
+Get results in minutes:
+
+1. Add the Google Object Detection service to your agent.
+2. Upload images or PDFs.
+3. Process and review detected tags, faces, emotions, and content moderation scores.
+4. Use Outbox filtering to verify and route outputs as needed.
+
+{% hint style="info" %}
+Tip: Begin with a small test batch to confirm results, then expand as needed for your workflow.
+{% endhint %}
+
+***
+
+### FAQ
+
+* **Does Google Object Detection support multi-page PDFs?**
+  * Yes. Images are extracted from each page and processed, but results may vary by page content.
+* **Can I use Google Object Detection for compliance or moderation?**
+  * Yes. Use Adult, Racy, Violence, and Medical flags to automate content filtering.
+* **What objects, faces, or emotions can be detected?**
+  * Detection covers a broad range of objects and facial attributes, but accuracy depends on image quality and clarity.
+* **Do I need a Google Cloud account or API key?**
+  * No. AIForged manages provider connections and authentication for you.
+* **How do I improve results for specialized domains (e.g., manufacturing, healthcare)?**
+  * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.

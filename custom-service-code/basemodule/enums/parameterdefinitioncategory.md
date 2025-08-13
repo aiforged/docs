@@ -1,9 +1,184 @@
 # ParameterDefinitionCategory
 
-## Description
+### Overview
 
-The **ParameterDefinitionCategory** enum specifies the category that a **Parameter Definition** belongs to. These can range from actual **Services**, **Field Definitions**, or **Containers**.
+The ParameterDefinitionCategory enum specifies the category a Parameter Definition belongs to. Use it to filter and target settings, services, containers, results, datasets, or extraction fields in your automation.
 
-## Members
+Underlying type: int
 
-<table><thead><tr><th width="178.33333333333331">Name</th><th width="87" data-type="number">Value</th><th>Description</th></tr></thead><tbody><tr><td>None</td><td>0</td><td>No category specified.</td></tr><tr><td>Setting</td><td>1</td><td>The definition is used as a setting for a service.</td></tr><tr><td>Service</td><td>2</td><td>A service (top-level defintion).</td></tr><tr><td>Statistics</td><td>3</td><td>The definition is used for processing statistics.</td></tr><tr><td>Results</td><td>4</td><td>The definition is used for a result or rule for fieds.</td></tr><tr><td>Dependency</td><td>5</td><td>Dependency parameter to be used for configuring a service.</td></tr><tr><td>Verification</td><td>6</td><td>A verification service (configured in parameter definition rules).</td></tr><tr><td>DataSet</td><td>7</td><td>A custom dataset</td></tr><tr><td>PreProcessor</td><td>20</td><td>Container for Pre-processing settings (to improve data quality).</td></tr><tr><td>Processor</td><td>21</td><td>Container for processing settings.</td></tr><tr><td>PostProcessor</td><td>22</td><td>Container for Post-processing settings (to indicate result parameters).</td></tr><tr><td>Extraction</td><td>40</td><td>Extract/Map fields from OCR data.</td></tr></tbody></table>
+***
+
+### Quick usage
+
+```csharp
+// Find a field definition that is categorized as a result/rule
+var def = module.FindParameterDef(
+    "InvoiceTotal",
+    stpdId: stpd.Id,
+    categories: new List<ParameterDefinitionCategory?> { ParameterDefinitionCategory.Results }
+);
+```
+
+***
+
+### Member Reference
+
+#### None
+
+Value: 0
+
+Description: No category specified.
+
+When to use:
+
+* Default or placeholder where the category is unspecified.
+
+***
+
+#### Setting
+
+Value: 1
+
+Description: Definition used as a setting for a service.
+
+When to use:
+
+* Service configuration (e.g., API keys, endpoints, toggles).
+
+***
+
+#### Service
+
+Value: 2
+
+Description: Top-level service definition.
+
+When to use:
+
+* Representing an actual service node in your agent (parent for sub-settings/fields).
+
+***
+
+#### Statistics
+
+Value: 3
+
+Description: Definition used for processing statistics.
+
+When to use:
+
+* KPIs, counters, or metrics captured during processing.
+
+***
+
+#### Results
+
+Value: 4
+
+Description: Definition used for a result or rule for fields.
+
+When to use:
+
+* Output fields and post-processing rule targets you publish to downstream systems.
+
+***
+
+#### Dependency
+
+Value: 5
+
+Description: Dependency parameter used for configuring a service.
+
+When to use:
+
+* Declaring prerequisites (e.g., model references, credentials, feature flags).
+
+***
+
+#### Verification
+
+Value: 6
+
+Description: Verification service configured via parameter definition rules.
+
+When to use:
+
+* Linking a field to a verification provider/process.
+
+***
+
+#### DataSet
+
+Value: 7
+
+Description: Custom dataset reference.
+
+When to use:
+
+* Binding a field/service to a lookup/enrichment dataset.
+
+***
+
+#### PreProcessor
+
+Value: 20
+
+Description: Container for pre-processing settings (data quality improvements before extraction).
+
+When to use:
+
+* Normalization, cleaning, rotation, split/merge, and preparation steps.
+
+***
+
+#### Processor
+
+Value: 21
+
+Description: Container for processing settings.
+
+When to use:
+
+* Core extraction/recognition configuration for the service.
+
+***
+
+#### PostProcessor
+
+Value: 22
+
+Description: Container for post-processing settings (e.g., result shaping and publication).
+
+When to use:
+
+* Rules, formatting, validation, and output mapping after extraction.
+
+***
+
+#### Extraction
+
+Value: 40
+
+Description: Extract/Map fields from OCR data.
+
+When to use:
+
+* Field definitions that are directly mapped from OCR/vision outputs.
+
+***
+
+### Best Practices
+
+* Filter FindParameterDef by Category to quickly narrow down targets (e.g., Settings vs Results).
+* Use Category alongside GroupingType to distinguish structure (e.g., Results + Field).
+* Treat Service/PreProcessor/Processor/PostProcessor as containers; they typically parent other definitions.
+* For verification flows, pair Category=Verification with related rules and providers.
+
+### FAQ
+
+* Q: What’s the difference between Results and Extraction?
+  * A: Extraction focuses on mapping OCR outputs; Results represents published/ruled output fields.
+* Q: Are Service/PreProcessor/Processor/PostProcessor actual fields?
+  * A: They’re container categories—use them to structure and scope underlying definitions.
+* Q: Can one definition change category later?
+  * A: It can, but prefer stability—changing categories affects filters and downstream logic.

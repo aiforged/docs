@@ -1,179 +1,217 @@
 ---
 description: >-
-  This code sample demonstrates a simple technique utilizing a custom code
-  utility service together with a custom dataset to prevent a service from
-  processing duplicate documents.
+  Prevent duplicate document processing with a Custom Code utility and a Custom
+  Dataset.   This end-to-end example shows how to hash incoming documents, check
+  against a   “Duplicate History” dataset, an
 ---
 
 # Custom Code Example: Duplicate Document Check
 
-This code sample will look at implementing an MD5 hash check against documents that will be processed by a service. Each document's MD5 hash will be checked against the MD5 hashes stored within a custom dataset. If a match is found, the offending document will be placed into an error state, removed from further processing, and a corresponding workflow item will be created. If a match is not found, then the document's MD5 hash will be stored in the custom dataset, and the document will be allowed to continue with processing.
+### Overview
 
-To start, let's add a new **Custom Code utility service** to an existing **Email Scraping** service.\
-The **Email Scraping** service includes a nested **Attachment** service by default that performs individual processing on attachments from scraped emails. This is the service where we will nest our **Custom Code** utility.
+This guide walks you through implementing a robust duplicate-document prevention pattern in AIForged using:
 
-* First, open the **Service Detail View** for the **Email Scraping** service by clicking on its **Service Card** in your project.\
-  ![](<../.gitbook/assets/image (12) (6).png>)
-* Click on an empty space within the header of the nested **Attachment Service Card** to open the **Attachment** service's detail view:\
-  ![](<../.gitbook/assets/image (15) (8).png>)
-* Click on the **Add Utility** button in the **Command Bar**.\
-  ![](<../.gitbook/assets/image (3) (11).png>)
-* Select **Custom Code** from the **Service Type Selection Dialog** under the **Utilities** section and then click on **Select** to confirm your selection.\
-  ![](<../.gitbook/assets/image (21) (6).png>)
+* A Custom Code utility service (as a post-processor)
+* A Custom Dataset (“Duplicate History”)
+* Work item creation for Human-in-the-Loop (HITL) review when duplicates are detected
 
-Next, we need to add a **Custom Dataset** to our new **Custom Code utility service**. The **Custom Dataset** will store the MD5 hash strings for our non-duplicate documents.
+At a high level:
 
-1. To do this, open the **Configuration View** of our newly nested **Custom Code utility service** by clicking on the button with the **Gear Icon** in its nested service card.\
-   ![](<../.gitbook/assets/image (10) (8).png>)
-2. In the configuration view select the main definition for our **Custom Code utility service** (the first configuration line), and then click on **Create Custom Dataset.**\
-   ![](<../.gitbook/assets/image (6) (9).png>)
-3. Enter **Duplicate History** as the name for our **Custom Dataset**, and click on **Submit**.\
-   ![](<../.gitbook/assets/image (9) (6).png>)
-4. **Double-click** on the newly created definition for our **Custom Dataset** to open the dataset editor:\
-   ![](<../.gitbook/assets/image (16) (5).png>)\
-   ![](<../.gitbook/assets/image (11) (6).png>)
+1. Each incoming document’s bytes are hashed (MD5 by default).
+2. The hash is looked up in a Custom Dataset.
+3. If a match exists, the document is flagged as Error, skipped from downstream processing, and a HITL work item is created.
+4. If no match is found, the hash is recorded and the document continues.
 
-We are going to add two **Fields** to our **Custom Dataset**. **Fields** are visualized as **Columns** within our dataset editor. These **Fields** will contain an MD5 hash string as well as a unique document identifier for each document processed by our **Custom Code**.
+{% hint style="info" %}
+Note: MD5 is adequate for duplicate detection in most business contexts. For stronger collision resistance, see the “Extensions” section to switch to SHA‑256.
+{% endhint %}
 
-To add these **Fields** to the **Custom Dataset**, enter the name of the column in the **Column Name** field in the editor and click on **New Column:**
+***
 
-* Add **MD5Hash** as a new column:\
-  ![](<../.gitbook/assets/image (18) (8).png>)
-* Add **DocumentId** as a new column.\
-  ![](<../.gitbook/assets/image (19) (5).png>)
+### Architecture at a Glance
 
-Click on **Save** to save the changes made to the **Custom Dataset**.\
-![](<../.gitbook/assets/image (17) (5).png>)
+* Trigger: Email Scraper’s nested Attachment service processes new attachments as documents.
+* Post-processor: Custom Code utility runs after the attachment service has scraped attachments from an email (recommended placement).
+* Storage: “Duplicate History” Custom Dataset stores (MD5Hash, DocumentId).
+* Decision:
+  * If MD5 exists in dataset → set DocumentStatus=Error, create WorkItem for verification, skip further processing.
+  * Else → store MD5 and allow the document to proceed.
 
-Your **Custom Dataset** should now look as follows in the configuration view (you may need to refresh the view):\
-![](<../.gitbook/assets/image (2) (9).png>)
+***
 
-Next, we need to add some code to our **Custom Code** utility.
+### Prerequisites
 
-Close the **Configuration View** for the **Custom Code** utility, and click on the **Code** button on the nested **Service Card**.\
-![](<../.gitbook/assets/image (4) (7).png>)
+* An existing Email Scraping service with the nested Attachment service.
+* Permission to add utility services and create custom datasets.
+* .NET cryptography assembly access to compute hashes.
 
-* Select **C#** from the **Code Language** dropdown.\
-  ![](<../.gitbook/assets/image (5) (10).png>)
-* Copy and paste the following code into the code editor area:
+***
+
+### Step 1 — Add the Custom Code Utility
+
+1. Open the Service Flow Configurator for the Email Scraping service by clicking on the **Open Service Flow Configurator** ![](<../.gitbook/assets/image (9).png>) button.\
+   ![](<../.gitbook/assets/image (8).png>)
+2. Expand the Utilities service group.\
+   ![](<../.gitbook/assets/image (10).png>)
+3. Drag the **Custom Code** service type card over the **Attachment Service** card, then to the **Post-Processor** drop point.\
+   ![](<../.gitbook/assets/image (11).png>)
+4. Save.
+
+{% hint style="info" %}
+Recommendation: Position this Custom Code utility as a post-processor (execute after the parent) to prevent duplicates from flowing into downstream steps.
+{% endhint %}
+
+***
+
+### Step 2 — Create the “Duplicate History” Custom Dataset
+
+1. Open the **Parameter Definitions** dialog of the new **Custom Code** utility service.\
+   ![](<../.gitbook/assets/image (12).png>)
+2. Click on the **Create Custom Dataset** ![](<../.gitbook/assets/image (13).png>) button.
+3. Enter **Duplicate History** in the **Name** field and add the following two columns:
+   1. MD5Hash (ValueType: String)
+   2. DocumentId (ValueType: String)
+4. Click **Create** to persist the dataset schema.\
+   ![](<../.gitbook/assets/image (14).png>)
+
+Your dataset should now appear in the **Service Parameter Definitions** dialog:\
+![](<../.gitbook/assets/image (15).png>)
+
+***
+
+### Step 3 — Add the Custom Code
+
+1. Close the **Service Parameter Definitions** dialog and click the Code button on the nested **Custom Code** service card.\
+   ![](<../.gitbook/assets/image (16).png>)\
+
+2. Select CSharp as Code Language.\
+   ![](<../.gitbook/assets/image (17).png>)
+3. Paste the reference implementation below into the editor.
+
+#### Reference Implementation
 
 ```csharp
-//Log the start of our custom code processing
+// Log the start
 logger.LogInformation("{stpd} Start", stpd.Name);
 
-//Check that we have docs to process, if no documents are available to process skip running the rest of code
-if (docs == null) 
+// 0) Exit if there are no documents
+if (docs == null || !docs.Any())
 {
     logger.LogInformation("{stpd} Found no docs, continuing...", stpd.Name);
     return new AIForged.Services.ProcessResult(docs);
 }
 
-//Get the parent service for our nested custom code service. This will be used in certain places within the code.
+// 1) Identify the parent (Attachment) service
 var parentservice = module.GetParentService();
-
 logger.LogInformation("{stpd} Found {count} docs...", stpd.Name, docs.Count());
 
-//Retrieve our Duplicate History custom dataset. Replace the Id of the dataset and its fields with the Ids from your dataset and fields
+// 2) Retrieve the Duplicate History dataset (replace IDs with your own)
 logger.LogInformation("{stpd} Get Custom History DataSet", stpd.Name);
-ICustomDataSet dataset = module.GetDataSetByDef(stpd, 263926, false, false, null, null, null, null);
-ParameterDefViewModel fieldDocId = dataset.FindField(263928);
-ParameterDefViewModel fieldMD5Hash = dataset.FindField(263927);
 
-//Initialise list to store skipped docs
+// REQUIRED: update these IDs to match your dataset and fields
+const int DuplicateHistoryDataSetDefId = 1234;
+const int FieldDocIdDefId = 1235;
+const int FieldMD5HashDefId = 1236;
+
+// OPTIONAL: group used for HITL assignment (replace with your groupId)
+const int GroupId = 123123;
+
+// Load dataset and resolve fields
+ICustomDataSet dataset = module.GetDataSetByDef(stpd, DuplicateHistoryDataSetDefId, false, false, null, null, null, null);
+if (dataset == null)
+{
+    logger.LogInformation("{stpd} Unable to load Duplicate History dataset (defId={defId})", stpd.Name, DuplicateHistoryDataSetDefId);
+    return new AIForged.Services.ProcessResult(docs);
+}
+
+ParameterDefViewModel fieldDocId = dataset.FindField(FieldDocIdDefId);
+ParameterDefViewModel fieldMD5Hash = dataset.FindField(FieldMD5HashDefId);
+
+if (fieldDocId == null || fieldMD5Hash == null)
+{
+    logger.LogInformation("{stpd} Dataset fields not found (docIdDefId={docIdDefId}, md5DefId={md5DefId})", stpd.Name, FieldDocIdDefId, FieldMD5HashDefId);
+    return new AIForged.Services.ProcessResult(docs);
+}
+
+// 3) Identify verification users (optional, for work item assignment)
+var verifyusers = module.GetUsers(
+    parentservice.Id,
+    GroupId,
+    new[] { GroupRoleType.VerifyDoc },
+    null
+);
+
+// Track documents to skip from downstream processing
 List<int> skippedDocIds = new List<int>();
-int groupId = 1867;
 
-//Get the various users that may be used in our work item creation
-List<(IGroupRole role, IGroupRoleUser user)> adminusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.Administrator, GroupRoleType.VerifyAdmin], null);
-foreach (var usr in adminusers) 
-{
-    logger.LogInformation("{stpd} Admin User {id} {status} {role}", stpd.Name, usr.user.UserId, usr.user.Status, usr.role.Type);    
-}
-
-List<(IGroupRole role, IGroupRoleUser user)> doclayoutusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.DocLayout], null);
-foreach (var usr in doclayoutusers) 
-{
-    logger.LogInformation("{stpd} Document Layout User {id} {status} {role}", stpd.Name, usr.user.UserId, usr.user.Status, usr.role.Type);    
-}
-
-List<(IGroupRole role, IGroupRoleUser user)> verifyusers = module.GetUsers(parentservice.Id, groupId, [GroupRoleType.VerifyDoc], null);
-foreach (var usr in verifyusers) 
-{
-    logger.LogInformation("{stpd} Verification User {id} {status} {role}", stpd.Name, usr.user.UserId, usr.user.Status, usr.role.Type);    
-}
-
-//Step through each document and test whether or not it is a duplicate
-foreach (IDocument childDoc in docs)
+// 4) Process each child document
+foreach (IDocument childDoc in docs.ToList())
 {
     try
     {
-        //If the document is in an error state before we start our checks, something else may have gone wrong.
-        //Create a work item to notify Human in the Loop of this problematic document.
+        // 4.1) If already in error, create a work item and skip
         if (childDoc.Status == DocumentStatus.Error)
-        { 
+        {
             logger.LogInformation("{stpd} Document is in error state: {docid}", stpd.Name, childDoc.Id);
-            //This work item will be assigned to a verification user
-            var usr = module.PickRandom(verifyusers.Select(tuple => tuple.user).Distinct().ToList(), null);
 
-            if (usr != null) 
+            var usr = verifyusers?.Select(t => t.user).Distinct().ToList();
+            var picked = (usr == null || usr.Count == 0) ? null : module.PickRandom(usr, null);
+
+            if (picked != null)
             {
-                //Create a new work item and pass the current document comment, which will contain the error message, as the work item message
-                var wi = module.CreateWorkItem(usr.UserId, 
-                    WorkItemType.Document, 
-                    WorkItemStatus.Created, 
-                    WorkItemAction.Verify, 
-                    WorkItemMethod.Random, 
-                    new TimeSpan(24,0,0), 
-                    parentservice.Id, 
-                    childDoc.MasterId, 
-                    null, 
-                    null, 
-                    null, 
-                    null, 
-                    null, 
-                    groupId,
-                    childDoc.Comment, 
+                var wi = module.CreateWorkItem(
+                    picked.UserId,
+                    WorkItemType.Document,
+                    WorkItemStatus.Created,
+                    WorkItemAction.Verify,
+                    WorkItemMethod.Random,
+                    new TimeSpan(24, 0, 0),
+                    parentservice.Id,
+                    childDoc.MasterId,
+                    null, null, null, null, null,
+                    GroupId,
+                    childDoc.Comment,
                     childDoc.Result,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null);            
+                    null, null, null, null,
+                    null, null
+                );
                 module.SaveChanges();
             }
+
+            skippedDocIds.Add(childDoc.MasterId ?? childDoc.Id);
             continue;
         }
 
+        // 4.2) Load document data for hashing
         logger.LogInformation("{stpd} Process Document {docid} {docfilename}", stpd.Name, childDoc.Id, childDoc.Filename);
         logger.LogInformation("{stpd} Get document data", stpd.Name);
 
-        //We need to get our document data / bytes in order to calculate an MD5 hash
-        var docData = module.GetDocumentData(childDoc, null);
+        // Prefer the original Image bytes, fallback to first available blob
+        var blobs = module.GetDocumentData(childDoc, new List<DocumentDataType?> { DocumentDataType.Image })
+                   ?? module.GetDocumentData(childDoc, null);
 
-        if (docData == null)
+        var primary = blobs?.FirstOrDefault(b => b.Type == DocumentDataType.Image) ?? blobs?.FirstOrDefault();
+        var bytes = primary?.Data;
+
+        if (bytes == null || bytes.Length == 0)
         {
-            logger.LogInformation("{stpd} Could not get document data", stpd.Name);
+            logger.LogInformation("{stpd} Could not get document data for hashing", stpd.Name);
             module.SetDocumentStatus(childDoc, DocumentStatus.Error, "Could not get document data to calculate MD5 hash.", null, true, false, true);
             skippedDocIds.Add(childDoc.MasterId ?? childDoc.Id);
             module.SaveChanges();
             continue;
         }
 
-        logger.LogInformation("{stpd} Get document MD5 hash.", stpd.Name);
-
-        //Initialise byte array that will contain our MD5 hash
-        byte[] docHash = null;
-
+        // 4.3) Compute MD5
+        logger.LogInformation("{stpd} Compute document MD5 hash", stpd.Name);
+        string hashString;
         using (var md5 = System.Security.Cryptography.MD5.Create())
         {
-            //Calculate our MD5 hash from document's data byte array
-            md5.TransformFinalBlock(docData.FirstOrDefault().Data, 0, docData.FirstOrDefault().Data.Length);
-            docHash = md5.Hash;
-        };
+            var hashBytes = md5.ComputeHash(bytes);
+            hashString = BitConverter.ToString(hashBytes).Replace("-", "");
+        }
 
-        //If the MD5 hash could not be calculated, log and skip
-        if (docHash == null)
+        if (string.IsNullOrWhiteSpace(hashString))
         {
             logger.LogInformation("{stpd} Could not calculate document's MD5 hash", stpd.Name);
             module.SetDocumentStatus(childDoc, DocumentStatus.Error, "Could not calculate document's MD5 hash", null, true, false, true);
@@ -182,104 +220,172 @@ foreach (IDocument childDoc in docs)
             continue;
         }
 
-        //Convert our hash byte array into a string representation
-        var hashString = BitConverter.ToString(docHash).Replace("-", "");
-
-        //Check if any matching hashes exist in our Document History dataset
-        var checkHashes = module.GetDataSetRecords(dataset, fieldMD5Hash, hashString, false);
-
-        if (checkHashes != null && checkHashes.Count() > 0)
+        // 4.4) Check for duplicates
+        var matches = module.GetDataSetRecords(dataset, fieldMD5Hash, hashString, false);
+        if (matches != null && matches.Any())
         {
-            //If a matching has is found, retrieve the document Id of the matching hash for logging purposes
-            var checkHash = checkHashes.FirstOrDefault();
-            var docId = checkHash.GetValue(fieldDocId).Value;
+            // Duplicate found
+            var first = matches.FirstOrDefault();
+            var priorId = first?.GetValue(fieldDocId)?.Value ?? "Unknown";
 
-            //Log and create a work item to notify Human in the Loop of the duplcate document
-            logger.LogInformation("{stpd} Document already processed: Previous document info: {docId}", stpd.Name, docId);
-            module.SetDocumentStatus(childDoc, DocumentStatus.Error, $"Document already processed: Previous document info: {checkHash.GetValue(fieldDocId)}", null, true, false, true);
-            var usr = module.PickRandom(verifyusers.Select(tuple => tuple.user).Distinct().ToList(), null);
-            if (usr != null) 
+            logger.LogInformation("{stpd} Duplicate detected. Prior: {prior}", stpd.Name, priorId);
+
+            module.SetDocumentStatus(childDoc, DocumentStatus.Error, $"Document already processed: Previous document info: {priorId}", null, true, false, true);
+
+            var usrPool = verifyusers?.Select(t => t.user).Distinct().ToList();
+            var picked = (usrPool == null || usrPool.Count == 0) ? null : module.PickRandom(usrPool, null);
+            if (picked != null)
             {
-                var wi = module.CreateWorkItem(usr.UserId, 
-                    WorkItemType.Document, 
-                    WorkItemStatus.Created, 
-                    WorkItemAction.Verify, 
-                    WorkItemMethod.Random, 
-                    new TimeSpan(24,0,0), 
-                    parentservice.Id, 
-                    childDoc.MasterId, 
-                    null, 
-                    null, 
-                    null, 
-                    null, 
-                    null, 
-                    groupId,
-                    childDoc.Comment, 
+                var wi = module.CreateWorkItem(
+                    picked.UserId,
+                    WorkItemType.Document,
+                    WorkItemStatus.Created,
+                    WorkItemAction.Verify,
+                    WorkItemMethod.Random,
+                    new TimeSpan(24, 0, 0),
+                    parentservice.Id,
+                    childDoc.MasterId,
+                    null, null, null, null, null,
+                    GroupId,
+                    childDoc.Comment,
                     childDoc.Result,
-                    null,
-                    null,
-                    null,
-                    null,
-                    $"Document already processed: Previous document info: {docId}", 
-                    $"Document already processed: Previous document info: {docId}");
-
-                module.SaveChanges();      
+                    null, null, null, null,
+                    $"Document already processed: Previous document info: {priorId}",
+                    $"Document already processed: Previous document info: {priorId}"
+                );
+                module.SaveChanges();
             }
 
-            //Add the document to list of documents excluded from processing
             skippedDocIds.Add(childDoc.MasterId ?? childDoc.Id);
             continue;
         }
 
-        //We could not find a matching record in the Document History dataset.
-        //Let's store this document's MD5 hash to check duplicates against.
-        //We create a new dataset record and set its values for the MD5 Hash and Document Id respectively
-        logger.LogInformation("{stpd} This is a new document, creating hash record.", stpd.Name);
-        var newHashRecord = dataset.CreateRecord(new Guid().ToString());
+        // 4.5) No duplicate found → store hash and proceed
+        logger.LogInformation("{stpd} New document. Create dataset record.", stpd.Name);
 
-        newHashRecord.SetValue(fieldDocId.Id, $"Parent Doc Id: {childDoc.MasterId.ToString()} | Doc Id: {childDoc.Id.ToString()}" );
-        newHashRecord.SetValue(fieldMD5Hash.Id, hashString);
+        var newRecord = dataset.CreateRecord(Guid.NewGuid().ToString());
+        newRecord.SetValue(fieldDocId.Id, $"Parent Doc Id: {childDoc.MasterId?.ToString() ?? "N/A"} | Doc Id: {childDoc.Id}");
+        newRecord.SetValue(fieldMD5Hash.Id, hashString);
 
-        //Persist the dataset record to the Document History custom dataset
-        await module.SaveDataSetRecord(dataset, newHashRecord);
+        await module.SaveDataSetRecord(dataset, newRecord);
+        module.SaveChanges();
+
         logger.LogInformation("{stpd} Hash record created. Continuing...", stpd.Name);
 
-        //
-        //Perform any additional processing here
-        //
-
-        module.SaveChanges();
+        // Place for additional post-processing, if needed
+        // ...
     }
     catch (Exception ex)
     {
-        logger.LogInformation("{stpd} An error occurred while processing document: {docid} \n {ex}.", stpd.Name, childDoc.Id, ex.ToString());
+        logger.LogInformation("{stpd} Error while processing doc {docid}: {ex}", stpd.Name, childDoc.Id, ex.ToString());
+        // Consider: set to Error and create a work item here as well
     }
 }
 
-//Remove any skipped documents from further processing
-foreach (var skippedDocId in skippedDocIds)
+// 5) Remove skipped docs from downstream processing
+foreach (var skippedId in skippedDocIds.Distinct())
 {
-    var skippedDoc = docs.FirstOrDefault(d => d.Id == skippedDocId);
-
-    if (skippedDoc == null) continue;
-    docs.Remove(skippedDoc);
+    var skipped = docs.FirstOrDefault(d => d.Id == skippedId);
+    if (skipped != null) docs.Remove(skipped);
 }
 
-//Return the list of documents that will continue processing
+// 6) Return the remaining documents to continue the pipeline
 return new AIForged.Services.ProcessResult(docs);
 ```
 
-* Replace **/\* Document History definition Id here \*/** with the unique identifier for the **Document History** custom dataset that you created.
-* Replace **/\* DocumentId field definition Id here \*/** with the unique identifier for the **DocumentId** dataset field that you created.
-* Replace **/\* MD5Hash field definition Id here \*/** with the unique identifier for the **MD5Hash** dataset field that you created.
+### Step 4 — Replace IDs with Your Own
 
-For the MD5 Hash calculation to work, add the following assembly signature to the list of **Assemblies** referenced by your custom code:
+Where indicated in the code:
 
-* System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\
-  \
-  ![](<../.gitbook/assets/image (195).png>)
+* DuplicateHistoryDataSetDefId → Your Duplicate History dataset definition ID
+* FieldMD5HashDefId → Your MD5Hash field definition ID
+* FieldDocIdDefId → Your DocumentId field definition ID
+* GroupId → Your group for verification user assignment
 
-Be sure to **Save** your custom code changes regularly by clicking on the **Save** button in the command bar.\
-![](<../.gitbook/assets/image (8) (7).png>)
+{% hint style="info" %}
+For stability, consider reading these IDs from service settings (Parameter Definitions with Category=Setting) or use Constants instead of hard-coding.
+{% endhint %}
 
-To test that our **Custom Code** is working as designed we can send some duplicate documents to our **Email Scraping** service. If your custom code was setup correctly, then any duplicate documents will be placed into an error state, work items will be created and they will not be processed by any further nested services within the email scraping service.
+***
+
+### Step 5 — Add Required Assembly
+
+To compute MD5, add this assembly to the Custom Code “Assemblies” list:
+
+* `System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
+
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Step 6 — Add Required Import
+
+To compute MD5, add this import to the Custom Code “Imports” list:
+
+* `System.Security.Cryptography`
+
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Step 7 — Save Your Code
+
+Click the **Save** ![](<../.gitbook/assets/image (21).png>) button or use the key combination **Ctrl+S** regularly to persist changes.
+
+***
+
+### Step 8 — Test the Solution
+
+1. Send two identical documents as attachments to the mailbox your Email Scraper monitors.
+2. On the first run:
+   * The Custom Code utility computes the MD5, finds no match, stores it, and lets processing continue.
+3. On the second run (duplicate):
+   * The utility computes the same MD5, finds a match in the dataset, sets the document to Error, creates a HITL work item, and excludes the doc from downstream processing.
+4. Verify:
+   * A record exists in the Duplicate History dataset for the first doc’s hash.
+   * The duplicate document has DocumentStatus=Error.
+   * A WorkItem exists for HITL verification (assignee from your verification group).
+
+***
+
+### Operational Guidance
+
+* Placement: Run this utility before heavy extractors to save cost/time.
+* Logging: Keep info-level logs for visibility; add debug logs during pilots.
+* Concurrency: Setting MD5Hash as dataset Key and handling duplicate insert failures will harden against race conditions.
+* Performance: Hashing is CPU-bound; keep batch sizes reasonable. For very large files, consider streaming hashes.
+* Retention: Decide how long to keep hashes. Add an archiving policy to trim old entries if needed.
+
+***
+
+### Troubleshooting
+
+* No users for assignment
+  * Ensure your GroupId is correct and that VerifyDoc users are active/enabled.
+* “Could not get document data”
+  * Confirm the document has a valid Image blob. Check upstream services that provide the original bytes.
+* Repeated duplicates not flagged
+  * Verify that FieldMD5HashDefId points to the correct field and that lookups aren’t case-sensitive in your dataset. Confirm the hash string matches exactly.
+* Too many false positives
+  * Extremely rare with MD5 for identical bytes. If source documents differ by metadata but represent “the same” logical document, consider normalizing (e.g., PDF linearization) or hashing page images.
+* Performance concerns
+  * Stream hashing on very large files, reduce batch size, and tune service BatchSize. Monitor CPU.
+
+***
+
+### Extensions (Optional)
+
+*   Use SHA‑256 instead of MD5\
+    Replace MD5 with SHA256 for stronger collision resistance:
+
+    ```csharp
+    using var sha = System.Security.Cryptography.SHA256.Create();
+    var hashBytes = sha.ComputeHash(bytes);
+    var hashString = BitConverter.ToString(hashBytes).Replace("-", "");
+    ```
+* Make MD5Hash the dataset Key\
+  Enforce uniqueness at the dataset level to prevent duplicate inserts.
+* Broaden matching logic\
+  Include additional heuristics (e.g., page count + file size) for pre-filtering before hashing large files.
+* Custom work item routing\
+  Swap WorkItemMethod.Random for Idle or HighThroughput, or route to ProjectOwner/DocumentOwner depending on your workflow.

@@ -1,11 +1,166 @@
 # VerificationStatus
 
-## Description
+### Overview
 
-The **VerificationStatus** enum is used to build up a verification bit flag value to indicate multiple statuses of **Field/Parameter** verification.
+The VerificationStatus enum is a bit flag set that tracks the state of a field/parameter’s verification across system rules and Human-in-the-Loop (HITL) actions. Multiple statuses can be combined to reflect real-world verification journeys.
 
-As the **Rules Engine** and **HITL** users verify fields, certain flags are set based on the operations and results of the verification process.
+Underlying type: int Flags: Yes (combine with bitwise OR)
 
-## Members
+***
 
-<table><thead><tr><th width="178.33333333333331">Name</th><th width="87" data-type="number">Value</th><th>Description</th></tr></thead><tbody><tr><td>Required</td><td>1</td><td>Verification on a field/document is required.</td></tr><tr><td>Susicious</td><td>2</td><td>Suspicious field value. Verification is required to clear this flag.</td></tr><tr><td>DefaultUsed</td><td>4</td><td>Default value is used for the parameter.</td></tr><tr><td>Verified</td><td>8</td><td>This field value has been verified by a user.</td></tr><tr><td>Bypassed</td><td>16</td><td>The verification has been bypassed by the Rules Engine.</td></tr><tr><td>Error</td><td>32</td><td>An error occurred during verification.</td></tr><tr><td>Done</td><td>64</td><td>The verification is done.</td></tr><tr><td>Success</td><td>128</td><td>The Rules Engine verified the field successfully.</td></tr><tr><td>RangeProblem</td><td>256</td><td>The value does not fall within specified ranges (minimum and maximum values).</td></tr><tr><td>IsValid</td><td>512</td><td>The field value is valid based on the Rules Engine's configuration, typically used with Anchor fields.</td></tr><tr><td>Warnings</td><td>1024</td><td>Not in use.</td></tr><tr><td>Service</td><td>2048</td><td>A Verification Service has been invoked to help with verification.</td></tr><tr><td>Training</td><td>4096</td><td>This field is used for training purposes</td></tr><tr><td>Scripted</td><td>8192</td><td>This field has been verified through a Custom Code script.</td></tr><tr><td>Deleted</td><td>16384</td><td>The field has been deleted.</td></tr></tbody></table>
+### Quick usage
+
+```csharp
+// Combine flags when updating status
+verification.Status |= VerificationStatus.Required | VerificationStatus.Suspicious;
+
+// Check if a specific flag is set
+bool needsVerification = (verification.Status & VerificationStatus.Required) != 0;
+
+// Clear a flag (e.g., once a reviewer confirms it’s okay)
+verification.Status &= ~VerificationStatus.Suspicious;
+
+// Example: mark verified and successful
+verification.Status |= VerificationStatus.Verified | VerificationStatus.Success;
+```
+
+***
+
+### Member Reference
+
+#### Required
+
+Value: 1
+
+Description: Verification on a field/document is required.
+
+***
+
+#### Suspicious
+
+Value: 2
+
+Description: Suspicious field value; verification is required to clear this flag.
+
+***
+
+#### DefaultUsed
+
+Value: 4
+
+Description: A default value was used for the parameter.
+
+***
+
+#### Verified
+
+Value: 8
+
+Description: This field value has been verified by a user.
+
+***
+
+#### Bypassed
+
+Value: 16
+
+Description: Verification was bypassed by the Rules Engine.
+
+***
+
+#### Error
+
+Value: 32
+
+Description: An error occurred during verification.
+
+***
+
+#### Done
+
+Value: 64
+
+Description: The verification is done.
+
+***
+
+#### Success
+
+Value: 128
+
+Description: The Rules Engine verified the field successfully.
+
+***
+
+#### RangeProblem
+
+Value: 256
+
+Description: The value is outside configured minimum/maximum ranges.
+
+***
+
+#### IsValid
+
+Value: 512
+
+Description: The field value is valid based on configured rules (often used with Anchor fields).
+
+***
+
+#### Warnings
+
+Value: 1024
+
+Description: Not in use.
+
+***
+
+#### Service
+
+Value: 2048
+
+Description: A Verification Service was invoked to assist verification.
+
+***
+
+#### Training
+
+Value: 4096
+
+Description: This field participates in training workflows.
+
+***
+
+#### Scripted
+
+Value: 8192
+
+Description: This field was verified via Custom Code.
+
+***
+
+#### Deleted
+
+Value: 16384
+
+Description: The field has been deleted.
+
+***
+
+### Best Practices
+
+* Treat this enum as a flags set: combine related states with bitwise OR and check with bitwise AND.
+* Clear transient flags (e.g., Suspicious) once a user or rule confirms the value to keep state clean.
+* Log transitions to and from Error, Required, and Success for strong auditability.
+* Avoid overloading “Done” to mean “Successful”—use Done + Success together for clarity.
+* If you expose statuses to UI, map them to user-friendly labels and tooltips.
+
+### FAQ
+
+* Q: Can a field be both Verified and Error?
+  * A: Yes, flags can combine; use combinations to represent nuanced states (but consider clearing Error once Verified is set).
+* Q: What’s the difference between Verified and Success?
+  * A: Verified indicates a human confirmed it; Success indicates the Rules Engine passed it. Use both when applicable.
+* Q: Should I use HasFlag?
+  * A: You can, but bitwise checks are often faster: (status & VerificationStatus.Required) != 0.

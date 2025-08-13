@@ -88,7 +88,7 @@ If unsure, keep defaults unless you have a specific processing or integration re
 To upload and process documents using the **Amazon OCR Service**:
 
 1. **Open Service**\
-   In the **Amazon OCR Service**, click the ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid.\
+   In the **Amazon OCR Service**, click the ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
    ![](<../../.gitbook/assets/image (216).png>)
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.

@@ -1,9 +1,150 @@
 # VerificationType
 
-## Description
+### Overview
 
-The **VerificationType** enum indicates the type of verification that was added to the field, i.e. what aspect of the **AIForged** was responsible for adding the verification item.
+The VerificationType enum indicates which part of AIForged created a verification entry on a field/parameter. Use it to understand provenance (who/what set the verification) and to filter or route actions accordingly.
 
-## Members
+Underlying type: int
 
-<table><thead><tr><th width="178.33333333333331">Name</th><th width="87" data-type="number">Value</th><th>Description</th></tr></thead><tbody><tr><td>None</td><td>0</td><td>Not specified.</td></tr><tr><td>Provider</td><td>1</td><td>The service provider added the Verification.</td></tr><tr><td>System</td><td>2</td><td>The system workflow added the Verification.</td></tr><tr><td>User</td><td>3</td><td>A user has added the verification (typically Custom Code).</td></tr><tr><td>Service</td><td>4</td><td>A Verification Service has added the Verification</td></tr><tr><td>Training</td><td>5</td><td>The Verification was added during training.</td></tr><tr><td>RPA</td><td>6</td><td>An external RPA process added the Verification</td></tr><tr><td>API</td><td>7</td><td>An API call resulted in the Verification being added.</td></tr><tr><td>DataSet</td><td>8</td><td>A Verification has been added from dataset data.</td></tr></tbody></table>
+***
+
+### Quick usage
+
+```csharp
+// Filter to verifications created by a verification service
+var items = module.FindVerifications(
+    parameter.Id,
+    VerificationType.Service,
+    status: null,
+    provider: null,
+    valuefilter: null,
+    infofilter: null,
+    fromDate: null,
+    toDate: null
+);
+```
+
+***
+
+### Member Reference
+
+#### None
+
+Value: 0
+
+Description: Not specified.
+
+When to use:
+
+* Fallback or legacy entries without a defined source.
+
+***
+
+#### Provider
+
+Value: 1
+
+Description: Set by the upstream service provider (e.g., OCR/AI model output).
+
+When to use:
+
+* Identify validations/results originating from the core extraction/provider layer.
+
+***
+
+#### System
+
+Value: 2
+
+Description: Created by the AIForged system workflow (automation, rules engine hooks).
+
+When to use:
+
+* Distinguish platform-driven checks from user or external additions.
+
+***
+
+#### User
+
+Value: 3
+
+Description: Added by a human user (often via Custom Code or HITL UI).
+
+When to use:
+
+* Audit human decisions and track HITL confirmations/corrections.
+
+***
+
+#### Service
+
+Value: 4
+
+Description: Created by a configured Verification Service.
+
+When to use:
+
+* Attribute outcomes to specialized verification services in your pipeline.
+
+***
+
+#### Training
+
+Value: 5
+
+Description: Added during training workflows.
+
+When to use:
+
+* Separate training artifacts from production verifications.
+
+***
+
+#### RPA
+
+Value: 6
+
+Description: Added by an external RPA process.
+
+When to use:
+
+* Trace and audit Robotic Process Automations contributing to verification.
+
+***
+
+#### API
+
+Value: 7
+
+Description: Created as a result of an external API call.
+
+When to use:
+
+* Attribute verifications to integrations or external systems.
+
+***
+
+#### DataSet
+
+Value: 8
+
+Description: Derived from Custom Dataset data.
+
+When to use:
+
+* Flag verifications that came from dataset lookups or enrichment steps.
+
+***
+
+### Best Practices
+
+* Use VerificationType filters to separate machine, human, and external contributions when analyzing history.
+* For auditability, pair VerificationType with VerificationStatus to capture both who/what set it and the outcome.
+* In blended flows (provider + service + HITL), order your logic to avoid overwriting important human inputs; append instead.
+
+### FAQ
+
+* Q: What’s the difference between Provider and Service?
+  * A: Provider refers to the core extraction/model layer. Service refers to an explicit Verification Service configured to validate or enrich values.
+* Q: Should HITL actions be User or System?
+  * A: HITL user actions should be User; automated transitions are typically System.

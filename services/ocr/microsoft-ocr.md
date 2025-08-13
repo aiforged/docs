@@ -136,7 +136,7 @@ To upload and process documents using the Microsoft OCR Service:
 1. **Open Service**\
    When you open the Microsoft OCR Service, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Documents**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (13).png>) button or drag and drop files over the document grid.\
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
    ![](<../../.gitbook/assets/image (264).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
