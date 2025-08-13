@@ -7,6 +7,7 @@ Welcome to AIForged—an enterprise‑grade IDP platform that unifies best‑of�
 ## What is AIForged?
 
 AIForged is a unified platform for Intelligent Document Processing that combines:
+
 - AI services for OCR, extraction, classification, and vision
 - Strong Human‑in‑the‑Loop (HITL) with work items, assignment methods, and SLAs
 - Rich pre/post‑processing utilities (digitize, split, normalize, route)
