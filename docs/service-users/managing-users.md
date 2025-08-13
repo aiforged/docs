@@ -25,7 +25,7 @@ Assigning a member to a role shares access to the agent and all its services wit
 
     <div align="left"><figure><img src="../assets/image%20%28100%29.png" alt=""><figcaption></figcaption></figure></div>
 4.  **Open the Add Member Dialog**\
-    Click the ![](<../.gitbook/assets/image (101).png>) button to open the member dialog.
+    Click the ![](../assets/image%20%28101%29.png) button to open the member dialog.
 
     <div align="left"><figure><img src="../assets/image%20%28102%29.png" alt=""><figcaption></figcaption></figure></div>
 5. **Choose How to Add a Member**\
@@ -116,3 +116,4 @@ _When inviting or creating new members, double-check email addresses and permiss
 ***
 
  IgnoreCase Multiline IgnoreCase Multiline
+

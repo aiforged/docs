@@ -31,7 +31,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
+   ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Receipts Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image%20%284%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
@@ -42,7 +42,7 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
 
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     * **Step 2 -** Verification of any documents that have been processed.\
-      ![](<../../.gitbook/assets/image (84) (1).png>)
+      ![](../../assets/image%20%2884%29%20%281%29.png)
 
 ## Service Configuration Settings
 
@@ -68,3 +68,4 @@ It is recommended to only process a few documents at a time, especially if it is
 ##
 
  IgnoreCase Multiline IgnoreCase Multiline
+

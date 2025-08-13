@@ -21,7 +21,7 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
+   ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Invoices Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image%20%2827%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
@@ -35,7 +35,7 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
     3. **Step 3 -** Verification of any documents that have been processed.
     4. **Step 4** - The **Definition Document** should be created after the **Service** has been trained successfully.
     5. Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
-       ![](<../../.gitbook/assets/image (84) (1).png>)
+       ![](../../assets/image%20%2884%29%20%281%29.png)
 
 ## Service Configuration Settings
 
@@ -59,3 +59,4 @@ It is recommended to only process a few documents at a time, especially if it is
 2. You can view the **Processing** results by opening a processed doc for verification.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

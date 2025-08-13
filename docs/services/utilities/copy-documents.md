@@ -55,7 +55,7 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service. \
-   ![](<../../.gitbook/assets/image (288).png>)
+   ![](../../assets/image%20%28288%29.png)
 3. Choose **Copy Documents**.
 4. In the utility’s settings, specify when it should run:
    * Execute Before Process = Pre-processor
@@ -199,3 +199,4 @@ Tip: Start simple, then add advanced filters and mapping as your workflow grows.
 * **How do I verify copy results?**
   * Check the destination service’s Inbox/Outbox and confirm copied files and expected metadata.
  IgnoreCase Multiline IgnoreCase Multiline
+

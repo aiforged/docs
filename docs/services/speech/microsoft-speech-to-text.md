@@ -51,10 +51,10 @@ Follow these steps to add and configure the Microsoft Speech-to-Text Service to 
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft Speech-to-Text Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
 3. **Select Service Type**\
    Choose **Microsoft Speech-to-Text Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (274).png>)
+   ![](../../assets/image%20%28274%29.png)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
@@ -100,8 +100,8 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 1. **Open Service**\
    When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Audio**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid (MP3 or WAV).\
-   ![](<../../.gitbook/assets/image (278).png>)
+   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid (MP3 or WAV).\
+   ![](../../assets/image%20%28278%29.png)
 3. **Select Category (Optional)**\
    If you know the category for the audio, select it. Otherwise, select **No category**.
 4. **Process Documents**\
@@ -116,7 +116,7 @@ Tip: For new services, process a small batch first to verify transcription quali
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **Microsoft Speech-to-Text Service**.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the transcript in the **Result** property.
 
 ***
@@ -147,3 +147,4 @@ Tip: For new services, process a small batch first to verify transcription quali
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

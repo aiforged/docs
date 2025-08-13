@@ -62,29 +62,29 @@ Follow these steps to add and configure the Microsoft Custom Text Classification
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the classification service.
 2. **Add the Classification Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (30) (1).png>) button.
+   Click the **Add Service** ![](../../assets/image%20%2830%29%20%281%29.png) button.
 3. **Select Service Type**\
    Choose **Microsoft Custom Text Classifier Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (31) (1).png>)
+   ![](../../assets/image%20%2831%29%20%281%29.png)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (32) (1).png>)  or  ![](<../../.gitbook/assets/image (33) (1).png>)
+   ![](../../assets/image%20%2832%29%20%281%29.png)  or  ![](../../assets/image%20%2833%29%20%281%29.png)
    * **Step 1: General Settings**\
      Configure the core settings. Default settings are sufficient for most use cases.
      * Set the **Training/Testing Split Percentage** as desired (default: 80% training, 20% testing).\
-       ![](<../../.gitbook/assets/image (34) (1).png>)
+       ![](../../assets/image%20%2834%29%20%281%29.png)
    * **Step 2: Define Categories**\
      Add user-defined categories for your classification task.\
-     ![](<../../.gitbook/assets/image (35).png>)
+     ![](../../assets/image%20%2835%29.png)
    *   **Step 3: Upload Training Documents**\
-       ![](<../../.gitbook/assets/image (36).png>)
+       ![](../../assets/image%20%2836%29.png)
 
-       1. Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the documents grid.\
-          ![](<../../.gitbook/assets/image (38).png>)
+       1. Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the documents grid.\
+          ![](../../assets/image%20%2838%29.png)
        2. Select the user-defined category for your uploads.
        3. Upload files for each category (recommended: at least 50 documents per category).
        4. Once all files are uploaded, review your settings.
-       5. Click the **Train** ![](<../../.gitbook/assets/image (39).png>) button.
+       5. Click the **Train** ![](../../assets/image%20%2839%29.png) button.
        6. In the dialog window, click **Process** (leave all settings as default).
        7. The training progress dialog will appear and close automatically when finished.
 
@@ -101,12 +101,12 @@ Follow these steps to add and configure the Microsoft Custom Text Classification
 ### Adding and Processing Documents
 
 1. **Open Service**\
-   In your Microsoft Custom Text Classification Service, click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (40).png>)
+   In your Microsoft Custom Text Classification Service, click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.\
+   ![](../../assets/image%20%2840%29.png)
 2. **Select Category (Optional)**\
    If known, select the document category. Otherwise, click on **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click the **Process** ![](<../../.gitbook/assets/image (41).png>) button.
+   After uploading, select the documents to process and click the **Process** ![](../../assets/image%20%2841%29.png) button.
 
 > **Tip:** For new services, process a small batch first to verify results before processing everything.
 
@@ -126,3 +126,4 @@ Follow these steps to add and configure the Microsoft Custom Text Classification
   * If text extraction is poor, try a different OCR engine or adjust OCR settings.
   * Use clear, high-quality source documents for best OCR accuracy.
  IgnoreCase Multiline IgnoreCase Multiline
+

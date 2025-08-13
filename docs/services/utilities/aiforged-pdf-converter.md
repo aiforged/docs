@@ -53,7 +53,7 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.\
-   ![](<../../.gitbook/assets/image (288).png>)&#x20;
+   ![](../../assets/image%20%28288%29.png)&#x20;
 3. Choose the utility (e.g., AIForged PDF Converter).
 4. In the utility’s settings, specify when it should run:
    * Execute Before Process = Pre-processor
@@ -174,3 +174,4 @@ For very large PDFs or TIFFs, consider chunking by page range to keep processing
 * What should I do for extremely large PDFs or TIFFs?
   * Use the AIForged Document Splitter to chunk by page range for responsiveness and reliability.
  IgnoreCase Multiline IgnoreCase Multiline
+

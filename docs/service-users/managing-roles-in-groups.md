@@ -38,7 +38,7 @@ Follow these steps to create a new role within a Usergroup:
 
     <div align="left"><figure><img src="../assets/image%20%2890%29.png" alt=""><figcaption></figcaption></figure></div>
 3.  **Initiate Role Creation**\
-    Click on the **Create Role** ![](<../.gitbook/assets/image (91).png>) button to start defining a new role.\
+    Click on the **Create Role** ![](../assets/image%20%2891%29.png) button to start defining a new role.\
 
 
     <figure><img src="../assets/image%20%2892%29.png" alt=""><figcaption></figcaption></figure>
@@ -82,3 +82,4 @@ To remove a role from a Usergroup, follow these steps:
     <figure><img src="../assets/image%20%2897%29.png" alt=""><figcaption></figcaption></figure>
 
  IgnoreCase Multiline IgnoreCase Multiline
+

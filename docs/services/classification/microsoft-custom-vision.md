@@ -20,7 +20,7 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
+   ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Custom Vision Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image%20%282%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
@@ -33,7 +33,7 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
 * **Step 3 -** Training
   1. Click **Upload Training Documents** in the command bar\
-     ![](<../../.gitbook/assets/33 (1) (2) (1) (1) (1) (1) (1) (1) (1) (7).png>)
+     ![](../../assets/33%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%287%29.png)
   2. Select the **User Defined Category** you want to upload documents to.\
      **Demo training files are available**[ **here**](https://docs.aiforged.com/DemoDocuments/AIForged%20Classification%20%20Testing.zip)**.**
   3. Upload files for each **User Defined Category** you wish to train the service on.
@@ -46,7 +46,7 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
   7. The progress dialog should automatically close once the training has been completed.
 * **Step 4** - Verification. No verification required.
 * Click on the **Complete** button in the command bar to validate your service configuration and close the wizard.\
-  ![](<../../.gitbook/assets/image (84) (1).png>)
+  ![](../../assets/image%20%2884%29%20%281%29.png)
 
 ## Service Configuration Settings
 
@@ -54,14 +54,14 @@ The **Microsoft OCR Service** can be configured by the user as a flexible soluti
 
 | Setting                 | Type                                                               | Required Type | Description                                                                                                                  |
 | ----------------------- | ------------------------------------------------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ArchivingStrategy       | ![](<../../.gitbook/assets/image (5) (3).png>)                     | Optional      | Days before documents get deleted.                                                                                           |
-| BatchSize               | ![](<../../.gitbook/assets/image (14) (6).png>)                    | Hidden        | Processing batch size.                                                                                                       |
-| DocumentProcessedStatus | ![](<../../.gitbook/assets/image (6) (4).png>)                     | Optional      | Document status used to denote that a document has been processed.                                                           |
-| Enabled                 | ![](<../../.gitbook/assets/image (15) (5) (3).png>)                | Hidden        | Enable or disable the service.                                                                                               |
-| ExecuteBeforeProcess    | ![](<../../.gitbook/assets/image (15) (1) (1) (4).png>)            |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
-| ExecuteAfterProcess     | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (1).png>) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
-| Password                | ![](<../../.gitbook/assets/image (3) (5) (1).png>)                 | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
-| RemoveComments          | ![](<../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (2).png>) | Optional      | Remove human comments from a document.                                                                                       |
+| ArchivingStrategy       | ![](../../assets/image%20%285%29%20%283%29.png)                     | Optional      | Days before documents get deleted.                                                                                           |
+| BatchSize               | ![](../../assets/image%20%2814%29%20%286%29.png)                    | Hidden        | Processing batch size.                                                                                                       |
+| DocumentProcessedStatus | ![](../../assets/image%20%286%29%20%284%29.png)                     | Optional      | Document status used to denote that a document has been processed.                                                           |
+| Enabled                 | ![](../../assets/image%20%2815%29%20%285%29%20%283%29.png)                | Hidden        | Enable or disable the service.                                                                                               |
+| ExecuteBeforeProcess    | ![](../../assets/image%20%2815%29%20%281%29%20%281%29%20%284%29.png)            |               | When set up as a child service, specify whether this service should be executed **before** the parent service gets executed. |
+| ExecuteAfterProcess     | ![](../../assets/image%20%281%29%20%281%29%20%283%29%20%281%29%20%281%29%20%281%29%20%281%29.png) |               | When set up as a child service, specify whether this service should be executed **after** the parent service gets executed.  |
+| Password                | ![](../../assets/image%20%283%29%20%285%29%20%281%29.png)                 | Optional      | Used for service authentication. Custom Code can be used to set the password. Can be set per document.                       |
+| RemoveComments          | ![](../../assets/image%20%281%29%20%281%29%20%283%29%20%281%29%20%281%29%20%281%29%20%282%29.png) | Optional      | Remove human comments from a document.                                                                                       |
 
 ## Add and Process Documents
 
@@ -79,3 +79,4 @@ It is recommended to only process a few documents at a time, especially if it is
 2. You can view your **Processing** results by opening a processed doc for verification.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

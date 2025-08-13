@@ -53,10 +53,10 @@ Follow these steps to add and configure the Tesseract OCR Service to your agent:
 1. Open the Agent View\
    Navigate to the agent where you want to add the service.
 2. Add the Tesseract OCR Service\
-   Click the Add Service ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the Add Service ![](../../assets/image%20%28129%29.png) button.
 3. Select Service Type\
    Choose Tesseract OCR Service from the available service types.\
-   ![](<../../.gitbook/assets/image (269).png>)
+   ![](../../assets/image%20%28269%29.png)
 4. Configure the Service Wizard
    1. Open the Service Configuration Wizard.
       1.
@@ -68,7 +68,7 @@ Follow these steps to add and configure the Tesseract OCR Service to your agent:
    2. Step 1: General Settings\
       Configure core OCR settings such as service name and description.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-      ![](<../../.gitbook/assets/image (272).png>)
+      ![](../../assets/image%20%28272%29.png)
    3. Step 2: Verification\
       Verification is typically not required for plain text OCR unless paired with downstream validation.\
 
@@ -107,8 +107,8 @@ To upload and process documents using the Tesseract OCR Service:
 1. Open Service\
    When you open the Tesseract OCR Service, you will be presented with the documents currently queued or processed in the Inbox.
 2. Upload Documents\
-   Click the Upload ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (273).png>)
+   Click the Upload ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.\
+   ![](../../assets/image%20%28273%29.png)
 3. Select Category (Optional)\
    If you know the category for the document, select it. Otherwise, leave as No selection.
 4. Process Documents\
@@ -123,7 +123,7 @@ Tip: For new services, process a small batch first to verify OCR results before 
 ### View Processed Documents
 
 * Use the usage filter to select Outbox in the Tesseract OCR Service.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the extracted text in the Result property.
 
 ***
@@ -173,3 +173,4 @@ Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid size
 {% endhint %}
 
  IgnoreCase Multiline IgnoreCase Multiline
+

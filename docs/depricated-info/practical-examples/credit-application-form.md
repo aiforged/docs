@@ -10,7 +10,7 @@ The purpose of this process is to extract various fields on the form, including 
 
 1. Create a new or select an existing **Project**.
 2. Create a new **Service**.
-3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<../../.gitbook/assets/image (229).png>)
+3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](../../assets/image%20%28229%29.png)
 4.  The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../../assets/image%20%2859%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
@@ -75,3 +75,4 @@ The purpose of this process is to extract various fields on the form, including 
 25. The OCR results can be viewed in the [**Outbox**](broken-reference/) \*\*\*\* of the service.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

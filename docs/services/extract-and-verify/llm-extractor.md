@@ -47,13 +47,13 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the LLM Extractor Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
 3. **Select Service Type**\
    Choose **LLM Extractor** from the available service types.\
-   ![](<../../.gitbook/assets/image (23) (1).png>)
+   ![](../../assets/image%20%2823%29%20%281%29.png)
 4.  **Configure the Service Wizard**\
     Open the Service Configuration Wizard.\
-    ![](<../../.gitbook/assets/image (24) (1).png>)\
+    ![](../../assets/image%20%2824%29%20%281%29.png)\
     or
 
     <figure><img src="../../assets/image%20%2825%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
@@ -61,29 +61,29 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
     * **Step 1: General Settings**\
       Configure core settings such as service enablement, parallel prompt execution, and connection details for your LLM provider (e.g., Azure OpenAI).\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-      ![](<../../.gitbook/assets/image (26).png>)
+      ![](../../assets/image%20%2826%29.png)
     *   **Step 2: Prompts**\
         Set up your extraction prompts.\
         **This is done directly from the Service view by clicking on the Prompt Configuration button:**\
-        ![](<../../.gitbook/assets/image (27).png>)\
-        **Additional prompts can be added by clicking on the** ![](<../../.gitbook/assets/image (28).png>) **button.**\
-        ![](<../../.gitbook/assets/image (29).png>)
+        ![](../../assets/image%20%2827%29.png)\
+        **Additional prompts can be added by clicking on the** ![](../../assets/image%20%2828%29.png) **button.**\
+        ![](../../assets/image%20%2829%29.png)
 
         For each prompt, you can configure:
 
         * **Prompt Type:**
           * **Plain Text:** Write a fully custom prompt and configure the JSON response schema.\
-            ![](<../../.gitbook/assets/image (30).png>)\
-            ![](<../../.gitbook/assets/image (31).png>)
+            ![](../../assets/image%20%2830%29.png)\
+            ![](../../assets/image%20%2831%29.png)
           * **JSON:** Write the prompt as pure JSON (the UI will provide a JSON editor).\
-            ![](<../../.gitbook/assets/image (32).png>)
+            ![](../../assets/image%20%2832%29.png)
           * **Structured Data:** Use custom prompts, but define the response format using Label Definitions for easy, visual mapping of output fields.\
             ![](../../assets/prompt4.png)\
 
         * **Response Format:**
           * For Plain Text prompts, click **Configure JSON Response Format** to define the required output structure as a JSON schema.\
-            ![](<../../.gitbook/assets/image (30).png>)\
-            ![](<../../.gitbook/assets/image (31).png>)
+            ![](../../assets/image%20%2830%29.png)\
+            ![](../../assets/image%20%2831%29.png)
           * For Structured Data prompts, click **Configure Fields** to design your field and table outputs visually.\
             ![](../../assets/prompt4.png)
         * **Model Selection:**
@@ -99,7 +99,7 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
     * **Step 3: Advanced Configuration**
       * Configure general, processing, workflow, and advanced settings.
       * All model parameters are fully customizable, including Temperature, TopP, Frequency Penalty, Presence Penalty, Max Tokens, Seed, etc.\
-        ![](<../../.gitbook/assets/prompt8 (1).png>)\
+        ![](../../assets/prompt8%20%281%29.png)\
         ![](../../assets/prompt9.png)
       * Control parallel prompt execution and template prompting approaches.
       * Enable/disable attaching document images or OCR’d text as input to the LLM.
@@ -199,8 +199,8 @@ LLM Extractor provides robust configuration to tailor extraction to your needs:
 To upload and process documents using the **LLM Extractor**:
 
 1. **Open Service**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (33).png>)
+   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.\
+   ![](../../assets/image%20%2833%29.png)
 2. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**. Prompts will execute in order of their index, using the selected models and response formats.
 
@@ -213,7 +213,7 @@ To upload and process documents using the **LLM Extractor**:
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **LLM Extractor** service.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted structured results.
 
 ***
@@ -242,3 +242,4 @@ To upload and process documents using the **LLM Extractor**:
 * Regularly review extracted results, updating prompts and response formats as your needs evolve.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

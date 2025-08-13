@@ -39,10 +39,10 @@ Follow these steps to add and configure the Google Object Detection service to y
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Google Object Detection Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button in the command bar.
+   Click the **Add Service** ![](../../assets/image%20%2842%29.png) button in the command bar.
 3. **Select Service Type**\
    Choose **Google Object Detection Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (9).png>)
+   ![](../../assets/image%20%289%29.png)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
    2. **Step 1: Service Config** \
@@ -97,8 +97,8 @@ To upload and process documents using the Google Object Detection service:
 1. **Open Service**\
    When you open the service, you will see documents currently queued or processed in the **Inbox**.
 2. **Upload Documents**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (10).png>)
+   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.\
+   ![](../../assets/image%20%2810%29.png)
 3. **Select Category (Optional)**\
    Select a category if desired; otherwise, select **No category**.
 4. **Process Documents**\
@@ -113,7 +113,7 @@ Tip: For new services, process a small batch first to verify detection results b
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the Google Object Detection Service.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](../../assets/image%20%2851%29.png)
 * Open any processed document to review detected objects, tags, emotions, and content moderation scores.
 
 ***
@@ -172,3 +172,4 @@ Tip: Begin with a small test batch to confirm results, then expand as needed for
 * **How do I improve results for specialized domains (e.g., manufacturing, healthcare)?**
   * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.
  IgnoreCase Multiline IgnoreCase Multiline
+

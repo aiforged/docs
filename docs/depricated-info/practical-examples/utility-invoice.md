@@ -2,7 +2,7 @@
 
 * Create a new **Project**.
 * Create a new **Service**.
-* Select **MS Forms Recognizer** from the \_\_ **Extract & Verify** group.![](<../../.gitbook/assets/image (74) (2).png>)
+* Select **MS Forms Recognizer** from the \_\_ **Extract & Verify** group.![](../../assets/image%20%2874%29%20%282%29.png)
 *   The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../../assets/image%20%2859%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
@@ -15,3 +15,4 @@
 * Add a new **Category** to upload the training documents.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

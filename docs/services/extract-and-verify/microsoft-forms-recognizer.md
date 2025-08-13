@@ -41,40 +41,40 @@ Follow these steps to add and configure the **Microsoft Document Intelligence (C
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Document Intelligence Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
 3. **Select Service Type**\
    Choose **Microsoft Document Intelligence** from the available service types.\
-   ![](<../../.gitbook/assets/image (126).png>)
+   ![](../../assets/image%20%28126%29.png)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (141).png>)\
+   ![](../../assets/image%20%28141%29.png)\
    or\
-   ![](<../../.gitbook/assets/image (142).png>)
+   ![](../../assets/image%20%28142%29.png)
    * **Step 1: Service**\
      Configure the core settings for your service.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](<../../.gitbook/assets/image (145).png>)
+     ![](../../assets/image%20%28145%29.png)
    * **Step 2: Categories**\
      Create document categories for your different types of documents. These are required for training and organization.\
-     ![](<../../.gitbook/assets/image (149).png>)
+     ![](../../assets/image%20%28149%29.png)
    * **Step 3: Workflow Reason Dataset**\
      Populate the dataset with reason codes and information used with Human-In-The-Loop Workflow Actions.\
-     ![](<../../.gitbook/assets/image (155).png>)
+     ![](../../assets/image%20%28155%29.png)
    * **Step 4: Analysis**\
      Upload documents for pre-training and analysis. Select the correct category for each document when uploading.\
-     ![](<../../.gitbook/assets/image (164).png>)
+     ![](../../assets/image%20%28164%29.png)
    * **Step 5: Labelling**\
      Start labelling fields on documents to train the extraction model.\
-     ![](<../../.gitbook/assets/image (166).png>)
+     ![](../../assets/image%20%28166%29.png)
    * **Step 6: Training**\
      Train the labelled documents.\
-     ![](<../../.gitbook/assets/image (167).png>)
+     ![](../../assets/image%20%28167%29.png)
    * **Step 7: Definition**\
      After successful training, a definition document will be created.\
-     ![](<../../.gitbook/assets/image (171).png>)
+     ![](../../assets/image%20%28171%29.png)
    * **Step 8: Verification**\
      Use this step to verify the keys/fields defined or extracted during training.\
-     ![](<../../.gitbook/assets/image (174).png>)
+     ![](../../assets/image%20%28174%29.png)
 
 {% hint style="danger" %}
 Be sure to assign the correct category to each document during upload in Step 4: Analysis. This is critical for accurate classification and model training.
@@ -88,7 +88,7 @@ Labelling is a crucial step for training the Document Intelligence extraction en
 
 1. **Open the Labelling Step**\
    Go to **Step 5: Labelling** in the wizard.\
-   ![](<../../.gitbook/assets/image (166).png>)
+   ![](../../assets/image%20%28166%29.png)
 2.  **Select Document Category**\
     Use the filter to select the document category whose documents you want to label.
 
@@ -97,23 +97,23 @@ Labelling is a crucial step for training the Document Intelligence extraction en
     > {% endhint %}
 3. **Select a Document**\
    Choose a document from the list to begin labelling.\
-   ![](<../../.gitbook/assets/image (176).png>)
+   ![](../../assets/image%20%28176%29.png)
 4. **Label Fields on the Document**
-   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](<../../.gitbook/assets/image (179).png>) button.\
-     ![](<../../.gitbook/assets/image (178).png>)
+   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](../../assets/image%20%28179%29.png) button.\
+     ![](../../assets/image%20%28178%29.png)
    * Draw the label on the document by clicking and dragging over the relevant field.\
-     ![](<../../.gitbook/assets/image (182).png>)
+     ![](../../assets/image%20%28182%29.png)
    * Once labelled, it will automatically select the next available label definition. Press **Tab** to navigate through available labels.
    * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.\
-     ![](<../../.gitbook/assets/image (183).png>)
+     ![](../../assets/image%20%28183%29.png)
    * Label definitions with a green check mark have been successfully labelled on the document.
 5. **Labelling Controls**
-   * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](<../../.gitbook/assets/image (186).png>) button.
-   * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](<../../.gitbook/assets/image (189).png>) button.
-   * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](<../../.gitbook/assets/image (190).png>) button to continue where you left off.
+   * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](../../assets/image%20%28186%29.png) button.
+   * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](../../assets/image%20%28189%29.png) button.
+   * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](../../assets/image%20%28190%29.png) button to continue where you left off.
 6. **Copy & Paste Labels**
-   * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](<../../.gitbook/assets/image (191).png>).
-   * Paste labels onto a different document using **Paste Labels from Clipboard** ![](<../../.gitbook/assets/image (193).png>).
+   * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](../../assets/image%20%28191%29.png).
+   * Paste labels onto a different document using **Paste Labels from Clipboard** ![](../../assets/image%20%28193%29.png).
 
 <figure><img src="../../assets/image%20%28197%29.png" alt=""><figcaption></figcaption></figure>
 
@@ -153,12 +153,12 @@ The **Microsoft Document Intelligence Service** provides flexible settings to ta
 To upload and process documents using the **Google Forms Parser**:
 
 1. **Open Service**\
-   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](<../../.gitbook/assets/image (8) (1) (1).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (199).png>)
+   In the **Microsoft Document Intelligence Service**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.\
+   ![](../../assets/image%20%28199%29.png)
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (10) (1) (1).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.
@@ -169,7 +169,7 @@ To upload and process documents using the **Google Forms Parser**:
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **Microsoft Document Intelligence Service**.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted results.
 
 ***
@@ -199,3 +199,4 @@ To upload and process documents using the **Google Forms Parser**:
 * Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

@@ -20,7 +20,7 @@ Document Categories are shared across all services in the project
 
 
     <figure><img src="../assets/image%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-2.  In the "**Add a new category**" textbox, enter the category name, for example **Invoice** and press Enter or click on the add ![](<../.gitbook/assets/image (4) (1) (1) (1) (1).png>) button.\
+2.  In the "**Add a new category**" textbox, enter the category name, for example **Invoice** and press Enter or click on the add ![](../assets/image%20%284%29%20%281%29%20%281%29%20%281%29%20%281%29.png) button.\
 
 
     <div align="left"><figure><img src="../assets/image%20%286%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
@@ -43,9 +43,10 @@ Note the category description is optional but may help other users.
 
 
     <figure><img src="../assets/image%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-2.  Click on the ![](<../.gitbook/assets/image (9) (1) (1) (1) (1).png>) (delete) button in the category card for the document category you want to delete\
+2.  Click on the ![](../assets/image%20%289%29%20%281%29%20%281%29%20%281%29%20%281%29.png) (delete) button in the category card for the document category you want to delete\
 
 
     <div align="left"><figure><img src="../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
 
  IgnoreCase Multiline IgnoreCase Multiline
+
