@@ -22,8 +22,9 @@ Get Document
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (33) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (33) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (45) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (45) (3).png" alt=""><figcaption></figcaption></figure>
+

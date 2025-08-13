@@ -26,8 +26,9 @@ Get Latest Parameter Verification
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (48) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (48) (2).png" alt=""><figcaption></figcaption></figure>
+

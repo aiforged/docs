@@ -22,8 +22,9 @@ Delete Document
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (13) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (13) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (22) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (22) (4).png" alt=""><figcaption></figcaption></figure>
+

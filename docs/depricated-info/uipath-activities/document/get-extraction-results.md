@@ -22,8 +22,9 @@ Get Extraction Results
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (97) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (97) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+

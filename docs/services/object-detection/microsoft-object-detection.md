@@ -48,10 +48,10 @@ Follow these steps to add and configure the Microsoft Object Detection service t
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image (5).png" alt=""><figcaption></figcaption></figure>
       2.
 
-          <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image (6).png" alt=""><figcaption></figcaption></figure>
    2. **Step 1: General Settings** Configure the service settings.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
       ![](<../../.gitbook/assets/image (7).png>)
@@ -164,3 +164,4 @@ Tip: For new services, process a small batch first to verify object detection re
   * Check the returned tags for object types; the count of repeated tags gives an object count.
 * **What if my images are password-protected PDFs?**
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
+

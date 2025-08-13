@@ -60,10 +60,10 @@ Follow these steps to add and configure the Microsoft Handwriting Service to you
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image (266).png" alt=""><figcaption></figcaption></figure>
       2.
 
-          <figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image (267).png" alt=""><figcaption></figcaption></figure>
    2. **Step 1: General Settings**\
       Configure the service name, description, and core settings.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
@@ -175,3 +175,4 @@ Tip: For new services, process a small batch first to verify handwriting extract
 * Keep categories organized to simplify filtering and downstream rules.
 * Validate results on a representative sample before processing at scale.
 * Enable IsVerification if you need to review lines and words visually alongside the Result text.
+

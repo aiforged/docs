@@ -28,8 +28,9 @@ Create Work Item
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (76) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (76) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (10) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (10) (7).png" alt=""><figcaption></figcaption></figure>
+

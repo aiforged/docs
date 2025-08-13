@@ -2,7 +2,7 @@
 
 The **Spell Checking** mode can be selected by clicking on **Mode** dropdown list.
 
-<figure><img src="../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 Two **Spell Checking** modes are available:
 
@@ -19,3 +19,4 @@ The following optional **Options** are available to assist with Spell Checking:
 | Post Context   | A post string that gives context to the text string. E.g. 'read' will change to 'red' if the post context is 'carpet' (red carpet). |
 | Translate From | Form language                                                                                                                       |
 | Translate To   | Destination language to translate text to                                                                                           |
+

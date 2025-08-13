@@ -56,7 +56,7 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
     ![](<../../.gitbook/assets/image (24) (1).png>)\
     or
 
-    <figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Step 1: General Settings**\
       Configure core settings such as service enablement, parallel prompt execution, and connection details for your LLM provider (e.g., Azure OpenAI).\
@@ -78,14 +78,14 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
           * **JSON:** Write the prompt as pure JSON (the UI will provide a JSON editor).\
             ![](<../../.gitbook/assets/image (32).png>)
           * **Structured Data:** Use custom prompts, but define the response format using Label Definitions for easy, visual mapping of output fields.\
-            ![](../../.gitbook/assets/prompt4.png)\
+            ![](../../assets/prompt4.png)\
 
         * **Response Format:**
           * For Plain Text prompts, click **Configure JSON Response Format** to define the required output structure as a JSON schema.\
             ![](<../../.gitbook/assets/image (30).png>)\
             ![](<../../.gitbook/assets/image (31).png>)
           * For Structured Data prompts, click **Configure Fields** to design your field and table outputs visually.\
-            ![](../../.gitbook/assets/prompt4.png)
+            ![](../../assets/prompt4.png)
         * **Model Selection:**
           * Choose which LLM model to use for this prompt (per prompt basis).
         * **Index:**
@@ -94,13 +94,13 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
           * Make a prompt "sticky" (persists context) or configure as a child of another prompt for template/variable-based prompting.
         * **Child Prompt Variables:**
           * When creating child prompts, specify variables to pass extracted data from parent prompts.\
-            ![](../../.gitbook/assets/prompt5.png)
+            ![](../../assets/prompt5.png)
           * Choose to execute for each result or concatenate results (e.g., as CSV lines).
     * **Step 3: Advanced Configuration**
       * Configure general, processing, workflow, and advanced settings.
       * All model parameters are fully customizable, including Temperature, TopP, Frequency Penalty, Presence Penalty, Max Tokens, Seed, etc.\
         ![](<../../.gitbook/assets/prompt8 (1).png>)\
-        ![](../../.gitbook/assets/prompt9.png)
+        ![](../../assets/prompt9.png)
       * Control parallel prompt execution and template prompting approaches.
       * Enable/disable attaching document images or OCR’d text as input to the LLM.
 
@@ -240,3 +240,4 @@ To upload and process documents using the **LLM Extractor**:
 * Take advantage of template and child prompting to break complex extractions into manageable steps.
 * Experiment with model parameters and prompt chaining to optimize speed and accuracy.
 * Regularly review extracted results, updating prompts and response formats as your needs evolve.
+

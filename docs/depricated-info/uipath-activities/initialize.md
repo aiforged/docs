@@ -46,8 +46,9 @@ Initialize
 
 ### Activity View
 
-<figure><img src="../../.gitbook/assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../.gitbook/assets/image (18) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (18) (6).png" alt=""><figcaption></figcaption></figure>
+

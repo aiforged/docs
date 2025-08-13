@@ -24,8 +24,9 @@ One of the following can be assigned to a field on a document, and is explained 
 
 To setup a **Rule**, select any field on a document, and select **Show Definition**.
 
-<figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
 This will open the dialogue to select and configure the **Rule**. The **Rule Type** can be assigned here for the selected field.
 
-<figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image (150).png" alt=""><figcaption></figcaption></figure>
+

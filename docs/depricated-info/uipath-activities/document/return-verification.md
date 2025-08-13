@@ -30,8 +30,9 @@ Rerun Verification
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (4) (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (4) (9).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (101) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (101) (1).png" alt=""><figcaption></figcaption></figure>
+

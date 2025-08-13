@@ -28,8 +28,9 @@ Get Verification Shred
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (1) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (1) (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (15) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (15) (7).png" alt=""><figcaption></figcaption></figure>
+

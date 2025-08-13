@@ -28,8 +28,9 @@ Get Service Events
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (92) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (92) (1).png" alt=""><figcaption></figcaption></figure>
+

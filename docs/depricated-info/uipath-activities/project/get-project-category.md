@@ -22,8 +22,9 @@ Category ID -
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (11) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (51) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (51) (1) (1).png" alt=""><figcaption></figcaption></figure>
+

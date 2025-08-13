@@ -133,7 +133,7 @@ Labelling is a crucial step for training the Document Intelligence extraction en
    * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](<../../.gitbook/assets/image (191).png>).
    * Paste labels onto a different document using **Paste Labels from Clipboard** ![](<../../.gitbook/assets/image (193).png>).
 
-<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
@@ -220,3 +220,4 @@ Labelling the line items table is optional. If you do label it, always set the o
 * Use consistent column naming and tagging for better table detection.
 * If you have diverse invoice layouts, test with samples from each vendor/business unit.
 * Regularly review extracted results for continuous improvement.
+

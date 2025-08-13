@@ -6,7 +6,7 @@ For example, if a form contains a field for a **US State**, then the comprehensi
 
 The **Lookup Method** can be selected from the **Lookup Method** dropdown box.
 
-<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 The following **Lookup Methods** are available:
 
@@ -20,4 +20,5 @@ The following **Lookup Methods** are available:
 
 The list of **Dictionary Entries** can be specified in the **Dictionary Options** table.
 
-<figure><img src="../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (121).png" alt=""><figcaption></figcaption></figure>
+

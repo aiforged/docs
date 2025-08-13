@@ -17,4 +17,5 @@ The following languages are available for selection when writing **Workflow Code
 
 The language can be selected form the **Code Language** dropdown box. Refer to [BaseModule](../../custom-service-code/basemodule/ibasemodule-interface-data-types.md) for the available exposed methods that can be used in **Workflow Code**.
 
-<figure><img src="../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (117).png" alt=""><figcaption></figcaption></figure>
+

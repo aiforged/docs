@@ -4,7 +4,7 @@ hidden: true
 
 # Microsoft Custom Vision
 
-<figure><img src="../../.gitbook/assets/image (3) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (3) (6).png" alt=""><figcaption></figcaption></figure>
 
 The **Microsoft Custom Vision Service** is a **Classification** service that allows users to customize and embed state-of-the-art computer vision image analysis for specific domains with **Azure Cognitive Services**.
 
@@ -23,11 +23,11 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
    ![](<../../.gitbook/assets/image (82) (2).png>)
 3.  Select **Microsoft Custom Vision Service** from the available **Service Types.**
 
-    <figure><img src="../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 4.  A new **Service Configuration Wizard** will open:\
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
@@ -39,7 +39,7 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
   3. Upload files for each **User Defined Category** you wish to train the service on.
   4.  Once you have uploaded all your documents, click the **Train Service** button in the command bar to train your service. (**Note** that training can take **several** minutes!)
 
-      <figure><img src="../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
   5. Click **Process** on the dialog window that appears. Leave all settings as default.
   6. A progress dialog will appear displaying the progress of the training.\
      Training times can vary depending on the number of files that have been uploaded for training.
@@ -77,3 +77,4 @@ It is recommended to only process a few documents at a time, especially if it is
 
 1. In the **Microsoft Custom Vision Service** click on the **Outbox** button.
 2. You can view your **Processing** results by opening a processed doc for verification.
+

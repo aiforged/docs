@@ -41,7 +41,7 @@ For ad-hoc cloning, schedule it as daily and then disable the schedule after the
 2. **Access Service Settings/Definitions**\
    Once options are set, the cloning schedule appears in the service settings or definitions view.
 
-<figure><img src=".gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
 ### Modifying Cloning Options and Validation Checks
 
@@ -72,7 +72,7 @@ Configure which agent and service will be used as the source and destination for
 * **Destination Service (Optional)**\
   &#xNAN;_&#x44;escription:_ The target service within the destination agent to receive the cloned data. _Purpose:_ Direct the cloned service content to a specific service in the destination agent.
 
-<figure><img src=".gitbook/assets/Cloning1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/Cloning1 (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -99,7 +99,7 @@ Control which features, services, and logs are included in the cloning process.
 * **Clone interval (days)**\
   &#xNAN;_&#x44;escription:_ Sets how often the cloning operation should be scheduled (in days). _Purpose:_ Automate cloning at regular intervals for continuous sync or backup.
 
-<figure><img src=".gitbook/assets/Cloning2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/Cloning2.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -144,7 +144,7 @@ Fine-tune which document types and associated data are cloned.
 * **Clone to document with Id**\
   &#xNAN;_&#x44;escription:_ Limit cloning to documents up to a specific ending document ID.
 
-<figure><img src=".gitbook/assets/Cloning3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/Cloning3.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -158,7 +158,7 @@ Fine-tune which parameter definition features are cloned to the destination agen
   &#xNAN;_&#x44;escription:_ Specify which parameter categories to include.\
   &#xNAN;_&#x50;urpose:_ Use this to narrow cloning to certain categories for advanced scenarios.
 
-<figure><img src=".gitbook/assets/Cloning4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/Cloning4.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -203,7 +203,7 @@ Select the validations to be performed during the cloning process.
 * **Don't overwrite existing document parameters**\
   &#xNAN;_&#x44;escription:_ Keeps existing document parameter data in the destination agent.
 
-<figure><img src=".gitbook/assets/Cloning5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/Cloning5.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -216,7 +216,7 @@ Control additional cloning functions related to cloud or external service provid
 * **Clone provider models**\
   &#xNAN;_&#x44;escription:_ Clone AI models from external providers.
 
-<figure><img src=".gitbook/assets/Cloning6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/Cloning6.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -239,3 +239,4 @@ Regularly review scheduled cloning jobs and disable them when not needed to save
 {% hint style="info" %}
 If unsure about any setting, consult AIForged support or documentation before proceeding.
 {% endhint %}
+

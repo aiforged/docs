@@ -63,10 +63,10 @@ Follow these steps to add and configure the Microsoft OCR Service to your agent:
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image (258).png" alt=""><figcaption></figcaption></figure>
       2.
 
-          <figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../assets/image (262).png" alt=""><figcaption></figcaption></figure>
    2. **Step 1: General Settings**\
       Configure core OCR settings such as service name and description.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
@@ -217,3 +217,4 @@ Tip: Begin with a small, representative batch to validate output and tune settin
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * **What if my PDFs are very large?**
   * Split large PDFs/TIFFs by page range with the AIForged Document Splitter to keep processing responsive and avoid provider limits.
+

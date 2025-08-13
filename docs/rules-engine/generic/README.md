@@ -2,7 +2,7 @@
 
 **General Rules** can be applied on any type of extracted data.
 
-<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 The available General Rules tabs can be accessed when viewing the **Parameter Definition** properties dialogue and include the following:
 
@@ -12,3 +12,4 @@ The available General Rules tabs can be accessed when viewing the **Parameter De
 * Workflow Script
 * Web API
 * Database
+

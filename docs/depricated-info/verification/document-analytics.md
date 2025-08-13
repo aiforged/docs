@@ -2,7 +2,7 @@
 
 ### Document Analytics
 
-![Document analytics](../../.gitbook/assets/DocumentAnalytics.png)
+![Document analytics](../../assets/DocumentAnalytics.png)
 
 The document analytics page displays the processing of each field for the Document
 
@@ -24,3 +24,4 @@ The document analytics page displays the processing of each field for the Docume
 | Value       | Displays the retrieved vslues                            |
 | Result      | Displays the Result of the field                         |
 | Info        | Displays info about the processing of the field          |
+

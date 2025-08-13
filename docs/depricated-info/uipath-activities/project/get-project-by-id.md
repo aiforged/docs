@@ -22,8 +22,9 @@ Get Project By Id
 
 ### Activity View
 
-<figure><img src="../../../.gitbook/assets/image (108) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (108) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../.gitbook/assets/image (8) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (8) (6).png" alt=""><figcaption></figcaption></figure>
+
