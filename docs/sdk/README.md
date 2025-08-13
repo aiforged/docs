@@ -1,5 +1,4 @@
 ---
-icon: file-zipper
 ---
 
 # SDK Downloads
@@ -9,3 +8,4 @@ icon: file-zipper
 * .Net
 * Typescript
 * Python
+

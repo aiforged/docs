@@ -1,5 +1,4 @@
 ---
-icon: unlock
 ---
 
 # Document Retention
@@ -57,3 +56,4 @@ Information kept in the audit view includes:
 * IP Address
 * Document Category
 * File Type
+
