@@ -41,34 +41,34 @@ Follow these steps to add and configure the **Custom Invoices** service to your 
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Custom Invoices Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the **Add Service** ![](<(../../assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Document Intelligence – Custom Invoices** from the available service types.\
-   ![](<../../.gitbook/assets/image (25).png>)
+   ![](<(../../assets/image (25).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (1) (1).png>)\
+   ![](<(../../assets/image (1) (1).png>)\
    or\
-   ![](<../../.gitbook/assets/image (2) (1).png>)
+   ![](<(../../assets/image (2) (1).png>)
    * **Step 1: Service**\
      Configure core service settings (enable/disable, authentication, Azure endpoint, etc.).\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](<../../.gitbook/assets/image (3) (1).png>)
+     ![](<(../../assets/image (3) (1).png>)
    * **Step 2: Categories**\
      Define document categories for your invoice types.\
      These are required for classification and training.\
-     ![](<../../.gitbook/assets/image (4) (1).png>)
+     ![](<(../../assets/image (4) (1).png>)
    * **Step 3: Data Set (Business Units)**\
      Configure your **Business Unit dataset**.\
      Each entry should include at least an Id (unique numerical value), Business Unit name and VAT/Tax number (VATID).\
-     ![](<../../.gitbook/assets/image (5) (1).png>)
+     ![](<(../../assets/image (5) (1).png>)
    * **Step 4: Data Set (Vendors)**\
      Configure your **Vendor dataset**.\
      Populate with an Id (unique numerical value), Vendor Name and VAT/Tax number (VATID) for accurate matching.\
-     ![](<../../.gitbook/assets/image (6) (1).png>)
+     ![](<(../../assets/image (6) (1).png>)
    *   **Step 5: Analysis**\
        Upload invoices for pre-training and analysis.\
-       ![](<../../.gitbook/assets/image (7) (1).png>)
+       ![](<(../../assets/image (7) (1).png>)
 
        > {% hint style="info" %}
        > Assign the correct document category during upload for effective classification and model training.
@@ -77,16 +77,16 @@ Follow these steps to add and configure the **Custom Invoices** service to your 
      Label all required fields on sample invoices.\
      **Labelling the line items table is optional.**\
      If you label it, override detection in the document category training options.\
-     ![](<../../.gitbook/assets/image (8) (1).png>)
+     ![](<(../../assets/image (8) (1).png>)
    * **Step 7: Training**\
      Train labelled documents.\
-     ![](<../../.gitbook/assets/image (9) (1).png>)
+     ![](<(../../assets/image (9) (1).png>)
    * **Step 8: Definition**\
      After successful training, a definition document will be created.\
-     ![](<../../.gitbook/assets/image (10) (1).png>)
+     ![](<(../../assets/image (10) (1).png>)
    * **Step 9: Verification**\
      Verify and adjust the keys/fields extracted during training.\
-     ![](<../../.gitbook/assets/image (12) (1).png>)
+     ![](<(../../assets/image (12) (1).png>)
 
 ***
 
@@ -106,7 +106,7 @@ Labelling is a crucial step for training the Document Intelligence extraction en
 
 1. **Open the Labelling Step**\
    Go to **Step 5: Labelling** in the wizard.\
-   ![](<../../.gitbook/assets/image (166).png>)
+   ![](<(../../assets/image (166).png>)
 2.  **Select Document Category**\
     Use the filter to select the document category whose documents you want to label.
 
@@ -115,23 +115,23 @@ Labelling is a crucial step for training the Document Intelligence extraction en
     > {% endhint %}
 3. **Select a Document**\
    Choose a document from the list to begin labelling.\
-   ![](<../../.gitbook/assets/image (176).png>)
+   ![](<(../../assets/image (176).png>)
 4. **Label Fields on the Document**
-   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](<../../.gitbook/assets/image (179).png>) button.\
-     ![](<../../.gitbook/assets/image (178).png>)
+   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](<(../../assets/image (179).png>) button.\
+     ![](<(../../assets/image (178).png>)
    * Draw the label on the document by clicking and dragging over the relevant field.\
-     ![](<../../.gitbook/assets/image (182).png>)
+     ![](<(../../assets/image (182).png>)
    * Once labelled, it will automatically select the next available label definition. Press **Tab** to navigate through available labels.
    * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.\
-     ![](<../../.gitbook/assets/image (183).png>)
+     ![](<(../../assets/image (183).png>)
    * Label definitions with a green check mark have been successfully labelled on the document.
 5. **Labelling Controls**
-   * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](<../../.gitbook/assets/image (186).png>) button.
-   * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](<../../.gitbook/assets/image (189).png>) button.
-   * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](<../../.gitbook/assets/image (190).png>) button to continue where you left off.
+   * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](<(../../assets/image (186).png>) button.
+   * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](<(../../assets/image (189).png>) button.
+   * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](<(../../assets/image (190).png>) button to continue where you left off.
 6. **Copy & Paste Labels**
-   * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](<../../.gitbook/assets/image (191).png>).
-   * Paste labels onto a different document using **Paste Labels from Clipboard** ![](<../../.gitbook/assets/image (193).png>).
+   * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](<(../../assets/image (191).png>).
+   * Paste labels onto a different document using **Paste Labels from Clipboard** ![](<(../../assets/image (193).png>).
 
 <figure><img src="../../assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
@@ -146,12 +146,12 @@ Well-labelled documents accelerate model training and improve extraction accurac
 To upload and process invoices using **Custom Invoices**:
 
 1. **Open Service**\
-   In the **Custom Invoices** service, click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (14) (1).png>)
+   In the **Custom Invoices** service, click the **Upload** ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   ![](<(../../assets/image (14) (1).png>)
 2. **Select Category (Optional)**\
    If you know the category for the invoice, select it. Otherwise, select **No Category**.
 3. **Process Documents**\
-   After uploading, select the invoices to process and click on the **Process** ![](<../../.gitbook/assets/image (10) (1) (1).png>) button.
+   After uploading, select the invoices to process and click on the **Process** ![](<(../../assets/image (10) (1) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify results before scaling up.
@@ -190,7 +190,7 @@ Labelling the line items table is optional. If you do label it, always set the o
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **Custom Invoices** service.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](<(../../assets/image (51).png>)
 * Open any processed invoice to view and verify the extracted results, including vendor, business unit, and line items.
 
 ***
@@ -220,4 +220,5 @@ Labelling the line items table is optional. If you do label it, always set the o
 * Use consistent column naming and tagging for better table detection.
 * If you have diverse invoice layouts, test with samples from each vendor/business unit.
 * Regularly review extracted results for continuous improvement.
+
 

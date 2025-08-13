@@ -10,7 +10,7 @@ Creating a group in AIForged is a straightforward process:
 
 
     <div align="left"><figure><img src="../assets/image (80).png" alt=""><figcaption></figcaption></figure></div>
-2.  **Initiate Group Creation**: Click on the "Create a new group" ![](<../.gitbook/assets/image (82).png>) button to open the create group dialog.
+2.  **Initiate Group Creation**: Click on the "Create a new group" ![](<(../assets/image (82).png>) button to open the create group dialog.
 
     <div align="left"><figure><img src="../assets/image (81).png" alt=""><figcaption></figcaption></figure></div>
 3.  **Specify Group Details**: Provide a name for the group and optionally include additional information relevant to the group. \
@@ -38,4 +38,5 @@ To delete an existing group, follow these steps:
 
 
     <figure><img src="../assets/image (88).png" alt=""><figcaption></figcaption></figure>
+
 

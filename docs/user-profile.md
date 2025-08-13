@@ -11,7 +11,7 @@ The **User Profile** page allows you to view and edit various details related to
 
 To open the **User Profile** page, simply click on your user name or icon in the top right-hand corner of the AIForged Studio.\
 \
-![](<.gitbook/assets/image (33) (1) (1).png>)
+![](<(assets/image (33) (1) (1).png>)
 
 ### User
 
@@ -22,7 +22,7 @@ The **General** tab allows you to edit your user details, and allows quick acces
 1. Edit or fill in the **User Details** you want to change or add.
 2. Changes are saved when submitted / accepted.\
    \
-   ![](<.gitbook/assets/image (34) (1) (1).png>)
+   ![](<(assets/image (34) (1) (1).png>)
 
 {% hint style="info" %}
 Your Username and User cannot be changed
@@ -77,9 +77,9 @@ See [Multi-Factor Authentication](multi-factor-authentication.md)
 API keys offer a unique key used to authenticate an account programatically via the API endpoints or SDK.
 
 **View your API Key**\
-![](<.gitbook/assets/image (41) (1).png>)\
+![](<(assets/image (41) (1).png>)\
 \
-![](<.gitbook/assets/image (42) (1).png>)
+![](<(assets/image (42) (1).png>)
 
 ## Notification Preferences
 
@@ -104,4 +104,5 @@ Notifications are sent on an **OPT-IN** basis
 Studio preferences allow you to customise various aspects of the UI, such as default filter ranges, and default behaviours for certain views and dialogs.
 
 <figure><img src="assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+
 

@@ -10,7 +10,7 @@ The purpose of this process is to extract the **Social Security number**, the **
 
 1. Create a new or choose an existing **Project**.
 2. Create a new **Service**.
-3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<../../.gitbook/assets/image (229).png>)
+3. Select **MS Forms Recognizer** from the **Extract & Verify** group.![](<(../../assets/image (229).png>)
 4.  The **Configuration Wizard** for the service will appear.
 
     <figure><img src="../../assets/image (59) (2).png" alt=""><figcaption></figcaption></figure>
@@ -73,4 +73,5 @@ The purpose of this process is to extract the **Social Security number**, the **
     <figure><img src="../../assets/image (16) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 24. At this stage, the service is trained, and documents can be loaded into the [**Inbox**](broken-reference/) of the service and can be processed.
 25. The OCR results can be viewed in the [**Outbox**](broken-reference/) of the service.
+
 

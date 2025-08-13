@@ -55,7 +55,7 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service. \
-   ![](<../../.gitbook/assets/image (288).png>)
+   ![](<(../../assets/image (288).png>)
 3. Choose the utility (e.g., AIForged Digitizer, AIForged Image Splitter).
 4. In the utility’s settings, specify when it should run:
    * Execute Before Process = Pre-processor
@@ -135,10 +135,10 @@ To digitize documents using the AIForged Digitizer:
 1. Open Service\
    When you open the AIForged Digitizer, you will be presented with the documents currently queued or processed in the Inbox.
 2. Upload Documents\
-   Click the Upload ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   Click the Upload ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.\
 
 3. Select Category (Optional)\
-   If you know the category for the document, select it. Otherwise, select **No category**.![](<../../.gitbook/assets/image (287).png>)
+   If you know the category for the document, select it. Otherwise, select **No category**.![](<(../../assets/image (287).png>)
 4. Process Documents\
    After uploading, select the documents to process and click Process Checked.
 
@@ -151,7 +151,7 @@ Tip: For new services, process a small batch first to verify the digitized outpu
 ### View Processed Documents
 
 * Select Outbox in the usage filter in the AIForged Digitizer.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](<(../../assets/image (51).png>)
 * Open a processed document to preview the digitized output. The resulting PDF contains a selectable text layer and, if enabled, a visual overlay.
 * Download the digitized PDF if needed for external systems.
 
@@ -182,4 +182,5 @@ Tip: For new services, process a small batch first to verify the digitized outpu
 * Use the Digitizer as a pre-processor ahead of extraction, classification, or rules to ensure consistent, searchable inputs.
 * Start with a pilot set to validate output, then scale; tune dependent OCR, overlay, and batching as needed.
 * For very large or multi-volume archives, use Execute On Trigger and schedule Auto Execution to spread the load.
+
 

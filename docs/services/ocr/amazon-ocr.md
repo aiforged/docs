@@ -38,15 +38,15 @@ Follow these steps to add and configure the **Amazon OCR Service** to your agent
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Amazon OCR Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the **Add Service** ![](<(../../assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Amazon OCR Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (204).png>)
+   ![](<(../../assets/image (204).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<../../.gitbook/assets/image (207).png>)\
+   ![](<(../../assets/image (207).png>)\
    or\
-   ![](<../../.gitbook/assets/image (209).png>)
+   ![](<(../../assets/image (209).png>)
    * **Step 1: General Settings**\
      Configure core OCR settings such as service name and description.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
@@ -88,8 +88,8 @@ If unsure, keep defaults unless you have a specific processing or integration re
 To upload and process documents using the **Amazon OCR Service**:
 
 1. **Open Service**\
-   In the **Amazon OCR Service**, click the ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (216).png>)
+   In the **Amazon OCR Service**, click the ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   ![](<(../../assets/image (216).png>)
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
@@ -104,7 +104,7 @@ To upload and process documents using the **Amazon OCR Service**:
 ### View Processed Documents
 
 * In the **Amazon OCR Service**, set the usage filter to **Outbox**.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](<(../../assets/image (51).png>)
 * Open any processed document to view the extracted text in the **Result** property.
 
 ***
@@ -175,4 +175,5 @@ Members must belong to one of the following AIForged user group roles to add and
 {% hint style="info" %}
 Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 {% endhint %}
+
 

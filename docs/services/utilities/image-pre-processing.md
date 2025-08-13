@@ -55,7 +55,7 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service. \
-   ![](<../../.gitbook/assets/image (288).png>)
+   ![](<(../../assets/image (288).png>)
 3. Choose **AIForged Image Processor**.
 4. In the utility’s settings, specify when it should run:
    * Execute Before Process = Pre-processor
@@ -96,10 +96,10 @@ The following image pre-processing operations are available:
 ### Example: Watermark Removal
 
 Consider the document below, with a "DRAFT" watermark.\
-![](<../../.gitbook/assets/image (289).png>)
+![](<(../../assets/image (289).png>)
 
 The AIForged Image Processor can be configured to remove the watermark and whiten the background:\
-![](<../../.gitbook/assets/image (290).png>)
+![](<(../../assets/image (290).png>)
 
 ***
 
@@ -165,3 +165,4 @@ Tip: Start with a single operation, test, then enable more as needed. Over-proce
   Yes—most operations (e.g., Greyscale, Remove Color Marks) are designed for both color and black-and-white scans.
 * **How do I revert if the output is too aggressive?**\
   Adjust or disable one operation at a time and re-test with your sample document.
+

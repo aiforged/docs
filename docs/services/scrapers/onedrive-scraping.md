@@ -54,22 +54,22 @@ Follow these steps to add and configure the OneDrive Scraper to your agent:
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the OneDrive Scraper**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button and choose **OneDrive Scraper**.\
-   ![](<../../.gitbook/assets/image (281).png>)
+   Click the **Add Service** ![](<(../../assets/image (129).png>) button and choose **OneDrive Scraper**.\
+   ![](<(../../assets/image (281).png>)
 3. **Configure the Service Wizard**\
    The wizard includes the following sections:
    * **General**\
      Enable the service and provide any required authentication parameters.\
-     ![](<../../.gitbook/assets/image (282).png>)
+     ![](<(../../assets/image (282).png>)
    * **Auto Execution**\
      Set the automatic run schedule and batch size (how many items are pulled per cycle).\
-     ![](<../../.gitbook/assets/image (283).png>)
+     ![](<(../../assets/image (283).png>)
    * **Processing**\
      Choose the Document Processed Status and whether to force PDFs to image-only for downstream OCR.\
-     ![](<../../.gitbook/assets/image (284).png>)
+     ![](<(../../assets/image (284).png>)
    * **Advanced**\
      Provide Microsoft Graph details (Client Id, Scopes), and target identifiers (e.g., Share Id).\
-     ![](<../../.gitbook/assets/image (285).png>)
+     ![](<(../../assets/image (285).png>)
 
 _The default settings are sufficient for most use cases. Only fill the Advanced fields that apply to your folder and authentication setup._
 
@@ -126,7 +126,7 @@ Tip: Start with a small Batch Size until you confirm everything is flowing corre
 * Open the OneDrive Scraper grid to see newly ingested files.
 * Open an item to review its metadata and confirm downstream services are picking it up as expected.
 * After downstream processing, use the usage filter to select **Outbox** to review processed results.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](<(../../assets/image (51).png>)
 
 ***
 
@@ -214,3 +214,4 @@ Tip: Begin with a small test set in the OneDrive folder to validate end-to-end f
   * Use the AIForged **Document Splitter** to split by page range and keep processing responsive.
 * What about password-protected PDFs?
   * Use **Custom Code** to provide the password per document so AIForged can unlock files before processing.
+

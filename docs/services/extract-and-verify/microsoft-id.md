@@ -17,7 +17,7 @@ The **Microsoft Identity Document Service** makes use of pre-trained ID doc mode
 
 1. Open the **Project Detail View** of the project you would like to add the service to.
 2. Click on the **Add Service** button in the command bar.\
-   ![](<../../.gitbook/assets/image (82) (2).png>)
+   ![](<(../../assets/image (82) (2).png>)
 3.  Select **Microsoft Identity Documents Service** from the available **Service Types.**
 
     <figure><img src="../../assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
@@ -29,7 +29,7 @@ The **Microsoft Identity Document Service** makes use of pre-trained ID doc mode
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
     * **Step 3 -** Verification of any documents that have been processed.\
-      ![](<../../.gitbook/assets/image (84) (1).png>)
+      ![](<(../../assets/image (84) (1).png>)
 
 ## Service Configuration Settings
 
@@ -56,4 +56,5 @@ It is recommended to only process a few documents at a time, especially if it is
 
 * Extracting **Identity Document** data.
 * Match Name and Surname fields to other supporting docs to verify the identity of a person.
+
 

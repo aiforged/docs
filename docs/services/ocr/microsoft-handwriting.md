@@ -52,10 +52,10 @@ Follow these steps to add and configure the Microsoft Handwriting Service to you
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft Handwriting Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
+   Click the **Add Service** ![](<(../../assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Microsoft Handwriting Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (265).png>)
+   ![](<(../../assets/image (265).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
@@ -130,8 +130,8 @@ To upload and process documents using the Microsoft Handwriting Service:
 1. **Open Service**\
    When you open the **Microsoft Handwriting Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Documents**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<../../.gitbook/assets/image (268).png>)
+   Click the **Upload** ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   ![](<(../../assets/image (268).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, leave as **No selection**.
 4. **Process Documents**\
@@ -146,7 +146,7 @@ Tip: For new services, process a small batch first to verify handwriting extract
 ### View Processed Documents
 
 * Use the usage filter to select **Outbox** in the Microsoft Handwriting Service.\
-  ![](<../../.gitbook/assets/image (51).png>)
+  ![](<(../../assets/image (51).png>)
 * Open any processed document to view the extracted text in the **Result** property and, if enabled, the per-line/word verification view.
 
 ***
@@ -175,4 +175,5 @@ Tip: For new services, process a small batch first to verify handwriting extract
 * Keep categories organized to simplify filtering and downstream rules.
 * Validate results on a representative sample before processing at scale.
 * Enable IsVerification if you need to review lines and words visually alongside the Result text.
+
 

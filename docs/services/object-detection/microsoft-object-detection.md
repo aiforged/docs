@@ -40,10 +40,10 @@ Follow these steps to add and configure the Microsoft Object Detection service t
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft Object Detection Service**\
-   Click the **Add Service** ![](<../../.gitbook/assets/image (3).png>) button.
+   Click the **Add Service** ![](<(../../assets/image (3).png>) button.
 3. **Select Service Type**\
    Choose **Microsoft Object Detection Service** from the available service types.\
-   ![](<../../.gitbook/assets/image (4).png>)
+   ![](<(../../assets/image (4).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
@@ -54,7 +54,7 @@ Follow these steps to add and configure the Microsoft Object Detection service t
           <figure><img src="../../assets/image (6).png" alt=""><figcaption></figcaption></figure>
    2. **Step 1: General Settings** Configure the service settings.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-      ![](<../../.gitbook/assets/image (7).png>)
+      ![](<(../../assets/image (7).png>)
    3. **Step 2: Verification** No verification required for basic detection.
 
 ***
@@ -104,8 +104,8 @@ To upload and process documents using the Microsoft Object Detection Service:
 1. **Open Service**\
    When you open the Microsoft Object Detection Service, you will be presented with the documents currently queued or processed in the Inbox.
 2. **Upload Documents**\
-   Click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid. \
-   ![](<../../.gitbook/assets/image (8).png>)
+   Click the **Upload** ![](<(../../assets/image (37).png>) button or drag and drop files over the document grid. \
+   ![](<(../../assets/image (8).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 4. **Process Documents**\
@@ -121,7 +121,7 @@ Tip: For new services, process a small batch first to verify object detection re
 
 *   Select **Outbox** in the usage filter in the Microsoft Object Detection Service.&#x20;
 
-    ![](<../../.gitbook/assets/image (51).png>)
+    ![](<(../../assets/image (51).png>)
 * Open any processed document to view and verify the detected objects, faces, tags, and captions.
 
 ***
@@ -164,4 +164,5 @@ Tip: For new services, process a small batch first to verify object detection re
   * Check the returned tags for object types; the count of repeated tags gives an object count.
 * **What if my images are password-protected PDFs?**
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
+
 
