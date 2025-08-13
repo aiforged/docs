@@ -5,17 +5,22 @@ theme:
   logo: assets/logo.png        # make sure this file exists
   favicon: assets/favicon.ico  # optional
   features:
+    - navigation.sections
+    - navigation.indexes
     - navigation.expand
     - search.suggest
     - search.highlight
     - content.code.copy
   palette:
     - scheme: slate
-      primary: teal
-      accent: indigo
+      primary: custom
+      accent: custom
     - scheme: default
-      primary: teal
-      accent: indigo
+      primary: custom
+      accent: custom
+      
+extra_css:
+  - assets/theme.css
 
 plugins:
   - search

@@ -1,0 +1,28 @@
+/* Light mode (default) */
+:root {
+  /* Primary (brand) */
+  --md-primary-fg-color: #0E76BC;
+  --md-primary-fg-color--light: #27a2f3;
+  --md-primary-fg-color--dark: #141e34;
+
+  /* Accent (links, highlights) */
+  --md-accent-fg-color: #0E76BC;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  /* Optional hue shift for dark scheme visuals */
+  --md-hue: 210;
+
+  /* Primary (brand) */
+  --md-primary-fg-color: #0E76BC;
+  --md-primary-fg-color--light: #27a2f3;
+  --md-primary-fg-color--dark: #141e34;
+
+  /* Accent (links, highlights) */
+  --md-accent-fg-color: #0E76BC;
+
+  /* Optional: tweak base foreground/background for dark */
+  /* --md-default-fg-color: hsla(210, 15%, 92%, 1); */
+  /* --md-default-bg-color: hsla(210, 15%, 10%, 1); */
+}
