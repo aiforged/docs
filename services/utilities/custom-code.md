@@ -182,7 +182,7 @@ For the MD5 Hash calculation to work, add `System.Security.Cryptography.Algorith
 4. Save your script and test with representative documents.
 5. Monitor logs and outputs to validate behavior.
 
-\{% hint style="info" %\} Tip: Start simple (e.g., field normalization or one-off API call), then iterate as your workflow matures. \{% endhint %\}
+{% hint style="info" %} Tip: Start simple (e.g., field normalization or one-off API call), then iterate as your workflow matures. {% endhint %}
 
 ***
 
