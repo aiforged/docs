@@ -31,17 +31,17 @@ Follow these steps to create a new role within a Usergroup:
     Go to the Organisations section in AIForged.\
 
 
-    <div align="left"><figure><img src="../assets/image (89).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure></div>
 2.  **Select the Relevant Group**\
     Choose the Usergroup where you wish to add a new role. Click on its name to open its management view.\
 
 
-    <div align="left"><figure><img src="../assets/image (90).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure></div>
 3.  **Initiate Role Creation**\
-    Click on the **Create Role** ![](<(../assets/image (91).png>) button to start defining a new role.\
+    Click on the **Create Role** ![](<../.gitbook/assets/image (91).png>) button to start defining a new role.\
 
 
-    <figure><img src="../assets/image (92).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 4.  **Fill in Role Details**
 
     1. **Role Name**\
@@ -55,7 +55,7 @@ Follow these steps to create a new role within a Usergroup:
     4. **Members (Optional)**\
        Start inviting members or create new users directly from the role management dialog!
 
-    <div align="left"><figure><img src="../assets/image (94).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure></div>
 5. **Confirm and Save**\
    Review the details and complete the process to create your new role.
 
@@ -69,16 +69,14 @@ To remove a role from a Usergroup, follow these steps:
     Locate the role you wish to delete and click the **More options** action.\
 
 
-    <figure><img src="../assets/image (95).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 2.  **Select Delete**\
     Click on the **Delete** option.
 
-    <div align="left"><figure><img src="../assets/image (96).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure></div>
 
 
 3.  **Confirm Deletion**\
     If you are sure you want to delete the user role, then click on **Yes**, otherwise click **No**
 
-    <figure><img src="../assets/image (97).png" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>

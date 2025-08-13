@@ -28,9 +28,8 @@ Get Document Parameter Hierarchy
 
 ### Activity View
 
-<figure><img src="../../../assets/image (105) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (105) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../assets/image (77) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (77) (1).png" alt=""><figcaption></figcaption></figure>

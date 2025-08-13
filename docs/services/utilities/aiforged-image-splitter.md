@@ -54,7 +54,7 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Add Utility Service. \
-   ![](<(../../assets/image (288).png>)
+   ![](<../../.gitbook/assets/image (288).png>)
 3. Choose AIForged Image Splitter.
 4. In the utility’s settings, specify when it should run:
    * Execute Before Process = Pre-processor
@@ -134,7 +134,7 @@ To split documents using the Image Splitter:
 1. Open Service\
    When you open the Image Splitter, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. Upload or provide the source document\
-   Click **Upload** ![](<(../../assets/image (13) (1).png>) or drag and drop files onto the grid (multi-page PDF or multi-page TIFF).
+   Click **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) or drag and drop files onto the grid (multi-page PDF or multi-page TIFF).
 3. Process\
    Select the documents to split and click **Process Checked**.
 4. Review per-page outputs\
@@ -149,7 +149,7 @@ Tip: For very large documents, start with a smaller batch or page range to valid
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the Image Splitter service.\
-  ![](<(../../assets/image (51).png>)
+  ![](<../../.gitbook/assets/image (51).png>)
 * Open any per-page Outbox document to review the page image and associated metadata.
 
 ***
@@ -209,4 +209,3 @@ Tip: Begin with a representative multi-page document to validate end-to-end flow
   * No. Outputs are page images intended for downstream processing such as OCR.
 * How do I handle password-protected PDFs?
   * Use the AIForged Custom Code utility to provide the password per document so AIForged can unlock files before splitting.
-

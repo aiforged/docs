@@ -1,6 +1,6 @@
 # Document Analysis
 
-![Document analytics](../../assets/Verification-Document-Analysis.png)
+![Document analytics](../../.gitbook/assets/Verification-Document-Analysis.png)
 
 You can view the complete document analysis, it displays a treeview of the processing steps and their results to analysise in more detail
 
@@ -8,19 +8,19 @@ You can view the complete document analysis, it displays a treeview of the proce
 
 ### Providers
 
-![Providers](../../assets/Providers.png)
+![Providers](../../.gitbook/assets/Providers.png)
 
 The providers displays the usage of each provider in processing the document
 
 ### Charges
 
-![Providers](../../assets/Charges.png)
+![Providers](../../.gitbook/assets/Charges.png)
 
 The charges pie chart displays the charges of each process
 
 ### Confidence
 
-![Providers](../../assets/Confidence.png)
+![Providers](../../.gitbook/assets/Confidence.png)
 
 The charges pie chart displays the charges of each process
 
@@ -32,9 +32,8 @@ Check the Cost Column to view costs
 
 ## Groupings
 
-![Providers](../../assets/Groupings.png)
+![Providers](../../.gitbook/assets/Groupings.png)
 
 Groupings displays the Type of Groupings, you can navigate into a group if the group has sub
 
 * The top layer displays the table and drills down to the Row, and the the Column
-

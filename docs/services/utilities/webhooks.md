@@ -53,7 +53,7 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service. \
-   ![](<(../../assets/image (288).png>)
+   ![](<../../.gitbook/assets/image (288).png>)
 3. Choose WebHook Utility.
 4. In the utility’s settings, specify when it should run:
    * Execute Before Process = Pre-processor
@@ -282,4 +282,3 @@ Tip: Use a service like webhook.site or a local mock server for initial testing.
 **How secure are webhook calls from AIForged?**
 
 * Always use HTTPS endpoints and include authentication headers. You can further secure by whitelisting AIForged IPs or using custom secret headers.
-

@@ -50,7 +50,7 @@ Follow these steps to add and configure the Email Scraper in your agent:
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Email Scraper**\
-   Click the **Add Service** !\[]\(../../assets/image (42).png) button and choose **Email Scraper** from the available service types.
+   Click the **Add Service** !\[]\(../../.gitbook/assets/image (42).png) button and choose **Email Scraper** from the available service types.
 3. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.
    * Step 1: General Settings\
@@ -72,7 +72,7 @@ AIForged supports prompt‑less device code flow for Microsoft 365. After initia
   2. Note the Tenant ID and Client ID.
   3. Enter both values in the Email Scraper configuration and enable Prompt‑less Code Flow.
 
-<figure><img src="../../assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 * Operation\
   The scraper retrieves a device token automatically on its first scheduled run. On subsequent runs, it retrieves emails without prompts.
@@ -129,7 +129,7 @@ Apply the following settings depending on your email provider. Values not listed
 
 Turn on Auto Execution to run the scraper at scheduled intervals. Adjust the interval based on expected mail volume and provider throttling.
 
-<figure><img src="../../assets/image (280).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -226,4 +226,3 @@ Tip: Start with a single mailbox and folder, confirm correct operation, then exp
   * Standard attachments are extracted automatically. Extremely large or unusual MIME formats may require a test or an alternative intake path.
 * Can I run multiple scrapers in one agent?
   * Yes. Use separate scrapers for different mailboxes or folders to keep workflows organized and scalable.
-

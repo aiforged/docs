@@ -39,19 +39,19 @@ Follow these steps to add and configure the Google OCR Service to your agent:
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Google OCR Service**\
-   Click the **Add Service** ![](<(../../assets/image (129).png>)  button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>)  button.
 3. **Select Service Type**\
    Choose **Google OCR Service** from the available service types.\
-   ![](<(../../assets/image (224).png>)
+   ![](<../../.gitbook/assets/image (224).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<(../../assets/image (226).png>)\
+   ![](<../../.gitbook/assets/image (226).png>)\
    &#x20;or \
-   ![](<(../../assets/image (227).png>)
+   ![](<../../.gitbook/assets/image (227).png>)
    * **Step 1: General Settings**\
      Configure core settings such as service name and description.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](<(../../assets/image (228).png>)
+     ![](<../../.gitbook/assets/image (228).png>)
    * **Step 2: Verification**\
      No verification is typically required for plain text OCR unless paired with downstream validation.\
 
@@ -92,12 +92,12 @@ To upload and process documents using the Google OCR Service:
 1. **Open Service**\
    When you open the Google OCR Service, you will be presented with the documents currently queued or processed in the Inbox.
 2. **Upload Documents**\
-   Click the **Upload** ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.![](<(../../assets/image (233).png>)
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.![](<../../.gitbook/assets/image (233).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 4. **Process Documents**\
    After uploading, select the documents to process and click **Process Checked**.\
-   ![](<(../../assets/image (51).png>)
+   ![](<../../.gitbook/assets/image (51).png>)
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify OCR accuracy before scaling up.
@@ -215,4 +215,3 @@ Members must belong to one of the following AIForged user group roles to add and
 {% hint style="info" %}
 Tip: Role membership is managed in Organisations > Roles. Assign members to roles to grant agent and service administration access.
 {% endhint %}
-

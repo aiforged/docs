@@ -25,28 +25,28 @@ Follow these steps to add and configure the **Amazon Identity Documents Service*
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Amazon Identity Documents Service**\
-   Click the **Add Service** ![](<(../../assets/image (42).png>) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (42).png>) button.
 3. **Select Service Type**\
    Choose **Amazon Identity Documents Service** from the available service types.\
-   ![](<(../../assets/image (43).png>)
+   ![](<../../.gitbook/assets/image (43).png>)
 4. **Configure the Service Wizard**\
    Open the Service Configuration Wizard.\
-   ![](<(../../assets/image (44).png>)\
+   ![](<../../.gitbook/assets/image (44).png>)\
    or\
-   ![](<(../../assets/image (45).png>)
+   ![](<../../.gitbook/assets/image (45).png>)
    * **Step 1: General Settings**\
      Configure core settings.\
      &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-     ![](<(../../assets/image (46).png>)
+     ![](<../../.gitbook/assets/image (46).png>)
    * **Step 2: User Defined Categories**\
      Add any categories you wish to use for organizing your processed documents.\
-     ![](<(../../assets/image (47).png>)
+     ![](<../../.gitbook/assets/image (47).png>)
    * **Step 3: Analysis**\
-     Upload some documents for analysis, select them and click on the **Analysis** ![](<(../../assets/image (125).png>) button to generate the applicable fields for your forms.\
-     ![](<(../../assets/image (48).png>)
+     Upload some documents for analysis, select them and click on the **Analysis** ![](<../../.gitbook/assets/image (125).png>) button to generate the applicable fields for your forms.\
+     ![](<../../.gitbook/assets/image (48).png>)
    * **Step 4: Verification**\
      Review, configure and verify any generated fields.\
-     ![](<(../../assets/image (49).png>)
+     ![](<../../.gitbook/assets/image (49).png>)
 
 ***
 
@@ -61,12 +61,12 @@ Most users can proceed with the default settings. Advanced configuration is avai
 To upload and process identity documents using the Amazon Identity Documents Service:
 
 1. **Open Service**\
-   In the Amazon Identity Documents Service, click the **Upload** ![](<(../../assets/image (37).png>) button or drag and drop files over the document grid.\
-   ![](<(../../assets/image (50).png>)
+   In the Amazon Identity Documents Service, click the **Upload** ![](<../../.gitbook/assets/image (37).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (50).png>)
 2. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 3. **Process Documents**\
-   After uploading, select the documents to process and click on the **Process** ![](<(../../assets/image (13) (1) (1).png>) button.
+   After uploading, select the documents to process and click on the **Process** ![](<../../.gitbook/assets/image (13) (1) (1).png>) button.
 
 {% hint style="info" %}
 **Tip:** For new services, process a small batch first to verify the results before scaling up.
@@ -77,7 +77,7 @@ To upload and process identity documents using the Amazon Identity Documents Ser
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the Amazon Identity Documents Service.\
-  ![](<(../../assets/image (51).png>)
+  ![](<../../.gitbook/assets/image (51).png>)
 * Open any processed document to view and verify the extracted results.
 
 ***
@@ -97,4 +97,3 @@ To upload and process identity documents using the Amazon Identity Documents Ser
   * If multiple errors occur, check your agent's service configuration or contact support for further assistance.
 * **Performance Concerns?**
   * Large batches may take longer to process. Start with smaller batches to ensure service responsiveness.
-

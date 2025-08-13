@@ -20,7 +20,6 @@ Get Data Types
 
 ### Activity View
 
-<figure><img src="../../../assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
-

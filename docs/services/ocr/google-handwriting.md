@@ -54,22 +54,22 @@ Follow these steps to add and configure the Google Handwriting service to your a
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Google Handwriting Service**\
-   Click the **Add Service** ![](<(../../assets/image (129).png>) button.\
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.\
 
 3. **Select Service Type**\
    Choose **Google Handwriting Service** from the available service types.\
-   ![](<(../../assets/image (234).png>)
+   ![](<../../.gitbook/assets/image (234).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image (255).png" alt=""><figcaption></figcaption></figure>
-      2. ![](<(../../assets/image (251).png>)\
+          <figure><img src="../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+      2. ![](<../../.gitbook/assets/image (251).png>)\
 
    2. **Step 1: General Settings**\
       Configure the service name, description, and core settings.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-      ![](<(../../assets/image (240).png>)
+      ![](<../../.gitbook/assets/image (240).png>)
    3. **Step 2: Verification**\
       Typically no verification is required for handwriting extraction unless you plan a human-in-the-loop review.\
 
@@ -127,8 +127,8 @@ To upload and process documents using the Google Handwriting service:
 1. **Open Service**\
    When you open the Google Handwriting service, you will be presented with the documents currently queued or processed in the Inbox.
 2. **Upload Documents**\
-   Click the **Upload** ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<(../../assets/image (216).png>)
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (216).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, leave as **No selection**.
 4. **Process Documents**\
@@ -143,7 +143,7 @@ To upload and process documents using the Google Handwriting service:
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the Google Handwriting service.\
-  ![](<(../../assets/image (51).png>)
+  ![](<../../.gitbook/assets/image (51).png>)
 * Open any processed document to view and verify the extracted Areas, Paragraphs, Words, and the consolidated Result text.
 
 ***
@@ -187,5 +187,3 @@ To upload and process documents using the Google Handwriting service:
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * **What languages are supported?**
   * Many languages are supported; accuracy varies by script and image quality. Provide a Language hint when possible and test with samples.
-
-

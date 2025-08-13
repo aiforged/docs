@@ -55,22 +55,22 @@ Follow these steps to add and configure the Microsoft OCR Service to your agent:
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft OCR Service**\
-   Click the **Add Service** ![](<(../../assets/image (129).png>) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Microsoft OCR Service** from the available service types.\
-   ![](<(../../assets/image (256).png>)
+   ![](<../../.gitbook/assets/image (256).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image (258).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
       2.
 
-          <figure><img src="../../assets/image (262).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
    2. **Step 1: General Settings**\
       Configure core OCR settings such as service name and description.\
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._\
-      ![](<(../../assets/image (263).png>)
+      ![](<../../.gitbook/assets/image (263).png>)
    3. **Step 2: Verification**\
       Verification is typically not required for plain text OCR unless paired with downstream validation.\
 
@@ -136,8 +136,8 @@ To upload and process documents using the Microsoft OCR Service:
 1. **Open Service**\
    When you open the Microsoft OCR Service, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Documents**\
-   Click the **Upload** ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid.\
-   ![](<(../../assets/image (264).png>)
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid.\
+   ![](<../../.gitbook/assets/image (264).png>)
 3. **Select Category (Optional)**\
    If you know the category for the document, select it. Otherwise, select **No category**.
 4. **Process Documents**\
@@ -152,7 +152,7 @@ Tip: For new services, process a small batch first to verify OCR accuracy before
 ### View Processed Documents
 
 * Use the usage filter to select **Outbox** in the Microsoft OCR Service.\
-  ![](<(../../assets/image (51).png>)
+  ![](<../../.gitbook/assets/image (51).png>)
 * Open any processed document to view the extracted text in the **Result** property.
 
 ***
@@ -217,5 +217,3 @@ Tip: Begin with a small, representative batch to validate output and tune settin
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * **What if my PDFs are very large?**
   * Split large PDFs/TIFFs by page range with the AIForged Document Splitter to keep processing responsive and avoid provider limits.
-
-

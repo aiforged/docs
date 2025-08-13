@@ -40,9 +40,8 @@ Get Work Item Count
 
 ### Activity View
 
-<figure><img src="../../../assets/image (29) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>

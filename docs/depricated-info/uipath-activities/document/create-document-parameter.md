@@ -30,9 +30,8 @@ Create Document Parameter
 
 ### Activity View
 
-<figure><img src="../../../assets/image (86) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../assets/image (30) (3).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (30) (3).png" alt=""><figcaption></figcaption></figure>

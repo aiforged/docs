@@ -51,21 +51,21 @@ Follow these steps to add and configure the Microsoft Speech-to-Text Service to 
 1. **Open the Agent View**\
    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft Speech-to-Text Service**\
-   Click the **Add Service** ![](<(../../assets/image (129).png>) button.
+   Click the **Add Service** ![](<../../.gitbook/assets/image (129).png>) button.
 3. **Select Service Type**\
    Choose **Microsoft Speech-to-Text Service** from the available service types.\
-   ![](<(../../assets/image (274).png>)
+   ![](<../../.gitbook/assets/image (274).png>)
 4. **Configure the Service Wizard**
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image (275).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
       2.
 
-          <figure><img src="../../assets/image (276).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
    2.  **Step 1: General Settings** Configure the service name, description, and core settings. \_Default settings are sufficient for most use cases.
 
-       <figure><img src="../../assets/image (277).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -100,8 +100,8 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 1. **Open Service**\
    When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Audio**\
-   Click the **Upload** ![](<(../../assets/image (13) (1).png>) button or drag and drop files over the document grid (MP3 or WAV).\
-   ![](<(../../assets/image (278).png>)
+   Click the **Upload** ![](<../../.gitbook/assets/image (13) (1).png>) button or drag and drop files over the document grid (MP3 or WAV).\
+   ![](<../../.gitbook/assets/image (278).png>)
 3. **Select Category (Optional)**\
    If you know the category for the audio, select it. Otherwise, select **No category**.
 4. **Process Documents**\
@@ -116,7 +116,7 @@ Tip: For new services, process a small batch first to verify transcription quali
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **Microsoft Speech-to-Text Service**.\
-  ![](<(../../assets/image (51).png>)
+  ![](<../../.gitbook/assets/image (51).png>)
 * Open any processed document to view the transcript in the **Result** property.
 
 ***
@@ -145,5 +145,3 @@ Tip: For new services, process a small batch first to verify transcription quali
 * Set the correct Language to match the audio content.
 * Trim long silences and split long recordings into smaller parts for faster, more reliable processing.
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
-
-

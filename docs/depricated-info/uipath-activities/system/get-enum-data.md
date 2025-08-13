@@ -20,9 +20,8 @@ Get Enum Data
 
 ### Activity View
 
-<figure><img src="../../../assets/image (37) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Activity Property View
 
-<figure><img src="../../../assets/image (31) (4).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (31) (4).png" alt=""><figcaption></figcaption></figure>

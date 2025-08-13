@@ -2,7 +2,7 @@
 
 The **Country Rule Type** can be applied to any field where a country's name is expected.
 
-<figure><img src="../assets/image (144).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
 The following fields can be derived from the extracted data value:
 
@@ -17,4 +17,3 @@ The following fields can be derived from the extracted data value:
 * Region Code
 * Subregion Code
 * Intermediate Region Code
-

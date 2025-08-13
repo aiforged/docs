@@ -29,7 +29,7 @@ Get-ChildItem -Path $docsRoot -Recurse -Filter *.md -File | ForEach-Object {
   $new = [regex]::Replace($new, "src='(?:\.\./)*\.gitbook/assets/", "src='$($prefix)assets/")
   $new = [regex]::Replace($new, "href='(?:\.\./)*\.gitbook/assets/", "href='$($prefix)assets/")
 
-  $new = [regex]::Replace($new, '(?:\.\.\/)*\.gitbook/assets/', "($1$($prefix)assets/")
+  $new = [regex]::Replace($new, '(?:\.\.\/)*\.gitbook/assets/', "$1$($prefix)assets/")
 
   if ($new -ne $content) {
     Set-Content -LiteralPath $file -Value $new -Encoding utf8
