@@ -2,6 +2,8 @@ site_name: AIForged Documentation
 
 theme:
   name: material
+  logo: assets/logo.png        # make sure this file exists
+  favicon: assets/favicon.ico  # optional
   features:
     - navigation.expand
     - search.suggest
