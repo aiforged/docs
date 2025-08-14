@@ -26,3 +26,30 @@
   /* --md-default-fg-color: hsla(210, 15%, 92%, 1); */
   /* --md-default-bg-color: hsla(210, 15%, 10%, 1); */
 }
+
+.md-nav--primary > .md-nav__list > .md-nav__item--section:not(:first-child) {
+  border-top: 1px solid var(--md-default-fg-color--lightest, rgba(0,0,0,0.08));
+  margin-top: 0.25rem;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-nav__item--section {
+      display: block;
+      margin: 2em 0;
+  }
+
+  .md-nav__item .md-nav__container + .md-nav {
+      margin-left: 5px;
+  }
+
+  .md-sidebar {
+    width: 15.1rem;
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+      [dir=ltr] .md-sidebar__inner {
+          padding-right: calc(100% - 14.5rem);
+      }
+  }
+}

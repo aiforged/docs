@@ -39,6 +39,7 @@ markdown_extensions:
 
 nav:
   - 🏡 Home: index.md
+  - 🚀 Getting Started: getting-started.md
   - 📣 Release Notes: release-notes.md
   - 📬 How to access AIForged: how-to-install-aiforged.md
   - ✏️ Register: register.md
@@ -60,14 +61,6 @@ nav:
     - ↗️ Processing documents:
       - Overview: documents/processing-documents/index.md
       - Processing Paramaters: documents/processing-documents/processing-paramaters.md
-  - 👥 Organisations and User Groups:
-    - Overview: service-users/index.md
-    - 📓 Maintaining Groups: service-users/maintaining-groups.md
-    - 📏 Managing Roles within Usergroups: service-users/managing-roles-in-groups.md
-    - 👤 Role Member Management: service-users/managing-users.md
-  - 📩 Notification History: notifications.md
-  - 💰 Wallets and Billing: transactions.md
-  - 🖇️ Cloning: cloning.md
   - 👓 AI Services:
     - Overview: services/index.md
     - 🗂️ Scrapers:
@@ -122,6 +115,15 @@ nav:
       - Overview: services/object-detection/index.md
       - Google Object Detection: services/object-detection/google-object-detection.md
       - Microsoft Object Detection: services/object-detection/microsoft-object-detection.md
+  - 🔀 Service Flow Configurator: service-flow-configurator.md
+  - 👥 Organisations and User Groups:
+    - Overview: service-users/index.md
+    - 📓 Maintaining Groups: service-users/maintaining-groups.md
+    - 📏 Managing Roles within Usergroups: service-users/managing-roles-in-groups.md
+    - 👤 Role Member Management: service-users/managing-users.md
+  - 📩 Notification History: notifications.md
+  - 💰 Wallets and Billing: transactions.md
+  - 🖇️ Cloning: cloning.md
   - ✨ Custom Code:
     - Overview: custom-service-code/index.md
     - ⚙️ BaseModule:
