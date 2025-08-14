@@ -82,6 +82,6 @@ It is also possible to accept all **Verification** without manually verifying ea
 This action will also immediately place the document in the **Processed** state from the **Verification** state.
 
 ![](../assets/image%20%287%29%20%284%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 

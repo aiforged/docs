@@ -57,4 +57,4 @@ description: >-
 * **Filter Criteria:** Use the available filters to narrow down the retrieved hierarchy to specific categories, groupings, or value types.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the hierarchy to prevent unauthorized actions.
 
- IgnoreCase Multiline IgnoreCase Multiline
+

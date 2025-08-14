@@ -25,4 +25,4 @@ This activity does not require any input properties, as it operates based on the
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the projects to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or unexpected API responses.
 * **Project Management:** This activity is useful for workflows that need to display, manage, or perform operations across multiple projects owned or accessible by the current user.
- IgnoreCase Multiline IgnoreCase Multiline
+

@@ -12,5 +12,5 @@ The available General Rules tabs can be accessed when viewing the **Parameter De
 * Web API
 * Database
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -22,5 +22,5 @@
 ### Activity Property View
 
 ![](../../../assets/image%20%2834%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

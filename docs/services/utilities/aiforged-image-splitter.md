@@ -200,7 +200,7 @@ Get results in minutes:
   * No. Outputs are page images intended for downstream processing such as OCR.
 * How do I handle password-protected PDFs?
   * Use the AIForged Custom Code utility to provide the password per document so AIForged can unlock files before splitting.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

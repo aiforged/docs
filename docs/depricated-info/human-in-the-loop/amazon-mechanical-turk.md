@@ -8,5 +8,5 @@ Amazon Mechanical Turk (MTurk) is a crowdsourcing marketplace that makes it easi
 
 * Building, managing, and evaluating Machine Learning workflows
 * Business process outsourcing
- IgnoreCase Multiline IgnoreCase Multiline
+
 

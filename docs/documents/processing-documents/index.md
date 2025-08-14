@@ -54,7 +54,7 @@ This is set up in the service settings. This will automatically process document
 
 Refer to API/ SDK/ Bot documentation
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

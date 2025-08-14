@@ -91,7 +91,7 @@ To upload and process identity documents using the **Amazon Invoice Extraction S
   * Try re-uploading the document or using a different sample to rule out file-specific issues.
 * **Performance Issues?**
   * Processing large batches may take longer. Start with smaller batches to ensure responsiveness.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

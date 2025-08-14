@@ -191,7 +191,7 @@ To upload and process documents using the **Google Forms Parser**:
 * Regularly review and update your definition documents as forms or layouts evolve.
 * Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

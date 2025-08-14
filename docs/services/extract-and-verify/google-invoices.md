@@ -104,7 +104,7 @@ To upload and process documents using the **Google Forms Parser**:
 * Use high-quality scans or digital invoices for optimal extraction.
 * Regularly review and validate extracted data to improve downstream workflows.
 * Organize your documents into categories to keep your processing structured and efficient.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

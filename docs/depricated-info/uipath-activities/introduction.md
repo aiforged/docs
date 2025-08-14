@@ -20,5 +20,5 @@ The name of the package is: **AIForged** by **AIForged**
 Below is a view of the activities panel that contains the AIForged activities after successfully installing the package.
 
 ![](../../assets/image%20%28203%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

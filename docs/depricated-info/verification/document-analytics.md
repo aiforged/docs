@@ -25,4 +25,4 @@ The document analytics page displays the processing of each field for the Docume
 | Result      | Displays the Result of the field                         |
 | Info        | Displays info about the processing of the field          |
 
- IgnoreCase Multiline IgnoreCase Multiline
+

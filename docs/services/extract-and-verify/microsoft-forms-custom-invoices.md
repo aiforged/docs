@@ -214,7 +214,7 @@ Before sending an invoice to Document Intelligence for extraction, the service c
 * If you have diverse invoice layouts, test with samples from each vendor/business unit.
 * Regularly review extracted results for continuous improvement.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

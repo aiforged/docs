@@ -34,4 +34,4 @@ This activity is marked as obsolete and is scheduled to be deprecated. It is rec
 * **Transition to New Activity:** As this activity is deprecated, it is strongly recommended to transition to using the "Get Document Data" activity, which provides similar functionality with more flexibility and continued support.
 * **Data Integrity:** Ensure that the document ID is valid and accessible to avoid errors during the retrieval process.
 * **Limited Use:** Given its deprecated status, use this activity only if necessary and begin updating workflows to accommodate the recommended replacement.
- IgnoreCase Multiline IgnoreCase Multiline
+

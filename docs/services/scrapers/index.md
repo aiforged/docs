@@ -30,5 +30,5 @@ The following scrapers are available in AIForged:
 
 !!! info
     You can configure multiple scrapers to cover all your key document sources and ensure nothing is missed in your workflow.
- IgnoreCase Multiline IgnoreCase Multiline
+
 

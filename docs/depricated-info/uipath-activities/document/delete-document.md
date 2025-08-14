@@ -26,5 +26,5 @@ Delete Document
 ### Activity Property View
 
 ![](../../../assets/image%20%2822%29%20%284%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

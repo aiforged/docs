@@ -100,4 +100,4 @@ description: Add a log message to the AIForged logging subsystem.
 * **Optional Fields:** Utilize optional fields (such as error messages or stack traces) when applicable to enhance the log's usefulness.
 * **Performance:** Consider the impact of logging on performance, especially if logging is performed frequently or with large amounts of data.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application adding the log message to prevent unauthorized actions.
- IgnoreCase Multiline IgnoreCase Multiline
+

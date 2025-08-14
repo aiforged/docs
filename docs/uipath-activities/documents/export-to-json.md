@@ -39,4 +39,4 @@ description: Export multiple documents' extraction results to a combined JSON st
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
 * **Data Handling:** The resulting JSON provides a flexible format for the extracted data, suitable for integration, analysis, or reporting within your workflow.
 * **Combining Entries:** When combining by external ID, ensure that the external ID field is consistently populated across documents to achieve the desired output.
- IgnoreCase Multiline IgnoreCase Multiline
+

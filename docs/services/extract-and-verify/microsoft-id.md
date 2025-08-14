@@ -55,7 +55,7 @@ It is recommended to only process a few documents at a time, especially if it is
 * Extracting **Identity Document** data.
 * Match Name and Surname fields to other supporting docs to verify the identity of a person.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

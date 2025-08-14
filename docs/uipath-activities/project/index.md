@@ -13,4 +13,4 @@ The Project activities of the AIForged UiPath Activities provides an extensive s
 * **Performance Considerations**: While project activities are designed for efficiency, managing large numbers of projects or services may impact performance. Users are encouraged to utilize filtering options and best practices to optimize resource usage and maintain responsive workflows.
 
 By incorporating project activities into your UiPath workflows, you can enhance your ability to manage and optimize your projects, driving improved outcomes and operational excellence across your automation initiatives.
- IgnoreCase Multiline IgnoreCase Multiline
+

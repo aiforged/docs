@@ -78,7 +78,7 @@ To remove a role from a Usergroup, follow these steps:
     If you are sure you want to delete the user role, then click on **Yes**, otherwise click **No**
 
     ![](../assets/image%20%2897%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

@@ -182,4 +182,4 @@ When to use:
   * A: They’re container categories—use them to structure and scope underlying definitions.
 * Q: Can one definition change category later?
   * A: It can, but prefer stability—changing categories affects filters and downstream logic.
- IgnoreCase Multiline IgnoreCase Multiline
+

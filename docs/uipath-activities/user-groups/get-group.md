@@ -29,4 +29,4 @@ description: Retrieve a group by its unique identifier.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the group to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Optional Argument:** Although the`Group Id`is marked as optional, it should be provided to successfully retrieve a specific group.
- IgnoreCase Multiline IgnoreCase Multiline
+

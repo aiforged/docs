@@ -6,5 +6,5 @@ The **ID Number Rule Type** can be applied to a field where an ID Number is expe
 This Rule is able to extract basic information of the ID Number that was supplied. The **Country Code** can be provided to improve the extraction accuracy.
 
 ![](../assets/image%20%28127%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

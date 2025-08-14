@@ -17,5 +17,5 @@ The following fields can be derived from the extracted data value:
 * Subregion Code
 * Intermediate Region Code
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

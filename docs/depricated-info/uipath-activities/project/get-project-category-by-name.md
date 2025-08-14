@@ -26,5 +26,5 @@ Category Name -
 ### Activity Property View
 
 ![](../../../assets/image%20%2839%29%20%285%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

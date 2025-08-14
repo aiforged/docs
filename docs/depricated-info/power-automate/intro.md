@@ -57,4 +57,4 @@ For any support or assistance create a support ticket at [AIForged Support](http
 ## FAQ
 
 For more info and FAQ see [AIForged Documentation](https://docs.aiforged.com/).
- IgnoreCase Multiline IgnoreCase Multiline
+

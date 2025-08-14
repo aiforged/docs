@@ -76,7 +76,7 @@ It is recommended to only process a few documents at a time, especially if it is
 1. In the **Microsoft Custom Vision Service** click on the **Outbox** button.
 2. You can view your **Processing** results by opening a processed doc for verification.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

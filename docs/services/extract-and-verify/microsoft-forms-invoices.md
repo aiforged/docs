@@ -56,7 +56,7 @@ It is recommended to only process a few documents at a time, especially if it is
 1. In the **Microsoft Object Detection Service** click on the **Outbox** button.
 2. You can view the **Processing** results by opening a processed doc for verification.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

@@ -176,7 +176,7 @@ To digitize documents using the AIForged Digitizer:
 * Start with a pilot set to validate output, then scale; tune dependent OCR, overlay, and batching as needed.
 * For very large or multi-volume archives, use Execute On Trigger and schedule Auto Execution to spread the load.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

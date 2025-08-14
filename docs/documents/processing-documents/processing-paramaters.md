@@ -16,5 +16,5 @@ When processing a document, multiple processing parameters are available that ca
 * **Delete Linked Documents Recursively**: Deletes the entire hierarchy of linked documents.
 * **Force Re-Processing**: Forces the document to be fully processed again (default). On some services setting this false will allow the processing to bypass certain pre-processing functions such as document OCR if the document was previously processed.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

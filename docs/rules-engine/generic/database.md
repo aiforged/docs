@@ -22,5 +22,5 @@ The following properties can be configured for the SQL database connection:
 * The database connection string
 * The SQL Query to be executed (when SQL Query mode has been selected).
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

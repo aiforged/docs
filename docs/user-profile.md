@@ -97,7 +97,7 @@ Notifications are sent on an **OPT-IN** basis
 Studio preferences allow you to customise various aspects of the UI, such as default filter ranges, and default behaviours for certain views and dialogs.
 
 ![](assets/image%20%2843%29%20%281%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

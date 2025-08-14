@@ -28,5 +28,5 @@ To setup a **Rule**, select any field on a document, and select **Show Definitio
 This will open the dialogue to select and configure the **Rule**. The **Rule Type** can be assigned here for the selected field.
 
 ![](../assets/image%20%28150%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

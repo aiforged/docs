@@ -161,7 +161,7 @@ To upload and process documents using the Microsoft Object Detection Service:
 * **What if my images are password-protected PDFs?**
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

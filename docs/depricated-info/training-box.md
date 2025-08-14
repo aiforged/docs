@@ -10,6 +10,6 @@ The **Training Box** is only applicable to services that require training of doc
     ![](../assets/image%20%284%29%20%288%29.png)
 * To open a Service, refer to Understanding Services.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 

@@ -50,7 +50,7 @@ Multi-factor authentication (MFA) enhances account security by requiring users t
 
 !!! info
     You can configure your AIForged account to utilize these external services for authentication. Any linked providers can be unlinked from your AIForged account at any time.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

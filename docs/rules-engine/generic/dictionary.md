@@ -20,5 +20,5 @@ The following **Lookup Methods** are available:
 The list of **Dictionary Entries** can be specified in the **Dictionary Options** table.
 
 ![](../../assets/image%20%28121%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

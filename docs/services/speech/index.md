@@ -34,5 +34,5 @@ The following Speech-to-Text service is currently available in AIForged:
 
 !!! info
     Speech-to-text services can be combined with other AIForged utilities for downstream classification, sentiment analysis, or keyword extraction—enabling full audio-to-insight pipelines!
- IgnoreCase Multiline IgnoreCase Multiline
+
 

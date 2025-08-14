@@ -24,4 +24,4 @@ This activity does not require any input properties, as it retrieves all availab
 * **Data Retrieval:** The activity retrieves all available data types from the platform, which can then be used in subsequent workflow steps for various operations.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the data types to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or unexpected API responses.
- IgnoreCase Multiline IgnoreCase Multiline
+

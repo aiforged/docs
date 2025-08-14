@@ -39,4 +39,4 @@ description: Retrieve all services contained within a specified project.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the services to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Project Scope:** The activity retrieves all services within the specified project, facilitating operations that require access to multiple services.
- IgnoreCase Multiline IgnoreCase Multiline
+

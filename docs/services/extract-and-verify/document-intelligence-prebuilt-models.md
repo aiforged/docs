@@ -171,7 +171,7 @@ To upload and process documents using the **Prebuilt Models** service:
 * Use high-quality scans or digital originals.
 * Review the extracted data fields for each document type to understand model outputs.
 * Keep your Azure Document Intelligence API credentials up to date.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

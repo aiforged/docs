@@ -33,4 +33,4 @@ description: Retrieve a list of all parameter verifications for a given document
 * **Data Integrity:** Ensure that the document ID is valid and accessible to avoid errors during the retrieval process. If specifying a parameter ID, ensure it corresponds to a valid parameter within the document.
 * **Optional Parameter:** If the document parameter ID is not specified, the activity may return verification data for all parameters associated with the document.
 * **Performance:** The execution time may vary depending on the number of verifications associated with the document's parameter(s). Ensure the system is configured to handle the expected load efficiently.
- IgnoreCase Multiline IgnoreCase Multiline
+

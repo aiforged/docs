@@ -182,7 +182,7 @@ The Move Documents utility is highly configurable to fit your workflow needs. Be
   * Yes. Use Source Extension and Source Pattern filters.
 * **How do I verify moves?**
   * Check the destination service’s Inbox/Outbox; the document will not be in the source.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

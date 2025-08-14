@@ -20,4 +20,4 @@ Each document has attributes associated with it:
 | External ID   | A User-Defined ID that is not used by default, can be utilized to use 3rd party ID's        |
 | Date Created  | Displays the date the document was uploaded to AiForged                                     |
 | Date Modified | Display the date and time the document was last modified or processed.                      |
- IgnoreCase Multiline IgnoreCase Multiline
+

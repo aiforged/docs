@@ -38,5 +38,5 @@ Get Document Data
 ### Activity Property View
 
 ![](../../../assets/image%20%286%29%20%288%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -77,4 +77,4 @@ Here's the specifications and usage documentation for the "Get Notifications" ac
 * **Date and Time Filters:** Utilize the date filters to focus on notifications within a specific timeframe, improving performance and relevance of the results.
 * **Sorting and Pagination:** Use sorting and pagination options to manage large sets of notifications efficiently.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the notifications to prevent unauthorized actions.
- IgnoreCase Multiline IgnoreCase Multiline
+

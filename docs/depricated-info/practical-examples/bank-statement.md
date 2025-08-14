@@ -75,7 +75,7 @@ The purpose of this process is to extract the **Account Number**, **Full Name**,
 24. At this stage, the service is trained, and documents can be loaded into the **Inbox** of the service and can be processed.
 25. The OCR results can be viewed in the **Outbox** of the service.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

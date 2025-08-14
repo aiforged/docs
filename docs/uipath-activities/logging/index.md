@@ -14,4 +14,4 @@ The Logging activities in the AIForged UiPath Activities offers a robust set of 
 * **Performance Considerations**: While logging is essential for effective monitoring, excessive logging can impact performance. Users are encouraged to balance the level of detail in their logs with performance considerations, ensuring that critical information is captured without overwhelming the system.
 
 By integrating logging activities into your UiPath workflows, you can establish a strong foundation for monitoring, diagnosing, and optimizing your automation processes, enhancing both operational efficiency and reliability.
- IgnoreCase Multiline IgnoreCase Multiline
+

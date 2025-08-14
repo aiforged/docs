@@ -44,5 +44,5 @@ Get Work Item Count
 ### Activity Property View
 
 ![](../../../assets/image%20%2823%29%20%283%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

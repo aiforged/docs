@@ -31,5 +31,5 @@ AIForged currently provides the following **Classification Service Types**:
 
 !!! info
     Need a custom classification workflow? Contact the AIForged team to discuss your unique requirements!
- IgnoreCase Multiline IgnoreCase Multiline
+
 

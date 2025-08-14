@@ -12,4 +12,4 @@ The Platform activities of the AIForged UiPath Activities offers a suite of tool
 * **Performance Considerations**: These activities are designed to operate efficiently, providing quick access to necessary data without introducing significant overhead. Users can confidently integrate these activities into their workflows, knowing they will support performance goals while delivering critical information.
 
 By leveraging the platform activities, users can ensure their automation workflows are informed, adaptable, and aligned with the AIForged platform's capabilities, driving enhanced efficiency and effectiveness in their operations.
- IgnoreCase Multiline IgnoreCase Multiline
+

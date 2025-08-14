@@ -57,4 +57,4 @@ description: >-
 * **Date and Time Filters:** Utilize the date and time filters to focus on log messages within a specific timeframe, improving performance and relevance of the results.
 * **Data Integrity:** Ensure that filter values such as project ID or document ID are valid and correctly specified to avoid errors during retrieval.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the log messages to prevent unauthorized actions.
- IgnoreCase Multiline IgnoreCase Multiline
+

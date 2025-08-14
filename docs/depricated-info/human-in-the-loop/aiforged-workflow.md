@@ -78,5 +78,5 @@ Work items get assigned to users set up to act as human-in-the-loop (HITL) agent
 | DocumentOwner  | The document owner is assigned.                             |
 | User           | A specific user is assigned.                                |
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

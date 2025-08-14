@@ -12,4 +12,4 @@ The Audit activities in the AIForged UiPath Activities offers a comprehensive se
 * **Performance Considerations**: While audit activities are designed for efficiency, including document verification audits may increase processing time. It is advisable to use this option judiciously, balancing the need for detailed verification data with overall performance goals.
 
 By incorporating the audit activities into your UiPath workflows, you can maintain a robust auditing framework that supports compliance, enhances transparency, and drives continuous improvement in your automation initiatives.
- IgnoreCase Multiline IgnoreCase Multiline
+

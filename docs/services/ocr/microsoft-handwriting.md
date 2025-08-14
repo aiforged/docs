@@ -169,7 +169,7 @@ To upload and process documents using the Microsoft Handwriting Service:
 * Validate results on a representative sample before processing at scale.
 * Enable IsVerification if you need to review lines and words visually alongside the Result text.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

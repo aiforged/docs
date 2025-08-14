@@ -479,4 +479,4 @@ Important note and request for confirmation
 * You mentioned IProjectUser no longer exists. Thank you for the heads-up. Several earlier method signatures (e.g., CreateWorkItem and PickRandom) referenced IProjectUser. What is the correct replacement type you want documented for assignee/selection—should we use a userId string, IApplicationUser, or a new interface (e.g., IProjectMember)? Once you confirm, I will:
   * Update those method pages to the correct signatures and usage.
   * Adjust this data types page accordingly (removing IProjectUser completely or adding the new type).
- IgnoreCase Multiline IgnoreCase Multiline
+

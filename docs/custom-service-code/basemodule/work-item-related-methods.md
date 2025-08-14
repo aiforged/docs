@@ -220,5 +220,5 @@ Tip:
   * A: Pre-filter with GetUsers by role/permissions/group, then apply throughput/idle selection.
 * Q: What if no eligible user is found?
   * A: Fall back to PickRandom from a broader pool, or queue for auto-assignment when a user becomes available.
- IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -16,7 +16,7 @@ They serve as a quick reference of an agent's status, offering essential informa
 !!! info
     To manage a service, see [Ai Services](../services//index.md)
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

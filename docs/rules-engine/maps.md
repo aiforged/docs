@@ -24,5 +24,5 @@ The following Address input options are available:
 * Latitude
 * Points of interest
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

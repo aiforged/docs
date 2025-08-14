@@ -140,7 +140,7 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 * Trim long silences and split long recordings into smaller parts for faster, more reliable processing.
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

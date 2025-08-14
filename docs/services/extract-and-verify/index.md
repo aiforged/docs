@@ -39,5 +39,5 @@ The following are the **most capable and up-to-date Extract & Verify service typ
 
 !!! info
     Need to extract and verify data from a new or custom document type? Reach out to the AIForged team to discuss your requirements!
- IgnoreCase Multiline IgnoreCase Multiline
+
 

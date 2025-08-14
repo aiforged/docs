@@ -39,5 +39,5 @@ Below is an overview of the **latest and most capable OCR services** available i
 
 !!! info
     Need help selecting or configuring an OCR engine? Contact the AIForged team for expert guidance on best-fit solutions and advanced use cases.
- IgnoreCase Multiline IgnoreCase Multiline
+
 

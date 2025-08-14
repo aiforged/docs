@@ -204,4 +204,4 @@ When to use:
 * When marking Verified, also transition to Completed to close the loop unless additional actions remain.
 * Log transitions to Error and Rejected with Info/Comment for rapid triage and auditability.
 * Respect deletion semantics: DocumentDeleted implies the work item cannot proceed; handle gracefully in UIs and automations.
- IgnoreCase Multiline IgnoreCase Multiline
+

@@ -124,7 +124,7 @@ Once your configuration is complete:
   * Review sample pages and adjust expected answers/regex to reflect real-world document variations.
 * **Performance Issues?**
   * Large documents with many pages may take longer to process. Test with smaller samples first.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

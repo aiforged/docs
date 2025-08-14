@@ -13,5 +13,5 @@ Filters can be applied to narrow down the results of the **Text Analysis** being
 ![](../../assets/image%20%2825%29%20%283%29.png)
 ![](../../assets/image%20%28110%29%20%282%29.png)
 ![](../../assets/image%20%28112%29%20%282%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

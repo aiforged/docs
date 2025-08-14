@@ -24,5 +24,5 @@ Get Unread Notification Count
 ### Activity Property View
 
 ![](../../../assets/image%20%2844%29%20%282%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

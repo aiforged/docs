@@ -18,6 +18,6 @@ You can filter the visible **Notifications** via the various filters available i
 
 
     ![](assets/image%20%28112%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 

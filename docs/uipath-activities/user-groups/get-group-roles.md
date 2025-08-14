@@ -37,4 +37,4 @@ description: Retrieve the roles associated with a specified group.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the group roles to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Optional Arguments:** Use the optional arguments to tailor the retrieval process to your specific needs, such as filtering by role type or including user information.
- IgnoreCase Multiline IgnoreCase Multiline
+

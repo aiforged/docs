@@ -22,5 +22,5 @@ The language can be selected form the **Code Language** dropdown box. Refer to [
 ![](../../assets/image%20%28157%29.png)
 For detailed documentation please see: [Custom Code](../../custom-service-code/README.md)
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

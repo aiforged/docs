@@ -23,5 +23,5 @@ Get Data Types
 ![](../../../assets/image%20%289%29%20%285%29.png)
 ### Activity Property View
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -26,5 +26,5 @@ Get Service Charges
 ### Activity Property View
 
 ![](../../../assets/image%20%2819%29%20%284%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

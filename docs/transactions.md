@@ -42,6 +42,6 @@ Each service will accumulate transactions as it processes documents
 !!! info
     To drill down, select the service to see an Itemised Bill
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 

@@ -44,5 +44,5 @@ The **Get Balance** activity will return a **result** which may be parsed to ano
 ### Activity Property View
 
 ![](../../../assets/image%20%2894%29%20%281%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -26,5 +26,5 @@ The **Contacts** page allows you to add various notification contacts to **AIFor
 1. Click the **Bin** icon on the record you want to delete.
 2. Select **Yes** in the popup to delete the record.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

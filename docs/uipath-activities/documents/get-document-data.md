@@ -55,4 +55,4 @@ description: >-
 * **Data Filtering:** Utilize the optional filters effectively to retrieve only the necessary data, improving performance and reducing processing time.
 * **Data Integrity:** Ensure that the document ID and any specified filters are valid and accessible to avoid errors during the retrieval process.
 * **Further Processing:** The resulting list of`DocumentDataViewModel`objects can be used for further processing, analysis, or reporting within your workflow.
- IgnoreCase Multiline IgnoreCase Multiline
+

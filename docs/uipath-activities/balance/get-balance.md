@@ -38,4 +38,4 @@ description: Get remaining credit balance per project/service.
 * **Effective Date:** Use the effective date to retrieve the balance as of a specific date. If not specified, the current date may be used by default.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the balance to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
- IgnoreCase Multiline IgnoreCase Multiline
+

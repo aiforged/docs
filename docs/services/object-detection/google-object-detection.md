@@ -166,7 +166,7 @@ Get results in minutes:
   * No. AIForged manages provider connections and authentication for you.
 * **How do I improve results for specialized domains (e.g., manufacturing, healthcare)?**
   * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

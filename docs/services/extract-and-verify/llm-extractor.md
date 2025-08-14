@@ -234,7 +234,7 @@ To upload and process documents using the **LLM Extractor**:
 * Experiment with model parameters and prompt chaining to optimize speed and accuracy.
 * Regularly review extracted results, updating prompts and response formats as your needs evolve.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

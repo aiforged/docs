@@ -142,4 +142,4 @@ When to use:
   * A: Yes—e.g., Inbox → Outbox during processing; ensure transitions reflect your workflow.
 * Q: Is UsageType tied to status?
   * A: They complement each other: UsageType explains purpose; DocumentStatus tracks lifecycle.
- IgnoreCase Multiline IgnoreCase Multiline
+

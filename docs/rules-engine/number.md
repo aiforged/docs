@@ -12,5 +12,5 @@ The option to remove any invalid character (**Non-Numerical**) can be selected t
 Additional parsing formats and other cultures can be added to the Number Rule Type by clicking on the "_Click here to add new row_".
 
 ![](../assets/image%20%2824%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

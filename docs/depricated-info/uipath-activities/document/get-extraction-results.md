@@ -26,5 +26,5 @@ Get Extraction Results
 ### Activity Property View
 
 ![](../../../assets/image%20%2832%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

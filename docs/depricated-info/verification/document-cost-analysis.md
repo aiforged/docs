@@ -38,4 +38,4 @@ Groupings displays the Type of Groupings, you can navigate into a group if the g
 
 * The top layer displays the table and drills down to the Row, and the the Column
 
- IgnoreCase Multiline IgnoreCase Multiline
+

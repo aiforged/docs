@@ -13,4 +13,4 @@ The Document activities in the AIForged UiPath Activities provides a comprehensi
 * **Performance Considerations**: Handling large document sets can impact performance. The activities include options to optimize processing times and resource usage, allowing users to configure operations that align with their performance goals while ensuring efficient document management.
 
 By utilizing the document activities, users can enhance their automation workflows with powerful document management capabilities, driving efficiency, accuracy, and operational excellence.
- IgnoreCase Multiline IgnoreCase Multiline
+

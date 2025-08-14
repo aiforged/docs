@@ -14,6 +14,6 @@
     ![](../../assets/image%20%2869%29%20%281%29.png)
 * Add a new **Category** to upload the training documents.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 

@@ -58,4 +58,4 @@ The Usage by date piechart displays the usage of all your services by date
 
 * Clicking on the "Export to Excel" in the Action bar will download an excel export file to your local machine
 
- IgnoreCase Multiline IgnoreCase Multiline
+

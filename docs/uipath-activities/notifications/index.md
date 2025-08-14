@@ -12,4 +12,4 @@ The Notifications activities of the AIForged UiPath Activities provides a compre
 * **Performance Considerations**: Managing a large volume of notifications can impact performance. Users are encouraged to utilize filtering and pagination options to efficiently handle notifications, ensuring that system resources are optimized while maintaining effective communication.
 
 By incorporating notification activities into your UiPath workflows, you can enhance your ability to monitor, manage, and respond to events, driving improved operational effectiveness and responsiveness across your automation initiatives.
- IgnoreCase Multiline IgnoreCase Multiline
+

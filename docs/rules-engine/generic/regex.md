@@ -12,5 +12,5 @@ In the next example below, a **RegEx** pattern is shown to look for "Word" prece
 To add another **Regular Expression** to the **Regular Expression Mapping Dictionary**, click on "_Click here to add a new row_".
 
 ![](../../assets/image%20%28148%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

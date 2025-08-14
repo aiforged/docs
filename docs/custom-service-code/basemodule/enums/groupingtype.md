@@ -206,4 +206,4 @@ When to use:
   * A: Use Array for repeating values without a strict row/column structure; use Table for structured tabular data.
 * Q: Why are there gaps in numeric values (e.g., no 6)?
   * A: Numeric values are versioned for compatibility; not all slots are used.
- IgnoreCase Multiline IgnoreCase Multiline
+

@@ -28,5 +28,5 @@ Get Parameter definition
 ### Activity Property View
 
 ![](../../../assets/image%20%2894%29%20%281%29%20%281%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 

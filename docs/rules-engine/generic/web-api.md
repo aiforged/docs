@@ -13,5 +13,5 @@ The following properties can be configured to build up the **HTTP** request:
 * HTTP Body
 * HTTP Headers
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

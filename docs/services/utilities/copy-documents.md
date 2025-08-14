@@ -191,7 +191,7 @@ Get results in minutes:
   * Use Source Extension and Pattern filters to copy only what you want.
 * **How do I verify copy results?**
   * Check the destination service’s Inbox/Outbox and confirm copied files and expected metadata.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

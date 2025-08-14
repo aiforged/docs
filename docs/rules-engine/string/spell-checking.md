@@ -19,5 +19,5 @@ The following optional **Options** are available to assist with Spell Checking:
 | Translate From | Form language                                                                                                                       |
 | Translate To   | Destination language to translate text to                                                                                           |
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

@@ -149,4 +149,4 @@ Tip:
 * Validate equal length before HammingDistance.
 * Keep regex specific and anchored to avoid partial, unintended matches.
 * Log matches and misses and iterate on minConfidence thresholds with real-world data.
- IgnoreCase Multiline IgnoreCase Multiline
+

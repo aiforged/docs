@@ -61,6 +61,6 @@ Unstructured documents contain rich free-form text with little to no consistent 
   * Apply targeted extraction rules, NLP, or verification to pinpoint entities and clauses
 
 ![](../assets/image%20%282%29.png)
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 

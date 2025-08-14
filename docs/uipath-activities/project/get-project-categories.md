@@ -29,4 +29,4 @@ description: Retrieve all categories for a given project.
 * **Permissions:** Verify that the necessary permissions are in place for the user or application retrieving the categories to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as network connectivity problems or invalid input data.
 * **Project Scope:** The activity retrieves all categories within the specified project, facilitating operations that require access to multiple categories.
- IgnoreCase Multiline IgnoreCase Multiline
+

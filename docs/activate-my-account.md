@@ -29,5 +29,5 @@ If you encounter any issues activating your AIForged account, please consider th
   * Check your junk or spam folder for the activation email.
   * Verify that the details entered match exactly with those provided during registration, including the activation token.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 

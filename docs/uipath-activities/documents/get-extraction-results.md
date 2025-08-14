@@ -28,4 +28,4 @@ description: Retrieve a document's extraction results by its unique identifier.
 * **Data Integrity:** Ensure that the document ID is valid and accessible to avoid errors during the extraction process.
 * **Further Processing:** The resulting list of`DocumentExtraction`objects can be used for further processing, analysis, or reporting within your workflow.
 * **Performance:** The execution time may vary depending on the size and complexity of the document. Ensure the system is properly configured to handle the expected load.
- IgnoreCase Multiline IgnoreCase Multiline
+

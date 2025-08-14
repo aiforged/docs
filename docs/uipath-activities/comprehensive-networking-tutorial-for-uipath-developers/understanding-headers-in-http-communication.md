@@ -60,4 +60,4 @@ When a proxy server is involved in HTTP communication, additional headers may be
 * **Evaluate Caching Behavior:** Analyze the`X-Cache`header to understand if the response was served from cache, which can affect response times and data freshness.
 
 By understanding HTTP headers, especially those related to proxies, developers can better interpret server responses, diagnose issues, and optimize communication between clients, servers, and intermediary entities.
- IgnoreCase Multiline IgnoreCase Multiline
+

@@ -82,7 +82,7 @@ To upload and process documents using the Clustering Service:
 * In the Clustering Service, change the usage filter to **Outbox**.
   ![](../../assets/image%20%2825%29%20%281%29%20%281%29.png)
 * Open any processed document to view clustering results and perform verification.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

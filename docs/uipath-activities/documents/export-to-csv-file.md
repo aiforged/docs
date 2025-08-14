@@ -52,4 +52,4 @@ description: Export a document's extraction results to a CSV file.
 * **CSV Formatting:** The chosen CSV separator should not conflict with the data content to ensure proper CSV formatting.
 * **File Path:** Ensure that the specified file path is valid and accessible. The application must have write permissions to save the file at the specified location.
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
- IgnoreCase Multiline IgnoreCase Multiline
+

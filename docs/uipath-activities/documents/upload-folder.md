@@ -59,4 +59,4 @@ description: Upload documents from a given folder path.
 * **Permissions:** Ensure the necessary permissions are in place for the user or application performing the upload operation to prevent unauthorized actions.
 * **Error Handling:** Implement error handling to manage potential issues such as file access errors or network connectivity problems.
 * **Recursive Option:** Be mindful of the recursive option, as it may result in uploading a large number of files, affecting performance and execution time.
- IgnoreCase Multiline IgnoreCase Multiline
+

@@ -181,7 +181,7 @@ To upload and process documents using the Google Handwriting service:
 * **What languages are supported?**
   * Many languages are supported; accuracy varies by script and image quality. Provide a Language hint when possible and test with samples.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

@@ -39,4 +39,4 @@ description: Export a document's extraction results to a combined DataTable.
 * **Category Filtering:** Use document category IDs to refine the export results, focusing on specific subsets of documents if needed.
 * **Data Handling:** The resulting DataTables provide a structured format for the extracted data, suitable for further processing, analysis, or reporting within your workflow.
 * **Combining Rows:** When combining by external ID, ensure that the external ID field is consistently populated across documents to achieve the desired output.
- IgnoreCase Multiline IgnoreCase Multiline
+

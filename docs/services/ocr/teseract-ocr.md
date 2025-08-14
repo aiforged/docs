@@ -165,7 +165,7 @@ To upload and process documents using the Tesseract OCR Service:
 !!! info
     Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

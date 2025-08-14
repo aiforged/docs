@@ -33,5 +33,5 @@ The following are the latest and most capable Vision Services available in AIFor
 
 !!! info
     Vision services can be combined with extraction, classification, and workflow utilities for advanced, automated document and media pipelines.
- IgnoreCase Multiline IgnoreCase Multiline
+
 

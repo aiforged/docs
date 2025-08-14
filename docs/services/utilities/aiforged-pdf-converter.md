@@ -166,7 +166,7 @@ Most users can keep defaults. Common settings include:
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * What should I do for extremely large PDFs or TIFFs?
   * Use the AIForged Document Splitter to chunk by page range for responsiveness and reliability.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

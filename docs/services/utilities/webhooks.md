@@ -274,7 +274,7 @@ Get a webhook integrated in minutes:
 **How secure are webhook calls from AIForged?**
 
 * Always use HTTPS endpoints and include authentication headers. You can further secure by whitelisting AIForged IPs or using custom secret headers.
- IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 
