@@ -1,0 +1,16 @@
+# Python virtual environments
+**/.venv/
+.venv/
+venv/
+ENV/
+env/
+# In case one was created under scripts/ previously
+scripts/.venv/
+
+# MkDocs build output
+site/
+
+# Optional: OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
