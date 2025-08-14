@@ -15,7 +15,7 @@ Pick your platform:
 
 ### Windows (PowerShell)
 1) Clone the repo:
-   - git clone https://github.com/<org-or-user>/<repo>.git
+   - git clone https://github.com/aiforged/docs.git
    - cd <repo>
 2) Start the docs server:
    - Double-click Start-Docs-Server.cmd
@@ -24,7 +24,7 @@ Pick your platform:
 
 ### macOS / Linux
 1) Clone the repo:
-   - git clone https://github.com/<org-or-user>/<repo>.git
+   - git clone https://github.com/aiforged/docs.git
    - cd <repo>
 2) Make the script executable (first time only):
    - chmod +x scripts/dev.sh
@@ -53,30 +53,39 @@ Notes
 - Link with a relative path from your page:
   - ![](assets/example.png)
 - If you paste images frequently, we recommend the VS Code “Paste Image” extension and add these settings (Workspace settings.json):
+  ```json
+  // .vscode/settings.json
   {
     "pasteImage.path": "${projectRoot}/docs/assets",
     "pasteImage.basePath": "${projectRoot}",
     "pasteImage.forceUnixStyleSeparator": true,
-    "pasteImage.prefix": "assets/"
+    "pasteImage.prefix": "assets/",
+    "pasteImage.insertPattern": "![${currentFileNameBase}](${imageFilePath})",
+    "pasteImage.namePrefix": "img-"
   }
+  ```
 
 ### Admonitions (tips, notes, warnings)
 Use MkDocs Material admonitions:
+```markdown
 - !!! info "Optional title"
     Indented content (4 spaces)
 - !!! warning
     Be careful with...
+```
 
-Important: Indent every content line under the !!! header with 4 spaces.
+Important: Indent every content line under the !!! header with 4 spaces (1 tab).
 
 ### Tabs
 Tabbed content example:
+```markdown
 - === "Tab A"
     Content for A
 - === "Tab B"
     Content for B
+```
 
-Again, indent the tab body with 4 spaces.
+Again, indent the tab body with 4 spaces (1 tab).
 
 ---
 
@@ -84,10 +93,12 @@ Again, indent the tab body with 4 spaces.
 
 The navigation is defined in mkdocs.yml under nav:. To add a page, add an entry pointing to the file under docs/. Example:
 
+```markdown
 - 📣 Release Notes: release-notes.md
 - 📃 Documents:
   - Overview: documents/index.md
   - Document Types: documents/documemt-types.md
+```
 
 YAML is indentation-sensitive:
 - Use two spaces per indent.
@@ -100,6 +111,7 @@ YAML is indentation-sensitive:
 Material for MkDocs supports both built-in and custom themes.
 
 Quick change (built-in colors) in mkdocs.yml:
+```markdown
 theme:
   palette:
     - scheme: slate
@@ -108,9 +120,11 @@ theme:
     - scheme: default
       primary: teal
       accent: indigo
+```
 
 Custom brand colors via CSS:
 1) Edit or create docs/assets/theme.css with your CSS variables:
+```css
 :root {
   --md-primary-fg-color: #0b6d53;
   --md-accent-fg-color: #ff6f00;
@@ -119,9 +133,12 @@ Custom brand colors via CSS:
   --md-primary-fg-color: #13a085;
   --md-accent-fg-color: #ff8f1a;
 }
+```
 2) Reference it in mkdocs.yml:
+```markdown
 extra_css:
   - assets/theme.css
+```
 
 ---
 
@@ -189,19 +206,6 @@ Recommended extensions:
 We also provide tasks under .vscode/ (if present):
 - Docs: Serve (MkDocs)
 - Docs: Build (strict)
-
----
-
-## Migration utilities (from GitBook)
-
-We’ve added helper scripts that have already normalized most content:
-- Asset links (.gitbook/assets → assets/, URL-encoding)
-- Directory links (…/ → …/index.md)
-- GitBook hint tags ({% hint %} → !!! admonitions)
-- Trailing slash markers at line ends (\ or /) → real line breaks
-- Broken references cleanup
-
-If new GitBook artifacts sneak in (e.g., from copy/paste), ask a maintainer or run the fixer scripts found in the repository’s scripts/ or tooling folder.
 
 ---
 
