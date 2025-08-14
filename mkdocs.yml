@@ -49,8 +49,8 @@ nav:
   - 🔂 Multi-Factor Authentication: multi-factor-authentication.md
   - 🤵 User Profile: user-profile.md
   - 💡 Agents:
-    - Overview: projects/index.md
-    - 🧠 Understanding Agents: projects/understanding-projects.md
+    - Overview: agents/index.md
+    - 🧠 Understanding Agents: agents/understanding-agents.md
   - 📃 Documents:
     - Overview: documents/index.md
     - ℹ️ Document Types: documents/documemt-types.md
