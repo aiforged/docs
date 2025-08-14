@@ -41,7 +41,7 @@ nav:
   - 🏡 Home: index.md
   - 🚀 Getting Started: getting-started.md
   - 📣 Release Notes: release-notes.md
-  - 📬 How to access AIForged: how-to-install-aiforged.md
+  - 📬 How to access AIForged: how-to-access-aiforged.md
   - ✏️ Register: register.md
   - ✅ Activate my account: activate-my-account.md
   - ❓ Forgot Password: forgot-password.md
@@ -56,12 +56,12 @@ nav:
     - ℹ️ Document Types: documents/documemt-types.md
     - ❓ Document Categories: documents/document-categories.md
     - ⏩ Understanding Document Flows: documents/understanding-document-flows.md
-    - Document Retention: documents/document-retention.md
+    - 🗄️ Document Retention: documents/document-retention.md
     - ➕ Document Attributes: documents/document-attributes.md
     - 🧠 Understanding the Documents Section: documents/understanding-the-documents-page.md
     - ↗️ Processing documents:
       - Overview: documents/processing-documents/index.md
-      - Processing Paramaters: documents/processing-documents/processing-paramaters.md
+      - Processing Paramaters: documents/processing-documents/processing-parameters.md
   - 👓 AI Services:
     - Overview: services/index.md
     - 🗂️ Scrapers:

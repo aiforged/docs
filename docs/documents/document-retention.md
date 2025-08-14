@@ -1,8 +1,8 @@
 ---
-title: Document Retention
+title: 🗄️ Document Retention
 ---
 
-## Document retention Policies
+## Document Retention Policies
 
 AIForged offers two options for document and data retention: Automatic and Manual, putting you in control of your data.
 
