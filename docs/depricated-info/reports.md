@@ -9,12 +9,10 @@ The **Reports** **Page** provides access to various reports for **Projects,** **
 
 These pages are **Interactive**, and you can actively adjust filters or drill into report objects.
 
-<figure><img src="../assets/image%20%2849%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%2849%29%20%282%29.png)
 The navigation panel at the bottom of the **Reports Page** provides access to a broad selection of reporting categories and scopes.
 
-<figure><img src="../assets/image%20%28173%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%28173%29.png)
 There are currently 34 **Report Views** available:
 
 | Name                                | Description                                                                                   |
@@ -56,3 +54,4 @@ There are currently 34 **Report Views** available:
 | Marketplace Usage                   | Shows users per project and service on the marketplace.                                       |
 
  IgnoreCase Multiline IgnoreCase Multiline
+

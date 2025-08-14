@@ -40,10 +40,9 @@ The **Get Balance** activity will return a **result** which may be parsed to ano
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%282%29%20%285%29.png" alt=""><figcaption><p>Get Balance Activity</p></figcaption></figure>
-
+![](../../../assets/image%20%282%29%20%285%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2894%29%20%281%29.png" alt=""><figcaption><p>Get Balance Activity Properties View</p></figcaption></figure>
-
+![](../../../assets/image%20%2894%29%20%281%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

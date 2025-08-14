@@ -4,8 +4,7 @@ hidden: true
 
 # Microsoft Custom Vision
 
-<figure><img src="../../assets/image%20%283%29%20%286%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%283%29%20%286%29.png)
 The **Microsoft Custom Vision Service** is a **Classification** service that allows users to customize and embed state-of-the-art computer vision image analysis for specific domains with **Azure Cognitive Services**.
 
 The **Microsoft Custom Vision Service** allows users to create **Custom Tags** from documents or images, based on their own custom needs for image recognition. Users start by uploading samples of each **Custom Tag** and sending them to **Azure Cognitive Services** to train the **Classification** model\*\*.\*\*
@@ -23,12 +22,11 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
    ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Custom Vision Service** from the available **Service Types.**
 
-    <figure><img src="../../assets/image%20%282%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%282%29%20%284%29.png)
 4.  A new **Service Configuration Wizard** will open:
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../assets/image%20%28123%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%28123%29.png)
 * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
 * **Step 2 -** Allows adding **User Defined Categories** to train the service on.
 * **Step 3 -** Training
@@ -39,7 +37,7 @@ The **Microsoft Custom Vision Service** allows users to create **Custom Tags** f
   3. Upload files for each **User Defined Category** you wish to train the service on.
   4.  Once you have uploaded all your documents, click the **Train Service** button in the command bar to train your service. (**Note** that training can take **several** minutes!)
 
-      <figure><img src="../../assets/image%20%284%29%20%286%29.png" alt=""><figcaption></figcaption></figure>
+      ![](../../assets/image%20%284%29%20%286%29.png)
   5. Click **Process** on the dialog window that appears. Leave all settings as default.
   6. A progress dialog will appear displaying the progress of the training.
      Training times can vary depending on the number of files that have been uploaded for training.
@@ -79,5 +77,6 @@ It is recommended to only process a few documents at a time, especially if it is
 2. You can view your **Processing** results by opening a processed doc for verification.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

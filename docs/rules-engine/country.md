@@ -2,8 +2,7 @@
 
 The **Country Rule Type** can be applied to any field where a country's name is expected.
 
-<figure><img src="../assets/image%20%28144%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%28144%29.png)
 The following fields can be derived from the extracted data value:
 
 * Name
@@ -19,3 +18,4 @@ The following fields can be derived from the extracted data value:
 * Intermediate Region Code
 
  IgnoreCase Multiline IgnoreCase Multiline
+

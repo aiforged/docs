@@ -54,6 +54,7 @@ nav:
   - 📃 Documents:
     - Overview: documents/index.md
     - ℹ️ Document Types: documents/documemt-types.md
+    - ❓ Document Categories: documents/document-categories.md
     - ⏩ Understanding Document Flows: documents/understanding-document-flows.md
     - Document Retention: documents/document-retention.md
     - ➕ Document Attributes: documents/document-attributes.md

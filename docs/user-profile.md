@@ -35,24 +35,20 @@ To upload a new profile picture
 
 1. Click on your profile icon or drag and drop an image over your profile icon.
 
-<div align="left"><figure><img src="assets/image%20%2836%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
-
+![](assets/image%20%2836%29%20%281%29.png)
 ## Security
 
 ### Password
 
 You can change your password in the **Password** card. Simply follow the prompts, complete the necessary details (old password, new password and security check) and click on **Save**.
 
-<div align="left"><figure><img src="assets/image%20%2839%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="assets/image%20%2840%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
-
+![](assets/image%20%2839%29%20%281%29.png)
+![](assets/image%20%2840%29%20%281%29.png)
 ### Login Providers
 
 If you have logged in with any of the available external login providers, then they will be listed in the Login Providers card, with the option to unlink a provider.
 
-<div align="left"><figure><img src="assets/image%20%2837%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
-
+![](assets/image%20%2837%29%20%281%29.png)
 #### Available External Login Providers:
 
 * Microsoft
@@ -94,17 +90,15 @@ Notifications are sent on an **OPT-IN** basis
 
 ### Example
 
-<figure><img src="assets/image%20%2868%29.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](assets/image%20%2868%29.png)
+![](assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 ## Studio Preferences
 
 Studio preferences allow you to customise various aspects of the UI, such as default filter ranges, and default behaviours for certain views and dialogs.
 
-<figure><img src="assets/image%20%2843%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](assets/image%20%2843%29%20%281%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

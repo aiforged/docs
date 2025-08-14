@@ -46,10 +46,10 @@ Follow these steps to add and configure the Microsoft Object Detection service t
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image%20%285%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%285%29.png)
       2.
 
-          <figure><img src="../../assets/image%20%286%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%286%29.png)
    2. **Step 1: General Settings** Configure the service settings.
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._
       ![](../../assets/image%20%287%29.png)
@@ -162,6 +162,7 @@ To upload and process documents using the Microsoft Object Detection Service:
   * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

@@ -311,8 +311,7 @@ To compute MD5, add this assembly to the Custom Code “Assemblies” list:
 
 * `System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
 
-<figure><img src="../assets/image%20%2822%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%2822%29.png)
 ***
 
 ### Step 6 — Add Required Import
@@ -321,8 +320,7 @@ To compute MD5, add this import to the Custom Code “Imports” list:
 
 * `System.Security.Cryptography`
 
-<figure><img src="../assets/image%20%2823%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%2823%29.png)
 ***
 
 ### Step 7 — Save Your Code
@@ -388,6 +386,7 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
   Swap WorkItemMethod.Random for Idle or HighThroughput, or route to ProjectOwner/DocumentOwner depending on your workflow.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

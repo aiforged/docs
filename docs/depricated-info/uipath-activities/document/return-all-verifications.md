@@ -30,10 +30,9 @@ Rerun All Verifications
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%2893%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2893%29%20%281%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%28102%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%28102%29%20%281%29%20%281%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

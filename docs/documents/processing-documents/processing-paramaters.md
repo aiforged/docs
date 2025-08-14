@@ -6,8 +6,7 @@ When processing a document, multiple processing parameters are available that ca
 
 ## Processing parameters
 
-<div align="left"><figure><img src="../../assets/image%20%2879%29.png" alt=""><figcaption></figcaption></figure></div>
-
+![](../../assets/image%20%2879%29.png)
 ***
 
 * **Reset Previous Comments**: Clears the comment field in the document's metadata. If disabled, new process comments will be appended to existing ones.
@@ -18,3 +17,4 @@ When processing a document, multiple processing parameters are available that ca
 * **Force Re-Processing**: Forces the document to be fully processed again (default). On some services setting this false will allow the processing to bypass certain pre-processing functions such as document OCR if the document was previously processed.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

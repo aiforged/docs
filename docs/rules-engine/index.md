@@ -24,10 +24,9 @@ One of the following can be assigned to a field on a document, and is explained 
 
 To setup a **Rule**, select any field on a document, and select **Show Definition**.
 
-<figure><img src="../assets/image%20%28133%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%28133%29.png)
 This will open the dialogue to select and configure the **Rule**. The **Rule Type** can be assigned here for the selected field.
 
-<figure><img src="../assets/image%20%28150%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%28150%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

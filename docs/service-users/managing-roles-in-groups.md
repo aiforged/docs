@@ -31,17 +31,17 @@ Follow these steps to create a new role within a Usergroup:
     Go to the Organisations section in AIForged.
 
 
-    <div align="left"><figure><img src="../assets/image%20%2889%29.png" alt=""><figcaption></figcaption></figure></div>
+    ![](../assets/image%20%2889%29.png)
 2.  **Select the Relevant Group**
     Choose the Usergroup where you wish to add a new role. Click on its name to open its management view.
 
 
-    <div align="left"><figure><img src="../assets/image%20%2890%29.png" alt=""><figcaption></figcaption></figure></div>
+    ![](../assets/image%20%2890%29.png)
 3.  **Initiate Role Creation**
     Click on the **Create Role** ![](../assets/image%20%2891%29.png) button to start defining a new role.
 
 
-    <figure><img src="../assets/image%20%2892%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../assets/image%20%2892%29.png)
 4.  **Fill in Role Details**
 
     1. **Role Name**
@@ -55,7 +55,7 @@ Follow these steps to create a new role within a Usergroup:
     4. **Members (Optional)**
        Start inviting members or create new users directly from the role management dialog!
 
-    <div align="left"><figure><img src="../assets/image%20%2894%29.png" alt=""><figcaption></figcaption></figure></div>
+    ![](../assets/image%20%2894%29.png)
 5. **Confirm and Save**
    Review the details and complete the process to create your new role.
 
@@ -69,18 +69,16 @@ To remove a role from a Usergroup, follow these steps:
     Locate the role you wish to delete and click the **More options** action.
 
 
-    <figure><img src="../assets/image%20%2895%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../assets/image%20%2895%29.png)
 2.  **Select Delete**
     Click on the **Delete** option.
 
-    <div align="left"><figure><img src="../assets/image%20%2896%29.png" alt=""><figcaption></figcaption></figure></div>
-
-
+    ![](../assets/image%20%2896%29.png)
 3.  **Confirm Deletion**
     If you are sure you want to delete the user role, then click on **Yes**, otherwise click **No**
 
-    <figure><img src="../assets/image%20%2897%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../assets/image%20%2897%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

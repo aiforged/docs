@@ -46,28 +46,23 @@ This section will discuss in detail the code that is required to implement the *
 
     ***
 
-    <figure><img src="../../assets/image%20%28222%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%28222%29.png)
     Click on **Create Custom Dataset** in the **Service Parameter** view.\\
 
-    <figure><img src="../../assets/image%20%28187%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%28187%29.png)
     Enter a name for the new **Custom Dataset**, for instance "BankStatementsDataSet" and click **Submit**.
 
-    <figure><img src="../../assets/image%20%2847%29%20%281%29%20%281%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%2847%29%20%281%29%20%281%29%20%282%29.png)
     This will create a **Parameter Definition** for the **BankStatementsDataset Custom Dataset**. Note the ID of the **Parameter Definition**.\\
 
-    <figure><img src="../../assets/image%20%28242%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%28242%29.png)
 5.  Add column names for **Name** and **Salary** to the **Custom Dataset**. \*\*\*\* Double-click on the **BankStatementsDataset Custom Dataset** to open the dialogue.\
 
-    <figure><img src="../../assets/image%20%28214%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%28214%29.png)
     Enter **Name** in the Column Name textbox, and click on **New Column** to add a column for **Name**. Repeat for the column name **Salary**.
 
-    <figure><img src="../../assets/image%20%28206%29.png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../assets/image%20%28143%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%28206%29.png)
+    ![](../../assets/image%20%28143%29.png)
 6.  As mentioned, this **Custom Dataset** was created for the **Parent Service** of the **Custom Service Code**. The **Parent Service** can be retrieved in code in order to access the **Custom Dataset** by calling **module.GetParentService**. The **Custom Dataset** object can be retrieved by calling **module.GetDataSetByDef**.\
 
     ```csharp
@@ -250,5 +245,6 @@ foreach (IDocument doc in docs)
 \\
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

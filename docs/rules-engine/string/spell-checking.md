@@ -2,8 +2,7 @@
 
 The **Spell Checking** mode can be selected by clicking on **Mode** dropdown list.
 
-<figure><img src="../../assets/image%20%28114%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28114%29.png)
 Two **Spell Checking** modes are available:
 
 | Mode  | Description |
@@ -21,3 +20,4 @@ The following optional **Options** are available to assist with Spell Checking:
 | Translate To   | Destination language to translate text to                                                                                           |
 
  IgnoreCase Multiline IgnoreCase Multiline
+

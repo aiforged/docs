@@ -6,8 +6,7 @@ hidden: true
 
 ​
 
-<figure><img src="../../assets/image%20%2810%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2810%29%20%282%29.png)
 The ​**Microsoft Invoice Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. The service also extracts individual line items from the invoice and is presented in table format.
 
 No custom training of a **Microsoft Invoices Service** is required. The service utilizes internal pre-built invoice models when trying to extract information from **Invoice Documents**.
@@ -24,12 +23,11 @@ No custom training of a **Microsoft Invoices Service** is required. The service 
    ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Invoices Service** from the available **Service Types.**
 
-    <figure><img src="../../assets/image%20%2827%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%2827%29%20%281%29%20%281%29%20%281%29.png)
 4.  A new **Service Configuration Wizard** will open:
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../assets/image%20%283%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%283%29%20%285%29.png)
     1. **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     2. **Step 2 -** Allows adding **User Defined Categories** to train the service on.
     3. **Step 3 -** Verification of any documents that have been processed.
@@ -59,5 +57,6 @@ It is recommended to only process a few documents at a time, especially if it is
 2. You can view the **Processing** results by opening a processed doc for verification.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

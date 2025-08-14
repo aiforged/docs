@@ -57,10 +57,10 @@ Follow these steps to add and configure the Microsoft Handwriting Service to you
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image%20%28266%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%28266%29.png)
       2.
 
-          <figure><img src="../../assets/image%20%28267%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%28267%29.png)
    2. **Step 1: General Settings**
       Configure the service name, description, and core settings.
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._
@@ -170,6 +170,7 @@ To upload and process documents using the Microsoft Handwriting Service:
 * Enable IsVerification if you need to review lines and words visually alongside the Result text.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

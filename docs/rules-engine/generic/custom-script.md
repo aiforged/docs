@@ -19,8 +19,8 @@ The following languages are available for selection when writing **Custom Code**
 
 The language can be selected form the **Code Language** dropdown box. Refer to [BaseModule](../../custom-service-code/basemodule/ibasemodule-interface-data-types.md) for the available exposed methods that can be used in **Custom Code**.
 
-<figure><img src="../../assets/image%20%28157%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28157%29.png)
 For detailed documentation please see: [Custom Code](../../custom-service-code/README.md)
 
  IgnoreCase Multiline IgnoreCase Multiline
+

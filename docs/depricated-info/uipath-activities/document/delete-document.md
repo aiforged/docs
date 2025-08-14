@@ -22,10 +22,9 @@ Delete Document
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%2813%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2813%29%20%285%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2822%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2822%29%20%284%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

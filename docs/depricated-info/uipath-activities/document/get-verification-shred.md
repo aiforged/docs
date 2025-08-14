@@ -28,10 +28,9 @@ Get Verification Shred
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%281%29%20%2810%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%281%29%20%2810%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2815%29%20%287%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2815%29%20%287%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

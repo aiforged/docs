@@ -24,8 +24,7 @@ Structured documents present information in a fixed, predictable layout with cle
   * Use high-quality scans or digital originals
   * If handwriting is present, enable selection marks/handwriting options where available
 
-<figure><img src="../assets/image.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image.png)
 ### Semi-structured documents
 
 Semi-structured documents don’t follow a single rigid template, but they do follow common patterns. Core fields are consistent conceptually (e.g., “Invoice Number,” “Total,” “Date”), yet their positions, labels, and formats can vary by issuer or layout. Extraction for this class typically benefits from pretrained models that learn the “concepts” rather than fixed coordinates.
@@ -43,8 +42,7 @@ Semi-structured documents don’t follow a single rigid template, but they do fo
   * Use services trained for invoices/receipts to handle variability
   * For tables, enable table detection and verify column mapping
 
-<figure><img src="../assets/image%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%281%29.png)
 ### Unstructured documents
 
 Unstructured documents contain rich free-form text with little to no consistent layout or fixed fields. Valuable information may be embedded in paragraphs, clauses, or mixed content. These require layout-aware OCR coupled with semantic understanding or targeted rules.
@@ -62,7 +60,7 @@ Unstructured documents contain rich free-form text with little to no consistent 
   * Start with robust OCR/layout extraction
   * Apply targeted extraction rules, NLP, or verification to pinpoint entities and clauses
 
-<figure><img src="../assets/image%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../assets/image%20%282%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+
 

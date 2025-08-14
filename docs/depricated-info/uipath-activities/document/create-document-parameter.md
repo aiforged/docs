@@ -30,10 +30,9 @@ Create Document Parameter
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%2886%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2886%29%20%281%29%20%281%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2830%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2830%29%20%283%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

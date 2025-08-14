@@ -52,8 +52,7 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
     ![](../../assets/image%20%2824%29%20%281%29.png)
     or
 
-    <figure><img src="../../assets/image%20%2825%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%2825%29%20%281%29.png)
     * **Step 1: General Settings**
       Configure core settings such as service enablement, parallel prompt execution, and connection details for your LLM provider (e.g., Azure OpenAI).
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._
@@ -236,6 +235,7 @@ To upload and process documents using the **LLM Extractor**:
 * Regularly review extracted results, updating prompts and response formats as your needs evolve.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

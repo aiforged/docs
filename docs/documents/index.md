@@ -34,5 +34,3 @@ Documents are the heartbeat of your IDP workflows in AIForged. This section brin
 * Confidently choose the right service and configuration for your document types.
 * Trace a document’s lifecycle end-to-end (statuses, verifications, results) within the Service view.
 * Apply best practices for naming, categorization, and retention to keep projects tidy and compliant.
- IgnoreCase Multiline IgnoreCase Multiline
-

@@ -18,8 +18,7 @@ Get Project By Id
 
 **ProjectId** - This is the **Id** that was given to project when the project was created in AIForged. You can view the project Id in AIForged by hovering you mouse anywhere over the project name.
 
-<figure><img src="../../../assets/image%20%2811%29%20%284%29.png" alt=""><figcaption><p>View Of Project Id In <strong>AIForged</strong></p></figcaption></figure>
-
+![](../../../assets/image%20%2811%29%20%284%29.png)
 ### Misc
 
 **Private** - If not selected, the values of variables and arguments are at Verbose level.
@@ -30,10 +29,9 @@ Get Project By Id
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%289%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption><p>Get Project By Id Activity</p></figcaption></figure>
-
+![](../../../assets/image%20%289%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption><p>Get Project By Id Activity Properties</p></figcaption></figure>
-
+![](../../../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

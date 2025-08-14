@@ -15,8 +15,7 @@ The **Wallets and Billing** page lists all transactions made by each service and
 
 ## Filters
 
-<figure><img src="assets/image%20%284%29%20%281%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+![](assets/image%20%284%29%20%281%29%20%282%29.png)
 | Filter                         | Effect                                              |
 | ------------------------------ | --------------------------------------------------- |
 | From Date                      | The end date of the statement                       |
@@ -39,10 +38,10 @@ Each service will accumulate transactions as it processes documents
 * **Credits Used**: Indicates the amount of credits the service consumed.
 * **Services**: All the services within the project that have a charge associated with them.
 
-<figure><img src="assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+![](assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29.png)
 !!! info
     To drill down, select the service to see an Itemised Bill
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 

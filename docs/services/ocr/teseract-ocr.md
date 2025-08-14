@@ -58,10 +58,10 @@ Follow these steps to add and configure the Tesseract OCR Service to your agent:
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image%20%28270%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%28270%29.png)
       2.
 
-          <figure><img src="../../assets/image%20%28271%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%28271%29.png)
    2. Step 1: General Settings
       Configure core OCR settings such as service name and description.
       &#xNAN;_&#x44;efault settings are sufficient for most use cases._
@@ -166,6 +166,7 @@ To upload and process documents using the Tesseract OCR Service:
     Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

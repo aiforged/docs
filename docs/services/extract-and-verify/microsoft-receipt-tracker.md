@@ -4,16 +4,13 @@ hidden: true
 
 # Microsoft Receipts
 
-<figure><img src="../../assets/image%20%2826%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2826%29%20%283%29.png)
 The ​**Microsoft Receipts Service** makes use of pre-trained Invoice models to extract **Key-Value Pairs** of invoice-related data making use of **Microsoft Cognitive Services**. The processing of invoices returns typical information found on invoices, such as **Subtotal, Vat, Total,** and **Date**. **Microsoft Receipts** allows users to categorize and visualize their expenses. Below is an example of a receipt.
 
-<figure><img src="../../assets/image%20%284%29%20%281%29%20%282%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%284%29%20%281%29%20%282%29%20%281%29.png)
 The service extracts basic fields that can typically be found on a **Receipt**, such as the **Receipt #**, **Receipt Date**, **Vendor Name**, **Shipping Address Recipient**, and **Purchase Orders**, to name a few. In addition to this, the line items are also extracted.
 
-<figure><img src="../../assets/image%20%283%29%20%288%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%283%29%20%288%29.png)
 ## Supported Content Types
 
 * Pdf
@@ -34,12 +31,11 @@ If you need to use a different type of content, you can use the **AIForged Pdf C
    ![](../../assets/image%20%2882%29%20%282%29.png)
 3.  Select **Microsoft Receipts Service** from the available **Service Types.**
 
-    <figure><img src="../../assets/image%20%284%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%284%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 4.  A new **Service Configuration Wizard** will open:
     (When navigating the Wizard, please make sure to use the **Next Step** button in the command bar to save any changes made).
 
-    <figure><img src="../../assets/image%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29.png)
     * **Step 1** **-** Allows configuration of various service settings, including the name and description. The default settings are sufficient for most use cases.
     * **Step 2 -** Verification of any documents that have been processed.
       ![](../../assets/image%20%2884%29%20%281%29.png)
@@ -68,5 +64,6 @@ It is recommended to only process a few documents at a time, especially if it is
 ##
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

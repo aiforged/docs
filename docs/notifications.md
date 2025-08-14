@@ -17,7 +17,7 @@ You can filter the visible **Notifications** via the various filters available i
     The **Notification** will automatically be marked as read, and the contents of the **Notification body** will appear on the right-hand side.
 
 
-    <figure><img src="assets/image%20%28112%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](assets/image%20%28112%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+
 

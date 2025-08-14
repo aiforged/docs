@@ -16,8 +16,7 @@ If you have not received an account activation email within 30 minutes of your a
    * **Username/E-mail Address**: Use the unique username or e-mail address you registered with.
    * **Activation Token**: Enter the activation token provided in your activation email if it is not already pre-populated.
 
-<figure><img src="assets/image%20%2826%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](assets/image%20%2826%29%20%281%29%20%281%29.png)
 ### Troubleshooting
 
 If you encounter any issues activating your AIForged account, please consider the following:
@@ -31,3 +30,4 @@ If you encounter any issues activating your AIForged account, please consider th
   * Verify that the details entered match exactly with those provided during registration, including the activation token.
 
  IgnoreCase Multiline IgnoreCase Multiline
+

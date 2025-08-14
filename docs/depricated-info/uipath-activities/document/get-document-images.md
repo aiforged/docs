@@ -24,10 +24,9 @@ Get Document Images
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%282%29%20%286%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%282%29%20%286%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2812%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2812%29%20%285%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

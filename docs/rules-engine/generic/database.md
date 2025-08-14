@@ -2,8 +2,7 @@
 
 The **Database Rule Type** can be applied to any type of extracted data. This rule provides a means to directly interface with any **SQL Database**.
 
-<figure><img src="../../assets/image%20%28118%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28118%29.png)
 This **Rule Type** is useful when extracted data needs to be synchronized with other external databases, or when external data needs to be pulled into the **Service**.
 
 The following SQL Methods are available:
@@ -16,8 +15,7 @@ The following SQL Methods are available:
 
 The SQL Method can be selected by clicking on the **SQL Method** dropdown box.
 
-<figure><img src="../../assets/image%20%2816%29%20%282%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2816%29%20%282%29.png)
 The following properties can be configured for the SQL database connection:
 
 * The database provider (client)
@@ -25,3 +23,4 @@ The following properties can be configured for the SQL database connection:
 * The SQL Query to be executed (when SQL Query mode has been selected).
 
  IgnoreCase Multiline IgnoreCase Multiline
+

@@ -4,8 +4,7 @@ hidden: true
 
 # Microsoft Forms Layout
 
-<figure><img src="../../assets/image%20%2824%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2824%29%20%283%29.png)
 The **Microsoft Form Layout Service can e**xtract text and layout information from a given document. The input document must be of one of the supported content types - 'application/pdf', 'image/jpeg', 'image/png' or 'image/tiff'. Alternatively, use 'application/json' type to specify the Url location of the document to be analyzed.
 
 ## Supported Content Types
@@ -44,3 +43,4 @@ It is recommended to only process a few documents at a time, especially if it is
 ## Possible use cases
 
  IgnoreCase Multiline IgnoreCase Multiline
+

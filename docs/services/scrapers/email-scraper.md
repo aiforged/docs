@@ -70,8 +70,7 @@ AIForged supports prompt‑less device code flow for Microsoft 365. After initia
   2. Note the Tenant ID and Client ID.
   3. Enter both values in the Email Scraper configuration and enable Prompt‑less Code Flow.
 
-<figure><img src="../../assets/image%20%28279%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28279%29.png)
 * Operation
   The scraper retrieves a device token automatically on its first scheduled run. On subsequent runs, it retrieves emails without prompts.
 
@@ -126,8 +125,7 @@ Apply the following settings depending on your email provider. Values not listed
 
 Turn on Auto Execution to run the scraper at scheduled intervals. Adjust the interval based on expected mail volume and provider throttling.
 
-<figure><img src="../../assets/image%20%28280%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28280%29.png)
 ***
 
 ### View Imported Emails and Attachments
@@ -223,5 +221,6 @@ Get results in minutes:
   * Yes. Use separate scrapers for different mailboxes or folders to keep workflows organized and scalable.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

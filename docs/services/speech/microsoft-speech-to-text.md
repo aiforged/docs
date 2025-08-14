@@ -56,14 +56,13 @@ Follow these steps to add and configure the Microsoft Speech-to-Text Service to 
    1. Open the Service Configuration Wizard.
       1.
 
-          <figure><img src="../../assets/image%20%28275%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%28275%29.png)
       2.
 
-          <figure><img src="../../assets/image%20%28276%29.png" alt=""><figcaption></figcaption></figure>
+          ![](../../assets/image%20%28276%29.png)
    2.  **Step 1: General Settings** Configure the service name, description, and core settings. \_Default settings are sufficient for most use cases.
 
-       <figure><img src="../../assets/image%20%28277%29.png" alt=""><figcaption></figcaption></figure>
-
+       ![](../../assets/image%20%28277%29.png)
 ***
 
 ### Service Configuration Settings
@@ -142,6 +141,7 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 
 

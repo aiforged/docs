@@ -6,6 +6,6 @@ For example, a **Numeric** value may expected for a field, but the **OCR Service
 
 The **Replacement Mapping Dictionary** is used to provide a list of values to be mapped. The user is required to provide the **Key** (value to be replaced), and the corresponding mapped value. To add a new entry, click on "_Click here to add a new row"_.
 
-<figure><img src="../../assets/image%20%28147%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28147%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

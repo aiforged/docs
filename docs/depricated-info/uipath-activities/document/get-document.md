@@ -22,10 +22,9 @@ Get Document
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%2833%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2833%29%20%283%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2845%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2845%29%20%283%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

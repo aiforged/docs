@@ -20,8 +20,8 @@ Get Data Types
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%289%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%289%29%20%285%29.png)
 ### Activity Property View
 
  IgnoreCase Multiline IgnoreCase Multiline
+

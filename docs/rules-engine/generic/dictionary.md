@@ -6,8 +6,7 @@ For example, if a form contains a field for a **US State**, then the comprehensi
 
 The **Lookup Method** can be selected from the **Lookup Method** dropdown box.
 
-<figure><img src="../../assets/image%20%28135%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28135%29.png)
 The following **Lookup Methods** are available:
 
 | Lookup Method        | Description                                                                                                                |
@@ -20,6 +19,6 @@ The following **Lookup Methods** are available:
 
 The list of **Dictionary Entries** can be specified in the **Dictionary Options** table.
 
-<figure><img src="../../assets/image%20%28121%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28121%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

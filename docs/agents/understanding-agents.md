@@ -9,8 +9,7 @@ They serve as a quick reference of an agent's status, offering essential informa
 * **Project Name**: Clearly identifies the project.
 * **Summary Information**: Provides key details such as project description, available balance and relevant metadata about contained services.
 
-<div align="left"><figure><img src="../assets/image%20%2853%29%20%281%29.png" alt=""><figcaption></figcaption></figure></div>
-
+![](../assets/image%20%2853%29%20%281%29.png)
 !!! info
     Clicking on an agent card opens the full agent for detailed exploration and management.
 
@@ -18,5 +17,6 @@ They serve as a quick reference of an agent's status, offering essential informa
     To manage a service, see [Ai Services](../services//index.md)
 
  IgnoreCase Multiline IgnoreCase Multiline
+
 
 

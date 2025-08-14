@@ -2,8 +2,7 @@
 
 **General Rules** can be applied on any type of extracted data.
 
-<figure><img src="../../assets/image%20%28134%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28134%29.png)
 The available General Rules tabs can be accessed when viewing the **Parameter Definition** properties dialogue and include the following:
 
 * Dictionary
@@ -14,3 +13,4 @@ The available General Rules tabs can be accessed when viewing the **Parameter De
 * Database
 
  IgnoreCase Multiline IgnoreCase Multiline
+

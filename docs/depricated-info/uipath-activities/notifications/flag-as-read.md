@@ -22,10 +22,9 @@ Flag As Read
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%287%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%287%29%20%285%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2891%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2891%29%20%281%29%20%281%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+

@@ -2,82 +2,69 @@
 
 The **Work Flow** view visually shows Work Flow Items that require attention from a **HITL**.
 
-<figure><img src="../../assets/image%20%28152%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28152%29.png)
 The **HITL Work Flow** queue shows **Work Flow Items** that have been created for your **Username**. The Work Flow Item card shows all the information regarding the Verification required, these include:
 
 *   The Project name,
 
-    <figure><img src="../../assets/image%20%28165%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%28165%29.png)
 *   The Service name,
 
-    <figure><img src="../../assets/image%20%283%29%20%289%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%283%29%20%289%29.png)
 *   The document box the document currently resides in (document **Usage**),
 
-    <figure><img src="../../assets/image%20%2858%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%2858%29%20%281%29%20%281%29.png)
 *   Due date for the verification to be completed,
 
-    <figure><img src="../../assets/image%20%2854%29%20%283%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%2854%29%20%283%29.png)
 *   The **HITL** user assignment method used,
 
-    <figure><img src="../../assets/image%20%2812%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%2812%29%20%284%29.png)
 *   The status of the document of the field that requires verification,
 
-    <figure><img src="../../assets/image%20%289%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
+    ![](../../assets/image%20%289%29%20%284%29.png)
 *   The status of the **Work Flow Item**,
 
-    <figure><img src="../../assets/image%20%2813%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
-
+    ![](../../assets/image%20%2813%29%20%284%29.png)
 Every **Work Flow Item** has a **URL** link that can be used in a browser. This will launch the AIForged UI and open the Verification window for the entire **Document** or **Shred**. The link to the **Verification Work Flow Item** can be copied by clicking on the **Link Icon**.
 
-<figure><img src="../../assets/image%20%2845%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2845%29%20%281%29%20%281%29.png)
 Pasting this link in a web browser will result in the user being asked to open the **AIForgred UI**.
 
-<figure><img src="../../assets/image%20%28168%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28168%29.png)
 ## Field Verification
 
 Clicking on a **Work Flow Item** will open the **Document Verification** window. The user will be instructed to complete any verifications that are required on the document.
 
 ### Individual Field Verification
 
-<figure><img src="../../assets/image%20%28184%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28184%29.png)
 The number of fields that require verification is shown at the top of the **Document Designer** view.
 
-<figure><img src="../../assets/image%20%28208%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28208%29.png)
 The **Document Data Control** bar on the right-hand side shows the fields that require verification, which is denoted by the red **Warning Triangle**. This is also shown on the document at the location of the field.
 
-<figure><img src="../../assets/image%20%2821%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2821%29%20%285%29.png)
 To verify the value of the extracted text, click on the **Pencil** icon. This will open a dialogue that provides actions to the user to verify the field.
 
-<figure><img src="../../assets/image%20%2843%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2843%29%20%281%29%20%281%29.png)
 The value of the field is shown in the text box. If the OCR text is correct, the user can accept the Verification by clicking on the **Check Mark**.
 
-<figure><img src="../../assets/image%20%2815%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2815%29%20%284%29.png)
 Note that after a **Verification** value has been accepted, the **Status** of the **Field Parameter** has changed to **Verified**. The OCR **Confidence** has also changed to **100 %**.
 
-<figure><img src="../../assets/image%20%28151%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%28151%29.png)
 Once all the Field Parameters that required Verification have been verified, then the status of the entire document will change from **Verification** to **Processed**.
 
-<figure><img src="../../assets/image%20%288%29%20%285%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%288%29%20%285%29.png)
 ### Accept all Verifications
 
 It is also possible to accept all **Verification** without manually verifying each **Field** that required **Verification**. Select **Verification** from the **Actions Bar**, then select **Accept All** to immediately accepts all **Verification** values.
 
-<figure><img src="../../assets/image%20%2820%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%2820%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 This action will also immediately place the document in the **Processed** state from the **Verification** state.
 
-<figure><img src="../../assets/image%20%287%29%20%284%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../assets/image%20%287%29%20%284%29.png)
 ## Workflow algorithm setting options
 
 Work items get assigned to users set up to act as human-in-the-loop (HITL) agents via the doc verify and shred verify permissions. The following options are available to assign a user from the group to a created work item.
@@ -92,3 +79,4 @@ Work items get assigned to users set up to act as human-in-the-loop (HITL) agent
 | User           | A specific user is assigned.                                |
 
  IgnoreCase Multiline IgnoreCase Multiline
+

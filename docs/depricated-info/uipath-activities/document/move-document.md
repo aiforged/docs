@@ -30,10 +30,9 @@ Move Document
 
 ### Activity View
 
-<figure><img src="../../../assets/image%20%28112%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%28112%29%20%281%29.png)
 ### Activity Property View
 
-<figure><img src="../../../assets/image%20%2887%29%20%281%29%20%281%29.png" alt=""><figcaption></figcaption></figure>
-
+![](../../../assets/image%20%2887%29%20%281%29%20%281%29.png)
  IgnoreCase Multiline IgnoreCase Multiline
+
