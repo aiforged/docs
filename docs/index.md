@@ -211,4 +211,4 @@ AIForged is built on REST APIs and offers SDKs and RPA integrations so you can a
 
 ## Release notes & versioning
 
-We regularly ship improvements to services, utilities, and developer APIs. Track changes and upgrade guidance in Release Notes (if included in your deployment). For major changes, we maintain backward compatibility or provide clear migration paths through configuration and enums with explicit numeric values.
+We regularly ship improvements to services, utilities, and developer APIs. Track changes and upgrade guidance in [Release Notes](release-notes.md). For major changes, we maintain backward compatibility or provide clear migration paths through configuration and enums with explicit numeric values.
