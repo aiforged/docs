@@ -86,16 +86,16 @@ AIForged gives you two equally powerful ways to get started: via Studio (UI) or 
 
 1. Create or open an Agent
 2. Add a Service
-   - Structured/semi-structured: Extract & Verify or Document Intelligence
-   - Unstructured/variable: LLM Extractor (prompt + schema) for GenAI-powered extraction
+    - Structured/semi-structured: Extract & Verify or Document Intelligence
+    - Unstructured/variable: LLM Extractor (prompt + schema) for GenAI-powered extraction
 3. (Optional) Attach Utilities as pre/post-processors
-   - PDF Converter, Digitizer, Image Splitter, Copy/Move, Webhooks, Custom Code, Workflow Code
+    - PDF Converter, Digitizer, Image Splitter, Copy/Move, Webhooks, Custom Code, Workflow Code
 4. Ingest documents
-   - Upload directly or configure a Scraper (Email, OneDrive)
+    - Upload directly or configure a Scraper (Email, OneDrive)
 5. Process and verify
-   - Use HITL work items, assignment methods (Random, HighThroughput, Idle, etc.), and SLAs
+    - Use HITL work items, assignment methods (Random, HighThroughput, Idle, etc.), and SLAs
 6. Publish and integrate
-   - Export results, trigger webhooks, or hand off to downstream systems
+    - Export results, trigger webhooks, or hand off to downstream systems
 
 !!! tip
     For unstructured content (contracts, letters), use the LLM Extractor with a typed schema. Ground prompts with datasets for accuracy and enforce output types for reliability.
@@ -105,11 +105,11 @@ AIForged gives you two equally powerful ways to get started: via Studio (UI) or 
 Besides using AIForged Studio, you can create, manage, and report on agents, services, document flows, and HITL flows using:
 
 - REST APIs (foundation)
-  - Provision agents/services, ingest documents, orchestrate utilities, drive HITL, and report results
+    - Provision agents/services, ingest documents, orchestrate utilities, drive HITL, and report results
 - SDKs
-  - .NET (C#), JavaScript / TypeScript for strongly-typed development
+    - .NET (C#), JavaScript / TypeScript for strongly-typed development
 - RPA & low-code
-  - UiPath activities and Power Automate connector to embed AIForged in existing automations
+    - UiPath activities and Power Automate connector to embed AIForged in existing automations
 
 Typical sequence (high level):
 1. Create an agent and add a service (e.g., LLM Extractor or Extract & Verify)
@@ -147,25 +147,25 @@ See: [Documents → Document Types](documents/document-types.md)
 ## Where to go next
 
 - Documents  
-  - [Document Types](documents/document-types.md)  
-  - [Understanding Document Flows](documents/understanding-document-flows.md)  
-  - [Document Attributes](documents/document-attributes.md)  
-  - [Document Categories](documents/document-categories.md)
+    - [Document Types](documents/document-types.md)  
+    - [Understanding Document Flows](documents/understanding-document-flows.md)  
+    - [Document Attributes](documents/document-attributes.md)  
+    - [Document Categories](documents/document-categories.md)
 
 - Services  
-  - OCR: [Overview](services/ocr/index.md)  
-  - Extract & Verify: [Overview](services/extract-and-verify/index.md)  
-  - Vision: [Overview](services/vision/index.md)  
-  - Speech‑to‑Text: [Overview](services/speech-to-text/index.md)
-  - LLM Extractor: [Overview](services/llm-extractor/index.md)
+    - OCR: [Overview](services/ocr/index.md)  
+    - Extract & Verify: [Overview](services/extract-and-verify/index.md)  
+    - Vision: [Overview](services/vision/index.md)  
+    - Speech‑to‑Text: [Overview](services/speech-to-text/index.md)
+    - LLM Extractor: [Overview](services/llm-extractor/index.md)
 
 - Scrapers & Utilities  
-  - Scrapers: [Email](scrapers/email-scraper.md), [OneDrive](scrapers/onedrive-scraper.md)  
-  - Utilities: [Digitizer](utilities/digitizer.md), [PDF Converter](utilities/pdf-converter.md), [Image Splitter](utilities/image-splitter.md), [Copy/Move](utilities/copy-move.md), [Webhooks](utilities/webhooks.md)
+    - Scrapers: [Email](scrapers/email-scraper.md), [OneDrive](scrapers/onedrive-scraper.md)  
+    - Utilities: [Digitizer](utilities/digitizer.md), [PDF Converter](utilities/pdf-converter.md), [Image Splitter](utilities/image-splitter.md), [Copy/Move](utilities/copy-move.md), [Webhooks](utilities/webhooks.md)
 
 - Custom Code & Developer Docs  
-  - [Custom Code](custom-code/index.md)  
-  - [BaseModule](developers/basemodule/index.md)
+    - [Custom Code](custom-code/index.md)  
+    - [BaseModule](developers/basemodule/index.md)
 
 ---
 
@@ -174,27 +174,27 @@ See: [Documents → Document Types](documents/document-types.md)
 AIForged is built on REST APIs and offers SDKs and RPA integrations so you can automate everything you can do in AIForged Studio—programmatically.
 
 - REST APIs (foundation)
-  - Create, manage, and report on agents, services, document flows, and HITL flows via HTTP.
-  - Standard OAuth/Bearer authentication patterns.
-  - Consistent, versioned endpoints for stability.
+    - Create, manage, and report on agents, services, document flows, and HITL flows via HTTP.
+    - Standard OAuth/Bearer authentication patterns.
+    - Consistent, versioned endpoints for stability.
 
 - SDKs
-  - .NET (C#)
-  - JavaScript / TypeScript
-  - Available on application for other languages
-  - Use SDKs for strongly-typed access to core entities (agents, services, documents, datasets, work items).
+    - .NET (C#)
+    - JavaScript / TypeScript
+    - Available on application for other languages
+    - Use SDKs for strongly-typed access to core entities (agents, services, documents, datasets, work items).
 
 - RPA & low‑code integrations
-  - UiPath: Activities available to integrate AIForged in attended/unattended automations.
-  - Power Automate: Connector/integration to orchestrate flows across Microsoft 365 and line‑of‑business apps.
+    - UiPath: Activities available to integrate AIForged in attended/unattended automations.
+    - Power Automate: Connector/integration to orchestrate flows across Microsoft 365 and line‑of‑business apps.
 
 - What you can do programmatically (besides using Studio)
-  - Provision and configure agents and services
-  - Ingest documents (directly or via scrapers)
-  - Orchestrate end‑to‑end flows (utilities, extraction, verification)
-  - Create and route HITL work items
-  - Query results, verifications, statuses, and KPIs for reporting
-  - Manage datasets for lookups, enrichment, and deduplication
+    - Provision and configure agents and services
+    - Ingest documents (directly or via scrapers)
+    - Orchestrate end‑to‑end flows (utilities, extraction, verification)
+    - Create and route HITL work items
+    - Query results, verifications, statuses, and KPIs for reporting
+    - Manage datasets for lookups, enrichment, and deduplication
 
 ---
 
