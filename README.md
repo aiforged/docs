@@ -93,11 +93,12 @@ Again, indent the tab body with 4 spaces (1 tab).
 
 The navigation is defined in mkdocs.yml under nav:. To add a page, add an entry pointing to the file under docs/. Example:
 
-```markdown
-- 📣 Release Notes: release-notes.md
-- 📃 Documents:
-  - Overview: documents/index.md
-  - Document Types: documents/documemt-types.md
+```yaml
+nav:
+  - 📣 Release Notes: release-notes.md
+  - 📃 Documents:
+    - Overview: documents/index.md
+    - Document Types: documents/documemt-types.md
 ```
 
 YAML is indentation-sensitive:
@@ -111,7 +112,7 @@ YAML is indentation-sensitive:
 Material for MkDocs supports both built-in and custom themes.
 
 Quick change (built-in colors) in mkdocs.yml:
-```markdown
+```yaml
 theme:
   palette:
     - scheme: slate
@@ -135,7 +136,7 @@ Custom brand colors via CSS:
 }
 ```
 2) Reference it in mkdocs.yml:
-```markdown
+```yaml
 extra_css:
   - assets/theme.css
 ```
@@ -173,6 +174,7 @@ Continuous deployment:
 
 ## Repository structure
 
+```yaml
 - mkdocs.yml                # Site configuration (theme, nav, plugins)
 - requirements.txt          # Pinned Python dependencies
 - docs/
@@ -180,6 +182,7 @@ Continuous deployment:
   - assets/                 # Images and static assets
   - services/               # Section example (each with index.md)
   - ...                     # Other sections (see nav)
+```
 
 ---
 
