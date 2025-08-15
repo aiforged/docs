@@ -20,14 +20,14 @@ The GPT Classifier in AIForged empowers you to categorize documents using advanc
 
 ### How It Works
 
-* **No Training Required:**
-  The GPT Classifier bases its decision on your configured question and answer matrix, not on uploaded training examples.
-* **Question and Answer Matrix:**
-  You define a set of questions and expected answers for each document category. During classification, these questions are posed to the model, and its responses are used to determine the document’s category.
-* **Weighting for Accuracy:**
-  The model calculates a score for each category based on how closely its responses match your expected answers.
-* **Page-by-Page Classification:**
-  Classification is performed individually for each page within a document.
+- **No Training Required:**
+    - The GPT Classifier bases its decision on your configured question and answer matrix, not on uploaded training examples.
+- **Question and Answer Matrix:**
+    - You define a set of questions and expected answers for each document category. During classification, these questions are posed to the model, and its responses are used to determine the document’s category.
+- **Weighting for Accuracy:**
+    - The model calculates a score for each category based on how closely its responses match your expected answers.
+- **Page-by-Page Classification:**
+    - Classification is performed individually for each page within a document.
 
 !!! info
     When designing your questions, make sure they are appropriate for single-page evaluation, as each page is assessed separately.
@@ -37,29 +37,29 @@ The GPT Classifier in AIForged empowers you to categorize documents using advanc
 ### Configuration Steps
 
 1. **Service Setup**
-   * Create a new GPT Classifier service within your agent by clicking on the **Add Service** ![](../../assets/image%20%2826%29%20%281%29.png) button.
-     ![](../../assets/image%20%2827%29%20%281%29.png)
-   * No need to upload training data.
+    - Create a new GPT Classifier service within your agent by clicking on the **Add Service** ![](../../assets/image%20%2826%29%20%281%29.png) button.
+    - ![](../../assets/image%20%2827%29%20%281%29.png)
+    - No need to upload training data.
 2. **Step 2: Hint Matrix (Optional)**
-   * Optionally, add a Hint Matrix dataset to provide additional context to the model for more nuanced classification.
-     ![](../../assets/image%20%2828%29%20%281%29.png)
+    - Optionally, add a Hint Matrix dataset to provide additional context to the model for more nuanced classification.
+    - ![](../../assets/image%20%2828%29%20%281%29.png)
 3.  **Step 3: Define the Question Matrix**
+    - In the "QuestionMatrix" step of the wizard, create your question and answer set:
+    - ![](../../assets/GPT%20Classifier.png)
+    - **Category:** The document category you want to identify.
+    - **Question:** The prompt or question to ask about the page.
+    - **Expected Answer:** The ideal answer that indicates a match for this category.
+    - **Regex:** (Optional) Use a regular expression for advanced answer matching.
 
-    * In the "QuestionMatrix" step of the wizard, create your question and answer set:
-      ![](../../assets/GPT%20Classifier.png)
-      * **Category:** The document category you want to identify.
-      *   **Question:** The prompt or question to ask about the page.
+!!!tip
+    Since classification is performed page by page, phrase your questions to be meaningful at the page level.
 
-          > **Tip:** Since classification is performed page by page, phrase your questions to be meaningful at the page level.
-      * **Expected Answer:** The ideal answer that indicates a match for this category.
-      * **Regex:** (Optional) Use a regular expression for advanced answer matching.
+!!!tip
+    For best results, use 2–3 page-focused questions per category to allow the classifier to accurately weight responses and improve category determination.
 
-    &#x20;_Example: Setting up the Question Matrix for each category in the GPT Classifier wizard._
-
-    > **Tip:** For best results, use 2–3 page-focused questions per category to allow the classifier to accurately weight responses and improve category determination.
 4. **Step 4: Define Categories**
-   * Add all the document categories you want to classify. Link these to your question matrix.
-     ![](../../assets/image%20%2829%29%20%281%29.png)
+    - Add all the document categories you want to classify. Link these to your question matrix.
+    - ![](../../assets/image%20%2829%29%20%281%29.png)
 
 ***
 
@@ -87,15 +87,15 @@ Below are some example questions you can use for typical document categories. Re
 
 ### Best Practices
 
-* **Use 2–3 Page-Level Questions Per Category:**
-  This improves classification accuracy by providing multiple answer points for weighting.
-* **Be Specific and Relevant:**
-  Questions should target information that is likely present and clear on a single page.
-* **Leverage Regex:**
-  Use regex for flexible answer matching (e.g., matching any PO number format).
-* **Test and Iterate:**
+- **Use 2–3 Page-Level Questions Per Category:**
+    - This improves classification accuracy by providing multiple answer points for weighting.
+- **Be Specific and Relevant:**
+    - Questions should target information that is likely present and clear on a single page.
+- **Leverage Regex:**
+    - Use regex for flexible answer matching (e.g., matching any PO number format).
+- **Test and Iterate:**
   Try your configuration on a set of sample documents and refine your questions/answers as needed.
-* **Minimize Overlap:**
+- **Minimize Overlap:**
   Make sure each category's questions are distinct to avoid ambiguous results.
 
 ***

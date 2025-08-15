@@ -32,6 +32,7 @@ Administrators and Developers can delete documents on command via the UI or API,
 Each service has an archiving strategy that can be configured to automatically soft delete documents older than a specified age.
 
 ![](../assets/image%20%282%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
+
 !!! warning
     The archiving strategy will soft delete documents for 30 days, before automatically hard deleting them
 

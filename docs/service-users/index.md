@@ -45,6 +45,7 @@ Each user is assigned to one or more Usergroups and inherits permissions based o
 * **Specifically:** To selected AI agents or services only.
 
 ![](../assets/Usergroups.png)
+
 ### Example Scenario
 
 Suppose your Organisation processes invoices and contracts using different AI agents. You can:

@@ -23,6 +23,7 @@ extra_css:
 
 plugins:
   - search
+  - mermaid2
   
 markdown_extensions:
   - admonition
@@ -32,7 +33,11 @@ markdown_extensions:
   - def_list
   - attr_list
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight
@@ -44,8 +49,8 @@ nav:
   - 📬 How to access AIForged: how-to-access-aiforged.md
   - ✏️ Register: register.md
   - ✅ Activate my account: activate-my-account.md
-  - ❓ Forgot Password: forgot-password.md
   - 🔐 Login: login.md
+  - ❓ Forgot Password: forgot-password.md
   - 🔂 Multi-Factor Authentication: multi-factor-authentication.md
   - 🤵 User Profile: user-profile.md
   - 💡 Agents:
@@ -58,7 +63,7 @@ nav:
     - ⏩ Understanding Document Flows: documents/understanding-document-flows.md
     - 🗄️ Document Retention: documents/document-retention.md
     - ➕ Document Attributes: documents/document-attributes.md
-    - 🧠 Understanding the Documents Section: documents/understanding-the-documents-page.md
+    - 🧠 Understanding the Documents Section: documents/documents-in-service-view.md
     - ↗️ Processing documents:
       - Overview: documents/processing-documents/index.md
       - Processing Paramaters: documents/processing-documents/processing-parameters.md

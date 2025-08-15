@@ -9,8 +9,8 @@ nav_order: 9
 
 The **User Profile** page allows you to view and edit various details related to **your** user account.
 
-To open the **User Profile** page, simply click on your user name or icon in the top right-hand corner of the AIForged Studio.\
-\
+To open the **User Profile** page, simply click on your user name or icon in the top right-hand corner of the AIForged Studio.
+
 ![](assets/image%20%2833%29%20%281%29%20%281%29.png)
 
 ### User
@@ -36,6 +36,7 @@ To upload a new profile picture
 1. Click on your profile icon or drag and drop an image over your profile icon.
 
 ![](assets/image%20%2836%29%20%281%29.png)
+
 ## Security
 
 ### Password
@@ -44,11 +45,13 @@ You can change your password in the **Password** card. Simply follow the prompts
 
 ![](assets/image%20%2839%29%20%281%29.png)
 ![](assets/image%20%2840%29%20%281%29.png)
+
 ### Login Providers
 
 If you have logged in with any of the available external login providers, then they will be listed in the Login Providers card, with the option to unlink a provider.
 
 ![](assets/image%20%2837%29%20%281%29.png)
+
 #### Available External Login Providers:
 
 * Microsoft
@@ -71,9 +74,9 @@ See [Multi-Factor Authentication](multi-factor-authentication.md)
 
 API keys offer a unique key used to authenticate an account programatically via the API endpoints or SDK.
 
-**View your API Key**\
-![](assets/image%20%2841%29%20%281%29.png)\
-\
+**View your API Key**
+
+![](assets/image%20%2841%29%20%281%29.png)
 ![](assets/image%20%2842%29%20%281%29.png)
 
 ## Notification Preferences
@@ -92,6 +95,7 @@ Notifications are sent on an **OPT-IN** basis
 
 ![](assets/image%20%2868%29.png)
 ![](assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
+
 ## Studio Preferences
 
 Studio preferences allow you to customise various aspects of the UI, such as default filter ranges, and default behaviours for certain views and dialogs.

@@ -1,80 +1,190 @@
-# 👓 AI Services
+# 🧃 AI Services
 
-### Overview
+## Overview
 
-AI services in AIForged are specialized processing engines—either first-party or third-party—designed to perform targeted automation and data processing tasks. These services can be flexibly connected using built-in utilities and verification engines to form robust document and data workflows.
+AI Services in AIForged are specialized processing engines—first‑party or third‑party—that you compose into end‑to‑end workflows. Services can ingest content, classify it, extract data, apply verification rules (including Human‑in‑the‑Loop), and publish results to downstream systems. You connect Services with utilities and verification engines to deliver reliable, scalable document and data automation.
 
-***
+!!! tip
+    Start simple. Prove your flow with a small set of documents, then scale and add advanced steps like branching, HITL, and exports.
 
-### Types of AI Services
+---
 
-AIForged offers a variety of AI services, each tailored for specific functions:
+## What you can build with Services
 
-* **Scrapers**
-  Extract documents or data from specified sources (e.g., mailboxes, folders, cloud storage).
-* **Classifiers**
-  Identify and classify the type or category of each page or document.
-* **Extractors and Verifiers**
-  Extract targeted information from documents and verify its accuracy and validity.
-* **OCR (Optical Character Recognition)**
-  Convert images or scanned documents into machine-readable text.
-* **Object Detection**
-  Identify and locate objects within images.
-* **Speech Recognition**
-  Convert spoken words in audio files into text.
+- Document pipelines that classify, extract, and verify content
+- Image and object analysis for vision‑based use cases
+- OCR and digitization to normalize scanned content
+- Email and storage scrapers for continuous ingestion
+- Rule‑based and HITL verification for quality and compliance
+- Exports and webhooks to keep downstream systems in sync
 
-> **Tip:** You can combine different AI services to automate complex, multi-step processing scenarios.
+---
 
-***
+## Types of AI Services
 
-### AI Services Structure
+AIForged offers a variety of Services, each tailored for specific tasks:
 
-AI services in AIForged can be configured in several ways to best fit your workflow needs:
+- Scrapers
+    - Pull documents from sources such as mailboxes, folders, or cloud storage.
+- Classifiers
+    - Identify the type/category of each page or document to route processing.
+- Extractors and Verifiers
+    - Extract structured fields and tables, then validate and standardize results.
+- OCR (Optical Character Recognition)
+    - Convert scans/images into machine‑readable text to boost downstream accuracy.
+- Object Detection
+    - Detect and locate visual objects within images or pages.
+- Speech Recognition
+    - Convert audio to text for further classification, extraction, or search.
 
-* **Sequence**
-  Services execute one after another in a defined order.
-* **Independent**
-  Services operate completely independently from one another.
-* **Parallel**
-  Multiple services run simultaneously, each working on the same or different data.
-* **Tandem**
-  Services collaborate closely, with outputs from one service feeding directly into another.
+!!! info
+    You can combine Service types to automate complex, multi‑step processing—for example, Scraper → OCR → Classifier → Extract & Verify → Export.
 
-Understanding these structural options is key to leveraging the full power and flexibility of AIForged.
+---
 
-***
+## Service composition patterns
 
-### AI Service Operations
+Choose the pattern that fits your workflow and SLAs:
 
-AI services can be connected in any order, allowing for customized processing pipelines.
+- Sequence
+    - Services run one after another in a defined order (straightforward, predictable).
+- Independent
+    - Services operate on their own; useful for ad‑hoc jobs and experimentation.
+- Parallel
+    - Multiple Services run simultaneously on the same or split inputs to reduce latency.
+- Tandem
+    - One Service’s outputs feed directly into another with tight coupling (e.g., OCR → Extract).
 
-#### Individual AI Services
+!!! tip
+    Keep responsibilities focused. Use Utilities (Digitizer, PDF Converter, Image Splitter) as pre/post steps to normalize inputs and improve extraction accuracy.
 
-* Operate independently.
-* Do not require input from any other service.
-* Suitable for simple, single-step automation tasks.
+---
 
-#### Dependent AI Services
+## Service operations and orchestration
 
-* Rely on additional functionality (such as OCR or custom logic).
-* Can be configured to run:
-  * **Before Processing:** Pre-processes input to enhance data quality.
-  * **After Processing:** Post-processes results for validation or further enrichment.
+- Connect in any order
+    - Design flows that match your business rules; branch by category or confidence when needed.
+- Individual Services
+    - Run standalone; ideal for simple or single‑purpose processing.
+- Dependent Services
+    - Add pre‑processing (before) and post‑processing (after) steps, such as OCR, formatting, or enrichment.
+- Verification Services
+    - Trigger rule‑based checks and HITL when confidence is low or policy requires review (configured in the Rule Engine).
+- Auto Execution
+    - Poll and process new “Received” documents on a schedule using batch size and interval settings.
+- Processing Parameters
+    - Control re‑runs and outputs with options like Force Re‑Processing, Reset Previous Results, and Delete Output of Previous Processing.
 
-**Example:**\
-If the Microsoft Document Intelligence service does not provide the desired accuracy, you can integrate custom code before or after its execution to improve results.
+---
 
-> **Tip:** Dependent AI services are set up using the same process as standard AI services.
+## Example end‑to‑end flows
 
-***
+### 1) Straight‑through document processing (with optional HITL)
 
-### Verification AI Services
+```mermaid
+flowchart LR
+  A["Scraper / Upload"] --> B["OCR / Digitize"]
+  B --> C[Classifier]
+  C --> D[Extract & Verify]
+  D --> E["Verification (HITL optional)"]
+  E -- Confident --> F["Outbox / Export"]
+  E -- Needs review --> G[Human Verify]
+  G --> F
+```
 
-Verification AI services are triggered automatically based on specific conditions—such as when a field’s confidence score falls below a set threshold.
+- Use when documents generally follow a known structure, with HITL only for edge cases.
+- Improves steadily with training data and tuned verification rules.
 
-* Can be configured and managed within the Rule Engine.
-* Enable automated double-checking and human-in-the-loop escalation for improved data quality.
+### 2) Branch by Category to specialized extractors
 
-> **Tip:** Use Verification AI services for critical data points where accuracy is essential.
+```mermaid
+flowchart LR
+  A[Inbox] --> B[Classifier]
+  B -->|Invoice| C[Invoice Extractor]
+  B -->|Receipt| D[Receipt Extractor]
+  B -->|Statement| E[Statement Extractor]
+  C --> F[Verify / HITL] --> G[Outbox]
+  D --> F
+  E --> F
+```
 
+- Route each document type to the best‑fit model.
+- Apply different verification policies per branch.
 
+### 3) Parallel enrichment (run multiple Services at once)
+
+```mermaid
+flowchart LR
+  A[Inbox] --> B[Pre‑Processing]
+  B --> C1[OCR]
+  B --> C2[Object Detection]
+  B --> C3[LLM Summarization]
+  C1 --> D[Merge / Enrich]
+  C2 --> D
+  C3 --> D
+  D --> E[Verify / HITL] --> F[Outbox / Export]
+```
+
+- Reduce latency by running independent steps simultaneously.
+- Merge results before verification/export.
+
+---
+
+## Setup at a glance
+
+1. Open your agent
+    - From the agent view, click Add Service to create a new Service.
+2. Configure the Service
+    - Use the Service Configuration Wizard to set basics (name, description) and any required categories or datasets.
+3. Connect steps
+    - Add pre/post Utilities, enable Auto Execution if needed, and configure verification rules in the Rule Engine.
+4. Test with a small batch
+    - Upload to Inbox, run processing, and review outputs in Outbox.
+5. Scale and automate
+    - Tune Processing Parameters, expand sources (Scrapers), and enable exports/webhooks for downstream systems.
+
+!!! tip
+    When comparing configurations, use a clean re‑run: enable Force Re‑Processing, Reset Previous Results, and Delete Output of Previous Processing.
+
+---
+
+## Best practices
+
+- Design for clarity
+    - Name Services for their purpose (e.g., “Invoice – Extract & Verify”) and document assumptions.
+- Normalize early
+    - Convert to PDF and digitize scans before extraction to improve accuracy.
+- Separate concerns
+    - Keep classification, extraction, and verification steps distinct for easier tuning and troubleshooting.
+- Start small, iterate fast
+    - Validate on small batches; scale once results are stable.
+- Govern with categories
+    - Use Categories for business types (Invoice, ID). Use Usage/Status for lifecycle (Inbox, Processing, Verification, Outbox).
+- Plan re‑processing
+    - Use Processing Parameters to avoid stale outputs and ensure reproducible runs.
+
+---
+
+## Troubleshooting
+
+- Service doesn’t start processing
+    - Ensure the Service is enabled and documents are in the Received state; check permissions.
+- Auto Execution isn’t picking up items
+    - Verify Auto Execution is enabled, Batch Size > 0, and Execution Interval is set; documents must not be older than 7 days.
+- Results didn’t change after a re‑run
+    - Enable Force Re‑Processing and delete previous outputs to avoid confusion with stale results.
+- Too many items in Verification
+    - Adjust thresholds or rules in the Rule Engine; provide more/better training data to improve confidence.
+- Performance concerns
+    - Use Parallel where appropriate, right‑size batch sizes, and remove unnecessary Utilities for test runs.
+
+---
+
+## Related links
+
+- Documents overview: [Click Here](../documents/index.md)
+- Processing documents: [Click Here](../documents/processing-documents/index.md)
+- Processing Parameters: [Click Here](../documents/processing-documents/index.md)
+- Understanding Document Flows: [Click Here](../documents/understanding-document-flows.md)
+- Documents in the Service view: [Click Here](../documents/documents-in-service-view.md)
+- Rule Engine (Verification): [Click Here](../rules-engine/index.md)
