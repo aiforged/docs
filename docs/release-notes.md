@@ -5,18 +5,70 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## ***New – AIForged Studio – Web 1.1 (18-08-2025)***
+
+We’re thrilled to bring you a major AIForged Studio update focused on faster flow setup, a smarter configuration experience, and meaningful quality-of-life improvements across the board.
+
+### New Features
+
+- Service Flow Configurator
+    - Visually design and configure end‑to‑end service flows in one place.
+    - Configure per‑service settings, attach utilities (pre/post), and manage connections directly from the flow—no more jumping between views.
+    - Availability: enabled for users with Owner, Administrator, or Developer roles.
+    - Learn more: [Service Flow Configurator](service-flow-configurator.md)
+
+- AIForged Agent Assistant (Preview)
+    - An AI assistant that helps you quickly configure new agents and service flows within AIForged.
+    - Availability: accessible by default from the Home (Agents) view after logging in.
+    - Tenant awareness: the assistant operates within your selected Tenant. Please select the correct Tenant before starting.
+    - Getting started:
+        - When you open the assistant, it automatically sends “Hello”.
+        - The assistant then asks what you want to build and shows a few examples.
+        - For best results, describe:
+            - How you want your solution structured (overall flow and steps)
+            - Which documents you plan to ingest, classify, and extract from
+            - The target data structure you want back (if you’re doing extraction)
+        - The more detail you provide, the better the assistant can configure your agent and flow.
+
+- Notifications view
+    - A new Notifications view centralizes AIForged system messages and alerts addressed to you.
+
+### Terminology Update
+
+- “Projects” are now “Agents”
+    - The UI and navigation now reflect the agentic nature of AIForged solutions, with labels updated throughout Studio.
+
+### Enhancements (Quality of Life)
+
+- Middle‑mouse drag (panning) support
+    - Available in the Service Flow Configurator, Document Verification view, and Document Labelling view for faster navigation.
+- Process dialog improvements
+    - Streamlined layout and clearer options for smoother, more predictable processing.
+- Verification and Labelling performance
+    - Reworked internal handling of field information to improve responsiveness and robustness.
+- Wallets & Billing usability
+    - Clearer layouts and more intuitive interactions for reviews and reconciliations.
+- User Profile improvements
+    - Various refinements to make profile and preference management more intuitive.
+
+### Bug Fixes
+
+- Hundreds of fixes across the Studio improving stability, reliability, and overall polish.
+
+The web-based AIForged Studio is available at: https://studio.aiforged.com
+
 ## **UiPath Activities 1.6.1974.1129 (28-05-2025)**
 
 #### New Activities
 
 * **Documents:**
-  * Deep Search: Search through processed documents for specific extracted values.
+    * Deep Search: Search through processed documents for specific extracted values.
 * **Reports:**&#x20;
-  * Work items: Returns a DataTable with the number of created work items for a specified period using the specified filters and grouping.
-  * Straight Through Processing: Returns a list of DataTable objects containing the processed numbers and straight through rates of documents per service per processing route taken.
-  * Document Flow Report: Returns a list of DataTable objects containing the document counts for various stages of document processing per service per route taken.
+    * Work items: Returns a DataTable with the number of created work items for a specified period using the specified filters and grouping.
+    * Straight Through Processing: Returns a list of DataTable objects containing the processed numbers and straight through rates of documents per service per processing route taken.
+    * Document Flow Report: Returns a list of DataTable objects containing the document counts for various stages of document processing per service per route taken.
 * **Windows Legacy Projects:**
-  * This will be the last release of the AIForged Legacy package for UiPath - Windows Legacy projects. These projects have been obsoleted by UiPath for quite some time and should no longer be used for new processes and libraries. They are also no longer an option in the newest versions of the UiPath Studio.
+    * This will be the last release of the AIForged Legacy package for UiPath - Windows Legacy projects. These projects have been obsoleted by UiPath for quite some time and should no longer be used for new processes and libraries. They are also no longer an option in the newest versions of the UiPath Studio.
 
 ## \*\*\*New - AIForged Studio - Web 1.0.0 (11-04-2025)
 
@@ -27,23 +79,23 @@ The new AIForged Studio web interface provides familiar yet improved functionali
 **What's included in this release?**
 
 * **Project creation and management**&#x20;
-  * With a new unified view of documents and their various statuses within a project.&#x20;
-  * Quick start project creation that allows you to select your initial AIForged service during initial project creation.
+    * With a new unified view of documents and their various statuses within a project.&#x20;
+    * Quick start project creation that allows you to select your initial AIForged service during initial project creation.
 * **Service creation and management**&#x20;
-  * Easy access to service settings and field definitions without needing to navigate multiple views and screens.
-  * Including a revamped service configuration wizard.
-  * Context aware service views show you only what you need to see, while remaining fully configurable for advanced users.
+    * Easy access to service settings and field definitions without needing to navigate multiple views and screens.
+    * Including a revamped service configuration wizard.
+    * Context aware service views show you only what you need to see, while remaining fully configurable for advanced users.
 * **Document labelling and training**&#x20;
-  * A revamped labelling experience paves the way for a more efficient and user friendly service-configuration and model-training experience.
+    * A revamped labelling experience paves the way for a more efficient and user friendly service-configuration and model-training experience.
 * **LLM (Large Language Model) service configuration**
-  * A more intuitive prompt engineering experience awaits you in the service view of LLM and ChatGPT extractors.
-  * The new LLM service type from AIForged allows you to leverage the power of multiple LLM models to enhance your IDP (Intelligent Document Processing) process.
+    * A more intuitive prompt engineering experience awaits you in the service view of LLM and ChatGPT extractors.
+    * The new LLM service type from AIForged allows you to leverage the power of multiple LLM models to enhance your IDP (Intelligent Document Processing) process.
 * **Organization Management**
-  * A more intuitive organization management screen allows you to quickly setup your Tenants and organization groups and to configure role based access to projects for existing and new organization members.
+    * A more intuitive organization management screen allows you to quickly setup your Tenants and organization groups and to configure role based access to projects for existing and new organization members.
 * **Tenant context:**
-  * Everything you do in the new AIForged Studio is governed by your selected Tenant / Organization, making it easier to manage what users are allowed to do.
+    * Everything you do in the new AIForged Studio is governed by your selected Tenant / Organization, making it easier to manage what users are allowed to do.
 * **Less cluttered, more intuitive**
-  * With an approach to minimize clutter and only show users what they need to see, the new AIForged Studio brings you a much improved overall user experience.
+    * With an approach to minimize clutter and only show users what they need to see, the new AIForged Studio brings you a much improved overall user experience.
 * **Much more**
 
 The new AIForged Studio is available today at [https://studio.aiforged.com](https://studio.aiforged.com).
