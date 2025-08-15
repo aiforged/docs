@@ -55,7 +55,7 @@ We’re thrilled to bring you a major AIForged Studio update focused on faster f
 
 - Hundreds of fixes across the Studio improving stability, reliability, and overall polish.
 
-The web-based AIForged Studio is available at: https://studio.aiforged.com
+The web-based AIForged Studio is available at: [https://studio.aiforged.com](https://studio.aiforged.com)
 
 ## **UiPath Activities 1.6.1974.1129 (28-05-2025)**
 
