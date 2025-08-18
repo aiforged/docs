@@ -18,29 +18,37 @@ Follow these steps to get into AIForged quickly and securely. If you’re new, s
 
 1) Access AIForged Studio
 
-- Read: [How to access AIForged](how-to-install-aiforged.md)
+- Read: [How to access AIForged](how-to-access-aiforged.md)
 - Choose your preferred access method and confirm you can reach the sign-in screen.
+
+![](../../assets/img-2025-08-18-10-34-18.png)
 
 2) New users: register and activate
 
 - Register: [Sign up](register.md)
 - Activate: Complete email verification and first-time setup in [Activate my account](activate-my-account.md)
 
+![](../../assets/img-2025-08-18-10-37-05.png)
+
 3) Existing users: sign in
 
 - Login: [Sign in to AIForged](login.md)
 - Set up Multi‑Factor Authentication (recommended): [MFA guide](multi-factor-authentication.md)
 
+![](../../assets/img-2025-08-18-10-35-25.png)
+
 4) Can’t sign in?
 
 - Reset your password: [Forgot Password](forgot-password.md)
+
+![](../../assets/img-2025-08-18-10-36-31.png)
 
 5) Complete your profile
 
 - Update your name, avatar, locale, and notification preferences: [User Profile](user-profile.md)
 
 !!! tip
-    Before configuring anything, make sure you’re in the correct Tenant. Use the Tenant selector in the top‑right of AIForged Studio to switch to your company’s Tenant. Roles (Owner, Administrator, Developer) are assigned per Tenant and control whether you can create agents, services, and flows. If options appear disabled or you can’t see team projects, you’re likely in your personal Tenant—switch to the company Tenant and try again.
+    Before configuring anything after logging in, make sure you’re in the correct Tenant. Use the Tenant selector in the top‑right of AIForged Studio to switch to your company’s Tenant. Roles (Owner, Administrator, Developer) are assigned per Tenant and control whether you can create agents, services, and flows. If options appear disabled or you can’t see team projects, you’re likely in your personal Tenant—switch to the company Tenant and try again.
 
 ---
 
@@ -57,6 +65,7 @@ Before creating agents and services, ensure you’re working in the correct Tena
 
 1. Open AIForged Studio.
 2. In the top‑right corner, click the Tenant selector (shows your current Tenant name).
+    ![](../../assets/img-2025-08-18-10-38-48.png)
 3. Choose your company’s Tenant (or the intended Tenant for this work).
 4. Confirm your roles in that Tenant (Owner/Admin/Developer) if you plan to configure services.
 5. Proceed with your setup (agents, services, utilities) in the selected Tenant.
@@ -88,10 +97,15 @@ _[Suggested screenshot: Tenant selector in the top‑right corner of Studio]_
 ### Option A — Studio (fastest to value)
 
 1. Create or open an Agent
+    ![](../../assets/img-2025-08-18-10-45-03.png)
 2. Add your first Service (e.g., Email Scraper, LLM Extractor, Document Intelligence, OCR, Vision)
+    ![](../../assets/img-2025-08-18-10-45-36.png)
+    ![](../../assets/img-2025-08-18-10-47-53.png)
 3. Configure the flow (preferred): Open the Service Flow Configurator
     - From the service’s page, click “Open Service Flow Configurator”
+        ![](../../assets/img-2025-08-18-10-49-55.png)
     - Drag additional services from the palette (left) onto the target service’s drop points:
+        ![](../../assets/img-2025-08-18-10-50-36.png)
         - Input: New upstream service that feeds into the target
         - Input – Branch: Add parallel inputs without altering existing ones
         - Output: Next step that receives the target’s output
@@ -101,6 +115,8 @@ _[Suggested screenshot: Tenant selector in the top‑right corner of Studio]_
         - Dependency: Required services the target depends on (e.g., OCR)
         - Verification: Enrichment/verification services for Extract & Verify
     - Click Save to apply changes and reveal action buttons (Settings, Parameters, Wizard, Code Editor, More)
+        ![](../../assets/img-2025-08-18-10-51-05.png)
+        ![](../../assets/img-2025-08-18-10-51-39.png)
 
 !!! tip
     Utilities are not standalone. Add them as Pre‑ or Post‑Processors from the Service Flow Configurator or the parent service’s Add Service menu. Copy Documents typically acts as the transport between services.
@@ -127,8 +143,11 @@ See also: [Service Flow Configurator](service-flow-configurator.md)
 ## Configure with the Service Flow Configurator (preferred)
 
 - Launch: Open any service, then click “Open Service Flow Configurator”
+    ![](../../assets/img-2025-08-18-10-49-55.png)
 - Build visually: Drag services from the left palette and drop onto context‑aware drop points (Input, Output, Pre/Post, Dependency, Verification)
+    ![](../../assets/img-2025-08-18-10-50-36.png)
 - Save: Click Save to persist and enable service actions (Settings, Parameters, Wizard, Code Editor, More)
+    ![](../../assets/img-2025-08-18-10-51-05.png)
 - Document: Export your flow to PNG for architecture reviews and runbooks
 
 !!! warning
@@ -146,25 +165,33 @@ Use the Email Scraper to automatically ingest attachments from dedicated mailbox
 
 1. Add the Email Scraper to your agent  
     - In the agent’s Service view, Add Service → Email Scraper
-2. Choose your provider  
+        ![](../../assets/img-2025-08-18-10-52-58.png)
+        ![](../../assets/img-2025-08-18-10-53-18.png)
+2. Choose your provider and configure the scraper via the Service Configuration Wizard  
+        ![](../../assets/img-2025-08-18-10-55-17.png)
     - Microsoft 365: IMAP, Server: `outlook.office365.com`, Port: `993`  
-        - Enable Prompt‑less Device Code Flow  
+        - Enable Prompt‑less Device Code Flow (enabled by default)  
         - Set Tenant ID and Client ID (from your Azure app registration)  
+            ![](../../assets/img-2025-08-18-10-56-44.png)
         - No password required with device code flow
     - Gmail: IMAP, Server: `imap.gmail.com`, Port: `993`  
         - Use an app-specific password and set “Remove XOAUTH2: Yes”
+            ![](../../assets/img-2025-08-18-10-57-57.png)
+            ![](../../assets/img-2025-08-18-10-59-08.png)
     - Other IMAP: Use provider’s IMAP server; set credentials accordingly
 3. Folders  
     - Folder: source folder to monitor (e.g., Inbox)  
+        ![](../../assets/img-2025-08-18-10-59-55.png)
     - Processed Folder: where processed emails will be moved
+        ![](../../assets/img-2025-08-18-11-00-18.png)
 4. Auto Execution  
     - Enable and choose an interval appropriate for your volume
-5. Attach the “Attachment” utility (built‑in) to extract attachments into child documents
+        ![](../../assets/img-2025-08-18-11-00-54.png)
 
 !!! tip
     For Microsoft 365, Prompt‑less Device Code Flow authenticates on the first scheduled run and begins email retrieval on the second. No stored passwords; no prompts.
 
-See: [Scrapers → Email Scraper](scrapers/email-scraper.md)
+See: [Services → Scrapers → Email Scraper](services/scrapers/email-scraper.md)
 
 ---
 
@@ -174,11 +201,17 @@ Classification lets you auto-sort mixed batches (e.g., Credit Application, ID, P
 
 ### AIForged Classifier (supervised ML)
 
-1. Add the “AIForged Classifier” service  
-2. Define Categories (document classes)
+1. Add the “AIForged Classification” service  
+    ![](../../assets/img-2025-08-18-11-02-08.png)
+    ![](../../assets/img-2025-08-18-11-01-50.png)
+2. Open the Service Configuration Wizard and Define Categories (document classes)
+    ![](../../assets/img-2025-08-18-11-03-08.png)
+    ![](../../assets/img-2025-08-18-11-03-39.png)
 3. Upload training samples  
-    - At least 5–10 examples per class (more is better)  
-    - Train the service
+    - At least 5–10 examples per document category (more is better)  
+        ![](../../assets/img-2025-08-18-11-04-43.png)
+    - Select documents and Train the service
+        ![](../../assets/img-2025-08-18-11-05-45.png)
 4. Process mixed inputs  
     - The classifier will label them automatically  
     - Use Copy/Move utilities to route by class to specific services (e.g., IDs → Identity extraction)
@@ -192,7 +225,7 @@ Best‑practice settings:
 !!! tip
     If classification confidence < 60%, create a HITL work item for a verifier (e.g., assign to Hendri or Sandra).
 
-See: AIForged classifier (service page)
+See: [Services → Classification → AIForged Classification](services/classification/aiforged-classifier.md)
 
 ---
 
@@ -220,7 +253,7 @@ Best practices
 - Use high‑quality scans or digitize inputs first  
 - Keep model definitions updated when layouts evolve
 
-See: [Services → Extract & Verify](services/extract-and-verify/index.md)
+See: [Services → Extract & Verify → Document Intelligence](services/extract-and-verify/document-intelligence.md)
 
 ---
 
@@ -254,7 +287,7 @@ Best for unstructured and highly variable documents (contracts, letters, reports
 !!! tip
     LLM Extractor excels at narrative extraction, cross-field reasoning, and normalization. Use datasets to ground and constrain the model for better precision.
 
-See: [Services → LLM Extractor](services/llm-extractor/index.md)
+See: [Services → Extract & Verify → Document Intelligence](services/extract-and-verify/llm-extractor.md)
 
 ---
 
@@ -265,16 +298,19 @@ Attach utilities as pre‑ or post‑processors to strengthen your pipeline.
 - Digitizer  
     - Add searchable text layer to scanned PDFs; optional overlays  
     - Consider for all scans before extraction  
-    - See: [Utilities → Digitizer](utilities/digitizer.md)
+    - See: [Services → Utilities → Digitizer](services/utilities/aiforged-digitizer.md)
 - PDF Converter  
     - Normalize inputs to PDF; force image‑only for artifact‑heavy PDFs  
-    - See: [Utilities → PDF Converter](utilities/pdf-converter.md)
+    - See: [Services → Utilities → PDF Converter](services/utilities/aiforged-pdf-converter.md)
 - Image Splitter  
     - Split multi‑page PDFs/TIFFs into per‑page images for page‑level routing  
-    - See: [Utilities → Image Splitter](utilities/image-splitter.md)
+    - See: [Services → Utilities → Image Splitter](services/utilities/aiforged-image-splitter.md)
 - Copy / Move Documents  
     - Route by class, category, status, or extension to downstream services  
-    - See: [Utilities → Copy/Move](utilities/copy-move.md)
+    - See: [Services → Utilities → Copy](services/utilities/copy-documents.md)
+    - See: [Services → Utilities → Move](services/utilities/move-documents.md)
+- And more
+    - See: [Services → Utilities](services/utilities/index.md)
 
 !!! tip
     Utilities are not standalone—attach them to a parent service as pre‑ or post‑processors from the parent’s Service view or Service Flow Configurator.
@@ -377,7 +413,6 @@ Content-Type: application/json
 ## Quick start checklist (at a glance)
 
 - [ ] Set up an Email Scraper with a test mailbox  
-- [ ] Configure the nested Attachment service for per-attachment processing  
 - [ ] Choose a classification path (Document Intelligence or LLM Extractor)  
 - [ ] Configure extraction (Document Intelligence or LLM Extractor)  
 - [ ] Add verification/HITL as needed  

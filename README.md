@@ -56,12 +56,14 @@ Notes
   ```json
   // .vscode/settings.json
   {
-    "pasteImage.path": "${projectRoot}/docs/assets",
-    "pasteImage.basePath": "${projectRoot}",
-    "pasteImage.forceUnixStyleSeparator": true,
-    "pasteImage.prefix": "assets/",
-    "pasteImage.insertPattern": "![${currentFileNameBase}](${imageFilePath})",
-    "pasteImage.namePrefix": "img-"
+      "ipynb.pasteImagesAsAttachments.enabled": true,
+      "pasteImage.basePath": "${projectRoot}",
+      "pasteImage.path": "${projectRoot}/docs/assets",
+      "pasteImage.forceUnixStyleSeparator": true,
+      "pasteImage.insertPattern": "![](../../assets/${imageFileName})",
+      "pasteImage.namePrefix": "img-",
+      "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+      "pasteImage.pasteOnPaste": true,
   }
   ```
 

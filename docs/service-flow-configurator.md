@@ -36,13 +36,14 @@ You launch the Configurator from any existing service in your Agent:
 
 Example steps and visuals (Email Scraping as the starting service):
 
-1. Open the Service Flow Configurator for the Email Scraping service by clicking on the Open Service Flow Configurator ![](<../.gitbook/assets/image (12).png>) button.  
-   ![](<../.gitbook/assets/image (11).png>)
+1. Open the Service Flow Configurator for the Email Scraping service by clicking on the Open Service Flow Configurator ![](../../assets/img-2025-08-18-08-54-26.png) button.  
+    ![](../../assets/img-2025-08-18-08-54-58.png)
 2. Expand the Utilities service group.  
-   ![](<../.gitbook/assets/image (13).png>)
+    ![](../../assets/img-2025-08-18-08-55-22.png)
 3. Drag the Custom Code service type card over the Attachment Service card, then to the Post‑Processor drop point.  
-   ![](<../.gitbook/assets/image (14).png>)
+    ![](../../assets/img-2025-08-18-08-56-23.png)
 4. Click Save (bottom‑right) to apply changes.
+    ![](../../assets/img-2025-08-18-08-56-56.png)
 
 !!! warning
     Changes are not applied until you click Save. After saving, newly added services will display their action buttons (Settings, Parameters, Wizard, Code Editor, etc.).
@@ -136,15 +137,18 @@ Each configured service appears as a card with the service name, description, an
 ## Example flows (visual)
 
 - End‑to‑end with Email and OneDrive Scraping, Attachment extraction, OCR dependencies, and Copy Documents routing:  
-  ![](<../.gitbook/assets/image (8).png>)
-  ![](<../.gitbook/assets/image (9).png>)
-  ![](<../.gitbook/assets/image (10).png>)
+    ![](../../assets/img-2025-08-18-08-58-22.png)
+    ![](../../assets/img-2025-08-18-08-58-45.png)
+    ![](../../assets/img-2025-08-18-08-58-55.png)
+
 - Drop point preview while dragging:  
-  ![](<../.gitbook/assets/image (15).png>)
+    ![](../../assets/img-2025-08-18-08-59-28.png)
+
 - Palette search example:  
-  ![](<../.gitbook/assets/image (16).png>)
+    ![](../../assets/img-2025-08-18-08-59-51.png)
+
 - Save your configuration (bottom‑right):  
-  ![](<../.gitbook/assets/image (17).png>)
+    ![](../../assets/img-2025-08-18-09-00-16.png)
 
 ---
 

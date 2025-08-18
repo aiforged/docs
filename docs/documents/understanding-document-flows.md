@@ -22,7 +22,7 @@ Each Service has an Inbox and an Outbox. A document is ingested into the Inbox, 
         - Status examples: Queued, Processing
     - Verification (optional)
         - Automatic checks and/or Human-in-the-Loop (HITL) when confidence or policy requires
-        - Status examples: Verification, Awaiting Review
+        - Status examples: Verification, CustomVerification
     - Outbox
         - Finalized results ready for export, webhooks, or downstream integrations
         - Status examples: Processed, Verification, Error

@@ -87,8 +87,8 @@ nav:
       - Amazon Receipt Extraction: services/extract-and-verify/amazon-receipt-extraction.md
       - Google Forms Parser: services/extract-and-verify/google-forms-parser.md
       - Google Invoice Parser: services/extract-and-verify/google-invoices.md
-      - Document Intelligence: services/extract-and-verify/microsoft-forms-recognizer.md
-      - Document Intelligence – Custom Invoices: services/extract-and-verify/microsoft-forms-custom-invoices.md
+      - Document Intelligence: services/extract-and-verify/document-intelligence.md
+      - Document Intelligence – Custom Invoices: services/extract-and-verify/document-intelligence-custom-invoices.md
       - Document Intelligence – Prebuilt Models: services/extract-and-verify/document-intelligence-prebuilt-models.md
       - LLM Extractor: services/extract-and-verify/llm-extractor.md
       - Microsoft Identity Documents: services/extract-and-verify/microsoft-id.md
