@@ -1,902 +1,248 @@
+# AIForged Documentation (MkDocs Material)
+
+This repository contains the public AIForged documentation site built with MkDocs Material.
+
+- Live preview locally with hot reload
+- Clear authoring conventions (images, links, admonitions, tabs)
+- One-command setup scripts for Windows, macOS, and Linux
+- Strict builds to catch broken links and anchors
+
 ---
-title: Release notes
-nav_order: 1
+
+## Quick start (local preview)
+
+Pick your platform:
+
+### Windows (PowerShell)
+1) Clone the repo:
+   - git clone https://github.com/aiforged/docs.git
+   - cd <repo>
+2) Start the docs server:
+   - Double-click Start-Docs-Server.cmd
+   - Or run: .\scripts\dev.ps1 serve
+3) Open http://127.0.0.1:8000 and start editing files under docs/. Changes auto-reload.
+
+### macOS / Linux
+1) Clone the repo:
+   - git clone https://github.com/aiforged/docs.git
+   - cd <repo>
+2) Make the script executable (first time only):
+   - chmod +x scripts/dev.sh
+3) Start the docs server:
+   - ./scripts/dev.sh serve
+4) Open http://127.0.0.1:8000 and start editing files under docs/. Changes auto-reload.
+
+Notes
+- First run bootstraps a .venv, installs MkDocs + plugins, then starts the server.
+- Use ./scripts/dev.sh build or .\scripts\dev.ps1 build for a strict build check (same as CI).
+
 ---
 
-# 📣 Release Notes
+## Authoring basics
+
+- All documentation lives under docs/.
+- Section “home” pages must be named index.md (not README.md).
+- Use kebab-case for file names, e.g., payment-methods.md.
+- Use relative links and point directories to index.md (not trailing slashes):
+  - Good: [Services](../services/index.md)
+  - Avoid: ../services/ or README.md targets
+- Prefer short sentences and one topic per page/section where possible.
+
+### Images and assets
+- Place all images under docs/assets/.
+- Link with a relative path from your page:
+  - ![](assets/example.png)
+- If you paste images frequently, we recommend the VS Code “Paste Image” extension and add these settings (Workspace settings.json):
+  ```json
+  // .vscode/settings.json
+  {
+      "ipynb.pasteImagesAsAttachments.enabled": true,
+      "pasteImage.basePath": "${projectRoot}",
+      "pasteImage.path": "${projectRoot}/docs/assets",
+      "pasteImage.forceUnixStyleSeparator": true,
+      "pasteImage.insertPattern": "![](../../assets/${imageFileName})",
+      "pasteImage.namePrefix": "img-",
+      "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+      "pasteImage.pasteOnPaste": true,
+  }
+  ```
+
+### Admonitions (tips, notes, warnings)
+Use MkDocs Material admonitions:
+```markdown
+- !!! info "Optional title"
+    Indented content (4 spaces)
+- !!! warning
+    Be careful with...
+```
+
+Important: Indent every content line under the !!! header with 4 spaces (1 tab).
+
+### Tabs
+Tabbed content example:
+```markdown
+- === "Tab A"
+    Content for A
+- === "Tab B"
+    Content for B
+```
+
+Again, indent the tab body with 4 spaces (1 tab).
+
+---
+
+## Navigation (sidebar)
+
+The navigation is defined in mkdocs.yml under nav:. To add a page, add an entry pointing to the file under docs/. Example:
+
+```yaml
+nav:
+  - 📣 Release Notes: release-notes.md
+  - 📃 Documents:
+    - Overview: documents/index.md
+    - Document Types: documents/documemt-types.md
+```
+
+YAML is indentation-sensitive:
+- Use two spaces per indent.
+- Quote titles that contain a colon (:) if you hit parsing errors.
+
+---
+
+## Theming
+
+Material for MkDocs supports both built-in and custom themes.
+
+Quick change (built-in colors) in mkdocs.yml:
+```yaml
+theme:
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: indigo
+    - scheme: default
+      primary: teal
+      accent: indigo
+```
+
+Custom brand colors via CSS:
+1) Edit or create docs/assets/theme.css with your CSS variables:
+```css
+:root {
+  --md-primary-fg-color: #0b6d53;
+  --md-accent-fg-color: #ff6f00;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #13a085;
+  --md-accent-fg-color: #ff8f1a;
+}
+```
+2) Reference it in mkdocs.yml:
+```yaml
+extra_css:
+  - assets/theme.css
+```
 
-## **UiPath Activities 1.6.1974.1129 (28-05-2025)**
+---
 
-#### New Activities
+## Project scripts
 
-* **Documents:**
-  * Deep Search: Search through processed documents for specific extracted values.
-* **Reports:**&#x20;
-  * Work items: Returns a DataTable with the number of created work items for a specified period using the specified filters and grouping.
-  * Straight Through Processing: Returns a list of DataTable objects containing the processed numbers and straight through rates of documents per service per processing route taken.
-  * Document Flow Report: Returns a list of DataTable objects containing the document counts for various stages of document processing per service per route taken.
-* **Windows Legacy Projects:**
-  * This will be the last release of the AIForged Legacy package for UiPath - Windows Legacy projects. These projects have been obsoleted by UiPath for quite some time and should no longer be used for new processes and libraries. They are also no longer an option in the newest versions of the UiPath Studio.
+We provide cross-platform scripts to avoid manual setup:
 
-## \*\*\*New - AIForged Studio - Web 1.0.0 (11-04-2025)
+- Windows: .\scripts\dev.ps1 [setup|serve|build|clean]
+  - Example: .\scripts\dev.ps1 serve
+- macOS/Linux: ./scripts/dev.sh [setup|serve|build|clean]
+  - Example: ./scripts/dev.sh serve
+- Double-click launcher (Windows): Start-Docs-Server.cmd
 
-We are proud to announce the availability of the new web based AIForged Studio built entirely from the ground up in a performant web specific framework.
+What serve does:
+- Creates/uses a local .venv
+- Installs dependencies
+- Starts mkdocs serve with live reload
 
-The new AIForged Studio web interface provides familiar yet improved functionality for configuring and managing everything in your AIForged Tenant from projects to services to transactional statements and more.
+---
 
-**What's included in this release?**
+## Build and deploy
 
-* **Project creation and management**&#x20;
-  * With a new unified view of documents and their various statuses within a project.&#x20;
-  * Quick start project creation that allows you to select your initial AIForged service during initial project creation.
-* **Service creation and management**&#x20;
-  * Easy access to service settings and field definitions without needing to navigate multiple views and screens.
-  * Including a revamped service configuration wizard.
-  * Context aware service views show you only what you need to see, while remaining fully configurable for advanced users.
-* **Document labelling and training**&#x20;
-  * A revamped labelling experience paves the way for a more efficient and user friendly service-configuration and model-training experience.
-* **LLM (Large Language Model) service configuration**
-  * A more intuitive prompt engineering experience awaits you in the service view of LLM and ChatGPT extractors.
-  * The new LLM service type from AIForged allows you to leverage the power of multiple LLM models to enhance your IDP (Intelligent Document Processing) process.
-* **Organization Management**
-  * A more intuitive organization management screen allows you to quickly setup your Tenants and organization groups and to configure role based access to projects for existing and new organization members.
-* **Tenant context:**
-  * Everything you do in the new AIForged Studio is governed by your selected Tenant / Organization, making it easier to manage what users are allowed to do.
-* **Less cluttered, more intuitive**
-  * With an approach to minimize clutter and only show users what they need to see, the new AIForged Studio brings you a much improved overall user experience.
-* **Much more**
+Local strict build:
+- Windows: .\scripts\dev.ps1 build
+- macOS/Linux: ./scripts/dev.sh build
 
-The new AIForged Studio is available today at [https://studio.aiforged.com](https://studio.aiforged.com).
+Continuous deployment:
+- GitHub Actions builds the site and deploys to GitHub Pages (see .github/workflows/).
+- On merge to main, CI publishes the site to the configured Pages branch.
 
-## AIForged Studio - Desktop 1.9.20 (11-04-2025)
+---
 
-**Enhancements**
+## Repository structure
 
-* **New Organization and Tenant based functionality:** Allows you to configure roles and permissions based on your organizational (or other preferred) hierarchy. Provides finer control over roles and permissions based access to projects.
+```yaml
+- mkdocs.yml                # Site configuration (theme, nav, plugins)
+- requirements.txt          # Pinned Python dependencies
+- docs/
+  - index.md                # Site home (Release notes)
+  - assets/                 # Images and static assets
+  - services/               # Section example (each with index.md)
+  - ...                     # Other sections (see nav)
+```
 
-**Bug Fixes**
+---
 
-* **New WinUI related improvements:** New WindowsAppSDK releases from Microsoft include improvements and fixes for various slowdowns and freezes experienced by users while navigating and using the desktop version of the AIForged Studio.
+## Conventions and gotchas
 
-## Platform (11-04-2025)
+- Use index.md for section landing pages (MkDocs doesn’t use README.md in subfolders).
+- Encode spaces and parentheses in image file names if needed (editor/automation handles this).
+- Avoid trailing slash markers (\ or /) at end of lines — these were GitBook soft-breaks.
+- For directory links, always point to index.md:
+  - Good: ../custom-service-code/index.md
+- Anchors are case-insensitive but avoid trailing punctuation in the URL.
+- Keep CI green by running a strict build locally: mkdocs build --strict.
 
-**New Features**
+---
 
-* **Tenant level access control:**&#x20;
-  * Allows you to configure roles and permissions based on your organizational (or other preferred) hierarchy. Provides finer control over roles and permissions based access to projects.
-  * Improved APIs for group, role and member management.
-  * Improved APIs for project and user creation.
-  * Improved APIs for project and service management.
+## Optional: VS Code setup
 
-**Bug Fixes**
+Recommended extensions:
+- Markdown All in One
+- markdownlint
+- YAML (Red Hat)
+- Paste Image
 
-* Resolved an issue that could cause certain document types to prevent further automatic processing of documents.
-* Various other minor bug fixes in various APIs.
+We also provide tasks under .vscode/ (if present):
+- Docs: Serve (MkDocs)
+- Docs: Build (strict)
 
-## AIForged Studio 1.9.10 (14-02-2025) - Hotfix Release
+---
 
-### Desktop
+## Contributing workflow
 
-#### **Enhancements**
+1) Create a feature branch from main:
+   - git checkout -b docs/my-change
+2) Run local preview and edit:
+   - Windows: .\scripts\dev.ps1 serve
+   - macOS/Linux: ./scripts/dev.sh serve
+3) Keep nav updated in mkdocs.yml if you add new pages.
+4) Run a strict build before pushing:
+   - mkdocs build --strict
+5) Commit, push, and open a PR.
 
-* **Performance Optimization:** Improved memory usage, optimized object management, and adjusted runtime configurations to enhance responsiveness and eliminate freezing issues.
-* **Dependency Updates:** Updated to stable versions of key libraries and frameworks, including WindowsAppSdk 1.6, CommunityToolkit, and Syncfusion, to ensure better compatibility and stability.
+---
 
-#### **Bug Fixes**
+## Troubleshooting
 
-* Resolved freezing issues caused by .NET 9 GC optimizations and improved overall application stability.
+- Python not found:
+  - Install Python 3.10+ and ensure it’s on PATH (python or python3).
+- PowerShell script blocked:
+  - Start PowerShell as Administrator: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+- Port in use:
+  - mkdocs serve -a 127.0.0.1:8081
+- YAML error “mapping values are not allowed here”:
+  - Usually a colon in a title not quoted, or bad indentation in mkdocs.yml.
+- Images not showing:
+  - Confirm files exist under docs/assets and links are relative (assets/filename.png).
 
-## Platform (22-01-2025)
+---
 
-#### New Features
+## License
 
-* **Add Document Intelligence:** Upgrade Document Intelligence feature from preview to General Availability.
-* **Add Claude Extraction (Preview):** Add preview of Claude extraction.
-* **Add OCR Layout Service**: For structured extraction into Markdown.
-
-#### Improvements
-
-* **Reports:** Improve work item, document and credit usage reports.
-* **Runtime**: Update to .net 9.0.1 security patch.
-* **Semantic Kernel (Preview)**: Update to latest 1.33.1 SDK
-* **LLM Services**: improve JSON validation checks, add OCR alignment feature
-* **Google Document AI:** Add prebuild models: Bank Statements, Expense, Ids, Invoices, Pay Slips, US Driver Licenses, Us Passports, Utilities, W2, W9
-
-**Bug fixes**
-
-* **ChatGPT**: fix incorrect probability calculation when no images attached
-* **Service Initialization**: Add small fix for service initialization
-
-## AIForged Studio 1.9.1 (21-01-2025) - Hotfix Release
-
-### Desktop
-
-**Bug Fix**
-
-* Fixed issue that prevented reCAPTCHA from functioning.
-
-## AIForged Studio 1.9.0 (29-11-2024)
-
-### Desktop
-
-#### New Features
-
-* **Create Project Blade:** Added a new interface for creating projects, improving user workflow.
-* **User Preferences for Workflow View:** Introduced a user preference option to select preferred workflow views for a more personalized experience.
-* **Prompt Configuration Enhancements:** Added new controls for configuring parent-child prompt relations and variable mappings, with automatic detection of variable names in prompt text.
-* **JSON Response Format Setup:** Added new functionality and an editor to configure the JSON response format for each prompt, enhancing flexibility in prompt management.
-
-#### Enhancements
-
-* **Project Creation Process:** Improved to allow adding projects to a group during creation.
-* **Adorner Thumb Controls:** Reworked grip areas and improved disposal logic for better user interaction.
-* **LLM Prompt Config:** Reworked the control to utilize settings cards and added new configuration settings for enhanced flexibility.
-* **Semantic Kernel Update:** Updated to the latest version for improved AI capabilities.
-
-#### Bug Fixes
-
-* **UI and Layout Improvements:** Resolved various UI issues, including layout cycles and scrolling problems in multiple views.
-* **Session Management:** Fixed session validation loops and minor bugs with session expiry detection.
-* **Document Verification:** Fixed issues with label inversion, copy to clipboard logic, and virtual table nesting.
-* **Service Management:** Corrected issues related to deleting services and updating views accordingly.
-* **Editor and Config Controls:** Implemented fixes for prompt config controls, code editor scrolling, and introduced a "save" keyboard shortcut in the Monaco editor.
-
-#### Technical Improvements
-
-* **Dependency Updates:** Updated dependencies and refactored code to support new versions and features.
-* **Navigation and Caching:** Started work on disabling navigation cache to resolve issues, improving navigation handling.
-* **Error Handling:** Added exception handling in critical operations to prevent potential crashes.
-* **Performance Enhancements:** Refactored string operations to use more efficient memory extensions and improved base view model logic.
-* **WASM and Toolkit Migration:** Fixed issues post-migration to Community Toolkit 8 and migrated to WindowsAppSDK 1.6.
-* **Migration to .NET 9:** Upgraded the framework to .NET 9, offering better performance and new features.
-
-#### Ongoing Developments
-
-* **AOT Publishing Preparation:** Began updating classes for Ahead-of-Time (AoT) publishing.
-* **LLM Editor Improvements:** Continued enhancements to the LLM Prompt Editor and related configurations.
-* **Visual and UX Enhancements:** Made minor visual improvements to various components, including Service Wizard Cards and project views.
-
-#### Notes
-
-This release focuses on improving the user experience through better configuration options, enhanced project management features, and robust error handling. Continued efforts in optimizing code, upgrading to .NET 9, and updating dependencies ensure a stable and efficient system.
-
-## Platform (29-11-2024)
-
-#### New Features
-
-* **Add RAG (Retrieval-Augmented Generation):** Introduced a new feature to enhance generation capabilities by retrieving relevant information.
-* **Add Custom Semantic Kernel Modules:** New modules to allow more customized and fine-grained semantic processing.
-* **Add text to speech:** Added functionality to convert text into spoken words, enhancing accessibility and user interaction.
-
-#### Enhancements
-
-* **AttachImageData Page Limit Increase:** Updated the page limit from 20 to 50 for the ChatGPT service, allowing for more data to be processed per request.
-* **Prompt Variable Mapping with JSON:** Now accepts JSON as a configuration format when using the template approach with the ChatGPT Extractor, offering more flexibility in data handling.
-* **Default Processed Document Status Change:** Changed the default status for nested OCR service documents to `InterimProcessed` from `Processed`, for better status tracking.
-* **Speech to Text Improvement:** Enhanced the accuracy and speed of converting spoken words into text.
-
-#### Bug Fixes
-
-* **Transaction Count Fix:** Corrected the issue of incorrect counts when creating transactions for nested OCR services.
-* **ChatGPT Classifier Price Fix:** Resolved the problem where ChatGPT classifier transactions were created with a price of 0.
-* **ChatGPT Service Exception Fix:** Fixed an issue where older ChatGPT services would throw exceptions if not reinitialized properly.
-
-#### Runtime
-
-* **.Net 9.0 Upgrade:** Upgraded to .Net 9.0 for improved performance and security.
-* **Rate Limiting Protection Improvement:** Enhanced rate limiting protection mechanisms to better handle traffic and prevent abuse.
-
-#### Notes
-
-This release focuses on expanding features, improving existing functionalities, and resolving critical bugs to enhance overall system performance and user experience. The introduction of new features like RAG and text to speech opens up new possibilities for users, while enhancements to existing services improve efficiency and usability. Upgrading to .Net 9.0 ensures the platform remains secure and performant.
-
-## **UIPath Activities 1.6.1777.1031 (12-11-2024)**
-
-#### New Features
-
-* **GetAuditTrail Activity**: Introduced a new activity to retrieve audit trails, enhancing visibility and tracking of processes.
-* **Activity Timeout Property**: Added a timeout property to both the Process Document and GetAuditTrail activities, providing better control over execution times.
-
-#### Enhancements
-
-* **Recursive Delete Parameters**: Added recursive delete parameters to the Delete Document activity, allowing for more flexible and comprehensive document management.
-* **Hard Delete Parameter**: Introduced a hard delete parameter to the Delete Document activity to ensure documents can be permanently removed when needed.
-* **Package Split**: NuGet packages have been split to support both .NET Framework and .NET Standard:
-  * **AIForged.Legacy**: Supports Windows Legacy projects.
-  * **AIForged**: Continues to support modern-only projects.
-* **Framework Migration**: Migrated .NET Framework support to version .NET Framework 4.7.2, aligning with modern development standards.
-
-#### Notes
-
-This release is designed to improve compatibility, enhance functionality, and ensure a smoother development experience. The split of NuGet packages into dedicated versions for legacy and modern projects allows for better dependency management and security updates, while maintaining a unified codebase to simplify maintenance and development.
-
-## AIForged Studio 1.8.2 (08-08-2024)
-
-### Desktop
-
-#### Bug Fixes
-
-* **Parameter Definition Override:** Resolved an issue affecting parameter definitions during certain operations.
-* **Session Dialog Stability:** Improved the stability of session dialogs to prevent potential crashes.
-* **Resource Management:** Fixed issues with resource cleanup processes to enhance system performance.
-* **UI Element Renaming:** Updated internal naming conventions for consistency.
-* **Style Exception Resolution:** Addressed exceptions occurring in specific build configurations.
-* **Code Editor Improvements:** Enhanced editor functionality and updated to the latest version for better performance.
-* **Legacy Table Handling:** Fixed longstanding issues related to table row manipulations.
-* **Code Editor Scrolling:** Corrected scrolling issues within the code editor for better usability.
-* **Wizard Navigation Fixes:** Resolved issues affecting navigation and display within multi-step processes.
-* **User Session Management:** Made improvements to session handling for a smoother user experience.
-
-#### Enhancements
-
-* **Document Verification View:** Minor updates to improve handling of deleted fields.
-* **Service Wizard View:** Improved view updates when navigating between configuration steps.
-* **Permissions and Binding:** Addressed various permission and binding issues to ensure proper functionality.
-* **Ongoing Developments:** Continued work on enhancing build processes and other areas of the system.
-
-## AIForged Studio 1.8.0 (05-08-2024)
-
-### Desktop
-
-#### Work Items
-
-* **User Search Control Refactor:** Excluded users in the user search control can now be included when necessary during Work Item creation.
-* **User Role Display Fix:** Corrected the user role dropdown to show only roles available in a project, rather than all roles.
-* **Dynamic Group Roles:** UI now accurately displays group roles that exist within a project when creating, transferring, escalating, or rejecting a work item.
-* **Multi-User Sessions:** Users can now log in with multiple sessions and easily switch between them via the Accounts flyout, though session duration is limited by authentication token expiry.
-* **Session Management Improvements:** Improved settings storage for packaged apps and enhancements to multi-user session management.
-
-#### Document Verification
-
-* **Verification Field Ordering:** Further improved the ordering of nested verification fields and made minor bug fixes related to verification control ordering.
-* **Quality of Life Enhancements:** Implemented various QOL improvements to verification and improved the ordering of table cells based on verification requirements.
-* **Verification Controls Overhaul:** Major updates to verification controls in document verification view for better usability and polish.
-* **Additional Features:** Added controls for definition condition filters, tooltips to type settings controls, and the ability to re-process documents within the document verification view.
-
-#### User Experience Improvements
-
-* **Settings Controls Overhaul:** Complete redesign of settings controls to align with Windows 11 aesthetics.
-* **Prompt Configuration:** Streamlined UX for prompt configuration changes and added "Enable All Options" toggles to Process and Training dialogs.
-* **Project View Enhancements:** Fixed group names visibility under project names and improved table virtual overlay rendering.
-
-#### Technical Improvements
-
-* **Community Toolkit Migration:** Migrated to Community Toolkit 8 for better functionality.
-* **Performance Enhancements:** Improved UI responsiveness by adjusting default UI thread priority and improved memory management and garbage collection.
-* **Dependency Updates:** Updated dependencies for improved stability and performance.
-
-#### Bug Fixes and Maintenance
-
-* **General Bug Fixes:** Addressed issues related to workflow items, workflow reason datasets, and export view model for nested clusters.
-* **Service View Fixes:** Minor fixes to Basic Service View and refresh issues in the basic service view.
-* **Navigation and Permissions:** Fixed main navigation view items permissions to align with backend changes.
-* **Document Processing:** Added auto document refresh post-processing and improved memory management in the process view.
-* **Session Expiry Handling:** Resolved issues with logging back in after session expiry and profile switching not updating the current user.
-* **AIForged Assistant Update:** Updated to use GPT-4o Mini with full chat history retention of up to 16 messages.
-* **Miscellaneous Fixes:** Various other improvements and bug fixes, including fixing a memory leak in PersistenceService and improving document preview loading.
-
-## AIForged Studio 1.7.20 (14-06-2024)
-
-### Desktop
-
-**Document Verification**
-
-* **Bug Fix**: Fixed intermittent issue with studio crashing due to layout cycle detection when lazy rendering Verification Controls.
-* **Enhancement**: Major improvements to verification control ordering, specifically for fields that require verification.
-* **Enhancement**: Improvements to the visibility of verification controls for fields that require verification.
-* **Enhancement**: Verification editor changes can now be confirmed by the Enter key.
-* **Enhancement**: Other quality of life visual improvements.
-
-**Service Wizard**
-
-* **Enhancement**: Improved UX when project categories are expected to be automatically refreshed.
-
-**Service Wizard: LLM Prompt Studio**
-
-* **Bug Fix**: Fixed prompt name changes not triggering unsaved changes flag.
-* **Enhancement**: Prompt Preview now shows the combined prompt for the currently selected prompt's index.
-* **Enhancement**: Prompt Index selection control is now hidden when a prompt is configured as Sticky.
-* **Bug Fix**: Fixed not being able to scroll the Prompt Preview.
-* **Enhancement**: The config to switch between JSON and markdown editor is now saved and checked per prompt.
-* **Enhancement**: It is now easier to configure prompts and move between prompt configs.
-
-**Work Items**
-
-* **Bug Fix**: Fixed issue with creating work items popup not loading available service users.
-* **Bug Fix**: Fixed issue with all work item popups loading all service users instead of only verifydoc users at startup.
-
-**Documents View**
-
-* **Change**: Moved bulk actions availability to advanced view.
-
-**Custom Datasets**
-
-* **Enhancement**: Improved JSON import reliability.
-
-## AIForged Studio 1.7.10 (07-06-2024)
-
-### Desktop
-
-**Document Verification**
-
-* **Bug Fix**: Fixed issue with displaying tables that contain only a single row.
-
-**Document Categories**
-
-* **Enhancement**: Improvements to the document category views.
-* **Enhancement**: Implemented new MS Forms specific training type options in category training options.
-* **Bug Fix**: Can no longer delete the default category in a project.
-
-**ExportView**
-
-* **Enhancement**: Improved loading speed of extraction results.
-* **Enhancement**: Improved rendering of nested tables and clusters.
-* **Enhancement**: Changed JSON export to export the visible data.
-
-**Service Wizard**
-
-* **Enhancement**: Added function to create a custom dataset directly from a service's wizard.
-
-**Service Wizard: LLM Prompt Studio**
-
-* **New Feature**: Implemented new LLM Prompt Studio with improved quality of life when designing, editing, configuring, and testing prompts. The new mini studio is automatically enabled when navigating to the prompt matrix step in an LLM service such as the Chat GPT Extractor service.
-
-**User Groups**
-
-* **Bug Fix**: Fixed an issue that would cause an inconsistent user experience in the user groups view.
-
-**AIForged Copilot Preview**
-
-* **Enhancement**: Some improvements to the AIForged copilot.
-* **Enhancement**: The copilot will now react more responsively to requests and has an improved memory.
-
-**General**
-
-* **Fix**: Passwords will now be hidden in the UI. Once they are set, they cannot be viewed again.
-* **Minor Fixes**: Minor bug fixes to simple service view.
-* **Minor Fixes**: Minor bug fixes to navigation and memory management.
-* **Minor Fixes**: Minor bug fixes to selection controls used in the documents and user groups management views.
-* **Update**: Updated to the latest Windows App SDK release.
-* **Various Fixes**: Various other minor bug fixes and improvements.
-
-## AIForged (10-04-2024)
-
-### Platform
-
-**User Groups**
-
-* Overhaul: User and user group management has been completely overhauled for the AIForged platform. See the Studio changelog for more information on the overall changes.
-
-**ChatGPT Document Extraction**
-
-* Enhancement: New prompting techniques have been added to allow for structured entity extraction from long form documents such as legal agreements and policy documents.
-
-## AIForged Studio 1.7.0 (10-04-2024)
-
-### Desktop
-
-**User Groups**
-
-* Enhancement: User group management has been completely overhauled.
-  * The new hierarchy for user groups is as follows: Project <- User Group <- User Group Role <- User.
-  * User permissions are now situated at the role level, where users are linked to a role, a group role is linked to a user group, and a user group is linked to a project.
-  * An infinite number of user groups can be linked to a project, an infinite number of group roles can be linked to a group, and so forth.
-  * A group role can be assigned multiple permissions. And those permissions will ultimately determine the level of access linked users have to a specific project.
-  * The ability for a user to be added to a user group can be restricted by domain.
-* Enhancement: The UI and UX have been completely overhauled to reflect this change and to improve the overall user group management experience.
-
-**ChatGPT Document Extraction**
-
-* Prompt editors have been improved to reflect the enhancement to prompting techniques. It is now possible to prompt a model multiple times for the same document text using Sticky prompts and prompt indexes. More information will be added to our documentation in due course.
-
-**AIForged Copilot Preview**
-
-* New Feature: We have worked hard on bringing Copilot functionality to the AIForged Studio. The AIForged Assistant is currently in preview and can be accessed by enabling Teaching Tips in your user profile and clicking on the new Assistant Icon next to the Teaching Tip help icon in any view or tab.
-  * The AIForged Assistant is able to guide you through your journey with AIForged and is particularly useful for setting up new projects and services.
-  * The AIForged Assistant can also perform certain tasks for you, such as creating, opening and changing Projects and Services and their respective settings. It can even read and summarise information from extracted documents. It has the ability to create and assign work items, or make adjustments to definition rule settings. It can even add, update or read records to and from datasets.
-  * Kindly note that the AIForged Assistant is still very much in preview form and any information or assistance it provides may be incomplete, inaccurate or completely irrelevant.
-
-**Custom Labelling**
-
-* Enhancement: Improved the rendering of verification controls for nested tables and clusters.
-* Bug Fix: Fixed issue with Line and Word adorner scaling.
-
-**Documents**
-
-* Enhancement: It is now possible to drill up in a document hierarchy when the **Master Id** column is visible in the documents grid and the document is part of a document hierarchy by clicking on the Master Id of a document.
-* Enhancement: Added a new Rerun All Verifications option for documents selected in the documents grid.
-
-**Document Results Export**
-
-* Enhancement: Improved exporting of nested tables and clusters
-
-**Projects**
-
-* Enhancement: Added option to hide empty projects in the Projects view.
-
-**Wallets and Billing**
-
-* Enhancement: Improved the overall credit management experience by adding new credit creation and transfer functionality where applicable.
-
-**Basic Studio**
-
-* Enhancement: Added new streamlined and simplified Service details view for those that want to get going faster.
-
-**Workflow**
-
-* Enhancement: Added new bulk actions for super users and administrators in the Data tab of the Workflow view.
-
-**General**
-
-* Enhancement: Added Excel Export functionality to the Service Pricing view.
-* Bug Fix: Fixed scaling issue experienced with combo boxes when the overall window scale was less than native.
-* Migrated to WindowsAppSdk 1.5
-
-## AIForged Studio 1.6.7 (28-02-2024)
-
-### Desktop
-
-**Dataset Editor**
-
-* Enhancement: Added additional controls to the basic dataset editor to support additional value types.
-
-**Document Results Export**
-
-* Enhancement: Improved speed of the details view data generation.
-* Enhancement: Improved consistency of exported column names.
-
-## AIForged Studio 1.6.6 (16-02-2024)
-
-### Desktop - Hotfix
-
-**Dataset Editor**
-
-* Bug Fix: Fixed issue that could prevent a user with valid permissions from editing values / fields.
-* Bug Fix: Fixed issue where the basic dataset editor would not detect value changes.
-
-## AIForged Studio 1.6.5 (14-02-2024)
-
-### Desktop - Hotfix
-
-**Custom Labelling**
-
-* Enhancement: Made improvements to ensure that Parameter Definitions copied between services have their settings initialized.
-* Bug Fix: Fixed issue where user preferences not having loaded would cause custom label configs not to load.
-
-**Documents**
-
-* Bug Fix: Fixed issue with export button not being visible due to race condition.
-
-**General**
-
-* Bug Fix: Fixed regression causing user preferences to load too late.
-
-## AIForged Studio 1.6.4 (13-02-2024)
-
-### Desktop - Hotfix
-
-**General**
-
-* Bug Fix: Fixed an issue that could cause an unsuccessful update of the unpackaged version of the AIForged Studio.
-
-## AIForged Studio 1.6.3 (06-02-2024)
-
-### Desktop - Hotfix
-
-**Parameter Definitions**
-
-* Bug Fix: Fixed drag and drop result definitions functionality.
-* Bug Fix: Improved visual synchronization between multiple open definition views of the same service.
-
-## AIForged Studio 1.6.2 (01-02-2024)
-
-### Desktop - Hotfix
-
-**Usergroup Management**
-
-* Bug Fix: Fixed issue preventing some owners from managing their usergroups.
-
-## AIForged Studio 1.6.1 (26-01-2024)
-
-### Desktop
-
-**Document Verification**
-
-* Enhancement: Improved user role permissions effectiveness in the Document Verification View
-* Bug Fix: Fixed adorner label ZIndex. Sometimes cusom label headers would disappear due to race condition.
-
-**User Groups Management**
-
-* Enhancement: Improved repsonsiveness and overall UX in the user groups management views
-
-**Work Flow**
-
-* Enhancement: Added QA work item type functionality to the Work Flow.
-
-**General**
-
-* Other: Restricted About View navigation exploit.
-* Many minor layout updates / improvements
-
-## AIForged (24-01-2024)
-
-### Platform
-
-* New: Added Work Item reason selection to APIs and added WorkItemReasonDataset generation for qualifying services.
-* New: Added triggers for nested Services.
-* New: Added new ChatGPT prompt matrix to allow fine tuning of ChatGPT prompts.
-* New: Added new Aggregated credit transfer API.
-* Enhancement: Improved handling of malware detection / quarantining for document uploads and email scraping.
-* Enhancement: Added property to transaction schemas to distinguish credit transfers from processing usage.
-* Enhancement: Old and deleted projects can now be archived for record keeping purposes.
-* Enhancement: New Work Item related functions in the custom code module allow updating work items from custom code.
-* Security: Implemented project and service API rate limiter.
-* Bug Fix: Credit transfers did not enforce debit service check.
-* Bug Fix: Users could not update their user profiles.
-
-## AIForged Studio 1.6.0 (24-01-2024)
-
-### Desktop
-
-**Basic Studio**
-
-* New: The new Basic Studio layout refines the studio layout and removes or hides controls that are not utilised by general implementers.
-* Enhancement: Many new views have been introduced and existing views have been enhanced to improve the overall user experience when configuring projects, services, rules and more.
-* New: Users may select between the Basic Studio and Advanced Studio when logging in for the first time after updating, or by selecting the desired studio layout in the user's profile configuration.
-* New: Added first-launch studio type selection.
-* New: Implemented simple configuration view for Service Settings.
-* New: Implemented simple configuration view for result type parameter definitions.
-* New: Implemented blade style view for structured document results.
-* New: Implemented Document Hierarchy Flow View to visualise the flow of documents.
-
-**CategoriesSelectionControl**
-
-* Enhancement: Added function to clear all selections
-
-**Custom Datasets**
-
-* New: Introduced new custom dataset editor for the Basic Studio, with streamlined functionality and straightforward useability.
-* New: The new custom dataset editor will select the best available editor for each cell based on the cell's value type.
-* New: The new custom dataset editor also allows for code editing and specialised functionality when combined with qualifying datasets such as the ChatGPT Prompt Matrix
-
-**Document Verification View**
-
-* Enhancement: Improved ordering of verification controls
-* Bug Fix: Fixed adorner appearance not updating when record training status changed
-* Bug Fix: Fixed DocumentsVerificationView canvas incorrectly scrolling when a field has no block info
-* Bug Fix: Fixed fill column cells issue
-* Bug Fix: Fixed issue with not loading the correct viewer based on the document content type
-
-**Documents View**
-
-* Enhancement:Uploading documents will no longer request the user to select a document class if none exist
-
-**ParamDefView**
-
-* New: Added create PD functionality to ParamDefView
-
-**Paging**
-
-* New: Added page selection dropdown to paging control
-
-**Service Wizard**
-
-* New: Added unsaved changes detection for Datasets
-* Enhancement: Improved unsaved changes detection overall
-* Enhancement: Improved how views are loaded when a wizard is selected
-
-**User Profile**
-
-* Enhancement: Reworked the general user profile settings view
-
-**Wallets and Billing**
-
-* New: Complete overhaul of what was perviously the Transactions view. Transactions are now grouped by Wallet (based on user groups) and provided in a statement format with full drilldown functionality.
-* New: Functionality to transfer wallet credits to another wallet from within the Wallets and Billing view.
-* Bug Fix: Fixed issue with opening training documents from a document reference link
-
-**Work Flow**
-
-* New: Added Work Flow reasons. It is now possible to setup an AIForged dataset containing reason codes and descriptions. These reason codes can be used for a multitude of functions, including: Indicating the reason for creating a work item; indicating the reason for escalating a work item; indicating the reason for rejecting a work item. And so forth. Reason codes can be setup to adhere to business best practices and processes and can be accessed externally via AIForged's SDK, UIPath Activities, Power Automate Connector, or direct API calls.
-* New: Reason codes can be enabled by editing the WorkFlowReasonDataSet dataset in your service configuration.
-* New: Reason code selection will be displayed in the following areas of your Work Flow:
-  * Transfer, Escalate, Reject and Delete
-  * When publishing from the Document Verification View
-  * When classifying from the Document Verification View
-  * When rerunning all rules from the Document Verification View
-  * Work item reasons are displayed in work item cards
-  * Work item reasons are displayed in work item grid
-* Enhancement: Improved layouts of Work Flow related dialogs.
-
-**Project / Service Cloning**
-
-* New: It is now possible to schedule regular cloning of projects / services to a different project. Cloning options can be access from within the Project or Service view by clicking on the Clone command in the command bar.
-
-**General**
-
-* Enhancement: Migrated to dotnet 8
-* New: Added column chooser to AIForged datagrids.
-* New: Added column chooser to AIForged treegrids.
-* New: Added chosen column preferences to user preferences. Chosen columns are saved per view per user.
-* Enhancement: Implemented unsaved changes check when navigating and closing tabs.
-* Enhancement: Improved search control's deep pathing search capability
-* Enhancement: Updated Monaco editor and added some missing properties / updated changed properties
-* Enhancement: Various performance enhancing changes for DataType controls.
-* Enhancement: Improved speed of Code Editor and RichTextEditor initial load.
-* Enhancement: Added group name to Project Control in Projects View
-* Enhancement: Initial load time improvements for controls hosted in WebViews.
-* Enhancement: Improved the account activation and forgot password user experience.
-* Enhancement: Single instancing now works as intended, and opening the app via a URL that starts with aiforged:// should now open in an existing instance of AIForged Studio.
-* Enhancement: Improvements and minor bug fixes to audit related views.
-* Enhancement: Improvements and minor bug fixes to logs related views.
-* Enhancement: Improvements and minor bug fixes to events related views.
-* Enhancement: Improved responsiveness of closing tabs.
-* Update: Updated the PDF viewer library used in non-verification scenarios.
-* Bug Fix: Fixed issue with DataSetEditor not completely disabling editing when a parameter definition is malformed
-* Bug Fix: Fixed issue with Service name editor not hiding when changes are saved
-* Bug Fix: Fixed issue where adding or removing a service to / from a project would no longer update visuals
-* Bug Fix: Fixed issue that could cause the teaching tips not to close.
-* Major performance improvements.
-* Many other bug fixes and enhancements.
-
-### Web
-
-* The web version of the studio has officially entered beta stage. Access AIForged Studio - Web from your browser [here.](https://studio.aiforged.com/)
-* Some features may still be incomplete, and some bugs may still make an appearance.
-
-## AIForged (14-11-2023)
-
-### Platform
-
-* Bug Fix: Improve credit checks when pdf document password protected
-* Bug Fix: MS Neural url selection
-* Enhancement: Improve rules and custom code execution to solve memory leak in Roslyn
-* Bug Fix: Allow users with Verify shred permissions to View parameters
-* New Feature: allow custom code to check if document is in training box
-* Bug Fix: Fix scaling issue with PDF to Image
-
-## AIForged Studio 1.5.5 (13-10-2023)
-
-### Desktop
-
-* Enhancement: In the document designer / document verification view: The overlay and control filters are now saved per service type whenever a filter is changed. This means that the filters are now remembered when navigating between documents and between wizards. A change to how user preferences are stored may result in user preferences being reset.
-* Enhancement: Added improved visual feedback when a service type has been disabled and is no longer available on the AIForged platform.
-* Enhancement: The "Invert Selection" button in the documents view (and other views) will now correctly only select and deselect visible data.
-* Enhancement: Added "Resend Invite" command to the user group user administration view in the "Actions" menu. Resending an invite is only allowed for user links that are still in the "Requested" state.
-* Enhancement: Moved the filter controls out of the "Filters and Summary" expander in the documents view. This is an attempt to make applied filters more apparent to a user.
-* Enhancement: Users can now simply click the "Train Service" button in the training step of a classification service's wizard to train all documents. Instead of having to select all document before clicking on "Train Service".
-* Enhancement: The constants generated in the custom code view are now correctly pathed based on service nesting, etc.
-* Bug Fix: Fixed an issue in the document designer / document verification view that could cause the Studio to freeze when overlay brushes are updated.
-* Bug Fix: Fixed an issue where field overlays could be incorrectly offset when a document page is a non-standard size.
-* Bug Fix: Fixed an issue where a user would be required to select a category in the service wizard of a document clustering service.
-* Bug Fix: Fixed an issue in the custom label setup popup that would return duplicate results when searching.
-* Bug Fix: Fixed an issue where a page overlay would not be drawn when scrolling in a zoomed in document designer / document verification view with a non-standard size document \ page.
-* Bug Fix: Fixed multiple issues with the document view's summary cards.
-* Bug Fix: Fixed a potential issue that would cause the Process / Training log view to cause the Studio to freeze.
-* Bug Fix: Fixed a caching issue where column filters would not be cleared when navigating between views of the same type.
-* Updated to the latest Windows App SDK release (1.4.2)
-* Other bug fixes and performance updates.
-
-## UIPath Activities 1.5.1380.1051 (12-10-2023)
-
-* Added transfer and escalate work item activities to allow a UIPath process to transfer / escalate a work item according to a specific method.
-* Added new activity to directly update a document's status given its Id and new status.
-* Added new activities to allow a UIPath process to create logs directly in the AIForged Logging Subsystem. Log messages can also be retrieved based on specified criteria.
-* Updated activities to be inline with the latest AIForged API changes.
-
-## AIForged Studio 1.5.4 (06-10-2023)
-
-### Desktop
-
-* Enhancement: Improved the speed and overall stability of the document extraction export view.
-* Enhancement: Confidence color is now calculated on an improved "linear" scale.
-* Enhancement: Major improvements to Code Insight / Code Completion / Intellisense in the Custom Code editor. More enhancements to come.
-* Enhancement: Added optional duplicate key value check when importing values from CSV in the Custom Dataset editor.
-* Enhancement: User administration: User impersonation checks will now correctly use the impersonated user's Id to check permissions when switching / navigating between views.
-* Bug Fix: Fixed issue in the document designer / document verification view, where manipulating a table field marked for deletion would no longer delete that field.
-* Bug Fix: Deleted fields are no longer drawn in the verification controls.
-* Bug Fix: Fixed issue where deleted fields would sometimes still be drawn on the document overlay.
-* Bug Fix: Fixed issue that would cause the Studio to crash when filtering more than once in the Custom Dataset editor.
-* Bug Fix: Fixed an issue where total usage cost would not be correctly displayed in the document cost analysis view.
-* Bug Fix: Fixed an issue that would prevent a user from successfully linking an external login provider from the user profile view.
-* Bug Fix: Fixed an issue that would prevent the MFA QR Code from being scanned when dark theme is enabled.
-* Bug Fix: Fixed an issue that would prevent the MFA QR Code from being scanned using the Microsoft Authenticator App.
-* Bug Fix: Fixed grid line settings not being honoured when enabled in a user's profile.
-* Bug Fix: Fixed an issue where the Custom Dataset editor's new row visuals would not correctly update after clicking the accept row changes button.
-* Bug Fix: Fixed multiple other issues related to adding and committing new rows in the Custom Dataset editor.
-* Bug Fix: Fixed issue that would cause the Studio to freeze in the Custom Code editor when an enum's type could not be determined internally.
-* Bug Fix: Fixed multiple internal issues related to JSON interop deserialization in the Custom Code editor.
-* Bug Fix: Fixed SemanticZoom not correctly zooming to the selected item. This affected views and dialogs such as the Service Type Select dialog when selecting a service type to be added to a project.
-* Bug Fix: Fixed scrollbars not visible in the SemanticZoom control.
-* Bug Fix: Fixed stability and reliability of data persistence between views.
-* Bug Fix: Fixed an issue that would cause the "Actions..." button to not be enabled when selected a node in the Service Definitions view.
-* Bug Fix: Fixed an issue that would cause the whole tree to redraw in the Service Definitions view when a simple setting was changed.
-* Bug Fix: Fixed confusing visual feedback when labels are re-scaled to match the provider scale when saving custom labels in the Document Designer \ Document Verification view.
-* Bug Fix: Fixed an issue where the navigation breadcrumbs were difficult to click.
-* Bug Fix: Fixed an issue where adding / removing a child service from a service would not update visuals.
-* Bug Fix: Fixed multiple issues that would prevent a smooth UX when completing wizard steps using the next step button.
-* Bug Fix: Fixed an issue where the Dependency Service swap function would show the service type select dialog twice.
-* Bug Fix: Fixed an issue where the verification controls would not draw in the Document Designer / Document verification view if a table contained an invalid layout.
-* Bug Fix: Fixed an issue where the "Delete Checked" command button would not be enabled in the Workflow Grid View when selecting a work item.
-* Bug Fix: Fixed an internal exception that could occur when a user is automatically logged out when their session is expired. This would cause the user's profile image to not be cleared.
-* Improved startup load speed.
-* Other bug fixes and improvements
-
-## UIPath Activities 1.5.1366.1020 (27-09-2023)
-
-* Added QA work item activities to the workflow category.
-* Updated AIForged SDK which introduced some additional parameters for some activities.
-
-## AIForged Studio 1.5.3 (15-09-2023)
-
-### Desktop
-
-* New Feature: Added new basic drilldown view to "Wallets & Billing" drilldown views with more relevant information at a glance.
-* New Feature: Added a toggle to the user profile to switch between basic and advanced views for the "Wallets & Billing" and related views.
-* Enhancement: Added some additional information in the "Wallets & Billing" header.
-* Enhancement: Major speed improvements when drilling into transactions.
-* Enhancement: Completely overhauled virtual table overlays in the document designer / document verification view.
-* Enhancement: Microsoft Forms: in the HITL document verification / document designer view: for custom tables, cell information is returned for cells with and without extracted values. Cells without values do not contain any location info and thus do not appear in the document overlay. When deleting rows, cells without location info were not flagged for deletion, only visible cells were flagged for deletion. These cells are now included when flagging row cells for deletion and will be deleted when saving your changes.
-* Enhancement: Added additional training options configuration for supported services (Currently only Microsoft Forms: Custom Invoices is supported). Training options can be set from a project's categories view by selecting a category and clicking on the "Training Options" command button.
-* Bug Fix: Fixed issue with DocumentView filters not loading correctly when navigating without tabs.
-* Other bug fixes and improvements
-
-## AIForged Studio 1.5.2 (08-09-2023)
-
-### Desktop
-
-* Added correct protocol activation for accepting group invites.
-* Added new view to allow users to accept group invites.
-* Added training options configuration to the project categories view. (Currently this is only utilised by Microsoft Forms with Custom Invoices).
-
-## AIForged Studio 1.5.0 (01-09-2023)
-
-### Desktop
-
-* Re-wrote app initialization to take advantage of newer WinUI APIs and to ensure alignment with WinUI best practices.
-* Increased available window real estate by refactoring the app layout, including breadcrumb positioning, etc.
-* Implemented persisted data for certain project data. This means that for example: if a project is open over multiple tabs, data will be synchronized across the tabs.
-* Fixed issue where definition value updates were not immediately visible in the definitions tree grid.
-* Fixed issue with verification values not being saved when verification controls are hidden.
-* Fixed issue with Parameter Definition Options not serializing correctly.
-* Fixed issue with missing user preferences on new user accounts
-* UX improvements to the Service Wizard.
-* Added additional export options to the custom dataset editor.
-* UX improvements to the custom dataset editor.
-* Custom labelling / HITL table manipulation bug fixes.
-* Custom labelling / HITL canvas sizing issues fixed for documents with small dimensions
-* Implemented optional tab-free navigation. This can be enabled by disabling the "Use Default Tab Navigation" setting in General User Profile settings.
-* Fixed issue with card count in HITL Kanban View.
-* Implemented adding multiple tables using the same Parameter Definition on the same page.
-* Restricted the admin roles available to a user administrator when editing / creating a user's profile.
-* Fixed issues with switching the current application theme.
-* Added double click add and remove shortcuts to the Table Designer.
-* Fixed issue with teaching tips opening despite being globally disabled.
-* Implemented "Quick Dependency Switch" for dependency services.
-* Added additional progress feedback when saving editor changes.
-* Fixed issues with copying and pasting tables from the clipboard during custom labelling / HITL verification.
-* Implemented generic dataset wizard step for new generic dataset wizard type.
-* Improved row selection styling in datagrids with action buttons.
-* Implemented new "Wallets & Billing" view that allows a user to get an immediate sense of available credits, total usage and credit deposits for their account/s. Users can have access to multiple wallets and can switch between these wallets to view their statistics.
-* Overhaul transactions views which now forms part of "Wallets & Billing".
-* Added a refresh function to the document designer's category documents view.
-* Complete overhaul over the label value popup control to only show relevant information and provide an improved UX.
-* The verification value editor now works with multi-line text.
-* Added many new keyboard shortcuts to the document designer and some other views. Keyboard shortcuts are displayed in tooltips / menu items where available.
-* In the document verification view / HITL: The Verification -> Publish function now correctly honours publish related settings configured in a service.
-* Improved switching between themes.
-* Many other bug fixes and performance improvements.
-
-## AIForged Studio 1.4.6 (03-07-2023)
-
-### Desktop
-
-* Further refinements to the transaction reporting views
-* Added group filter to transactions view
-* Fixed issue with refresh login function
-* New user accounts created from the group management view will now be auto-activated
-* Other bug fixes / improvements
-
-## AIForged Studio 1.4.4 (23-06-2023)
-
-### Desktop
-
-* Added orphaned transactions to transactions details view.
-* Minor improvements to workflow.
-* Fixed publish bug when rerunning rules in verification
-* Improved tesseract implementation
-* Other improvements / fixes
-
-## AIForged Studio 1.4.3 (19-06-2023)
-
-### Desktop
-
-* Hotfix for regression in document extraction results Export Screen.
-
-## AIForged Studio 1.4.2 (15-06-2023)
-
-### Desktop
-
-* Hotfix for regression in Add Service Type Selection dialog.
-
-## AIForged Studio 1.4.1 (14-06-2023)
-
-### Desktop
-
-* Consolidated the user group management into a single view for managing a specifc group. Group managers can now view and manage a group's users in a single view, with the functionality of drilling into a users roles and permissions per project and service in the managed group. It is now easier to invite users to a group via the **Add Users** -> **Invite External User** function. This function simply requires and email address for the user to invite. The invited user will receive an email notifying them of the invite, and requesting them to accept it.
-* Implemented specific permissions check for users that can label documents and users that can train documents (in the workflow and in the wizard). This means that additional roles can be implemented that split the responsibility of labelling and training documents between 2 or more users.
-* Further improved permissions in the document verification view (workflow, boxes and wizard) to align with enhanced AIForged security.
-* Added default option to a document's Cost Analysis view to only show records with charges.
-* Added functionality to flag documents for testing. This will create a document parameter named IsTesting on the flagged documents. This parameter can then be checked for either via integration or in custom code. This feature is available in a service's inbox and outbox and can be access via selecting one or more documents, clicking on **Actions** and then selecting **Flag selected documents for testing**.
-* Add a diff viewer to the custom code control's history view. You can now compare code from the selected history record with your current code anywhere you can write custom code. To access this feature simply open your custom code, select the **History** tab, select a history record and click on **View Diff** in the command bar.
-* Added additional details to grouped headers in the Transactions View.
-* Added additional information to Excel exports from the Transactions View.
-* MS Forms: Added a feature where at least 5 training documents need to exist before training is allowed from a workflow item.
-* Major rework of the Transactions View and Transactions Audit View
-* Added Tesseract OCR for on-the-fly OCR when drawing / manipulating labels on a document.
-* Improved the conditional rules control in the Parameter Definition View to conform with the updated conditional rules in the AIForged platform.
-* Improved UX by providing more useful feedback when certain views or controls are loading data.
-* Reworked Teaching Tips for improved performance.
-* New way to select items in a datagrid: Click and drag to select multiple items. This is great for selecting multiple documents, etc.
-* It is now no longer necessary to manually rerun rules when publishing changes to a workflow item. Publishing will automatically rerun rules.
-* Fixed an issue where copying labels to your clipboard from one project and pasting them in another project would not correctly identify existing parameter definitions in the target project.
-* Fixed an issue that could cause labels to be duplicated under certain conditions during custom labelling.
-* Fixed an issue with transferring custom amounts to users in the group management view.
-* Fixed refresh login function not working when prompted to refresh your login session.
-* Fixed an issue where a user could no longer edit their own profile
-* Updated to WindowsAppSdk 1.3
-* Performance Improvements
-* Various bug fixes and other feature improvements
-
-## UIPath Activities 1.5.1247.1318 (01-06-2023)
-
-* Minor bug fix to initialize activity.
-
-## AIForged Studio 1.4 (06-04-2023)
-
-### Desktop
-
-* The contents of the AIForged Studio window will now scale (up to a certain point) to fit the size of the user's desktop. This frees up a lot of screen real estate on devices with smaller or low resolution monitors.
-* Users can now view and restore the settings history of any field definition in a service's "All Definitions" view. A new command button "View History" has been introduced for this.
-* Users can now view and restore the settings / code history of any custom code. A new "History" tab has been added to the code editor. Please note that at this point in time, restoring code to a previous version will also restore other settings in the containing definition, such as replacement mappings and dictionary lookups.
-* A new right-click context menu has been introduced to the document verification view. Right clicking on any blank space in a document will bring up a context menu with the same options available under the "More..." command button.
-* It is now possible to copy labels to your clipboard and paste them to any document in any service. New commands have been added for this.
-  * Individual labels / tables can be copied by clicking a field and then selecting "Copy Label".
-  * All the labels of a document can be copied by utilising the "Copy labels to clipboard" function available in the new right-click context menu, or "More..." command button.
-  * Labels can be pasted in one of two ways:
-    * "Paste custom labels from clipboard":
-      * This will paste the custom labels as is and won't create new definitions. This is useful when copying labels within the same service.
-    * "Paste custom labels from clipboard as new":
-      * This will paste the custom labels as is and will create new definitions for each label. This is useful when copying labels from one service to another.
-* Fixed issue with field value being automatically overriden by an editor's text when simply viewing a field's value.
-* Restricted editing a field's value to the text editor in the field value popup.
-* Improved the document's value export screen, which can be found in the Inbox, Outbox or Training Box by clicking on the "Export" command button and selecting "Export Screen". Enabling the detailed view will now properly render any tables and allow them to be exported to Excel.
-* Improved the Excel export function in the export screen.
-* Added Export to CSV to export screen.
-* Added Export to JSON to export screen.
-* Fixed an issue where label scaling would be incorrect if a document consisted of both portrait and landscape orientated pages.
-* Improved the experience when creating custom tables during custom labelling.
-* Implemented native search in the documents view, with an optional "Deep Search" function. The "Deep Search" function will search within the extracted values of processed documents. The search can take some time if there are a large number of documents to search through or if the documents have a large number of results.
-* New methods to work with tables have been added to the AIForged SDK which are now available in the code editor.
-* Attempts at fixing "Access Violation" exception that rarely occurs duing app startup.
-* Added functionality to filter log messages in the document process popup.
-* Added a search component to the category selection control. This control is used to filter documents in the document view and to select a category during labelling.
-* Removed the ability for users to register themselves. It is now necessary for AIForged consultants or partners to register new users.
-* It is now possible to transfer custom bundle amounts between projects and services in the user group management screen.
-* Added additional details in the transaction view to make it easier to identify services and nested services.
-* Users can now restore deleted result documents from the inbox / outbox and wizard analysis / training / definition steps. A new command has been made available for this under the "Actions" menu or may simply be available from the command bar, depending on the view.
-* Migrated to a unified codebase that allows us to compile and publish both our desktop and web versions of AIForged Studio with similar features between the two versions.
-* Major performance improvements.
-* Various bug fixes.
-
-### WASM
-
-A preview of the web version of AIForged Studio is available [here.](https://studio.aiforged.com/)
-
-Please remember that this is a preview version and may not be stable and is still undergoing performance optimizations.
-
-## UIPath Activities 1.5.1176.1128 (06-04-2023)
-
-* Added export to CSV List activity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a list of delimited strings.
-* Added export to CSV file actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a CSV text file.
-* Added export to DataTable actvity. This activity allows your process to collect and export the extracted values for a given list of document Ids to a DataTable object.
+Copyright © Larc Technologies (Pty) Ltd. All rights reserved.

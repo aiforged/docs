@@ -1,0 +1,30 @@
+---
+title: Contacts
+nav_order: 16
+---
+
+# Contacts
+
+The **Contacts** page allows you to add various notification contacts to **AIForged**. Contacts are mainly used for sending notifications.
+
+![](../assets/image%20%28159%29.png)
+## Add a contact
+
+1.  Click on "Click here to add a new row".
+
+    ![](../assets/image%20%28154%29.png)
+2.  Select a notification **Type** for the new contact.
+
+    ![](../assets/image%20%28128%29.png)
+3. Fill in the remaining details.
+   1. **Note:** The **Address** field is context dependent. An **Email** contact type would require an email address to be entered here. An **SMS** contact type would require a telephone number (including the international dialing code) to be entered here.
+4. Press **Enter** on your keyboard or click on the **Accept Button** at the end of the new contact row to commit the change.
+5. Click **Save** in the command bar to persist your changes.
+
+## Delete a contact
+
+1. Click the **Bin** icon on the record you want to delete.
+2. Select **Yes** in the popup to delete the record.
+
+
+

@@ -1,0 +1,87 @@
+# Human in the Loop
+
+Although OCR technologies have come a long way, there will still be instances where a little human intervention is required to **Verify** extracted data. To this end, **Workflow Items** can be created for **Human Verification**.
+
+A user can be added to a **Project** or a **Service** with the Verification Role to assist the **OCR Engine** to correct data that have been extracted. The **Work Flow** can be set up to send out notifications to the **HITL** when **Work Flow Item** is created.
+
+## Possible Reasons for HITL
+
+There are multiple reasons for extracted data to be verified by a **HITL**. These include, but are not limited to:
+
+* Poor **OCR Confidence** due to poor quality documents.
+* Illegible handwriting on handwritten forms.
+* An applied **Rule** failed the verification of an extracted field. See Rules Engine for more information.
+* A required field was not detected by the **OCR Engine**.
+* Supporting document data do not match (E.g. the name on a bank statement does not match the ID cards received. Refer to [Practical Example](practical-examples/credit-application-process-accept-or-reject-the-application.md) for an example.
+* Any **Custom Code** logic that places a **Parameter** in the **Verification** state. Refer to [Custom Service Code](../custom-service-code//index.md) for more information.
+
+## Work Flow and Work Flow Items
+
+The **Work Flow** view visually shows Work Flow Items that require attention from a **HITL**.
+
+![](../assets/image%20%28152%29.png)
+The **HITL Work Flow** queue shows **Work Flow Items** that have been created for your **Username**. The Work Flow Item card shows all the information regarding the Verification required, these include:
+
+*   The Project name,
+
+    ![](../assets/image%20%28165%29.png)
+*   The Service name,
+
+    ![](../assets/image%20%283%29%20%289%29.png)
+*   The document box the document currently resides in (document **Usage**),
+
+    ![](../assets/image%20%2858%29%20%281%29%20%281%29.png)
+*   Due date for the verification to be completed,
+
+    ![](../assets/image%20%2854%29%20%283%29.png)
+*   The **HITL** user assignment method used,
+
+    ![](../assets/image%20%2812%29%20%284%29.png)
+*   The status of the document of the field that requires verification,
+
+    ![](../assets/image%20%289%29%20%284%29.png)
+*   The status of the **Work Flow Item**,
+
+    ![](../assets/image%20%2813%29%20%284%29.png)
+Every **Work Flow Item** has a **URL** link that can be used in a browser. This will launch the AIForged UI and open the Verification window for the entire **Document** or **Shred**. The link to the **Verification Work Flow Item** can be copied by clicking on the **Link Icon**.
+
+![](../assets/image%20%2845%29%20%281%29%20%281%29.png)
+Pasting this link in a web browser will result in the user being asked to open the **AIForgred UI**.
+
+![](../assets/image%20%28168%29.png)
+## Field Verification
+
+Clicking on a **Work Flow Item** will open the **Document Verification** window. The user will be instructed to complete any verifications that are required on the document.
+
+### Individual Field Verification
+
+![](../assets/image%20%28184%29.png)
+The number of fields that require verification is shown at the top of the **Document Designer** view.
+
+![](../assets/image%20%28208%29.png)
+The **Document Data Control** bar on the right-hand side shows the fields that require verification, which is denoted by the red **Warning Triangle**. This is also shown on the document at the location of the field.
+
+![](../assets/image%20%2821%29%20%285%29.png)
+To verify the value of the extracted text, click on the **Pencil** icon. This will open a dialogue that provides actions to the user to verify the field.
+
+![](../assets/image%20%2843%29%20%281%29%20%281%29.png)
+The value of the field is shown in the text box. If the OCR text is correct, the user can accept the Verification by clicking on the **Check Mark**.
+
+![](../assets/image%20%2815%29%20%284%29.png)
+Note that after a **Verification** value has been accepted, the **Status** of the **Field Parameter** has changed to **Verified**. The OCR **Confidence** has also changed to **100 %**.
+
+![](../assets/image%20%28151%29.png)
+Once all the Field Parameters that required Verification have been verified, then the status of the entire document will change from **Verification** to **Processed**.
+
+![](../assets/image%20%288%29%20%285%29.png)
+### Accept all Verifications
+
+It is also possible to accept all **Verification** without manually verifying each **Field** that required **Verification**. Select **Verification** from the **Actions Bar**, then select **Accept All** to immediately accepts all **Verification** values.
+
+![](../assets/image%20%2820%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
+This action will also immediately place the document in the **Processed** state from the **Verification** state.
+
+![](../assets/image%20%287%29%20%284%29.png)
+
+
+

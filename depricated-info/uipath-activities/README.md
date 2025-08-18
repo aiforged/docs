@@ -1,2 +1,0 @@
-# uipath-activities
-

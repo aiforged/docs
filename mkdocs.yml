@@ -1,0 +1,428 @@
+site_name: AIForged Documentation
+
+theme:
+  name: material
+  logo: assets/logo.png        # make sure this file exists
+  favicon: assets/favicon.ico  # optional
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+    - scheme: default
+      primary: custom
+      accent: custom
+
+extra_css:
+  - assets/theme.css
+
+plugins:
+  - search
+  - mermaid2
+  
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+
+nav:
+  - 🏡 Home: index.md
+  - 🚀 Getting Started: getting-started.md
+  - 📣 Release Notes: release-notes.md
+  - 📬 How to access AIForged: how-to-access-aiforged.md
+  - ✏️ Register: register.md
+  - ✅ Activate my account: activate-my-account.md
+  - 🔐 Login: login.md
+  - ❓ Forgot Password: forgot-password.md
+  - 🔂 Multi-Factor Authentication: multi-factor-authentication.md
+  - 🤵 User Profile: user-profile.md
+  - 💡 Agents:
+    - Overview: agents/index.md
+    - 🧠 Understanding Agents: agents/understanding-agents.md
+  - 📃 Documents:
+    - Overview: documents/index.md
+    - ℹ️ Document Types: documents/documemt-types.md
+    - ❓ Document Categories: documents/document-categories.md
+    - ⏩ Understanding Document Flows: documents/understanding-document-flows.md
+    - 🗄️ Document Retention: documents/document-retention.md
+    - ➕ Document Attributes: documents/document-attributes.md
+    - 🧠 Understanding the Documents Section: documents/documents-in-service-view.md
+    - ↗️ Processing documents:
+      - Overview: documents/processing-documents/index.md
+      - Processing Paramaters: documents/processing-documents/processing-parameters.md
+  - 👓 AI Services:
+    - Overview: services/index.md
+    - 🗂️ Scrapers:
+      - Overview: services/scrapers/index.md
+      - 📧 Email Scraper: services/scrapers/email-scraper.md
+      - ☁️ OneDrive Scraping: services/scrapers/onedrive-scraping.md
+    - 🔀 Classification:
+      - Overview: services/classification/index.md
+      - AIForged Classifier: services/classification/aiforged-classifier.md
+      - AIForged Clustering: services/classification/aiforged-clustering.md
+      - ChatGPT Classifier: services/classification/chatgpt-classifier.md
+      - Microsoft Custom Text Classification: services/classification/microsoft-custom-text-classification.md
+      - Microsoft Custom Vision: services/classification/microsoft-custom-vision.md
+    - 🔍 Extract And Verify:
+      - Overview: services/extract-and-verify/index.md
+      - Amazon Identity Documents Extraction: services/extract-and-verify/amazon-identity-documents.md
+      - Amazon Invoice Extraction: services/extract-and-verify/amazon-invoices.md
+      - Amazon Receipt Extraction: services/extract-and-verify/amazon-receipt-extraction.md
+      - Google Forms Parser: services/extract-and-verify/google-forms-parser.md
+      - Google Invoice Parser: services/extract-and-verify/google-invoices.md
+      - Document Intelligence: services/extract-and-verify/document-intelligence.md
+      - Document Intelligence – Custom Invoices: services/extract-and-verify/document-intelligence-custom-invoices.md
+      - Document Intelligence – Prebuilt Models: services/extract-and-verify/document-intelligence-prebuilt-models.md
+      - LLM Extractor: services/extract-and-verify/llm-extractor.md
+      - Microsoft Identity Documents: services/extract-and-verify/microsoft-id.md
+      - Microsoft Invoices: services/extract-and-verify/microsoft-forms-invoices.md
+      - Microsoft Forms Layout: services/extract-and-verify/microsoft-forms-layout.md
+      - Microsoft Receipts: services/extract-and-verify/microsoft-receipt-tracker.md
+    - 🔠 OCR:
+      - Overview: services/ocr/index.md
+      - Amazon OCR: services/ocr/amazon-ocr.md
+      - Google OCR: services/ocr/google-ocr.md
+      - Google Handwriting: services/ocr/google-handwriting.md
+      - Microsoft OCR: services/ocr/microsoft-ocr.md
+      - Microsoft Handwriting: services/ocr/microsoft-handwriting.md
+      - Tesseract OCR: services/ocr/teseract-ocr.md
+    - 🗣️ Speech:
+      - Overview: services/speech/index.md
+      - Microsoft Speech to Text: services/speech/microsoft-speech-to-text.md
+    - 🛠️ Utilities:
+      - Overview: services/utilities/index.md
+      - AIForged Digitizer: services/utilities/aiforged-digitizer.md
+      - AIForged Image Splitter: services/utilities/aiforged-image-splitter.md
+      - AIForged Pdf Converter: services/utilities/aiforged-pdf-converter.md
+      - Copy Documents: services/utilities/copy-documents.md
+      - Image Pre-Processing: services/utilities/image-pre-processing.md
+      - Move Documents: services/utilities/move-documents.md
+      - Webhooks: services/utilities/webhooks.md
+      - Custom Code: services/utilities/custom-code.md
+      - Workflow Code: services/utilities/workflow-code.md
+    - 👁️ Vision:
+      - Overview: services/object-detection/index.md
+      - Google Object Detection: services/object-detection/google-object-detection.md
+      - Microsoft Object Detection: services/object-detection/microsoft-object-detection.md
+  - 🔀 Service Flow Configurator: service-flow-configurator.md
+  - 👥 Organisations and User Groups:
+    - Overview: service-users/index.md
+    - 📓 Maintaining Groups: service-users/maintaining-groups.md
+    - 📏 Managing Roles within Usergroups: service-users/managing-roles-in-groups.md
+    - 👤 Role Member Management: service-users/managing-users.md
+  - 📩 Notification History: notifications.md
+  - 💰 Wallets and Billing: transactions.md
+  - 🖇️ Cloning: cloning.md
+  - ✨ Custom Code:
+    - Overview: custom-service-code/index.md
+    - ⚙️ BaseModule:
+      - Overview: custom-service-code/basemodule/index.md
+      - General Methods: custom-service-code/basemodule/general-methods.md
+      - Module Data Types: custom-service-code/basemodule/ibasemodule-interface-data-types.md
+      - Document Related Methods: custom-service-code/basemodule/document-related-methods.md
+      - Parameter Definitions Related Methods: custom-service-code/basemodule/parameter-definitions-related-methods.md
+      - Parameters Related Methods: custom-service-code/basemodule/parameters-related-methods.md
+      - Custom Dataset Related Methods: custom-service-code/basemodule/custom-dataset-related-methods.md
+      - Verification Related Methods: custom-service-code/basemodule/verification-related-methods.md
+      - Work Item Related Methods: custom-service-code/basemodule/work-item-related-methods.md
+      - Enums:
+        - Overview: custom-service-code/basemodule/enums/index.md
+        - DictionaryLookupMethod: custom-service-code/basemodule/enums/dictionarylookupmethod.md
+        - DocumentDataType: custom-service-code/basemodule/enums/documentdatatype.md
+        - DocumentStatus: custom-service-code/basemodule/enums/documentstatus.md
+        - GroupingType: custom-service-code/basemodule/enums/groupingtype.md
+        - ParameterDefinitionCategory: custom-service-code/basemodule/enums/parameterdefinitioncategory.md
+        - SortDirection: custom-service-code/basemodule/enums/sortdirection.md
+        - UsageType: custom-service-code/basemodule/enums/usagetype.md
+        - ValueType: custom-service-code/basemodule/enums/valuetype.md
+        - VerificationStatus: custom-service-code/basemodule/enums/verificationstatus.md
+        - VerificationType: custom-service-code/basemodule/enums/verificationtype.md
+        - WorkItemAction: custom-service-code/basemodule/enums/workitemaction.md
+        - WorkItemMethod: custom-service-code/basemodule/enums/workitemmethod.md
+        - WorkItemStatus: custom-service-code/basemodule/enums/workitemstatus.md
+        - WorkItemType: custom-service-code/basemodule/enums/workitemtype.md
+    - Custom Code Example - Duplicate Document Check: custom-service-code/custom-code-utility-duplicate-document-check.md
+  - 📑 Field Rules (Rules Engine):
+    - Overview: rules-engine/index.md
+    - String:
+      - Overview: rules-engine/string/index.md
+      - Sentiment Analysis: rules-engine/string/sentiment-analysis.md
+      - Spell Checking: rules-engine/string/spell-checking.md
+    - Country: rules-engine/country.md
+    - Currency: rules-engine/currency.md
+    - Date / Time: rules-engine/date-time.md
+    - Email: rules-engine/email.md
+    - GPS Coordinate: rules-engine/gps.md
+    - ID Number: rules-engine/id-number.md
+    - Address: rules-engine/maps.md
+    - Number: rules-engine/number.md
+    - General Rules:
+      - Overview: rules-engine/generic/index.md
+      - Custom Script:
+        - Overview: rules-engine/generic/custom-script/index.md
+        - Example - Validate Social Security Number: rules-engine/generic/custom-script/example-validate-social-security-number.md
+      - Database: rules-engine/generic/database.md
+      - Dictionary: rules-engine/generic/dictionary.md
+      - Mapping: rules-engine/generic/mapping.md
+      - RegEx: rules-engine/generic/regex.md
+      - Web API: rules-engine/generic/web-api.md
+      - Workflow Script: rules-engine/generic/workflow-script.md
+  - SDK Downloads:
+    - Overview: sdk/index.md
+    - .Net: sdk/.net.md
+    - Python: sdk/python.md
+    - Typescript: sdk/typescript.md
+  - UIPath Activities:
+    - Overview: uipath-activities/index.md
+    - Comprehensive Networking Tutorial for UIPath Developers:
+      - Overview: uipath-activities/comprehensive-networking-tutorial-for-uipath-developers/index.md
+      - Determining the Source of Network Issues in UIPath: uipath-activities/comprehensive-networking-tutorial-for-uipath-developers/determining-the-source-of-network-issues-in-uipath.md
+      - Understanding Headers in HTTP Communication: uipath-activities/comprehensive-networking-tutorial-for-uipath-developers/understanding-headers-in-http-communication.md
+    - Initialize Connection Context: uipath-activities/initialize-connection-context.md
+    - Audit:
+      - Overview: uipath-activities/audit/index.md
+      - Get Audit Trail: uipath-activities/audit/get-audit-trail.md
+      - Convert Audit Trail to JSON: uipath-activities/audit/convert-audit-trail-to-json.md
+    - Balance:
+      - Overview: uipath-activities/balance/index.md
+      - Get Balance: uipath-activities/balance/get-balance.md
+    - Dataset:
+      - Overview: uipath-activities/dataset/index.md
+      - Create Dataset: uipath-activities/dataset/create-dataset.md
+      - Create Dataset Record: uipath-activities/dataset/create-dataset-record.md
+      - Delete Dataset: uipath-activities/dataset/delete-dataset.md
+      - Delete Dataset Record: uipath-activities/dataset/delete-dataset-record.md
+      - Delete Dataset Record By Key Value: uipath-activities/dataset/delete-dataset-record-by-key-value.md
+      - Delete Dataset Records: uipath-activities/dataset/delete-dataset-records.md
+      - Get Dataset: uipath-activities/dataset/get-dataset.md
+      - Get Dataset by Parameter Definition Id: uipath-activities/dataset/get-dataset-by-parameter-definition-id.md
+      - Get Dataset by Id: uipath-activities/dataset/get-dataset-by-id.md
+      - Get Dataset Record: uipath-activities/dataset/get-dataset-record.md
+      - Get Dataset Record By Key Value: uipath-activities/dataset/get-dataset-record-by-key-value.md
+      - Get Datasets: uipath-activities/dataset/get-datasets.md
+      - Save Dataset: uipath-activities/dataset/save-dataset.md
+      - Synchronise Dataset: uipath-activities/dataset/synchronise-dataset.md
+      - Update Dataset Record: uipath-activities/dataset/update-dataset-record.md
+    - Documents:
+      - Overview: uipath-activities/documents/index.md
+      - Copy Document: uipath-activities/documents/copy-document.md
+      - Create Document Parameter: uipath-activities/documents/create-document-parameter.md
+      - Create Verification: uipath-activities/documents/create-verification.md
+      - Delete Document: uipath-activities/documents/delete-document.md
+      - Delete Document Parameter: uipath-activities/documents/delete-document-parameter.md
+      - Export To CSV: uipath-activities/documents/export-to-csv.md
+      - Export To CSV Combined: uipath-activities/documents/export-to-csv-combined.md
+      - Export To CSV File: uipath-activities/documents/export-to-csv-file.md
+      - Export To CSV Combined File: uipath-activities/documents/export-to-csv-combined-file.md
+      - Export To DataTable: uipath-activities/documents/export-to-datatable.md
+      - Export To Combined DataTable: uipath-activities/documents/export-to-combined-datatable.md
+      - Export To JSON: uipath-activities/documents/export-to-json.md
+      - Export To JSON Combined File: uipath-activities/documents/export-to-json-combined-file.md
+      - Get Extraction Results: uipath-activities/documents/get-extraction-results.md
+      - Get Document: uipath-activities/documents/get-document.md
+      - Get Document Data: uipath-activities/documents/get-document-data.md
+      - Get Document Images: uipath-activities/documents/get-document-images.md
+      - Get Documents: uipath-activities/documents/get-documents.md
+      - Get Document Count: uipath-activities/documents/get-document-count.md
+      - Get Latest Parameter Verification: uipath-activities/documents/get-latest-parameter-verification.md
+      - Get Parameter Definition: uipath-activities/documents/get-parameter-definition.md
+      - Get Document Parameter Hierarchy: uipath-activities/documents/get-document-parameter-hierarchy.md
+      - Get Document Parameters: uipath-activities/documents/get-document-parameters.md
+      - Get Parameter Verifications: uipath-activities/documents/get-parameter-verifications.md
+      - Get Verification Shred: uipath-activities/documents/get-verification-shred.md
+      - Move Document: uipath-activities/documents/move-document.md
+      - Save Document Image: uipath-activities/documents/save-document-image.md
+      - Update Document Information: uipath-activities/documents/update-document-information.md
+      - Update Document Status: uipath-activities/documents/update-document-status.md
+      - Upload Document: uipath-activities/documents/upload-document.md
+      - Upload File: uipath-activities/documents/upload-file.md
+      - Upload Folder: uipath-activities/documents/upload-folder.md
+      - Rerun Verification: uipath-activities/documents/rerun-verification.md
+      - Rerun All Verifications: uipath-activities/documents/rerun-all-verifications.md
+      - Process Documents by Id: uipath-activities/documents/process-documents-by-id.md
+      - Process Document Objects: uipath-activities/documents/process-document-objects.md
+    - Logging:
+      - Overview: uipath-activities/logging/index.md
+      - Add Log Message: uipath-activities/logging/add-log-message.md
+      - Get Log Messages: uipath-activities/logging/get-log-messages.md
+    - Notifications:
+      - Overview: uipath-activities/notifications/index.md
+      - Get Notifications: uipath-activities/notifications/get-notifications.md
+      - Flag As Read: uipath-activities/notifications/flag-as-read.md
+      - Get Unread Notification: uipath-activities/notifications/get-unread-notification.md
+    - Platform:
+      - Overview: uipath-activities/platform/index.md
+      - Get Data Types: uipath-activities/platform/get-data-types.md
+      - Get Enum Data: uipath-activities/platform/get-enum-data.md
+      - Get System Date: uipath-activities/platform/get-system-date.md
+    - Project:
+      - Overview: uipath-activities/project/index.md
+      - Get Parameter Definition Hierarchy: uipath-activities/project/get-parameter-definition-hierarchy.md
+      - Get Project By Name: uipath-activities/project/get-project-by-name.md
+      - Get Project By Id: uipath-activities/project/get-project-by-id.md
+      - Get Projects By User (Obsolete): uipath-activities/project/get-projects-by-user-obsolete.md
+      - Get Project Category: uipath-activities/project/get-project-category.md
+      - Get Project Category By Name: uipath-activities/project/get-project-category-by-name.md
+      - Get Project Categories: uipath-activities/project/get-project-categories.md
+      - Get Projects: uipath-activities/project/get-projects.md
+      - Get Project Services: uipath-activities/project/get-project-services.md
+    - Service:
+      - Overview: uipath-activities/service/index.md
+      - Get Service Audit: uipath-activities/service/get-service-audit.md
+      - Get Service Charges: uipath-activities/service/get-service-charges.md
+      - Get Service Events: uipath-activities/service/get-service-events.md
+    - User Groups:
+      - Overview: uipath-activities/user-groups/index.md
+      - Get Group: uipath-activities/user-groups/get-group.md
+      - Get Group Roles: uipath-activities/user-groups/get-group-roles.md
+      - Get User Groups: uipath-activities/user-groups/get-user-groups.md
+      - Get Users by Role: uipath-activities/user-groups/get-users-by-role.md
+    - WorkItem:
+      - Overview: uipath-activities/workitem/index.md
+      - Create QA Work Items: uipath-activities/workitem/create-qa-work-items.md
+      - Create Work Item: uipath-activities/workitem/create-work-item.md
+      - Escalate Work Item: uipath-activities/workitem/escalate-work-item.md
+      - Get Work Item Count: uipath-activities/workitem/get-work-item-count.md
+      - Get Work Items: uipath-activities/workitem/get-work-items.md
+      - Get Work Queue: uipath-activities/workitem/get-work-queue.md
+      - Transfer Work Item: uipath-activities/workitem/transfer-work-item.md
+      - Update Work Item: uipath-activities/workitem/update-work-item.md
+  - Deprecated Documentation:
+    - Overview: depricated-info/index.md
+    - Training Box: depricated-info/training-box.md
+    - Document Verification: depricated-info/doocument-verification.md
+    - Verification:
+      - Overview: depricated-info/verification/index.md
+      - Document Analytics: depricated-info/verification/document-analytics.md
+      - Document Analysis: depricated-info/verification/document-cost-analysis.md
+    - Analyze Transaction details: depricated-info/analyze-transaction-details.md
+    - Reports: depricated-info/reports.md
+    - Custom Datasets:
+      - Overview: depricated-info/custom-datasets/index.md
+      - Create datasets: depricated-info/custom-datasets/create-datasets.md
+      - Use in Custom Code: depricated-info/custom-datasets/use-in-custom-code.md
+      - Use via SDK: depricated-info/custom-datasets/use-via-sdk.md
+      - Custom Datasets - What is it?: depricated-info/custom-datasets/what-is-it.md
+    - Human in the Loop:
+      - Overview: depricated-info/human-in-the-loop/index.md
+      - AIForged Workflow: depricated-info/human-in-the-loop/aiforged-workflow.md
+      - Amazon Mechanical Turk: depricated-info/human-in-the-loop/amazon-mechanical-turk.md
+    - Human in the Loop (legacy): depricated-info/human-in-the-loop-1.md
+    - Miscellaneous:
+      - Overview: depricated-info/subpages/index.md
+      - Audit: depricated-info/subpages/audit.md
+      - Events: depricated-info/subpages/events.md
+      - Publish to marketplace: depricated-info/subpages/publish-marketplace.md
+      - Service users: depricated-info/subpages/service-users.md
+    - Custom Workflow Code:
+      - Overview: depricated-info/custom-workflow-code/index.md
+      - Example - Create Human in the loop: depricated-info/custom-workflow-code/example-create-human-in-the-loop.md
+    - Contacts: depricated-info/contacts.md
+    - Work Queue: depricated-info/workqueue.md
+    - power-automate:
+      - Overview: depricated-info/power-automate/index.md
+      - Microsoft Power Automate - Getting Started: depricated-info/power-automate/get-started.md
+      - Microsoft Power Automate: depricated-info/power-automate/intro.md
+    - practical-examples:
+      - Overview: depricated-info/practical-examples/index.md
+      - Bank Statement: depricated-info/practical-examples/bank-statement.md
+      - Credit Application Form: depricated-info/practical-examples/credit-application-form.md
+      - Credit Application Process - Accept or Reject the Application: depricated-info/practical-examples/credit-application-process-accept-or-reject-the-application.md
+      - Practical Examples: depricated-info/practical-examples/practicle-examples.md
+      - Social Security Number Card: depricated-info/practical-examples/social-security-number-card.md
+      - Utility Invoice: depricated-info/practical-examples/utility-invoice.md
+    - uipath-activities:
+      - Overview: depricated-info/uipath-activities/index.md
+      - Initialize: depricated-info/uipath-activities/initialize.md
+      - Introduction: depricated-info/uipath-activities/introduction.md
+      - Verification:
+        - Overview: depricated-info/uipath-activities/verification/index.md
+        - Verification: depricated-info/uipath-activities/verification/verification.md
+      - Balance:
+        - Overview: depricated-info/uipath-activities/balance/index.md
+        - Get Balance: depricated-info/uipath-activities/balance/get-balance.md
+        - Get Payments: depricated-info/uipath-activities/balance/get-payments.md
+      - Document:
+        - Overview: depricated-info/uipath-activities/document/index.md
+        - Copy Document: depricated-info/uipath-activities/document/copy-document.md
+        - Create Document Parameter: depricated-info/uipath-activities/document/create-document-parameter.md
+        - Create Verification: depricated-info/uipath-activities/document/create-verification.md
+        - Delete Document Parameter: depricated-info/uipath-activities/document/delete-document-parameter.md
+        - Delete Document: depricated-info/uipath-activities/document/delete-document.md
+        - Get Document Count: depricated-info/uipath-activities/document/get-document-count.md
+        - Get Document Data: depricated-info/uipath-activities/document/get-document-data.md
+        - Get Document Images: depricated-info/uipath-activities/document/get-document-images.md
+        - Get Document Parameter Hierarchy: depricated-info/uipath-activities/document/get-document-parameter-hierarchy.md
+        - Get Document Parameters: depricated-info/uipath-activities/document/get-document-parameters.md
+        - Get Document: depricated-info/uipath-activities/document/get-document.md
+        - Get Documents: depricated-info/uipath-activities/document/get-documents.md
+        - Get Extraction Results: depricated-info/uipath-activities/document/get-extraction-results.md
+        - Get Latest Parameter Verification: depricated-info/uipath-activities/document/get-latest-parameter-verification.md
+        - Get Parameter Definition: depricated-info/uipath-activities/document/get-parameter-definition.md
+        - Get Parameter Verification: depricated-info/uipath-activities/document/get-parameter-verification.md
+        - Get Verification Shred: depricated-info/uipath-activities/document/get-verification-shred.md
+        - Move Document: depricated-info/uipath-activities/document/move-document.md
+        - Return All Verifications: depricated-info/uipath-activities/document/return-all-verifications.md
+        - Return Verification: depricated-info/uipath-activities/document/return-verification.md
+        - Save Document Image: depricated-info/uipath-activities/document/save-document-image.md
+        - Upload document Information: depricated-info/uipath-activities/document/upload-document-information.md
+        - Upload Document: depricated-info/uipath-activities/document/upload-document.md
+        - Upload File: depricated-info/uipath-activities/document/upload-file.md
+        - Upload Folder: depricated-info/uipath-activities/document/upload-folder.md
+      - Notifications:
+        - Overview: depricated-info/uipath-activities/notifications/index.md
+        - Flag as Read: depricated-info/uipath-activities/notifications/flag-as-read.md
+        - Get Notifications: depricated-info/uipath-activities/notifications/get-notifications.md
+        - Get Unread Notification Count: depricated-info/uipath-activities/notifications/get-unread-notification-count.md
+      - payment:
+        - Overview: depricated-info/uipath-activities/payment/index.md
+        - Payment: depricated-info/uipath-activities/payment/payment.md
+      - Project:
+        - Overview: depricated-info/uipath-activities/project/index.md
+        - Get Parameter Definition By Hierarchy: depricated-info/uipath-activities/project/get-parameter-definition-by-hierarchy.md
+        - Get Project By ID: depricated-info/uipath-activities/project/get-project-by-id.md
+        - Get Project By Name: depricated-info/uipath-activities/project/get-project-by-name.md
+        - Get Project By User: depricated-info/uipath-activities/project/get-project-by-user.md
+        - Get Project Categories: depricated-info/uipath-activities/project/get-project-categories.md
+        - Get Project Category By Name: depricated-info/uipath-activities/project/get-project-category-by-name.md
+        - Get Project Category: depricated-info/uipath-activities/project/get-project-category.md
+        - Get Project Class: depricated-info/uipath-activities/project/get-project-class.md
+        - Get Project Services: depricated-info/uipath-activities/project/get-project-services.md
+        - Get Projects: depricated-info/uipath-activities/project/get-projects.md
+        - Get Project By Id: depricated-info/uipath-activities/project/initialize.md
+        - Process Document Objects: depricated-info/uipath-activities/project/process-document-objects.md
+        - Process Documents by ID: depricated-info/uipath-activities/project/process-documents-by-id.md
+      - Service:
+        - Overview: depricated-info/uipath-activities/service/index.md
+        - Get Service Audit: depricated-info/uipath-activities/service/get-service-audit.md
+        - Get Service Charges: depricated-info/uipath-activities/service/get-service-charges.md
+        - Get Service Events: depricated-info/uipath-activities/service/get-service-events.md
+      - System:
+        - Overview: depricated-info/uipath-activities/system/index.md
+        - Get Data Types: depricated-info/uipath-activities/system/get-data-types.md
+        - Get Enum Data: depricated-info/uipath-activities/system/get-enum-data.md
+        - Get System Date: depricated-info/uipath-activities/system/get-system-date.md
+      - WorkItem:
+        - Overview: depricated-info/uipath-activities/workitem/index.md
+        - Create Work Item: depricated-info/uipath-activities/workitem/create-work-item.md
+        - Get Work Item Count: depricated-info/uipath-activities/workitem/get-work-item-count.md
+        - Get Work Items: depricated-info/uipath-activities/workitem/get-work-items.md
+        - Get Work Queue: depricated-info/uipath-activities/workitem/get-work-queue.md
+    - ⚙️ Settings: depricated-info/settings.md
