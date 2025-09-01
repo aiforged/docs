@@ -161,29 +161,30 @@ nav:
     - Custom Code Example - Duplicate Document Check: custom-service-code/custom-code-utility-duplicate-document-check.md
   - 📑 Field Rules (Rules Engine):
     - Overview: rules-engine/index.md
-    - String:
+    - 📍 Address: rules-engine/maps.md
+    - 🔘 Boolean: rules-engine/boolean.md
+    - 🌍 Country: rules-engine/country.md
+    - 💲 Currency: rules-engine/currency.md
+    - 📅 Date / Time: rules-engine/date-time.md
+    - ✉️ Email: rules-engine/email.md
+    - 🎯 GPS Coordinate: rules-engine/gps.md
+    - 🆔 ID Number: rules-engine/id-number.md
+    - 🔢 Number: rules-engine/number.md
+    - 🖼️ Picture: rules-engine/picture-classification.md
+    - 🔤 String:
       - Overview: rules-engine/string/index.md
       - Sentiment Analysis: rules-engine/string/sentiment-analysis.md
       - Spell Checking: rules-engine/string/spell-checking.md
-    - Country: rules-engine/country.md
-    - Currency: rules-engine/currency.md
-    - Date / Time: rules-engine/date-time.md
-    - Email: rules-engine/email.md
-    - GPS Coordinate: rules-engine/gps.md
-    - ID Number: rules-engine/id-number.md
-    - Address: rules-engine/maps.md
-    - Number: rules-engine/number.md
-    - General Rules:
+    - 📞 Telephone Number: rules-engine/telephone-no.md
+    - ⏳ Timespan: rules-engine/timespan.md
+    - 🛠️ Field Enhancements and Configuration:
       - Overview: rules-engine/generic/index.md
-      - Custom Script:
-        - Overview: rules-engine/generic/custom-script/index.md
-        - Example - Validate Social Security Number: rules-engine/generic/custom-script/example-validate-social-security-number.md
-      - Database: rules-engine/generic/database.md
-      - Dictionary: rules-engine/generic/dictionary.md
-      - Mapping: rules-engine/generic/mapping.md
-      - RegEx: rules-engine/generic/regex.md
-      - Web API: rules-engine/generic/web-api.md
-      - Workflow Script: rules-engine/generic/workflow-script.md
+      - 🔎 Lookup: rules-engine/generic/dictionary.md
+      - 🔁 Mapping: rules-engine/generic/mapping.md
+      - 💻 Script: rules-engine/generic/custom-script.md
+      - 🛡️ Verification Services: rules-engine/generic/verification-services.md
+      - 🔀 Workflow Script: rules-engine/generic/workflow-script.md
+      - ⚙️ Advanced: rules-engine/generic/advanced.md
   - SDK Downloads:
     - Overview: sdk/index.md
     - .Net: sdk/.net.md
