@@ -185,9 +185,36 @@ nav:
       - 🛡️ Verification Services: rules-engine/generic/verification-services.md
       - 🔀 Workflow Script: rules-engine/generic/workflow-script.md
       - ⚙️ Advanced: rules-engine/generic/advanced.md
-  - SDK Downloads:
+      
+  - SDK:
     - Overview: sdk/index.md
-    - .Net: sdk/.net.md
+    - .NET: 
+      - Overview: sdk/dotNET/index.md
+      - Quickstart: sdk/dotNET/quickstart.md
+      - How-To: 
+        - Overview: sdk/dotNET/how-to/index.md
+        - Authentication: sdk/dotNet/how-to/authentication.md
+        - Documents: sdk/dotNet/how-to/documents.md
+        - Retrieve Extraction Results: sdk/dotNet/how-to/retrieve-results.md
+        - Work Items (HITL): sdk/dotNet/how-to/workflow.md
+        - Custom Datasets: sdk/dotNet/how-to/custom-datasets.md
+        - Errors & Retries: sdk/dotNet/how-to/errors.md
+      - Client Reference: 
+        - Overview: sdk/dotNET/how-to/index.md
+        - Audit Client: sdk/dotNet/client-reference/audit-client.md
+        - Account Client: sdk/dotNet/client-reference/account-client.md
+        - Classes Client: sdk/dotNet/client-reference/classes-client.md
+        - Cloning Client: sdk/dotNet/client-reference/cloning-client.md
+        - Contacts Client: sdk/dotNet/client-reference/contacts-client.md
+        - DataSet Client: sdk/dotNet/client-reference/dataset-client.md
+        - Documents Client: sdk/dotNet/client-reference/documents-client.md
+        - Group Client: sdk/dotNet/client-reference/group-client.md
+        - Log Client: sdk/dotNet/client-reference/log-client.md
+        - Marketplace Client (user group membership management): sdk/dotNet/client-reference/marketplace-client.md
+        - Notification Client: sdk/dotNet/client-reference/notification-client.md
+        - ParamDef Client (parameter definitions): 
+          - Overview: sdk/dotNET/client-reference/paramdef-client/index.md
+          - Settings Data (BaseOption and Supporting Types): sdk/dotNET/client-reference/paramdef-client/paramdef-client-options.md
     - Python: sdk/python.md
     - Typescript: sdk/typescript.md
   - UIPath Activities:
