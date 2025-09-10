@@ -11,55 +11,50 @@ Effectively managing members within roles is crucial for maintaining secure and 
 
 **Steps to Add a Member to a Role**
 
-1.  **Navigate to Organisations**
-    Go to the **Organisations** section in AIForged.
+1. **Navigate to Organisations**
+    - Go to the **Organisations** section in AIForged.
+    - ![](../assets/image%20%2898%29.png)
 
-    ![](../assets/image%20%2898%29.png)
-2.  **Select the Group**
-    Find and select the group containing the role you want to manage. Click on its name to open the management view.
+2. **Select the Group**
+    - Find and select the group containing the role you want to manage. Click on its name to open the management view.
+    - ![](../assets/image%20%2899%29.png)
 
-    ![](../assets/image%20%2899%29.png)
-3.  **Select the Role**
-    Click on the role to which you want to add members. This will open the role management view.
+3. **Select the Role**
+    - Click on the role to which you want to add members. This will open the role management view.
+    - ![](../assets/image%20%28100%29.png)
 
-    ![](../assets/image%20%28100%29.png)
-4.  **Open the Add Member Dialog**
-    Click the ![](../assets/image%20%28101%29.png) button to open the member dialog.
+4. **Open the Add Member Dialog**
+    - Click the ![](../assets/image%20%28101%29.png) button to open the member dialog.
+    - ![](../assets/image%20%28102%29.png)
 
-    ![](../assets/image%20%28102%29.png)
 5. **Choose How to Add a Member**
-   You have three options for linking a member to a role:
-   * **Link an Existing Member from the Current Tenant Group:**
-     * Ensure the **Search Tenant Members** tab is selected.
-     * Enter the member’s name or email address to search.
-     * Select the member to link and click **Add**.
-     *   This will queue the member to be linked; they will be added once you click **Save**.
-         &#xNAN;_&#x54;ip: Screenshot of the Search Tenant Members tab._
-
-         ![](../assets/image%20%28103%29.png)
-   * **Invite an Existing AIForged User to Become a Member:**
-     * Select the **Invite AIForged Users** tab.
-     * Enter the user’s email address and (optionally) an invite message.
-     * Click **Add**.
-     *   The user will be queued for invitation and linked as a member once you click **Save**.
-
-         ![](../assets/image%20%28104%29.png)
-   * **Create a New Member:**
-     * (Tenant administrators or owners only)
-     * Select the **Create New User** tab.
-     * Enter the new member’s details:
-       * Full name
-       * Email address
-       * Job title (optional)
-       * Phone number (optional)
-     * Click **Add**.
-     *   The member will be queued for creation and linking; you may receive a security prompt when you click **Save**.
-
-         ![](../assets/image%20%28106%29.png)
-6.  **Save Changes**
-    Click **Save** to finalize the addition of all queued members to the role.
-
-    ![](../assets/image%20%28107%29.png)
+    You have three options for linking a member to a role:
+    * **Link an Existing Member from the Current Tenant Group:**
+        * Ensure the **Search Tenant Members** tab is selected.
+        * Enter the member’s name or email address to search.
+        * Select the member to link and click **Add**.
+            * This will queue the member to be linked; they will be added once you click **Save**.
+            - ![](../assets/image%20%28103%29.png)
+    * **Invite an Existing AIForged User to Become a Member:**
+        * Select the **Invite AIForged Users** tab.
+        * Enter the user’s email address and (optionally) an invite message.
+        * Click **Add**.
+            * The user will be queued for invitation and linked as a member once you click **Save**.
+            - ![](../assets/image%20%28104%29.png)
+    * **Create a New Member:**
+        * (Tenant administrators or owners only)
+        * Select the **Create New User** tab.
+        * Enter the new member’s details:
+            * Full name
+            * Email address
+            * Job title (optional)
+            * Phone number (optional)
+        * Click **Add**.
+            * The member will be queued for creation and linking; you may receive a security prompt when you click **Save**.
+            - ![](../assets/image%20%28106%29.png)
+6. **Save Changes**
+    - Click **Save** to finalize the addition of all queued members to the role.
+    - ![](../assets/image%20%28107%29.png)
 ***
 
 #### Removing Members from a Role
@@ -68,32 +63,24 @@ Removing a member from a role will immediately revoke their access to the associ
 
 **Steps to Remove a Member from a Role**
 
-1.  **Navigate to Organisations**
-    Go to the **Organisations** section in AIForged.
-
-    ![](../assets/image%20%2898%29.png)
+1. **Navigate to Organisations**
+    - Go to the **Organisations** section in AIForged.
+    - ![](../assets/image%20%2898%29.png)
 2.  **Select the Group**
-    Find and select the group containing the relevant role.
-
-    ![](../assets/image%20%2899%29.png)
+    - Find and select the group containing the relevant role.
+    - ![](../assets/image%20%2899%29.png)
 3.  **Select the Role**
-    Click on the role from which you want to remove members to open the role management view.
-
-    ![](../assets/image%20%28100%29.png)
+    - Click on the role from which you want to remove members to open the role management view.
+    - ![](../assets/image%20%28100%29.png)
 4.  **Find the Member**
-    Use the search function or scroll to locate the member you wish to remove.
-
-    ![](../assets/image%20%28109%29.png)
+    - Use the search function or scroll to locate the member you wish to remove.
+    - ![](../assets/image%20%28109%29.png)
 5.  **Open the Member Options**
-    Click the **More options** action button next to the member’s name.
-
-
-    ![](../assets/image%20%28110%29.png)
+    - Click the **More options** action button next to the member’s name.
+    - ![](../assets/image%20%28110%29.png)
 6.  **Select Remove**
-    Click the **Remove or Unlink** option to remove the member from the role.
-
-
-    ![](../assets/image%20%28111%29.png)
+    - Click the **Remove or Unlink** option to remove the member from the role.
+    - ![](../assets/image%20%28111%29.png)
 ***
 
 #### Tips and Best Practices
@@ -108,9 +95,3 @@ Removing a member from a role will immediately revoke their access to the associ
     _When inviting or creating new members, double-check email addresses and permissions to prevent accidental access issues._
 
 ***
-
-
-
-
-
-

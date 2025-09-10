@@ -10,11 +10,11 @@ These methods give you fine-grained control over documents in your AIForged agen
 
 #### GetChildDocuments
 
-**Signature:**\
-`GetChildDocuments(IDocument doc, UsageType? usage, List<DocumentStatus> statuses) : List<IDocument>`\
+**Signature:**  
+`GetChildDocuments(IDocument doc, UsageType? usage, List<DocumentStatus> statuses) : List<IDocument>`  
 `GetChildDocuments(IDocument doc, int stpdId, UsageType? usage, List<DocumentStatus> statuses) : List<IDocument>`
 
-**Description:**\
+**Description:**  
 Returns all child documents for the given parent document, optionally filtered by usage type (e.g., Inbox, Outbox) and status.
 
 **Usage:**
@@ -27,17 +27,17 @@ foreach (var child in children)
 }
 ```
 
-**When to use:**\
+**When to use:**  
 To traverse document hierarchies or process related documents together.
 
 ***
 
 #### GetDocumentData
 
-**Signature:**\
+**Signature:**  
 `GetDocumentData(IDocument doc, List<DocumentDataType?> types) : List<IDocumentData>`
 
-**Description:**\
+**Description:**  
 Retrieves associated data for a document (e.g., image blobs, result files, training data).
 
 **Usage:**
@@ -51,17 +51,17 @@ if (images != null && images.Any())
 }
 ```
 
-**When to use:**\
+**When to use:**  
 To read document images, results, or other binary data for downstream processing or validation.
 
 ***
 
 #### GetDocumentMaster
 
-**Signature:**\
+**Signature:**  
 `GetDocumentMaster(IDocument doc) : IDocument`
 
-**Description:**\
+**Description:**  
 Returns the master (parent) document for a child document.
 
 **Usage:**
@@ -74,16 +74,17 @@ if (masterDoc != null)
 }
 ```
 
-**Tip:** Use when you need to escalate, audit, or coordinate actions between parent and child documents.
+!!! tip 
+    Use when you need to escalate, audit, or coordinate actions between parent and child documents.
 
 ***
 
 #### SetDocumentStatus
 
-**Signature:**\
+**Signature:**  
 `SetDocumentStatus(IDocument doc, DocumentStatus status, string comment, string result, bool appendComment = true, bool appendResult = true, bool setMasterAlso = true) : IDocument`
 
-**Description:**\
+**Description:**  
 Updates the status of a document and adds a comment/result. Optionally updates the master document as well.
 
 **Usage:**
@@ -93,17 +94,17 @@ module.SetDocumentStatus(doc, DocumentStatus.Processed, "Auto-processed via cust
 module.SaveChanges();
 ```
 
-**When to use:**\
+**When to use:**  
 To advance workflow, track progress, or trigger downstream actions.
 
 ***
 
 #### CopyDocument
 
-**Signature:**\
+**Signature:**  
 `CopyDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null) : IDocument`
 
-**Description:**\
+**Description:**  
 Creates a copy of the document in another service, with optional updates to status, usage, or category.
 
 **Usage:**
@@ -113,16 +114,17 @@ var copiedDoc = module.CopyDocument(doc, targetServiceId, DocumentStatus.Queued,
 module.SaveChanges();
 ```
 
-**Tip:** Use for parallel processing, multi-service routing, or archival.
+!!! tip
+    Use for parallel processing, multi-service routing, or archival.
 
 ***
 
 #### MoveDocument
 
-**Signature:**\
+**Signature:**  
 `MoveDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null) : IDocument`
 
-**Description:**\
+**Description:**  
 Moves the document to another service, removing it from the source.
 
 **Usage:**
@@ -132,17 +134,17 @@ var movedDoc = module.MoveDocument(doc, targetServiceId, DocumentStatus.Queued, 
 module.SaveChanges();
 ```
 
-**When to use:**\
+**When to use:**  
 To enforce single-instance workflow or transfer ownership between services.
 
 ***
 
 #### CloneDocumentForTraining
 
-**Signature:**\
+**Signature:**  
 `CloneDocumentForTraining(IDocument doc) : IDocument`
 
-**Description:**\
+**Description:**  
 Clones the document into the training box of a service for model retraining or augmentation.
 
 **Usage:**
@@ -152,17 +154,17 @@ var trainingDoc = module.CloneDocumentForTraining(doc);
 logger.LogInformation("Cloned for training: {id}", trainingDoc.Id);
 ```
 
-**When to use:**\
+**When to use:**  
 To expand your training set without disrupting production flows.
 
 ***
 
 #### CheckIfDocumentAlreadyInTrainingBox
 
-**Signature:**\
+**Signature:**  
 `CheckIfDocumentAlreadyInTrainingBox(IDocument doc) : bool`
 
-**Description:**\
+**Description:**  
 Checks if the document is already present in the training box.
 
 **Usage:**
@@ -175,7 +177,8 @@ else
     logger.LogInformation("Document can be added to training box");
 ```
 
-**Tip:** Use to prevent duplicate training data and maintain dataset quality.
+!!! tip
+    Use to prevent duplicate training data and maintain dataset quality.
 
 ***
 
@@ -190,12 +193,12 @@ else
 
 ### FAQ
 
-**Q: Can I process multiple child documents at once?**\
+**Q: Can I process multiple child documents at once?**  
 A: Yes, use `GetChildDocuments` to retrieve all related documents and loop as needed.
 
-**Q: What’s the difference between Copy and Move?**\
+**Q: What’s the difference between Copy and Move?**  
 A: Copy preserves the original in both services; Move transfers ownership and removes from source.
 
-**Q: How do I prevent duplicate training data?**\
+**Q: How do I prevent duplicate training data?**  
 A: Use `CheckIfDocumentAlreadyInTrainingBox` before cloning.
 

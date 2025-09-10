@@ -44,20 +44,20 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service.&#x20;
+2. Click the Add Service dropdown and select Utility Service.
 3. Choose **Workflow Code**.
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 5. Save.
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
-2. Expand the Utility Service Types group.&#x20;
+2. Expand the Utility Service Types group.
 3. Drag the Workflow Code utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.
 4. Save.
 
 !!! info
@@ -202,12 +202,12 @@ Get started with smart work item assignment:
 ### Troubleshooting Tips
 
 * **Work items not being assigned?**
-  * Check your code logic and ensure user lists are populated and not filtered out by exclusion parameters.
-  * Review logs for errors or unexpected conditions.
+    * Check your code logic and ensure user lists are populated and not filtered out by exclusion parameters.
+    * Review logs for errors or unexpected conditions.
 * **Assignment seems unbalanced?**
-  * Use GetUserKpi or GetHighThroughputUserId to monitor actual workload distribution and tune your rules.
+    * Use GetUserKpi or GetHighThroughputUserId to monitor actual workload distribution and tune your rules.
 * **Errors or exceptions in assignment?**
-  * Wrap your assignment logic in try/catch and log all exceptions and edge cases.
+    * Wrap your assignment logic in try/catch and log all exceptions and edge cases.
 
 ***
 
@@ -223,14 +223,12 @@ Get started with smart work item assignment:
 ### FAQ
 
 * **Can I use Workflow Code Utility for non-HITL scenarios?**
-  * Yes, but its greatest value is for advanced routing and assignment in verification/HITL-heavy workflows.
+    * Yes, but its greatest value is for advanced routing and assignment in verification/HITL-heavy workflows.
 * **Can I assign work items to a specific user group?**
-  * Yes, filter the user list by group or role before using PickRandom or assignment methods.
+    * Yes, filter the user list by group or role before using PickRandom or assignment methods.
 * **How do I avoid assigning work items to users who are on leave or inactive?**
-  * Exclude user IDs using the `excludeUserId` parameter, or filter out users based on status from your user list.
+    * Exclude user IDs using the `excludeUserId` parameter, or filter out users based on status from your user list.
 * **Can I automate escalations or hand-offs?**
-  * Yes, use CreateWorkItem with custom parameters and statuses to escalate tasks when needed.
+    * Yes, use CreateWorkItem with custom parameters and statuses to escalate tasks when needed.
 * **How do I track assignment performance?**
-  * Use GetUserKpi and GetHighThroughputUserId to monitor per-user throughput and adjust rules accordingly.
-
-
+    * Use GetUserKpi and GetHighThroughputUserId to monitor per-user throughput and adjust rules accordingly.

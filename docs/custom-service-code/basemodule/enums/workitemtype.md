@@ -4,7 +4,7 @@
 
 The WorkItemType enum indicates the kind of entity a work item is linked to. Use it to route, visualize, and report on HITL tasks by their underlying target.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -12,9 +12,10 @@ Underlying type: int
 
 #### None
 
-Value: 0
+Value: `0`
 
-Description: No linked entity specified.
+Description:  
+No linked entity specified.
 
 When to use:
 
@@ -24,9 +25,10 @@ When to use:
 
 #### Document
 
-Value: 1
+Value: `1`
 
-Description: Linked to a document.
+Description:  
+Linked to a document.
 
 When to use:
 
@@ -36,9 +38,10 @@ When to use:
 
 #### Shred
 
-Value: 2
+Value: `2`
 
-Description: Linked to a document parameter/field (shred).
+Description:  
+Linked to a document parameter/field (shred).
 
 When to use:
 
@@ -48,9 +51,10 @@ When to use:
 
 #### DataSet
 
-Value: 3
+Value: `3`
 
-Description: Linked to a custom dataset.
+Description: 
+Linked to a custom dataset.
 
 When to use:
 
@@ -60,9 +64,10 @@ When to use:
 
 #### Support
 
-Value: 4
+Value: `4`
 
-Description: Linked to a support or operational task.
+Description:  
+Linked to a support or operational task.
 
 When to use:
 
@@ -72,9 +77,10 @@ When to use:
 
 #### Error
 
-Value: 99
+Value: `99`
 
-Description: Represents an error-focused task.
+Description:  
+Represents an error-focused task.
 
 When to use:
 
@@ -110,8 +116,8 @@ await module.SaveChangesAsync();
 
 ### Best Practices
 
-* Choose Document for whole-document tasks; use Shred for precise field-level actions.
-* For dataset curation or QA, select DataSet to keep routing and reporting accurate.
-* Reserve Support for operational follow-ups that aren’t tied directly to a specific document field.
-* Use Error for clear triage workflows; pair with WorkItemStatus.Error and detailed comments for faster resolution.
+* Choose `Document` for whole-document tasks; use Shred for precise field-level actions.
+* For dataset curation or `QA`, select `DataSet` to keep routing and reporting accurate.
+* Reserve `Support` for operational follow-ups that aren’t tied directly to a specific document field.
+* Use `Error` for clear triage workflows; pair with `WorkItemStatus.Error` and detailed comments for faster resolution.
 

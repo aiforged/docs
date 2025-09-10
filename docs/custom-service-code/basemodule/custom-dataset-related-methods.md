@@ -13,7 +13,8 @@ These methods let you query, search, add, update, and delete records in Custom D
 Signature:  
 `ICustomDataSetRecord GetDataSetRecord(ICustomDataSet dataset, int fieldId, string fieldValue, bool isExactMatch)`
 
-Description: Returns a single dataset record where the specified field matches the given value (exact match or not).
+Description:  
+Returns a single dataset record where the specified field matches the given value (exact match or not).
 
 Usage:
 
@@ -40,7 +41,8 @@ When to use:
 Signature:  
 `IEnumerable<ICustomDataSetValue> GetDataSetFieldValues(ICustomDataSet dataset, IParameterDef field)`
 
-Description: Returns all distinct values for a given dataset field.
+Description:  
+Returns all distinct values for a given dataset field.
 
 Usage:
 
@@ -61,7 +63,8 @@ When to use:
 Signature:  
 `IEnumerable<ICustomDataSetValue> GetDataSetFieldValues(ICustomDataSet dataset, int fieldId)`
 
-Description: Returns all distinct values for the specified dataset field ID.
+Description:  
+Returns all distinct values for the specified dataset field ID.
 
 Usage:
 
@@ -69,9 +72,8 @@ Usage:
 var values = module.GetDataSetFieldValues(dataset, /* fieldId */);
 ```
 
-Tip:
-
-* Use the ID overload when you already have the field ID and don’t need the full definition object.
+!!! tip
+    Use the ID overload when you already have the field ID and don’t need the full definition object.
 
 ***
 
@@ -80,7 +82,8 @@ Tip:
 Signature:  
 `ICustomDataSetRecord LookupDataSetRecord(ICustomDataSet dataset, int fieldId, string fieldValue, bool regexMatch, bool isExactMatch)`
 
-Description: Finds a single record by field ID using exact or regex matching (regexMatch takes precedence).
+Description:  
+Finds a single record by field ID using exact or regex matching (regexMatch takes precedence).
 
 Usage:
 
@@ -101,7 +104,8 @@ When to use:
 Signature:  
 `ICustomDataSetRecord LookupDataSetRecord(ICustomDataSet dataset, string fieldName, string fieldValue, bool regexMatch, bool isExactMatch)`
 
-Description: Finds a single record by field name with exact or regex matching.
+Description:  
+Finds a single record by field name with exact or regex matching.
 
 Usage:
 
@@ -109,9 +113,8 @@ Usage:
 var record = module.LookupDataSetRecord(dataset, "CustomerID", "12345", regexMatch: false, isExactMatch: true);
 ```
 
-Tip:
-
-* Prefer the ID-based overload for robustness; name-based is convenient if names are stable.
+!!! tip
+    Prefer the ID-based overload for robustness; name-based is convenient if names are stable.
 
 ***
 
@@ -120,7 +123,8 @@ Tip:
 Signature:  
 `IEnumerable<ICustomDataSetRecord> SearchDataSetRecords(ICustomDataSet dataset, List<(int fieldId, string fieldValue)> search, bool regexMatch, bool isExactMatch)`
 
-Description: Returns records that match all provided fieldId/value pairs (AND semantics), with regex and/or exact matching.
+Description:  
+Returns records that match all provided fieldId/value pairs (AND semantics), with regex and/or exact matching.
 
 Usage:
 
@@ -144,7 +148,8 @@ When to use:
 Signature:  
 `IEnumerable<ICustomDataSetRecord> SearchDataSetRecords(ICustomDataSet dataset, List<(string fieldName, string fieldValue)> search, bool regexMatch, bool isExactMatch)`
 
-Description: Returns records that match all provided fieldName/value pairs (AND semantics), with regex and/or exact matching.
+Description:  
+Returns records that match all provided fieldName/value pairs (AND semantics), with regex and/or exact matching.
 
 Usage:
 
@@ -157,9 +162,8 @@ var search = new List<(string, string)>
 var results = module.SearchDataSetRecords(dataset, search, regexMatch: false, isExactMatch: true);
 ```
 
-Tip:
-
-* Use field-name overload for readability; switch to ID-based for schema changes resilience.
+!!! tip
+    Use field-name overload for readability; switch to ID-based for schema changes resilience.
 
 ***
 
@@ -168,7 +172,8 @@ Tip:
 Signature:  
 `ICustomDataSetValue GetDataSetGetBestValue(ICustomDataSet dataset, int fieldId, string value, bool ignoreCase = true)`
 
-Description: Returns the best matching value for a field based on heuristic matching (e.g., case-insensitive similarity).
+Description:  
+Returns the best matching value for a field based on heuristic matching (e.g., case-insensitive similarity).
 
 Usage:
 
@@ -188,7 +193,8 @@ When to use:
 Signature:  
 `ICustomDataSetRecord GetDataSetGetBestRecord(ICustomDataSet dataset, int fieldId, string value, bool ignoreCase = true)`
 
-Description: Returns the best matching record for a given field/value using heuristic matching.
+Description:  
+Returns the best matching record for a given field/value using heuristic matching.
 
 Usage:
 
@@ -196,9 +202,8 @@ Usage:
 var bestRecord = module.GetDataSetGetBestRecord(dataset, /* fieldId */, "acme ltd", ignoreCase: true);
 ```
 
-Tip:
-
-* Pair with verification or user confirmation for critical data paths.
+!!! tip
+    Pair with verification or user confirmation for critical data paths.
 
 ***
 
@@ -207,7 +212,8 @@ Tip:
 Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(ICustomDataSetRecord record)`
 
-Description: Deletes the specified dataset record.
+Description:  
+Deletes the specified dataset record.
 
 Usage:
 
@@ -227,7 +233,8 @@ When to use:
 Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(List<ICustomDataSetRecord> records)`
 
-Description: Deletes all provided records.
+Description:  
+Deletes all provided records.
 
 Usage:
 
@@ -235,9 +242,8 @@ Usage:
 var deleted = module.DeleteDataSetRecord(records.ToList());
 ```
 
-Tip:
-
-* Batch deletions to reduce save cycles and improve performance.
+!!! tip
+    Batch deletions to reduce save cycles and improve performance.
 
 ***
 
@@ -246,7 +252,8 @@ Tip:
 Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(ICustomDataSet dataset, string keyValue)`
 
-Description: Deletes a record using the dataset’s key value (the record’s unique key).
+Description:  
+Deletes a record using the dataset’s key value (the record’s unique key).
 
 Usage:
 
@@ -265,7 +272,8 @@ When to use:
 Signature:  
 `IEnumerable<ICustomDataSetRecord> DeleteDataSetRecord(ICustomDataSet dataset, int keyId)`
 
-Description: Deletes a record using the dataset’s key ID.
+Description:  
+Deletes a record using the dataset’s key ID.
 
 Usage:
 
@@ -273,9 +281,8 @@ Usage:
 var deleted = module.DeleteDataSetRecord(dataset, keyId: 123);
 ```
 
-Tip:
-
-* Use keyId when your dataset uses integer keys rather than GUID/string.
+!!! tip
+    Use keyId when your dataset uses integer keys rather than GUID/string.
 
 ***
 
@@ -284,7 +291,8 @@ Tip:
 Signature:  
 `int SaveDataSetRecord(ICustomDataSet dataset, ICustomDataSetRecord record)`
 
-Description: Creates or updates a single dataset record; returns the number of field values saved.
+Description:  
+Creates or updates a single dataset record; returns the number of field values saved.
 
 Usage:
 
@@ -305,7 +313,8 @@ When to use:
 Signature:  
 `int SaveDataSet(ICustomDataSet dataset, bool mergeData)`
 
-Description: Persists the dataset changes in bulk. When mergeData is true, merges with existing data where supported.
+Description:  
+Persists the dataset changes in bulk. When mergeData is true, merges with existing data where supported.
 
 Usage:
 
@@ -314,9 +323,8 @@ var count = module.SaveDataSet(dataset, mergeData: true);
 logger.LogInformation("Saved dataset changes: {count}", count);
 ```
 
-Tip:
-
-* Use after multiple record updates to reduce round trips, when your flow supports bulk save.
+!!! tip
+    Use after multiple record updates to reduce round trips, when your flow supports bulk save.
 
 ***
 
@@ -331,13 +339,11 @@ Tip:
 
 ### FAQ
 
-* Q: What’s the difference between GetDataSetRecord and LookupDataSetRecord?
-  * A: GetDataSetRecord targets a single field with exact/non-exact match; LookupDataSetRecord supports regex and name/ID field resolution.
-* Q: When should I use SearchDataSetRecords?
-  * A: Use it for composite-key matching across multiple fields (AND semantics).
-* Q: How do I insert a new record?
-  * A: Create a record via dataset.CreateRecord(key), set values with SetValue, then call SaveDataSetRecord.
-* Q: What does SaveDataSet vs SaveDataSetRecord save?
-  * A: SaveDataSetRecord saves one record’s values; SaveDataSet persists broader dataset state and can merge.
-
-
+* **Q: What’s the difference between GetDataSetRecord and LookupDataSetRecord?**  
+A: `GetDataSetRecord` targets a single field with exact/non-exact match; `LookupDataSetRecord` supports regex and name/ID field resolution.
+* **Q: When should I use SearchDataSetRecords?**  
+A: Use it for composite-key matching across multiple fields (AND semantics).
+* **Q: How do I insert a new record?**  
+A: Create a record via `dataset.CreateRecord(key)`, set values with `SetValue`, then call `SaveDataSetRecord`.
+* **Q: What does SaveDataSet vs SaveDataSetRecord save?**  
+A: `SaveDataSetRecord` saves one record’s values; `SaveDataSet` persists broader dataset state and can merge.

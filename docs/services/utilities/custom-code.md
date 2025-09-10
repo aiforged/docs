@@ -48,20 +48,20 @@ Utility services are not configured as standalone services. Attach them to a par
 #### Option A: From Parent Service View
 
 1. Open the parent service.
-2. Click the Add Service dropdown and select Utility Service.&#x20;
+2. Click the Add Service dropdown and select Utility Service.
 3. Choose **Custom Code**.
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 5. Save.
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
-2. Expand the Utility Service Types group.&#x20;
+2. Expand the Utility Service Types group.
 3. Drag the Custom Code utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.
 4. Save.
 
 !!! info
@@ -88,15 +88,15 @@ Utility services are not configured as standalone services. Attach them to a par
 AIForged Custom Code utilities let you script in a range of popular languages, ensuring flexibility for both traditional developers and business users:
 
 * **C#**
-  The default language, offering powerful .NET capabilities for validations, transformations, and integrations.
+    - The default language, offering powerful .NET capabilities for validations, transformations, and integrations.
 * **Visual Basic**
-  Use familiar VB.NET syntax for business logic and field enrichment.
+    - Use familiar VB.NET syntax for business logic and field enrichment.
 * **F#**
-  Functional programming for advanced data processing or compact rules.
+    - Functional programming for advanced data processing or compact rules.
 * **IronPython**
-  Write logic in Python syntax, ideal for data wrangling and users from a Python background.
+    - Write logic in Python syntax, ideal for data wrangling and users from a Python background.
 * **SemanticKernel (Natural Language)**
-  Write your code logic in plain English (or other supported natural languages). The AI model interprets your intent and executes the logic, making automation accessible to non-programmers and enabling rapid prototyping.
+    - Write your code logic in plain English (or other supported natural languages). The AI model interprets your intent and executes the logic, making automation accessible to non-programmers and enabling rapid prototyping.
 
 !!! info
     Tip: Start with C# for maximum compatibility and support, or try SemanticKernel for rapid prototyping and business-rule scripting in natural language.
@@ -193,17 +193,17 @@ foreach (IDocument childDoc in docs)
 ### Troubleshooting Tips
 
 * **Code errors or exceptions?**
-  * Use try/catch in your code and review logs for detailed error messages.
-  * Start from a minimal script, then add complexity gradually.
+    * Use try/catch in your code and review logs for detailed error messages.
+    * Start from a minimal script, then add complexity gradually.
 * **Unexpected results or missing changes?**
-  * Check that you’re saving changes with `module.SaveChanges()` where appropriate.
-  * Confirm you’re referencing the correct parameters, datasets, or field IDs.
+    * Check that you’re saving changes with `module.SaveChanges()` where appropriate.
+    * Confirm you’re referencing the correct parameters, datasets, or field IDs.
 * **Performance issues?**
-  * Batch-process documents where possible.
-  * Avoid unnecessary API calls or loops; optimize your logic.
+    * Batch-process documents where possible.
+    * Avoid unnecessary API calls or loops; optimize your logic.
 * **External API calls not working?**
-  * Check network access, authentication, and timeouts.
-  * Log API responses and errors for diagnostics.
+    * Check network access, authentication, and timeouts.
+    * Log API responses and errors for diagnostics.
 
 ***
 
@@ -221,17 +221,14 @@ foreach (IDocument childDoc in docs)
 ### FAQ
 
 * **Can I call external APIs from Custom Code?**
-  * Yes—use standard .NET HTTP client patterns, but always handle timeouts and errors robustly.
+    * Yes—use standard .NET HTTP client patterns, but always handle timeouts and errors robustly.
 * **Can I modify document statuses or parameters?**
-  * Yes, use the BaseModule APIs to update document statuses, add verifications, or change parameter values.
+    * Yes, use the BaseModule APIs to update document statuses, add verifications, or change parameter values.
 * **Can I access data from other services?**
-  * Yes, as long as it is accessible via the BaseModule APIs and context of the current workflow.
+    * Yes, as long as it is accessible via the BaseModule APIs and context of the current workflow.
 * **How do I debug my code?**
-  * Use the logger to write debug or info messages. Review logs in the AIForged UI.
+    * Use the logger to write debug or info messages. Review logs in the AIForged UI.
 * **How do I update a field only when a condition is met?**
-  * Use standard C# if/else logic in your script, referencing the parameter or value as needed.
+    * Use standard C# if/else logic in your script, referencing the parameter or value as needed.
 * **What happens if my code throws an exception?**
-  * The error is logged and processing may halt for the current document. Always use error handling to avoid workflow interruptions.
-
-
-
+    * The error is logged and processing may halt for the current document. Always use error handling to avoid workflow interruptions.

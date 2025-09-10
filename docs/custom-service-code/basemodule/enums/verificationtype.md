@@ -4,7 +4,7 @@
 
 The VerificationType enum indicates which part of AIForged created a verification entry on a field/parameter. Use it to understand provenance (who/what set the verification) and to filter or route actions accordingly.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -30,9 +30,10 @@ var items = module.FindVerifications(
 
 #### None
 
-Value: 0
+Value: `0`
 
-Description: Not specified.
+Description:  
+Not specified.
 
 When to use:
 
@@ -42,9 +43,10 @@ When to use:
 
 #### Provider
 
-Value: 1
+Value: `1`
 
-Description: Set by the upstream service provider (e.g., OCR/AI model output).
+Description:  
+Set by the upstream service provider (e.g., OCR/AI model output).
 
 When to use:
 
@@ -54,9 +56,10 @@ When to use:
 
 #### System
 
-Value: 2
+Value: `2`
 
-Description: Created by the AIForged system workflow (automation, rules engine hooks).
+Description:  
+Created by the AIForged system workflow (automation, rules engine hooks).
 
 When to use:
 
@@ -66,9 +69,10 @@ When to use:
 
 #### User
 
-Value: 3
+Value: `3`
 
-Description: Added by a human user (often via Custom Code or HITL UI).
+Description:  
+Added by a human user (often via Custom Code or HITL UI).
 
 When to use:
 
@@ -78,9 +82,10 @@ When to use:
 
 #### Service
 
-Value: 4
+Value: `4`
 
-Description: Created by a configured Verification Service.
+Description:  
+Created by a configured Verification Service.
 
 When to use:
 
@@ -90,9 +95,10 @@ When to use:
 
 #### Training
 
-Value: 5
+Value: `5`
 
-Description: Added during training workflows.
+Description:  
+Added during training workflows.
 
 When to use:
 
@@ -102,9 +108,10 @@ When to use:
 
 #### RPA
 
-Value: 6
+Value: `6`
 
-Description: Added by an external RPA process.
+Description:  
+Added by an external RPA process.
 
 When to use:
 
@@ -114,9 +121,10 @@ When to use:
 
 #### API
 
-Value: 7
+Value: `7`
 
-Description: Created as a result of an external API call.
+Description:  
+Created as a result of an external API call.
 
 When to use:
 
@@ -126,9 +134,10 @@ When to use:
 
 #### DataSet
 
-Value: 8
+Value: `8`
 
-Description: Derived from Custom Dataset data.
+Description:  
+Derived from Custom Dataset data.
 
 When to use:
 
@@ -138,14 +147,14 @@ When to use:
 
 ### Best Practices
 
-* Use VerificationType filters to separate machine, human, and external contributions when analyzing history.
-* For auditability, pair VerificationType with VerificationStatus to capture both who/what set it and the outcome.
+* Use `VerificationType` filters to separate machine, human, and external contributions when analyzing history.
+* For auditability, pair `VerificationType` with `VerificationStatus` to capture both who/what set it and the outcome.
 * In blended flows (provider + service + HITL), order your logic to avoid overwriting important human inputs; append instead.
 
 ### FAQ
 
-* Q: What’s the difference between Provider and Service?
-  * A: Provider refers to the core extraction/model layer. Service refers to an explicit Verification Service configured to validate or enrich values.
-* Q: Should HITL actions be User or System?
-  * A: HITL user actions should be User; automated transitions are typically System.
+* **Q: What’s the difference between Provider and Service?**  
+A: Provider refers to the core extraction/model layer. Service refers to an explicit Verification Service configured to validate or enrich values.
+* **Q: Should HITL actions be User or System?**  
+A: HITL user actions should be `User`; automated transitions are typically `System`.
 

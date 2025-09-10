@@ -10,10 +10,9 @@ The **LLM Extractor** service in AIForged leverages cutting-edge generative AI m
 !!! info
     Even though other LLM service are still available in AIForged such as ChatGPT Extractor and Claude Extractor, it is recommended to use and / or migrate to the LLM Extractor service as the other services have been deprecated.
 
-!!! warning
-    **❗ Important:**\
-    **For all prompt types (Plain Text, JSON, Structured Data), your prompt must always include a clear instruction that the output/result must be in valid JSON format.**\
-    &#xNAN;_&#x54;his ensures that responses from the AI model are structured and can be reliably parsed for downstream processing._
+!!! warning "Important:"
+    **For all prompt types (Plain Text, JSON, Structured Data), your prompt must always include a clear instruction that the output/result must be in valid JSON format.**
+    This ensures that responses from the AI model are structured and can be reliably parsed for downstream processing.
 
 ***
 
@@ -40,24 +39,23 @@ The **LLM Extractor** service in AIForged leverages cutting-edge generative AI m
 
 Follow these steps to add and configure the **LLM Extractor** service to your agent:
 
-1. **Open the Agent View**
-   Navigate to the agent where you want to add the service.
-2. **Add the LLM Extractor Service**
-   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**
-   Choose **LLM Extractor** from the available service types.
-   ![](../../assets/image%20%2823%29%20%281%29.png)
+1. **Open the Agent View:**
+    Navigate to the agent where you want to add the service.
+2. **Add the LLM Extractor Service:**
+    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
+3. **Select Service Type:**
+    Choose **LLM Extractor** from the available service types.
+    ![](../../assets/image%20%2823%29%20%281%29.png)
 4.  **Configure the Service Wizard**
-    Open the Service Configuration Wizard.
-    ![](../../assets/image%20%2824%29%20%281%29.png)
-    or
-
-    ![](../../assets/image%20%2825%29%20%281%29.png)
-    * **Step 1: General Settings**
-      Configure core settings such as service enablement, parallel prompt execution, and connection details for your LLM provider (e.g., Azure OpenAI).
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-      ![](../../assets/image%20%2826%29.png)
-    *   **Step 2: Prompts**
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%2824%29%20%281%29.png)
+    - or
+    - ![](../../assets/image%20%2825%29%20%281%29.png)
+    * **Step 1: General Settings:**
+        Configure core settings such as service enablement, parallel prompt execution, and connection details for your LLM provider (e.g., Azure OpenAI).
+        Default settings are sufficient for most use cases.
+        ![](../../assets/image%20%2826%29.png)
+    * **Step 2: Prompts:**
         Set up your extraction prompts.
         **This is done directly from the Service view by clicking on the Prompt Configuration button:**
         ![](../../assets/image%20%2827%29.png)
@@ -67,37 +65,38 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
         For each prompt, you can configure:
 
         * **Prompt Type:**
-          * **Plain Text:** Write a fully custom prompt and configure the JSON response schema.
-            ![](../../assets/image%20%2830%29.png)
-            ![](../../assets/image%20%2831%29.png)
-          * **JSON:** Write the prompt as pure JSON (the UI will provide a JSON editor).
-            ![](../../assets/image%20%2832%29.png)
-          * **Structured Data:** Use custom prompts, but define the response format using Label Definitions for easy, visual mapping of output fields.
-            ![](../../assets/prompt4.png)
+            * **Plain Text:** Write a fully custom prompt and configure the JSON response schema.
+              ![](../../assets/image%20%2830%29.png)
+              ![](../../assets/image%20%2831%29.png)
+            * **JSON:** Write the prompt as pure JSON (the UI will provide a JSON editor).
+              ![](../../assets/image%20%2832%29.png)
+            * **Structured Data:** Use custom prompts, but define the response format using Label Definitions for easy, visual mapping of output fields.
+              ![](../../assets/prompt4.png)
 
         * **Response Format:**
-          * For Plain Text prompts, click **Configure JSON Response Format** to define the required output structure as a JSON schema.
-            ![](../../assets/image%20%2830%29.png)
-            ![](../../assets/image%20%2831%29.png)
-          * For Structured Data prompts, click **Configure Fields** to design your field and table outputs visually.
-            ![](../../assets/prompt4.png)
+            * For Plain Text prompts, click **Configure JSON Response Format** to define the required output structure as a JSON schema.
+              ![](../../assets/image%20%2830%29.png)
+              ![](../../assets/image%20%2831%29.png)
+            * For Structured Data prompts, click **Configure Fields** to design your field and table outputs visually.
+              ![](../../assets/prompt4.png)
         * **Model Selection:**
-          * Choose which LLM model to use for this prompt (per prompt basis).
+            * Choose which LLM model to use for this prompt (per prompt basis).
         * **Index:**
-          * Set the order of execution for prompts (lower index executes first).
+            * Set the order of execution for prompts (lower index executes first).
         * **Sticky/Child Prompt:**
-          * Make a prompt "sticky" (persists context) or configure as a child of another prompt for template/variable-based prompting.
+            * Make a prompt "sticky" (persists context) or configure as a child of another prompt for template/variable-based prompting.
         * **Child Prompt Variables:**
-          * When creating child prompts, specify variables to pass extracted data from parent prompts.
-            ![](../../assets/prompt5.png)
-          * Choose to execute for each result or concatenate results (e.g., as CSV lines).
+            * When creating child prompts, specify variables to pass extracted data from parent prompts.
+              ![](../../assets/prompt5.png)
+            * Choose to execute for each result or concatenate results (e.g., as CSV lines).
+
     * **Step 3: Advanced Configuration**
-      * Configure general, processing, workflow, and advanced settings.
-      * All model parameters are fully customizable, including Temperature, TopP, Frequency Penalty, Presence Penalty, Max Tokens, Seed, etc.
-        ![](../../assets/prompt8%20%281%29.png)
-        ![](../../assets/prompt9.png)
-      * Control parallel prompt execution and template prompting approaches.
-      * Enable/disable attaching document images or OCR’d text as input to the LLM.
+        * Configure general, processing, workflow, and advanced settings.
+        * All model parameters are fully customizable, including Temperature, TopP, Frequency Penalty, Presence Penalty, Max Tokens, Seed, etc.
+          ![](../../assets/prompt8%20%281%29.png)
+          ![](../../assets/prompt9.png)
+        * Control parallel prompt execution and template prompting approaches.
+        * Enable/disable attaching document images or OCR’d text as input to the LLM.
 
 ***
 
@@ -160,7 +159,7 @@ Suppose you want to extract both header fields and line items from invoices usin
 | 1     | Plain Text      | GPT-4o     | Extract invoice header fields              | –            | –              | JSON (Invoice fields)     |
 | 2     | Structured Data | Gemini-Pro | Extract line item details for this invoice | 1            | InvoiceNumber  | Table (Label Definitions) |
 
-**How it works:**\
+**How it works:**
 Prompt 1 extracts invoice-level fields. Prompt 2, configured as a child, uses the InvoiceNumber from Prompt 1 and processes each line item row accordingly.
 
 ***
@@ -192,10 +191,10 @@ LLM Extractor provides robust configuration to tailor extraction to your needs:
 
 To upload and process documents using the **LLM Extractor**:
 
-1. **Open Service**
+1. **Open Service:**
    Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
    ![](../../assets/image%20%2833%29.png)
-2. **Process Documents**
+2. **Process Documents:**
    After uploading, select the documents to process and click **Process Checked**. Prompts will execute in order of their index, using the selected models and response formats.
 
 !!! info
@@ -214,16 +213,16 @@ To upload and process documents using the **LLM Extractor**:
 ### Troubleshooting Tips
 
 * **Prompt Not Extracting Desired Data?**
-  * Refine your prompt wording or response format.
-  * Use the Structured Data or JSON prompt type for more control.
+    * Refine your prompt wording or response format.
+    * Use the Structured Data or JSON prompt type for more control.
 * **Child Prompts Not Executing as Expected?**
-  * Ensure parent and child prompt indexes and variable names are set correctly.
-  * Double-check variable mappings and concatenation settings.
+    * Ensure parent and child prompt indexes and variable names are set correctly.
+    * Double-check variable mappings and concatenation settings.
 * **Performance Issues?**
-  * Enable parallel execution for faster processing, or reduce prompt complexity.
+    * Enable parallel execution for faster processing, or reduce prompt complexity.
 * **Model Errors or Timeouts?**
-  * Adjust model parameters (e.g., max tokens, temperature) or retry settings.
-  * Verify API keys, model deployment names, and connectivity.
+    * Adjust model parameters (e.g., max tokens, temperature) or retry settings.
+    * Verify API keys, model deployment names, and connectivity.
 
 ***
 
@@ -233,9 +232,3 @@ To upload and process documents using the **LLM Extractor**:
 * Take advantage of template and child prompting to break complex extractions into manageable steps.
 * Experiment with model parameters and prompt chaining to optimize speed and accuracy.
 * Regularly review extracted results, updating prompts and response formats as your needs evolve.
-
-
-
-
-
-

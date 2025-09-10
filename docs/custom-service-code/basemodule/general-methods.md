@@ -10,10 +10,10 @@ The methods in this section form the core toolbox for interacting with agent cla
 
 #### GetClass
 
-**Signature:**\
+**Signature:**  
 `GetClass(int classId) : IClasses`
 
-**Description:**\
+**Description:**  
 Returns the class (document category) object with the specified ID.
 
 **Usage:**
@@ -26,21 +26,19 @@ if (invoiceClass != null)
 }
 ```
 
-**When to use:**\
+**When to use:**  
 To fetch metadata or workflow rules for a specific class/category.
-
-\
 
 
 ***
 
 #### GetClasses
 
-**Signature:**\
-`GetClasses(IProject project) : List<IClasses>`\
+**Signature:**  
+`GetClasses(IProject project) : List<IClasses>`  
 `GetClasses(int projectId) : List<IClasses>`
 
-**Description:**\
+**Description:**  
 Returns all classes (categories) defined for a given agent.
 
 **Usage:**
@@ -57,10 +55,10 @@ foreach (var cls in classes)
 
 #### GetDocumentMaster
 
-**Signature:**\
-`GetDocumentMaster(IDocument doc) : IDocument`
+**Signature:**  
+`GetDocumentMaster(IDocument doc) : IDocument`  
 
-**Description:**\
+**Description:**  
 Returns the master document for the given (child) document.
 
 **Usage:**
@@ -79,10 +77,10 @@ if (masterDoc != null)
 
 #### FindClassByName
 
-**Signature:**\
+**Signature:**  
 `FindClassByName(int projectId, string name, DictionaryLookupMethod? lookup = null, float minConfidence = 0.80F) : IClasses`
 
-**Description:**\
+**Description:**  
 Searches for a class by name. Supports fuzzy, exact, or regex matching by specifying the `lookup` method.
 
 **Usage:**
@@ -95,18 +93,18 @@ if (cls != null)
 }
 ```
 
-**When to use:**\
+**When to use:**  
 When you need to map or classify documents dynamically by name or partial match.
 
 ***
 
 #### GetParentService
 
-**Signature:**\
-`GetParentService() : IParameterDef`\
-`GetParentService(int id) : IParameterDef`
+**Signature:**  
+`GetParentService() : IParameterDef`  
+`GetParentService(int id) : IParameterDef`  
 
-**Description:**\
+**Description:**  
 Returns the parent service parameter definition for the current service (or for the specified service ID).
 
 **Usage:**
@@ -122,10 +120,10 @@ logger.LogInformation("Parent service name: {name}", parent.Name);
 
 #### ParseDecimal
 
-**Signature:**\
+**Signature:**  
 `ParseDecimal(string str, out decimal amount) : bool`
 
-**Description:**\
+**Description:**  
 Attempts to parse a string to a decimal value.
 
 **Usage:**
@@ -142,20 +140,20 @@ else
 }
 ```
 
-**When to use:**\
+**When to use:**  
 For safe conversion of extracted field values to decimals (currency, amounts, etc.).
 
 ***
 
 #### GetUserAsync / GetUsersAsync
 
-**Signatures:**\
-`GetUserAsync(string userId) : IApplicationUser`\
-`GetUsersAsync(IEnumerable userIds) : List<IApplicationUser>`\
-`GetUserAsync(IProjectUser pu) : IApplicationUser`\
-`GetUsersAsync(IEnumerable pudata) : List<IApplicationUser>`
+**Signatures:**  
+`GetUserAsync(string userId) : IApplicationUser`  
+`GetUsersAsync(IEnumerable userIds) : List<IApplicationUser>`  
+`GetUserAsync(IProjectUser pu) : IApplicationUser`  
+`GetUsersAsync(IEnumerable pudata) : List<IApplicationUser>`  
 
-**Description:**\
+**Description:**  
 Fetches application user(s) by user ID(s) or project user(s).
 
 **Usage:**
@@ -167,18 +165,18 @@ logger.LogInformation("User email: {email}", user?.Email);
 var users = module.GetUsersAsync(new List<string> { "user1", "user2" });
 ```
 
-**When to use:**\
+**When to use:**  
 For routing work items, logging, notifications, or access control.
 
 ***
 
 #### GetUsers (Role/Permission Filtering)
 
-**Signature:**\
-`GetUsers(LinkType? type = null, List<Role> roles = null, string permissions = null) : List<IProjectUser>`\
+**Signature:**  
+`GetUsers(LinkType? type = null, List<Role> roles = null, string permissions = null) : List<IProjectUser>`  
 ...plus overloads for filtering by service, agent, group, etc.
 
-**Description:**\
+**Description:**  
 Returns a list of project users filtered by link type, roles, or permissions.
 
 **Usage:**
@@ -191,17 +189,17 @@ foreach (var verifier in verifiers)
 }
 ```
 
-**When to use:**\
+**When to use:**  
 For dynamic assignment, escalation, or permission checks.
 
 ***
 
 #### GetMicrosoftGraphClient
 
-**Signature:**\
+**Signature:**  
 `GetMicrosoftGraphClient() : object`
 
-**Description:**\
+**Description:**  
 Returns the Microsoft Graph client object for advanced integrations (used by services like OneDrive Scraper).
 
 **Usage:**
@@ -215,10 +213,10 @@ var graphClient = module.GetMicrosoftGraphClient();
 
 #### CallWebHookAsync
 
-**Signature:**\
+**Signature:**  
 `CallWebHookAsync(IDocument srcdoc, IDocument masterdoc = null, IDocumentParameter par = null, IParameterDef def = null, IVerification verification = null, IWorkItem wi = null, int? webHookServiceId = null) : object`
 
-**Description:**\
+**Description:**  
 Calls a webhook (external API) using the current document and workflow context. Returns the webhook call result.
 
 **Usage:**
@@ -227,18 +225,18 @@ Calls a webhook (external API) using the current document and workflow context. 
 await module.CallWebHookAsync(doc, webHookServiceId: 10101);
 ```
 
-**When to use:**\
+**When to use:**  
 To trigger external notifications, integrations, or audit events.
 
 ***
 
 #### SaveChanges / SaveChangesAsync
 
-**Signatures:**\
-`SaveChanges() : int`\
+**Signatures:**  
+`SaveChanges() : int`  
 `SaveChangesAsync() : Task<int>`
 
-**Description:**\
+**Description:**  
 Commits any pending changes to the database made by your custom code.
 
 **Usage:**
@@ -263,12 +261,12 @@ await module.SaveChangesAsync();
 
 ### FAQ
 
-**Q: Can I fetch both classes and users in the same script?**\
+**Q: Can I fetch both classes and users in the same script?**  
 A: Yes, you can chain and mix any general methods as needed.
 
-**Q: What’s the difference between GetUserAsync and GetUsers?**\
+**Q: What’s the difference between GetUserAsync and GetUsers?**  
 A: GetUserAsync returns application user objects by their GUID. GetUsers returns project user objects with role and permission context.
 
-**Q: Do I need to call SaveChanges after every method?**\
+**Q: Do I need to call SaveChanges after every method?**  
 A: Only after you modify documents, parameters, or datasets. Read-only operations do not require a save.
 

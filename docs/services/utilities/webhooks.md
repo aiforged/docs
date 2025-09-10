@@ -50,19 +50,19 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.  
-   ![](../../assets/image%20%28288%29.png)
+    - ![](../../assets/image%20%28288%29.png)
 3. Choose WebHook Utility.
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
 2. Expand the Utility Service Types group.&#x20;
 3. Drag the WebHook utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
 !!! info
@@ -199,15 +199,15 @@ To wire up a webhook for real-time integration:
 ### Troubleshooting Tips
 
 * **No webhook received?**
-  * Double-check the endpoint URL and ensure the service is enabled.
-  * Confirm the event filter (Status, Category, Usage, etc.) matches your test document.
-  * Verify network access and authentication.
+    * Double-check the endpoint URL and ensure the service is enabled.
+    * Confirm the event filter (Status, Category, Usage, etc.) matches your test document.
+    * Verify network access and authentication.
 * **Malformed payload or errors?**
-  * Validate the payload structure in your code or template.
-  * Make sure required fields are present and correctly serialized.
+    * Validate the payload structure in your code or template.
+    * Make sure required fields are present and correctly serialized.
 * **Repeated failures or retries?**
-  * Inspect endpoint logs for errors.
-  * Adjust retry settings or review endpoint rate limits.
+    * Inspect endpoint logs for errors.
+    * Adjust retry settings or review endpoint rate limits.
 
 ***
 
@@ -237,44 +237,23 @@ Get a webhook integrated in minutes:
 
 ### FAQ
 
-**How do I test my webhook integration before going live?**
-
-* Use a service like [webhook.site](https://webhook.site/) as your endpoint to inspect the payload and headers.
-* Once you are satisfied with the structure, point the webhook at your production endpoint.
-
-**Can I trigger multiple webhooks for different events or services?**
-
-* Yes. Add multiple Webhook Utility services, each with its own trigger and target endpoint.
-
-**How do I add custom authentication headers (e.g., Bearer token, API key)?**
-
-* Use the API Key and API Key Header fields in the utility settings, or add custom headers in your webhook configuration.
-
-**Can I control when the webhook fires (e.g., only on specific status changes)?**
-
-* Yes. Use the Status, Category, Usage, and Pattern filters to ensure the webhook only triggers on relevant document events.
-
-**How do I handle error responses from the external system?**
-
-* Webhook calls are logged in AIForged. If a call fails, you can review the response for diagnostics.
-* Use the Retry Count and Retry Delay options to automatically retry failed calls.
-
-**Is it possible to receive a response from the external system and use it in AIForged?**
-
-* Webhooks are one-way by design. If you need to capture a response, log it in your external system or design a callback to AIForged via its API.
-
-**Can I add dynamic values (like document category or a download link) to the payload?**
-
-* Yes. Use C# code in your payload template to include any document or agent property.
-
-**What if the webhook endpoint is temporarily unavailable?**
-
-* Configure the Retry Count and Retry Delay to automatically retry delivery. Failed attempts are logged for review.
-
-**How secure are webhook calls from AIForged?**
-
-* Always use HTTPS endpoints and include authentication headers. You can further secure by whitelisting AIForged IPs or using custom secret headers.
-
-
-
-
+* **How do I test my webhook integration before going live?**
+    * Use a service like [webhook.site](https://webhook.site/) as your endpoint to inspect the payload and headers.
+    * Once you are satisfied with the structure, point the webhook at your production endpoint.
+* **Can I trigger multiple webhooks for different events or services?**
+    * Yes. Add multiple Webhook Utility services, each with its own trigger and target endpoint.
+* **How do I add custom authentication headers (e.g., Bearer token, API key)?**
+    * Use the API Key and API Key Header fields in the utility settings, or add custom headers in your webhook configuration.
+* **Can I control when the webhook fires (e.g., only on specific status changes)?**
+    * Yes. Use the Status, Category, Usage, and Pattern filters to ensure the webhook only triggers on relevant document events.
+* **How do I handle error responses from the external system?**
+    * Webhook calls are logged in AIForged. If a call fails, you can review the response for diagnostics.
+    * Use the Retry Count and Retry Delay options to automatically retry failed calls.
+* **Is it possible to receive a response from the external system and use it in AIForged?**
+    * Webhooks are one-way by design. If you need to capture a response, log it in your external system or design a callback to AIForged via its API.
+* **Can I add dynamic values (like document category or a download link) to the payload?**
+    * Yes. Use C# code in your payload template to include any document or agent property.
+* **What if the webhook endpoint is temporarily unavailable?**
+    * Configure the Retry Count and Retry Delay to automatically retry delivery. Failed attempts are logged for review.
+* **How secure are webhook calls from AIForged?**
+    * Always use HTTPS endpoints and include authentication headers. You can further secure by whitelisting AIForged IPs or using custom secret headers.

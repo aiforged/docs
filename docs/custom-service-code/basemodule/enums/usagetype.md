@@ -4,7 +4,7 @@
 
 The UsageType enum indicates why a document is stored (its intended purpose) within AIForged. Use it to route documents correctly (training, inbox/outbox, datasets, etc.).
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -22,9 +22,10 @@ await module.SaveChangesAsync();
 
 #### Definition
 
-Value: 0
+Value: `0`
 
-Description: A definition document. Each service uses definition docs for its own configuration or model artifacts.
+Description:  
+A definition document. Each service uses definition docs for its own configuration or model artifacts.
 
 When to use:
 
@@ -34,9 +35,10 @@ When to use:
 
 #### Training
 
-Value: 1
+Value: `1`
 
-Description: A training document uploaded by class.
+Description:  
+A training document uploaded by class.
 
 When to use:
 
@@ -46,9 +48,10 @@ When to use:
 
 #### Inbox
 
-Value: 2
+Value: `2`
 
-Description: A user-submitted document for classification or extraction.
+Description:  
+A user-submitted document for classification or extraction.
 
 When to use:
 
@@ -58,9 +61,10 @@ When to use:
 
 #### Outbox
 
-Value: 3
+Value: `3`
 
-Description: The results of classification or extraction.
+Description:  
+The results of classification or extraction.
 
 When to use:
 
@@ -70,9 +74,10 @@ When to use:
 
 #### Label
 
-Value: 4
+Value: `4`
 
-Description: A document that contains labeling information.
+Description:  
+A document that contains labeling information.
 
 When to use:
 
@@ -82,9 +87,10 @@ When to use:
 
 #### Dataset
 
-Value: 10
+Value: `10`
 
-Description: A document used to store dataset information.
+Description:  
+A document used to store dataset information.
 
 When to use:
 
@@ -94,9 +100,10 @@ When to use:
 
 #### System
 
-Value: 90
+Value: `90`
 
-Description: A system document.
+Description:  
+A system document.
 
 When to use:
 
@@ -106,9 +113,10 @@ When to use:
 
 #### Sample
 
-Value: 98
+Value: `98`
 
-Description: A sample document used for showcasing.
+Description:  
+A sample document used for showcasing.
 
 When to use:
 
@@ -118,9 +126,10 @@ When to use:
 
 #### Preview
 
-Value: 99
+Value: `99`
 
-Description: Preview image of a document (if applicable).
+Description:  
+Preview image of a document (if applicable).
 
 When to use:
 
@@ -130,16 +139,16 @@ When to use:
 
 ### Best Practices
 
-* Choose Inbox for documents awaiting processing; transition to Outbox after successful processing.
-* Keep Training separate from production flows to avoid accidental publication.
-* Use Definition, Dataset, and System for non-end-user artifacts; avoid mixing with Inbox/Outbox.
-* Set Preview for UI performance; keep original content under Image/related data types in DocumentData.
-* Always persist changes after updating Usage (SaveChanges/SaveChangesAsync).
+* Choose `Inbox` for documents awaiting processing; transition to `Outbox` after successful processing.
+* Keep `Training` separate from production flows to avoid accidental publication.
+* Use `Definition`, `Dataset`, and `System` for non-end-user artifacts; avoid mixing with `Inbox`/`Outbox`.
+* Set `Preview` for UI performance; keep original content under `Image`/related data types in `DocumentData`.
+* Always persist changes after updating `Usage` (`SaveChanges`/`SaveChangesAsync`).
 
 ### FAQ
 
-* Q: Can a document change UsageType over time?
-  * A: Yes—e.g., Inbox → Outbox during processing; ensure transitions reflect your workflow.
-* Q: Is UsageType tied to status?
-  * A: They complement each other: UsageType explains purpose; DocumentStatus tracks lifecycle.
+* **Q: Can a document change UsageType over time?**  
+A: Yes—e.g., `Inbox` → `Outbox` during processing; ensure transitions reflect your workflow.
+* **Q: Is UsageType tied to status?**  
+A: They complement each other: `UsageType` explains purpose; `DocumentStatus` tracks lifecycle.
 

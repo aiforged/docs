@@ -4,7 +4,7 @@
 
 The SortDirection enum specifies the order (direction) in which query results should be returned.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -24,9 +24,10 @@ dataset.PageSize = 100;
 
 #### Ascending
 
-Value: 0
+Value: `0`
 
-Description: Order values from low to high (A→Z, 0→9, earliest→latest).
+Description:  
+Order values from low to high (A→Z, 0→9, earliest→latest).
 
 When to use:
 
@@ -36,9 +37,10 @@ When to use:
 
 #### Descending
 
-Value: 1
+Value: `1`
 
-Description: Order values from high to low (Z→A, 9→0, latest→earliest).
+Description:  
+Order values from high to low (Z→A, 9→0, latest→earliest).
 
 When to use:
 
@@ -48,7 +50,6 @@ When to use:
 
 ### Best Practices
 
-* Always set the sort field (e.g., SortFieldDefId) alongside SortDirection for deterministic results.
-* Pair sorting with paging (PageNo, PageSize) to keep responses performant.
+* Always set the sort field (e.g., `SortFieldDefId`) alongside `SortDirection` for deterministic results.
+* Pair sorting with paging (`PageNo`, `PageSize`) to keep responses performant.
 * Be mindful of string vs numeric sorting; ensure the field’s ValueType matches your intent.
-

@@ -34,24 +34,26 @@ The Google OCR Service in AIForged uses Google Cloud’s OCR capabilities to ext
 
 Follow these steps to add and configure the Google OCR Service to your agent:
 
-1. **Open the Agent View**
-   Navigate to the agent where you want to add the service.
-2. **Add the Google OCR Service**
-   Click the **Add Service** ![](../../assets/image%20%28129%29.png)  button.
-3. **Select Service Type**
-   Choose **Google OCR Service** from the available service types.
-   ![](../../assets/image%20%28224%29.png)
-4. **Configure the Service Wizard**
-   Open the Service Configuration Wizard.
-   ![](../../assets/image%20%28226%29.png)
-   &#x20;or  
-   ![](../../assets/image%20%28227%29.png)
-   * **Step 1: General Settings**
-     Configure core settings such as service name and description.
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-     ![](../../assets/image%20%28228%29.png)
-   * **Step 2: Verification**
-     No verification is typically required for plain text OCR unless paired with downstream validation.
+1. **Open the Agent View:**
+    Navigate to the agent where you want to add the service.
+2. **Add the Google OCR Service:**
+    Click the **Add Service** ![](../../assets/image%20%28129%29.png)  button.
+3. **Select Service Type:**
+    Choose **Google OCR Service** from the available service types.
+    ![](../../assets/image%20%28224%29.png)
+4. **Configure the Service Wizard:**
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%28226%29.png)
+    - Or  
+    - ![](../../assets/image%20%28227%29.png)
+    * **Step 1: General Settings:**
+        Configure core settings such as service name and description.
+        Default settings are sufficient for most use cases.
+
+        - ![](../../assets/image%20%28228%29.png)
+
+    * **Step 2: Verification:**
+        No verification is typically required for plain text OCR unless paired with downstream validation.
 
 
 ***
@@ -86,15 +88,15 @@ Most users can proceed with the default settings. Advanced configuration is avai
 
 To upload and process documents using the Google OCR Service:
 
-1. **Open Service**
-   When you open the Google OCR Service, you will be presented with the documents currently queued or processed in the Inbox.
-2. **Upload Documents**
-   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.![](../../assets/image%20%28233%29.png)
-3. **Select Category (Optional)**
-   If you know the category for the document, select it. Otherwise, select **No category**.
-4. **Process Documents**
-   After uploading, select the documents to process and click **Process Checked**.
-   ![](../../assets/image%20%2851%29.png)
+1. **Open Service:**
+    When you open the Google OCR Service, you will be presented with the documents currently queued or processed in the Inbox.
+2. **Upload Documents:**
+    Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.![](../../assets/image%20%28233%29.png)
+3. **Select Category (Optional):**
+    If you know the category for the document, select it. Otherwise, select **No category**.
+4. **Process Documents:**
+    After uploading, select the documents to process and click **Process Checked**.
+    ![](../../assets/image%20%2851%29.png)
 
 !!! info
     **Tip:** For new services, process a small batch first to verify OCR accuracy before scaling up.
@@ -112,19 +114,19 @@ To upload and process documents using the Google OCR Service:
 ### Troubleshooting Tips
 
 * **Text Missing or Incorrect?**
-  * Verify document quality and resolution (aim for 300 DPI).
-  * Set the Language hint for non-English documents.
-  * Ensure the file type is supported (PDF, JPEG, PNG, TIFF).
+    * Verify document quality and resolution (aim for 300 DPI).
+    * Set the Language hint for non-English documents.
+    * Ensure the file type is supported (PDF, JPEG, PNG, TIFF).
 * **Unexpected Characters or Symbols?**
-  * Complex fonts, handwriting, or artifacts can affect OCR.
-  * Pre-process images (contrast, brightness, noise reduction) before uploading.
+    * Complex fonts, handwriting, or artifacts can affect OCR.
+    * Pre-process images (contrast, brightness, noise reduction) before uploading.
 * **Slow Performance?**
-  * Large documents or batches may take longer—process smaller sets where possible.
-  * Check BatchSize if configured unusually high.
+    * Large documents or batches may take longer—process smaller sets where possible.
+    * Check BatchSize if configured unusually high.
 * **Upload or Processing Errors?**
-  * Re-upload a clean version of the file to rule out corruption.
-  * Convert to PDF using the AIForged PDF Converter if issues persist with image formats.
-  * Review service settings or contact support if errors continue.
+    * Re-upload a clean version of the file to rule out corruption.
+    * Convert to PDF using the AIForged PDF Converter if issues persist with image formats.
+    * Review service settings or contact support if errors continue.
 
 ***
 
@@ -143,55 +145,26 @@ To upload and process documents using the Google OCR Service:
 The following provider constraints apply to Amazon Textract-backed OCR:
 
 * Supported formats
-  * JPEG, PNG, PDF, and TIFF. XFA-based PDFs are not supported.
+    * JPEG, PNG, PDF, and TIFF. XFA-based PDFs are not supported.
 * Size and page limits
-  * Synchronous operations: up to 10 MB in memory; PDF/TIFF limited to 1 page.
-  * Asynchronous operations: PDF/TIFF up to 500 MB and up to 3,000 pages.
+    * Synchronous operations: up to 10 MB in memory; PDF/TIFF limited to 1 page.
+    * Asynchronous operations: PDF/TIFF up to 500 MB and up to 3,000 pages.
 * PDF specifics
-  * PDFs cannot be password protected.
-    * Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-  * Max page size: up to 40 inches (2880 points).
-  * JPEG 2000 images embedded in PDFs are supported.
+    * PDFs cannot be password protected.
+        * Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
+    * Max page size: up to 40 inches (2880 points).
+    * JPEG 2000 images embedded in PDFs are supported.
 * Image constraints
-  * Max resolution supported is 10,000 pixels on any side.
-  * Minimum detectable character height is \~15 pixels (approx. 8 pt at 150 DPI).
-  * All in-plane rotations are supported.
+    * Max resolution supported is 10,000 pixels on any side.
+    * Minimum detectable character height is ~15 pixels (approx. 8 pt at 150 DPI).
+    * All in-plane rotations are supported.
 * Language and script
-  * Printed text detection supports multiple Latin-based languages.
-  * Handwriting recognition is supported for English only.
-  * Vertical text layouts (e.g., vertical East Asian scripts) are not supported.
-  * Language is not returned in the output for standard text detection.
+    * Printed text detection supports multiple Latin-based languages.
+    * Handwriting recognition is supported for English only.
+    * Vertical text layouts (e.g., vertical East Asian scripts) are not supported.
+    * Language is not returned in the output for standard text detection.
 * Query features (if used)
-  * Per-page limits apply (e.g., max queries per page in sync/async modes).
-
-!!! info
-    Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.
-
-### Known Limitations
-
-The following provider constraints apply to Amazon Textract-backed OCR:
-
-* Supported formats
-  * JPEG, PNG, PDF, and TIFF. XFA-based PDFs are not supported.
-* Size and page limits
-  * Synchronous operations: up to 10 MB in memory; PDF/TIFF limited to 1 page.
-  * Asynchronous operations: PDF/TIFF up to 500 MB and up to 3,000 pages.
-* PDF specifics
-  * PDFs cannot be password protected&#x20;
-    * Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
-  * Max page size: up to 40 inches (2880 points).
-  * JPEG 2000 images embedded in PDFs are supported.
-* Image constraints
-  * Max resolution supported is 10,000 pixels on any side.
-  * Minimum detectable character height is \~15 pixels (approx. 8 pt at 150 DPI).
-  * All in-plane rotations are supported.
-* Language and script
-  * Printed text detection supports multiple Latin-based languages.
-  * Handwriting recognition is supported for English only.
-  * Vertical text layouts (e.g., vertical East Asian scripts) are not supported.
-  * Language is not returned in the output for standard text detection.
-* Query features (if used)
-  * Per-page limits apply (e.g., max queries per page in sync/async modes).
+    * Per-page limits apply (e.g., max queries per page in sync/async modes).
 
 !!! info
     Tip: For very large PDFs or TIFFs, consider chunking by page range to avoid hitting page or size limits and to keep processing responsive. Use the AIForged Document Splitter for this task.

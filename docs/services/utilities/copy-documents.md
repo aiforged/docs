@@ -52,19 +52,19 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.  
-   ![](../../assets/image%20%28288%29.png)
+    - ![](../../assets/image%20%28288%29.png)
 3. Choose **Copy Documents**.
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
 2. Expand the Utility Service Types group.&#x20;
 3. Drag the Copy Documents utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
 !!! info
@@ -139,15 +139,15 @@ Most users can keep defaults, but the Copy Documents utility is highly configura
 ### Troubleshooting Tips
 
 * **Nothing appears in the target service?**
-  * Check filters (Source Extension, Source Category, Status) and ensure matching documents exist.
-  * Confirm the correct target service is selected and available.
-  * Ensure Execute Before/After Process is set as required for your workflow.
+    * Check filters (Source Extension, Source Category, Status) and ensure matching documents exist.
+    * Confirm the correct target service is selected and available.
+    * Ensure Execute Before/After Process is set as required for your workflow.
 * **Duplicates or unexpected copies?**
-  * Enable Check Before Copy and review your filters to avoid overlap.
+    * Enable Check Before Copy and review your filters to avoid overlap.
 * **Permissions or access errors?**
-  * Ensure your user role has permission for both source and target services.
+    * Ensure your user role has permission for both source and target services.
 * **Wrong metadata on copies?**
-  * Review Category, Usage, and Status mapping in the utility settings.
+    * Review Category, Usage, and Status mapping in the utility settings.
 
 ***
 
@@ -167,10 +167,10 @@ Get results in minutes:
 
 1. Attach Copy Documents as a Utility to a parent service (Pre- or Post-Processor).
 2. Configure:
-   * Target Service (destination)
-   * Source Extension and/or Pattern
-   * Optional: Category, Status, and usage filters
-   * Document Processed Status
+    * Target Service (destination)
+    * Source Extension and/or Pattern
+    * Optional: Category, Status, and usage filters
+    * Document Processed Status
 3. Save and run a small test batch.
 4. Review the target service to confirm documents were copied as expected.
 
@@ -182,16 +182,12 @@ Get results in minutes:
 ### FAQ
 
 * **Do I need to configure this as a standalone service?**
-  * No. Copy Documents is a utility only—attach it to a parent service as a pre- or post-processor.
+    * No. Copy Documents is a utility only—attach it to a parent service as a pre- or post-processor.
 * **Can I copy to multiple destinations?**
-  * One utility instance copies to one target. For multiple destinations, add additional utilities or use the Service Flow Configurator.
+    * One utility instance copies to one target. For multiple destinations, add additional utilities or use the Service Flow Configurator.
 * **How do I prevent duplicates?**
-  * Enable Check Before Copy and use clear filters.
+    * Enable Check Before Copy and use clear filters.
 * **What if the source folder has mixed file types?**
-  * Use Source Extension and Pattern filters to copy only what you want.
+    * Use Source Extension and Pattern filters to copy only what you want.
 * **How do I verify copy results?**
-  * Check the destination service’s Inbox/Outbox and confirm copied files and expected metadata.
-
-
-
-
+    * Check the destination service’s Inbox/Outbox and confirm copied files and expected metadata.

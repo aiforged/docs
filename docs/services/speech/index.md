@@ -17,7 +17,7 @@ The following Speech-to-Text service is currently available in AIForged:
 
 | Service Name             | Best Suited For                                             | Quick Link                  |
 | ------------------------ | ----------------------------------------------------------- | --------------------------- |
-| Microsoft Speech-to-Text | Accurate, scalable transcription for meetings, calls, media | microsoft-speech-to-text.md |
+| Microsoft Speech-to-Text | Accurate, scalable transcription for meetings, calls, media | [microsoft-speech-to-text](microsoft-speech-to-text.md) |
 
 !!! info
     Need transcription for a different provider or specialized workflow? Reach out to the AIForged team to discuss your requirements.

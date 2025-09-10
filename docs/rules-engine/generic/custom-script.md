@@ -52,7 +52,7 @@ The Script panel includes four tabs:
 - Output: Return a ProcessResult constructed with the (possibly updated) verification
 
 ```csharp
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ---
@@ -172,7 +172,7 @@ IVerificationModule additions available via the field script context:
 if (verification == null || string.IsNullOrWhiteSpace(verification.Value))
 {
     // Keep as-is; allow other rules to decide on HITL if required
-    return new AIForged.Services.ProcessResult(verification);
+    return verification;
 }
 
 // Trim + collapse spaces
@@ -194,7 +194,7 @@ else
     module.AddVerification(verification, VerificationStatus.Susicious, raw, "Pattern mismatch: expected ABC-1234");
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 
@@ -226,7 +226,7 @@ if (!string.IsNullOrWhiteSpace(verification?.Value))
     }
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ### Example 3 — Call an external API with timeout
@@ -237,7 +237,7 @@ return new AIForged.Services.ProcessResult(verification);
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
 
 if (string.IsNullOrWhiteSpace(verification?.Value))
-    return new AIForged.Services.ProcessResult(verification);
+    return verification;
 
 var payload = new { value = verification.Value };
 var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(payload), System.Text.Encoding.UTF8, "application/json");
@@ -261,7 +261,7 @@ catch (TaskCanceledException)
     module.AddVerification(verification, VerificationStatus.Susicious, verification.Value, "API timeout");
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ---

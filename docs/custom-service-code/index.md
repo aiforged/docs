@@ -15,17 +15,17 @@ Custom Code utilities are not standalone services.\
 **To add a Custom Code utility:**
 
 * **From Parent Service View:**
-  1. Open your parent service.
-  2. Click the **Add Service** dropdown and select **Utility Service**.&#x20;
-  3. Select **Custom Code**.
-  4. Set whether to run as a pre- or post-processor (using Execute Before/After Process).
+    1. Open your parent service.
+    2. Click the **Add Service** dropdown and select **Utility Service**.&#x20;
+    3. Select **Custom Code**.
+    4. Set whether to run as a pre- or post-processor (using Execute Before/After Process).
 * **From Service Flow Configurator:**
-  1. Open the parent service’s Service Flow Configurator.
-  2. Expand the Utility Service Types group.&#x20;
-  3. Drag **Custom Code** onto the parent:
-     * Drop to the left for Pre-processor.
-     * Drop to the right for Post-processor.&#x20;
-  4. Save.
+    1. Open the parent service’s Service Flow Configurator.
+    2. Expand the Utility Service Types group.&#x20;
+    3. Drag **Custom Code** onto the parent:
+        * Drop to the left for Pre-processor.
+        * Drop to the right for Post-processor.&#x20;
+    4. Save.
 
 !!! info
     Custom Code runs as part of the parent service’s lifecycle—never configure it as a standalone service!
@@ -37,15 +37,15 @@ Custom Code utilities are not standalone services.\
 Get up and running in five steps:
 
 1. **Attach the Custom Code utility**
-   Add it to a parent service as a pre- or post-processor via the service view or Service Flow Configurator.
+    - Add it to a parent service as a pre- or post-processor via the service view or Service Flow Configurator.
 2. **Open the code editor**
-   Click into the Custom Code utility’s editor in your workflow UI.
+    - Click into the Custom Code utility’s editor in your workflow UI.
 3. **Choose your language**
-   Select C#, Visual Basic, F#, IronPython, or SemanticKernel (natural language).
+    - Select C#, Visual Basic, F#, IronPython, or SemanticKernel (natural language).
 4. **Write & save your code**
-   Script your logic, add any needed Imports/Assemblies, and click Save to compile.
+    - Script your logic, add any needed Imports/Assemblies, and click Save to compile.
 5. **Test and monitor**
-   Run a test batch, review logs for debugging, and iterate on your logic.
+    - Run a test batch, review logs for debugging, and iterate on your logic.
 
 !!! info
     Tip: Use logger.LogInformation for debugging, and always wrap error-prone code in try/catch blocks.
@@ -55,19 +55,19 @@ Get up and running in five steps:
 ### Common Patterns in AIForged Custom Code
 
 * **Field/Parameter Validation:**
-  Normalize, validate, or reformat extracted values (dates, phone numbers, currency).
+    - Normalize, validate, or reformat extracted values (dates, phone numbers, currency).
 * **Deduplication:**
-  Compute an MD5 hash of each document and check against a custom dataset to prevent duplicate processing.
+    - Compute an MD5 hash of each document and check against a custom dataset to prevent duplicate processing.
 * **Field/Label Enrichment:**
-  Call external APIs or look up values in custom datasets to enrich extracted data.
+    - Call external APIs or look up values in custom datasets to enrich extracted data.
 * **Conditional Routing:**
-  Move or copy documents to different services based on extracted field values or statuses.
+    - Move or copy documents to different services based on extracted field values or statuses.
 * **Work Item Triggering:**
-  Create HITL work items or escalate to specific users when business logic flags an issue.
+    - Create HITL work items or escalate to specific users when business logic flags an issue.
 * **Status Management:**
-  Programmatically update document status or add comments/results after custom checks.
+    - Programmatically update document status or add comments/results after custom checks.
 * **Custom Notifications:**
-  Use Webhook utilities or Custom Code to send notifications or external events on status changes.
+    - Use Webhook utilities or Custom Code to send notifications or external events on status changes.
 
 !!! info
     For each pattern, leverage the BaseModule APIs and reference parameters and definitions by their IDs for robustness. Modularize logic for reusability.
@@ -111,13 +111,13 @@ Get up and running in five steps:
 ### FAQ
 
 * **Can I make HTTP/API calls?**
-  Yes! Use standard .NET HTTP clients or IronPython (or SemanticKernel for natural language triggers).
+    - Yes! Use standard .NET HTTP clients or IronPython (or SemanticKernel for natural language triggers).
 * **Can I access and modify document fields?**
-  Absolutely. Use the BaseModule API to read, update, and verify parameters/fields/labels.
+    - Absolutely. Use the BaseModule API to read, update, and verify parameters/fields/labels.
 * **Is there a limit to what I can script?**
-  Custom Code runs in a secure .NET sandbox; avoid long-running/blocking code and always include error handling.
+    - Custom Code runs in a secure .NET sandbox; avoid long-running/blocking code and always include error handling.
 * **How do I debug my code?**
-  Use `logger.LogInformation` and check logs via the AIForged UI.
+    - Use `logger.LogInformation` and check logs via the AIForged UI.
 
 ***
 
@@ -235,22 +235,23 @@ catch (Exception ex)
 
 ### How to Return Results in Custom Code
 
-*   **Batch/Utility Script Level:**
-    Always end with:
+* **Batch/Utility Script Level:**
+    - Always end with:
 
     ```csharp
     return new AIForged.Services.ProcessResult(docs);
     ```
 
-    (docs is the processed result documents collection.)
-*   **Field/Label/Parameter Definition Level:**
-    Always end with:
+    - (docs is the processed result documents collection.)
+
+* **Field/Label/Parameter Definition Level:**
+    - Always end with:
 
     ```csharp
-    return new AIForged.Services.ProcessResult(verification);
+    return verification;
     ```
 
-    (verification contains the latest extracted and processed value information for that field.)
+    - (verification contains the latest extracted and processed value information for that field.)
 
 ### Dataset Lookup Examples
 
@@ -446,6 +447,3 @@ await module.SaveChanges();
 * Use unique, meaningful keys for records (e.g., Guid, business ID, document ID).
 * Use `await module.SaveDataSetRecord(dataset, record);` for each new or updated record.
 * For performance, group related changes and call `await module.SaveChanges();` after a batch if your logic allows.
-
-
-

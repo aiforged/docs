@@ -15,15 +15,15 @@ The following are the latest and most capable Utility Services available in AIFo
 
 | Service Name            | Best Suited For                                                     | Quick Link                 |
 | ----------------------- | ------------------------------------------------------------------- | -------------------------- |
-| AIForged Digitizer      | Convert scans/images to searchable PDFs with visual overlays        | aiforged-digitizer.md      |
-| AIForged Image Splitter | Split multi-page documents into per-page images for downstream flow | aiforged-image-splitter.md |
-| AIForged PDF Converter  | Normalize any input to PDF; flatten complex PDFs for OCR            | aiforged-pdf-converter.md  |
-| Image Pre-Processing    | Clean, deskew, whiten, and optimize images before OCR               | image-pre-processing.md    |
-| Copy Documents          | Copy filtered documents to another service within your workflow     | copy-documents.md          |
-| Move Documents          | Move (not copy) filtered documents, ensuring a single copy exists   | move-documents.md          |
-| Custom Code             | Script custom logic and automation in C#, VB, F#, IronPython, or AI | custom-code.md             |
-| Webhooks                | Call external APIs/webhooks on document or agent events             | webhooks.md                |
-| Workflow Code           | Advanced HITL and routing automation for verification workflows     | workflow-code.md           |
+| AIForged Digitizer      | Convert scans/images to searchable PDFs with visual overlays        | [aiforged-digitizer](aiforged-digitizer.md)      |
+| AIForged Image Splitter | Split multi-page documents into per-page images for downstream flow | [aiforged-image-splitter.](aiforged-image-splitter.md) |
+| AIForged PDF Converter  | Normalize any input to PDF; flatten complex PDFs for OCR            | [aiforged-pdf-converter](aiforged-pdf-converter.md)  |
+| Image Pre-Processing    | Clean, deskew, whiten, and optimize images before OCR               | [image-pre-processing](image-pre-processing.md)    |
+| Copy Documents          | Copy filtered documents to another service within your workflow     | [copy-documents](copy-documents.md)          |
+| Move Documents          | Move (not copy) filtered documents, ensuring a single copy exists   | [move-documents](move-documents.md)          |
+| Custom Code             | Script custom logic and automation in C#, VB, F#, IronPython, or AI | [custom-code](custom-code.md)             |
+| Webhooks                | Call external APIs/webhooks on document or agent events             | [webhooks](webhooks.md)                |
+| Workflow Code           | Advanced HITL and routing automation for verification workflows     | [workflow-code](workflow-code.md)           |
 
 !!! info
     Utility services are designed to be attached as pre- or post-processors; do not configure them as standalone services. Use the Service Flow Configurator or parent service’s view to attach and schedule them.
@@ -40,5 +40,3 @@ The following are the latest and most capable Utility Services available in AIFo
 
 !!! info
     Need help designing your workflow? The AIForged team can help you select and configure the right utilities for your scenario.
-
-

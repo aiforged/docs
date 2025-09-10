@@ -52,7 +52,7 @@ The Workflow Script panel mirrors the Script UI with four tabs:
 - Output: Return a ProcessResult using the current verification
 
 Example return (do not code fence this in your editor):
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 
 !!! info "Workflow focus"
     Use Script for value transformations and validation. Use Workflow Script for actions—creating work items, moving/copying documents, and orchestrating verification flow.
@@ -165,7 +165,7 @@ if (verification == null || verification.Confidence < 0.75)
     }
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ### Example 2 — Escalate overdue items to Admin
@@ -198,7 +198,7 @@ if (overdue)
     }
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ### Example 3 — Copy or Move the document to another service
@@ -214,7 +214,7 @@ if (needsFollowUp)
     module.SaveChanges();
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ### Example 4 — Assign using idle-user fallback
@@ -234,7 +234,7 @@ if (!string.IsNullOrEmpty(userId))
     module.SaveChanges();
 }
 
-return new AIForged.Services.ProcessResult(verification);
+return verification;
 ```
 
 ---
@@ -285,7 +285,7 @@ Trigger Work Items or escalate when:
     - Review the Compilation Results pane for precise line/column errors.
 
 - “Not all code paths return a value”
-    - Ensure every branch ends with return new AIForged.Services.ProcessResult(verification);
+    - Ensure every branch ends with return verification;
 
 - Work Items not appearing
     - Confirm user selection returns a valid user ID.

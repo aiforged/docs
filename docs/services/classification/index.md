@@ -15,10 +15,10 @@ AIForged currently provides the following **Classification Service Types**:
 
 | Service Name                      | Best Suited For                                                                 | Quick Link                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| AIForged Classifier                | General document classification using custom-trained models                     | [aiforged-classifier.md](aiforged-classifier.md "mention")         |
-| AIForged Clustering                | Unsupervised grouping of documents based on content similarity                  | [aiforged-clustering.md](aiforged-clustering.md "mention")         |
-| ChatGPT Classification             | AI-powered, context-aware classification using ChatGPT models                   | [chatgpt-classifier.md](chatgpt-classifier.md "mention")           |
-| Microsoft Custom Text Classifier   | Text classification for custom categories using Microsoft’s language models     | [microsoft-custom-text-classification.md](microsoft-custom-text-classification.md "mention") |
+| AIForged Classifier                | General document classification using custom-trained models                     | [aiforged-classifier](aiforged-classifier.md "mention")         |
+| AIForged Clustering                | Unsupervised grouping of documents based on content similarity                  | [aiforged-clustering](aiforged-clustering.md "mention")         |
+| ChatGPT Classification             | AI-powered, context-aware classification using ChatGPT models                   | [chatgpt-classifier](chatgpt-classifier.md "mention")           |
+| Microsoft Custom Text Classifier   | Text classification for custom categories using Microsoft’s language models     | [microsoft-custom-text-classification](microsoft-custom-text-classification.md "mention") |
 
 ***
 

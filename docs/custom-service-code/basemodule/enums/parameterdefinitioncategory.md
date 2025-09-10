@@ -4,7 +4,7 @@
 
 The ParameterDefinitionCategory enum specifies the category a Parameter Definition belongs to. Use it to filter and target settings, services, containers, results, datasets, or extraction fields in your automation.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -25,9 +25,10 @@ var def = module.FindParameterDef(
 
 #### None
 
-Value: 0
+Value: `0`
 
-Description: No category specified.
+Description:  
+No category specified.
 
 When to use:
 
@@ -37,9 +38,10 @@ When to use:
 
 #### Setting
 
-Value: 1
+Value: `1`
 
-Description: Definition used as a setting for a service.
+Description:  
+Definition used as a setting for a service.
 
 When to use:
 
@@ -49,9 +51,10 @@ When to use:
 
 #### Service
 
-Value: 2
+Value: `2`
 
-Description: Top-level service definition.
+Description:  
+Top-level service definition.
 
 When to use:
 
@@ -61,9 +64,10 @@ When to use:
 
 #### Statistics
 
-Value: 3
+Value: `3`
 
-Description: Definition used for processing statistics.
+Description:  
+Definition used for processing statistics.
 
 When to use:
 
@@ -73,9 +77,10 @@ When to use:
 
 #### Results
 
-Value: 4
+Value: `4`
 
-Description: Definition used for a result or rule for fields.
+Description:  
+Definition used for a result or rule for fields.
 
 When to use:
 
@@ -85,9 +90,10 @@ When to use:
 
 #### Dependency
 
-Value: 5
+Value: `5`
 
-Description: Dependency parameter used for configuring a service.
+Description:  
+Dependency parameter used for configuring a service.
 
 When to use:
 
@@ -97,9 +103,10 @@ When to use:
 
 #### Verification
 
-Value: 6
+Value: `6`
 
-Description: Verification service configured via parameter definition rules.
+Description:  
+Verification service configured via parameter definition rules.
 
 When to use:
 
@@ -109,9 +116,10 @@ When to use:
 
 #### DataSet
 
-Value: 7
+Value: `7`
 
-Description: Custom dataset reference.
+Description:  
+Custom dataset reference.
 
 When to use:
 
@@ -121,9 +129,10 @@ When to use:
 
 #### PreProcessor
 
-Value: 20
+Value: `20`
 
-Description: Container for pre-processing settings (data quality improvements before extraction).
+Description:  
+Container for pre-processing settings (data quality improvements before extraction).
 
 When to use:
 
@@ -133,9 +142,10 @@ When to use:
 
 #### Processor
 
-Value: 21
+Value: `21`
 
-Description: Container for processing settings.
+Description:  
+Container for processing settings.
 
 When to use:
 
@@ -145,9 +155,10 @@ When to use:
 
 #### PostProcessor
 
-Value: 22
+Value: `22`
 
-Description: Container for post-processing settings (e.g., result shaping and publication).
+Description:  
+Container for post-processing settings (e.g., result shaping and publication).
 
 When to use:
 
@@ -157,9 +168,10 @@ When to use:
 
 #### Extraction
 
-Value: 40
+Value: `40`
 
-Description: Extract/Map fields from OCR data.
+Description:  
+Extract/Map fields from OCR data.
 
 When to use:
 
@@ -176,10 +188,10 @@ When to use:
 
 ### FAQ
 
-* Q: What’s the difference between Results and Extraction?
-  * A: Extraction focuses on mapping OCR outputs; Results represents published/ruled output fields.
-* Q: Are Service/PreProcessor/Processor/PostProcessor actual fields?
-  * A: They’re container categories—use them to structure and scope underlying definitions.
-* Q: Can one definition change category later?
-  * A: It can, but prefer stability—changing categories affects filters and downstream logic.
+* **Q: What’s the difference between Results and Extraction?**  
+A: `Extraction` focuses on mapping OCR outputs; `Results` represents published/ruled output fields.
+* **Q: Are Service/PreProcessor/Processor/PostProcessor actual fields?**  
+A: They’re container categories—use them to structure and scope underlying definitions.
+* **Q: Can one definition change category later?**  
+A: It can, but prefer stability—changing categories affects filters and downstream logic.
 

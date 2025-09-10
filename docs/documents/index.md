@@ -16,11 +16,11 @@ Documents are the heartbeat of IDP in AIForged. This page helps you understand h
 
 | Topic                                      | Page                                 |
 |------------------------------------------- |--------------------------------------|
-| Document Types                             | [document-types.md](document-types.md "mention") |
-| Understanding Document Flows               | [understanding-document-flows.md](understanding-document-flows.md "mention") |
-| Document Attributes                        | [document-attributes.md](document-attributes.md "mention") |
-| Document Categories                        | [document-categories.md](document-categories.md "mention") |
-| Working with documents in the Service view | [documents-in-service-view.md](documents-in-service-view.md "mention") |
+| Document Types                             | [document-types](document-types.md "mention") |
+| Understanding Document Flows               | [understanding-document-flows](understanding-document-flows.md "mention") |
+| Document Attributes                        | [document-attributes](document-attributes.md "mention") |
+| Document Categories                        | [document-categories](document-categories.md "mention") |
+| Working with documents in the Service view | [documents-in-service-view](documents-in-service-view.md "mention") |
 
 ---
 

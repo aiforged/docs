@@ -113,17 +113,17 @@ Once your configuration is complete:
 ### Troubleshooting Tips
 
 * **Unexpected or Ambiguous Results?**
-  * Double-check that your questions are unambiguous and page-appropriate.
-  * Ensure expected answers are unique per category.
-  * Add or revise questions for categories that are frequently misclassified.
+    * Double-check that your questions are unambiguous and page-appropriate.
+    * Ensure expected answers are unique per category.
+    * Add or revise questions for categories that are frequently misclassified.
 * **Some Pages Not Getting Classified?**
-  * Make sure your questions cover the full range of possible page content.
-  * Use regex to capture variable answers (e.g., numeric PO numbers, various report titles).
+    * Make sure your questions cover the full range of possible page content.
+    * Use regex to capture variable answers (e.g., numeric PO numbers, various report titles).
 * **Low Confidence or "Unknown" Categories?**
-  * Add more or better-targeted questions for those categories.
-  * Review sample pages and adjust expected answers/regex to reflect real-world document variations.
+    * Add more or better-targeted questions for those categories.
+    * Review sample pages and adjust expected answers/regex to reflect real-world document variations.
 * **Performance Issues?**
-  * Large documents with many pages may take longer to process. Test with smaller samples first.
+    * Large documents with many pages may take longer to process. Test with smaller samples first.
 
 
 

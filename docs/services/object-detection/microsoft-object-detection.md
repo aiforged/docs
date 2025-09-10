@@ -36,37 +36,33 @@ You can configure this service as a standalone processor or as a verification se
 Follow these steps to add and configure the Microsoft Object Detection service to your agent:
 
 1. **Open the Agent View**
-   Navigate to the agent where you want to add the service.
+    Navigate to the agent where you want to add the service.
 2. **Add the Microsoft Object Detection Service**
-   Click the **Add Service** ![](../../assets/image%20%283%29.png) button.
+    Click the **Add Service** ![](../../assets/image%20%283%29.png) button.
 3. **Select Service Type**
-   Choose **Microsoft Object Detection Service** from the available service types.
-   ![](../../assets/image%20%284%29.png)
+    Choose **Microsoft Object Detection Service** from the available service types.
+    ![](../../assets/image%20%284%29.png)
 4. **Configure the Service Wizard**
-   1. Open the Service Configuration Wizard.
-      1.
-
-          ![](../../assets/image%20%285%29.png)
-      2.
-
-          ![](../../assets/image%20%286%29.png)
-   2. **Step 1: General Settings** Configure the service settings.
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-      ![](../../assets/image%20%287%29.png)
-   3. **Step 2: Verification** No verification required for basic detection.
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%285%29.png)
+    - Or  
+    - ![](../../assets/image%20%286%29.png)
+    - **Step 1: General Settings** Configure the service settings.
+        Default settings are sufficient for most use cases.
+        - ![](../../assets/image%20%287%29.png)
+    - **Step 2: Verification** No verification required for basic detection.
 
 ***
 
 ### Example Results
 
-*   **People Portrait Example:**
-
+* **People Portrait Example:**
     The image is categorized as **"people\_portrait"** with the caption "a woman with blonde hair".
-*   **Face Detection/Analysis:**
 
+* **Face Detection/Analysis:**
     Gender and estimated age are returned for detected faces.
-*   **Content Moderation:**
 
+* **Content Moderation:**
     The image is flagged as not containing racy or offensive material.
 
 ***
@@ -98,15 +94,15 @@ The Microsoft Object Detection Service is highly configurable. The following set
 
 To upload and process documents using the Microsoft Object Detection Service:
 
-1. **Open Service**
-   When you open the Microsoft Object Detection Service, you will be presented with the documents currently queued or processed in the Inbox.
-2. **Upload Documents**
-   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.  
-   ![](../../assets/image%20%288%29.png)
-3. **Select Category (Optional)**
-   If you know the category for the document, select it. Otherwise, select **No category**.
-4. **Process Documents**
-   After uploading, select the documents to process and click **Process Checked**.
+1. **Open Service:**
+    When you open the Microsoft Object Detection Service, you will be presented with the documents currently queued or processed in the Inbox.
+2. **Upload Documents:**
+    Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.  
+    ![](../../assets/image%20%288%29.png)
+3. **Select Category (Optional):**
+    If you know the category for the document, select it. Otherwise, select **No category**.
+4. **Process Documents:**
+    After uploading, select the documents to process and click **Process Checked**.
 
 !!! info
     Tip: For new services, process a small batch first to verify object detection results before scaling up.
@@ -115,8 +111,7 @@ To upload and process documents using the Microsoft Object Detection Service:
 
 ### View Processed Documents
 
-*   Select **Outbox** in the usage filter in the Microsoft Object Detection Service.&#x20;
-
+* Select **Outbox** in the usage filter in the Microsoft Object Detection Service.
     ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the detected objects, faces, tags, and captions.
 
@@ -125,16 +120,16 @@ To upload and process documents using the Microsoft Object Detection Service:
 ### Troubleshooting Tips
 
 * **Objects or faces not detected?**
-  * Ensure images are clear, well-lit, and not too small or low-resolution.
-  * Check that the image format is supported (see Supported Content Types).
+    * Ensure images are clear, well-lit, and not too small or low-resolution.
+    * Check that the image format is supported (see Supported Content Types).
 * **Slow processing?**
-  * Large images or PDFs with many pages may take longer to process.
-  * Process smaller batches or split large PDFs if needed.
+    * Large images or PDFs with many pages may take longer to process.
+    * Process smaller batches or split large PDFs if needed.
 * **Results missing for certain classes?**
-  * Not all object types, faces, or captions may be detected in all images—test with varied samples.
+    * Not all object types, faces, or captions may be detected in all images—test with varied samples.
 * **Upload or processing errors?**
-  * Re-upload a clean file to rule out corruption.
-  * If using PDFs, ensure images are extractable or convert to image format before upload.
+    * Re-upload a clean file to rule out corruption.
+    * If using PDFs, ensure images are extractable or convert to image format before upload.
 
 ***
 
@@ -151,19 +146,12 @@ To upload and process documents using the Microsoft Object Detection Service:
 ### FAQ
 
 * **Can I use Microsoft Object Detection as a verification service?**
-  * Yes. Configure the rules engine to trigger object detection on extracted image fields for enrichment or validation.
+    * Yes. Configure the rules engine to trigger object detection on extracted image fields for enrichment or validation.
 * **Does the service support multi-page PDFs?**
-  * Yes. Images are extracted from each page for processing, but results may vary by page content.
+    * Yes. Images are extracted from each page for processing, but results may vary by page content.
 * **What metadata is returned?**
-  * Tags, captions, detected faces (with age/gender), and content moderation flags.
+     Tags, captions, detected faces (with age/gender), and content moderation flags.
 * **How do I detect and count specific objects (e.g., cars)?**
-  * Check the returned tags for object types; the count of repeated tags gives an object count.
+    * Check the returned tags for object types; the count of repeated tags gives an object count.
 * **What if my images are password-protected PDFs?**
-  * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.
-
-
-
-
-
-
-
+    * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock before processing.

@@ -17,12 +17,12 @@ Below is an overview of the **latest and most capable OCR services** available i
 
 | Service Name          | Best Suited For                                                                                 | Quick Link               |
 | --------------------- | ----------------------------------------------------------------------------------------------- | ------------------------ |
-| Amazon OCR            | Plain text extraction from images and PDFs for downstream processing (search, regex, analytics) | amazon-ocr.md            |
-| Google OCR            | Reliable plain text extraction across many languages for downstream processing                  | google-ocr.md            |
-| Microsoft OCR         | Wide language support for plain text extraction; suitable for search, analytics, and rules      | microsoft-ocr.md         |
-| Tesseract OCR         | Fast, cost-effective plain text extraction for scans and images                                 | teseract-ocr.md          |
-| Google Handwriting    | Handwritten text extraction from images and PDFs (Area/Paragraph/Words structure)               | google-handwriting.md    |
-| Microsoft Handwriting | Handwritten text extraction with per-line and per-word granularity                              | microsoft-handwriting.md |
+| Amazon OCR            | Plain text extraction from images and PDFs for downstream processing (search, regex, analytics) | [amazon-ocr](amazon-ocr.md)            |
+| Google OCR            | Reliable plain text extraction across many languages for downstream processing                  | [google-ocr](google-ocr.md)            |
+| Microsoft OCR         | Wide language support for plain text extraction; suitable for search, analytics, and rules      | [microsoft-ocr](microsoft-ocr.md )        |
+| Tesseract OCR         | Fast, cost-effective plain text extraction for scans and images                                 | [teseract-ocr](teseract-ocr.md)          |
+| Google Handwriting    | Handwritten text extraction from images and PDFs (Area/Paragraph/Words structure)               | [google-handwriting](google-handwriting.md)    |
+| Microsoft Handwriting | Handwritten text extraction with per-line and per-word granularity                              | [microsoft-handwriting](microsoft-handwriting.md) |
 
 !!! info
     Not sure which OCR engine to use? Start with Amazon or Microsoft OCR for general text extraction, or choose a handwriting-specific service for forms and notes. You can also combine multiple engines for best results.

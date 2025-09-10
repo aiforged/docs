@@ -11,10 +11,11 @@ These methods let you determine if verification is required, count verification 
 #### RequireVerification
 
 Signature:  
-`RequireVerification(IDocument doc) : bool`\
+`RequireVerification(IDocument doc) : bool`  
 `RequireVerification(int docId) : bool`
 
-Description: Returns true if the document requires human or rules-based verification; otherwise false.
+Description:  
+Returns true if the document requires human or rules-based verification; otherwise false.
 
 Usage:
 
@@ -36,10 +37,11 @@ When to use:
 #### GetVerificationsCount
 
 Signature:  
-`GetVerificationsCount(IDocument doc) : int`\
+`GetVerificationsCount(IDocument doc) : int`  
 `GetVerificationsCount(int docId) : int`
 
-Description: Returns the number of verification items currently required on the specified document.
+Description:  
+Returns the number of verification items currently required on the specified document.
 
 Usage:
 
@@ -52,9 +54,8 @@ When to use:
 
 * To measure verification workload, or determine escalation/auto-approve thresholds.
 
-Tip:
-
-* Pair with RequireVerification to short-circuit logic when count is zero.
+!!! tip
+    Pair with RequireVerification to short-circuit logic when count is zero.
 
 ***
 
@@ -63,7 +64,8 @@ Tip:
 Signature:  
 `GetVerificationParameters(IDocument doc) : List`
 
-Description: Returns the list of document parameters (fields) that require verification.
+Description:  
+Returns the list of document parameters (fields) that require verification.
 
 Usage:
 
@@ -79,22 +81,22 @@ When to use:
 
 * To iterate over all fields needing HITL review or targeted rule checks.
 
-Tip:
-
-* Combine with FindVerification/FindVerifications to inspect history and reasons.
+!!! tip
+    Combine with FindVerification/FindVerifications to inspect history and reasons.
 
 ***
 
 #### FindVerification (overloads)
 
 Signature:  
-`FindVerification(IDocument doc, IParameterDef pd, int? index = null) : (IVerification verification, IDocumentParameter parameter)`\
-`FindVerification(IDocument doc, int pdId, int? index = null) : (IVerification verification, IDocumentParameter parameter)`\
-`FindVerification(int docId, int pdId, int? index = null) : (IVerification verification, IDocumentParameter parameter)`\
-`FindVerification(IDocumentParameter parameter) : IVerification`\
+`FindVerification(IDocument doc, IParameterDef pd, int? index = null) : (IVerification verification, IDocumentParameter parameter)`  
+`FindVerification(IDocument doc, int pdId, int? index = null) : (IVerification verification, IDocumentParameter parameter)`  
+`FindVerification(int docId, int pdId, int? index = null) : (IVerification verification, IDocumentParameter parameter)`  
+`FindVerification(IDocumentParameter parameter) : IVerification`  
 `FindVerification(int? parameterId) : IVerification`
 
-Description: Returns a verification item for the specified parameter, with overloads for document/definition context or direct parameter/ID access. Some overloads also return the corresponding parameter.
+Description:  
+Returns a verification item for the specified parameter, with overloads for document/definition context or direct parameter/ID access. Some overloads also return the corresponding parameter.
 
 Usage:
 
@@ -116,20 +118,20 @@ When to use:
 * To fetch the current or specific-index verification item tied to a field.
 * To inspect verification metadata (status, provider, result, info, timestamps).
 
-Tip:
-
-* Use index for array/table fields to target a specific row/instance.
+!!! tip
+    Use index for array/table fields to target a specific row/instance.
 
 ***
 
 #### FindVerifications (overloads)
 
 Signature:  
-`FindVerifications(IDocumentParameter parameter) : IEnumerable`\
-`FindVerifications(int? parameterId) : IEnumerable`\
+`FindVerifications(IDocumentParameter parameter) : IEnumerable`  
+`FindVerifications(int? parameterId) : IEnumerable`  
 `FindVerifications(int? parameterId, VerificationType? type, VerificationStatus? status, string provider = null, string valuefilter = null, string infofilter = null, DateTime? fromDate = null, DateTime? toDate = null) : IEnumerable`
 
-Description: Returns one or more verification items associated with a parameter, optionally filtered by type, status, provider, value/info filters, and date range.
+Description:  
+Returns one or more verification items associated with a parameter, optionally filtered by type, status, provider, value/info filters, and date range.
 
 Usage:
 
@@ -154,9 +156,8 @@ When to use:
 
 * To analyze the verification history of a field or drive conditional workflows.
 
-Tip:
-
-* Use filters to isolate the latest successful or failing checks for targeted actions.
+!!! tip
+    Use filters to isolate the latest successful or failing checks for targeted actions.
 
 ***
 
@@ -165,7 +166,8 @@ Tip:
 Signature:  
 `FindVerification(int? parameterId, VerificationType? type, VerificationStatus? status, string provider = null, string valuefilter = null, string infofilter = null, DateTime? fromDate = null, DateTime? toDate = null) : IVerification`
 
-Description: Returns a single verification item matching the specified filters for the given parameter.
+Description:  
+Returns a single verification item matching the specified filters for the given parameter.
 
 Usage:
 
@@ -181,19 +183,19 @@ When to use:
 
 * When you need the first/best single match (e.g., the latest success or an error to display).
 
-Tip:
-
-* If you need all matches, use FindVerifications instead.
+!!! tip 
+    If you need all matches, use FindVerifications instead.
 
 ***
 
 #### AddVerification
 
 Signature:  
-`AddVerification(IVerification v, string result, string info = null) : IVerification`\
+`AddVerification(IVerification v, string result, string info = null) : IVerification`  
 `AddVerification(IVerification v, VerificationStatus status, string result, string info = null) : IVerification`
 
-Description: Adds a verification entry (result/info and optional status) to a parameter’s verification trail.
+Description:  
+Adds a verification entry (result/info and optional status) to a parameter’s verification trail.
 
 Usage:
 
@@ -208,9 +210,8 @@ When to use:
 
 * To record rule-engine outcomes, custom-code validations, or HITL decisions for auditability.
 
-Tip:
-
-* In field-level custom code, use the injected 'verification' variable directly with AddVerification.
+!!! tip
+    In field-level custom code, use the injected 'verification' variable directly with AddVerification.
 
 ***
 
@@ -224,13 +225,13 @@ Tip:
 
 ### FAQ
 
-* Q: What’s the difference between RequireVerification and GetVerificationsCount?
-  * A: RequireVerification is a boolean gate; GetVerificationsCount tells you how many items are pending.
-* Q: How do I target a specific instance in a repeated/array field?
-  * A: Use FindVerification overloads with the index parameter when resolving by document + parameter definition.
-* Q: Should I add verification entries in batch or one-by-one?
-  * A: Functionally either works; for performance, batch your SaveChanges calls where safe.
-* Q: In field-level custom code, can I use the provided verification variable directly?
-  * A: Yes—return new AIForged.Services.ProcessResult(verification) and use AddVerification on that context.
+* **Q: What’s the difference between RequireVerification and GetVerificationsCount?**  
+A: RequireVerification is a boolean gate; GetVerificationsCount tells you how many items are pending.
+* **Q: How do I target a specific instance in a repeated/array field?**  
+A: Use FindVerification overloads with the index parameter when resolving by document + parameter definition.
+* **Q: Should I add verification entries in batch or one-by-one?**  
+A: Functionally either works; for performance, batch your SaveChanges calls where safe.
+* **Q: In field-level custom code, can I use the provided verification variable directly?**  
+A: Yes—return new AIForged.Services.ProcessResult(verification) and use AddVerification on that context.
 
 
