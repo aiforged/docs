@@ -4,7 +4,7 @@
 
 The DocumentStatus enum indicates the current lifecycle state of a document in AIForged. Use it to drive routing, processing, verification, and archiving flows.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -28,9 +28,10 @@ await module.SaveChangesAsync();
 
 #### None
 
-Value: 0
+Value: `0`
 
-Description: Default status.
+Description:  
+Default status.
 
 When to use:
 
@@ -40,9 +41,10 @@ When to use:
 
 #### Received
 
-Value: 3
+Value: `3`
 
-Description: The document was received into a folder and needs to be processed or trained.
+Description:  
+The document was received into a folder and needs to be processed or trained.
 
 When to use:
 
@@ -52,9 +54,10 @@ When to use:
 
 #### Analyzed
 
-Value: 4
+Value: `4`
 
-Description: The document was analyzed and custom labeling can be done.
+Description:  
+The document was analyzed and custom labeling can be done.
 
 When to use:
 
@@ -64,9 +67,10 @@ When to use:
 
 #### Trained
 
-Value: 5
+Value: `5`
 
-Description: The document was trained.
+Description:  
+The document was trained.
 
 When to use:
 
@@ -76,25 +80,26 @@ When to use:
 
 #### Processing
 
-Value: 8
+Value: `8`
 
-Description: The document is busy being processed.
+Description:  
+The document is busy being processed.
 
 When to use:
 
 * Mark as in-flight during an automated processing pipeline.
 
-Tip:
-
-* Use to prevent concurrent processing.
+!!! tip
+    Use to prevent concurrent processing.
 
 ***
 
 #### Verification
 
-Value: 9
+Value: `9`
 
-Description: The document requires human verification (pending).
+Description:  
+The document requires human verification (pending).
 
 When to use:
 
@@ -104,9 +109,10 @@ When to use:
 
 #### Processed
 
-Value: 10
+Value: `10`
 
-Description: The document was processed and results are published (all rules passed).
+Description:  
+The document was processed and results are published (all rules passed).
 
 When to use:
 
@@ -116,25 +122,26 @@ When to use:
 
 #### Queued
 
-Value: 11
+Value: `11`
 
-Description: The document is queued for processing.
+Description:  
+The document is queued for processing.
 
 When to use:
 
 * Awaiting a worker or pipeline slot.
 
-Tip:
-
-* Pair with FIFO or priority queues as applicable.
+!!! tip
+    Pair with FIFO or priority queues as applicable.
 
 ***
 
 #### Verifying
 
-Value: 12
+Value: `12`
 
-Description: The document is currently being verified (in-progress HITL).
+Description:  
+The document is currently being verified (in-progress HITL).
 
 When to use:
 
@@ -144,55 +151,55 @@ When to use:
 
 #### InterimProcessed
 
-Value: 13
+Value: `13`
 
-Description: The document was processed successfully and is awaiting further processing (e.g., Custom Code, external process).
+Description:  
+The document was processed successfully and is awaiting further processing (e.g., Custom Code, external process).
 
 When to use:
 
 * Staged handoff between internal pipeline steps or external systems.
 
-Tip:
-
-* Useful when final publication depends on external callbacks.
+!!! tip
+    Useful when final publication depends on external callbacks.
 
 ***
 
 #### InsufficientBalance
 
-Value: 81
+Value: `81`
 
-Description: The project’s balance is too low to perform a transaction; funding is required.
+Description:  
+The project’s balance is too low to perform a transaction; funding is required.
 
 When to use:
 
 * Halt processing and surface actionable alerts to admins/ops.
 
-Tip:
-
-* Add a descriptive comment with the failed transaction context for auditing.
+!!! tip
+    Add a descriptive comment with the failed transaction context for auditing.
 
 ***
 
 #### Error
 
-Value: 90
+Value: `90`
 
-Description: An error occurred while processing the document.
+Description:  
+An error occurred while processing the document.
 
 When to use:
 
 * Capture failure states and trigger retries/escalations as needed.
 
-Tip:
-
-* Include error details in Result/Comment for rapid diagnosis.
+!!! tip
+    Include error details in Result/Comment for rapid diagnosis.
 
 ***
 
 #### Archive
 
-Value: 98
+Value: `98`
 
 Description: Flag document for hard delete based on archiving strategy.
 
@@ -200,15 +207,14 @@ When to use:
 
 * Mark for retention workflow; not immediately deleted.
 
-Tip:
-
-* Ensure retention policies and exports complete before moving to Deleted.
+!!! tip
+    Ensure retention policies and exports complete before moving to Deleted.
 
 ***
 
 #### Deleted
 
-Value: 99
+Value: `99`
 
 Description: Soft delete in the database, pending hard delete.
 
@@ -216,9 +222,8 @@ When to use:
 
 * Hide from active views but keep temporarily for recovery/audit window.
 
-Tip:
-
-* Avoid business logic on Deleted items; treat as non-actionable.
+!!! tip
+    Avoid business logic on Deleted items; treat as non-actionable.
 
 ***
 
@@ -232,10 +237,9 @@ Tip:
 
 ### FAQ
 
-* Q: What’s the difference between Verification (9) and Verifying (12)?
-  * A: Verification means verification is required (pending). Verifying means someone is currently working on it (in-progress).
-* Q: Should I set Processed directly after analysis?
-  * A: Only if all rules and thresholds are satisfied; otherwise route to Verification or InterimProcessed.
-* Q: Can I skip Queued and go straight to Processing?
-  * A: Yes, but Queued improves observability and scheduling in multi-worker setups.
-
+* **Q: What’s the difference between Verification (9) and Verifying (12)?**  
+A: `Verification` means verification is required (pending). `Verifying` means someone is currently working on it (in-progress).
+* **Q: Should I set Processed directly after analysis?**  
+A: Only if all rules and thresholds are satisfied; otherwise route to `Verification` or `InterimProcessed`.
+* **Q: Can I skip Queued and go straight to Processing?**  
+A: Yes, but `Queued` improves observability and scheduling in multi-worker setups.

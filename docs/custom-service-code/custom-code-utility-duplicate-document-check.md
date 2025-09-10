@@ -33,8 +33,8 @@ At a high level:
 * Post-processor: Custom Code utility runs after the attachment service has scraped attachments from an email (recommended placement).
 * Storage: “Duplicate History” Custom Dataset stores (MD5Hash, DocumentId).
 * Decision:
-  * If MD5 exists in dataset → set DocumentStatus=Error, create WorkItem for verification, skip further processing.
-  * Else → store MD5 and allow the document to proceed.
+    * If MD5 exists in dataset → set DocumentStatus=Error, create WorkItem for verification, skip further processing.
+    * Else → store MD5 and allow the document to proceed.
 
 ***
 
@@ -80,10 +80,11 @@ Your dataset should now appear in the **Service Parameter Definitions** dialog:\
 ### Step 3 — Add the Custom Code
 
 1. Close the **Service Parameter Definitions** dialog and click the Code button on the nested **Custom Code** service card.
-   ![](../assets/image%20%2819%29.png)
+    - ![](../assets/image%20%2819%29.png)
 
 2. Select CSharp as Code Language.
-   ![](../assets/image%20%2820%29.png)
+    - ![](../assets/image%20%2820%29.png)
+
 3. Paste the reference implementation below into the editor.
 
 #### Reference Implementation
@@ -333,13 +334,13 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
 
 1. Send two identical documents as attachments to the mailbox your Email Scraper monitors.
 2. On the first run:
-   * The Custom Code utility computes the MD5, finds no match, stores it, and lets processing continue.
+    * The Custom Code utility computes the MD5, finds no match, stores it, and lets processing continue.
 3. On the second run (duplicate):
-   * The utility computes the same MD5, finds a match in the dataset, sets the document to Error, creates a HITL work item, and excludes the doc from downstream processing.
+    * The utility computes the same MD5, finds a match in the dataset, sets the document to Error, creates a HITL work item, and excludes the doc from downstream processing.
 4. Verify:
-   * A record exists in the Duplicate History dataset for the first doc’s hash.
-   * The duplicate document has DocumentStatus=Error.
-   * A WorkItem exists for HITL verification (assignee from your verification group).
+    * A record exists in the Duplicate History dataset for the first doc’s hash.
+    * The duplicate document has DocumentStatus=Error.
+    * A WorkItem exists for HITL verification (assignee from your verification group).
 
 ***
 
@@ -356,15 +357,15 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
 ### Troubleshooting
 
 * No users for assignment
-  * Ensure your GroupId is correct and that VerifyDoc users are active/enabled.
+    * Ensure your GroupId is correct and that VerifyDoc users are active/enabled.
 * “Could not get document data”
-  * Confirm the document has a valid Image blob. Check upstream services that provide the original bytes.
+    * Confirm the document has a valid Image blob. Check upstream services that provide the original bytes.
 * Repeated duplicates not flagged
-  * Verify that FieldMD5HashDefId points to the correct field and that lookups aren’t case-sensitive in your dataset. Confirm the hash string matches exactly.
+    * Verify that FieldMD5HashDefId points to the correct field and that lookups aren’t case-sensitive in your dataset. Confirm the hash string matches exactly.
 * Too many false positives
-  * Extremely rare with MD5 for identical bytes. If source documents differ by metadata but represent “the same” logical document, consider normalizing (e.g., PDF linearization) or hashing page images.
+    * Extremely rare with MD5 for identical bytes. If source documents differ by metadata but represent “the same” logical document, consider normalizing (e.g., PDF linearization) or hashing page images.
 * Performance concerns
-  * Stream hashing on very large files, reduce batch size, and tune service BatchSize. Monitor CPU.
+    * Stream hashing on very large files, reduce batch size, and tune service BatchSize. Monitor CPU.
 
 ***
 
@@ -378,6 +379,7 @@ Click the **Save** ![](../assets/image%20%2824%29.png) button or use the key com
     var hashBytes = sha.ComputeHash(bytes);
     var hashString = BitConverter.ToString(hashBytes).Replace("-", "");
     ```
+    
 * Make MD5Hash the dataset Key
   Enforce uniqueness at the dataset level to prevent duplicate inserts.
 * Broaden matching logic

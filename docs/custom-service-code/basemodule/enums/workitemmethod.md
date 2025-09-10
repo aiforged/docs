@@ -4,7 +4,7 @@
 
 The WorkItemMethod enum determines how a work item is assigned to a user at creation time. Choose a method that aligns with your routing goals (fairness, performance, ownership, or explicit targeting).
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -12,9 +12,10 @@ Underlying type: int
 
 #### Random
 
-Value: 0
+Value: `0`
 
-Description: Assign to a randomly selected eligible user.
+Description:  
+Assign to a randomly selected eligible user.
 
 When to use:
 
@@ -24,9 +25,10 @@ When to use:
 
 #### HighThroughput
 
-Value: 1
+Value: `1`
 
-Description: Assign to the user with the highest recent throughput under your selected filters.
+Description:  
+Assign to the user with the highest recent throughput under your selected filters.
 
 When to use:
 
@@ -36,9 +38,10 @@ When to use:
 
 #### Idle
 
-Value: 2
+Value: `2`
 
-Description: Assign to a user with low or no recent activity.
+Description:  
+Assign to a user with low or no recent activity.
 
 When to use:
 
@@ -48,9 +51,10 @@ When to use:
 
 #### ProjectOwner
 
-Value: 3
+Value: `3`
 
-Description: Assign to the owner of the agent associated with the work item.
+Description:  
+Assign to the owner of the agent associated with the work item.
 
 When to use:
 
@@ -60,9 +64,10 @@ When to use:
 
 #### DocumentOwner
 
-Value: 4
+Value: `4`
 
-Description: Assign to the owner of the document associated with the work item.
+Description:  
+Assign to the owner of the document associated with the work item.
 
 When to use:
 
@@ -72,9 +77,10 @@ When to use:
 
 #### User
 
-Value: 5
+Value: `5`
 
-Description: Assign to a specific, explicitly provided user.
+Description:  
+Assign to a specific, explicitly provided user.
 
 When to use:
 
@@ -84,8 +90,7 @@ When to use:
 
 ### Best Practices
 
-* Align the method with your SLA: HighThroughput for speed, Idle for balance, ownership methods for accountability.
-* Ensure target users exist and are enabled before assignment (especially ProjectOwner, DocumentOwner, and User).
+* Align the method with your SLA: `HighThroughput` for speed, Idle for balance, ownership methods for accountability.
+* Ensure target users exist and are enabled before assignment (especially `ProjectOwner`, `DocumentOwner`, and `User`).
 * Exclude self-assignment when appropriate to avoid loops and maintain objectivity.
 * Pair the assignment method with an appropriate grace period and clear Info/Comment to improve agent clarity and auditability.
-

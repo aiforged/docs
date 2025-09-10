@@ -13,7 +13,8 @@ These methods help you select assignees, measure performance, and create Human-i
 Signature:  
 `IProjectUser PickRandom(List<IProjectUser> projectUsers, string excludeUserId)`
 
-Description: Picks a random project user from the provided list, excluding the specified user ID if provided.
+Description:  
+Picks a random project user from the provided list, excluding the specified user ID if provided.
 
 Usage:
 
@@ -31,9 +32,8 @@ When to use:
 * Simple, fair distribution when no performance routing is required.
 * As a fallback when KPI or throughput data is unavailable.
 
-Tip:
-
-* Always guard against a null result if the filtered list is empty.
+!!! tip
+    Always guard against a null result if the filtered list is empty.
 
 ***
 
@@ -43,7 +43,8 @@ Signature:
 `object GetUserKpi(WorkItemType type, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus status, WorkItemAction action)`\
 `object GetUserKpi(int projectId, int groupId, WorkItemType type, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus status, WorkItemAction action)`
 
-Description: Returns KPI metrics for users over a time range, optionally scoped to a project/group, excluding a specific user.
+Description:  
+Returns KPI metrics for users over a time range, optionally scoped to a project/group, excluding a specific user.
 
 Usage:
 
@@ -65,21 +66,21 @@ When to use:
 
 * Build data-driven assignment, leaderboards, or monitoring dashboards.
 
-Tip:
-
-* Align the time window and status/action filters with your SLA and routing rules.
+!!! tip
+    Align the time window and status/action filters with your SLA and routing rules.
 
 ***
 
 #### GetHighThroughputUserId
 
 Signature:  
-`string GetHighThroughputUserId(DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus status)`\
-`string GetHighThroughputUserId(int projectId, int groupId, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus status)`\
-`string GetHighThroughputUserId(string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus? status = null)`\
+`string GetHighThroughputUserId(DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus status)`  
+`string GetHighThroughputUserId(int projectId, int groupId, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus status)`  
+`string GetHighThroughputUserId(string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus? status = null)`  
 `string GetHighThroughputUserId(int projectId, int groupId, string excludeUserId, WorkItemType type, WorkItemAction action, WorkItemStatus? status = null)`
 
-Description: Returns the user ID with the highest throughput for the given filters, optionally scoped to a project/group and/or date range.
+Description:  
+Returns the user ID with the highest throughput for the given filters, optionally scoped to a project/group and/or date range.
 
 Usage:
 
@@ -103,21 +104,21 @@ When to use:
 
 * Performance-based routing to power users handling higher volume efficiently.
 
-Tip:
-
-* Exclude the current user to reduce bias in self-assignment scenarios.
+!!! tip
+    Exclude the current user to reduce bias in self-assignment scenarios.
 
 ***
 
 #### GetIdleUserId
 
 Signature:  
-`string GetIdleUserId(WorkItemType type, WorkItemAction action, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus? status = null)`\
-`string GetIdleUserId(int projectId, int groupId, WorkItemType type, WorkItemAction action, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus? status = null)`\
-`string GetIdleUserId(WorkItemType type, string excludeUserId, WorkItemAction action, WorkItemStatus? status = null)`\
+`string GetIdleUserId(WorkItemType type, WorkItemAction action, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus? status = null)`  
+`string GetIdleUserId(int projectId, int groupId, WorkItemType type, WorkItemAction action, DateTime fromDate, DateTime toDate, string excludeUserId, WorkItemStatus? status = null)`  
+`string GetIdleUserId(WorkItemType type, string excludeUserId, WorkItemAction action, WorkItemStatus? status = null)`  
 `string GetIdleUserId(int projectId, int groupId, WorkItemType type, string excludeUserId, WorkItemAction action, WorkItemStatus? status = null)`
 
-Description: Returns the user ID of an idle user based on recent activity and filters, optionally scoped to a project/group and/or date range.
+Description:  
+Returns the user ID of an idle user based on recent activity and filters, optionally scoped to a project/group and/or date range.
 
 Usage:
 
@@ -141,9 +142,8 @@ When to use:
 
 * Balance workload by assigning to users with minimal recent activity.
 
-Tip:
-
-* Tune your time window to match expected shift patterns or business hours.
+!!! tip
+    Tune your time window to match expected shift patterns or business hours.
 
 ***
 
@@ -152,7 +152,8 @@ Tip:
 Signature:  
 `string CreateWorkItem(IProjectUser pu, WorkItemType type, WorkItemStatus status, WorkItemAction action, WorkItemMethod method, TimeSpan graceperiod, int? serviceId, int? documentId, int? shredId, int? defId, int? transactionId, int? verificationId, int? workItemId, string info, string comment, WorkItemReason? reason = null, int? reasonLookup = null, int? reasonRecord = null, string reasonCode = null, string reasonDescription = null, string reasonComment = null)`
 
-Description: Creates a new work item for the specified user and context; returns the assigned user ID.
+Description:  
+Creates a new work item for the specified user and context; returns the assigned user ID.
 
 Usage:
 
@@ -197,9 +198,8 @@ When to use:
 
 * To create and route HITL tasks with clear SLA (grace period), context, and audit details.
 
-Tip:
-
-* Provide informative info/comment and reason fields to improve agent usability and auditability.
+!!! tip
+    Provide informative info/comment and reason fields to improve agent usability and auditability.
 
 ***
 
@@ -214,11 +214,11 @@ Tip:
 
 ### FAQ
 
-* Q: Should I prefer GetHighThroughputUserId or GetIdleUserId for routing?
-  * A: Use HighThroughput for speed/volume optimization; use Idle for fairness and reducing bottlenecks—many teams blend both.
-* Q: How do I ensure only eligible users are considered?
-  * A: Pre-filter with GetUsers by role/permissions/group, then apply throughput/idle selection.
-* Q: What if no eligible user is found?
-  * A: Fall back to PickRandom from a broader pool, or queue for auto-assignment when a user becomes available.
+* **Q: Should I prefer GetHighThroughputUserId or GetIdleUserId for routing?**  
+A: Use HighThroughput for speed/volume optimization; use Idle for fairness and reducing bottlenecks—many teams blend both.
+* **Q: How do I ensure only eligible users are considered?**  
+A: Pre-filter with GetUsers by role/permissions/group, then apply throughput/idle selection.
+* **Q: What if no eligible user is found?**  
+A: Fall back to PickRandom from a broader pool, or queue for auto-assignment when a user becomes available.
 
 

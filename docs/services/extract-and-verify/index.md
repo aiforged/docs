@@ -15,15 +15,15 @@ The following are the **most capable and up-to-date Extract & Verify service typ
 
 | Service Name                            | Best Suited For                                                              | Quick Link                         |
 | --------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------- |
-| Amazon Identity Documents Extraction    | Automated extraction of key fields from identity documents (passports, IDs)  | amazon-identity-documents.md       |
-| Amazon Invoice Extraction               | Extraction of header, line-item, and total data from invoices                | amazon-invoices.md                 |
-| Amazon Receipt Extraction               | Extraction of purchase details from receipts (retail, hospitality, etc.)     | amazon-receipt-extraction.md       |
-| Google Forms Parser                     | Parsing and structuring of data from Google Forms responses                  | google-forms-parser.md             |
-| Google Invoice Parser                   | Extraction of invoice data using Google’s AI models                          | google-invoices.md                 |
-| Document Intelligence                   | Custom extraction from complex forms and documents; supports labelling       | microsoft-forms-recognizer.md      |
-| Document Intelligence – Custom Invoices | Extraction from custom invoice templates and layouts; vendor/BU detection    | microsoft-forms-custom-invoices.md |
-| Document Intelligence – Prebuilt Models | Instant extraction using Microsoft’s pretrained models (invoices, IDs, etc.) | microsoft-forms-invoices.md        |
-| LLM Extractor                           | GenAI-based extraction using configurable prompts and response formats       | llm-extractor.md                   |
+| Amazon Identity Documents Extraction    | Automated extraction of key fields from identity documents (passports, IDs)  | [amazon-identity-documents](amazon-identity-documents.md)       |
+| Amazon Invoice Extraction               | Extraction of header, line-item, and total data from invoices                | [amazon-invoices](amazon-invoices.md )                |
+| Amazon Receipt Extraction               | Extraction of purchase details from receipts (retail, hospitality, etc.)     | [amazon-receipt-extraction](amazon-receipt-extraction.md)       |
+| Google Forms Parser                     | Parsing and structuring of data from Google Forms responses                  | [google-forms-parser](google-forms-parser.md)             |
+| Google Invoice Parser                   | Extraction of invoice data using Google’s AI models                          | [google-invoices](google-invoices.md)                 |
+| Document Intelligence                   | Custom extraction from complex forms and documents; supports labelling       | [document-intelligence](document-intelligence.md)      |
+| Document Intelligence – Custom Invoices | Extraction from custom invoice templates and layouts; vendor/BU detection    | [document-intelligence-custom-invoices](document-intelligence-custom-invoices.md) |
+| Document Intelligence – Prebuilt Models | Instant extraction using Microsoft’s pretrained models (invoices, IDs, etc.) | [document-intelligence-prebuilt-models](document-intelligence-prebuilt-models.md)        |
+| LLM Extractor                           | GenAI-based extraction using configurable prompts and response formats       | [llm-extractor](llm-extractor.md)                   |
 
 !!! info
     _Other legacy and specialized services are also available; please consult the AIForged team if you need assistance with earlier service types or specialized use cases._

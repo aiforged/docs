@@ -45,24 +45,23 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Microsoft Speech-to-Text Service to your agent:
 
-1. **Open the Agent View**
-   Navigate to the agent where you want to add the service.
-2. **Add the Microsoft Speech-to-Text Service**
-   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**
-   Choose **Microsoft Speech-to-Text Service** from the available service types.
-   ![](../../assets/image%20%28274%29.png)
+1. **Open the Agent View:**
+    Navigate to the agent where you want to add the service.
+2. **Add the Microsoft Speech-to-Text Service:**
+    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
+3. **Select Service Type:**
+    Choose **Microsoft Speech-to-Text Service** from the available service types.
+    ![](../../assets/image%20%28274%29.png)
 4. **Configure the Service Wizard**
-   1. Open the Service Configuration Wizard.
-      1.
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%28275%29.png)
+    - Or
+    - ![](../../assets/image%20%28276%29.png)
+    * **Step 1: General Settings:** 
+        Configure the service name, description, and core settings.
+        Default settings are sufficient for most use cases.
 
-          ![](../../assets/image%20%28275%29.png)
-      2.
-
-          ![](../../assets/image%20%28276%29.png)
-   2.  **Step 1: General Settings** Configure the service name, description, and core settings. \_Default settings are sufficient for most use cases.
-
-       ![](../../assets/image%20%28277%29.png)
+        ![](../../assets/image%20%28277%29.png)
 ***
 
 ### Service Configuration Settings
@@ -92,15 +91,15 @@ Most users can proceed with the default settings. Advanced configuration is avai
 
 To upload and process audio using the Microsoft Speech-to-Text Service:
 
-1. **Open Service**
-   When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
-2. **Upload Audio**
-   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid (MP3 or WAV).
-   ![](../../assets/image%20%28278%29.png)
-3. **Select Category (Optional)**
-   If you know the category for the audio, select it. Otherwise, select **No category**.
-4. **Process Documents**
-   After uploading, select the audio files to process and click **Process Checked**.
+1. **Open Service:**
+    When you open the **Microsoft Speech-to-Text Service**, you will be presented with the documents currently queued or processed in the **Inbox**.
+2. **Upload Audio:**
+    Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid (MP3 or WAV).
+    ![](../../assets/image%20%28278%29.png)
+3. **Select Category (Optional):**
+    If you know the category for the audio, select it. Otherwise, select **No category**.
+4. **Process Documents:**
+    After uploading, select the audio files to process and click **Process Checked**.
 
 !!! info
     Tip: For new services, process a small batch first to verify transcription quality before scaling up.
@@ -110,7 +109,7 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **Microsoft Speech-to-Text Service**.
-  ![](../../assets/image%20%2851%29.png)
+    ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the transcript in the **Result** property.
 
 ***
@@ -118,17 +117,17 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 ### Troubleshooting Tips
 
 * **Transcript missing words or inaccurate?**
-  * Ensure clear audio: minimize background noise, echo, or music.
-  * Set the correct Language (e.g., en-GB vs en-US).
-  * Prefer mono recordings with consistent levels; avoid clipping.
+    * Ensure clear audio: minimize background noise, echo, or music.
+    * Set the correct Language (e.g., en-GB vs en-US).
+    * Prefer mono recordings with consistent levels; avoid clipping.
 * **Long files take a while to complete?**
-  * Longer recordings may be processed asynchronously by the provider and take more time.
-  * Split very long audio into smaller segments to keep processing responsive.
+    * Longer recordings may be processed asynchronously by the provider and take more time.
+    * Split very long audio into smaller segments to keep processing responsive.
 * **Audio won’t process?**
-  * Confirm the file format is MP3 or WAV and not DRM‑protected/encrypted.
-  * Re‑export the audio with a standard codec and a constant sample rate (e.g., 16 kHz mono WAV or 128 kbps mono MP3).
+    * Confirm the file format is MP3 or WAV and not DRM‑protected/encrypted.
+    * Re‑export the audio with a standard codec and a constant sample rate (e.g., 16 kHz mono WAV or 128 kbps mono MP3).
 * **Multiple speakers in a single recording?**
-  * Overlapping speakers and crosstalk reduce accuracy; use separate microphones when possible or pre-segment the audio.
+    * Overlapping speakers and crosstalk reduce accuracy; use separate microphones when possible or pre-segment the audio.
 
 ***
 
@@ -139,9 +138,3 @@ To upload and process audio using the Microsoft Speech-to-Text Service:
 * Set the correct Language to match the audio content.
 * Trim long silences and split long recordings into smaller parts for faster, more reliable processing.
 * Validate a representative sample before large-scale processing, and standardize your capture/export settings across sources.
-
-
-
-
-
-

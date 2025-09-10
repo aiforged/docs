@@ -43,35 +43,50 @@ Follow these steps to add and configure the **Microsoft Document Intelligence (C
    Choose **Microsoft Document Intelligence** from the available service types.
    ![](../../assets/image%20%28126%29.png)
 4. **Configure the Service Wizard**
-   Open the Service Configuration Wizard.
-   ![](../../assets/image%20%28141%29.png)
-   or
-   ![](../../assets/image%20%28142%29.png)
-   * **Step 1: Service**
-     Configure the core settings for your service.
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-     ![](../../assets/image%20%28145%29.png)
-   * **Step 2: Categories**
-     Create document categories for your different types of documents. These are required for training and organization.
-     ![](../../assets/image%20%28149%29.png)
-   * **Step 3: Workflow Reason Dataset**
-     Populate the dataset with reason codes and information used with Human-In-The-Loop Workflow Actions.
-     ![](../../assets/image%20%28155%29.png)
-   * **Step 4: Analysis**
-     Upload documents for pre-training and analysis. Select the correct category for each document when uploading.
-     ![](../../assets/image%20%28164%29.png)
-   * **Step 5: Labelling**
-     Start labelling fields on documents to train the extraction model.
-     ![](../../assets/image%20%28166%29.png)
-   * **Step 6: Training**
-     Train the labelled documents.
-     ![](../../assets/image%20%28167%29.png)
-   * **Step 7: Definition**
-     After successful training, a definition document will be created.
-     ![](../../assets/image%20%28171%29.png)
-   * **Step 8: Verification**
-     Use this step to verify the keys/fields defined or extracted during training.
-     ![](../../assets/image%20%28174%29.png)
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%28141%29.png)
+    - or
+    - ![](../../assets/image%20%28142%29.png)
+    * **Step 1: Service**
+        Configure the core settings for your service.
+        Default settings are sufficient for most use cases.
+
+        - ![](../../assets/image%20%28145%29.png)
+
+    * **Step 2: Categories**
+        Create document categories for your different types of documents. These are required for training and organization.
+
+        - ![](../../assets/image%20%28149%29.png)
+
+    * **Step 3: Workflow Reason Dataset**
+        Populate the dataset with reason codes and information used with Human-In-The-Loop Workflow Actions.
+
+        - ![](../../assets/image%20%28155%29.png)
+
+    * **Step 4: Analysis**
+        Upload documents for pre-training and analysis. Select the correct category for each document when uploading.
+
+        - ![](../../assets/image%20%28164%29.png)
+
+    * **Step 5: Labelling**
+        Start labelling fields on documents to train the extraction model.
+
+        - ![](../../assets/image%20%28166%29.png)
+
+    * **Step 6: Training**
+        Train the labelled documents.
+
+        - ![](../../assets/image%20%28167%29.png)
+
+    * **Step 7: Definition**
+        After successful training, a definition document will be created.
+
+        - ![](../../assets/image%20%28171%29.png)
+
+    * **Step 8: Verification**
+        Use this step to verify the keys/fields defined or extracted during training.
+
+        - ![](../../assets/image%20%28174%29.png)
 
 !!! danger
     Be sure to assign the correct category to each document during upload in Step 4: Analysis. This is critical for accurate classification and model training.
@@ -83,35 +98,36 @@ Follow these steps to add and configure the **Microsoft Document Intelligence (C
 Labelling is a crucial step for training the Document Intelligence extraction engine. Here’s how to label fields effectively:
 
 1. **Open the Labelling Step**
-   Go to **Step 5: Labelling** in the wizard.
-   ![](../../assets/image%20%28166%29.png)
+    Go to **Step 5: Labelling** in the wizard.
+    ![](../../assets/image%20%28166%29.png)
 2.  **Select Document Category**
     Use the filter to select the document category whose documents you want to label.
 
-    > !!! info
-    > Only documents that have already been analyzed in Step 4 will be available for labelling.
-        >
+    !!! info
+        Only documents that have already been analyzed in Step 4 will be available for labelling.
+
 3. **Select a Document**
    Choose a document from the list to begin labelling.
    ![](../../assets/image%20%28176%29.png)
 4. **Label Fields on the Document**
-   * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](../../assets/image%20%28179%29.png) button.
-     ![](../../assets/image%20%28178%29.png)
-   * Draw the label on the document by clicking and dragging over the relevant field.
-     ![](../../assets/image%20%28182%29.png)
-   * Once labelled, it will automatically select the next available label definition. Press **Tab** to navigate through available labels.
-   * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.
-     ![](../../assets/image%20%28183%29.png)
-   * Label definitions with a green check mark have been successfully labelled on the document.
+    * Select an existing label definition from the right panel, or create a new label by clicking the **+** ![](../../assets/image%20%28179%29.png) button.
+      ![](../../assets/image%20%28178%29.png)
+    * Draw the label on the document by clicking and dragging over the relevant field.
+      ![](../../assets/image%20%28182%29.png)
+    * Once labelled, it will automatically select the next available label definition. Press **Tab** to navigate through available labels.
+    * Fields you label are highlighted in magenta; provider-generated fields are shaded green/yellow.
+      ![](../../assets/image%20%28183%29.png)
+    * Label definitions with a green check mark have been successfully labelled on the document.
 5. **Labelling Controls**
-   * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](../../assets/image%20%28186%29.png) button.
-   * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](../../assets/image%20%28189%29.png) button.
-   * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](../../assets/image%20%28190%29.png) button to continue where you left off.
+    * **Start Labelling:** Press **Ctrl+S** or click the **Start Labelling** ![](../../assets/image%20%28186%29.png) button.
+    * **Stop Labelling:** Press **Esc**, **Ctrl+S**, or click the **Stop Labelling** ![](../../assets/image%20%28189%29.png) button.
+    * **Resume Labelling:** While still on the same document, press **Ctrl+S** or click the **Continue Labelling** ![](../../assets/image%20%28190%29.png) button to continue where you left off.
 6. **Copy & Paste Labels**
-   * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](../../assets/image%20%28191%29.png).
-   * Paste labels onto a different document using **Paste Labels from Clipboard** ![](../../assets/image%20%28193%29.png).
+    * Copy all labels from a completely labelled document by clicking **Copy Labels to Clipboard** ![](../../assets/image%20%28191%29.png).
+    * Paste labels onto a different document using **Paste Labels from Clipboard** ![](../../assets/image%20%28193%29.png).
 
 ![](../../assets/image%20%28197%29.png)
+
 !!! info
     Well-labelled documents accelerate model training and improve extraction accuracy. Consistent labelling across documents is key!
 
@@ -170,17 +186,17 @@ To upload and process documents using the **Google Forms Parser**:
 ### Troubleshooting Tips
 
 * **Missing or Incorrect Data?**
-  * Ensure uploaded documents are clear and legible. Poor quality scans or images reduce extraction accuracy.
-  * Confirm that the file type is supported (PDF, JPEG, PNG, TIFF, etc.).
-  * Complex or highly stylized layouts may require more careful labelling and analysis.
+    * Ensure uploaded documents are clear and legible. Poor quality scans or images reduce extraction accuracy.
+    * Confirm that the file type is supported (PDF, JPEG, PNG, TIFF, etc.).
+    * Complex or highly stylized layouts may require more careful labelling and analysis.
 * **Tables or Key-Value Pairs Not Extracted?**
-  * Make sure tables and fields are clearly structured in your documents.
-  * Use the labelling and analysis steps to improve model accuracy.
+    * Make sure tables and fields are clearly structured in your documents.
+    * Use the labelling and analysis steps to improve model accuracy.
 * **Upload or Processing Errors?**
-  * Try re-uploading the document or using a different sample to rule out file-specific issues.
-  * If errors persist, check your service settings or contact support.
+    * Try re-uploading the document or using a different sample to rule out file-specific issues.
+    * If errors persist, check your service settings or contact support.
 * **Performance Issues?**
-  * Large document batches may take longer to process. Start with smaller batches to ensure responsiveness.
+    * Large document batches may take longer to process. Start with smaller batches to ensure responsiveness.
 
 ***
 
@@ -190,9 +206,3 @@ To upload and process documents using the **Google Forms Parser**:
 * Label and categorize documents accurately to improve model performance.
 * Regularly review and update your definition documents as forms or layouts evolve.
 * Migrate from Form Recognizer to Document Intelligence for ongoing support and access to the latest features.
-
-
-
-
-
-

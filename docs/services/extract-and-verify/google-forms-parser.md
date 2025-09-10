@@ -34,32 +34,38 @@ The **Google Forms Parser** service in AIForged extracts text and layout informa
 
 Follow these steps to add and configure the **Google Forms Parser** to your agent:
 
-1. **Open the Agent View**
+1. **Open the Agent View:**
    Navigate to the agent where you want to add the service.
-2. **Add the Google Forms Parser Service**
+2. **Add the Google Forms Parser Service:**
    Click the **Add Service** ![](../../assets/image%20%281%29%20%281%29%20%281%29.png) button.
-3. **Select Service Type**
+3. **Select Service Type:**
    Choose **Google Forms Parser** from the available service types.
    ![](../../assets/image%20%2834%29.png)
 4. **Configure the Service Wizard**
-   Open the Service Configuration Wizard.
-   ![](../../assets/image%20%282%29%20%281%29%20%281%29.png)
-   or
-   ![](../../assets/image%20%283%29%20%281%29%20%281%29.png)
-   * **Step 1: General Settings**
-     Configure the service name, description, and other core settings.
-     &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-     ![](../../assets/image%20%284%29%20%281%29%20%281%29.png)
-   * **Step 2: User Defined Categories**
-     Add any categories you wish to use for organizing your processed documents.
-     ![](../../assets/image%20%285%29%20%281%29%20%281%29.png)
-   * **Step 3: Analysis**
-     Upload some documents for analysis, select them and click on the **Analysis** ![](../../assets/image%20%28125%29.png) button to generate the applicable fields for your forms.
-     ![](../../assets/image%20%286%29%20%281%29%20%281%29.png)
-   * **Step 4: Verification**
-     Review, configure, and verify any generated fields.
-     ![](../../assets/image%20%287%29%20%281%29%20%281%29.png)
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%282%29%20%281%29%20%281%29.png)
+    - or
+    - ![](../../assets/image%20%283%29%20%281%29%20%281%29.png)
+    * **Step 1: General Settings:**
+        Configure the service name, description, and other core settings.
+        Default settings are sufficient for most use cases.
 
+        - ![](../../assets/image%20%284%29%20%281%29%20%281%29.png)
+
+    * **Step 2: User Defined Categories:**
+        Add any categories you wish to use for organizing your processed documents.
+
+        - ![](../../assets/image%20%285%29%20%281%29%20%281%29.png)
+
+    * **Step 3: Analysis:**
+        Upload some documents for analysis, select them and click on the **Analysis** ![](../../assets/image%20%28125%29.png) button to generate the applicable fields for your forms.
+
+        - ![](../../assets/image%20%286%29%20%281%29%20%281%29.png)
+
+    * **Step 4: Verification:**
+        Review, configure, and verify any generated fields.
+
+        - ![](../../assets/image%20%287%29%20%281%29%20%281%29.png)
 ***
 
 ### Service Configuration Settings
@@ -72,13 +78,13 @@ Most users can proceed with default settings. Advanced configuration is availabl
 
 To upload and process documents using the **Google Forms Parser**:
 
-1. **Open Service**
-   In the **Google Forms Parser**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.
-   ![](../../assets/image%20%289%29%20%281%29%20%281%29.png)
-2. **Select Category (Optional)**
-   If you know the category for the document, select it. Otherwise, select **No category**.
-3. **Process Documents**
-   After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
+1. **Open Service:**
+    In the **Google Forms Parser**, click the **Upload** ![](../../assets/image%20%288%29%20%281%29%20%281%29.png) button or drag and drop files over the document grid.
+    ![](../../assets/image%20%289%29%20%281%29%20%281%29.png)
+2. **Select Category (Optional):**
+    If you know the category for the document, select it. Otherwise, select **No category**.
+3. **Process Documents:**
+    After uploading, select the documents to process and click on the **Process** ![](../../assets/image%20%2810%29%20%281%29%20%281%29.png) button.
 
 !!! info
     **Tip:** For new services, process a small batch first to verify the results before scaling up.
@@ -88,7 +94,7 @@ To upload and process documents using the **Google Forms Parser**:
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the **Google Forms Parser**.
-  ![](../../assets/image%20%2851%29.png)
+    ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view and verify the extracted results.
 
 ***
@@ -96,17 +102,17 @@ To upload and process documents using the **Google Forms Parser**:
 ### Troubleshooting Tips
 
 * **Missing or Incorrect Data?**
-  * Ensure the uploaded forms are clear and legible. Blurred or faded scans may reduce extraction accuracy.
-  * Confirm that the file type is supported (PDF, JPEG, PNG, TIFF).
-  * Some form layouts may not be fully supported; check if your form matches standard Google Forms layouts.
+    * Ensure the uploaded forms are clear and legible. Blurred or faded scans may reduce extraction accuracy.
+    * Confirm that the file type is supported (PDF, JPEG, PNG, TIFF).
+    * Some form layouts may not be fully supported; check if your form matches standard Google Forms layouts.
 * **Key-Value Pairs Not Extracted?**
-  * Make sure your forms use recognizable labels and standard field positions.
-  * Highly stylized or handwritten forms may affect extraction accuracy.
+    * Make sure your forms use recognizable labels and standard field positions.
+    * Highly stylized or handwritten forms may affect extraction accuracy.
 * **Upload or Processing Errors?**
-  * Try re-uploading the document or using a different sample to rule out file-specific issues.
-  * If errors persist, check your agent's service configuration or contact support for assistance.
+    * Try re-uploading the document or using a different sample to rule out file-specific issues.
+    * If errors persist, check your agent's service configuration or contact support for assistance.
 * **Performance Issues?**
-  * Processing large batches may take longer. Start with smaller batches to ensure service responsiveness.
+    * Processing large batches may take longer. Start with smaller batches to ensure service responsiveness.
 
 ***
 

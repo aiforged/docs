@@ -15,8 +15,8 @@ The following are the latest and most capable Vision Services available in AIFor
 
 | Service Name               | Best Suited For                                                     | Quick Link                    |
 | -------------------------- | ------------------------------------------------------------------- | ----------------------------- |
-| Google Object Detection    | Detecting objects, faces, emotions, and unsafe content in images    | google-object-detection.md    |
-| Microsoft Object Detection | Tagging objects, faces, landmarks, and moderation in images or PDFs | microsoft-object-detection.md |
+| Google Object Detection    | Detecting objects, faces, emotions, and unsafe content in images    | [google-object-detection](google-object-detection.md)    |
+| Microsoft Object Detection | Tagging objects, faces, landmarks, and moderation in images or PDFs | [microsoft-object-detection](microsoft-object-detection.md) |
 
 !!! info
     Configure vision services as standalone pipelines or as verification services (called by the rules engine) to enrich extracted image fields from Document Intelligence or other providers.
@@ -33,5 +33,3 @@ The following are the latest and most capable Vision Services available in AIFor
 
 !!! info
     Vision services can be combined with extraction, classification, and workflow utilities for advanced, automated document and media pipelines.
-
-

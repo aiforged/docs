@@ -1,6 +1,6 @@
-# .NET SDK (index)
+# 💻 .NET SDK
 
-Welcome! This page is a friendly, practical starting point for developers and implementers integrating with AIForged using our .NET SDK. We’ll explain the core building blocks, help you authenticate quickly with an API key, and walk through the most common tasks with clear, copy‑pasteable code.
+Welcome! This page is a practical starting point for developers and implementers integrating with AIForged using our .NET SDK. We’ll explain the core building blocks, help you authenticate quickly with an API key, and walk through the most common tasks with clear, copy‑pasteable code.
 
 NuGet: [AIForged.SDK](https://www.nuget.org/packages/AIForged.SDK)
 

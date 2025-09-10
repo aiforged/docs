@@ -50,18 +50,18 @@ Authentication
 ## Getting into your account
 
 - New users
-    - Register: [register.md](register.md)
-    - Activate: [activate-my-account.md](activate-my-account.md)
+    - Register: [register](register.md)
+    - Activate: [activate-my-account](activate-my-account.md)
 
 - Existing users
-    - Login: [login.md](login.md)
-    - Multi‑Factor Authentication (recommended): [multi-factor-authentication.md](multi-factor-authentication.md)
+    - Login: [login](login.md)
+    - Multi‑Factor Authentication (recommended): [multi-factor-authentication](multi-factor-authentication.md)
 
 - Can’t sign in?
-    - Reset password: [forgot-password.md](forgot-password.md)
+    - Reset password: [forgot-password](forgot-password.md)
 
 - Personalize your profile
-    - Update your name, avatar, locale, and notifications: [user-profile.md](user-profile.md)
+    - Update your name, avatar, locale, and notifications: [user-profile](user-profile.md)
 
 !!! tip
     Planning to configure services today? Confirm your role (Owner, Administrator, or Developer) in the target Tenant; these roles govern service administration.

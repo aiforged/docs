@@ -10,10 +10,10 @@ These methods let you find and work with Parameter Definitions (also known as fi
 
 #### FindParameterDef (by ID)
 
-**Signature:**\
+**Signature:**  
 `FindParameterDef(int id) : IParameterDef`
 
-**Description:**\
+**Description:**  
 Returns a parameter definition (field/label/setting) by its unique ID.
 
 **Usage:**
@@ -26,17 +26,17 @@ if (pd != null)
 }
 ```
 
-**When to use:**\
+**When to use:**  
 When you already know the exact parameter definition ID and need to inspect or reuse it.
 
 ***
 
 #### FindParameterDef (by name with optional filters)
 
-**Signature:**\
+**Signature:**  
 `FindParameterDef(string name, int? parentId = null, int? classId = null, List<ParameterDefinitionCategory?> categories = null, List<GroupingType?> grouping = null, List<DAL.ValueType?> vtypes = null) : IParameterDef`
 
-**Description:**\
+**Description:**  
 Finds a parameter definition by name, with optional filters for parent, class, categories, grouping, and value types to disambiguate similarly named fields.
 
 **Usage:**
@@ -52,17 +52,17 @@ var pd = module.FindParameterDef(
 );
 ```
 
-**When to use:**\
+**When to use:**  
 When definitions share names across contexts and you need precision using filters.
 
 ***
 
 #### FindParameterDef (by name within a service)
 
-**Signature:**\
+**Signature:**  
 `FindParameterDef(string name, int stpdId, int? parentId = null, int? classId = null, List<ParameterDefinitionCategory?> categories = null, List<GroupingType?> grouping = null, List<DAL.ValueType?> vtypes = null) : IParameterDef`
 
-**Description:**\
+**Description:**  
 Finds a parameter definition by name scoped to a specific service definition (stpdId), with optional filters.
 
 **Usage:**
@@ -79,17 +79,17 @@ var pd = module.FindParameterDef(
 );
 ```
 
-**When to use:**\
+**When to use:**  
 When the same field exists in multiple services and you need the one for a specific service.
 
 ***
 
 #### FindSetting (by name)
 
-**Signature:**\
+**Signature:**  
 `FindSetting(string name) : IParameterDef`
 
-**Description:**\
+**Description:**  
 Finds a service setting by name in the current context.
 
 **Usage:**
@@ -102,17 +102,17 @@ if (archiving != null)
 }
 ```
 
-**When to use:**\
+**When to use:**  
 To retrieve metadata for a specific service setting by name.
 
 ***
 
 #### FindSetting (by service definition + parent)
 
-**Signature:**\
+**Signature:**  
 `FindSetting(IParameterDef stpd, string name, int? parentId) : IParameterDef`
 
-**Description:**\
+**Description:**  
 Finds a setting by name within a specific service definition (stpd) and optional parent container.
 
 **Usage:**
@@ -121,17 +121,17 @@ Finds a setting by name within a specific service definition (stpd) and optional
 var setting = module.FindSetting(serviceDef, "BaseURL", parentId: null);
 ```
 
-**When to use:**\
+**When to use:**  
 When you need a setting in a particular service or nested container.
 
 ***
 
 #### CopyDocument
 
-**Signature:**\
+**Signature:**  
 `CopyDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null) : IDocument`
 
-**Description:**\
+**Description:**  
 Copies a document into another service (target stpdId) with optional changes to status, usage, and category.
 
 **Usage:**
@@ -141,17 +141,17 @@ var copied = module.CopyDocument(doc, targetServiceId, DocumentStatus.Queued, Us
 module.SaveChanges();
 ```
 
-**When to use:**\
+**When to use:**  
 For parallel processing or routing while keeping the original in place.
 
 ***
 
 #### MoveDocument
 
-**Signature:**\
+**Signature:**  
 `MoveDocument(IDocument doc, int stpdId, DocumentStatus status, UsageType usage, int? categoryId = null, bool? resetCategory = null) : IDocument`
 
-**Description:**\
+**Description:**  
 Moves a document to another service and removes it from the source.
 
 **Usage:**
@@ -161,17 +161,17 @@ var moved = module.MoveDocument(doc, targetServiceId, DocumentStatus.Queued, Usa
 module.SaveChanges();
 ```
 
-**When to use:**\
+**When to use:**  
 To maintain a single canonical copy of a document as it advances through the workflow.
 
 ***
 
 #### CloneDocumentForTraining
 
-**Signature:**\
+**Signature:**  
 `CloneDocumentForTraining(IDocument doc) : IDocument`
 
-**Description:**\
+**Description:**  
 Clones a document into a service’s training box.
 
 **Usage:**
@@ -181,17 +181,17 @@ var trainingDoc = module.CloneDocumentForTraining(doc);
 logger.LogInformation("Cloned for training: {id}", trainingDoc.Id);
 ```
 
-**When to use:**\
+**When to use:**  
 To expand or curate training datasets without affecting production items.
 
 ***
 
 #### CheckIfDocumentAlreadyInTrainingBox
 
-**Signature:**\
+**Signature:**  
 `CheckIfDocumentAlreadyInTrainingBox(IDocument doc) : bool`
 
-**Description:**\
+**Description:**  
 Checks whether a document has already been added to the training box.
 
 **Usage:**
@@ -204,7 +204,7 @@ if (!module.CheckIfDocumentAlreadyInTrainingBox(doc))
 }
 ```
 
-**When to use:**\
+**When to use:**  
 To prevent duplicate training entries and keep training sets clean.
 
 ***
@@ -215,4 +215,3 @@ To prevent duplicate training entries and keep training sets clean.
 * Use filters (categories, grouping, value types) when resolving by name to avoid ambiguity.
 * After copy/move/clone/status changes, call `module.SaveChanges()` to persist updates.
 * Combine definition lookups with parameter/document methods to build robust flows.
-

@@ -4,7 +4,7 @@
 
 The GroupingType enum specifies the group a Parameter Definition belongs to. Use it to target operations at the right structural level (form, page, table, row/column, field, etc.) when processing parameters.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -25,9 +25,10 @@ var def = module.FindParameterDef(
 
 #### None
 
-Value: 0
+Value: `0`
 
-Description: No grouping specified.
+Description:  
+No grouping specified.
 
 When to use:
 
@@ -37,9 +38,10 @@ When to use:
 
 #### Page
 
-Value: 1
+Value: `1`
 
-Description: The definition relates to a Page. Parent for page element definitions like Paragraphs, Tables, Anchors, Fields, etc.
+Description:  
+The definition relates to a Page. Parent for page element definitions like Paragraphs, Tables, Anchors, Fields, etc.
 
 When to use:
 
@@ -49,9 +51,10 @@ When to use:
 
 #### Cluster
 
-Value: 2
+Value: `2`
 
-Description: The definition relates to a Cluster.
+Description:  
+The definition relates to a Cluster.
 
 When to use:
 
@@ -61,9 +64,10 @@ When to use:
 
 #### Table
 
-Value: 3
+Value: `3`
 
-Description: The definition relates to a Table. Parent for all Row and Column definitions.
+Description:  
+The definition relates to a Table. Parent for all Row and Column definitions.
 
 When to use:
 
@@ -73,9 +77,10 @@ When to use:
 
 #### Row
 
-Value: 4
+Value: `4`
 
-Description: The definition relates to a Row within a Table.
+Description:  
+The definition relates to a Row within a Table.
 
 When to use:
 
@@ -85,9 +90,10 @@ When to use:
 
 #### Column
 
-Value: 5
+Value: `5`
 
-Description: The definition relates to a Column within a Table.
+Description:  
+The definition relates to a Column within a Table.
 
 When to use:
 
@@ -97,9 +103,10 @@ When to use:
 
 #### Paragraph
 
-Value: 7
+Value: `7`
 
-Description: The definition relates to a Paragraph. Parent for Line definitions.
+Description:  
+The definition relates to a Paragraph. Parent for Line definitions.
 
 When to use:
 
@@ -109,9 +116,10 @@ When to use:
 
 #### Line
 
-Value: 8
+Value: `8`
 
-Description: The definition relates to a Line. Parent for Word definitions.
+Description:  
+The definition relates to a Line. Parent for Word definitions.
 
 When to use:
 
@@ -121,9 +129,10 @@ When to use:
 
 #### Word
 
-Value: 9
+Value: `9`
 
-Description: The definition relates to a Word.
+Description:  
+The definition relates to a Word.
 
 When to use:
 
@@ -133,9 +142,10 @@ When to use:
 
 #### Array
 
-Value: 10
+Value: `10`
 
-Description: The definition relates to an Array. Used for list elements that are not Custom Tables.
+Description:  
+The definition relates to an Array. Used for list elements that are not Custom Tables.
 
 When to use:
 
@@ -145,9 +155,10 @@ When to use:
 
 #### Form
 
-Value: 11
+Value: `11`
 
-Description: The definition relates to a Form. Parent for all Page definitions.
+Description:  
+The definition relates to a Form. Parent for all Page definitions.
 
 When to use:
 
@@ -157,9 +168,10 @@ When to use:
 
 #### Field
 
-Value: 12
+Value: `12`
 
-Description: The definition relates to a Field. Typically used for custom labels on a document.
+Description:  
+The definition relates to a Field. Typically used for custom labels on a document.
 
 When to use:
 
@@ -169,9 +181,10 @@ When to use:
 
 #### Anchor
 
-Value: 13
+Value: `13`
 
-Description: The definition relates to an Anchor. Used internally to anchor Fields/Labels to locations.
+Description:  
+The definition relates to an Anchor. Used internally to anchor Fields/Labels to locations.
 
 When to use:
 
@@ -181,9 +194,10 @@ When to use:
 
 #### Unknown
 
-Value: 99
+Value: `99`
 
-Description: Unknown grouping type.
+Description:  
+Unknown grouping type.
 
 When to use:
 
@@ -200,10 +214,9 @@ When to use:
 
 ### FAQ
 
-* Q: What’s the difference between Field and Anchor?
-  * A: Field represents the actual label/value definition; Anchor is a positional helper used to locate fields.
-* Q: When should I use Array instead of Table?
-  * A: Use Array for repeating values without a strict row/column structure; use Table for structured tabular data.
-* Q: Why are there gaps in numeric values (e.g., no 6)?
-  * A: Numeric values are versioned for compatibility; not all slots are used.
-
+* **Q: What’s the difference between Field and Anchor?**  
+A: `Field` represents the actual label/value definition; `Anchor` is a positional helper used to locate fields.
+* **Q: When should I use Array instead of Table?**  
+A: Use `Array` for repeating values without a strict row/column structure; use `Table` for structured tabular data.
+* **Q: Why are there gaps in numeric values (e.g., no 6)?**  
+A: Numeric values are versioned for compatibility; not all slots are used.

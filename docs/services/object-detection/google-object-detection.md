@@ -34,32 +34,31 @@
 
 Follow these steps to add and configure the Google Object Detection service to your agent:
 
-1. **Open the Agent View**
-   Navigate to the agent where you want to add the service.
-2. **Add the Google Object Detection Service**
-   Click the **Add Service** ![](../../assets/image%20%2842%29.png) button in the command bar.
-3. **Select Service Type**
-   Choose **Google Object Detection Service** from the available service types.
-   ![](../../assets/image%20%289%29.png)
-4. **Configure the Service Wizard**
-   1. Open the Service Configuration Wizard.
-   2. **Step 1: Service Config**  
-      Configure the service settings as required.&#x20;
-   3. **Step 2: Verification**
-      No verification required.
+1. **Open the Agent View:**
+    Navigate to the agent where you want to add the service.
+2. **Add the Google Object Detection Service:**
+    Click the **Add Service** ![](../../assets/image%20%2842%29.png) button in the command bar.
+3. **Select Service Type:**
+    Choose **Google Object Detection Service** from the available service types.
+    ![](../../assets/image%20%289%29.png)
+4. **Configure the Service Wizard:**
+    - Open the Service Configuration Wizard.
+    - **Step 1: Service Config:**  
+        Configure the service settings as required.
+    - **Step 2: Verification:**
+        No verification required.
 
 ***
 
 ### Example Results
 
-*   **Object Detection Example:**
-
+* **Object Detection Example:**
     The object is identified as a "\*\*Person\*\*" and a list of \*\*Tag\*\* items is returned.
-*   **Content Moderation Example:**
 
+* **Content Moderation Example:**
     The image is labeled with confidence scores for Adult, Racy, Violence, and Medical content (all "unlikely" in this case).
-*   **Face Detection/Emotions Example:**
 
+* **Face Detection/Emotions Example:**
     The face is detected and emotions such as joy are scored (e.g., "Very Likely" for Joy).
 
 ***
@@ -91,15 +90,15 @@ The **Google Object Detection Service** can be customized for your workflow. The
 
 To upload and process documents using the Google Object Detection service:
 
-1. **Open Service**
-   When you open the service, you will see documents currently queued or processed in the **Inbox**.
-2. **Upload Documents**
-   Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.
-   ![](../../assets/image%20%2810%29.png)
-3. **Select Category (Optional)**
-   Select a category if desired; otherwise, select **No category**.
-4. **Process Documents**
-   Select the uploaded documents and click **Process Checked**.
+1. **Open Service:**
+    When you open the service, you will see documents currently queued or processed in the **Inbox**.
+2. **Upload Documents:**
+    Click the **Upload** ![](../../assets/image%20%2837%29.png) button or drag and drop files over the document grid.
+    ![](../../assets/image%20%2810%29.png)
+3. **Select Category (Optional):**
+    Select a category if desired; otherwise, select **No category**.
+4. **Process Documents:**
+    Select the uploaded documents and click **Process Checked**.
 
 !!! info
     Tip: For new services, process a small batch first to verify detection results before scaling up.
@@ -109,7 +108,7 @@ To upload and process documents using the Google Object Detection service:
 ### View Processed Documents
 
 * Select **Outbox** in the usage filter in the Google Object Detection Service.
-  ![](../../assets/image%20%2851%29.png)
+    ![](../../assets/image%20%2851%29.png)
 * Open any processed document to review detected objects, tags, emotions, and content moderation scores.
 
 ***
@@ -117,17 +116,17 @@ To upload and process documents using the Google Object Detection service:
 ### Troubleshooting Tips
 
 * **Missing detections or low accuracy?**
-  * Use high-quality images (good lighting, sharp focus).
-  * Add a language hint if processing images with text in non-English languages.
+    * Use high-quality images (good lighting, sharp focus).
+    * Add a language hint if processing images with text in non-English languages.
 * **Unexpected content moderation results?**
-  * Review images flagged as Adult, Racy, Violence, or Medical for accuracy.
-  * Test with known clean and flagged examples to understand confidence thresholds.
+    * Review images flagged as Adult, Racy, Violence, or Medical for accuracy.
+    * Test with known clean and flagged examples to understand confidence thresholds.
 * **Faces/emotions not detected?**
-  * Ensure faces are large enough and clearly visible.
-  * Test with a variety of sample images to calibrate expectations.
+    * Ensure faces are large enough and clearly visible.
+    * Test with a variety of sample images to calibrate expectations.
 * **Upload or processing errors?**
-  * Re-upload images, confirm supported formats, or try a different sample to rule out file-specific issues.
-  * For large PDFs, consider splitting before upload.
+    * Re-upload images, confirm supported formats, or try a different sample to rule out file-specific issues.
+    * For large PDFs, consider splitting before upload.
 
 ***
 
@@ -157,17 +156,12 @@ Get results in minutes:
 ### FAQ
 
 * **Does Google Object Detection support multi-page PDFs?**
-  * Yes. Images are extracted from each page and processed, but results may vary by page content.
+    * Yes. Images are extracted from each page and processed, but results may vary by page content.
 * **Can I use Google Object Detection for compliance or moderation?**
-  * Yes. Use Adult, Racy, Violence, and Medical flags to automate content filtering.
+    * Yes. Use Adult, Racy, Violence, and Medical flags to automate content filtering.
 * **What objects, faces, or emotions can be detected?**
-  * Detection covers a broad range of objects and facial attributes, but accuracy depends on image quality and clarity.
+    * Detection covers a broad range of objects and facial attributes, but accuracy depends on image quality and clarity.
 * **Do I need a Google Cloud account or API key?**
-  * No. AIForged manages provider connections and authentication for you.
+    * No. AIForged manages provider connections and authentication for you.
 * **How do I improve results for specialized domains (e.g., manufacturing, healthcare)?**
-  * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.
-
-
-
-
-
+    * Test with domain-specific images and consult AIForged support for advanced tuning or custom workflows.

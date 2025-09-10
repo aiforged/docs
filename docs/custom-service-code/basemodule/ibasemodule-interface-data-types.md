@@ -10,22 +10,24 @@ These data types are the building blocks returned to and consumed by Module meth
 
 #### IApplicationUser
 
-Signature: IApplicationUser
+Signature:  
+`IApplicationUser`
 
-Description: Represents an AIForged application user.
+Description:  
+Represents an AIForged application user.
 
 Key members (commonly used):
 
-* Id : string
-* UserName : string
-* Email : string
-* PhoneNumber : string
-* FriendlyName : string (readonly)
-* JobTitle : string
-* FullName : string
-* Configuration : string
-* IsEnabled : bool
-* IsLockedOut : bool (readonly)
+* Id : `string`
+* UserName : `string`
+* Email : `string`
+* PhoneNumber : `string`
+* FriendlyName : `string (readonly)`
+* JobTitle : `string`
+* FullName : `string`
+* Configuration : `string`
+* IsEnabled : `bool`
+* IsLockedOut : `bool (readonly)`
 
 Usage:
 
@@ -49,20 +51,23 @@ Tip:
 
 #### IClasses
 
-Signature: IClasses
+Signature:  
+`IClasses`
 
-Description: Represents a document category (class) within a project.
+Description:  
+Represents a document category (class) within a project.
 
 Key members (commonly used):
 
-* UserId : string
-* ProjectId : int
-* Description : string
-* Comment : string
-* DTC / DTM : DateTime
-* Type : ClassType?
-* Related : int?
-* Id/Name via IEntityIdName
+* UserId : `string`
+* ProjectId : `int`
+* Name: `string`
+* Description : `string`
+* Comment : `string`
+* DTC / DTM : `DateTime`
+* Type : `ClassType?`
+* Related : `int?`
+* Id : `int`
 
 Usage:
 
@@ -83,27 +88,29 @@ Tip:
 
 #### ICustomDataSet
 
-Signature: ICustomDataSet
+Signature:  
+`ICustomDataSet`
 
-Description: Represents a custom dataset (schema + records) for lookups and enrichment.
+Description:  
+Represents a custom dataset (schema + records) for lookups and enrichment.
 
 Key members (commonly used):
 
-* Data : List
-* Definitions : List
-* ProjectId : int
-* ServiceId : int (StpdId is obsolete)
-* KeyDef / KeyDefId
-* IncludeData / IncludeVerifications : bool
-* SearchField / SearchValue
+* Data : `List`
+* Definitions : `List`
+* ProjectId : `int`
+* ServiceId : `int (StpdId is obsolete)`
+* KeyDef / KeyDefId: `int`
+* IncludeData / IncludeVerifications : `bool`
+* SearchField / SearchValue : `string`
 * Paging/sorting: PageNo, PageSize, SortFieldDefId, SortDirection
 
 Notable methods:
 
-* CreateRecord(key), AddRecord(rec/key), DeleteRecord(key|id|rec)
-* FindField(id|name), FindRecord(key|id|rec), FindRecord(fieldId, value)
-* GetBestOption(value, getValue|fieldId|fieldDef)
-* SetValue(rec, fieldId|name, value), SetValues(...)
+* `CreateRecord(key)`, `AddRecord(rec/key)`, `DeleteRecord(key|id|rec)`
+* `FindField(id|name)`, `FindRecord(key|id|rec)`, `FindRecord(fieldId, value)`
+* `GetBestOption(value, getValue|fieldId|fieldDef)`
+* `SetValue(rec, fieldId|name, value)`, `SetValues(...)`
 
 Usage:
 
@@ -124,22 +131,24 @@ Tip:
 
 #### ICustomDataSetRecord
 
-Signature: ICustomDataSetRecord
+Signature:  
+`ICustomDataSetRecord`
 
-Description: Represents a single row in a custom dataset.
+Description:  
+Represents a single row in a custom dataset.
 
 Key members (commonly used):
 
-* KeyId : int
-* KeyValue : string
-* KeyDefId : int
-* Values : List
-* Availability : Availability?
+* KeyId : `int`
+* KeyValue : `string`
+* KeyDefId : `int`
+* Values : `List`
+* Availability : `Availability?`
 
 Notable methods:
 
-* GetValue(fieldId|fieldDef), SetValue(fieldId|fieldDef, value)
-* FindValue(fieldId|fieldDef, value), AddValue(fieldId, value), Delete()
+* `GetValue(fieldId|fieldDef)`, `SetValue(fieldId|fieldDef, value)`
+* `FindValue(fieldId|fieldDef, value)`, `AddValue(fieldId, value), Delete()`
 
 Usage:
 
@@ -160,23 +169,25 @@ Tip:
 
 #### ICustomDataSetValue
 
-Signature: ICustomDataSetValue
+Signature:  
+`ICustomDataSetValue`
 
-Description: Represents a cell value within a dataset record.
+Description:  
+Represents a cell value within a dataset record.
 
 Key members (commonly used):
 
-* DefId : int
-* Value : string
-* Confidence : float?
-* Status : VerificationStatus?
-* Type : VerificationType?
-* Provider : string
-* Result : string
-* VerificationId : int?
-* Index / ParentId : int?
-* DT : DateTime?
-* Availability : Availability?
+* DefId : `int`
+* Value : `string`
+* Confidence : `float?`
+* Status : `VerificationStatus?`
+* Type : `VerificationType?`
+* Provider : `string`
+* Result : `string`
+* VerificationId : `int?`
+* Index / ParentId : `int?`
+* DT : `DateTime?`
+* Availability : `Availability?`
 
 Usage:
 
@@ -197,26 +208,30 @@ Tip:
 
 #### IDocument
 
-Signature: IDocument
+Signature:  
+`IDocument`
 
-Description: Represents a document (file/image) and its workflow state.
+Description:  
+`Represents a document (file/image) and its workflow state.`
 
 Key members (commonly used):
 
-* Id (via IEntityId), ProjectId (via IEntityProjectId)
-* Filename / FileType / ContentType
-* ServiceId : int
-* ClassId : int?
-* Status : DocumentStatus
-* Usage : UsageType
-* DTC / DTM : DateTime
-* DocumentId : Guid?
-* ExternalId : string
-* MasterId : int?
-* Result / ResultId / ResultIndex
-* Comment : string
-* Availability : Availability?
-* Class : IClasses, Project : IProject
+* Id : `int`
+* ProjectId : `int`
+* Filename / FileType / ContentType : `string`
+* ServiceId : `int`
+* ClassId : `int?`
+* Status : `DocumentStatus`
+* Usage : `UsageType`
+* DTC / DTM : `DateTime`
+* DocumentId : `Guid?`
+* ExternalId : `string`
+* MasterId : `int?`
+* Result / ResultId / ResultIndex : `string`
+* Comment : `string`
+* Availability : `Availability?`
+* Class : `IClasses`
+* Project : `IProject`
 
 Usage:
 
@@ -238,22 +253,24 @@ Tip:
 
 #### IDocumentData
 
-Signature: IDocumentData
+Signature:  
+`IDocumentData`
 
-Description: Represents a data blob or metadata entry tied to a document (e.g., page image, OCR text).
+Description:  
+Represents a data blob or metadata entry tied to a document (e.g., page image, OCR text).
 
 Key members (commonly used):
 
-* Type : DocumentDataType?
-* Data : byte\[]
-* Preview : byte\[]
-* Text : string
-* Info : string
-* ContentType : string
-* Index : int?
-* Width / Height / Resolution : double?
-* ResultId : string
-* Availability : Availability?
+* Type : `DocumentDataType?`
+* Data : `byte[]`
+* Preview : `byte[]`
+* Text : `string`
+* Info : `string`
+* ContentType : `string`
+* Index : i`nt?`
+* Width / Height / Resolution : `double?`
+* ResultId : `string`
+* Availability : `Availability?`
 
 Usage:
 
@@ -274,24 +291,26 @@ Tip:
 
 #### IDocumentParameter
 
-Signature: IDocumentParameter
+Signature:  
+`IDocumentParameter`
 
-Description: Represents a field/label value on a document (supports parent-child and verifications).
+Description:  
+Represents a field/label value on a document (supports parent-child and verifications).
 
 Key members (commonly used):
 
-* ParamDefId : int?
-* ParentId : int?
-* SourceId : int?
-* Value : string
-* Data : byte\[]
-* Index : int?
-* ColIndex/ColSpan/RowIndex/RowSpan : int?
-* Availability : Availability?
-* ParamDef : IParameterDef
-* Children : List
-* Verifications : List
-* LastVerification : IVerification
+* ParamDefId : `int?`
+* ParentId : `int?`
+* SourceId : `int?`
+* Value : `string`
+* Data : `byte[]`
+* Index : `int?`
+* ColIndex/ColSpan/RowIndex/RowSpan : `int?`
+* Availability : `Availability?`
+* ParamDef : `IParameterDef`
+* Children : `List`
+* Verifications : `List`
+* LastVerification : `IVerification`
 
 Usage:
 
@@ -312,32 +331,35 @@ Tip:
 
 #### IParameterDef
 
-Signature: IParameterDef
+Signature:  
+`IParameterDef`
 
-Description: Represents a parameter (field/label/setting) definition and metadata.
+Description: 
+Represents a parameter (field/label/setting) definition and metadata.
 
 Key members (commonly used):
 
-* ServiceTypeId : int
-* ServiceId : int?
-* ClassId : int?
-* ParentId : int?
-* Label : string
-* Description : string
-* DTC / DTM : DateTime?
-* Tags : string
-* Status : ParameterDefinitionStatus
-* Category : ParameterDefinitionCategory?
-* Grouping : GroupingType?
-* ValueType : DAL.ValueType
-* ValueTypeName : string
-* DefaultValue : string
-* Required : RequiredOption
-* Index : int?
-* Info : string
-* Reference : string
-* Availability : Availability?
-* Parent : IParameterDef
+* Id : `int`
+* ServiceTypeId : `int`
+* ServiceId : `int?`
+* ClassId : `int?`
+* ParentId : `int?`
+* Label : `string`
+* Description : `string`
+* DTC / DTM : `DateTime?`
+* Tags : `string`
+* Status : `ParameterDefinitionStatus`
+* Category : `ParameterDefinitionCategory?`
+* Grouping : `GroupingType?`
+* ValueType : `DAL.ValueType`
+* ValueTypeName : `string`
+* DefaultValue : `string`
+* Required : R`equiredOption`
+* Index : `int?`
+* Info : `string`
+* Reference : `string`
+* Availability : `Availability?`
+* Parent : `IParameterDef`
 
 Usage:
 
@@ -357,17 +379,20 @@ Tip:
 
 #### IProject
 
-Signature: IProject
+Signature:  
+`IProject`
 
-Description: Represents a project/agent context.
+Description:  
+Represents a project/agent context.
 
 Key members (commonly used):
 
-* Id/Name via IEntityId and IEntityIdName
-* UserId : string
-* Status : ProjectStatus
-* Description / Comment : string
-* dtc / dtm : DateTime
+* Id : `int`
+* Name : `string`
+* UserId : `string`
+* Status : `ProjectStatus`
+* Description / Comment : `string`
+* dtc / dtm : `DateTime`
 
 Usage:
 
@@ -387,28 +412,31 @@ Tip:
 
 #### IVerification
 
-Signature: IVerification
+Signature:  
+`IVerification`
 
-Description: Represents a verification entry associated with a document parameter.
+Description:  
+Represents a verification entry associated with a document parameter.
 
 Key members (commonly used):
 
-* ParameterId : int
-* UserId : string
-* Value : string
-* DT : DateTime
-* Confidence : float?
-* SymbolsConfidence : string
-* Type : VerificationType
-* Status : VerificationStatus
-* Result : string
-* Info : string
-* Box : string
-* Data : byte\[]
-* ServiceId / ServiceDocId : int?
-* Provider : string
-* SettingId / WorkItem / TransactionId : int?
-* ReferenceDocId / ReferenceParamId / ReferenceDefId : int?
+* Id : `int`
+* ParameterId : `int`
+* UserId : `string`
+* Value : `string`
+* DT : `DateTime`
+* Confidence : `float?`
+* SymbolsConfidence : `string`
+* Type : `VerificationType`
+* Status : `VerificationStatus`
+* Result : `string`
+* Info : `string`
+* Box : `string`
+* Data : `byte[]`
+* ServiceId / ServiceDocId : `int?`
+* Provider : `string`
+* SettingId / WorkItem / TransactionId : `int?`
+* ReferenceDocId / ReferenceParamId / ReferenceDefId : `int?`
 
 Usage:
 
@@ -430,24 +458,27 @@ Tip:
 
 #### IWorkItem
 
-Signature: IWorkItem
+Signature:  
+`IWorkItem`
 
-Description: Represents a Human-in-the-Loop task to be actioned.
+Description:  
+Represents a Human-in-the-Loop task to be actioned.
 
 Key members (commonly used):
 
-* ProjectId : int?
-* UserId : string
-* ServiceId / DocumentId / ShredId / DefId / VerificationId / TransactionId : int?
-* WorkItemId : int? (parent)
-* Type : WorkItemType
-* Action : WorkItemAction
-* Status : WorkItemStatus
-* Method : WorkItemMethod?
-* Info / Comment : string
-* DTC / DTM / DueDate : DateTime
-* Open / Closed : DateTime?
-* Duration : TimeSpan?
+* Id : `int`
+* ProjectId : `int?`
+* UserId : `string`
+* ServiceId / DocumentId / ShredId / DefId / VerificationId / TransactionId : `int?`
+* WorkItemId : `int?` (parent)
+* Type : `WorkItemType`
+* Action : `WorkItemAction`
+* Status : `WorkItemStatus`
+* Method : `WorkItemMethod?`
+* Info / Comment : `string`
+* DTC / DTM / DueDate : `DateTime`
+* Open / Closed : `DateTime?`
+* Duration : `TimeSpan?`
 
 Usage:
 
@@ -477,6 +508,6 @@ Tip:
 Important note and request for confirmation
 
 * You mentioned IProjectUser no longer exists. Thank you for the heads-up. Several earlier method signatures (e.g., CreateWorkItem and PickRandom) referenced IProjectUser. What is the correct replacement type you want documented for assignee/selection—should we use a userId string, IApplicationUser, or a new interface (e.g., IProjectMember)? Once you confirm, I will:
-  * Update those method pages to the correct signatures and usage.
-  * Adjust this data types page accordingly (removing IProjectUser completely or adding the new type).
+    * Update those method pages to the correct signatures and usage.
+    * Adjust this data types page accordingly (removing IProjectUser completely or adding the new type).
 

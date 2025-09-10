@@ -17,8 +17,8 @@ The following scrapers are available in AIForged:
 
 | Scraper Name     | Best Suited For                                                     | Quick Link           |
 | ---------------- | ------------------------------------------------------------------- | -------------------- |
-| Email Scraper    | Fetch and import documents from any designated mailbox              | email-scraper.md     |
-| OneDrive Scraper | Integrate with Microsoft Graph to fetch files from OneDrive folders | onedrive-scraping.md |
+| Email Scraper    | Fetch and import documents from any designated mailbox              | [email-scraper](email-scraper.md) |
+| OneDrive Scraper | Integrate with Microsoft Graph to fetch files from OneDrive folders | [onedrive-scraping](onedrive-scraping.md) |
 
 ***
 

@@ -4,7 +4,7 @@
 
 The WorkItemAction enum indicates the specific action a Human-in-the-Loop (HITL) user should take on an assigned work item. Use it to route, display, and measure the nature of HITL tasks across your workflows.
 
-Underlying type: int
+Underlying type: `int`
 
 ***
 
@@ -12,9 +12,10 @@ Underlying type: int
 
 #### None
 
-Value: 0
+Value: `0`
 
-Description: No action specified.
+Description:  
+No action specified.
 
 When to use:
 
@@ -24,9 +25,10 @@ When to use:
 
 #### Verify
 
-Value: 1
+Value: `1`
 
-Description: Review and confirm/correct extracted values; mark verification outcomes accordingly.
+Description:  
+Review and confirm/correct extracted values; mark verification outcomes accordingly.
 
 When to use:
 
@@ -36,9 +38,10 @@ When to use:
 
 #### Investigate
 
-Value: 2
+Value: `2`
 
-Description: Perform a deeper investigation into issues, inconsistencies, or missing data.
+Description:  
+Perform a deeper investigation into issues, inconsistencies, or missing data.
 
 When to use:
 
@@ -48,9 +51,10 @@ When to use:
 
 #### Forensic
 
-Value: 3
+Value: `3`
 
-Description: Conduct an in-depth analysis to assess anomalies, tampering, or data integrity concerns.
+Description:  
+Conduct an in-depth analysis to assess anomalies, tampering, or data integrity concerns.
 
 When to use:
 
@@ -60,9 +64,10 @@ When to use:
 
 #### Fraudulant
 
-Value: 4
+Value: `4`
 
-Description: Handle tasks related to suspected fraud: review, escalate, and record outcomes.
+Description:  
+Handle tasks related to suspected fraud: review, escalate, and record outcomes.
 
 When to use:
 
@@ -72,9 +77,10 @@ When to use:
 
 #### Classify
 
-Value: 5
+Value: `5`
 
-Description: Determine or correct the document’s class/category.
+Description:  
+Determine or correct the document’s class/category.
 
 When to use:
 
@@ -84,9 +90,10 @@ When to use:
 
 #### QA
 
-Value: 6
+Value: `6`
 
-Description: Quality assurance review to validate outputs against policies, guidelines, or samples.
+Description:  
+Quality assurance review to validate outputs against policies, guidelines, or samples.
 
 When to use:
 
@@ -96,9 +103,10 @@ When to use:
 
 #### Reprocess
 
-Value: 10
+Value: `10`
 
-Description: Trigger or coordinate a reprocessing step (e.g., after configuration tweaks or corrections).
+Description:  
+Trigger or coordinate a reprocessing step (e.g., after configuration tweaks or corrections).
 
 When to use:
 
@@ -108,8 +116,7 @@ When to use:
 
 ### Best Practices
 
-* Align your routing rules with action semantics (e.g., Verify for standard checks, Investigate for complex issues).
-* Use action-specific SLAs and grace periods to prioritize urgent items (e.g., Fraudulant, Forensic).
+* Align your routing rules with action semantics (e.g., `Verify` for standard checks, `Investigate` for complex issues).
+* Use action-specific SLAs and grace periods to prioritize urgent items (e.g., `Fraudulant`, Fo`rensic).
 * Track outcomes and durations by action type to optimize staffing and training.
-* Pair WorkItemAction with WorkItemStatus and VerificationType/Status for clear, auditable trails.
-
+* Pair `WorkItemAction` with `WorkItemStatus` and `VerificationType`/`Status` for clear, auditable trails.

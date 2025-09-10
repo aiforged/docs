@@ -52,19 +52,19 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.  
-   ![](../../assets/image%20%28288%29.png)
+    - ![](../../assets/image%20%28288%29.png)
 3. Choose **AIForged Image Processor**.
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
 2. Expand the Utility Service Types group.&#x20;
 3. Drag the Image Processor utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.&#x20;
 4. Save.
 
 !!! info
@@ -91,10 +91,10 @@ The following image pre-processing operations are available:
 
 ### Example: Watermark Removal
 
-Consider the document below, with a "DRAFT" watermark.\
+Consider the document below, with a "DRAFT" watermark.
 ![](../../assets/image%20%28289%29.png)
 
-The AIForged Image Processor can be configured to remove the watermark and whiten the background:\
+The AIForged Image Processor can be configured to remove the watermark and whiten the background:
 ![](../../assets/image%20%28290%29.png)
 
 ***
@@ -131,12 +131,12 @@ Key configuration options (may vary by environment):
 ### Troubleshooting Tips
 
 * **OCR accuracy not improved?**
-  * Experiment with different combinations (e.g., try Greyscale + Whiten Background + Remove Garbage).
-  * Verify that desired content hasn’t been removed by over-aggressive cleaning.
+    * Experiment with different combinations (e.g., try Greyscale + Whiten Background + Remove Garbage).
+    * Verify that desired content hasn’t been removed by over-aggressive cleaning.
 * **Background still not white enough?**
-  * Adjust lower/upper greyscale bounds in the Whiten Background setting.
+    * Adjust lower/upper greyscale bounds in the Whiten Background setting.
 * **Key information missing after processing?**
-  * Check if Remove Comments, Whiten Background, or Remove Color Marks is too aggressive for your use case.
+    * Check if Remove Comments, Whiten Background, or Remove Color Marks is too aggressive for your use case.
 
 ***
 
@@ -153,15 +153,10 @@ Key configuration options (may vary by environment):
 ### FAQ
 
 * **Can I apply multiple operations at once?**
-  Yes—combine as many as needed for your use case. Test your chain on sample docs to avoid removing desired content.
+    - Yes—combine as many as needed for your use case. Test your chain on sample docs to avoid removing desired content.
 * **How do I know which settings to use?**
-  Start with the most obvious issue (e.g., watermark, skew), test, and then incrementally add more processing.
+    - Start with the most obvious issue (e.g., watermark, skew), test, and then incrementally add more processing.
 * **Will this work on color scans?**
-  Yes—most operations (e.g., Greyscale, Remove Color Marks) are designed for both color and black-and-white scans.
+    - Yes—most operations (e.g., Greyscale, Remove Color Marks) are designed for both color and black-and-white scans.
 * **How do I revert if the output is too aggressive?**
-  Adjust or disable one operation at a time and re-test with your sample document.
-
-
-
-
-
+    - Adjust or disable one operation at a time and re-test with your sample document.

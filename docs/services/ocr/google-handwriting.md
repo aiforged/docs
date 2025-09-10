@@ -48,28 +48,28 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Google Handwriting service to your agent:
 
-1. **Open the Agent View**
-   Navigate to the agent where you want to add the service.
-2. **Add the Google Handwriting Service**
-   Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
+1. **Open the Agent View:**
+    Navigate to the agent where you want to add the service.
+2. **Add the Google Handwriting Service:**
+    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
 
-3. **Select Service Type**
-   Choose **Google Handwriting Service** from the available service types.
-   ![](../../assets/image%20%28234%29.png)
+3. **Select Service Type:**
+    Choose **Google Handwriting Service** from the available service types.
+    ![](../../assets/image%20%28234%29.png)
 4. **Configure the Service Wizard**
-   1. Open the Service Configuration Wizard.
-      1.
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%28255%29.png)
+    - Or
+    - ![](../../assets/image%20%28251%29.png)
 
-          ![](../../assets/image%20%28255%29.png)
-      2. ![](../../assets/image%20%28251%29.png)
+    - **Step 1: General Settings:**
+        Configure the service name, description, and core settings.
+        Default settings are sufficient for most use cases.
 
-   2. **Step 1: General Settings**
-      Configure the service name, description, and core settings.
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-      ![](../../assets/image%20%28240%29.png)
-   3. **Step 2: Verification**
-      Typically no verification is required for handwriting extraction unless you plan a human-in-the-loop review.
+        - ![](../../assets/image%20%28240%29.png)
 
+    - **Step 2: Verification:**
+        Typically no verification is required for handwriting extraction unless you plan a human-in-the-loop review.
 
 ***
 
@@ -118,15 +118,15 @@ Most users can proceed with default settings. Advanced configuration is availabl
 
 To upload and process documents using the Google Handwriting service:
 
-1. **Open Service**
-   When you open the Google Handwriting service, you will be presented with the documents currently queued or processed in the Inbox.
-2. **Upload Documents**
-   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
-   ![](../../assets/image%20%28216%29.png)
-3. **Select Category (Optional)**
-   If you know the category for the document, select it. Otherwise, leave as **No selection**.
-4. **Process Documents**
-   After uploading, select the documents to process and click **Process Checked**.
+1. **Open Service:**
+      When you open the Google Handwriting service, you will be presented with the documents currently queued or processed in the Inbox.
+2. **Upload Documents:**
+      Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
+      ![](../../assets/image%20%28216%29.png)
+3. **Select Category (Optional):**
+      If you know the category for the document, select it. Otherwise, leave as **No selection**.
+4. **Process Documents:**
+      After uploading, select the documents to process and click **Process Checked**.
 
 !!! info
     **Tip:** For new services, process a small batch first to verify the results before scaling up.
@@ -144,17 +144,17 @@ To upload and process documents using the Google Handwriting service:
 ### Troubleshooting Tips
 
 * **Handwriting not recognized or incomplete?**
-  * Improve scan quality (aim for 300 DPI), reduce noise, and deskew images.
-  * Provide a Language hint for non-English handwriting.
-  * Test with clearer samples to establish baseline accuracy.
+    * Improve scan quality (aim for 300 DPI), reduce noise, and deskew images.
+    * Provide a Language hint for non-English handwriting.
+    * Test with clearer samples to establish baseline accuracy.
 * **Unexpected characters or word breaks?**
-  * Highly stylized or cursive scripts can cause tokenization issues; try image pre-processing (contrast/denoise).
-  * Consider segmenting dense pages into smaller regions before processing.
+    * Highly stylized or cursive scripts can cause tokenization issues; try image pre-processing (contrast/denoise).
+    * Consider segmenting dense pages into smaller regions before processing.
 * **Slow performance on large files?**
-  * Split large PDFs/TIFFs into smaller chunks to improve throughput and responsiveness.
+    * Split large PDFs/TIFFs into smaller chunks to improve throughput and responsiveness.
 * **Upload or processing errors?**
-  * Re-upload a clean file to rule out corruption.
-  * Unlock password-protected PDFs via Custom Code pre-processing.
+    * Re-upload a clean file to rule out corruption.
+    * Unlock password-protected PDFs via Custom Code pre-processing.
 
 ***
 
@@ -171,18 +171,12 @@ To upload and process documents using the Google Handwriting service:
 ### FAQ
 
 * **Does this preserve layout?**
-  * AIForged stores structured elements (Areas, Paragraphs, Words) for localization and provides a consolidated Result text for downstream use.
+    * AIForged stores structured elements (Areas, Paragraphs, Words) for localization and provides a consolidated Result text for downstream use.
 * **Can I process multi-page PDFs with handwriting?**
-  * Yes. For very large documents, split by page ranges using the AIForged Document Splitter to improve responsiveness.
+    * Yes. For very large documents, split by page ranges using the AIForged Document Splitter to improve responsiveness.
 * **Do I need Google Cloud credentials or regional setup?**
-  * No. AIForged provides a unified access layer and manages provider accounts and regions on your behalf.
+    * No. AIForged provides a unified access layer and manages provider accounts and regions on your behalf.
 * **How do I handle password-protected PDFs?**
-  * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
+    * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * **What languages are supported?**
-  * Many languages are supported; accuracy varies by script and image quality. Provide a Language hint when possible and test with samples.
-
-
-
-
-
-
+    * Many languages are supported; accuracy varies by script and image quality. Provide a Language hint when possible and test with samples.

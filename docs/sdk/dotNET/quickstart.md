@@ -1,4 +1,4 @@
-# .NET SDK — Quick Start
+# 🚀 .NET SDK — Quick Start
 
 Get your first end-to-end flow running in minutes:
 

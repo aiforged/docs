@@ -744,9 +744,3 @@ await paramDefs.SaveSettingAsync("user-123", setting);
 
 !!! success "Verification step"
     After saving, read the latest with GetLastSettingAsync and inspect the Data payload to confirm the expected structure and values.
-
-## Open Questions
-
-- Schema details for these referenced types were not provided: MapsEngine, AddressField, ImageComparisonOptions, FingerprintOptions, SignatureOptions, ObjectDetectionOptions, BoundedBox.  
-- Preferred mechanism to indicate the concrete BaseOption-derived type in Data for round-trip deserialization.  
-- Any server-side constraints linking ParameterDefViewModel.ValueType to specific BaseOption-derived types.

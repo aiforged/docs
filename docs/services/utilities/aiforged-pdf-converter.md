@@ -50,19 +50,19 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.
-   ![](../../assets/image%20%28288%29.png)&#x20;
+    - ![](../../assets/image%20%28288%29.png)
 3. Choose the utility (e.g., AIForged PDF Converter).
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
-2. Expand the Utility Service Types group.&#x20;
+2. Expand the Utility Service Types group.
 3. Drag the utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.
 4. Save.
 
 !!! info
@@ -74,28 +74,28 @@ Utility services are not configured as standalone services. Attach them to a par
 
 Most users can keep defaults. Common settings include:
 
-* Enabled
-  Turn the service on or off.
-* Execute On Trigger
-  Run automatically on relevant events (e.g., document upload/update) when attached to a parent service.
-* Execute Before Process / Execute After Process
-  Control whether the conversion runs as a pre‑processor or post‑processor relative to the parent service.
-* Document Processed Status
-  Status applied to the item after conversion (e.g., Processed).
-* Force PDF Image
-  Flatten PDFs to image‑only pages (removes objects/layers/widgets) for consistent OCR downstream.
-* Merge To PDF
-  Merge multiple images into a single PDF.
-* Page Range (if available)
-  Convert only a subset of pages in very large inputs.
-* Output Quality / DPI (if available)
-  Set the render quality for image‑based PDFs.
-* Archiving Strategy
-  Days before documents are deleted (lifecycle management).
-* Remove Comments
-  Remove human comments/annotations before downstream processing.
-* Password
-  Provide a password (via Custom Code per document) to unlock protected PDFs before conversion.
+* **Enabled:**
+    Turn the service on or off.
+* **Execute On Trigger:**
+    Run automatically on relevant events (e.g., document upload/update) when attached to a parent service.
+* **Execute Before Process / Execute After Process:**
+    Control whether the conversion runs as a pre‑processor or post‑processor relative to the parent service.
+* **Document Processed Status:**
+    Status applied to the item after conversion (e.g., Processed).
+* **Force PDF Image:**
+    Flatten PDFs to image‑only pages (removes objects/layers/widgets) for consistent OCR downstream.
+* **Merge To PDF:**
+    Merge multiple images into a single PDF.
+* **Page Range (if available):**
+    Convert only a subset of pages in very large inputs.
+* **Output Quality / DPI (if available):**
+    Set the render quality for image‑based PDFs.
+* **Archiving Strategy:**
+    Days before documents are deleted (lifecycle management).
+* **Remove Comments:**
+    Remove human comments/annotations before downstream processing.
+* **Password:**
+    Provide a password (via Custom Code per document) to unlock protected PDFs before conversion.
 
 !!! info
     If OCR is required, pair the PDF Converter (pre‑processing) with Digitizer or an OCR service. Use Force PDF Image to standardize tricky PDFs for more reliable OCR.
@@ -112,14 +112,14 @@ Most users can keep defaults. Common settings include:
 
 ### Known Limitations
 
-* Password‑protected PDFs
-  * Cannot be converted unless a password is provided.
-* Interactive content and advanced PDF features
-  * Interactive forms, embedded media, or complex layers may be flattened or lost when Force PDF Image is enabled.
-* Very large or long inputs
-  * High page counts and image‑heavy sources increase processing time; consider page ranges or splitting.
-* Office format conversion (if applicable)
-  * Availability and fidelity may depend on your environment; complex formatting can vary when converted.
+* **Password‑protected PDFs:**
+    * Cannot be converted unless a password is provided.
+* **Interactive content and advanced PDF features:**
+    * Interactive forms, embedded media, or complex layers may be flattened or lost when Force PDF Image is enabled.
+* **Very large or long inputs:**
+    * High page counts and image‑heavy sources increase processing time; consider page ranges or splitting.
+* **Office format conversion (if applicable):**
+    * Availability and fidelity may depend on your environment; complex formatting can vary when converted.
 
 !!! info
     Use the AIForged Custom Code utility as a pre‑processor to set the password per document, so that AIForged can unlock documents before processing.
@@ -132,15 +132,15 @@ Most users can keep defaults. Common settings include:
 ### Troubleshooting Tips
 
 * Output looks blank or missing text
-  * If the original was already an electronic PDF with a text layer, ensure Force PDF Image is set appropriately (on to flatten, off to preserve).
+    * If the original was already an electronic PDF with a text layer, ensure Force PDF Image is set appropriately (on to flatten, off to preserve).
 * Conversion failed on a protected PDF
-  * Provide the password via Custom Code pre‑processing.
+    * Provide the password via Custom Code pre‑processing.
 * Poor image quality after conversion
-  * Increase output DPI/quality (if available) or start from higher‑resolution sources (aim for 300 DPI).
+    * Increase output DPI/quality (if available) or start from higher‑resolution sources (aim for 300 DPI).
 * Long processing times on large files
-  * Convert by page ranges or split the document first, then process in smaller batches.
+    * Convert by page ranges or split the document first, then process in smaller batches.
 * Office files don’t convert as expected
-  * Confirm your environment supports Office conversions; if not, export to PDF before ingestion.
+    * Confirm your environment supports Office conversions; if not, export to PDF before ingestion.
 
 ***
 
@@ -157,16 +157,12 @@ Most users can keep defaults. Common settings include:
 ### FAQ
 
 * Does the PDF Converter add a text layer?
-  * No. It normalizes to PDF. To add a searchable text layer, pair with the AIForged Digitizer or an OCR service.
+    * No. It normalizes to PDF. To add a searchable text layer, pair with the AIForged Digitizer or an OCR service.
 * Can I convert only certain pages?
-  * Yes, if Page Range is available in your environment, target specific pages to save time.
+    * Yes, if Page Range is available in your environment, target specific pages to save time.
 * Will comments and forms be preserved?
-  * If Force PDF Image is enabled, content is flattened to images; interactive elements and comments are not preserved.
+    * If Force PDF Image is enabled, content is flattened to images; interactive elements and comments are not preserved.
 * How do I handle password‑protected PDFs?
-  * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
+    * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * What should I do for extremely large PDFs or TIFFs?
-  * Use the AIForged Document Splitter to chunk by page range for responsiveness and reliability.
-
-
-
-
+    * Use the AIForged Document Splitter to chunk by page range for responsiveness and reliability.

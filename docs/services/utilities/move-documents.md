@@ -49,19 +49,19 @@ Utility services are not configured as standalone services. Attach them to a par
 
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.  
-   ![](../../assets/image%20%28288%29.png)
+    - ![](../../assets/image%20%28288%29.png)
 3. Choose **Move Documents**.
 4. In the utility’s settings, specify when it should run:
-   * Execute Before Process = Pre-processor
-   * Execute After Process = Post-processor
+    * Execute Before Process = Pre-processor
+    * Execute After Process = Post-processor
 
 #### Option B: From Service Flow Configurator
 
 1. Open the parent service’s Service Flow Configurator.
-2. Expand the Utility Service Types group.&#x20;
+2. Expand the Utility Service Types group.
 3. Drag the Move Documents utility onto the parent service:
-   * Drop to the left for Pre-processor.
-   * Drop to the right for Post-processor.&#x20;
+    * Drop to the left for Pre-processor.
+    * Drop to the right for Post-processor.
 4. Save.
 
 !!! info
@@ -137,13 +137,13 @@ The Move Documents utility is highly configurable to fit your workflow needs. Be
 ### Troubleshooting Tips
 
 * **Document not found in source after moving?**
-  * This is expected: Move Documents removes the document from the source after a successful move.
+    * This is expected: Move Documents removes the document from the source after a successful move.
 * **Nothing appears in the target service?**
-  * Check all filters (status, extension, category, pattern) and the target service selection.
+    * Check all filters (status, extension, category, pattern) and the target service selection.
 * **File moved multiple times?**
-  * Enable "Check Before Move" and ensure filters do not overlap.
+    * Enable "Check Before Move" and ensure filters do not overlap.
 * **Permissions or access errors?**
-  * Ensure your user role has permission for both source and target services.
+    * Ensure your user role has permission for both source and target services.
 
 ***
 
@@ -160,10 +160,10 @@ The Move Documents utility is highly configurable to fit your workflow needs. Be
 
 1. Attach Move Documents as a Utility to a parent service (Pre- or Post-Processor).
 2. Configure:
-   * Target Service (destination)
-   * Source Extension and/or Pattern
-   * Optional: Category, Status, and usage filters
-   * Document Processed Status
+    * Target Service (destination)
+    * Source Extension and/or Pattern
+    * Optional: Category, Status, and usage filters
+    * Document Processed Status
 3. Save and run a small test batch.
 4. Review the target service to confirm documents were moved and are no longer present in the source.
 
@@ -175,14 +175,10 @@ The Move Documents utility is highly configurable to fit your workflow needs. Be
 ### FAQ
 
 * **Does Move Documents make a copy?**
-  * No. The document is removed from the source after moving to the destination.
+    * No. The document is removed from the source after moving to the destination.
 * **Can I undo a move?**
-  * No. Once a document is moved, it is permanently removed from the source.
+    * No. Once a document is moved, it is permanently removed from the source.
 * **Can I move only certain file types?**
-  * Yes. Use Source Extension and Source Pattern filters.
+    * Yes. Use Source Extension and Source Pattern filters.
 * **How do I verify moves?**
-  * Check the destination service’s Inbox/Outbox; the document will not be in the source.
-
-
-
-
+    * Check the destination service’s Inbox/Outbox; the document will not be in the source.

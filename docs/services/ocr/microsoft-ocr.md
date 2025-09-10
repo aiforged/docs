@@ -49,24 +49,26 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Microsoft OCR Service to your agent:
 
-1. **Open the Agent View**
+1. **Open the Agent View:**
    Navigate to the agent where you want to add the service.
-2. **Add the Microsoft OCR Service**
+2. **Add the Microsoft OCR Service:**
    Click the **Add Service** ![](../../assets/image%20%28129%29.png) button.
-3. **Select Service Type**
+3. **Select Service Type:**
    Choose **Microsoft OCR Service** from the available service types.
    ![](../../assets/image%20%28256%29.png)
 4. **Configure the Service Wizard**
-   1. Open the Service Configuration Wizard.
-      a. <figure><img src="../../assets/image%20%28258%29.png" alt=""><figcaption></figcaption></figure>
-      b. <figure><img src="../../assets/image%20%28262%29.png" alt=""><figcaption></figcaption></figure>
-   2. **Step 1: General Settings**
-      Configure core OCR settings such as service name and description.
-      &#xNAN;_&#x44;efault settings are sufficient for most use cases._
-      ![](../../assets/image%20%28263%29.png)
-   3. **Step 2: Verification**
-      Verification is typically not required for plain text OCR unless paired with downstream validation.
+    - Open the Service Configuration Wizard.
+    - ![](../../assets/image%20%28258%29.png)
+    - Or
+    - ![](../../assets/image%20%28262%29.png)
+    * **Step 1: General Settings:**
+        Configure core OCR settings such as service name and description.
+        Default settings are sufficient for most use cases.
 
+        - ![](../../assets/image%20%28263%29.png)
+
+    * **Step 2: Verification:**
+        Verification is typically not required for plain text OCR unless paired with downstream validation.
 
 ***
 
@@ -99,17 +101,17 @@ Most users can proceed with default settings. Advanced configuration is availabl
 ### Known Limitations
 
 * PDF/TIFF handling
-  * Very large or long PDF/TIFF files may be processed asynchronously by the underlying provider and can take longer.
-  * Password‑protected PDFs cannot be processed directly.
+    * Very large or long PDF/TIFF files may be processed asynchronously by the underlying provider and can take longer.
+    * Password‑protected PDFs cannot be processed directly.
 * Image constraints
-  * Low-resolution, skewed, or noisy images reduce OCR accuracy.
-  * Extremely large image dimensions can slow processing without improving quality.
+    * Low-resolution, skewed, or noisy images reduce OCR accuracy.
+    * Extremely large image dimensions can slow processing without improving quality.
 * Languages and handwriting
-  * Printed text is supported for many languages.
-  * Handwriting support is available but accuracy varies by script and image quality; test representative samples.
-  * Mixed multi-language pages may have variable results.
+    * Printed text is supported for many languages.
+    * Handwriting support is available but accuracy varies by script and image quality; test representative samples.
+    * Mixed multi-language pages may have variable results.
 * Layout
-  * This service returns raw text in the Result property (no preserved layout). Enable IsVerification to store lines and words when you need visual verification.
+    * This service returns raw text in the Result property (no preserved layout). Enable IsVerification to store lines and words when you need visual verification.
 
 !!! info
     Tip: Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
@@ -124,14 +126,14 @@ Most users can proceed with default settings. Advanced configuration is availabl
 To upload and process documents using the Microsoft OCR Service:
 
 1. **Open Service**
-   When you open the Microsoft OCR Service, you will be presented with the documents currently queued or processed in the **Inbox**.
+     When you open the Microsoft OCR Service, you will be presented with the documents currently queued or processed in the **Inbox**.
 2. **Upload Documents**
-   Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
-   ![](../../assets/image%20%28264%29.png)
+     Click the **Upload** ![](../../assets/image%20%2813%29%20%281%29.png) button or drag and drop files over the document grid.
+     ![](../../assets/image%20%28264%29.png)
 3. **Select Category (Optional)**
-   If you know the category for the document, select it. Otherwise, select **No category**.
+     If you know the category for the document, select it. Otherwise, select **No category**.
 4. **Process Documents**
-   After uploading, select the documents to process and click **Process Checked**.
+     After uploading, select the documents to process and click **Process Checked**.
 
 !!! info
     Tip: For new services, process a small batch first to verify OCR accuracy before scaling up.
@@ -141,7 +143,7 @@ To upload and process documents using the Microsoft OCR Service:
 ### View Processed Documents
 
 * Use the usage filter to select **Outbox** in the Microsoft OCR Service.
-  ![](../../assets/image%20%2851%29.png)
+    ![](../../assets/image%20%2851%29.png)
 * Open any processed document to view the extracted text in the **Result** property.
 
 ***
@@ -149,19 +151,19 @@ To upload and process documents using the Microsoft OCR Service:
 ### Troubleshooting Tips
 
 * **Text Missing or Incorrect?**
-  * Check scan quality and resolution (aim for 300 DPI), deskew images, and reduce noise.
-  * Set the Language hint to match the document’s primary language.
-  * Ensure the file type is supported (PDF, JPEG, PNG, TIFF).
+    * Check scan quality and resolution (aim for 300 DPI), deskew images, and reduce noise.
+    * Set the Language hint to match the document’s primary language.
+    * Ensure the file type is supported (PDF, JPEG, PNG, TIFF).
 * **Unexpected Characters or Symbols?**
-  * Complex fonts or artifacts may confuse OCR. Increase contrast and remove marks/annotations where possible.
-  * Consider using the AIForged PDF Converter to normalize tricky inputs.
+    * Complex fonts or artifacts may confuse OCR. Increase contrast and remove marks/annotations where possible.
+    * Consider using the AIForged PDF Converter to normalize tricky inputs.
 * **Slow Performance?**
-  * Large files or big batches may take longer—process smaller sets where possible.
-  * Split very large PDFs/TIFFs into page ranges with the AIForged Document Splitter.
+    * Large files or big batches may take longer—process smaller sets where possible.
+    * Split very large PDFs/TIFFs into page ranges with the AIForged Document Splitter.
 * **Upload or Processing Errors?**
-  * Re-upload a clean copy to rule out file corruption.
-  * If the PDF is password protected, use Custom Code pre-processing to provide the password.
-  * Review service settings or contact support if errors persist.
+    * Re-upload a clean copy to rule out file corruption.
+    * If the PDF is password protected, use Custom Code pre-processing to provide the password.
+    * Review service settings or contact support if errors persist.
 
 ***
 
@@ -180,13 +182,13 @@ To upload and process documents using the Microsoft OCR Service:
 Get results in minutes:
 
 1. Add the service
-   Open your agent, click **Add Service**, and select **Microsoft OCR Service**.
+    Open your agent, click **Add Service**, and select **Microsoft OCR Service**.
 2. Upload documents
-   Click **Upload** or drag and drop files onto the grid.
+    Click **Upload** or drag and drop files onto the grid.
 3. Process
-   Select the uploaded documents and click **Process Checked**.
+    Select the uploaded documents and click **Process Checked**.
 4. Review
-   Switch the usage filter to **Outbox** and open a processed document to view text in the Result property.
+    Switch the usage filter to **Outbox** and open a processed document to view text in the Result property.
 
 !!! info
     Tip: Begin with a small, representative batch to validate output and tune settings.
@@ -196,17 +198,12 @@ Get results in minutes:
 ### FAQ
 
 * **Does this preserve layout?**
-  * No. The service returns plain text in the Result property. Enable IsVerification to store lines and words for visual review. For structured extraction, use Microsoft Document Intelligence.
+    * No. The service returns plain text in the Result property. Enable IsVerification to store lines and words for visual review. For structured extraction, use Microsoft Document Intelligence.
 * **Can I process handwriting?**
-  * Handwriting is supported but accuracy varies by script and image quality. Test representative samples first.
+    * Handwriting is supported but accuracy varies by script and image quality. Test representative samples first.
 * **Do I need Microsoft cloud credentials or regional setup?**
-  * No. AIForged provides a unified access layer and manages provider accounts and regional routing on your behalf.
+    * No. AIForged provides a unified access layer and manages provider accounts and regional routing on your behalf.
 * **How do I process password‑protected PDFs?**
-  * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
+    * Use the AIForged Custom Code utility to set the password per document so AIForged can unlock files before processing.
 * **What if my PDFs are very large?**
-  * Split large PDFs/TIFFs by page range with the AIForged Document Splitter to keep processing responsive and avoid provider limits.
-
-
-
-
-
+    * Split large PDFs/TIFFs by page range with the AIForged Document Splitter to keep processing responsive and avoid provider limits.
