@@ -24,14 +24,14 @@ Members must belong to one of the following AIForged user group roles to add and
 
 ### Supported Platforms
 
-- **Gmail**
-    - Connect to Gmail accounts using IMAP with app‑specific passwords.
+- **Gmail**  
+    Connect to Gmail accounts using IMAP with app‑specific passwords.
 
-- **Microsoft 365**
-    - Authenticate using prompt‑less device code flow for secure mailbox integration.
+- **Microsoft 365**  
+    Authenticate using prompt‑less device code flow for secure mailbox integration.
 
-- **Other Email Providers**
-    - Any IMAP‑capable provider can be used with the correct settings.
+- **Other Email Providers**  
+    Any IMAP‑capable provider can be used with the correct settings.
 
 ***
 
@@ -47,14 +47,12 @@ Members must belong to one of the following AIForged user group roles to add and
 
 Follow these steps to add and configure the Email Scraper in your agent:
 
-1. **Open the Agent View**
-    - Navigate to the agent where you want to add the service.
-2. **Add the Email Scraper**
-    - Click the **Add Service** ![](../../assets/image%20%2842%29.png) button and choose **Email Scraper** from the available service types.
-
-    ![](../../assets/img-2025-08-15-11-17-20.png)
-
-3. **Configure the Service Wizard**
+1. **Open the Agent View**  
+    Navigate to the agent where you want to add the service.
+2. **Add the Email Scraper**  
+    Click the **Add Service** ![](../../assets/image%20%2842%29.png) button and choose **Email Scraper** from the available service types.  
+    ![](../../assets/img-2025-08-15-11-17-20.png)  
+3. **Configure the Service Wizard**  
     - Open the Service Configuration Wizard.
     - Step 1: General Settings
         - Configure the settings as required. Continue reading to determine the correct configuration for your mailbox.
@@ -197,14 +195,14 @@ Turn on Auto Execution to run the scraper at scheduled intervals. Adjust the int
 
 Get results in minutes:
 
-1. Add the service
-    - Open your agent, click **Add Service**, and select **Email Scraper**.
-2. Configure provider settings
-    - Choose Microsoft 365 (prompt‑less device code flow), Gmail, or Other IMAP and enter the required fields.
-3. Enable Auto Execution
-    - Turn on Auto Execution and set a reasonable interval.
-4. Review imports
-    - Open the Email Scraper service grid to verify that emails are retrieved and attachments are extracted.
+1. Add the service  
+    Open your agent, click **Add Service**, and select **Email Scraper**.
+2. Configure provider settings  
+    Choose Microsoft 365 (prompt‑less device code flow), Gmail, or Other IMAP and enter the required fields.
+3. Enable Auto Execution  
+    Turn on Auto Execution and set a reasonable interval.
+4. Review imports  
+    Open the Email Scraper service grid to verify that emails are retrieved and attachments are extracted.
 
 !!! info
     Tip: Start with a single mailbox and folder, confirm correct operation, then expand to additional folders or scrapers.
@@ -213,18 +211,13 @@ Get results in minutes:
 
 ### FAQ
 
-* Do I need to store passwords?
-    * For Microsoft 365 with prompt‑less device code flow, no passwords are stored. For Gmail and other providers, use app‑specific or provider‑approved credentials.
-* Can I scrape shared mailboxes in Microsoft 365?
-    * Yes, provided the configured account has permission to access the shared mailbox and folders.
-* How do I prevent duplicate processing?
-    * Set a Processed Folder and ensure the scraper can move messages after processing.
-* Are attachments always extracted?
-    * Standard attachments are extracted automatically. Extremely large or unusual MIME formats may require a test or an alternative intake path.
-* Can I run multiple scrapers in one agent?
-    * Yes. Use separate scrapers for different mailboxes or folders to keep workflows organized and scalable.
-
-
-
-
-
+* **Do I need to store passwords?**  
+For Microsoft 365 with prompt‑less device code flow, no passwords are stored. For Gmail and other providers, use app‑specific or provider‑approved credentials.
+* **Can I scrape shared mailboxes in Microsoft 365?**  
+Yes, provided the configured account has permission to access the shared mailbox and folders.
+* **How do I prevent duplicate processing?**  
+Set a Processed Folder and ensure the scraper can move messages after processing.
+* **Are attachments always extracted?**  
+Standard attachments are extracted automatically. Extremely large or unusual MIME formats may require a test or an alternative intake path.
+* **Can I run multiple scrapers in one agent?**  
+Yes. Use separate scrapers for different mailboxes or folders to keep workflows organized and scalable.

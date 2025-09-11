@@ -33,27 +33,27 @@ The AIForged Classifier is a supervised machine learning service that classifies
 
 Follow these steps to add and configure the AIForged Classifier in your agent:
 
-1. Open the Agent view
-    - Navigate to the agent where you want to add the Service.
-    - ![](../../assets/image%20(4)%20(1)%20(1)%20(1).png)
+1. **Open the Agent view**  
+    Navigate to the agent where you want to add the Service.  
+    ![](../../assets/image%20(4)%20(1)%20(1)%20(1).png)
 
-2. Add the Service
-    - Click Add Service and select AIForged Classifier.
-    - ![](../../assets/image%20(5)%20(1)%20(1)%20(1).png)
+2. **Add the Service**  
+    Click Add Service and select AIForged Classifier.  
+    ![](../../assets/image%20(5)%20(1)%20(1)%20(1).png)
 
-3. Open the Service Wizard
-    - ![](../../assets/image%20%286%29%20%281%29%20%281%29%20%281%29.png)
-    - or
-    - ![](../../assets/img-2025-08-15-12-01-04.png)
-    - Step 1: General
-        - Configure settings related to how your classifier processes documents.
-        - ![](../../assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
-    - Step 2: Categories
-        - Add all business categories (classes) you want the classifier to recognize (e.g., Invoice, Receipt, Statement).
-        - ![](../../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29.png)
-    - Step 3: Training
-        - Upload labeled examples per category (see “Training the classifier”).
-        - ![](../../assets/image%20(11)%20(1)%20(1)%20(1).png)
+3. **Open the Service Wizard**  
+    ![](../../assets/image%20%286%29%20%281%29%20%281%29%20%281%29.png)  
+    **Or**  
+    ![](../../assets/img-2025-08-15-12-01-04.png)  
+    - **Step 1: General**  
+        Configure settings related to how your classifier processes documents.  
+        ![](../../assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
+    - **Step 2: Categories**  
+        Add all business categories (classes) you want the classifier to recognize (e.g., Invoice, Receipt, Statement).  
+        ![](../../assets/image%20%2810%29%20%281%29%20%281%29%20%281%29.png)
+    - **Step 3: Training**  
+        Upload labeled examples per category (see “Training the classifier”).  
+        ![](../../assets/image%20(11)%20(1)%20(1)%20(1).png)
 
 ---
 

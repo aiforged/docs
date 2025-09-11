@@ -47,27 +47,27 @@ The OneDrive Scraper can ingest most common file types stored in OneDrive, inclu
 
 Follow these steps to add and configure the OneDrive Scraper in your agent:
 
-1. Open the Agent view
-    - Navigate to the agent where you want to add the Service.
+1. Open the Agent view  
+    Navigate to the agent where you want to add the Service.
 
-2. Add the OneDrive Scraper
-    - Click Add Service ![](../../assets/image%20(129).png) button and choose OneDrive Scraper.
-    - ![](../../assets/image%20(281).png)
+2. Add the OneDrive Scraper  
+    Click Add Service ![](../../assets/image%20(129).png) button and choose OneDrive Scraper.  
+    ![](../../assets/image%20(281).png)
 
-3. Configure the Service Wizard
-    - The wizard includes:
-        - General
-            - Enable the Service and provide any required authentication parameters.
-            - ![](../../assets/image%20(282).png)
-        - Auto Execution
-            - Set the automatic run schedule and Batch Size (how many items are pulled per cycle).
-            - ![](../../assets/image%20(283).png)
-        - Processing
-            - Choose the Document Processed Status and whether to force PDFs to image-only for downstream OCR.
-            - ![](../../assets/image%20(284).png)
-        - Advanced
-            - Provide Microsoft Graph details (Client Id, Scopes) and target identifiers (e.g., Share Id).
-            - ![](../../assets/image%20(285).png)
+3. Configure the Service Wizard  
+    The wizard includes:  
+        **General**  
+            Enable the Service and provide any required authentication parameters.  
+            ![](../../assets/image%20(282).png)  
+        **Auto Execution**  
+            Set the automatic run schedule and Batch Size (how many items are pulled per cycle).  
+            ![](../../assets/image%20(283).png)  
+        **Processing**  
+            Choose the Document Processed Status and whether to force PDFs to image-only for downstream OCR.  
+            ![](../../assets/image%20(284).png)  
+        **Advanced**  
+            Provide Microsoft Graph details (Client Id, Scopes) and target identifiers (e.g., Share Id).  
+            ![](../../assets/image%20(285).png)  
 
 !!! info
     Default settings are sufficient for most use cases. Only fill the Advanced fields that apply to your folder and authentication setup.
@@ -76,27 +76,27 @@ Follow these steps to add and configure the OneDrive Scraper in your agent:
 
 ## Service configuration settings
 
-- General
-    - Enabled: Turn the Service on or off.
-    - Password: Optional. Used for Service authentication if required by your configuration. Can also be set via Custom Code.
-    - URL: Microsoft Graph endpoint. Default: https://graph.microsoft.com/v1.0
+- **General**  
+    Enabled: Turn the Service on or off.  
+    Password: Optional. Used for Service authentication if required by your configuration. Can also be set via Custom Code.  
+    URL: Microsoft Graph endpoint. Default: https://graph.microsoft.com/v1.0  
 
-- Auto Execution
-    - Batch Size: Number of items to ingest per scheduled cycle.
-    - Execution Interval: How often the scraper runs (minimum 10 minutes).
-    - Auto Execution: Enable to run on schedule.
+- **Auto Execution**  
+    Batch Size: Number of items to ingest per scheduled cycle.  
+    Execution Interval: How often the scraper runs (minimum 10 minutes).  
+    Auto Execution: Enable to run on schedule.  
 
-- Processing
-    - Document Processed Status: The status applied after a file is successfully ingested by the scraper.
-    - Force PDF Image: If enabled, all PDF objects/layers/widgets are removed and page images are used (useful for consistent OCR).
+- **Processing**  
+    Document Processed Status: The status applied after a file is successfully ingested by the scraper.
+    Force PDF Image: If enabled, all PDF objects/layers/widgets are removed and page images are used (useful for consistent OCR).
 
-- Advanced
-    - Archiving Strategy: Days before documents get deleted (lifecycle management).
-    - Remove Comments: Remove human comments from documents before downstream processing.
-    - Client Id: GUID for your Azure app registration’s Client ID (required for Microsoft Graph access).
-    - Scopes: Azure permission scopes for Graph. Example: Files.Read.All.
-    - Identifier: Optional context identifier (e.g., user or drive context) if required by your setup.
-    - Share Id: The OneDrive share ID of the target folder to monitor.
+- **Advanced**  
+    Archiving Strategy: Days before documents get deleted (lifecycle management).  
+    Remove Comments: Remove human comments from documents before downstream processing.  
+    Client Id: GUID for your Azure app registration’s Client ID (required for Microsoft Graph access).  
+    Scopes: Azure permission scopes for Graph. Example: Files.Read.All.  
+    Identifier: Optional context identifier (e.g., user or drive context) if required by your setup.  
+    Share Id: The OneDrive share ID of the target folder to monitor.  
 
 !!! info
     AIForged handles token acquisition for Microsoft Graph using a secure, modern auth flow—no passwords are stored. Provide the Client Id and required scopes; if your organization’s security requires it, you can also use Custom Code to inject additional parameters.
@@ -107,14 +107,14 @@ Follow these steps to add and configure the OneDrive Scraper in your agent:
 
 To begin ingesting files with the OneDrive Scraper:
 
-1. Connect the target folder
-    - In Advanced settings, provide the Microsoft Graph details (Client Id, Scopes) and the target folder via Share Id.
+1. Connect the target folder  
+    In Advanced settings, provide the Microsoft Graph details (Client Id, Scopes) and the target folder via Share Id.
 
-2. Enable Auto Execution
-    - Set your schedule and Batch Size in Auto Execution. The Scraper will run at the configured interval and import new/updated files.
+2. Enable Auto Execution  
+    Set your schedule and Batch Size in Auto Execution. The Scraper will run at the configured interval and import new/updated files.
 
-3. Run a first pass (optional)
-    - Trigger a manual run to validate the configuration if your environment supports a “Run Now” action.
+3. Run a first pass (optional)  
+    Trigger a manual run to validate the configuration if your environment supports a “Run Now” action.
 
 When you open the OneDrive Scraper, you’ll see documents queued or processed in the Inbox.
 
@@ -137,23 +137,23 @@ When you open the OneDrive Scraper, you’ll see documents queued or processed i
 
 ## Known limitations
 
-- Microsoft Graph throttling
-    - Graph enforces rate limits. High-volume folders or very frequent polling may result in 429 responses and back-off delays.
+- **Microsoft Graph throttling**  
+    Graph enforces rate limits. High-volume folders or very frequent polling may result in 429 responses and back-off delays.
 
-- Permissions and scopes
-    - Your Azure app must have appropriate Graph permissions (e.g., Files.Read.All). Insufficient permissions will block access to the folder.
+- **Permissions and scopes**  
+    Your Azure app must have appropriate Graph permissions (e.g., Files.Read.All). Insufficient permissions will block access to the folder.
 
-- Shared links and Share Id
-    - The Share Id must point to the correct OneDrive folder. If the sharing link changes or is revoked, ingestion will fail.
+- **Shared links and Share Id**  
+    The Share Id must point to the correct OneDrive folder. If the sharing link changes or is revoked, ingestion will fail.
 
-- File locks and in-flight uploads
-    - Files still uploading/syncing in OneDrive may be temporarily inaccessible. The scraper ingests them on subsequent runs once fully available.
+- **File locks and in-flight uploads**  
+    Files still uploading/syncing in OneDrive may be temporarily inaccessible. The scraper ingests them on subsequent runs once fully available.
 
-- Large files and complex PDFs
-    - Very large PDFs or image-heavy documents can increase downstream processing time. Consider splitting large PDFs for responsiveness.
+- **Large files and complex PDFs**  
+    Very large PDFs or image-heavy documents can increase downstream processing time. Consider splitting large PDFs for responsiveness.
 
-- Password-protected PDFs
-    - Downstream Services cannot process protected PDFs unless a password is provided.
+- **Password-protected PDFs**  
+    Downstream Services cannot process protected PDFs unless a password is provided.
 
 !!! tip
     Use the AIForged Custom Code utility as a pre-processor to set the password per document, so that AIForged can unlock documents before processing.
@@ -217,19 +217,19 @@ Get results in minutes:
 
 ## FAQ
 
-- Do I need to store passwords or keys?
-    - No. AIForged uses a secure auth flow for Microsoft Graph and manages tokens on your behalf. Provide the required Graph details (e.g., Client Id), and AIForged handles the rest.
+- **Do I need to store passwords or keys?**  
+    No. AIForged uses a secure auth flow for Microsoft Graph and manages tokens on your behalf. Provide the required Graph details (e.g., Client Id), and AIForged handles the rest.
 
-- How do I point the scraper to a specific folder?
-    - Provide the folder’s OneDrive Share Id in Advanced settings. Ensure the sharing link remains valid.
+- **How do I point the scraper to a specific folder?**  
+    Provide the folder’s OneDrive Share Id in Advanced settings. Ensure the sharing link remains valid.
 
-- What permissions are required in Azure?
-    - The app typically needs Graph scopes like Files.Read.All to read files. Your security team may require additional admin consent depending on tenant policy.
+- **What permissions are required in Azure?**  
+    The app typically needs Graph scopes like Files.Read.All to read files. Your security team may require additional admin consent depending on tenant policy.
 
-- How do I deal with very large PDFs?
-    - Use the AIForged Document Splitter to split by page range and keep processing responsive.
+- **How do I deal with very large PDFs?**  
+    Use the AIForged Document Splitter to split by page range and keep processing responsive.
 
-- What about password-protected PDFs?
-    - Use Custom Code to provide the password per document so AIForged can unlock files before processing.
+- **What about password-protected PDFs?**  
+    Use Custom Code to provide the password per document so AIForged can unlock files before processing.
 
 ---
