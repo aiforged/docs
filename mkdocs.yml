@@ -260,14 +260,6 @@ nav:
       - Create Verification: uipath-activities/documents/create-verification.md
       - Delete Document: uipath-activities/documents/delete-document.md
       - Delete Document Parameter: uipath-activities/documents/delete-document-parameter.md
-      - Export To CSV: uipath-activities/documents/export-to-csv.md
-      - Export To CSV Combined: uipath-activities/documents/export-to-csv-combined.md
-      - Export To CSV File: uipath-activities/documents/export-to-csv-file.md
-      - Export To CSV Combined File: uipath-activities/documents/export-to-csv-combined-file.md
-      - Export To DataTable: uipath-activities/documents/export-to-datatable.md
-      - Export To Combined DataTable: uipath-activities/documents/export-to-combined-datatable.md
-      - Export To JSON: uipath-activities/documents/export-to-json.md
-      - Export To JSON Combined File: uipath-activities/documents/export-to-json-combined-file.md
       - Get Extraction Results: uipath-activities/documents/get-extraction-results.md
       - Get Document: uipath-activities/documents/get-document.md
       - Get Document Data: uipath-activities/documents/get-document-data.md
@@ -291,6 +283,17 @@ nav:
       - Rerun All Verifications: uipath-activities/documents/rerun-all-verifications.md
       - Process Documents by Id: uipath-activities/documents/process-documents-by-id.md
       - Process Document Objects: uipath-activities/documents/process-document-objects.md
+    - Exports:
+      - Export To CSV: uipath-activities/exports/export-to-csv.md
+      - Export To CSV Combined: uipath-activities/exports/export-to-csv-combined.md
+      - Export To CSV File: uipath-activities/exports/export-to-csv-file.md
+      - Export To CSV Combined File: uipath-activities/exports/export-to-csv-combined-file.md
+      - Export To DataTable: uipath-activities/exports/export-to-datatable.md
+      - Export To Combined DataTable: uipath-activities/exports/export-to-combined-datatable.md
+      - Export To JSON: uipath-activities/exports/export-to-json.md
+      - Export To JSON Combined File: uipath-activities/exports/export-to-json-combined-file.md
+      - Export To JSON (Hierarchy): uipath-activities/exports/export-to-json-hierarchy.md
+      - Export To JSON File (Hierarchy): uipath-activities/exports/export-to-json-hierarchy-file.md
     - Logging:
       - Overview: uipath-activities/logging/index.md
       - Add Log Message: uipath-activities/logging/add-log-message.md

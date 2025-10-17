@@ -2,7 +2,7 @@
 description: Export a document's extraction results to a list of DataTable.
 ---
 
-# Export To DataTable
+# Export Results To DataTable
 
 **Properties**
 

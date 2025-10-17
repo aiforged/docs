@@ -12,15 +12,15 @@ This release focuses on frictionless context handling, clearer activity configur
 ### New Features
 
 - **Export to JSON (Hierarchy)** & **Export to JSON File (Hierarchy)**
-  - What it is:
-    - A new export activity that produces a full hierarchical JSON object reflecting the document parameters’ extraction hierarchy (groups, nested structures, arrays/line items, etc.).
-  - Why it matters:
-    - Preserves structure alongside values, so downstream systems (ETL, data lakes, APIs, RPA) receive context-rich results rather than flattened tables.
-    - Keeps relationships between fields (e.g., header fields vs line items) intact.
-  - What’s included:
-    - Nested parameter groups, arrays/collections, and typed values as a single JSON object.
-  - Where to find it:
-    - Documents activities -> **Export Document Extraction Hierarchy To JSON**.
+    - What it is:
+        - A new export activity that produces a full hierarchical JSON object reflecting the document parameters’ extraction hierarchy (groups, nested structures, arrays/line items, etc.).
+    - Why it matters:
+        - Preserves structure alongside values, so downstream systems (ETL, data lakes, APIs, RPA) receive context-rich results rather than flattened tables.
+        - Keeps relationships between fields (e.g., header fields vs line items) intact.
+    - What’s included:
+        - Nested parameter groups, arrays/collections, and typed values as a single JSON object.
+    - Where to find it:
+        - Documents activities -> **Export Document Extraction Hierarchy To JSON**.
 
 Example shape (illustrative):
 
@@ -63,25 +63,34 @@ Example shape (illustrative):
 ### Enhancements (Quality of Life)
 
 - Automatic Context Acquisition for Nested Activities
-  - Activities nested within an Initialize Context activity now automatically have their Context property set.
-  - Benefits:
-    - Eliminates repetitive property mapping across each AIForged activity.
-    - Reduces “missing context” errors and speeds up deployment.
-    - Makes workflows more maintainable: put one Initialize Context at the top of your scope and focus on business logic.
-  - Behavior details:
-    - If an activity’s Context property is explicitly set, that value takes precedence.
-    - If it’s left unset, the activity resolves Context from the nearest enclosing Initialize Context in the workflow.
-    - Works across typical container activities (e.g., Sequence, Flowchart). For disjoint branches not nested under Initialize Context, explicitly set Context or place a local initializer.
+    - Activities nested within an Initialize Context activity now automatically have their Context property set.
+    - Benefits:
+        - Eliminates repetitive property mapping across each AIForged activity.
+        - Reduces “missing context” errors and speeds up deployment.
+        - Makes workflows more maintainable: put one Initialize Context at the top of your scope and focus on business logic.
+    - Behaviour details:
+        - If an activity’s Context property is explicitly set, that value takes precedence.
+        - If it’s left unset, the activity resolves Context from the nearest enclosing Initialize Context in the workflow.
+        - Works across typical container activities (e.g., Sequence, Flowchart). For disjoint branches not nested under Initialize Context, explicitly set Context or place a local initializer.
+
+- Authenticate via API Key
+    - The **Initialize Connection Context** activity now allows you to authenticate via an API key.
+    - Benefits:
+        - Prevents the exposure of account credentials.
+        - Allows managing access to AIForged via time limited API keys.
+    - Behaviour details:
+        - API keys currently have a maximum lifespan of 1 year.
+        - API keys can be generated from an account's User Profile -> Security screen.
 
 - Default Template Shows All Properties on Activity Cards
-  - All properties are now visible directly on activity cards by default.
-  - Why it’s better:
-    - Improves discoverability—no more hunting for advanced settings.
-    - Clear, consistent card layouts across the AIForged activity set.
-    - Easier reviews: one glance tells you what’s configured.
-  - Impact:
-    - Visual change only; runtime behavior is unchanged.
-    - Existing workflows remain compatible and benefit from the clearer card rendering.
+    - All properties are now visible directly on activity cards by default.
+    - Why it’s better:
+        - Improves discoverability—no more hunting for advanced settings.
+        - Clear, consistent card layouts across the AIForged activity set.
+        - Easier reviews: one glance tells you what’s configured.
+    - Impact:
+        - Visual change only; runtime Behaviour is unchanged.
+        - Existing workflows remain compatible and benefit from the clearer card rendering.
 
 ## ***New – AIForged Studio – Web 1.1 (18-08-2025)***
 

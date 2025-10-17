@@ -2,7 +2,7 @@
 description: Export a document's extraction results to a CSV file.
 ---
 
-# Export To CSV File
+# Export Results To CSV File
 
 **Properties**
 

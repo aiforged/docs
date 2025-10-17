@@ -2,7 +2,7 @@
 description: Export a document's extraction results to a combined DataTable.
 ---
 
-# Export To Combined DataTable
+# Export Results To Combined DataTable
 
 **Properties**
 

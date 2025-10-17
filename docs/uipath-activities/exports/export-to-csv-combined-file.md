@@ -2,7 +2,7 @@
 description: Export multiple documents' extraction results to a combined CSV file.
 ---
 
-# Export To CSV Combined File
+# Export Results To CSV Combined File
 
 **Properties**
 
