@@ -5,6 +5,84 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## **UiPath Activities 1.6.2116.858 (17-10-2025)**
+
+This release focuses on frictionless context handling, clearer activity configuration, and a robust way to export full hierarchical extraction results. It should reduce boilerplate, improve workflow readability, and make downstream integrations simpler.
+
+### New Features
+
+- **Export to JSON (Hierarchy)** & **Export to JSON File (Hierarchy)**
+  - What it is:
+    - A new export activity that produces a full hierarchical JSON object reflecting the document parameters’ extraction hierarchy (groups, nested structures, arrays/line items, etc.).
+  - Why it matters:
+    - Preserves structure alongside values, so downstream systems (ETL, data lakes, APIs, RPA) receive context-rich results rather than flattened tables.
+    - Keeps relationships between fields (e.g., header fields vs line items) intact.
+  - What’s included:
+    - Nested parameter groups, arrays/collections, and typed values as a single JSON object.
+  - Where to find it:
+    - Documents activities -> **Export Document Extraction Hierarchy To JSON**.
+
+Example shape (illustrative):
+
+```json
+{
+  "DocId": "12345",
+  "ServiceId": "123",
+  "Status": "Processed",
+  "ExtractionResults": {
+    "Fields": {
+      "InvoiceNumber": { "value": "INV-1001", "confidence": 0.98 },
+      "IssueDate": { "value": "2025-08-15", "confidence": 0.97 },
+      "Supplier": {
+        "Name": { "value": "Acme Corp", "confidence": 0.96 },
+        "TaxId": { "value": "123456789", "confidence": 0.95 }
+      }
+    },
+    "Tables": {
+      "lineItems": [
+        {
+          "Description": { "value": "Widget", "confidence": 0.90 },
+          "Quantity": { "value": 5, "confidence": 0.92 },
+          "UnitPrice": { "value": 19.99, "confidence": 0.89 },
+          "Total": { "value": 99.95, "confidence": 0.91 }
+        }
+      ]
+    },
+    "Clusters": {
+      "totals": {
+        "SubTotal": { "value": 99.95, "confidence": 0.91 },
+        "Tax": { "value": 15.99, "confidence": 0.87 },
+        "GrandTotal": { "value": 115.94, "confidence": 0.93 },
+        "Currency": { "value": "USD", "confidence": 0.99 }
+      }
+    }
+  }
+}
+```
+
+### Enhancements (Quality of Life)
+
+- Automatic Context Acquisition for Nested Activities
+  - Activities nested within an Initialize Context activity now automatically have their Context property set.
+  - Benefits:
+    - Eliminates repetitive property mapping across each AIForged activity.
+    - Reduces “missing context” errors and speeds up deployment.
+    - Makes workflows more maintainable: put one Initialize Context at the top of your scope and focus on business logic.
+  - Behavior details:
+    - If an activity’s Context property is explicitly set, that value takes precedence.
+    - If it’s left unset, the activity resolves Context from the nearest enclosing Initialize Context in the workflow.
+    - Works across typical container activities (e.g., Sequence, Flowchart). For disjoint branches not nested under Initialize Context, explicitly set Context or place a local initializer.
+
+- Default Template Shows All Properties on Activity Cards
+  - All properties are now visible directly on activity cards by default.
+  - Why it’s better:
+    - Improves discoverability—no more hunting for advanced settings.
+    - Clear, consistent card layouts across the AIForged activity set.
+    - Easier reviews: one glance tells you what’s configured.
+  - Impact:
+    - Visual change only; runtime behavior is unchanged.
+    - Existing workflows remain compatible and benefit from the clearer card rendering.
+
 ## ***New – AIForged Studio – Web 1.1 (18-08-2025)***
 
 We’re thrilled to bring you a major AIForged Studio update focused on faster flow setup, a smarter configuration experience, and meaningful quality-of-life improvements across the board.
