@@ -18,12 +18,12 @@ These How‑to guides give you a practical path to deliver working outcomes with
 
 | Topic | Page |
 | --- | --- |
-| Authentication | [sdk/dotnet/how-to/authentication](sdk/dotnet/how-to/authentication "mention") |
-| Custom Datasets | [sdk/dotnet/how-to/custom-datasets](sdk/dotnet/how-to/custom-datasets "mention") |
-| Documents | [sdk/dotnet/how-to/documents](sdk/dotnet/how-to/documents "mention") |
-| Errors & Retries | [sdk/dotnet/how-to/errors](sdk/dotnet/how-to/errors "mention") |
-| Retrieve Extracted Results | [sdk/dotnet/how-to/retrieve-results](sdk/dotnet/how-to/retrieve-results "mention") |
-| Work Items (HITL) | [sdk/dotnet/how-to/workflow](sdk/dotnet/how-to/workflow "mention") |
+| Authentication | [sdk/dotnet/how-to/authentication](authentication/ "mention") |
+| Custom Datasets | [sdk/dotnet/how-to/custom-datasets](custom-datasets/ "mention") |
+| Documents | [sdk/dotnet/how-to/documents](documents/ "mention") |
+| Errors & Retries | [sdk/dotnet/how-to/errors](errors/ "mention") |
+| Retrieve Extracted Results | [sdk/dotnet/how-to/retrieve-results](retrieve-results/ "mention") |
+| Work Items (HITL) | [sdk/dotnet/how-to/workflow](workflow/ "mention") |
 
 ---
 
@@ -171,6 +171,6 @@ flowchart LR
 
 ## Related
 
-- [Models & Enums Reference](sdk/dotNET/models-and-enums.md) — schemas and flags used across guides.
-- [API Client References](sdk/dotNET/client-reference/index.md) — method signatures, parameters, and response shapes.
-- [Agents & Services](agents/index.md) — organize agents, services, and environments.
+- [Models & Enums Reference](/sdk/dotNET/models-and-enums) — schemas and flags used across guides.
+- [API Client References](/sdk/dotNET/client-reference) — method signatures, parameters, and response shapes.
+- [Agents & Services](/agents) — organize agents, services, and environments.
