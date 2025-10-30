@@ -2,7 +2,7 @@
 
 Use the Currency Rule Type when a field should contain a monetary amount. The rule validates and normalizes the extracted value, applies culture-aware formatting, and optionally strips characters that don’t belong in a currency amount.
 
-![Currency rule — base options](../../assets/img-2025-08-29-10-55-27.png)
+![Currency rule — base options](../assets/img-2025-08-29-10-55-27.png)
 
 ---
 
@@ -24,7 +24,7 @@ See [Field Rules (Rules Engine)](index.md) for how to open the field configurati
 
 ## Configure the Currency rule
 
-![Currency rule — overview](../../assets/img-2025-08-29-10-55-27.png)
+![Currency rule — overview](../assets/img-2025-08-29-10-55-27.png)
 
 Core settings:
 
@@ -41,7 +41,7 @@ Core settings:
 
 Define the culture and presentation of the final output.
 
-![Currency rule — Output Format](../../assets/img-2025-08-29-10-55-46.png)
+![Currency rule — Output Format](../assets/img-2025-08-29-10-55-46.png)
 
 - Culture Language Code (optional)  
   Two-letter language code used for output (e.g., `en`, `fr`).
@@ -75,7 +75,7 @@ Define the culture and presentation of the final output.
 
 Accept more than one input style while still producing a single, consistent output.
 
-![Currency rule — Additional Parsing Formats](../../assets/img-2025-08-29-10-56-07.png)
+![Currency rule — Additional Parsing Formats](../assets/img-2025-08-29-10-56-07.png)
 
 - Additional Cultures  
   Add culture codes the parser should accept on input (e.g., `de-DE`, `fr-FR`). This allows values like `1.234,56 €` to be understood even if your output uses a different style.
@@ -148,10 +148,10 @@ Trigger review when:
 ## UI reference
 
 - Overview  
-    ![Currency rule — overview](../../assets/img-2025-08-29-10-55-27.png)
+    ![Currency rule — overview](../assets/img-2025-08-29-10-55-27.png)
 
 - Output Format  
-    ![Currency rule — Output Format](../../assets/img-2025-08-29-10-55-46.png)
+    ![Currency rule — Output Format](../assets/img-2025-08-29-10-55-46.png)
 
 - Additional Parsing Formats  
-    ![Currency rule — Additional Parsing Formats](../../assets/img-2025-08-29-10-56-07.png)
+    ![Currency rule — Additional Parsing Formats](../assets/img-2025-08-29-10-56-07.png)

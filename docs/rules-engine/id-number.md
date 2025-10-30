@@ -2,7 +2,7 @@
 
 Use the ID Number Rule Type when a field should contain a national identification number. Currently, this rule validates and derives details for South African IDs (ZA). It parses the value, validates structure and checksum, and exposes derived attributes (e.g., date of birth, gender).
 
-![ID Number — base options](../../assets/img-2025-08-29-12-55-36.png)
+![ID Number — base options](../assets/img-2025-08-29-12-55-36.png)
 
 ---
 
@@ -151,7 +151,7 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value, Country with link option)  
-    ![ID Number — base options](../../assets/img-2025-08-29-12-55-36.png)
+    ![ID Number — base options](../assets/img-2025-08-29-12-55-36.png)
 
 - Example of applied rule type in verification view 
-    ![ID Number — derived info](../../assets/img-2025-08-29-13-01-41.png)
+    ![ID Number — derived info](../assets/img-2025-08-29-13-01-41.png)

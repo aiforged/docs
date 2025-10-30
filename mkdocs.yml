@@ -58,7 +58,7 @@ nav:
     - 🧠 Understanding Agents: agents/understanding-agents.md
   - 📃 Documents:
     - Overview: documents/index.md
-    - ℹ️ Document Types: documents/documemt-types.md
+    - ℹ️ Document Types: documents/document-types.md
     - ❓ Document Categories: documents/document-categories.md
     - ⏩ Understanding Document Flows: documents/understanding-document-flows.md
     - 🗄️ Document Retention: documents/document-retention.md
@@ -177,7 +177,7 @@ nav:
       - 🔎 Lookup: rules-engine/generic/dictionary.md
       - 🔁 Mapping: rules-engine/generic/mapping.md
       - 💻 Script: rules-engine/generic/custom-script.md
-      - 🛡️ Verification Services: rules-engine/generic/verification-services.md
+      #- 🛡️ Verification Services: rules-engine/generic/verification-services.md
       - 🔀 Workflow Script: rules-engine/generic/workflow-script.md
       - ⚙️ Advanced: rules-engine/generic/advanced.md
       
@@ -185,41 +185,41 @@ nav:
     - Overview: sdk/index.md
     - 💻 .NET: 
       - Overview: sdk/dotNET/index.md
-      - 🚀 Quickstart: sdk/dotNET/quickstart/
+      - 🚀 Quickstart: sdk/dotNET/quickstart.md
       - 🔧 How-To: 
         - Overview: sdk/dotNET/how-to/index.md
-        - Authentication: sdk/dotNet/how-to/authentication/
-        - Documents: sdk/dotNet/how-to/documents/
-        - Retrieve Extraction Results: sdk/dotNet/how-to/retrieve-results/
-        - Work Items (HITL): sdk/dotNet/how-to/workflow/
-        - Custom Datasets: sdk/dotNet/how-to/custom-datasets/
-        - Errors & Retries: sdk/dotNet/how-to/errors/
+        - Authentication: sdk/dotNET/how-to/authentication.md
+        - Documents: sdk/dotNET/how-to/documents.md
+        - Retrieve Extraction Results: sdk/dotNET/how-to/retrieve-results.md
+        - Work Items (HITL): sdk/dotNET/how-to/workflow.md
+        - Custom Datasets: sdk/dotNET/how-to/custom-datasets.md
+        - Errors & Retries: sdk/dotNET/how-to/errors.md
       - 📚 Client Reference: 
         - Overview: sdk/dotNET/client-reference/index.md
-        - Audit Client: sdk/dotNet/client-reference/audit-client/
-        - Account Client: sdk/dotNet/client-reference/account-client/
-        - Classes Client: sdk/dotNet/client-reference/classes-client/
-        - Cloning Client: sdk/dotNet/client-reference/cloning-client/
-        - Contacts Client: sdk/dotNet/client-reference/contacts-client/
-        - DataSet Client: sdk/dotNet/client-reference/dataset-client/
-        - Documents Client: sdk/dotNet/client-reference/documents-client/
-        - Group Client: sdk/dotNet/client-reference/group-client/
-        - Log Client: sdk/dotNet/client-reference/log-client/
-        - Marketplace Client (user group membership management): sdk/dotNet/client-reference/marketplace-client/
-        - Notification Client: sdk/dotNet/client-reference/notification-client/
+        - Audit Client: sdk/dotNET/client-reference/audit-client.md
+        - Account Client: sdk/dotNET/client-reference/account-client.md
+        - Classes Client: sdk/dotNET/client-reference/classes-client.md
+        - Cloning Client: sdk/dotNET/client-reference/cloning-client.md
+        - Contacts Client: sdk/dotNET/client-reference/contacts-client.md
+        - DataSet Client: sdk/dotNET/client-reference/dataset-client.md
+        - Documents Client: sdk/dotNET/client-reference/documents-client.md
+        - Group Client: sdk/dotNET/client-reference/group-client.md
+        - Log Client: sdk/dotNET/client-reference/log-client.md
+        - Marketplace Client (user group membership management): sdk/dotNET/client-reference/marketplace-client.md
+        - Notification Client: sdk/dotNET/client-reference/notification-client.md
         - ParamDef Client (parameter definitions): 
           - Overview: sdk/dotNET/client-reference/paramdef-client/index.md
-          - Settings Data (BaseOption and Supporting Types): sdk/dotNET/client-reference/paramdef-client/paramdef-client-options/
-        - Parameters Client (extracted document field): sdk/dotNet/client-reference/parameters-client/
-        - Projects Client (Agents): sdk/dotNet/client-reference/projects-client/
-        - Roles Client: sdk/dotNet/client-reference/roles-client/
-        - Services Client: sdk/dotNet/client-reference/services-client/
-        - Service Types Client: sdk/dotNet/client-reference/service-types-client/
-        - System Client: sdk/dotNet/client-reference/system-client/
-        - Verification Client: sdk/dotNet/client-reference/verification-client/
-        - Wizard Client: sdk/dotNet/client-reference/wizard-client/
-        - Work Item Client: sdk/dotNet/client-reference/workitem-client/
-      - 🧩 Models and Enums: sdk/dotNET/models-and-enums/
+          - Settings Data (BaseOption and Supporting Types): sdk/dotNET/client-reference/paramdef-client/paramdef-client-options.md
+        - Parameters Client (extracted document field): sdk/dotNET/client-reference/parameters-client.md
+        - Projects Client (Agents): sdk/dotNET/client-reference/projects-client.md
+        - Roles Client: sdk/dotNET/client-reference/roles-client.md
+        - Services Client: sdk/dotNET/client-reference/services-client.md
+        - Service Types Client: sdk/dotNET/client-reference/service-types-client.md
+        - System Client: sdk/dotNET/client-reference/system-client.md
+        - Verification Client: sdk/dotNET/client-reference/verification-client.md
+        - Wizard Client: sdk/dotNET/client-reference/wizard-client.md
+        - Work Item Client: sdk/dotNET/client-reference/workitem-client.md
+      - 🧩 Models and Enums: sdk/dotNET/models-and-enums.md
     - Python: sdk/python.md
     - Typescript: sdk/typescript.md
   - UIPath Activities:

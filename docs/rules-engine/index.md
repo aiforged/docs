@@ -20,14 +20,14 @@ Configure rules for any field using either path:
 2. Click the gear icon “Open field configuration”.
 3. Configure the rule in the panel that opens.
 
-![Open field configuration from overlay](../../assets/img-2025-08-28-08-55-19.png)
+![Open field configuration from overlay](../assets/img-2025-08-28-08-55-19.png)
 
 ### 2) From the Fields panel (right sidebar)
 1. In the Fields list, select the field.
 2. Click the gear icon “Open field configuration”.
 3. Configure the rule in the panel that opens.
 
-![Open field configuration from Fields panel](../../assets/img-2025-08-28-08-55-43.png)
+![Open field configuration from Fields panel](../assets/img-2025-08-28-08-55-43.png)
 
 !!! note "Where to find these options"
     The overlay actions appear only for services that support the interactive document view. If you don’t see the overlay, use the Fields panel on the right.

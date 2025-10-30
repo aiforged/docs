@@ -2,7 +2,7 @@
 
 Use the Email Rule Type when a field should contain a valid email address. The rule validates the structure, optionally enforces an expected domain, and can normalize common OCR-induced issues before routing downstream systems.
 
-![Email — base options](../../assets/img-2025-08-29-12-37-03.png)
+![Email — base options](../assets/img-2025-08-29-12-37-03.png)
 
 ---
 
@@ -140,4 +140,4 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value, Domain with link option)  
-    ![Email — base options](../../assets/img-2025-08-29-12-37-03.png)
+    ![Email — base options](../assets/img-2025-08-29-12-37-03.png)

@@ -144,9 +144,9 @@ Documents are connected hierarchically across Services using a Master ID → Id 
 
 ## Related links
 
-- Documents overview: [Click Here](documents.md)
-- Working in the Service view: [Click Here](service/documents-in-service-view.md)
-- Processing documents: [Click Here](service/processing-documents/index.md)
-- Processing Parameters: [Click Here](service/processing-documents/processing-parameters.md)
+- Documents overview: [Click Here](index.md)
+- Working in the Service view: [Click Here](documents-in-service-view.md)
+- Processing documents: [Click Here](processing-documents/index.md)
+- Processing Parameters: [Click Here](processing-documents/processing-parameters.md)
 - Document Categories: [Click Here](document-categories.md)
 - Document Attributes: [Click Here](document-attributes.md)

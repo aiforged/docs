@@ -113,7 +113,7 @@ Processing Parameters control how AIForged handles a document when you run a job
 
 ## Related links
 
-- Documents overview: [Click Here](../documents.md)
-- Working in the Service view: [Click Here](documents-in-service-view.md)
-- Document Attributes: [Click Here](document-attributes.md)
-- Understanding Document Flows: [Click Here](understanding-document-flows.md)
+- Documents overview: [Click Here](../index.md)
+- Working in the Service view: [Click Here](../documents-in-service-view.md)
+- Document Attributes: [Click Here](../document-attributes.md)
+- Understanding Document Flows: [Click Here](../understanding-document-flows.md)

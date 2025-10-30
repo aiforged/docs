@@ -1,6 +1,6 @@
 # 📏 Managing Roles within Usergroups
 
-Effectively managing roles ensures that users have the appropriate access and responsibilities within your agents. In AIForged, roles are flexible and can be tailored to match your organization’s unique requirements. See [.](./ "mention") for a further overview of this functionality in AIForged.
+Effectively managing roles ensures that users have the appropriate access and responsibilities within your agents. In AIForged, roles are flexible and can be tailored to match your organization’s unique requirements. See [.](index.md "mention") for a further overview of this functionality in AIForged.
 
 ***
 

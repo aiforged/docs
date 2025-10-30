@@ -117,7 +117,7 @@ Trigger processing from your applications or bots to integrate AIForged into you
 
 ## Related links
 
-- Documents overview: [Click Here](../documents.md)
-- Working in the Service view: [Click Here](documents-in-service-view.md)
+- Documents overview: [Click Here](../index.md)
+- Working in the Service view: [Click Here](../documents-in-service-view.md)
 - Processing Parameters: [Click Here](processing-parameters.md)
-- Understanding Document Flows: [Click Here](understanding-document-flows.md)
+- Understanding Document Flows: [Click Here](../understanding-document-flows.md)

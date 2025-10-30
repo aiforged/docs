@@ -2,7 +2,7 @@
 
 Use the Number Rule Type when a field should contain a numeric value. The rule validates and normalizes the extracted number, applies culture-aware formatting, and can accept multiple input styles while producing a single, consistent output.
 
-![Number — base options](../../assets/img-2025-09-01-08-54-51.png)
+![Number — base options](../assets/img-2025-09-01-08-54-51.png)
 
 ---
 
@@ -39,7 +39,7 @@ Core settings:
 
 Use “Additional Parsing Formats” to accept multiple input cultures while converging to one output style.
 
-![Number — Additional Parsing Formats](../../assets/img-2025-09-01-08-55-22.png)
+![Number — Additional Parsing Formats](../assets/img-2025-09-01-08-55-22.png)
 
 - Additional Cultures (optional)
     - Add culture codes you want to accept during parsing (e.g., `en-US`, `de-DE`, `fr-FR`). This helps interpret comma vs dot usage correctly.
@@ -55,7 +55,7 @@ Use “Additional Parsing Formats” to accept multiple input cultures while con
 
 Define the culture and presentation of the final output in the Output Format panel.
 
-![Number — Output Format](../../assets/img-2025-09-01-08-55-40.png)
+![Number — Output Format](../assets/img-2025-09-01-08-55-40.png)
 
 - Culture Language Code (optional): e.g., `en`, `fr`
 - Culture Country Code (optional): e.g., `US`, `ZA`
@@ -145,10 +145,10 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value, Remove Invalid Characters)
-    ![Number — base options](../../assets/img-2025-09-01-08-54-51.png)
+    ![Number — base options](../assets/img-2025-09-01-08-54-51.png)
 
 - Output Format (culture, separators, precision, minimum)
-    ![Number — Output Format](../../assets/img-2025-09-01-08-55-40.png)
+    ![Number — Output Format](../assets/img-2025-09-01-08-55-40.png)
 
 - Additional Parsing Formats (cultures)
-    ![Number — Additional Parsing Formats](../../assets/img-2025-09-01-08-55-22.png)
+    ![Number — Additional Parsing Formats](../assets/img-2025-09-01-08-55-22.png)

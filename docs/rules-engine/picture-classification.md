@@ -2,7 +2,7 @@
 
 Use the Picture Classification Rule Type when a field should be validated or derived from an image rather than text. The rule supports image-type validation (e.g., Signature, Fingerprint, Barcode, Face), object and web detections, Safe Search checks, text annotations, and visual similarity via image comparison with thresholds and optional HSV color filtering.
 
-![Picture — base options](../../assets/img-2025-09-01-10-26-35.png)
+![Picture — base options](../assets/img-2025-09-01-10-26-35.png)
 
 ---
 
@@ -26,7 +26,7 @@ See [Field Rules (Rules Engine)](index.md) for how to open the field configurati
 
 ## Configure the Picture rule
 
-![Picture — classification dropdown](../../assets/img-2025-09-01-10-26-53.png)
+![Picture — classification dropdown](../assets/img-2025-09-01-10-26-53.png)
 
 Core settings:
 
@@ -72,7 +72,7 @@ Panels to enable/configure:
 
 ## Object Detection Options
 
-![Picture — object detection (Face/Web/Safe/Text)](../../assets/img-2025-09-01-10-28-33.png)
+![Picture — object detection (Face/Web/Safe/Text)](../assets/img-2025-09-01-10-28-33.png)
 
 Toggles:
 
@@ -82,7 +82,7 @@ Toggles:
         - Detect Gender — estimate gender presentation.
         - Detect Emotions — return emotions with likelihood/confidence.
         - Detect Landmarks — return facial landmarks (e.g., eyes, nose bridge).
-        ![](../../assets/img-2025-09-01-10-29-12.png)
+        ![](../assets/img-2025-09-01-10-29-12.png)
 
 - Web Content Detection
     - Web Detection Options
@@ -92,7 +92,7 @@ Toggles:
         - Partial Matching Images
         - Visually Similar Images
         - Web Entities
-        ![](../../assets/img-2025-09-01-10-29-33.png)
+        ![](../assets/img-2025-09-01-10-29-33.png)
 
 - Safe Search
     - Safe Search Options
@@ -100,13 +100,13 @@ Toggles:
         - Landmarks (include landmark signals where applicable)
         - Allow racy content
         - Violence and Gore
-        ![](../../assets/img-2025-09-01-10-29-39.png)
+        ![](../assets/img-2025-09-01-10-29-39.png)
 
 - Text Annotation
     - Text Annotation Options
         - Full Text — dense captions/paragraph-like text.
         - Text — short tags/captions.
-        ![](../../assets/img-2025-09-01-10-29-45.png)
+        ![](../assets/img-2025-09-01-10-29-45.png)
 
 !!! warning "Responsible AI and privacy"
     Only enable face-related sub-attributes (age/gender/emotions) when legally justified and necessary. Restrict access and log overrides.
@@ -115,7 +115,7 @@ Toggles:
 
 ## Image Comparison Options
 
-![Picture — image comparison](../../assets/img-2025-09-01-10-30-17.png)
+![Picture — image comparison](../assets/img-2025-09-01-10-30-17.png)
 
 Use visual similarity to check whether the image matches a reference pattern/logo or contains specific colors.
 
@@ -144,7 +144,7 @@ Parameters:
 
 ## Signature Detection Options (when Picture Classification = Signature)
 
-![Picture — signature detection options](../../assets/img-2025-09-01-10-32-00.png)
+![Picture — signature detection options](../assets/img-2025-09-01-10-32-00.png)
 
 These parameters tune the internal signature detector for hand-drawn ink-like strokes and contours. Defaults cover most scanned signatures; adjust if you see false positives/negatives.
 
@@ -184,7 +184,7 @@ Recommended tuning flow:
 
 ## Fingerprint Detection Options (when Picture Classification = Fingerprint)
 
-![Picture — fingerprint detection options](../../assets/img-2025-09-01-10-32-13.png)
+![Picture — fingerprint detection options](../assets/img-2025-09-01-10-32-13.png)
 
 These parameters target ridge/valley prominence and corner/keypoint salience on fingerprints.
 
@@ -310,22 +310,22 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value, Picture Classification)  
-    ![Picture — base options](../../assets/img-2025-09-01-10-26-35.png)
+    ![Picture — base options](../assets/img-2025-09-01-10-26-35.png)
 
 - Classification dropdown (types)  
-    ![Picture — classification dropdown](../../assets/img-2025-09-01-10-26-53.png)
+    ![Picture — classification dropdown](../assets/img-2025-09-01-10-26-53.png)
 
 - Object Detection Options (Face/Web/Safe/Text)  
-    ![](../../assets/img-2025-09-01-10-29-12.png)
-    ![](../../assets/img-2025-09-01-10-29-33.png)
-    ![](../../assets/img-2025-09-01-10-29-39.png)
-    ![](../../assets/img-2025-09-01-10-29-45.png)
+    ![](../assets/img-2025-09-01-10-29-12.png)
+    ![](../assets/img-2025-09-01-10-29-33.png)
+    ![](../assets/img-2025-09-01-10-29-39.png)
+    ![](../assets/img-2025-09-01-10-29-45.png)
 
 - Image Comparison Options (accuracy, thresholds, HSV filters)  
-    ![Picture — image comparison](../../assets/img-2025-09-01-10-30-17.png)
+    ![Picture — image comparison](../assets/img-2025-09-01-10-30-17.png)
 
 - Signature Detection Options (visible when classification = Signature)  
-    ![Picture — signature detection options](../../assets/img-2025-09-01-10-32-00.png)
+    ![Picture — signature detection options](../assets/img-2025-09-01-10-32-00.png)
 
 - Fingerprint Detection Options (visible when classification = Fingerprint)  
-    ![Picture — fingerprint detection options](../../assets/img-2025-09-01-10-32-13.png)
+    ![Picture — fingerprint detection options](../assets/img-2025-09-01-10-32-13.png)

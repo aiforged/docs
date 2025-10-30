@@ -111,7 +111,7 @@ New AIForged users receive an activation email when their account is created by 
 
 ## Related links
 
-- How to access AIForged: [Click Here](how-to-install-aiforged.md)
+- How to access AIForged: [Click Here](how-to-access-aiforged.md)
 - Register (how new users get accounts): [Click Here](register.md)
 - Login: [Click Here](login.md)
 - Multi‑factor Authentication: [Click Here](multi-factor-authentication.md)

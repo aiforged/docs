@@ -2,7 +2,7 @@
 
 Use the Address Rule Type when a field should contain a postal or physical address. The rule can validate and normalize the text, and verify it against a Maps Engine (Google or Azure) to return structured components and geolocation.
 
-![Address — base options](../../assets/img-2025-09-01-08-37-55.png)
+![Address — base options](../assets/img-2025-09-01-08-37-55.png)
 
 ---
 
@@ -71,7 +71,7 @@ Field Linking:
 
 - Pass in additional, structured data to improve match accuracy. For example, link Country/CountryCode and Postal Code fields, even if your extracted value is just the street line.
 
-![Address - Field Linking](../../assets/img-2025-09-01-08-39-49.png)
+![Address - Field Linking](../assets/img-2025-09-01-08-39-49.png)
 
 ---
 
@@ -104,7 +104,7 @@ When verification is enabled, you can output:
 
 Advanced Options:
 
-![Address - Advances Options](../../assets/img-2025-09-01-08-40-31.png)
+![Address - Advances Options](../assets/img-2025-09-01-08-40-31.png)
 
 - Use Analytics Value (optional): Override the extracted text with the verified/normalized value.
 - Use Analytics Confidence (optional): Replace the field’s confidence with the verification confidence.
@@ -207,14 +207,14 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value, Maps Engine, Current Address Field, Address Field to Extract)  
-    ![Address — base options](../../assets/img-2025-09-01-08-37-55.png)
+    ![Address — base options](../assets/img-2025-09-01-08-37-55.png)
 
 - Maps Engine selection and verification behavior  
-    ![Address — Maps Engine selection](../../assets/img-2025-09-01-08-38-39.png)
+    ![Address — Maps Engine selection](../assets/img-2025-09-01-08-38-39.png)
 
 - Dropdowns (include FreeForm, All, CountryCode, CountryCodeIso3 among other components)  
-    ![Address - Field Dropdowns](../../assets/img-2025-09-01-08-41-35.png)
+    ![Address - Field Dropdowns](../assets/img-2025-09-01-08-41-35.png)
     Look for these options in both the “Current Address Field” and “Address Field to Extract” dropdowns in the configuration panel.
 
 - Field Linking (Street Number/Name, Suburb, City, Postal Code, Municipality, Province/State, Country, CountryCode, CountryCodeIso3, Geolocation, Latitude, Longitude, Points of Interest)
-    ![Address - Field Linking](../../assets/img-2025-09-01-08-39-49.png)
+    ![Address - Field Linking](../assets/img-2025-09-01-08-39-49.png)

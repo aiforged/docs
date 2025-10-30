@@ -23,7 +23,7 @@ The Wallets &amp; Billing area provides a tenant-scoped ledger of credits and us
 3. Adjust the date range at the top of the ledger to scope balances and transactions.
 4. Use the search box and per-column filters to narrow the view.
 
-![](../../assets/img-2025-09-10-14-15-09.png)
+![](assets/img-2025-09-10-14-15-09.png)
 
 !!! tip "Quick navigation"
     - Use the per-column filter icons to quickly isolate specific Agents or values.
@@ -65,7 +65,7 @@ The Wallets &amp; Billing area provides a tenant-scoped ledger of credits and us
 - Per-column filtering and grouping
 - Drill-down affordance to itemised bill
 
-![](../../assets/img-2025-09-10-14-21-36.png)
+![](assets/img-2025-09-10-14-21-36.png)
 
 Selecting an Agent row expands an itemised list of its Services and related movements for the selected period. Drag a column header to the “group” area to group by that column. Use the filter icon on each column to refine values.
 
@@ -89,7 +89,7 @@ Selecting an Agent row expands an itemised list of its Services and related move
 - Nested services (if applicable) and how nesting affects totals.
 - Link to Transaction Listing for the selected service.
 
-![](../../assets/img-2025-09-10-14-21-47.png)
+![](assets/img-2025-09-10-14-21-47.png)
 
 Services that orchestrate other steps may appear as nested entries (e.g., “Result Consolidation Pass (nested in …)”). Clicking a Service name opens the Transaction Listing scoped to that Agent + Service and the current date range.
 
@@ -109,7 +109,7 @@ Services that orchestrate other steps may appear as nested entries (e.g., “Res
 - Footer totals (e.g., Total # Transactions, Total Usage, Total Credits In)
 - How date range and filters propagate from the parent view.
 
-![](../../assets/img-2025-09-10-14-21-58.png)
+![](assets/img-2025-09-10-14-21-58.png)
 
 The Transaction Listing inherits the date range from the parent view. Use per-column filters and the global search to isolate specific transactions. The footer shows totals across the current listing.
 
@@ -122,7 +122,7 @@ The Transaction Listing inherits the date range from the parent view. Use per-co
 - Export to Excel
 - Transfer Credits (between wallets/agents)
 
-![](../../assets/img-2025-09-10-14-22-20.png)
+![](assets/img-2025-09-10-14-22-20.png)
 
 Use the action buttons (bottom-right of the page) to export the current view to PDF/Excel, or to initiate a credit transfer to or from an Agent.
 

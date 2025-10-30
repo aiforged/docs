@@ -303,8 +303,8 @@ class Program
 ## Where to next?
 
 - [SDK Overview](index.md)
-- [Authentication](/how-to/auth/index.md)
-- [Documents (search, upload, status)](/how-to/documents/index.md)
-- [Work Items (HITL)](/how-to/work-items/index.md)
-- [Datasets](/how-to/datasets/index.md)
-- [Error handling and retries](/errors-retries/index.md)
+- [Authentication](how-to/authentication.md)
+- [Documents (search, upload, status)](how-to/documents.md)
+- [Work Items (HITL)](how-to/workflow.md)
+- [Datasets](how-to/custom-datasets.md)
+- [Error handling and retries](how-to/errors.md)

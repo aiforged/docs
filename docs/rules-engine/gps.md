@@ -2,7 +2,7 @@
 
 Use the GPS Coordinates Rule Type when a field should contain a valid geographic coordinate (latitude and longitude). The rule parses common input styles (decimal degrees or degree/minute/second notations), validates ranges, and normalizes the output for downstream use.
 
-![GPS — base options](../../assets/img-2025-08-29-12-44-24.png)
+![GPS — base options](../assets/img-2025-08-29-12-44-24.png)
 
 ---
 
@@ -163,4 +163,4 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value)  
-    ![GPS — base options](../../assets/img-2025-08-29-12-44-24.png)
+    ![GPS — base options](../assets/img-2025-08-29-12-44-24.png)

@@ -155,17 +155,17 @@ See: [Documents → Document Types](documents/document-types.md)
 - Services  
     - OCR: [Overview](services/ocr/index.md)  
     - Extract & Verify: [Overview](services/extract-and-verify/index.md)  
-    - Vision: [Overview](services/vision/index.md)  
-    - Speech‑to‑Text: [Overview](services/speech-to-text/index.md)
-    - LLM Extractor: [Overview](services/llm-extractor/index.md)
+    - Vision: [Overview](services/object-detection/index.md)  
+    - Speech‑to‑Text: [Overview](services/speech/index.md)
+    - LLM Extractor: [Overview](services/extract-and-verify/llm-extractor.md)
 
 - Scrapers & Utilities  
-    - Scrapers: [Email](scrapers/email-scraper.md), [OneDrive](scrapers/onedrive-scraper.md)  
-    - Utilities: [Digitizer](utilities/digitizer.md), [PDF Converter](utilities/pdf-converter.md), [Image Splitter](utilities/image-splitter.md), [Copy/Move](utilities/copy-move.md), [Webhooks](utilities/webhooks.md)
+    - Scrapers: [Email](services/scrapers/email-scraper.md), [OneDrive](services/scrapers/onedrive-scraping.md)  
+    - Utilities: [Digitizer](services/utilities/aiforged-digitizer.md), [PDF Converter](services/utilities/aiforged-pdf-converter.md), [Image Splitter](services/utilities/aiforged-image-splitter.md), [Copy/Move](services/utilities/copy-documents.md), [Webhooks](services/utilities/webhooks.md)
 
 - Custom Code & Developer Docs  
-    - [Custom Code](custom-code/index.md)  
-    - [BaseModule](developers/basemodule/index.md)
+    - [Custom Code](custom-service-code/index.md)  
+    - [BaseModule](custom-service-code/basemodule/index.md)
 
 ---
 

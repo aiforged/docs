@@ -1,6 +1,6 @@
 # 📓 Maintaining Groups
 
-See [Organisations and User Groups](/service-users/ "mention") for an overview of this functionality in AIForged.
+See [Organisations and User Groups](index.md "mention") for an overview of this functionality in AIForged.
 
 ### Creating a group
 

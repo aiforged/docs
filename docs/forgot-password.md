@@ -92,7 +92,7 @@ If you can’t sign in to your AIForged account, you can request a password rese
 
 ## Related links
 
-- How to access AIForged: [Click Here](how-to-install-aiforged.md)
+- How to access AIForged: [Click Here](how-to-access-aiforged.md)
 - Login: [Click Here](login.md)
 - Activate My Account: [Click Here](activate-my-account.md)
 - Multi‑Factor Authentication: [Click Here](multi-factor-authentication.md)

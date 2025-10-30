@@ -23,7 +23,7 @@ See [Field Rules (Rules Engine)](index.md) for how to open the field configurati
 
 ## Configure the TelephoneNo rule
 
-![TelephoneNo — base options](../../assets/img-2025-09-01-10-42-34.png)
+![TelephoneNo — base options](../assets/img-2025-09-01-10-42-34.png)
 
 Core settings:
 
@@ -184,4 +184,4 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value, Remove Invalid Characters, Country Code Pattern, Network Pattern)  
-    ![TelephoneNo — base options](../../assets/img-2025-09-01-10-42-34.png)
+    ![TelephoneNo — base options](../assets/img-2025-09-01-10-42-34.png)

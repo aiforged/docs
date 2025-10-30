@@ -2,7 +2,7 @@
 
 Use the TimeSpan Rule Type when a field should contain a duration (e.g., hours and minutes). The rule parses common duration formats, validates them, and normalizes the result for downstream use.
 
-![TimeSpan — base options](../../assets/img-2025-09-01-10-50-03.png)
+![TimeSpan — base options](../assets/img-2025-09-01-10-50-03.png)
 
 ---
 
@@ -25,7 +25,7 @@ See [Field Rules (Rules Engine)](index.md) for how to open the field configurati
 
 ## Configure the TimeSpan rule
 
-![TimeSpan — base options](../../assets/img-2025-09-01-10-50-03.png)
+![TimeSpan — base options](../assets/img-2025-09-01-10-50-03.png)
 
 Core settings:
 
@@ -155,4 +155,4 @@ Reviewer note suggestion:
 ## UI reference
 
 - Base panel (Rule Type, Default Value)
-    ![TimeSpan — base options](../../assets/img-2025-09-01-10-50-03.png)
+    ![TimeSpan — base options](../assets/img-2025-09-01-10-50-03.png)

@@ -140,7 +140,7 @@ After login:
 
 ## Related links
 
-- How to access AIForged: [Click Here](how-to-install-aiforged.md)
+- How to access AIForged: [Click Here](how-to-access-aiforged.md)
 - Register (how new users get accounts): [Click Here](register.md)
 - Activate my account: [Click Here](activate-my-account.md)
 - Forgot Password: [Click Here](forgot-password.md)

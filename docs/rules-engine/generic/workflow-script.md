@@ -118,7 +118,7 @@ IVerificationModule adds convenient helpers:
 - CreateParameter<T>(pdId, value)
 
 !!! info
-    For more, see [BaseModule](../../../custom-service-code/basemodule/index.md).
+    For more, see [BaseModule](../../custom-service-code/basemodule/index.md).
 
 ---
 

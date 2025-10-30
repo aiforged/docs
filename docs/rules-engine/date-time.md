@@ -2,7 +2,7 @@
 
 Use the DateTime Rule Type when a field should contain a valid date, time, or a combined date‑time. The rule parses varied input formats (across locales), normalizes the value, and can enforce business ranges (e.g., not in the future/past).
 
-![DateTime — base options](../../assets/img-2025-08-29-12-09-19.png)
+![DateTime — base options](../assets/img-2025-08-29-12-09-19.png)
 
 ---
 
@@ -46,7 +46,7 @@ Output Format panel:
 
 Use “Additional Parsing Formats” to accept multiple input styles while producing one consistent output.
 
-![DateTime — Additional Parsing Formats](../../assets/img-2025-08-29-12-10-05.png)
+![DateTime — Additional Parsing Formats](../assets/img-2025-08-29-12-10-05.png)
 
 - Additional Cultures (optional)
     - Add culture codes you want to accept during parsing (e.g., `en-GB`, `de-DE`), so day/month order and month names are interpreted correctly.
@@ -82,7 +82,7 @@ Use “Additional Parsing Formats” to accept multiple input styles while produ
 
 ## Output and formatting
 
-![DateTime — Output Format](../../assets/img-2025-08-29-12-09-37.png)
+![DateTime — Output Format](../assets/img-2025-08-29-12-09-37.png)
 
 - Culture Language/Country determine the final display formatting (date order, month names, AM/PM vs 24‑hour).
 - Minimum/Maximum value enforce business rules (e.g., within the last 10 years; not more than 30 days in the future).
@@ -176,10 +176,10 @@ Recommended escalation conditions:
 ## UI reference
 
 - Base panel (Rule Type, Default Value)  
-    ![DateTime — base options](../../assets/img-2025-08-29-12-09-19.png)
+    ![DateTime — base options](../assets/img-2025-08-29-12-09-19.png)
 
 - Output Format (culture and range)  
-    ![DateTime — Output Format](../../assets/img-2025-08-29-12-09-37.png)
+    ![DateTime — Output Format](../assets/img-2025-08-29-12-09-37.png)
 
 - Additional Parsing Formats (cultures, date/time formats)  
-    ![DateTime — Additional Parsing Formats](../../assets/img-2025-08-29-12-10-05.png)
+    ![DateTime — Additional Parsing Formats](../assets/img-2025-08-29-12-10-05.png)

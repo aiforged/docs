@@ -2,7 +2,7 @@
 
 Use the Country Rule Type when a field should resolve to a standardized country. The Rules Engine parses the extracted text (e.g., “USA”, “U.S.A.”, “United States”) and normalizes it to ISO and UN M49 attributes you can store or use downstream.
 
-![Country rule configuration](../../assets/img-2025-08-29-10-40-42.png)
+![Country rule configuration](../assets/img-2025-08-29-10-40-42.png)
 
 ---
 
@@ -147,7 +147,7 @@ Trigger review when:
 ## UI reference
 
 - Configuration panel with advanced options  
-    ![Country rule configuration](../../assets/img-2025-08-29-10-40-42.png)
+    ![Country rule configuration](../assets/img-2025-08-29-10-40-42.png)
 
 - Field to extract dropdown (attributes)  
-    ![Country attributes dropdown](../../assets/img-2025-08-29-10-42-22.png)
+    ![Country attributes dropdown](../assets/img-2025-08-29-10-42-22.png)

@@ -20,9 +20,9 @@ A quick index of available SDKs and where to find their docs.
 
 | SDK | Status | Docs |
 | --- | --- | --- |
-| .NET (C#) | Available | [/sdk/dotnet/](sdk/dotnet/) |
-| TypeScript | Coming Soon | [/sdk/javascript/](sdk/javascript/) |
-| Python | Coming Soon | [/sdk/python/](sdk/python/) |
+| .NET (C#) | Available | [dotNET/](dotNET/index.md) |
+| TypeScript | Coming Soon | [typescript/](typescript.md) |
+| Python | Coming Soon | [python/](python.md) |
 
 !!! note "Placeholders"
     TypeScript and Python entries are placeholders for now. We will update links and status as the documentation for those SDKs are published.
@@ -41,9 +41,9 @@ Pick the SDK that matches your stack. Each quick start gets you from authenticat
     - Authenticate, upload a document, trigger processing, retrieve results.
     - Explore how‑to guides for documents, datasets, HITL, and errors/retries.
     - Links:
-        - [Overview](/sdk/dotnet)
-        - [Quickstart](/sdk/dotnet/quickstart)
-        - [How‑to Guides](/sdk/dotnet/how-to)
+        - [Overview](dotNET/index.md)
+        - [Quickstart](dotNET/quickstart.md)
+        - [How‑to Guides](dotNET/how-to/index.md)
 - TypeScript
     - Install (placeholder; replace with the published package name):
         ```bash
@@ -51,8 +51,8 @@ Pick the SDK that matches your stack. Each quick start gets you from authenticat
         ```
     - Placeholder for install, auth, and first document flow.
     - Links:
-        - [Overview](/sdk/javascript/)
-        - [Quickstart](/sdk/javascript/quickstart)
+        - [Overview](typescript.md)
+        - [Quickstart](#)
 - Python
     - Install (placeholder; replace with the published package name):
         ```bash
@@ -60,8 +60,8 @@ Pick the SDK that matches your stack. Each quick start gets you from authenticat
         ```
     - Placeholder for install, auth, and first document flow.
     - Links:
-        - [Overview](/sdk/python/)
-        - [Quickstart](/sdk/python/quickstart)
+        - [Overview](python.md)
+        - [Quickstart](#)
 
 !!! tip "Fast path to success"
     Start with a tiny sample (one or two documents) to validate your flow end‑to‑end. Scale only after you’ve confirmed outputs and any HITL (Human‑in‑the‑Loop) steps.
@@ -90,10 +90,10 @@ flowchart LR
 ```
 
 !!! example "Where to go next"
-    - Learn authentication flow: [sdk/dotnet/how-to/authentication](/sdk/dotnet/how-to/authentication)
-    - Learn document flows: [sdk/dotnet/how-to/documents](/sdk/dotnet/how-to/documents)
-    - Retrieve results: [sdk/dotnet/how-to/retrieve-results](/sdk/dotnet/how-to/retrieve-results)
-    - HITL work items: [sdk/dotnet/how-to/workflow](/sdk/dotnet/how-to/workflow)
+    - Learn authentication flow: [sdk/dotNET/how-to/authentication](dotNET/how-to/authentication.md)
+    - Learn document flows: [sdk/dotNET/how-to/documents](dotNET/how-to/documents.md)
+    - Retrieve results: [sdk/dotNET/how-to/retrieve-results](dotNET/how-to/retrieve-results.md)
+    - HITL work items: [sdk/dotNET/how-to/workflow](dotNET/how-to/workflow.md)
 
 ---
 
@@ -139,6 +139,6 @@ AIForged integrates with RPA and low‑code tools for orchestration at scale.
 
 ## Related
 
-- How‑to Guides: [sdk/dotnet/how-to/](/sdk/dotnet/how-to/)
-- Client References: [sdk/dotnet/client-reference/](/sdk/dotnet/client-reference/)
-- Models & Enums Reference (.NET): [sdk/dotnet/models-and-enums](/sdk/dotnet/models-and-enums)
+- How‑to Guides: [sdk/dotNET/how-to/](dotNET/how-to/index.md)
+- Client References: [sdk/dotNET/client-reference/](dotNET/client-reference/index.md)
+- Models & Enums Reference (.NET): [sdk/dotNET/models-and-enums](dotNET/models-and-enums.md)

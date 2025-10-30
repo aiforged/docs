@@ -107,4 +107,4 @@ Document Categories define the type of document that has been uploaded (for exam
 - Document Attributes: [Click Here](document-attributes.md)
 - Understanding Document Flows: [Click Here](understanding-document-flows.md)
 - Working in the Service view: [Click Here](documents-in-service-view.md)
-- Documents overview: [Click Here](documents.md)
+- Documents overview: [Click Here](index.md)

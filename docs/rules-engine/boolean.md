@@ -23,7 +23,7 @@ See [Field Rules (Rules Engine)](index.md) for how to open the field configurati
 
 ## Configure the Boolean rule
 
-![Boolean — base options](../../assets/img-2025-09-01-09-54-52.png)
+![Boolean — base options](../assets/img-2025-09-01-09-54-52.png)
 
 Core settings:
 
@@ -143,7 +143,7 @@ Trigger review when:
 ## UI reference
 
 - Base panel (Rule Type, Default Value)
-    ![Boolean — base options](../../assets/img-2025-09-01-09-54-52.png)
+    ![Boolean — base options](../assets/img-2025-09-01-09-54-52.png)
 
 - Value to Boolean Mappings table
-    ![Boolean — mappings](../../assets/img-2025-09-01-09-55-28.png)
+    ![Boolean — mappings](../assets/img-2025-09-01-09-55-28.png)

@@ -133,7 +133,7 @@ IVerificationModule additions available via the field script context:
     - CreateParameter<T>(pdId, value): create a new parameter value for the given definition ID
 
 !!! info
-    For more, see the [BaseModule](../../../custom-service-code/basemodule/index.md) cover page and linked method references.
+    For more, see the [BaseModule](../../custom-service-code/basemodule/index.md) cover page and linked method references.
 
 ---
 
@@ -321,7 +321,7 @@ Escalate to review (via Workflow Script or your routing policy) when:
 
 ## See also
 
-- Custom Code overview and samples: [Custom Code](../../custom-service-code/README.md)
+- Custom Code overview and samples: [Custom Code](../../custom-service-code/index.md)
 - Base APIs and data types: [BaseModule / IBaseModule](../../custom-service-code/basemodule/ibasemodule-interface-data-types.md)
 
 ---
