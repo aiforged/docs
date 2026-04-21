@@ -177,12 +177,12 @@ return new AIForged.Services.ProcessResult(verification);
 
 #### 3. API Enrichment (Utility Script Level)
 
-<pre class="language-csharp"><code class="lang-csharp">
+```csharp
 foreach (var doc in docs)
 {
     var http = new HttpClient();
-<strong>    var payload = new { docId = doc.Id, filename = doc.Filename };
-</strong>    var content = new StringContent(JsonSerializer.Serialize(payload), System.Text.Encoding.UTF8, "application/json");
+    var payload = new { docId = doc.Id, filename = doc.Filename };
+    var content = new StringContent(JsonSerializer.Serialize(payload), System.Text.Encoding.UTF8, "application/json");
     var response = await http.PostAsync("https://external.api/enrich", content);
     
     if (response.IsSuccessStatusCode)
@@ -197,7 +197,7 @@ foreach (var doc in docs)
 }
 
 return new AIForged.Services.ProcessResult(docs);
-</code></pre>
+```
 
 #### 4. Conditional HITL Work Item Assignment (Batch/Utility Script Level)
 
