@@ -9,7 +9,7 @@ Custom Code in AIForged allows you to script custom logic, validations, data enr
 
 ### How It Works
 
-Custom Code utilities are not standalone services.\
+Custom Code utilities are not standalone services.
 **Always attach them as a pre- or post-processor to a parent service**—either from the parent’s service view or the Service Flow Configurator.
 
 **To add a Custom Code utility:**
