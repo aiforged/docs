@@ -16,15 +16,15 @@ Custom Code utilities are not standalone services.\
 
 * **From Parent Service View:**
     1. Open your parent service.
-    2. Click the **Add Service** dropdown and select **Utility Service**.&#x20;
+    2. Click the **Add Service** dropdown and select **Utility Service**.
     3. Select **Custom Code**.
     4. Set whether to run as a pre- or post-processor (using Execute Before/After Process).
 * **From Service Flow Configurator:**
     1. Open the parent service’s Service Flow Configurator.
-    2. Expand the Utility Service Types group.&#x20;
+    2. Expand the Utility Service Types group.
     3. Drag **Custom Code** onto the parent:
         * Drop to the left for Pre-processor.
-        * Drop to the right for Post-processor.&#x20;
+        * Drop to the right for Post-processor.
     4. Save.
 
 !!! info
@@ -187,8 +187,8 @@ foreach (var doc in docs)
     
     if (response.IsSuccessStatusCode)
     {
-        var enrich = await response.Content.ReadFromJsonAsync&#x3C;Dictionary&#x3C;string, string>>();
-        if (enrich != null &#x26;&#x26; enrich.TryGetValue("enriched", out var enrichedValue))
+        var enrich = await response.Content.ReadFromJsonAsync<Dictionary<string, string>>();
+        if (enrich != null ?? enrich.TryGetValue("enriched", out var enrichedValue))
         {
             doc.Result = enrichedValue;
             await module.SaveChanges();
