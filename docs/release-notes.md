@@ -5,6 +5,237 @@ nav_order: 1
 
 # 📣 Release Notes
 
+## ***New – AIForged Studio – 2.1 (17-04-2026)***
+
+This release focuses on improving document verification in AIForged Studio. It introduces a new **Document** data view for reviewing extracted data, adds optional auto-save during verification, and lets reviewers hide or show the document preview pane as needed. It also brings major responsiveness improvements for larger documents, plus workflow, permissions, logging, and timestamp quality-of-life updates.
+
+### New Features
+
+- **Document Verification:** Added a new **Document** view alongside the existing **Hierarchy** view — making extracted fields easier to review in a more document-oriented layout. (PR #661)
+  - Includes zoom controls.
+  - Remembers your selected layout and default zoom preference.
+
+- **Document Verification:** Added a control to hide or show the document preview pane — giving reviewers more space when focusing on extracted data. (PR #661)
+  - The pane visibility preference is remembered.
+
+- **Verification Save Flow:** Verifications can now auto-save while you work when this is enabled for a service — reducing the risk of losing in-progress changes.
+
+- **Document Search:** Added document category search to the **Documents** and **LLM Documents** views — making large document lists easier to narrow down.
+
+### Enhancements (Quality of Life)
+
+- **Document Preview Overlays:** Overlapping field overlays are now grouped in the preview — reducing clutter when multiple extracted fields occupy the same area.
+
+- **Process Logs:** Reworked the process log view into a data grid with filtering, sorting, column resizing/hiding, and virtualization — making logs easier to inspect.
+
+- **Dates and Times:** Timestamps now display in local time across documents, audit, logs, workflow, verification history, and transactions — improving readability and reducing timezone confusion.
+
+- **Permissions:** Access checks were aligned across agents, documents, workflow, verification, audit, transactions, and user/group screens — improving consistency, including view-only scenarios with upload/download access.
+
+- **Workflow:** Work items now load in parallel, refresh more reliably, and correctly honor work-item filters passed by URL — improving day-to-day workflow monitoring.
+
+- **User Administration:** Improved admin access to user profiles and notification-setting handling — making profile administration more reliable.
+
+### Bug Fixes
+
+- **Document Verification:** Fixed inconsistent field loading when switching between **Hierarchy** and **Document** views, along with related layout sizing issues and preview pane show/hide regressions — making view changes more reliable. (PR #661)
+
+- **Verification Auto-save:** Fixed cases where auto-save could miss changes from new table cells or label-driven updates — improving reliability when auto-save is enabled.
+
+- **Document Tables:** Restored the **Add Row** action in Document-view tables and fixed row creation when tables had no existing columns or cells — reducing interruptions during manual review.
+
+- **Labelling Studio:** Fixed recent regressions and improved stability when working with labels and field definitions. (PR #661)
+
+- **Verification Publish:** Fixed cases where published verification changes did not fully update parameter values or document status, and ensured verification audit entries capture the current user — improving trust in published verification results.
+
+- **Service Wizard:** Replaced a broken step-navigation control — restoring guided service setup.
+
+- **Audit / Logs / Transactions:** Fixed several display and data issues, including column labeling, null-safe work item timestamps, and transaction summary formatting.
+
+### Performance
+
+- **Document Verification:** Added chunked loading for the new Document view — improving initial rendering speed and responsiveness on larger verification sessions. (PR #661)
+
+- **Document Preview:** Added page virtualization and related rendering optimizations in the verification preview — reducing overhead when navigating multi-page documents.
+
+- **LLM Documents and Workflow:** Improved loading performance for LLM document views and workflow item retrieval — helping large queues open faster.
+
+### Developer Notes
+
+- **Deployment Configuration:** Internal / behind-the-scenes — Studio can now read API client ID and secret overrides from environment variables.
+
+- **Dependency Refresh:** Internal / behind-the-scenes — updated MAUI, Blazor, Syncfusion, MudBlazor, Azure, and related packages.
+
+---
+
+## **AIForged Studio – 2.0 (27-03-2026)**
+
+This release continues a major overhaul of AIForged Studio, with broad improvements to document verification, agent-assisted setup, prompt editing, and workflow stability. Users should notice better control over field configuration, clearer assistant-driven setup flows, and a steadier experience across documents, prompts, and workflows.
+
+### New Features
+
+- **Agent Assistant / Flow Blueprinting:** Added a new agent flow blueprint that shows what the assistant plans to create and configure, with an opportunity to confirm or edit suggestions before applying them — giving users more control over assisted setup. 
+
+- **Parameter Definition Rules:** Added missing **Dependencies** and **Conditions** configuration directly in the parameter definition view — users can link fields, define rule conditions, and invert condition results without leaving the configuration flow. 
+
+- **Document Verification Source Mapping:** Added support for multiple source/block locations for a single verification item — making it easier to inspect where extracted values came from in complex documents. 
+
+- **On-the-fly OCR:** Added Tesseract OCR support during document verification — helping recover text when OCR is needed during review. 
+
+- **Service Creation Options:** Added table creation configuration during service setup — providing additional control over table handling when creating services. 
+
+### Enhancements (Quality of Life)
+
+- **Studio Experience:** Continued the major Studio refresh with reworked views and dialogs across the product, including the Process view, LLM document experience, and agent assistance flows — improving consistency and usability across the app.
+
+- **Prompt Designer:** Finalized and improved the Prompt Designer assistant, added diff editors for prompts and schema, and refined save/apply feedback — making prompt changes easier to review and manage.
+
+- **Verification Experience:** Continued polishing the document verification flow, including table and cluster review navigation, page rendering behavior, and dialog interactions — making review workflows clearer and more predictable.
+
+- **Numeric Editing:** Number, currency, and several model/locate settings now use improved stepped numeric inputs with min/max support and clearer formatting behavior — reducing friction when editing numeric values.
+
+- **Parameter Editors:** Dictionary and list editors now show busy states during rebuilds, and parameter definition layouts received additional polish — improving clarity during configuration changes.
+
+- **Workflow View:** Replaced a faulty tab control in the Workflow view and added more resilient error handling around Workflow/Kanban areas — improving day-to-day navigation in workflow screens.
+
+### Bug Fixes
+
+- **Verification Reliability:** Improved the chance that document page images load in the correct order, fixed verification navigation null-reference issues, corrected field dialog layout problems, and prevented verification key handling from interfering while field configuration is open — reducing interruptions during review.
+
+- **Number and Currency Parsing:** Fixed numeric parsing in setting controls and verification data fields, including culture-aware decimal handling — reducing incorrect interpretation of numeric values.
+
+- **Settings Updates:** Fixed Settings so endpoint changes are applied more immediately — helping configuration changes take effect more predictably.
+
+- **Agent Setup and Startup:** Fixed the broken agent quick start control and prevented a startup exception when a blob storage connection string is not provided — improving setup reliability.
+
+- **Prompt Access and Apply Actions:** Fixed prompt permission checks and resolved a Prompt Designer apply bug — helping prompt edits save and apply when expected.
+
+- **Workflow and Kanban Stability:** Addressed workflow crashes, first-load JavaScript errors, duplicate event handler issues, and component disposal/cleanup problems — improving stability in more complex workflow boards.
+
+- **UI Polish and Stability:** Fixed issues affecting notification settings, enum list controls, document layouts, code editor height, and some Syncfusion breadcrumb-related crashes.
+
+- **Upgrade Compatibility:** Added browser-side cache/cookie clearing support to reduce stale Syncfusion control state after package upgrades, and addressed a diagram-control regression seen during dependency changes.
+
+### Security
+
+- **Web App Protection:** Added antiforgery support and authentication route mapping in the web host — **Internal / behind-the-scenes** hardening for authentication-related flows.
+
+### Performance
+
+- **Documents and Verification:** Added performance improvements across Documents, LLM Documents, parameter definition tree views, and document data fields — helping busy screens feel more responsive.
+
+- **Editors and Rendering:** Reduced unnecessary refreshes and improved rendering behavior in editor and verification-related components — improving interaction smoothness.
+
+- **Drawer and JS Lifecycle:** Improved LLM drawer resize initialization/disposal and related JavaScript teardown behavior — **Internal / behind-the-scenes** stability and responsiveness work.
+
+### Developer Notes
+
+- **Semantic Agent Internals:** Reworked the SemanticAgentService to avoid relying on Azure Foundry Agents — **Internal / behind-the-scenes** reliability work.
+
+- **Dependency Updates:** Updated dependencies across the release, including Syncfusion packages and ReverseMarkdown, with follow-up compatibility fixes where needed — **Internal / behind-the-scenes**.
+
+- **Lifecycle Cleanup:** Many components were updated toward async disposal and stronger cleanup handling — **Internal / behind-the-scenes** stability work.
+
+---
+
+## **AIForged Platform – (27-03-2026)**
+
+This release introduces a major milestone for extraction workflows: **deterministic location extraction for LLM and ChatGPT extractors powered by Document Intelligence output**, helping map extracted values back to where they appear in the document. It also improves **billing accuracy and flexibility**, strengthens **webhook payloads**, and enhances **project cloning** for dataset-based workflows.
+
+---
+
+### New Features
+
+- **LLM / ChatGPT Extractors: Deterministic location extraction (major milestone)** — extracted values can now be matched back to their position in the Document Intelligence output (including improved handling for tables). This helps support more reliable review/verification of extracted fields. (Commits: `3d2c555`, `ad57908`)
+  - **Requirements:** Document Intelligence must be enabled/available for the extractor so it can use the `analyzeResult` output for location identification.
+  - **Studio:** When creating a new **LLM** or **ChatGPT Extractor** service in **AIForged Studio (web)**, Studio will automatically ensure the required dependencies are configured for deterministic location extraction.
+  - Location extraction will also be enabled by default on all existing agents and services, without any interaction required from.
+
+- **Billing: Per-document service charge support** — service types can now include an additional **document-level charge** (added to billing alongside existing usage/page-based charges).
+
+---
+
+### Enhancements (Quality of Life)
+
+- **Tables (Location extraction):** Added column-header aware matching controls so values in tables can be located more reliably under the correct column.
+- **Billing: Minimum per-page charging simplified** — minimum per-page charging is now enforced based on the service type base charge, with error logging and safe handling if a service type can’t be resolved.
+- **Billing: Balance checks are more conservative** — cost estimation now accounts for output tokens (estimated output tokens at 4× input tokens) when checking balance before running prompts.
+- **Webhooks:** Webhook execution now loads extracted parameters on the source document so they can be included in webhook payloads.
+- **Project cloning:** Improved cloning support for **DataSet documents** by adding filename-based matching for dataset usage types.
+- **Authentication configuration:** External login providers are now only configured when the required credentials are present (reducing misconfiguration issues).
+- **Text-only documents:** Improved handling so text-only documents don’t attempt image attachment as part of extraction prompting.
+
+---
+
+### Bug Fixes
+
+- **LLM extraction:** Fixed missing document data when `AttachDocData` is set to `false`.
+- **Billing:** Fixed incorrect charges when multiple documents are selected/processed together. 
+
+---
+
+### Performance
+
+- **Document Intelligence training:** Increased the timeout threshold before considering DI neural layout training “stuck,” reducing premature aborts for slower runs.
+
+---
+
+### Terminology / UI Text Updates
+
+- **LLM reasoning effort labels:** Standardised reasoning-effort description strings (e.g., “none”, “medium”) to align with expected values.
+
+---
+
+### Breaking Changes / Migration Notes
+
+- **Minimum page charge behaviour changed:** Minimum per-page charging no longer depends on the prior setting logic and is now enforced based on the service type base charge.
+- **Database migration required:** Schema changes add document-level charging support (e.g., `ServiceType.DocumentCharge`). Apply the included EF migration(s).
+
+---
+
+### Security
+
+- **Internal / behind-the-scenes:** Updated database credentials in environment configuration files. Ensure your deployment uses the correct updated secrets.
+
+---
+
+## Fine-tuning deterministic location extraction (DI location settings)
+
+Deterministic location extraction tries to **pinpoint where each extracted value appears on the page** (based on Document Intelligence output). The options below help you tune *how strict* matching is, and how it behaves on **tables** and **noisy OCR**.
+
+### What to adjust
+
+- **How strict the “text match” should be**
+  - **Minimum match quality to accept** (`LexicalMinScoreToAccept`): Increase to be stricter (fewer wrong locations), decrease to be more forgiving (better for messy OCR).
+  - **How close an “almost match” must be to be considered** (`LexicalFuzzyMinScoreToConsider`): Lower this if OCR spelling/character mistakes are common.
+
+- **Avoiding “partial matches” (matching the wrong big block of text)**
+  - **Penalty when the match is likely incomplete** (`LexicalContainsMinRatioThresholdToConsider`, `LexicalContainsMinRatioPenalty`): Helps stop short values from incorrectly matching long paragraphs/lines.
+
+- **Fallback matching when the value and source text don’t line up neatly**
+  - **Enable a fallback search direction** (`EnableReverseLexicalFallback`): Useful when the extracted value includes extra context and doesn’t appear as a clean substring in the source text.
+
+- **Table-specific accuracy (often the biggest win for invoices/statements)**
+  - **Use column headers as a hint** (`EnableColumnHeaderBoost`): Improves locating values inside tables by preferring candidates under the correct column header.
+  - Related controls: **how far below a header is allowed**, **how strict alignment is**, and **whether headers can be reused across pages** (`ColumnHeaderMaxGapPx`, `ColumnHeaderMinXOverlapRatio`, `ColumnHeaderAllowCrossPageFallback`, `MaxDeltaY`, etc.).
+
+- **Preventing repeated fields from mapping to the same spot**
+  - **Overlap rule for “already used” areas** (`CoverageOverlapThreshold`): Helps avoid multiple extracted fields pointing to the same region; relax it if pages are very dense and matches get rejected too often.
+
+### Practical tuning guidance (quick profiles)
+
+- **Clean, electronic PDFs (consistent layouts)**
+  - Make matching **stricter** (higher minimum match quality).
+  - Keep table alignment settings **tight** so values don’t drift to nearby columns/rows.
+  - Enable column-header hints for better table precision.
+
+- **Scanned PDFs / noisy OCR (spacing drift, recognition errors)**
+  - Make matching **more forgiving** (slightly lower thresholds).
+  - Consider enabling the fallback search direction (`EnableReverseLexicalFallback`).
+  - Loosen table distance/alignment settings to tolerate skew and inconsistent spacing—then refine once results stabilise.
+
+---
+
 ## **UiPath Activities 1.6.2116.858 (17-10-2025)**
 
 This release focuses on frictionless context handling, clearer activity configuration, and a robust way to export full hierarchical extraction results. It should reduce boilerplate, improve workflow readability, and make downstream integrations simpler.
@@ -92,7 +323,7 @@ Example shape (illustrative):
         - Visual change only; runtime Behaviour is unchanged.
         - Existing workflows remain compatible and benefit from the clearer card rendering.
 
-## ***New – AIForged Studio – Web 1.1 (18-08-2025)***
+## **AIForged Studio – Web 1.1 (18-08-2025)**
 
 We’re thrilled to bring you a major AIForged Studio update focused on faster flow setup, a smarter configuration experience, and meaningful quality-of-life improvements across the board.
 
@@ -157,7 +388,7 @@ The web-based AIForged Studio is available at: [https://studio.aiforged.com](htt
 * **Windows Legacy Projects:**
     * This will be the last release of the AIForged Legacy package for UiPath - Windows Legacy projects. These projects have been obsoleted by UiPath for quite some time and should no longer be used for new processes and libraries. They are also no longer an option in the newest versions of the UiPath Studio.
 
-## \*\*\*New - AIForged Studio - Web 1.0.0 (11-04-2025)
+## **AIForged Studio - Web 1.0.0 (11-04-2025)**
 
 We are proud to announce the availability of the new web based AIForged Studio built entirely from the ground up in a performant web specific framework.
 
