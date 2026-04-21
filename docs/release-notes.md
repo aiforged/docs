@@ -11,11 +11,11 @@ This release focuses on improving document verification in AIForged Studio. It i
 
 ### New Features
 
-- **Document Verification:** Added a new **Document** view alongside the existing **Hierarchy** view — making extracted fields easier to review in a more document-oriented layout. (PR #661)
+- **Document Verification:** Added a new **Document** view alongside the existing **Hierarchy** view — making extracted fields easier to review in a more document-oriented layout.
   - Includes zoom controls.
   - Remembers your selected layout and default zoom preference.
 
-- **Document Verification:** Added a control to hide or show the document preview pane — giving reviewers more space when focusing on extracted data. (PR #661)
+- **Document Verification:** Added a control to hide or show the document preview pane — giving reviewers more space when focusing on extracted data.
   - The pane visibility preference is remembered.
 
 - **Verification Save Flow:** Verifications can now auto-save while you work when this is enabled for a service — reducing the risk of losing in-progress changes.
@@ -38,13 +38,13 @@ This release focuses on improving document verification in AIForged Studio. It i
 
 ### Bug Fixes
 
-- **Document Verification:** Fixed inconsistent field loading when switching between **Hierarchy** and **Document** views, along with related layout sizing issues and preview pane show/hide regressions — making view changes more reliable. (PR #661)
+- **Document Verification:** Fixed inconsistent field loading when switching between **Hierarchy** and **Document** views, along with related layout sizing issues and preview pane show/hide regressions — making view changes more reliable.
 
 - **Verification Auto-save:** Fixed cases where auto-save could miss changes from new table cells or label-driven updates — improving reliability when auto-save is enabled.
 
 - **Document Tables:** Restored the **Add Row** action in Document-view tables and fixed row creation when tables had no existing columns or cells — reducing interruptions during manual review.
 
-- **Labelling Studio:** Fixed recent regressions and improved stability when working with labels and field definitions. (PR #661)
+- **Labelling Studio:** Fixed recent regressions and improved stability when working with labels and field definitions.
 
 - **Verification Publish:** Fixed cases where published verification changes did not fully update parameter values or document status, and ensured verification audit entries capture the current user — improving trust in published verification results.
 
@@ -54,7 +54,7 @@ This release focuses on improving document verification in AIForged Studio. It i
 
 ### Performance
 
-- **Document Verification:** Added chunked loading for the new Document view — improving initial rendering speed and responsiveness on larger verification sessions. (PR #661)
+- **Document Verification:** Added chunked loading for the new Document view — improving initial rendering speed and responsiveness on larger verification sessions.
 
 - **Document Preview:** Added page virtualization and related rendering optimizations in the verification preview — reducing overhead when navigating multi-page documents.
 
