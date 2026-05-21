@@ -11,11 +11,15 @@ Classification services in AIForged use machine learning and advanced AI models 
 !!! info
     Classification engines can analyze and classify documents on a per-page basis for granular control.
 
+!!! tip
+    **Preferred choice for new projects:** Start with the [LLM Classifier](llm-classifier.md). It is the recommended classifier type when you want faster setup, easier tuning, and category-driven natural language classification.
+
 AIForged currently provides the following **Classification Service Types**:
 
 | Service Name                      | Best Suited For                                                                 | Quick Link                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| AIForged Classifier                | General document classification using custom-trained models                     | [aiforged-classifier](aiforged-classifier.md "mention")         |
+| LLM Classifier                     | **Preferred** for new projects, mixed inboxes, and category-driven natural language classification | [llm-classifier](llm-classifier.md "mention")                   |
+| AIForged Classifier                | General document classification using custom-trained supervised models          | [aiforged-classifier](aiforged-classifier.md "mention")         |
 | AIForged Clustering                | Unsupervised grouping of documents based on content similarity                  | [aiforged-clustering](aiforged-clustering.md "mention")         |
 | ChatGPT Classification             | AI-powered, context-aware classification using ChatGPT models                   | [chatgpt-classifier](chatgpt-classifier.md "mention")           |
 | Microsoft Custom Text Classifier   | Text classification for custom categories using Microsoft’s language models     | [microsoft-custom-text-classification](microsoft-custom-text-classification.md "mention") |

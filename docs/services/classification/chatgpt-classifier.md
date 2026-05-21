@@ -4,6 +4,9 @@
 
 The GPT Classifier in AIForged empowers you to categorize documents using advanced language models, without the need for traditional supervised training. Instead, you configure a question and answer matrix linked to your document categories, guiding the model's classification logic.
 
+!!! tip
+    For new classification projects, start with the [LLM Classifier](llm-classifier.md). Use the GPT Classifier when you specifically want a question-and-answer-matrix-driven approach.
+
 !!! info
     Unlike traditional classifiers, the GPT Classifier does not require uploading training data. Instead, you guide the model’s classification logic by configuring a question and answer matrix linked to your document categories.
 

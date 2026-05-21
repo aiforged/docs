@@ -28,6 +28,7 @@ AIForged offers a variety of Services, each tailored for specific tasks:
     - Pull documents from sources such as mailboxes, folders, or cloud storage.
 - Classifiers
     - Identify the type/category of each page or document to route processing.
+    - For new classification projects, the **LLM Classifier** is the preferred starting point.
 - Extractors and Verifiers
     - Extract structured fields and tables, then validate and standardize results.
 - OCR (Optical Character Recognition)

@@ -86,6 +86,7 @@ AIForged gives you two equally powerful ways to get started: via Studio (UI) or 
 
 1. Create or open an Agent
 2. Add a Service
+    - Classification: **LLM Classifier** (preferred for new classification projects)
     - Structured/semi-structured: Extract & Verify or Document Intelligence
     - Unstructured/variable: LLM Extractor (prompt + schema) for GenAI-powered extraction
 3. (Optional) Attach Utilities as pre/post-processors
@@ -123,6 +124,7 @@ Typical sequence (high level):
 
 ## Choose the right approach
 
+- Mixed document sets and inbox triage → **LLM Classifier** (preferred)  
 - Structured forms → Template‑oriented extraction (Extract & Verify, Document Intelligence)  
 - Semi‑structured (invoices, receipts) → Prebuilt/custom extraction services with table support  
 - Unstructured (contracts, policies) → OCR + LLM Extractor + targeted rules + HITL  
@@ -153,6 +155,8 @@ See: [Documents → Document Types](documents/document-types.md)
     - [Document Categories](documents/document-categories.md)
 
 - Services  
+    - Classification: [Overview](services/classification/index.md)  
+    - LLM Classifier: [Overview](services/classification/llm-classifier.md)  
     - OCR: [Overview](services/ocr/index.md)  
     - Extract & Verify: [Overview](services/extract-and-verify/index.md)  
     - Vision: [Overview](services/object-detection/index.md)  

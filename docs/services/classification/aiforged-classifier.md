@@ -4,6 +4,9 @@
 
 The AIForged Classifier is a supervised machine learning service that classifies documents (and pages) into business-ready categories. It is cost‑effective, reliable, and typically requires minimal maintenance over an agent’s lifetime. Use it to route work, branch flows, and organize documents for downstream processing.
 
+!!! tip
+    For new classification projects, start with the [LLM Classifier](llm-classifier.md). Use the AIForged Classifier when you specifically want a supervised, training-sample-based model lifecycle.
+
 !!! info
     Ideal for document triage, inbox routing, automated foldering, and pre‑processing before specialized extraction.
 

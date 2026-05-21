@@ -75,12 +75,14 @@ nav:
       - ☁️ OneDrive Scraping: services/scrapers/onedrive-scraping.md
     - 🔀 Classification:
       - Overview: services/classification/index.md
+      - LLM Classifier (Preferred): services/classification/llm-classifier.md
       - AIForged Classifier: services/classification/aiforged-classifier.md
       - AIForged Clustering: services/classification/aiforged-clustering.md
       - ChatGPT Classifier: services/classification/chatgpt-classifier.md
       - Microsoft Custom Text Classification: services/classification/microsoft-custom-text-classification.md
     - 🔍 Extract And Verify:
       - Overview: services/extract-and-verify/index.md
+      - LLM Extractor (Preferred): services/extract-and-verify/llm-extractor.md
       - Amazon Identity Documents Extraction: services/extract-and-verify/amazon-identity-documents.md
       - Amazon Invoice Extraction: services/extract-and-verify/amazon-invoices.md
       - Amazon Receipt Extraction: services/extract-and-verify/amazon-receipt-extraction.md
@@ -89,7 +91,6 @@ nav:
       - Document Intelligence: services/extract-and-verify/document-intelligence.md
       - Document Intelligence – Custom Invoices: services/extract-and-verify/document-intelligence-custom-invoices.md
       - Document Intelligence – Prebuilt Models: services/extract-and-verify/document-intelligence-prebuilt-models.md
-      - LLM Extractor: services/extract-and-verify/llm-extractor.md
     - 🔠 OCR:
       - Overview: services/ocr/index.md
       - Amazon OCR: services/ocr/amazon-ocr.md

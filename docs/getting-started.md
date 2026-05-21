@@ -199,7 +199,27 @@ See: [Services → Scrapers → Email Scraper](services/scrapers/email-scraper.m
 
 Classification lets you auto-sort mixed batches (e.g., Credit Application, ID, Payslip, Other), enabling precise downstream pipelines.
 
-### AIForged Classifier (supervised ML)
+!!! tip
+    For new classification workflows, start with the [LLM Classifier](services/classification/llm-classifier.md). It is the preferred classifier type in AIForged and is usually faster to tune because category names and descriptions are used directly during classification.
+
+### LLM Classifier (preferred)
+
+1. Add the **LLM Classifier** service.
+2. Define your business categories with short, distinct names.
+3. Add a clear description to each category explaining what belongs in that class.
+4. Process a representative mixed batch and review the results.
+5. Refine category wording before scaling up.
+
+Best-practice settings:
+
+- Keep category names distinct and business-friendly
+- Use category descriptions to explain category boundaries clearly
+- Add an **Other** category where appropriate for unmatched documents
+- Review low-confidence results and tune the wording incrementally
+
+See: [Services → Classification → LLM Classifier](services/classification/llm-classifier.md)
+
+### AIForged Classifier (supervised ML alternative)
 
 1. Add the “AIForged Classification” service  
     ![](assets/img-2025-08-18-11-02-08.png)
@@ -413,7 +433,7 @@ Content-Type: application/json
 ## Quick start checklist (at a glance)
 
 - [ ] Set up an Email Scraper with a test mailbox  
-- [ ] Choose a classification path (Document Intelligence or LLM Extractor)  
+- [ ] Choose a classification path (LLM Classifier preferred, or AIForged Classifier for supervised ML)  
 - [ ] Configure extraction (Document Intelligence or LLM Extractor)  
 - [ ] Add verification/HITL as needed  
 - [ ] Validate end-to-end with a small test batch  

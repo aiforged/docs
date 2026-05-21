@@ -22,6 +22,9 @@ NuGet: [AIForged.SDK](https://www.nuget.org/packages/AIForged.SDK)
 !!! tip "Unified access"
     No cloud-provider keys or regional setup required. AIForged is a unified access layer—your AIForged account + API key is all you need.
 
+!!! tip "Preferred classifier for new projects"
+    If your first automation flow needs document classification, create an **LLM Classifier** service in AIForged Studio and point `AIFORGED_SERVICE_ID` at it. The LLM Classifier is the preferred classification service type for new projects.
+
 ---
 
 ## Set environment variables (recommended)
@@ -305,6 +308,8 @@ class Program
 - [SDK Overview](index.md)
 - [Authentication](how-to/authentication.md)
 - [Documents (search, upload, status)](how-to/documents.md)
+- [Classification Overview](../../services/classification/index.md)
+- [LLM Classifier (preferred)](../../services/classification/llm-classifier.md)
 - [Work Items (HITL)](how-to/workflow.md)
 - [Datasets](how-to/custom-datasets.md)
 - [Error handling and retries](how-to/errors.md)
