@@ -109,6 +109,35 @@ YAML is indentation-sensitive:
 
 ---
 
+## Rich link previews (Teams, Slack, LinkedIn, X)
+
+This docs site supports richer link unfurl / preview cards by emitting:
+
+- Open Graph meta tags
+- Twitter card meta tags
+- canonical URLs
+- per-page descriptions from front matter when available
+
+Implementation details:
+
+- `site_url` and `site_description` are configured in `mkdocs.yml`
+- theme overrides live under `overrides/`
+- social meta tags are emitted from `overrides/main.html`
+- the default preview image is configured in `mkdocs.yml` under `extra.social_preview_image`
+
+To customize a specific page preview, add front matter like this:
+
+```yaml
+---
+title: Example Page
+description: A concise summary used in search and link previews.
+social_image: assets/social/example-card.png
+social_image_alt: Example preview image
+---
+```
+
+> Preview crawlers generally require public access to the page and image URL, so private/internal-only environments may still not unfurl even with correct metadata.
+
 ## Theming
 
 Material for MkDocs supports both built-in and custom themes.

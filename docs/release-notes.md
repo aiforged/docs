@@ -42,7 +42,7 @@ This release continues the Studio modernization work with a strong focus on clas
 
 ## ***New – AIForged Platform – (22-05-2026)***
 
-This platform release introduces the new **LLM Classifier** as the preferred classifier type for new projects. It adds a modern LLM-driven classification path that is easier to tune through category wording, while also improving merged-document handling, OCR / Document Intelligence context usage, and vision prompt image preparation.
+This platform release introduces the new **LLM Classifier** as the preferred classifier type for new projects and also adds the new **Travel Rates Extractor** service. It expands the platform with a modern LLM-driven classification path that is easier to tune through category wording, while also improving merged-document handling, OCR / Document Intelligence context usage, and vision prompt image preparation.
 
 ### New Features
 
@@ -52,6 +52,10 @@ This platform release introduces the new **LLM Classifier** as the preferred cla
     - Supports strict structured output for reliable downstream parsing.
     - Supports both **per-document** classification (default) and optional **per-page** classification modes.
 
+- **Travel Rates Extractor:** Added the new **Travel Rates Extractor** service to the AIForged Platform.
+    - Available as a dedicated extractor service type for travel-rate-related extraction scenarios.
+    - Included as part of the latest platform service availability for Studio and platform consumers.
+
 ### Enhancements (Quality of Life)
 
 - **Merged PDF Handling:** Added support for logical sub-document splitting in merged PDFs so classification can operate more accurately across combined files.
@@ -59,7 +63,6 @@ This platform release introduces the new **LLM Classifier** as the preferred cla
 - **OCR / Document Intelligence Context Handling:** Improved handling of multi-page OCR and Document Intelligence outputs so classification receives more complete and reliable page/document context.
 
 - **LLM Vision Prompt Preparation:** Improved image handling for LLM-backed classification prompts by favouring more efficient image encoding and adaptive extraction behaviour where appropriate.
-
 ### Performance
 
 - **Classification Input Preparation:** Reduced unnecessary image and document processing overhead in the LLM classification path, improving throughput and reducing avoidable prompt payload size.

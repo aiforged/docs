@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  {% set page_title = page.meta.title if page and page.meta and page.meta.title else (page.title if page and page.title else config.site_name) %}
+  {% set full_title = config.site_name if page_title == config.site_name else page_title ~ " | " ~ config.site_name %}
+  {% set page_description = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set site_root = config.site_url[:-1] if config.site_url.endswith('/') else config.site_url %}
+  {% set page_url = page.canonical_url if page and page.canonical_url else site_root %}
+  {% set image_path = page.meta.social_image if page and page.meta and page.meta.social_image else config.extra.social_preview_image %}
+  {% set image_alt = page.meta.social_image_alt if page and page.meta and page.meta.social_image_alt else config.extra.social_preview_image_alt %}
+  {% if image_path %}
+    {% set image_url = image_path if image_path.startswith('http://') or image_path.startswith('https://') else site_root ~ '/' ~ image_path.lstrip('/') %}
+  {% endif %}
+
+  <link rel="canonical" href="{{ page_url }}">
+  <meta name="description" content="{{ page_description | e }}">
+
+  <meta property="og:site_name" content="{{ config.site_name | e }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ full_title | e }}">
+  <meta property="og:description" content="{{ page_description | e }}">
+  <meta property="og:url" content="{{ page_url }}">
+  {% if image_url %}
+  <meta property="og:image" content="{{ image_url }}">
+  <meta property="og:image:alt" content="{{ image_alt | e }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ full_title | e }}">
+  <meta name="twitter:description" content="{{ page_description | e }}">
+  {% if image_url %}
+  <meta name="twitter:image" content="{{ image_url }}">
+  <meta name="twitter:image:alt" content="{{ image_alt | e }}">
+  {% endif %}
+{% endblock %}
