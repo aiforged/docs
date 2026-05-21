@@ -5,7 +5,68 @@ nav_order: 1
 
 # 📣 Release Notes
 
-## ***New – AIForged Studio – 2.1 (17-04-2026)***
+## ***New – AIForged Studio – (22-05-2026)***
+
+This release continues the Studio modernization work with a strong focus on classifier setup, category management, review tooling, and assistant-driven guidance. It introduces first-class Studio support for the new **LLM Classifier**, significantly redesigns the **Categories** management experience, adds a new routed **HITL Corrections** reporting surface for both overview and document-level audit workflows, and brings the new global **AIForged Assistant in Studio** into the app shell.
+
+### New Features
+
+- **LLM Classifier in Studio:** Added the new **LLM Classifier** service to the Studio experience, including service creation and configuration support.
+  - Positioned as the **preferred classifier type** for new classification workflows.
+  - Supports category-driven configuration where category names and descriptions are used directly during classification.
+
+- **HITL Corrections Reporting:** Added a new routed **HITL Corrections** report page for reviewing human-in-the-loop correction activity.
+  - Includes a **multi-document overview** with summary metrics, trends, corrected-field analysis, and intervention hotspots.
+  - Includes a **single-document audit** view for reviewing field-by-field system vs human outcomes.
+  - Launched directly from **Documents**, **LLM Documents**, and **Document Verification** entry points.
+
+- **AIForged Assistant in Studio:** Added a new global **AIForged Assistant** to Studio, available from the app bar as an always-available in-app assistant experience.
+  - Provides documentation-grounded product help and guided how-to assistance.
+  - Can navigate to key Studio areas and open specific agents or services directly.
+  - Can inspect current workspace state across agents, services, settings, documents, extracted parameters, and custom datasets.
+  - Supports carefully scoped assistant actions, exports, and downloads where the current user has permission, with explicit confirmation required for mutations.
+
+### Enhancements (Quality of Life)
+
+- **Category Management UX/UI:** Significantly redesigned the category management experience in Studio.
+  - Replaced the previous card-heavy layout with a more scalable **master-detail editor**.
+  - Added searchable category navigation, clearer selection flow, and a dedicated editing pane.
+  - Improved editing of category names, descriptions, and readiness guidance for LLM-driven classification scenarios.
+
+- **Classifier Setup Guidance:** Updated Studio guidance and surrounding setup flow so the **LLM Classifier** is the recommended starting point when users need document classification.
+
+- **Assistant Safety and Activity Feedback:** Improved the global **AIForged Assistant** experience with permission-aware tool gating, confirmation-aware workspace actions, and clearer in-app status feedback for navigation, inspection, workspace updates, and export flows.
+
+- **Reporting Navigation:** Removed the earlier launch dependency on the dialog stack for HITL corrections and moved reporting to a dedicated routed page — improving shareability, navigation, and future extensibility.
+---
+
+## ***New – AIForged Platform – (22-05-2026)***
+
+This platform release introduces the new **LLM Classifier** as the preferred classifier type for new projects. It adds a modern LLM-driven classification path that is easier to tune through category wording, while also improving merged-document handling, OCR / Document Intelligence context usage, and vision prompt image preparation.
+
+### New Features
+
+- **LLM Classifier:** Added a new classifier service type for modern LLM-based document classification.
+  - Designed as the **preferred classifier** for new classification projects.
+  - Uses category names and descriptions directly as part of classification guidance.
+  - Supports strict structured output for reliable downstream parsing.
+  - Supports both **per-document** classification (default) and optional **per-page** classification modes.
+
+### Enhancements (Quality of Life)
+
+- **Merged PDF Handling:** Added support for logical sub-document splitting in merged PDFs so classification can operate more accurately across combined files.
+
+- **OCR / Document Intelligence Context Handling:** Improved handling of multi-page OCR and Document Intelligence outputs so classification receives more complete and reliable page/document context.
+
+- **LLM Vision Prompt Preparation:** Improved image handling for LLM-backed classification prompts by favouring more efficient image encoding and adaptive extraction behaviour where appropriate.
+
+### Performance
+
+- **Classification Input Preparation:** Reduced unnecessary image and document processing overhead in the LLM classification path, improving throughput and reducing avoidable prompt payload size.
+
+---
+
+## **New – AIForged Studio – 2.1 (17-04-2026)**
 
 This release focuses on improving document verification in AIForged Studio. It introduces a new **Document** data view for reviewing extracted data, adds optional auto-save during verification, and lets reviewers hide or show the document preview pane as needed. It also brings major responsiveness improvements for larger documents, plus workflow, permissions, logging, and timestamp quality-of-life updates.
 

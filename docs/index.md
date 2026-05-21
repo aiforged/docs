@@ -148,6 +148,12 @@ See: [Documents → Document Types](documents/document-types.md)
 
 ## Where to go next
 
+- AIForged Assistant  
+    - [Overview](aiforged-assistant/index.md)  
+    - [New Agent Assistant](aiforged-assistant/new-agent-assistant.md)  
+    - [Prompt Designer Assistant](aiforged-assistant/prompt-designer-assistant.md)  
+    - [AIForged Assistant in Studio](aiforged-assistant/studio-assistant.md)
+
 - Documents  
     - [Document Types](documents/document-types.md)  
     - [Understanding Document Flows](documents/understanding-document-flows.md)  

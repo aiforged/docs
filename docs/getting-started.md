@@ -96,6 +96,9 @@ _[Suggested screenshot: Tenant selector in the top‑right corner of Studio]_
 
 ### Option A — Studio (fastest to value)
 
+!!! tip "Accelerate setup with the AIForged Assistant"
+    You can use the [New Agent Assistant](aiforged-assistant/new-agent-assistant.md) to describe the solution you want in natural language, generate a starting blueprint, and then refine prompts with the [Prompt Designer Assistant](aiforged-assistant/prompt-designer-assistant.md).
+
 1. Create or open an Agent
     ![](assets/img-2025-08-18-10-45-03.png)
 2. Add your first Service (e.g., Email Scraper, LLM Extractor, Document Intelligence, OCR, Vision)
@@ -421,6 +424,7 @@ Content-Type: application/json
     - BaseModule
 
 - Studio tools
+    - [AIForged Assistant](aiforged-assistant/index.md)
     - [Service Flow Configurator](service-flow-configurator.md)
 
 - REST APIs, SDKs, and RPA integrations

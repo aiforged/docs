@@ -62,6 +62,9 @@ Follow these steps to add and configure the **LLM Extractor** service to your ag
         **Additional prompts can be added by clicking on the** ![](../../assets/image%20%2828%29.png) **button.**  
         ![](../../assets/image%20%2829%29.png)  
 
+        !!! tip "Use the Prompt Designer Assistant"
+            If you want help drafting or improving prompts and schemas, use the [Prompt Designer Assistant](../../aiforged-assistant/prompt-designer-assistant.md). It is the AIForged Assistant form focused on prompt and schema design.
+
         For each prompt, you can configure:  
 
         - **Prompt Type:**  

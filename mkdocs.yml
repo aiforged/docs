@@ -52,7 +52,12 @@ nav:
   - 🔐 Login: login.md
   - ❓ Forgot Password: forgot-password.md
   - 🔂 Multi-Factor Authentication: multi-factor-authentication.md
-  - 🤵 User Profile: user-profile.md
+  - 🧑 User Profile: user-profile.md
+  - 🤖 AIForged Assistant:
+    - Overview: aiforged-assistant/index.md
+    - ✨ New Agent Assistant: aiforged-assistant/new-agent-assistant.md
+    - 🧠 Prompt Designer Assistant: aiforged-assistant/prompt-designer-assistant.md
+    - 💬 AIForged Assistant in Studio: aiforged-assistant/studio-assistant.md
   - 💡 Agents:
     - Overview: agents/index.md
     - 🧠 Understanding Agents: agents/understanding-agents.md

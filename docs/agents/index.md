@@ -1,45 +1,125 @@
 ---
-title: Projects
-nav_order: 10
+title: Agents
+description: Understand what Agents are in AIForged, how to create them, and how the AIForged Assistant can accelerate new-agent setup.
 ---
 
 # 💡 Agents
 
-### Overview
+## Overview
 
-Agents in AIForged are containers for [AI services](../services//index.md), and are essential for user access management. An agent can encapsulate an entire solution, and there is no limit to the amount of AI services that can be present in an agent.
+Agents in AIForged are the top-level containers for your solutions.
 
-### Creating an agent
+An Agent typically contains:
 
-Creating an agent in AIForged Studio is a straightforward process:
+- one or more AI Services
+- service flow links and processing order
+- document categories
+- configuration, prompts, and parameter definitions
+- user access scoped by your Tenant, Group, and role assignments
 
-* **From the home view click on the** ![](../assets/image%20%2845%29%20%281%29.png) **(Create a new agent) button.** ![](../assets/image%20%2848%29%20%281%29.png)
-* **Select an optional starting service**:
-  You can opt to create your new agent with or without an intial AI service.
-  *   To create a blank agent (no initial service) click on the **Create blank agent** button in the dialog:
+A single Agent can represent an entire business solution, such as:
 
-      ![](../assets/image%20%2846%29%20%281%29.png)
-  *   Alternatively, you can select an initial service type to start with, for example, an **LLM Extractor** under the **Extract & Verify** group of AI services, and then click on **Create**.
+- invoice automation
+- claims processing
+- identity verification
+- contract extraction
+- mailroom intake and routing
 
-      ![](../assets/image%20%2847%29%20%281%29.png)
-*   **Name your agent** Provide a name for your agent and optionally include additional information relevant to the agent.
+---
 
-    ![](../assets/image%20%2849%29%20%281%29.png)
-    ![](../assets/image%20%2850%29%20%281%29.png)
-### Deleting/ Disabling an Agent
+## Why Agents matter
 
-To disable or delete an agent, click on the ![](../assets/image%20%2852%29%20%281%29.png) "**More agent related actions**" button, and select the action to perform.
+Agents help you keep a solution together.
 
-![](../assets/image%20%2851%29%20%281%29.png)
-!!! info
-    **Deleting an agent:** Permanently deletes it from the system
+They provide the boundary for:
 
-!!! info
-    **Disabling an agent:** Temporarily disables all processing in all the AI services within the agent until re-activated
+- service organisation
+- permissions and visibility
+- document flow design
+- configuration and maintenance
+- reporting and lifecycle management
 
+!!! tip
+    Think of an Agent as the solution container, and Services as the processing steps inside that solution.
 
+---
 
+## Create an Agent manually
 
+Creating an Agent in AIForged Studio is straightforward.
 
+1. From the home or Agents view, click **Create a new agent**.
+2. Choose whether to:
+    - create a blank Agent, or
+    - start with an initial Service
+3. Enter the Agent name and optional description.
+4. Open the Agent and continue configuring the Services and flow.
 
+If you start with an initial Service, you can continue in the normal configuration views or open the [Service Flow Configurator](../service-flow-configurator.md) to build the rest of the solution visually.
 
+---
+
+## Create an Agent with the AIForged Assistant
+
+If you want to move faster, use the **AIForged Assistant** instead of starting from a blank setup.
+
+The assistant can help you:
+
+- describe the solution in natural language
+- generate a proposed Agent blueprint
+- suggest Services, utilities, categories, and links
+- surface prompt and schema design work
+- let you review the proposal before committing it
+
+See:
+
+- [AIForged Assistant](../aiforged-assistant/index.md)
+- [New Agent Assistant](../aiforged-assistant/new-agent-assistant.md)
+
+!!! tip
+    The New Agent Assistant is especially useful when you already know the business outcome you want, but do not want to create every Service and connection manually.
+
+---
+
+## Disable or delete an Agent
+
+To disable or delete an Agent:
+
+1. Open the Agent card or Agent view.
+2. Open the **More agent related actions** menu.
+3. Choose the action you want.
+
+### Disable an Agent
+
+Disabling an Agent temporarily stops processing across the Services in that Agent until it is enabled again.
+
+### Delete an Agent
+
+Deleting an Agent permanently removes it from the system.
+
+!!! warning
+    Deleting an Agent is destructive. Only delete an Agent when you are certain it is no longer needed.
+
+---
+
+## Permissions and visibility
+
+Your ability to create, update, disable, or delete an Agent depends on:
+
+- the current Tenant
+- the current Group
+- your assigned role
+
+If actions are unavailable, confirm that you are working in the correct context and that your account has the required access.
+
+See: [User Profile](../user-profile.md)
+
+---
+
+## Related pages
+
+- [Understanding Agents](understanding-agents.md)
+- [AIForged Assistant](../aiforged-assistant/index.md)
+- [New Agent Assistant](../aiforged-assistant/new-agent-assistant.md)
+- [Service Flow Configurator](../service-flow-configurator.md)
+- [AI Services](../services/index.md)
