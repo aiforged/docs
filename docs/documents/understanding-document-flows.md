@@ -65,12 +65,17 @@ Documents are connected hierarchically across Services using a Master ID → Id 
     - Extract structured fields and tables; verify automatically and/or via HITL
     - Deliver outputs to downstream systems
 
+- LLM Classifier → Split document pack → Branch by Category → Specialized Extractors
+    - Submit the original combined PDF or TIFF when one input contains several logical business documents
+    - The classifier identifies document boundaries, categorizes each detected document, and returns separately assembled outputs
+    - This can separate repeated document types in the same pack, such as multiple invoices or payslips
+
 - Classifier → Branch by Category → Specialized Extractors
     - Route invoices, receipts, and statements to the best-fit extraction Service or model
     - Apply policy-driven verification per category
 
 - Pre-processors → Main extraction → Post-processors
-    - Utilities such as Digitizer, PDF Converter, or Image Splitter improve accuracy and speed
+    - Utilities such as Digitizer and PDF Converter improve accuracy and speed
     - Post-processors enrich, format, or export results
 
 !!! info
@@ -117,7 +122,7 @@ Documents are connected hierarchically across Services using a Master ID → Id 
 ## Best practices
 
 - Normalize early
-    - Convert scans to PDF and digitize; split/merge pages to match your target extraction pattern
+    - Convert scans to PDF and digitize to match your target extraction pattern
 - Keep Categories clean
     - Use Categories for business document types; use Usage/Status for lifecycle
 - Use lineage consistently
@@ -150,3 +155,4 @@ Documents are connected hierarchically across Services using a Master ID → Id 
 - Processing Parameters: [Click Here](processing-documents/processing-parameters.md)
 - Document Categories: [Click Here](document-categories.md)
 - Document Attributes: [Click Here](document-attributes.md)
+- Human Review & Straight-Through Processing: [Click Here](human-review-straight-through-processing.md)

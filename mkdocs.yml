@@ -77,6 +77,8 @@ nav:
     - 🗄️ Document Retention: documents/document-retention.md
     - ➕ Document Attributes: documents/document-attributes.md
     - 🧠 Understanding the Documents Section: documents/documents-in-service-view.md
+    - 🧾 HITL Corrections View: documents/hitl-corrections-view.md
+    - 📊 Human Review & Straight-Through Processing: documents/human-review-straight-through-processing.md
     - ↗️ Processing documents:
       - Overview: documents/processing-documents/index.md
       - Processing Paramaters: documents/processing-documents/processing-parameters.md

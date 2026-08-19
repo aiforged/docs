@@ -82,6 +82,10 @@ The Quick Filter allows you to quickly define which documents you want to view.
 
     ![](../assets/image%20%2856%29%20%281%29.png)
 
+- Open the **Human Review & Straight-Through Processing** dashboard from the command bar to review document journeys, review cases, and straight-through outcomes for the current Agent or Service.
+
+    See: [Human Review & Straight-Through Processing](human-review-straight-through-processing.md)
+
 - Open document logs.
 
     ![](../assets/image%20%2825%29%20%281%29%20%281%29%20%281%29.png)

@@ -73,7 +73,7 @@ AIForged’s LLM Extractor elevates extraction beyond templates—use natural la
 - Verifications: Bit‑flag statuses and typed entries capturing system/user/service outcomes
 - Work items: HITL tasks linked to documents/fields with actions, status, and assignment methods
 - Datasets: Custom reference/master data for lookups, deduplication, enrichment, and grounding LLMs
-- Utilities: Pre/post‑processors (Digitizer, PDF Converter, Image Splitter, Copy/Move, Webhooks, Custom Code, Workflow Code)
+- Utilities: Pre/post‑processors (Digitizer, PDF Converter, Copy/Move, Webhooks, Custom Code, Workflow Code)
 - Scrapers: Automated intake from Email and OneDrive via Microsoft Graph
 
 ---
@@ -86,11 +86,11 @@ AIForged gives you two equally powerful ways to get started: via Studio (UI) or 
 
 1. Create or open an Agent
 2. Add a Service
-    - Classification: **LLM Classifier** (preferred for new classification projects)
+    - Classification: **LLM Classifier** (preferred for new classification projects and logical document-pack splitting)
     - Structured/semi-structured: Extract & Verify or Document Intelligence
     - Unstructured/variable: LLM Extractor (prompt + schema) for GenAI-powered extraction
 3. (Optional) Attach Utilities as pre/post-processors
-    - PDF Converter, Digitizer, Image Splitter, Copy/Move, Webhooks, Custom Code, Workflow Code
+    - PDF Converter, Digitizer, Copy/Move, Webhooks, Custom Code, Workflow Code
 4. Ingest documents
     - Upload directly or configure a Scraper (Email, OneDrive)
 5. Process and verify
@@ -138,7 +138,7 @@ See: [Documents → Document Types](documents/document-types.md)
 ## Best practices
 
 - Identify your document type first; pick the appropriate service and training approach
-- Normalize inputs early (PDF conversion, digitize, split) to improve downstream accuracy
+- Normalize inputs early with PDF conversion and digitization to improve downstream accuracy
 - Use verifications and work items where confidence or policy requires human oversight
 - Ground LLM prompts with datasets and context; enforce schemas for deterministic outputs
 - Track lifecycle with DocumentStatus and UsageType; define clear archiving and retention policies
@@ -171,7 +171,7 @@ See: [Documents → Document Types](documents/document-types.md)
 
 - Scrapers & Utilities  
     - Scrapers: [Email](services/scrapers/email-scraper.md), [OneDrive](services/scrapers/onedrive-scraping.md)  
-    - Utilities: [Digitizer](services/utilities/aiforged-digitizer.md), [PDF Converter](services/utilities/aiforged-pdf-converter.md), [Image Splitter](services/utilities/aiforged-image-splitter.md), [Copy/Move](services/utilities/copy-documents.md), [Webhooks](services/utilities/webhooks.md)
+    - Utilities: [Digitizer](services/utilities/aiforged-digitizer.md), [PDF Converter](services/utilities/aiforged-pdf-converter.md), [Copy/Move](services/utilities/copy-documents.md), [Webhooks](services/utilities/webhooks.md)
 
 - Custom Code & Developer Docs  
     - [Custom Code](custom-service-code/index.md)  

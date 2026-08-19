@@ -198,9 +198,9 @@ See: [Services → Scrapers → Email Scraper](services/scrapers/email-scraper.m
 
 ---
 
-## 2) Classification: route pages or documents by type
+## 2) Classification: route and split documents by type
 
-Classification lets you auto-sort mixed batches (e.g., Credit Application, ID, Payslip, Other), enabling precise downstream pipelines.
+Classification lets you auto-sort mixed batches (e.g., Credit Application, ID, Payslip, Other) and split combined document packs into their logical documents, enabling precise downstream pipelines.
 
 !!! tip
     For new classification workflows, start with the [LLM Classifier](services/classification/llm-classifier.md). It is the preferred classifier type in AIForged and is usually faster to tune because category names and descriptions are used directly during classification.
@@ -210,8 +210,9 @@ Classification lets you auto-sort mixed batches (e.g., Credit Application, ID, P
 1. Add the **LLM Classifier** service.
 2. Define your business categories with short, distinct names.
 3. Add a clear description to each category explaining what belongs in that class.
-4. Process a representative mixed batch and review the results.
-5. Refine category wording before scaling up.
+4. For combined PDFs or TIFFs, send the original multi-page pack to the classifier. It can identify logical document boundaries, classify each detected document, and create separate assembled outputs.
+5. Process a representative mixed batch and review the categories and document boundaries in Outbox.
+6. Refine category wording before scaling up.
 
 Best-practice settings:
 
@@ -219,6 +220,8 @@ Best-practice settings:
 - Use category descriptions to explain category boundaries clearly
 - Add an **Other** category where appropriate for unmatched documents
 - Review low-confidence results and tune the wording incrementally
+- Use the LLM Classifier to split logical document packs, including packs containing repeated document types such as multiple invoices or payslips
+- Keep the original multi-page file intact for semantic document-pack splitting
 
 See: [Services → Classification → LLM Classifier](services/classification/llm-classifier.md)
 
@@ -325,9 +328,6 @@ Attach utilities as pre‑ or post‑processors to strengthen your pipeline.
 - PDF Converter  
     - Normalize inputs to PDF; force image‑only for artifact‑heavy PDFs  
     - See: [Services → Utilities → PDF Converter](services/utilities/aiforged-pdf-converter.md)
-- Image Splitter  
-    - Split multi‑page PDFs/TIFFs into per‑page images for page‑level routing  
-    - See: [Services → Utilities → Image Splitter](services/utilities/aiforged-image-splitter.md)
 - Copy / Move Documents  
     - Route by class, category, status, or extension to downstream services  
     - See: [Services → Utilities → Copy](services/utilities/copy-documents.md)
@@ -351,6 +351,9 @@ Use work items to involve people where it matters.
 
 !!! tip
     Use data‑driven routing: Idle for fairness, HighThroughput for speed. Always add clear Info/Comment for auditability.
+
+See also: [Documents → HITL Corrections View](documents/hitl-corrections-view.md)
+See also: [Documents → Human Review & Straight-Through Processing](documents/human-review-straight-through-processing.md)
 
 ---
 
@@ -417,7 +420,7 @@ Content-Type: application/json
 - Scrapers & Utilities
     - Email Scraper
     - OneDrive Scraper
-    - Utilities: Digitizer, PDF Converter, Image Splitter, Copy/Move, Webhooks
+    - Utilities: Digitizer, PDF Converter, Copy/Move, Webhooks
 
 - Custom Code & Developer Docs
     - Custom Code

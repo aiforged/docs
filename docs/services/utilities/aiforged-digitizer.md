@@ -53,7 +53,7 @@ Utility services are not configured as standalone services. Attach them to a par
 1. Open the parent service.
 2. Click the Add Service dropdown and select Utility Service.  
     ![](../../assets/image%20%28288%29.png)
-3. Choose the utility (e.g., AIForged Digitizer, AIForged Image Splitter).
+3. Choose **AIForged Digitizer**.
 4. In the utility’s settings, specify when it should run:
     * Execute Before Process = Pre-processor
     * Execute After Process = Post-processor

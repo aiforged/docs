@@ -16,7 +16,7 @@ The following are the latest and most capable Utility Services available in AIFo
 | Service Name            | Best Suited For                                                     | Quick Link                 |
 | ----------------------- | ------------------------------------------------------------------- | -------------------------- |
 | AIForged Digitizer      | Convert scans/images to searchable PDFs with visual overlays        | [aiforged-digitizer](aiforged-digitizer.md)      |
-| AIForged Image Splitter | Split multi-page documents into per-page images for downstream flow | [aiforged-image-splitter.](aiforged-image-splitter.md) |
+
 | AIForged PDF Converter  | Normalize any input to PDF; flatten complex PDFs for OCR            | [aiforged-pdf-converter](aiforged-pdf-converter.md)  |
 | Image Pre-Processing    | Clean, deskew, whiten, and optimize images before OCR               | [image-pre-processing](image-pre-processing.md)    |
 | Copy Documents          | Copy filtered documents to another service within your workflow     | [copy-documents](copy-documents.md)          |
@@ -32,7 +32,7 @@ The following are the latest and most capable Utility Services available in AIFo
 
 ### Typical Use Cases
 
-* Pre-process documents before extraction/classification (cleaning, splitting, digitizing).
+* Pre-process documents before extraction/classification (cleaning and digitizing).
 * Normalize and route documents between services with Copy/Move utilities.
 * Enrich, validate, or transform data using Custom Code or external APIs (Webhooks).
 * Automate complex HITL assignments and escalation with Workflow Code utilities.

@@ -21,6 +21,8 @@ Documents are the heartbeat of IDP in AIForged. This page helps you understand h
 | Document Attributes                        | [document-attributes](document-attributes.md "mention") |
 | Document Categories                        | [document-categories](document-categories.md "mention") |
 | Working with documents in the Service view | [documents-in-service-view](documents-in-service-view.md "mention") |
+| HITL Corrections View                      | [hitl-corrections-view](hitl-corrections-view.md "mention") |
+| Human Review & Straight-Through Processing | [human-review-straight-through-processing](human-review-straight-through-processing.md "mention") |
 
 ---
 
@@ -60,7 +62,7 @@ flowchart LR
     - Finalized results ready for export, webhooks, or downstream integrations.
 
 !!! tip
-    Normalize early. Use Utilities (Digitizer, PDF Converter, Image Splitter) to standardize inputs and improve extraction accuracy before verification.
+    Normalize early. Use Utilities such as Digitizer and PDF Converter to standardize inputs and improve extraction accuracy before verification. When one input contains several logical business documents, use the LLM Classifier to split and classify the document pack before downstream extraction.
 
 ---
 
@@ -118,6 +120,10 @@ flowchart LR
     - Start single or batch processing; configure pre/post utilities as needed.
 - Verify
     - Review low‑confidence items via HITL; accept or correct extracted parameters.
+- Report on corrections
+    - Use the [HITL Corrections View](hitl-corrections-view.md) to understand where reviewers are correcting values most often and where workflows need tuning.
+- Monitor review and automation outcomes
+    - Use [Human Review & Straight-Through Processing](human-review-straight-through-processing.md) to monitor document journeys, review queues, straight-through rates, and operational outcomes.
 - Review and export
     - Inspect Results and DocumentData; export JSON, PDFs, or trigger integrations/webhooks.
 

@@ -145,7 +145,7 @@ Key configuration options (may vary by environment):
 * Always pilot with a small set of documents to fine-tune your pre-processing chain.
 * Deskew and whiten backgrounds for scans with heavy watermarks or poor orientation.
 * Use Remove Garbage and Remove Color Marks for forms with stamps or hand marks.
-* Combine with PDF Converter and Image Splitter utilities for optimal input normalization and routing.
+* Combine with the PDF Converter utility where input normalization is required before processing.
 * Set Document Processed Status for clear workflow hand-off.
 
 ***

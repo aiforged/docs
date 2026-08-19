@@ -2,7 +2,7 @@
 
 ### Overview
 
-The **LLM Classifier** is AIForged's **preferred classification service for new projects**. It uses modern large language models to classify documents and pages by comparing the content against your configured category names and descriptions. This makes it ideal when you want to stand up useful classification quickly without building and maintaining a traditional supervised training set.
+The **LLM Classifier** is AIForged's **preferred classification service for new projects**. It uses modern large language models to classify documents and pages by comparing the content against your configured category names and descriptions. It can also identify logical document boundaries in a combined document pack, classify each detected document, and assemble the detected parts into separate output documents. This makes it ideal when you want to stand up useful classification quickly without building and maintaining a traditional supervised training set.
 
 !!! info
     The LLM Classifier is the recommended starting point for mixed inboxes, rapidly evolving document sets, and use cases where document classes are easier to define in natural language than by uploading large training batches.
@@ -26,6 +26,8 @@ The **LLM Classifier** is AIForged's **preferred classification service for new 
 ### Possible use cases
 
 * Rapidly classifying mixed business inboxes such as invoices, statements, IDs, application forms, or correspondence.
+* Splitting a combined PDF or TIFF pack into logical documents before routing, extraction, or review.
+* Separating repeated documents of the same type in one pack, such as several invoices, payslips, or statements.
 * Replacing manual triage steps with a category-driven routing layer before extraction.
 * Handling categories that change frequently, where updating wording is faster than retraining a classic supervised model.
 * Adding a lightweight "Other" catch-all path for documents that do not belong to any primary category.
@@ -40,6 +42,7 @@ The LLM Classifier is generally the best first choice when you need classificati
 * Lets you improve accuracy by refining category wording instead of repeatedly re-uploading training samples.
 * Performs well on document sets with broad wording differences and more natural-language variation.
 * Works especially well when category descriptions clearly explain what belongs in each class.
+* Can split document packs at logical boundaries while keeping the pages of each detected document together.
 
 !!! tip
     Keep the AIForged Classifier for scenarios where you explicitly want a supervised, example-driven model lifecycle. Use the LLM Classifier when you want faster rollout and easier day-to-day tuning.
@@ -92,13 +95,42 @@ Description: Monthly or ad hoc account statements issued by a bank. Usually cont
 
 ***
 
+### Document-pack splitting
+
+The LLM Classifier is particularly effective when a single PDF or TIFF contains several logical business documents. It analyses the page sequence and content to identify document boundaries, assigns a category to each detected document, and creates separate assembled output documents.
+
+This is useful for packs that contain mixed document types, as well as packs that contain multiple documents of the **same** type.
+
+!!! example
+    A 14-page onboarding pack may contain a cover letter, an ID document, two payslips, a bank statement, and a proof of address. The LLM Classifier can identify the boundaries between those logical documents, classify them, and return each one separately for downstream routing or extraction.
+
+| Need | Recommended approach | Result |
+| --- | --- | --- |
+| Identify logical document boundaries in a combined pack | **LLM Classifier** | Separate, classified logical documents; multi-page documents remain grouped together |
+
+!!! important
+    Use the original multi-page document as input when you need semantic document-pack splitting. This preserves the page sequence and context needed to identify logical document boundaries.
+
+#### Configure a document-pack workflow
+
+1. Add the **LLM Classifier** before the services that need individual documents, such as specialized extractors or verification flows.
+2. Define clear categories and descriptions for every document type you expect in the pack, plus an **Other** or **Unknown** category for exceptions.
+3. Send a representative original PDF or TIFF pack to the classifier.
+4. Review the Outbox to confirm both the detected document boundaries and the assigned categories.
+5. Route each classified output to its downstream service using category-based routing.
+
+!!! tip
+    Test with realistic packs that include repeated document types. For example, use two or more invoices in the same input file to confirm that they are separated as distinct documents rather than treated as one long invoice.
+
+***
+
 ### Processing documents
 
 Once configured:
 
-1. Upload documents into the service or connect an upstream scraper/utility.
-2. Process a small batch first.
-3. Review predicted categories and any low-confidence outcomes.
+1. Upload documents into the service or connect an upstream scraper/utility. For document packs, send the original multi-page file.
+2. Process a small representative batch first.
+3. Review predicted categories, detected document boundaries, and any low-confidence outcomes in the Outbox.
 4. Refine category names and descriptions where needed.
 5. Route the classified output to downstream extraction or verification services.
 
@@ -121,6 +153,11 @@ Once configured:
     * Review whether your category descriptions are too broad or too short.
     * Normalize poor-quality inputs with OCR or PDF utilities before classification.
 
+* **A document pack is not split at the expected boundaries**
+    * Use the original multi-page document rather than already-separated page images.
+    * Improve scan quality with Digitizer or PDF Converter where the page content is difficult to read.
+    * Test with representative packs, including cover pages, separator pages, and repeated document types.
+
 * **Performance is acceptable but quality needs work**
     * Start by improving category wording before redesigning the wider flow.
     * Re-test with a realistic mixed batch rather than isolated sample documents.
@@ -135,6 +172,7 @@ Once configured:
 * Avoid repeating the same wording across multiple categories.
 * Review low-confidence or misclassified documents regularly and refine descriptions incrementally.
 * Use utilities like Digitizer or PDF Converter when source quality is inconsistent.
+* Use document-pack splitting when a single input contains several logical documents that must be processed independently.
 
 ***
 

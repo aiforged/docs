@@ -104,7 +104,7 @@ The configurator adapts visible drop points based on the service you’re draggi
 
 ## Important: Utilities are not standalone
 
-Utility services (e.g., Digitizer, PDF Converter, Image Splitter, Copy Documents, Custom Code, Workflow Code) are attached as Pre‑ or Post‑Processors. They are not meant to be configured as standalone services.
+Utility services (e.g., Digitizer, PDF Converter, Copy Documents, Custom Code, Workflow Code) are attached as Pre‑ or Post‑Processors. They are not meant to be configured as standalone services.
 
 - Parent service’s Service View:
     - Click Add Service → Utility Service to attach as Pre or Post.

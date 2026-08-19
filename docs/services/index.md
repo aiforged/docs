@@ -57,7 +57,7 @@ Choose the pattern that fits your workflow and SLAs:
     - One Service’s outputs feed directly into another with tight coupling (e.g., OCR → Extract).
 
 !!! tip
-    Keep responsibilities focused. Use Utilities (Digitizer, PDF Converter, Image Splitter) as pre/post steps to normalize inputs and improve extraction accuracy.
+    Keep responsibilities focused. Use Utilities such as Digitizer and PDF Converter as pre/post steps to normalize inputs and improve extraction accuracy.
 
 ---
 
